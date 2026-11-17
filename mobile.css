@@ -1,0 +1,102 @@
+@charset "UTF-8";
+
+/* ==========================================================
+   CHECK.IN — MOBILE
+   COMPONENTE 01: CABEÇALHO
+========================================================== */
+
+@media (max-width: 652px) {
+
+    /* 01 — ESTRUTURA EXTERNA */
+
+    header.cabecalho {
+        height: 80px;
+        min-height: 80px;
+        margin-bottom: 12px;
+        padding: 0 10px;
+        box-sizing: border-box;
+    }
+
+
+    /* 02 — GRUPO DA MARCA */
+
+    header.cabecalho .logo {
+        gap: 1px;
+        padding: 0;
+        min-width: 0;
+    }
+
+    header.cabecalho .logo-simbolo {
+        width: 50px !important;
+        height: 50px !important;
+        max-width: 50px;
+        max-height: 50px;
+        flex: 0 0 50px;
+    }
+
+    header.cabecalho .logo-nome {
+        font-size: clamp(19px, 5.5vw, 21px) !important;
+        line-height: 1;
+        letter-spacing: -.4px;
+        white-space: nowrap;
+    }
+
+
+    /* 03 — GRUPO DE AÇÕES */
+
+    header.cabecalho .acoes-cabecalho {
+    gap: 12px;
+    padding: 4px;
+    transform: translateX(-8px);
+}
+
+
+    /* 04 — NOTIFICAÇÕES */
+
+    header.cabecalho .notificacoes {
+        width: 8px;
+        height: 8px;
+    }
+
+    header.cabecalho .notificacoes .icone-sino {
+        width: 23px;
+        height: 23px;
+    }
+
+
+    /* 05 — CONTADOR */
+
+    header.cabecalho .contador-notificacao {
+    top: -2px;
+    left: -2px;
+    right: auto;
+    width: 12px;
+    height: 12px;
+    font-size: 8px;
+    line-height: 1;
+    }
+
+
+    /* 06 — PERFIL */
+
+    header.cabecalho .perfil-usuario {
+        width: 32px;
+        height: 32px;
+    }
+
+    header.cabecalho .perfil-cabeca {
+        top: 5px;
+        left: 10px;
+        width: 10px;
+        height: 10px;
+    }
+
+    header.cabecalho .perfil-corpo {
+        bottom: 3px;
+        left: 7px;
+        width: 18px;
+        height: 13px;
+        border-radius: 12px 12px 7px 7px;
+    }
+
+}
