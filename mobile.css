@@ -59,22 +59,22 @@
     }
 
     header.cabecalho .notificacoes .icone-sino {
-        width: 23px;
-        height: 23px;
+        width: 25px;
+        height: 25px;
     }
 
 
     /* 05 — CONTADOR */
 
     header.cabecalho .contador-notificacao {
-    top: -2px;
-    left: -2px;
-    right: auto;
-    width: 12px;
-    height: 12px;
+    top: -6px;
+    left: auto;
+    right: -7px;
+    width: 11px;
+    height: 11px;
     font-size: 8px;
     line-height: 1;
-    }
+}
 
 
     /* 06 — PERFIL */
