@@ -1,0 +1,94 @@
+{
+  "project": "Check.In V20",
+  "date": "2026-11-16",
+  "scope": {
+    "file": "tema-dark.css",
+    "selectors": [
+      ".painel-esquerdo::before",
+      ".painel-esquerdo::after",
+      ".painel-esquerdo .menu-lateral-pesquisa"
+    ],
+    "property": "background-image / background / box-shadow"
+  },
+  "diagnosis": {
+    "svg_viewBox": "0 0 900 1600",
+    "background_size": "100% 56%",
+    "previous_preserveAspectRatio": "default xMidYMid meet",
+    "effect": "O navegador preservava a proporção interna do SVG e centralizava o desenho dentro da caixa larga, deixando a onda limitada a uma faixa central.",
+    "rendering_artifact": false,
+    "evidence": "Reprodução do defeito em Chromium com a regra CSS original; o resultado coincide com o painel central da comparação enviada."
+  },
+  "correction": {
+    "svg_root_attribute": "preserveAspectRatio=\"none\"",
+    "shared_curve_path": "M55 1598 C130 1598 220 1555 300 1505 C365 1465 445 1426 500 1407 C650 1345 760 1310 900 1348",
+    "tail": "Início a 55 unidades da lateral esquerda, praticamente sobre a borda inferior (y=1598), com subida cúbica suave até incorporar a onda existente.",
+    "fill_path": "M55 1598 C130 1598 220 1555 300 1505 C365 1465 445 1426 500 1407 C650 1345 760 1310 900 1348 L900 1600 L0 1600 Z",
+    "clip_path": "belowWave: região fechada entre a curva e a borda inferior",
+    "clipped_layers": [
+      "rightGlow",
+      "beforeGlowRight",
+      "beforeGlowLeft",
+      "blur",
+      "soft"
+    ],
+    "unclipped_layers": [
+      "linha principal de 3.5px",
+      "preenchimento principal"
+    ],
+    "before_pseudo_element": "Mantido apenas o gradiente linear estrutural escuro e as sombras internas; os dois radiais verdes foram movidos para o SVG e recortados abaixo da curva.",
+    "search_field_shadow": "Removidas as duas camadas escuras; preservadas as duas camadas verdes.",
+    "background_repeat": "no-repeat",
+    "background_position": "left bottom",
+    "background_size": "100% 56%",
+    "files_functionally_modified": [
+      "tema-dark.css"
+    ],
+    "html_modified": false,
+    "style_css_modified": false,
+    "javascript_modified": false
+  },
+  "static_validation": {
+    "svg_data_uri_decoded": true,
+    "svg_xml_parsed": true,
+    "shared_curve_copies_aligned": 4,
+    "clip_path_geometry_matches_fill_path": true,
+    "clipped_radial_rectangles": 3,
+    "blur_path_clipped": true,
+    "soft_path_clipped": true,
+    "sharp_line_clipped": false,
+    "main_fill_clipped": false,
+    "search_shadow_dark_layers_removed": true
+  },
+  "browser_validation": {
+    "status": "VALIDADO-VISUAL-EM-FIXTURE; PENDENTE NA APLICAÇÃO COMPLETA",
+    "browser": "Chromium headless",
+    "method": "Renderização isolada dos três blocos reais (.painel-esquerdo, ::before e ::after) extraídos de tema-dark.css; a aplicação completa/Live Server não foi acessada.",
+    "cases": [
+      {
+        "panel_width_px": 288,
+        "panel_height_px": 640,
+        "tail_touches_bottom_near_left": true,
+        "wave_rises_smoothly": true,
+        "wave_reaches_right_edge": true,
+        "green_fill_reaches_bottom": true,
+        "green_glow_above_curve": false
+      },
+      {
+        "panel_width_px": 704,
+        "panel_height_px": 640,
+        "tail_touches_bottom_near_left": true,
+        "wave_rises_smoothly": true,
+        "wave_reaches_right_edge": true,
+        "green_fill_reaches_bottom": true,
+        "green_glow_above_curve": false
+      }
+    ],
+    "limitations": [
+      "A validação visual final ainda precisa ser conferida na aplicação completa após substituir tema-dark.css e recarregar o projeto local."
+    ]
+  },
+  "limitations": [
+    "A validação visual na aplicação completa depende de recarregar o projeto local com este tema-dark.css.",
+    "O novo ponto de início da cauda foi definido em x=55, y=1598 no viewBox 900x1600; pode exigir ajuste visual fino conforme a altura real do painel."
+  ]
+}

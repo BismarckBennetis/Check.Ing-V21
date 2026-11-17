@@ -1,0 +1,10 @@
+{
+  "array_from_polyfill": "1,2,3",
+  "nodelist_for_each_polyfill": "ok",
+  "pad_start_polyfill": "07",
+  "number_parse_float_polyfill": 2.5,
+  "normalizar_sem_normalize_resultado": [
+    "Configuração"
+  ],
+  "page_errors": []
+}

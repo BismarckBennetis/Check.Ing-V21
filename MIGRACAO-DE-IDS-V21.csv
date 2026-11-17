@@ -1,0 +1,3 @@
+﻿arquivo,elemento,id_v20,id_v21,motivo,impacto
+index.html,section.compromisso-agenda (agenda de ontem),sem ID próprio,agenda-compromissos-ontem,Substituir dependência CSS em :has(> #lista-compromissos-ontem) por seletor direto e estável.,"Atributo id adicionado; class, DOM interno, eventos e geometria preservados."
+index.html,section.compromisso-agenda (agenda de hoje),sem ID próprio,agenda-compromissos-hoje,Substituir dependência CSS em :has(> #lista-compromissos-hoje) por seletor direto e estável.,"Atributo id adicionado; class, DOM interno, eventos e geometria preservados."

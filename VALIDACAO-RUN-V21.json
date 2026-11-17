@@ -1,0 +1,249 @@
+{
+  "browser": "Chromium headless (144)",
+  "viewports": [
+    {
+      "w": 1600,
+      "h": 900,
+      "width": 1600,
+      "scrollWidth": 1600,
+      "bodyScrollWidth": 1600,
+      "ids": 56,
+      "overflow": false
+    },
+    {
+      "w": 1440,
+      "h": 900,
+      "width": 1440,
+      "scrollWidth": 1440,
+      "bodyScrollWidth": 1440,
+      "ids": 56,
+      "overflow": false
+    },
+    {
+      "w": 1280,
+      "h": 900,
+      "width": 1280,
+      "scrollWidth": 1280,
+      "bodyScrollWidth": 1280,
+      "ids": 56,
+      "overflow": false
+    },
+    {
+      "w": 1200,
+      "h": 900,
+      "width": 1200,
+      "scrollWidth": 1200,
+      "bodyScrollWidth": 1200,
+      "ids": 56,
+      "overflow": false
+    },
+    {
+      "w": 1024,
+      "h": 900,
+      "width": 1024,
+      "scrollWidth": 1024,
+      "bodyScrollWidth": 1024,
+      "ids": 56,
+      "overflow": false
+    },
+    {
+      "w": 900,
+      "h": 900,
+      "width": 900,
+      "scrollWidth": 900,
+      "bodyScrollWidth": 900,
+      "ids": 56,
+      "overflow": false
+    },
+    {
+      "w": 800,
+      "h": 900,
+      "width": 800,
+      "scrollWidth": 800,
+      "bodyScrollWidth": 800,
+      "ids": 56,
+      "overflow": false
+    },
+    {
+      "w": 768,
+      "h": 900,
+      "width": 768,
+      "scrollWidth": 768,
+      "bodyScrollWidth": 768,
+      "ids": 56,
+      "overflow": false
+    },
+    {
+      "w": 653,
+      "h": 900,
+      "width": 653,
+      "scrollWidth": 653,
+      "bodyScrollWidth": 653,
+      "ids": 56,
+      "overflow": false
+    },
+    {
+      "w": 652,
+      "h": 900,
+      "width": 652,
+      "scrollWidth": 652,
+      "bodyScrollWidth": 652,
+      "ids": 56,
+      "overflow": false
+    },
+    {
+      "w": 480,
+      "h": 900,
+      "width": 480,
+      "scrollWidth": 622,
+      "bodyScrollWidth": 622,
+      "ids": 56,
+      "overflow": true
+    },
+    {
+      "w": 412,
+      "h": 915,
+      "width": 412,
+      "scrollWidth": 536,
+      "bodyScrollWidth": 536,
+      "ids": 56,
+      "overflow": true
+    },
+    {
+      "w": 390,
+      "h": 844,
+      "width": 390,
+      "scrollWidth": 514,
+      "bodyScrollWidth": 514,
+      "ids": 56,
+      "overflow": true
+    },
+    {
+      "w": 360,
+      "h": 800,
+      "width": 360,
+      "scrollWidth": 484,
+      "bodyScrollWidth": 484,
+      "ids": 56,
+      "overflow": true
+    },
+    {
+      "w": 320,
+      "h": 720,
+      "width": 320,
+      "scrollWidth": 460,
+      "bodyScrollWidth": 460,
+      "ids": 56,
+      "overflow": true
+    }
+  ],
+  "tests": {
+    "calendar": {
+      "initial": "NOVEMBRO",
+      "next": "DEZEMBRO",
+      "previous": "NOVEMBRO",
+      "passed": true
+    },
+    "search": {
+      "visible_after_configuracao": 1,
+      "visible_labels": [
+        "Configuração"
+      ],
+      "empty_state": true,
+      "passed": true
+    },
+    "main_navigation": {
+      "buttons": 5,
+      "labels": [
+        "Financeiro",
+        "Estudo",
+        "Rotina",
+        "Compromisso",
+        "Lembrete"
+      ],
+      "buttons_with_aria_controls": 0,
+      "all_targets_exist": true
+    },
+    "scrollbars": {
+      "vertical_before": 0,
+      "vertical_after": 24,
+      "horizontal_before": 0,
+      "horizontal_after": 40,
+      "passed": true
+    },
+    "commitment_parent_hooks": {
+      "yesterday_id": 1,
+      "today_id": 1,
+      "computed_yesterday_header_left": "117.656px",
+      "computed_today_header_left": "0px"
+    },
+    "new_ids_unique": true,
+    "agenda_header_v20_vs_v21": {
+      "v20": {
+        "yesterday": {
+          "left": "117.656px",
+          "right": "-50.5625px",
+          "top": "-40px",
+          "height": "30px",
+          "transform": "matrix(1, 0, 0, 1, -84.1172, 0)",
+          "position": "absolute",
+          "margin": "0px",
+          "padding": "0px 8px"
+        },
+        "today": {
+          "left": "0px",
+          "right": "0px",
+          "top": "-40px",
+          "height": "30px",
+          "transform": "none",
+          "position": "absolute",
+          "margin": "0px",
+          "padding": "0px"
+        }
+      },
+      "v21": {
+        "yesterday": {
+          "left": "117.656px",
+          "right": "-50.5625px",
+          "top": "-40px",
+          "height": "30px",
+          "transform": "matrix(1, 0, 0, 1, -84.1172, 0)",
+          "position": "absolute",
+          "margin": "0px",
+          "padding": "0px 8px"
+        },
+        "today": {
+          "left": "0px",
+          "right": "0px",
+          "top": "-40px",
+          "height": "30px",
+          "transform": "none",
+          "position": "absolute",
+          "margin": "0px",
+          "padding": "0px"
+        }
+      },
+      "equal": true
+    }
+  },
+  "console_errors": [
+    "Failed to load resource: net::ERR_FAILED",
+    "Failed to load resource: net::ERR_FAILED",
+    "Failed to load resource: net::ERR_FAILED",
+    "Failed to load resource: net::ERR_FAILED",
+    "Failed to load resource: net::ERR_FAILED",
+    "Failed to load resource: net::ERR_FAILED",
+    "Failed to load resource: net::ERR_FAILED",
+    "Failed to load resource: net::ERR_FAILED",
+    "Failed to load resource: net::ERR_FAILED",
+    "Failed to load resource: net::ERR_FAILED",
+    "Failed to load resource: net::ERR_FAILED",
+    "Failed to load resource: net::ERR_FAILED",
+    "Failed to load resource: net::ERR_FAILED",
+    "Failed to load resource: net::ERR_FAILED",
+    "Failed to load resource: net::ERR_FAILED",
+    "Failed to load resource: net::ERR_FAILED",
+    "Failed to load resource: net::ERR_FAILED"
+  ],
+  "page_errors": []
+}

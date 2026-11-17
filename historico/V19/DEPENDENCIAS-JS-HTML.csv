@@ -1,0 +1,22 @@
+﻿arquivo_js,metodo,seletor_ou_alvo,correspondencias_html,esperado,status,observacao
+script.js,querySelector,#calendario-atual,1,1,encontrado,Calendário atual localizado para renderização inicial.
+script.js,querySelector,#calendario-proximo,1,1,encontrado,Calendário seguinte localizado para renderização inicial.
+script.js,querySelector,.calendario-titulo,2,2,encontrado,Um título em cada calendário.
+script.js,querySelector,.calendario-ano,2,2,encontrado,Um campo de ano em cada calendário.
+script.js,querySelector,.calendario-dias-semana,2,2,encontrado,Uma faixa de dias da semana em cada calendário.
+script.js,querySelector,.calendario-dias,2,2,encontrado,Uma grade de dias em cada calendário.
+script.js,querySelectorAll,.calendario,2,2,encontrado,Dois calendários encontrados.
+script.js,querySelector,.seta-anterior,2,2,encontrado,Uma seta anterior em cada calendário.
+script.js,querySelector,.seta-proxima,2,2,encontrado,Uma seta seguinte em cada calendário.
+script.js,querySelector,.horario-valor,1,1,encontrado,Relógio da sidebar.
+script.js,querySelector,.data-valor,1,1,encontrado,Contêiner da data da sidebar.
+script.js,querySelector,.data-dia,1,1,encontrado,Dia dentro do contêiner de data.
+script.js,querySelector,.data-mes,1,1,encontrado,Mês dentro do contêiner de data.
+script.js,querySelector,.data-ano,1,1,encontrado,Ano dentro do contêiner de data.
+script.js,querySelectorAll,.rotina-barra-horizontal[data-scroll-for],3,3,encontrado,Três barras horizontais da Rotina.
+script.js,querySelector,.rotina-barra-trilho,3,3,encontrado,Um trilho por barra horizontal.
+script.js,querySelector,.rotina-barra-cursor,3,3,encontrado,Um cursor por barra horizontal.
+script.js,querySelectorAll,.ci-scrollbar-vertical[data-scrollbar-for],12,12,encontrado,Doze barras verticais independentes.
+script.js,querySelector,.ci-scrollbar-trilho,12,12,encontrado,Um trilho por barra vertical.
+script.js,querySelector,.ci-scrollbar-cursor,12,12,encontrado,Um cursor por barra vertical.
+script.js,getElementById(dataset),data-scroll-for / data-scrollbar-for,15,15,encontrado,Quinze alvos únicos resolvidos dinamicamente por ID.

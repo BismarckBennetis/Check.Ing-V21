@@ -1,0 +1,4 @@
+Check.In V19
+Base: Check.In V18
+Data da atualização: 2026-11-10
+Tipo: manutenção, limpeza CSS e atualização de índices

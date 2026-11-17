@@ -1,0 +1,20 @@
+﻿arquivo_js,metodo,seletor,correspondencias_html,status,observacao
+script.js,querySelector,.calendario-titulo,2,encontrado,Seletor usado dentro de contexto JS; a contagem estática indica elementos compatíveis no HTML.
+script.js,querySelector,.calendario-ano,2,encontrado,Seletor usado dentro de contexto JS; a contagem estática indica elementos compatíveis no HTML.
+script.js,querySelector,.calendario-dias-semana,2,encontrado,Seletor usado dentro de contexto JS; a contagem estática indica elementos compatíveis no HTML.
+script.js,querySelector,.calendario-dias,2,encontrado,Seletor usado dentro de contexto JS; a contagem estática indica elementos compatíveis no HTML.
+script.js,querySelectorAll,.calendario,2,encontrado,Seletor usado dentro de contexto JS; a contagem estática indica elementos compatíveis no HTML.
+script.js,querySelector,.seta-anterior,2,encontrado,Seletor usado dentro de contexto JS; a contagem estática indica elementos compatíveis no HTML.
+script.js,querySelector,.seta-proxima,2,encontrado,Seletor usado dentro de contexto JS; a contagem estática indica elementos compatíveis no HTML.
+script.js,querySelector,.horario-valor,1,encontrado,Seletor usado dentro de contexto JS; a contagem estática indica elementos compatíveis no HTML.
+script.js,querySelector,.data-valor,1,encontrado,Seletor usado dentro de contexto JS; a contagem estática indica elementos compatíveis no HTML.
+script.js,querySelector,.data-dia,1,encontrado,Seletor usado dentro de contexto JS; a contagem estática indica elementos compatíveis no HTML.
+script.js,querySelector,.data-mes,1,encontrado,Seletor usado dentro de contexto JS; a contagem estática indica elementos compatíveis no HTML.
+script.js,querySelector,.data-ano,1,encontrado,Seletor usado dentro de contexto JS; a contagem estática indica elementos compatíveis no HTML.
+script.js,querySelectorAll,.rotina-barra-horizontal[data-scroll-for],3,encontrado,Seletor usado dentro de contexto JS; a contagem estática indica elementos compatíveis no HTML.
+script.js,querySelector,.rotina-barra-trilho,3,encontrado,Seletor usado dentro de contexto JS; a contagem estática indica elementos compatíveis no HTML.
+script.js,querySelector,.rotina-barra-cursor,3,encontrado,Seletor usado dentro de contexto JS; a contagem estática indica elementos compatíveis no HTML.
+script.js,querySelectorAll,.ci-scrollbar-vertical[data-scrollbar-for],9,encontrado,Seletor usado dentro de contexto JS; a contagem estática indica elementos compatíveis no HTML.
+script.js,querySelector,.ci-scrollbar-trilho,9,encontrado,Seletor usado dentro de contexto JS; a contagem estática indica elementos compatíveis no HTML.
+script.js,querySelector,.ci-scrollbar-cursor,9,encontrado,Seletor usado dentro de contexto JS; a contagem estática indica elementos compatíveis no HTML.
+script.js,getElementById(dataset),barra.dataset.scrollFor / barra.dataset.scrollbarFor,27,validado por data-scroll-for/data-scrollbar-for,Os alvos são obtidos dinamicamente de atributos e todos os IDs de destino foram encontrados.

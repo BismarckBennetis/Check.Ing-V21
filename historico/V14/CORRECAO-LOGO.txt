@@ -1,0 +1,15 @@
+CHECK.ING V14 — PACOTE COMPLETO CORRIGIDO
+
+Este pacote reúne os quatro arquivos de código atualizados na auditoria da rotina e os recursos da V14 original, incluindo a pasta imagens/.
+
+CORREÇÃO DO LOGO
+O HTML referencia imagens/logo-checkin-premium.png. O arquivo está presente neste pacote nesse caminho exato. O ZIP anterior da auditoria continha apenas os arquivos de código e não incluía a pasta imagens; ao abrir aquela cópia como um projeto independente, o navegador não encontrava o logo.
+
+COMO USAR
+1. Extraia a pasta inteira.
+2. No VS Code, abra a pasta Check.In-v14-completa-corrigida, que contém index.html e imagens/.
+3. Inicie o Live Server pelo index.html dessa pasta.
+4. Para aplicar em um projeto já existente, substitua os quatro arquivos auditados e mantenha/copiei a pasta imagens/ para o mesmo nível do index.html.
+5. Atualize o navegador com Ctrl+F5.
+
+Os arquivos index.html, style.css, tema-dark.css e script.js são as versões auditadas. Os demais recursos do projeto foram preservados da V14 original.

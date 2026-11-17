@@ -1,0 +1,115 @@
+﻿arquivo,seletor,quantidade,linhas,contextos,marcadores,nota
+style.css,.cabecalho,2,41; 140,global | @media (max-width: 480px),CSS-0004; CSS-0009,Repetição mantida: a cascata/contexto precisa ser avaliada antes de consolidar.
+style.css,.logo,2,85; 145,global | @media (max-width: 480px),CSS-0006; CSS-0010,Repetição mantida: a cascata/contexto precisa ser avaliada antes de consolidar.
+style.css,.logo-simbolo,2,102; 150,global | @media (max-width: 480px),CSS-0007; CSS-0011,Repetição mantida: a cascata/contexto precisa ser avaliada antes de consolidar.
+style.css,.logo-nome,2,121; 157,global | @media (max-width: 480px),CSS-0008; CSS-0012,Repetição mantida: a cascata/contexto precisa ser avaliada antes de consolidar.
+style.css,.acoes-cabecalho,2,168; 189,global | global,CSS-0013; CSS-0014,Repetição mantida: a cascata/contexto precisa ser avaliada antes de consolidar.
+style.css,.menu-principal,2,385; 545,global | @media (max-width: 600px),CSS-0021; CSS-0028,Repetição mantida: a cascata/contexto precisa ser avaliada antes de consolidar.
+style.css,.botao-menu,2,410; 553,global | @media (max-width: 600px),CSS-0022; CSS-0029,Repetição mantida: a cascata/contexto precisa ser avaliada antes de consolidar.
+style.css,.conteudo-principal,2,570; 763,global | @media (max-width: 652px),CSS-0030; CSS-0041,Repetição mantida: a cascata/contexto precisa ser avaliada antes de consolidar.
+style.css,.painel-calendarios,2,584; 771,global | @media (max-width: 652px),CSS-0031; CSS-0042,Repetição mantida: a cascata/contexto precisa ser avaliada antes de consolidar.
+style.css,.botao-menu-lateral,2,944; 4366,global | global,CSS-0052; CSS-0262,Repetição mantida: a cascata/contexto precisa ser avaliada antes de consolidar.
+style.css,.botao-menu-lateral > span:not(.icone-menu-lateral),2,984; 4385,global | global,CSS-0053; CSS-0264,Repetição mantida: a cascata/contexto precisa ser avaliada antes de consolidar.
+style.css,.botao-menu-lateral::after,2,999; 4400,global | global,CSS-0054; CSS-0265,Repetição mantida: a cascata/contexto precisa ser avaliada antes de consolidar.
+style.css,.notificacao-titulo,2,1233; 4407,global | global,CSS-0071; CSS-0266,Repetição mantida: a cascata/contexto precisa ser avaliada antes de consolidar.
+style.css,.card-financeiro,2,1319; 4513,global | global,CSS-0077; CSS-0273,Repetição mantida: a cascata/contexto precisa ser avaliada antes de consolidar.
+style.css,.card-financeiro .titulo-card,2,1381; 4560,global | global,CSS-0082; CSS-0275,Repetição mantida: a cascata/contexto precisa ser avaliada antes de consolidar.
+style.css,.financeiro-icone,2,1386; 4544,global | global,CSS-0083; CSS-0274,Repetição mantida: a cascata/contexto precisa ser avaliada antes de consolidar.
+style.css,.financeiro-renda-rotulo,3,1431; 1955; 4627,global | global | global,CSS-0084; CSS-0130; CSS-0280,Repetição mantida: a cascata/contexto precisa ser avaliada antes de consolidar.
+style.css,.financeiro-progresso-trilho,2,1455; 4574,global | global,CSS-0086; CSS-0276,Repetição mantida: a cascata/contexto precisa ser avaliada antes de consolidar.
+style.css,.financeiro-progresso-preenchimento,2,1465; 4587,global | global,CSS-0087; CSS-0277,Repetição mantida: a cascata/contexto precisa ser avaliada antes de consolidar.
+style.css,.financeiro-progresso-percentual,2,1474; 4601,global | global,CSS-0088; CSS-0278,Repetição mantida: a cascata/contexto precisa ser avaliada antes de consolidar.
+style.css,.financeiro-indicador,3,1508; 1824; 1869,global | global | global,CSS-0092; CSS-0118; CSS-0124,Repetição mantida: a cascata/contexto precisa ser avaliada antes de consolidar.
+style.css,.financeiro-indicador-valor,3,1550; 1841; 1900,global | global | global,CSS-0095; CSS-0120; CSS-0126,Repetição mantida: a cascata/contexto precisa ser avaliada antes de consolidar.
+style.css,.financeiro-indicador-valor strong,2,1555; 1910,global | global,CSS-0096; CSS-0127,Repetição mantida: a cascata/contexto precisa ser avaliada antes de consolidar.
+style.css,.financeiro-indicador-icone,4,1560; 1592; 1848; 1924,global | global | global | global,CSS-0097; CSS-0099; CSS-0121; CSS-0128,Repetição mantida: a cascata/contexto precisa ser avaliada antes de consolidar.
+style.css,.financeiro-alfinete-icone,2,1576; 4669,global | global,CSS-0098; CSS-0283,Repetição mantida: a cascata/contexto precisa ser avaliada antes de consolidar.
+style.css,.financeiro-vencidas,2,1610; 4878,global | global,CSS-0101; CSS-0298,Repetição mantida: a cascata/contexto precisa ser avaliada antes de consolidar.
+style.css,.financeiro-vencidas-titulo,2,1627; 4895,global | global,CSS-0102; CSS-0299,Repetição mantida: a cascata/contexto precisa ser avaliada antes de consolidar.
+style.css,.financeiro-conta,2,1657; 4918,global | global,CSS-0104; CSS-0300,Repetição mantida: a cascata/contexto precisa ser avaliada antes de consolidar.
+style.css,.financeiro-conta-icone,2,1686; 4956,global | global,CSS-0106; CSS-0302,Repetição mantida: a cascata/contexto precisa ser avaliada antes de consolidar.
+style.css,.botao-comprovantes,4,1787; 1855; 1947; 2986,global | global | global | global,CSS-0114; CSS-0122; CSS-0129; CSS-0189,Repetição mantida: a cascata/contexto precisa ser avaliada antes de consolidar.
+style.css,.icone-comprovantes,2,1792; 1860,global | global,CSS-0115; CSS-0123,Repetição mantida: a cascata/contexto precisa ser avaliada antes de consolidar.
+style.css,".financeiro-renda-rotulo,
+.financeiro-indicador-rotulo",2,1833; 1880,global | global,CSS-0119; CSS-0125,Repetição mantida: a cascata/contexto precisa ser avaliada antes de consolidar.
+style.css,.financeiro-vencidas .financeiro-conta-excluir,2,2012; 5003,global | global,CSS-0136; CSS-0305,Repetição mantida: a cascata/contexto precisa ser avaliada antes de consolidar.
+style.css,.financeiro-vencidas .financeiro-conta-excluir:hover,2,2035; 5022,global | global,CSS-0137; CSS-0306,Repetição mantida: a cascata/contexto precisa ser avaliada antes de consolidar.
+style.css,.estudo-conteudo,2,2137; 2890,global | global,CSS-0147; CSS-0183,Repetição mantida: a cascata/contexto precisa ser avaliada antes de consolidar.
+style.css,.card-estudo .estudo-semana-dia,2,2245; 5525,global | global,CSS-0154; CSS-0320,Repetição mantida: a cascata/contexto precisa ser avaliada antes de consolidar.
+style.css,.estudo-campo-pendencias,3,2365; 2420; 2486,global | global | global,; ; CSS-0165,Repetição mantida: a cascata/contexto precisa ser avaliada antes de consolidar.
+style.css,.estudo-area-direita,2,2795; 6608,global | global,CSS-0177; CSS-0353,Repetição mantida: a cascata/contexto precisa ser avaliada antes de consolidar.
+style.css,.card-financeiro .botao-comprovantes,2,3054; 4824,global | global,CSS-0193; CSS-0295,Repetição mantida: a cascata/contexto precisa ser avaliada antes de consolidar.
+style.css,.card-financeiro .financeiro-renda,2,3231; 4610,global | global,CSS-0196; CSS-0279,Repetição mantida: a cascata/contexto precisa ser avaliada antes de consolidar.
+style.css,.card-financeiro .financeiro-renda-conteudo,2,3279; 3394,global | global,CSS-0198; CSS-0203,Repetição mantida: a cascata/contexto precisa ser avaliada antes de consolidar.
+style.css,.card-financeiro .financeiro-indicador-prioritaria,2,3411; 4640,global | global,CSS-0205; CSS-0281,Repetição mantida: a cascata/contexto precisa ser avaliada antes de consolidar.
+style.css,".card-financeiro
+.financeiro-indicador-prioritaria
+.financeiro-indicador-rotulo",2,3478; 4660,global | global,CSS-0207; CSS-0282,Repetição mantida: a cascata/contexto precisa ser avaliada antes de consolidar.
+style.css,.card-financeiro .financeiro-indicador-pago,2,3548; 4687,global | global,CSS-0210; CSS-0284,Repetição mantida: a cascata/contexto precisa ser avaliada antes de consolidar.
+style.css,".card-financeiro
+.financeiro-indicador-pago
+.financeiro-indicador-rotulo",2,3615; 4707,global | global,CSS-0212; CSS-0285,Repetição mantida: a cascata/contexto precisa ser avaliada antes de consolidar.
+style.css,.card-financeiro .financeiro-atrasadas-designer,2,3732; 4720,global | global,CSS-0221; CSS-0286,Repetição mantida: a cascata/contexto precisa ser avaliada antes de consolidar.
+style.css,".card-financeiro
+.financeiro-atrasadas-designer
+.financeiro-indicador-rotulo",2,3837; 4740,global | global,CSS-0224; CSS-0287,Repetição mantida: a cascata/contexto precisa ser avaliada antes de consolidar.
+style.css,.card-financeiro .financeiro-indicador-valor-atrasado,2,3966; 4764,global | global,CSS-0233; CSS-0290,Repetição mantida: a cascata/contexto precisa ser avaliada antes de consolidar.
+style.css,".card-financeiro
+.financeiro-indicador-valor-atrasado
+.financeiro-indicador-rotulo",2,3989; 4784,global | global,CSS-0234; CSS-0291,Repetição mantida: a cascata/contexto precisa ser avaliada antes de consolidar.
+style.css,".card-financeiro
+.financeiro-indicador-valor-atrasado
+.financeiro-indicador-valor strong",2,4006; 4793,global | global,CSS-0236; CSS-0292,Repetição mantida: a cascata/contexto precisa ser avaliada antes de consolidar.
+style.css,.financeiro-conta .financeiro-conta-vencimento-rotulo,2,4029; 4116,global | global,CSS-0239; CSS-0245,Repetição mantida: a cascata/contexto precisa ser avaliada antes de consolidar.
+style.css,.financeiro-conta .financeiro-conta-data,2,4034; 4125,global | global,CSS-0240; CSS-0246,Repetição mantida: a cascata/contexto precisa ser avaliada antes de consolidar.
+style.css,.financeiro-conta .financeiro-conta-nome,2,4040; 4050,global | global,CSS-0241; CSS-0242,Repetição mantida: a cascata/contexto precisa ser avaliada antes de consolidar.
+style.css,.financeiro-conta .financeiro-conta-vencimento,2,4091; 4976,global | global,CSS-0244; CSS-0303,Repetição mantida: a cascata/contexto precisa ser avaliada antes de consolidar.
+style.css,.financeiro-conta .financeiro-conta-valor,2,4140; 4993,global | global,CSS-0247; CSS-0304,Repetição mantida: a cascata/contexto precisa ser avaliada antes de consolidar.
+style.css,.card-painel-novo,2,5650; 6122,global | global,CSS-0325; CSS-0329,Repetição mantida: a cascata/contexto precisa ser avaliada antes de consolidar.
+style.css,#card-rotina-pendente .rotina-pendencia-item,2,5850; 6597,global | global,; ,Repetição mantida: a cascata/contexto precisa ser avaliada antes de consolidar.
+style.css,.card-painel-novo .rotina-atividade,2,6157; 6210,global | global,CSS-0332; CSS-0334,Repetição mantida: a cascata/contexto precisa ser avaliada antes de consolidar.
+style.css,.card-central.card-painel-novo .rotina-identificacao > .painel-icone-neumo,2,6215; 6272,global | global,CSS-0335; CSS-0339,Repetição mantida: a cascata/contexto precisa ser avaliada antes de consolidar.
+style.css,.card-central.card-painel-novo .rotina-dia-status.neutro,2,6414; 6460,global | global,; ,Repetição mantida: a cascata/contexto precisa ser avaliada antes de consolidar.
+style.css,.card-central.card-painel-novo .rotina-dia-status.pendente,3,6426; 6477; 6511,global | global | global,; ; ,Repetição mantida: a cascata/contexto precisa ser avaliada antes de consolidar.
+style.css,.card-central.card-painel-novo .rotina-dia-status.concluido,3,6443; 6494; 6523,global | global | global,; ; ,Repetição mantida: a cascata/contexto precisa ser avaliada antes de consolidar.
+tema-dark.css,.cabecalho::before,2,53; 782,global | @media (max-width: 600px),DARK-0004; DARK-0088,Repetição mantida: a cascata/contexto precisa ser avaliada antes de consolidar.
+tema-dark.css,.logo-nome,2,71; 954,global | @media (max-width: 652px),DARK-0005; DARK-0112,Repetição mantida: a cascata/contexto precisa ser avaliada antes de consolidar.
+tema-dark.css,.perfil-usuario,2,114; 975,global | @media (max-width: 652px),DARK-0007; DARK-0115,Repetição mantida: a cascata/contexto precisa ser avaliada antes de consolidar.
+tema-dark.css,.painel-esquerdo,5,182; 199; 809; 1111; 1558,global | global | @media (max-width: 652px) | global | @media (min-width: 653px),DARK-0014; DARK-0015; DARK-0091; DARK-0131; DARK-0162,Repetição mantida: a cascata/contexto precisa ser avaliada antes de consolidar.
+tema-dark.css,.painel-esquerdo > .area-inferior-painel,2,264; 1576,global | @media (min-width: 653px),DARK-0023; DARK-0164,Repetição mantida: a cascata/contexto precisa ser avaliada antes de consolidar.
+tema-dark.css,.calendario,2,294; 939,global | @media (max-width: 652px),DARK-0027; DARK-0110,Repetição mantida: a cascata/contexto precisa ser avaliada antes de consolidar.
+tema-dark.css,.financeiro-vencidas,2,532; 880,global | @media (max-width: 652px),DARK-0055; DARK-0101,Repetição mantida: a cascata/contexto precisa ser avaliada antes de consolidar.
+tema-dark.css,.financeiro-conta,3,547; 885; 1025,global | @media (max-width: 652px) | @media (max-width: 652px),DARK-0057; DARK-0102; DARK-0122,Repetição mantida: a cascata/contexto precisa ser avaliada antes de consolidar.
+tema-dark.css,.financeiro-conta-icone,2,569; 1038,global | @media (max-width: 652px),DARK-0059; DARK-0124,Repetição mantida: a cascata/contexto precisa ser avaliada antes de consolidar.
+tema-dark.css,.estudo-area-direita,2,709; 925,global | @media (max-width: 652px),DARK-0078; DARK-0108,Repetição mantida: a cascata/contexto precisa ser avaliada antes de consolidar.
+tema-dark.css,.financeiro-indicadores,2,852; 997,@media (max-width: 652px) | @media (max-width: 652px),DARK-0097; DARK-0118,Repetição mantida: a cascata/contexto precisa ser avaliada antes de consolidar.
+tema-dark.css,.financeiro-lista-vencidas,2,1020; 3385,@media (max-width: 652px) | global,DARK-0121; DARK-0214,Repetição mantida: a cascata/contexto precisa ser avaliada antes de consolidar.
+tema-dark.css,header.cabecalho .logo-simbolo,2,1085; 1100,global | @media (max-width: 652px),DARK-0129; DARK-0130,Repetição mantida: a cascata/contexto precisa ser avaliada antes de consolidar.
+tema-dark.css,.acoes-cabecalho .notificacoes .icone-sino,2,1216; 1307,global | global,DARK-0137; DARK-0145,Repetição mantida: a cascata/contexto precisa ser avaliada antes de consolidar.
+tema-dark.css,.menu-principal > .botao-menu,2,1321; 1403,global | global,DARK-0146; DARK-0150,Repetição mantida: a cascata/contexto precisa ser avaliada antes de consolidar.
+tema-dark.css,.menu-principal > .botao-menu:hover,2,1349; 1414,global | global,DARK-0147; DARK-0151,Repetição mantida: a cascata/contexto precisa ser avaliada antes de consolidar.
+tema-dark.css,.card-estudo .estudo-atividade-dado > span,2,1695; 1707,global | global,DARK-0169; DARK-0170,Repetição mantida: a cascata/contexto precisa ser avaliada antes de consolidar.
+tema-dark.css,#card-rotina-pendente,3,1779; 1840; 2141,global | global | global,DARK-0172; DARK-0174; DARK-0189,Repetição mantida: a cascata/contexto precisa ser avaliada antes de consolidar.
+tema-dark.css,#card-rotina-pendente .rotina-pendencia-item,2,1794; 1935,global | global,; DARK-0182,Repetição mantida: a cascata/contexto precisa ser avaliada antes de consolidar.
+tema-dark.css,"#card-agenda-ontem .rotina-item-horario,
+#card-agenda-hoje .rotina-item-horario",3,1858; 2067; 2249,global | global | global,DARK-0175; ; ,Repetição mantida: a cascata/contexto precisa ser avaliada antes de consolidar.
+tema-dark.css,#card-rotina-pendente .rotina-pendencia-item > :nth-child(4),2,1960; 2182,global | global,; ,Repetição mantida: a cascata/contexto precisa ser avaliada antes de consolidar.
+tema-dark.css,"#card-agenda-ontem .rotina-item-horario .rotina-atividade,
+#card-agenda-hoje .rotina-item-horario .rotina-atividade",3,1969; 2076; 2225,global | global | global,DARK-0183; ; DARK-0195,Repetição mantida: a cascata/contexto precisa ser avaliada antes de consolidar.
+tema-dark.css,#card-rotina-pendente #lista-pendencias-rotina,4,2148; 2201; 2206; 3389,global | global | global | global,DARK-0190; DARK-0192; DARK-0193; ,Repetição mantida: a cascata/contexto precisa ser avaliada antes de consolidar.
+tema-dark.css,"#card-agenda-ontem #lista-agenda-ontem,
+#card-agenda-hoje #lista-agenda-hoje",3,2214; 2235; 3391,global | global | global,DARK-0194; DARK-0196; ,Repetição mantida: a cascata/contexto precisa ser avaliada antes de consolidar.
+tema-dark.css,#painel-compromisso,2,2276; 3007,global | @media (max-width: 650px),DARK-0198; ,Repetição mantida: a cascata/contexto precisa ser avaliada antes de consolidar.
+tema-dark.css,#painel-compromisso .compromisso-cabecalho,5,2309; 3038; 3091; 3134; 3172,global | global | global | global | @media (max-width: 650px),; DARK-0199; DARK-0200; DARK-0203; ,Repetição mantida: a cascata/contexto precisa ser avaliada antes de consolidar.
+tema-dark.css,#painel-compromisso .compromisso-identificacao,4,2320; 3044; 3103; 3183,global | global | global | @media (max-width: 650px),; ; ; ,Repetição mantida: a cascata/contexto precisa ser avaliada antes de consolidar.
+tema-dark.css,#painel-compromisso .compromisso-icone,2,2327; 3050,global | global,; ,Repetição mantida: a cascata/contexto precisa ser avaliada antes de consolidar.
+tema-dark.css,#painel-compromisso .compromisso-conteudo,4,2368; 3014; 3200; 3399,global | @media (max-width: 650px) | global | @media (max-width: 650px),; ; ; ,Repetição mantida: a cascata/contexto precisa ser avaliada antes de consolidar.
+tema-dark.css,#painel-compromisso .compromisso-coluna-lateral,2,2386; 3020,global | @media (max-width: 650px),; ,Repetição mantida: a cascata/contexto precisa ser avaliada antes de consolidar.
+tema-dark.css,#painel-compromisso .compromisso-lista-pendentes,2,2588; 3394,global | global,; ,Repetição mantida: a cascata/contexto precisa ser avaliada antes de consolidar.
+tema-dark.css,#painel-compromisso .compromisso-categorias,4,2632; 3024; 3143; 3191,global | @media (max-width: 650px) | global | @media (max-width: 650px),; ; ; ,Repetição mantida: a cascata/contexto precisa ser avaliada antes de consolidar.
+tema-dark.css,#painel-compromisso .compromisso-categoria,3,2641; 3111; 3154,global | global | global,; DARK-0201; ,Repetição mantida: a cascata/contexto precisa ser avaliada antes de consolidar.
+tema-dark.css,#painel-compromisso .compromisso-categoria-seta,2,2713; 3115,global | global,; ,Repetição mantida: a cascata/contexto precisa ser avaliada antes de consolidar.
+tema-dark.css,#painel-compromisso .compromisso-categoria-urgente > span:first-child,2,2728; 3228,global | global,; DARK-0206,Repetição mantida: a cascata/contexto precisa ser avaliada antes de consolidar.
+tema-dark.css,#painel-compromisso .compromisso-agenda,2,2734; 3029,global | @media (max-width: 650px),; ,Repetição mantida: a cascata/contexto precisa ser avaliada antes de consolidar.
+tema-dark.css,#painel-compromisso .compromisso-lista-eventos,2,2816; 3396,global | global,; ,Repetição mantida: a cascata/contexto precisa ser avaliada antes de consolidar.
+tema-dark.css,header.cabecalho::after,2,3704; 3724,global | @media (max-width: 600px),DARK-0220; ,Repetição mantida: a cascata/contexto precisa ser avaliada antes de consolidar.

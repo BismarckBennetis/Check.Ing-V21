@@ -1,0 +1,31 @@
+﻿arquivo_js,metodo,seletor_ou_alvo,correspondencias_html,esperado,status,observacao
+script.js,querySelector,.calendario-titulo,2,1,encontrado,Seletor literal localizado no contexto da função.
+script.js,querySelector,.calendario-ano,2,1,encontrado,Seletor literal localizado no contexto da função.
+script.js,querySelector,.calendario-dias-semana,2,1,encontrado,Seletor literal localizado no contexto da função.
+script.js,querySelector,.calendario-dias,2,1,encontrado,Seletor literal localizado no contexto da função.
+script.js,querySelectorAll,.calendario,2,0..n,encontrado,Seletor literal localizado no contexto da função.
+script.js,querySelector,.seta-anterior,2,1,encontrado,Seletor literal localizado no contexto da função.
+script.js,querySelector,.seta-proxima,2,1,encontrado,Seletor literal localizado no contexto da função.
+script.js,querySelector,.horario-valor,1,1,encontrado,Seletor literal localizado no contexto da função.
+script.js,querySelector,.data-valor,1,1,encontrado,Seletor literal localizado no contexto da função.
+script.js,querySelector,.data-dia,1,1,encontrado,Seletor literal localizado no contexto da função.
+script.js,querySelector,.data-mes,1,1,encontrado,Seletor literal localizado no contexto da função.
+script.js,querySelector,.data-ano,1,1,encontrado,Seletor literal localizado no contexto da função.
+script.js,querySelectorAll,.rotina-barra-horizontal[data-scroll-for],3,0..n,encontrado,Seletor literal localizado no contexto da função.
+script.js,querySelector,.rotina-barra-trilho,3,1,encontrado,Seletor literal localizado no contexto da função.
+script.js,querySelector,.rotina-barra-cursor,3,1,encontrado,Seletor literal localizado no contexto da função.
+script.js,querySelectorAll,.ci-scrollbar-vertical[data-scrollbar-for],13,0..n,encontrado,Seletor literal localizado no contexto da função.
+script.js,querySelector,.ci-scrollbar-trilho,13,1,encontrado,Seletor literal localizado no contexto da função.
+script.js,querySelector,.ci-scrollbar-cursor,13,1,encontrado,Seletor literal localizado no contexto da função.
+script.js,querySelectorAll,.menu-principal .botao-menu[aria-controls],5,0..n,encontrado,Seletor literal localizado no contexto da função.
+script.js,querySelector,.menu-lateral-pesquisa input[type='search'],1,1,encontrado,Seletor literal localizado no contexto da função.
+script.js,querySelectorAll,.menu-lateral-botoes .botao-menu-lateral,5,0..n,encontrado,Seletor literal localizado no contexto da função.
+script.js,querySelector,.menu-lateral-sem-resultados,1,1,encontrado,Seletor literal localizado no contexto da função.
+script.js,querySelector,identificador (parâmetro),2 chamadas conhecidas,2 chamadas conhecidas,dinâmico,Seleciona calendário por identificador passado à função preencherCalendario.
+script.js,getElementById,barra.dataset.scrollFor,3 alvos,3 alvos,dinâmico,JS-006: destino dinâmico da barra horizontal; associado a data-scroll-for.
+script.js,getElementById,barra.dataset.scrollbarFor,13 alvos,13 alvos,dinâmico,JS-007: destino dinâmico da barra vertical; associado a data-scrollbar-for.
+script.js,getElementById,destinoId (aria-controls),5 alvos,5 alvos,dinâmico,JS-008: destinos da navegação principal.
+script.js,querySelector/querySelectorAll,.menu-principal .botao-menu[aria-controls],5,1 ou mais,encontrado,Contratos de navegação superior adicionados na V20.
+script.js,querySelector/querySelectorAll,.menu-lateral-pesquisa input[type=search],1,1 ou mais,encontrado,Campo da pesquisa lateral.
+script.js,querySelector/querySelectorAll,.menu-lateral-botoes .botao-menu-lateral,5,1 ou mais,encontrado,Itens filtrados pela pesquisa lateral.
+script.js,querySelector/querySelectorAll,.menu-lateral-sem-resultados,1,1 ou mais,encontrado,Mensagem acessível quando nenhum item corresponde.

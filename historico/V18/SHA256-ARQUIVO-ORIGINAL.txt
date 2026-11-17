@@ -1,0 +1,4 @@
+Arquivo de origem: Check.In-v18(2).rar
+SHA-256: b20fee48e129b55f1a990f8af92eec5e6e6f695a8af94948f727eef37c279940
+
+Este é o pacote V18 original preservado para rollback. Nenhuma alteração foi feita nele.

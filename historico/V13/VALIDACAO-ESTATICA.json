@@ -1,0 +1,234 @@
+{
+  "html_parser_errors": [],
+  "dom_id_count": 10,
+  "duplicate_dom_ids": {},
+  "missing_local_resources": [],
+  "css": {
+    "style.css": {
+      "qualified_rules": 435,
+      "unique_selectors": 373,
+      "repeated_selector_count": 53,
+      "syntax_errors": [],
+      "duplicate_properties_within_rule": [],
+      "top_repeats": [
+        [
+          ".financeiro-indicador-icone",
+          [
+            1556,
+            1588,
+            1844,
+            1920
+          ]
+        ],
+        [
+          ".botao-comprovantes",
+          [
+            1783,
+            1851,
+            1943,
+            3034
+          ]
+        ],
+        [
+          ".financeiro-renda-rotulo",
+          [
+            1427,
+            1957,
+            4705
+          ]
+        ],
+        [
+          ".financeiro-indicador",
+          [
+            1504,
+            1820,
+            1865
+          ]
+        ],
+        [
+          ".financeiro-indicador-valor",
+          [
+            1546,
+            1837,
+            1896
+          ]
+        ],
+        [
+          ".icone-comprovantes",
+          [
+            1788,
+            1856,
+            1950
+          ]
+        ],
+        [
+          ".estudo-campo-pendencias",
+          [
+            2367,
+            2422,
+            2488
+          ]
+        ],
+        [
+          ".acoes-cabecalho",
+          [
+            168,
+            189
+          ]
+        ],
+        [
+          ".botao-menu-lateral",
+          [
+            940,
+            4439
+          ]
+        ],
+        [
+          ".botao-menu-lateral > span:not(.icone-menu-lateral)",
+          [
+            980,
+            4458
+          ]
+        ]
+      ]
+    },
+    "tema-dark.css": {
+      "qualified_rules": 136,
+      "unique_selectors": 129,
+      "repeated_selector_count": 6,
+      "syntax_errors": [],
+      "duplicate_properties_within_rule": [],
+      "top_repeats": [
+        [
+          ".painel-esquerdo",
+          [
+            182,
+            199,
+            1203
+          ]
+        ],
+        [
+          ".estudo-lista-atividades::-webkit-scrollbar-thumb",
+          [
+            659,
+            670
+          ]
+        ],
+        [
+          ".acoes-cabecalho .notificacoes .icone-sino",
+          [
+            1308,
+            1399
+          ]
+        ],
+        [
+          ".menu-principal > .botao-menu",
+          [
+            1413,
+            1495
+          ]
+        ],
+        [
+          ".menu-principal > .botao-menu:hover",
+          [
+            1441,
+            1506
+          ]
+        ],
+        [
+          ".card-estudo .estudo-atividade-dado > span",
+          [
+            1835,
+            1847
+          ]
+        ]
+      ]
+    }
+  },
+  "js_node_check": "passed (executed separately)",
+  "js_selectors": [
+    [
+      ".calendario-titulo",
+      2
+    ],
+    [
+      ".calendario-ano",
+      2
+    ],
+    [
+      ".calendario-dias-semana",
+      2
+    ],
+    [
+      ".calendario-dias",
+      2
+    ],
+    [
+      ".calendario",
+      2
+    ],
+    [
+      ".seta-anterior",
+      2
+    ],
+    [
+      ".seta-proxima",
+      2
+    ],
+    [
+      ".horario-valor",
+      1
+    ],
+    [
+      ".data-valor",
+      1
+    ],
+    [
+      ".data-dia",
+      1
+    ],
+    [
+      ".data-mes",
+      1
+    ],
+    [
+      ".data-ano",
+      1
+    ]
+  ],
+  "pdf_sha256": "e890250446b46c60f2d5fa86ed653fe8bb3ec0351b63ab3cdf80b7e126a7cb3a",
+  "file_stats": {
+    "index.html": {
+      "lines": 2559,
+      "bytes": 79069,
+      "markers": 86,
+      "unique_markers": 86,
+      "duplicates": {},
+      "numeric_max": 89
+    },
+    "style.css": {
+      "lines": 6360,
+      "bytes": 160975,
+      "markers": 355,
+      "unique_markers": 355,
+      "duplicates": {},
+      "numeric_max": 357
+    },
+    "tema-dark.css": {
+      "lines": 1852,
+      "bytes": 59284,
+      "markers": 176,
+      "unique_markers": 176,
+      "duplicates": {},
+      "numeric_max": 176
+    },
+    "script.js": {
+      "lines": 243,
+      "bytes": 7949,
+      "markers": 5,
+      "unique_markers": 5,
+      "duplicates": {},
+      "numeric_max": 5
+    }
+  }
+}

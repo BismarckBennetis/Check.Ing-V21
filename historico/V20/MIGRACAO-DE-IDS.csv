@@ -1,0 +1,737 @@
+﻿arquivo,ocorrencia_v19,ocorrencia_v20,marcador_v19,marcador_v20,REF,descricao,linha_v19,linha_v20,acao
+index.html,1,1,HTML-001,HTML-001,COMPONENT.ICON.SPRITE,CALENDÁRIO COM CONFIRMAÇÃO,34,34,mantido
+index.html,2,2,HTML-002,HTML-002,COMPONENT.ICON.CALENDAR.CONFIRMATION.SYMBOL,DEFINIÇÃO SVG,43,43,mantido
+index.html,3,3,HTML-003,HTML-003,APP.SIDEBAR.CLOCK.SYMBOL,RELÓGIO ANALÓGICO,84,84,mantido
+index.html,4,4,HTML-004,HTML-004,COMPONENT.ICON.TRASH.SYMBOL,SVG ORIGINAL PRESERVADO PARA REUSO,164,164,mantido
+index.html,5,5,HTML-005,HTML-005,APP.HEADER,"CABEÇALHO, LOGO E AÇÕES",219,219,mantido
+index.html,6,6,HTML-006,HTML-006,APP.HEADER.NOTIFICATIONS,SINO E CONTADOR,231,231,mantido
+index.html,7,7,HTML-007,HTML-007,APP.NAVIGATION.PRIMARY,NAVEGAÇÃO PRINCIPAL,338,338,mantido
+index.html,8,8,HTML-008,HTML-008,APP.LAYOUT,ESTRUTURA PRINCIPAL DA PÁGINA,607,607,mantido
+index.html,9,9,HTML-009,HTML-009,APP.SIDEBAR,PAINEL LATERAL,610,610,mantido
+index.html,10,10,HTML-010,HTML-010,APP.SIDEBAR.NAVIGATION,MENU LATERAL,612,612,mantido
+index.html,11,11,HTML-011,HTML-011,APP.SIDEBAR.ROUTINE.SEARCH -->,,615,615,mantido
+index.html,12,12,HTML-012,HTML-012,COMPONENT.ICON.CALENDAR.CONFIRMATION,CRIAR PLANO,672,672,mantido
+index.html,13,13,HTML-013,HTML-013,SIDEBAR.NAVIGATION.CREATE_PLAN.ICON,SVG DO BOTÃO,675,675,mantido
+index.html,,14,,HTML-014,APP.SIDEBAR.SEARCH.EMPTY_STATE,MENSAGEM SEM RESULTADOS,,866,novo marcador V20
+index.html,14,15,HTML-014,HTML-015,APP.SIDEBAR.CLOCK,HORÁRIO E DATA,868,871,renumerado
+index.html,15,16,HTML-015,HTML-016,COMPONENT.ICON.CLOCK.ANALOG,HORÁRIO,874,877,renumerado
+index.html,16,17,HTML-016,HTML-017,COMPONENT.ICON.CALENDAR.CONFIRMATION,DATA DO PAINEL ESQUERDO,896,899,renumerado
+index.html,17,18,HTML-017,HTML-018,APP.SIDEBAR.NOTIFICATIONS,CHAMADA E ÍCONE DE NOTIFICAÇÃO,919,922,renumerado
+index.html,18,19,HTML-018,HTML-019,APP.LAYOUT,ÁREA CENTRAL DE CONTEÚDO,990,993,renumerado
+index.html,19,20,HTML-019,HTML-020,APP.LAYOUT,GRADE DOS CARTÕES,992,995,renumerado
+index.html,20,21,HTML-020,HTML-021,PANEL.FINANCIAL,CARTÃO FINANCEIRO COMPLETO,995,998,renumerado
+index.html,21,22,HTML-021,HTML-022,PANEL.FINANCIAL.HEADER,CABEÇALHO FINANCEIRO,999,1002,renumerado
+index.html,22,23,HTML-022,HTML-023,PANEL.FINANCIAL.INDICATORS,GRADE DE INDICADORES,1027,1030,renumerado
+index.html,23,24,HTML-023,HTML-024,PANEL.FINANCIAL.INCOME,INDICADOR DE RENDA MENSAL,1030,1033,renumerado
+index.html,24,25,HTML-024,HTML-025,PANEL.FINANCIAL.PRIORITY,CONTA PRIORITÁRIA,1085,1088,renumerado
+index.html,25,26,HTML-025,HTML-026,PANEL.FINANCIAL.PAID,INDICADOR PAGO ESSE MÊS,1152,1155,renumerado
+index.html,26,27,HTML-026,HTML-027,PANEL.FINANCIAL.OVERDUE,CONTAS ATRASADAS,1215,1218,renumerado
+index.html,27,28,HTML-027,HTML-028,PANEL.FINANCIAL.OVERDUE_AMOUNT,VALOR ATRASADO,1272,1275,renumerado
+index.html,28,29,HTML-028,HTML-029,PANEL.FINANCIAL.RECEIPTS,BOTÃO COMPROVANTES,1325,1328,renumerado
+index.html,29,30,HTML-029,HTML-030,PANEL.FINANCIAL.BILLS_DUE,LISTA DE CONTAS VENCIDAS,1382,1385,renumerado
+index.html,30,31,HTML-030,HTML-031,PANEL.FINANCIAL.BILLS_DUE.ITEM,CONTA VENCIDA 1,1389,1392,renumerado
+index.html,31,32,HTML-031,HTML-032,PANEL.FINANCIAL.BILLS_DUE.ITEM,CONTA VENCIDA 2,1422,1425,renumerado
+index.html,32,33,HTML-032,HTML-033,PANEL.FINANCIAL.BILLS_DUE.ITEM,CONTA VENCIDA 3,1455,1458,renumerado
+index.html,33,34,HTML-033,HTML-034,PANEL.FINANCIAL.BILLS_DUE.ITEM,CONTA VENCIDA 4,1488,1491,renumerado
+index.html,34,35,HTML-034,HTML-035,PANEL.FINANCIAL.BILLS_DUE.ITEM,CONTA VENCIDA 5,1521,1524,renumerado
+index.html,35,36,HTML-035,HTML-036,COMPONENT.SCROLLBAR.VERTICAL.FINANCIAL.OVERDUE,BARRA VERTICAL INDEPENDENTE,1555,1558,renumerado
+index.html,36,37,HTML-036,HTML-037,PANEL.STUDY.ROOT,CARTÃO ESTUDO COMPLETO,1578,1581,renumerado
+index.html,37,38,HTML-037,HTML-038,PANEL.STUDY.HEADER,CABEÇALHO DO ESTUDO,1583,1586,renumerado
+index.html,38,39,HTML-038,HTML-039,PANEL.STUDY.HEADER.ICON,ÍCONE LIVRO,1586,1589,renumerado
+index.html,39,40,HTML-039,HTML-040,PANEL.STUDY.HEADER.MONTH,CARD DO MÊS,1642,1645,renumerado
+index.html,40,41,HTML-040,HTML-041,PANEL.STUDY.WEEK,MARCAÇÃO DOS DIAS DE ESTUDO,1673,1676,renumerado
+index.html,41,42,HTML-041,HTML-042,PANEL.STUDY.STUDY_DAYS.TITLE,TÍTULO DO CAMPO,1713,1716,renumerado
+index.html,42,43,HTML-042,HTML-043,PANEL.STUDY.STUDY_DAYS.ICON,ÍCONE CALENDÁRIO,1716,1719,renumerado
+index.html,43,44,HTML-043,HTML-044,PANEL.STUDY.STUDY_DAYS,LISTA DOS SETE DIAS,1723,1726,renumerado
+index.html,44,45,HTML-044,HTML-045,PANEL.STUDY.PENDING.TITLE,TÍTULO,1739,1742,renumerado
+index.html,45,46,HTML-045,HTML-046,PANEL.STUDY.PENDING.ICON,ÍCONE,1742,1745,renumerado
+index.html,46,47,HTML-046,HTML-047,PANEL.STUDY.PENDING,LISTA DOS SETE DIAS,1749,1752,renumerado
+index.html,47,48,HTML-047,HTML-048,PANEL.STUDY.PRIORITY,MATÉRIA PRIORITÁRIA,1769,1772,renumerado
+index.html,48,49,HTML-048,HTML-049,PANEL.STUDY.PRIORITY,ALFINETE VETORIAL,1773,1776,renumerado
+index.html,49,50,HTML-049,HTML-050,PANEL.STUDY.START_DATE.ICON,ÍCONE CALENDÁRIO,1836,1839,renumerado
+index.html,50,51,HTML-050,HTML-051,PANEL.STUDY.START_TIME.TITLE,TÍTULO,1847,1850,renumerado
+index.html,51,52,HTML-051,HTML-052,PANEL.STUDY.START_TIME.ICON,ÍCONE RELÓGIO,1850,1853,renumerado
+index.html,52,53,HTML-052,HTML-053,PANEL.STUDY.DAILY_HOURS.TITLE,TÍTULO,1863,1866,renumerado
+index.html,53,54,HTML-053,HTML-054,PANEL.STUDY.DAILY_HOURS.ICON,ÍCONE RELÓGIO,1866,1869,renumerado
+index.html,54,55,HTML-054,HTML-055,PANEL.STUDY.ACTIVITIES,LISTA DE ATIVIDADES,1917,1920,renumerado
+index.html,55,56,HTML-055,HTML-056,PANEL.STUDY.ACTIVITY_CARD,ATIVIDADE 1,1921,1924,renumerado
+index.html,56,57,HTML-056,HTML-057,PANEL.STUDY.ACTIVITY.ICON,ÍCONE LIVRO,1925,1928,renumerado
+index.html,57,58,HTML-057,HTML-058,PANEL.STUDY.ACTIVITY_CARD,ATIVIDADE 2,2028,2031,renumerado
+index.html,58,59,HTML-058,HTML-059,PANEL.STUDY.ACTIVITY.ICON,ÍCONE LIVRO,2032,2035,renumerado
+index.html,59,60,HTML-059,HTML-060,PANEL.STUDY.ACTIVITY_CARD,ATIVIDADE 3,2135,2138,renumerado
+index.html,60,61,HTML-060,HTML-061,PANEL.STUDY.ACTIVITY.ICON,ÍCONE LIVRO,2139,2142,renumerado
+index.html,61,62,HTML-061,HTML-062,COMPONENT.SCROLLBAR.VERTICAL.STUDY.ACTIVITIES,BARRA VERTICAL INDEPENDENTE,2243,2246,renumerado
+index.html,62,63,HTML-062,HTML-063,PANEL.ROUTINE.ROOT,PAINEL PRINCIPAL,2269,2272,renumerado
+index.html,63,64,HTML-063,HTML-064,PANEL.ROUTINE.HEADER,CABEÇALHO,2274,2277,renumerado
+index.html,64,65,HTML-064,HTML-065,PANEL.ROUTINE.HEADER.MONTH,CAMPO DO MÊS,2338,2341,renumerado
+index.html,65,66,HTML-065,HTML-066,PANEL.ROUTINE.WEEKLY,SELETOR: #card-rotina-semanal | SEMANAL,2369,2372,renumerado
+index.html,66,67,HTML-066,HTML-067,PANEL.ROUTINE.PENDING,SELETOR: #card-rotina-pendente | PENDÊNCIAS,2417,2420,renumerado
+index.html,67,68,HTML-067,HTML-068,COMPONENT.SCROLLBAR.VERTICAL.ROUTINE.PENDING,BARRA VERTICAL INDEPENDENTE,2461,2464,renumerado
+index.html,68,69,HTML-068,HTML-069,PANEL.ROUTINE.PENDING.SCROLLBAR,SELETOR: #barra-pendencias-rotina | BARRA INFERIOR DE PENDÊNCIAS,2481,2484,renumerado
+index.html,69,70,HTML-069,HTML-070,PANEL.ROUTINE.PERIOD.MORNING,MANHÃ,2509,2512,renumerado
+index.html,70,71,HTML-070,HTML-071,PANEL.ROUTINE.PERIOD.AFTERNOON,TARDE,2516,2519,renumerado
+index.html,71,72,HTML-071,HTML-072,PANEL.ROUTINE.PERIOD.NIGHT,NOITE,2523,2526,renumerado
+index.html,72,73,HTML-072,HTML-073,PANEL.ROUTINE.AGENDA.YESTERDAY,SELETOR: #card-agenda-ontem | AGENDA DE ONTEM,2533,2536,renumerado
+index.html,73,74,HTML-073,HTML-074,PANEL.ROUTINE.AGENDA.YESTERDAY.ITEM,LEITURA,2552,2555,renumerado
+index.html,74,75,HTML-074,HTML-075,PANEL.ROUTINE.AGENDA.YESTERDAY.ITEM,ESTUDO,2559,2562,renumerado
+index.html,75,76,HTML-075,HTML-076,PANEL.ROUTINE.AGENDA.YESTERDAY.ITEM,ALMOÇO,2566,2569,renumerado
+index.html,76,77,HTML-076,HTML-077,PANEL.ROUTINE.AGENDA.YESTERDAY.ITEM,LEITURA,2573,2576,renumerado
+index.html,77,78,HTML-077,HTML-078,PANEL.ROUTINE.AGENDA.YESTERDAY.ITEM,ACADEMIA,2580,2583,renumerado
+index.html,78,79,HTML-078,HTML-079,PANEL.ROUTINE.AGENDA.YESTERDAY.ITEM,MEDITAÇÃO,2587,2590,renumerado
+index.html,79,80,HTML-079,HTML-080,PANEL.ROUTINE.AGENDA.YESTERDAY.ITEM,DESCONECTAR,2594,2597,renumerado
+index.html,80,81,HTML-080,HTML-081,COMPONENT.SCROLLBAR.VERTICAL.ROUTINE.YESTERDAY,BARRA VERTICAL INDEPENDENTE,2603,2606,renumerado
+index.html,81,82,HTML-081,HTML-082,PANEL.ROUTINE.AGENDA.YESTERDAY.SCROLLBAR,SELETOR: #barra-agenda-ontem | BARRA INFERIOR DA AGENDA DE ONTEM,2623,2626,renumerado
+index.html,82,83,HTML-082,HTML-083,PANEL.ROUTINE.AGENDA.TODAY,SELETOR: #card-agenda-hoje | AGENDA DE HOJE,2647,2650,renumerado
+index.html,83,84,HTML-083,HTML-084,PANEL.ROUTINE.AGENDA.TODAY.ITEM,LEITURA,2668,2671,renumerado
+index.html,84,85,HTML-084,HTML-085,PANEL.ROUTINE.AGENDA.TODAY.ITEM,ESTUDO,2675,2678,renumerado
+index.html,85,86,HTML-085,HTML-086,PANEL.ROUTINE.AGENDA.TODAY.ITEM,ALMOÇO,2682,2685,renumerado
+index.html,86,87,HTML-086,HTML-087,PANEL.ROUTINE.AGENDA.TODAY.ITEM,LEITURA,2689,2692,renumerado
+index.html,87,88,HTML-087,HTML-088,PANEL.ROUTINE.AGENDA.TODAY.ITEM,ACADEMIA,2696,2699,renumerado
+index.html,88,89,HTML-088,HTML-089,PANEL.ROUTINE.AGENDA.TODAY.ITEM,MEDITAÇÃO,2703,2706,renumerado
+index.html,89,90,HTML-089,HTML-090,PANEL.ROUTINE.AGENDA.TODAY.ITEM,DESCONECTAR,2710,2713,renumerado
+index.html,90,91,HTML-090,HTML-091,COMPONENT.SCROLLBAR.VERTICAL.ROUTINE.TODAY,BARRA VERTICAL INDEPENDENTE,2719,2722,renumerado
+index.html,91,92,HTML-091,HTML-092,PANEL.ROUTINE.AGENDA.TODAY.SCROLLBAR,SELETOR: #barra-agenda-hoje | BARRA INFERIOR DA AGENDA DE HOJE,2739,2742,renumerado
+index.html,92,93,HTML-092,HTML-093,PANEL.COMMITMENT.ROOT,PAINEL DE COMPROMISSOS,2766,2769,renumerado
+index.html,93,94,HTML-093,HTML-094,PANEL.COMMITMENT.HEADER,CABEÇALHO,2773,2776,renumerado
+index.html,94,95,HTML-094,HTML-095,PANEL.COMMITMENT.CATEGORIES -->,,2825,2828,renumerado
+index.html,95,96,HTML-095,HTML-096,PANEL.COMMITMENT.CATEGORY.TODAY -->,,2829,2832,renumerado
+index.html,96,97,HTML-096,HTML-097,PANEL.COMMITMENT.CATEGORY.WEEKLY -->,,2846,2849,renumerado
+index.html,97,98,HTML-097,HTML-098,PANEL.COMMITMENT.CATEGORY.MONTHLY -->,,2863,2866,renumerado
+index.html,98,99,HTML-098,HTML-099,PANEL.COMMITMENT.CATEGORY.URGENT -->,,2880,2883,renumerado
+index.html,99,100,HTML-099,HTML-100,PANEL.COMMITMENT.CONTENT,QUATRO ÁREAS,2935,2938,renumerado
+index.html,100,101,HTML-100,HTML-101,PANEL.COMMITMENT.SIDEBAR -->,,2940,2943,renumerado
+index.html,101,102,HTML-101,HTML-102,PANEL.COMMITMENT.WEEKLY,RESUMO SEMANAL,2945,2948,renumerado
+index.html,102,103,HTML-102,HTML-103,PANEL.COMMITMENT.PENDING,PENDÊNCIAS,2992,2995,renumerado
+index.html,103,104,HTML-103,HTML-104,PANEL.COMMITMENT.PENDING.LIST -->,,3000,3003,renumerado
+index.html,104,105,HTML-104,HTML-105,PANEL.COMMITMENT.PENDING.ITEM.TEST -->,,3006,3009,renumerado
+index.html,105,106,HTML-105,HTML-106,PANEL.COMMITMENT.PENDING.ITEM.TEST -->,,3092,3095,renumerado
+index.html,106,107,HTML-106,HTML-107,COMPONENT.SCROLLBAR.VERTICAL.COMMITMENT.PENDING,BARRA VERTICAL INDEPENDENTE,3177,3180,renumerado
+index.html,107,108,HTML-107,HTML-108,PANEL.COMMITMENT.YESTERDAY -->,,3201,3204,renumerado
+index.html,108,109,HTML-108,HTML-109,PANEL.COMMITMENT.YESTERDAY.LIST -->,,3222,3225,renumerado
+index.html,109,110,HTML-109,HTML-110,PANEL.COMMITMENT.YESTERDAY.EVENT.CONSULTATION -->,,3226,3229,renumerado
+index.html,110,111,HTML-110,HTML-111,PANEL.COMMITMENT.YESTERDAY.EVENT.COLLEGE -->,,3359,3362,renumerado
+index.html,111,112,HTML-111,HTML-112,COMPONENT.SCROLLBAR.VERTICAL.COMMITMENT.YESTERDAY,BARRA VERTICAL INDEPENDENTE,3483,3486,renumerado
+index.html,112,113,HTML-112,HTML-113,PANEL.COMMITMENT.TODAY -->,,3507,3510,renumerado
+index.html,113,114,HTML-113,HTML-114,PANEL.COMMITMENT.TODAY.LIST -->,,3532,3535,renumerado
+index.html,114,115,HTML-114,HTML-115,PANEL.COMMITMENT.TODAY.EVENT.CONSULTATION -->,,3536,3539,renumerado
+index.html,115,116,HTML-115,HTML-116,PANEL.COMMITMENT.TODAY.EVENT.COLLEGE -->,,3659,3662,renumerado
+index.html,116,117,HTML-116,HTML-117,COMPONENT.SCROLLBAR.VERTICAL.COMMITMENT.TODAY,BARRA VERTICAL INDEPENDENTE,3783,3786,renumerado
+index.html,117,118,HTML-117,HTML-118,COMPONENT.SCROLLBAR.VERTICAL.COMMITMENT.CONTENT,BARRA VERTICAL INDEPENDENTE,3807,3810,renumerado
+index.html,118,119,HTML-118,HTML-119,PANEL.REMINDER.SUMMARY.CARDS -->,,3978,3981,renumerado
+index.html,119,120,HTML-119,HTML-120,PANEL.REMINDER.PENDING.LIST,LISTA ÚNICA DE PENDÊNCIAS,3989,3992,renumerado
+index.html,120,121,HTML-120,HTML-121,COMPONENT.SCROLLBAR.VERTICAL.REMINDER.PENDING,BARRA VERTICAL INDEPENDENTE,4268,4271,renumerado
+index.html,121,122,HTML-121,HTML-122,PANEL.REMINDER.YESTERDAY.LIST,LISTA ÚNICA DE ONTEM,4298,4301,renumerado
+index.html,122,123,HTML-122,HTML-123,COMPONENT.SCROLLBAR.VERTICAL.REMINDER.YESTERDAY,BARRA VERTICAL INDEPENDENTE,4573,4576,renumerado
+index.html,123,124,HTML-123,HTML-124,PANEL.REMINDER.TODAY.LIST,LISTA ÚNICA DE HOJE,4603,4606,renumerado
+index.html,124,125,HTML-124,HTML-125,COMPONENT.SCROLLBAR.VERTICAL.REMINDER.TODAY,BARRA VERTICAL INDEPENDENTE,4878,4881,renumerado
+index.html,125,126,HTML-125,HTML-126,PANEL.REMINDER.UPCOMING,CARD VISUAL DE PRÓXIMOS LEMBRETES,4902,4905,renumerado
+index.html,126,127,HTML-125,HTML-127,PANEL.CALENDAR,PAINEL DOS CALENDÁRIOS,5525,5528,renumerado
+index.html,127,128,HTML-126,HTML-128,PANEL.CALENDAR.CURRENT,CALENDÁRIO DO MÊS ATUAL,5529,5532,renumerado
+index.html,128,129,HTML-127,HTML-129,PANEL.CALENDAR.NEXT,CALENDÁRIO DO MÊS SEGUINTE,5566,5569,renumerado
+index.html,129,130,HTML-129,HTML-130,APP.FOOTER,RODAPÉ,5621,5624,renumerado
+index.html,130,131,HTML-130,HTML-131,PANEL.CALENDAR.SCRIPT,CARREGAMENTO DO JAVASCRIPT,5627,5630,renumerado
+style.css,1,1,CSS-0001,CSS-001,APP.BASE,SELETOR: :root,5,5,mantido
+style.css,2,2,CSS-0002,CSS-002,APP.BASE,SELETOR: *,22,22,mantido
+style.css,3,3,CSS-0003,CSS-003,APP.BASE,SELETOR: body,29,29,mantido
+style.css,4,4,CSS-0004,CSS-004,APP.HEADER,SELETOR: .cabecalho,40,40,mantido
+style.css,5,5,CSS-0005,CSS-005,APP.HEADER,SELETOR: .cabecalho::before,61,61,mantido
+style.css,6,6,CSS-0006,CSS-006,APP.HEADER,SELETOR: .logo,84,84,mantido
+style.css,7,7,CSS-0007,CSS-007,APP.HEADER,SELETOR: .logo-simbolo,101,101,mantido
+style.css,8,8,CSS-0008,CSS-008,APP.HEADER,SELETOR: .logo-nome,120,120,mantido
+style.css,9,9,CSS-0009,CSS-009,APP.HEADER,SELETOR: .cabecalho | @media (max-width: 480px),139,139,mantido
+style.css,10,10,CSS-0010,CSS-010,APP.HEADER,SELETOR: .logo | @media (max-width: 480px),144,144,mantido
+style.css,11,11,CSS-0011,CSS-011,APP.HEADER,SELETOR: .logo-simbolo | @media (max-width: 480px),149,149,mantido
+style.css,12,12,CSS-0012,CSS-012,APP.HEADER,SELETOR: .logo-nome | @media (max-width: 480px),156,156,mantido
+style.css,13,13,CSS-0013,CSS-013,APP.HEADER,SELETOR: .acoes-cabecalho,167,167,mantido
+style.css,14,14,CSS-0014,CSS-014,APP.HEADER,SELETOR: .acoes-cabecalho,188,188,mantido
+style.css,15,15,CSS-0015,CSS-015,APP.BASE,SELETOR: .notificacoes,212,212,mantido
+style.css,16,16,CSS-0016,CSS-016,APP.HEADER,SELETOR: .icone-sino,245,245,mantido
+style.css,17,17,CSS-0017,CSS-017,APP.HEADER,SELETOR: .contador-notificacao,264,264,mantido
+style.css,18,18,CSS-0018,CSS-018,APP.HEADER,SELETOR: .perfil-usuario,306,306,mantido
+style.css,19,19,CSS-0019,CSS-019,APP.BASE,SELETOR: .perfil-cabeca,332,332,mantido
+style.css,20,20,CSS-0020,CSS-020,APP.BASE,SELETOR: .perfil-corpo,358,358,mantido
+style.css,21,21,CSS-0021,CSS-021,APP.NAVIGATION.PRIMARY,SELETOR: .menu-principal,384,384,mantido
+style.css,22,22,CSS-0022,CSS-022,APP.NAVIGATION.PRIMARY,SELETOR: .botao-menu,409,409,mantido
+style.css,23,23,CSS-0023,CSS-023,APP.BASE,SELETOR: .botao-icone,461,461,mantido
+style.css,24,24,CSS-0024,CSS-024,APP.BASE,SELETOR: .botao-texto,479,479,mantido
+style.css,25,25,CSS-0025,CSS-025,APP.NAVIGATION.PRIMARY,SELETOR: .botao-menu:hover,492,492,mantido
+style.css,26,26,CSS-0026,CSS-026,APP.NAVIGATION.PRIMARY,SELETOR: .botao-menu:hover .botao-icone,517,517,mantido
+style.css,27,27,CSS-0027,CSS-027,APP.NAVIGATION.PRIMARY,SELETOR: .botao-menu:focus-visible,529,529,mantido
+style.css,28,28,CSS-0028,CSS-028,APP.NAVIGATION.PRIMARY,SELETOR: .menu-principal | @media (max-width: 600px),544,544,mantido
+style.css,29,29,CSS-0029,CSS-029,APP.NAVIGATION.PRIMARY,SELETOR: .botao-menu | @media (max-width: 600px),552,552,mantido
+style.css,30,30,CSS-0030,CSS-030,APP.LAYOUT,SELETOR: .conteudo-principal,569,569,mantido
+style.css,31,31,CSS-0031,CSS-031,PANEL.CALENDAR,SELETOR: .painel-calendarios,583,585,mantido
+style.css,32,32,CSS-0032,CSS-032,PANEL.CALENDAR,SELETOR: .calendario,602,604,mantido
+style.css,33,33,CSS-0033,CSS-033,PANEL.CALENDAR,SELETOR: .calendario-titulo,627,629,mantido
+style.css,34,34,CSS-0034,CSS-034,PANEL.CALENDAR,"SELETOR: .calendario-dias-semana, .calendario-dias",653,655,mantido
+style.css,35,35,CSS-0035,CSS-035,PANEL.CALENDAR,SELETOR: .calendario-dias,669,671,mantido
+style.css,36,36,CSS-0036,CSS-036,PANEL.CALENDAR,,670,672,mantido
+style.css,37,37,CSS-0037,CSS-037,PANEL.CALENDAR,,673,675,mantido
+style.css,38,38,CSS-0038,CSS-038,PANEL.CALENDAR,SELETOR: .calendario-dias-semana,692,694,mantido
+style.css,39,39,CSS-0039,CSS-039,PANEL.CALENDAR,SELETOR: .calendario-dia,720,722,mantido
+style.css,40,40,CSS-0040,CSS-040,PANEL.CALENDAR,SELETOR: .calendario-dia.hoje,748,750,mantido
+style.css,41,41,CSS-0041,CSS-041,APP.LAYOUT,SELETOR: .conteudo-principal | @media (max-width: 652px),762,764,mantido
+style.css,42,42,CSS-0042,CSS-042,PANEL.CALENDAR,SELETOR: .painel-calendarios | @media (max-width: 652px),770,772,mantido
+style.css,43,43,CSS-0043,CSS-043,APP.LAYOUT,SELETOR: .area-conteudo,785,787,mantido
+style.css,44,44,CSS-0044,CSS-044,PANEL.CALENDAR,SELETOR: .calendario-cabecalho,811,805,mantido
+style.css,45,45,CSS-0045,CSS-045,PANEL.CALENDAR,SELETOR: .calendario-cabecalho .calendario-ano,828,822,mantido
+style.css,46,46,CSS-0046,CSS-046,PANEL.CALENDAR,SELETOR: .calendario-cabecalho .seta-calendario,844,838,mantido
+style.css,47,47,CSS-0047,CSS-047,PANEL.CALENDAR,SELETOR: .calendario-ano,852,846,mantido
+style.css,48,48,CSS-0048,CSS-048,PANEL.CALENDAR,SELETOR: .seta-calendario,876,870,mantido
+style.css,49,49,CSS-0049,CSS-049,PANEL.CALENDAR,SELETOR: .seta-calendario:hover,913,907,mantido
+style.css,50,50,CSS-0050,CSS-050,PANEL.CALENDAR,SELETOR: .seta-calendario:focus-visible,922,916,mantido
+style.css,51,51,CSS-0051,CSS-051,PANEL.CALENDAR,SELETOR: .calendario-dia.dia-passado,931,925,mantido
+style.css,52,52,CSS-0052,CSS-052,APP.SIDEBAR,SELETOR: .botao-menu-lateral,943,937,mantido
+style.css,53,53,CSS-0053,CSS-053,APP.SIDEBAR,SELETOR: .botao-menu-lateral > span:not(.icone-menu-lateral),983,977,mantido
+style.css,54,54,CSS-0054,CSS-054,APP.SIDEBAR,SELETOR: .botao-menu-lateral::after,998,992,mantido
+style.css,55,55,CSS-0055,CSS-055,APP.SIDEBAR,SELETOR: .botao-menu-lateral:hover > .icone-menu-lateral,1015,1009,mantido
+style.css,56,56,CSS-0056,CSS-056,APP.SIDEBAR,SELETOR: .botao-menu-lateral:hover > svg,1021,1015,mantido
+style.css,57,57,CSS-0057,CSS-057,APP.SIDEBAR,SELETOR: .botao-menu-lateral:focus-visible,1027,1021,mantido
+style.css,58,58,CSS-0058,CSS-058,APP.SIDEBAR,SELETOR: .botao-menu-lateral:hover,1034,1028,mantido
+style.css,59,59,CSS-0059,CSS-059,APP.SIDEBAR,SELETOR: .botao-menu-lateral:hover::before,1101,1095,mantido
+style.css,60,60,CSS-0060,CSS-060,APP.SIDEBAR,SELETOR: .botao-menu-lateral:hover > span,1108,1102,mantido
+style.css,61,61,CSS-0061,CSS-061,APP.SIDEBAR,SELETOR: .botao-menu-lateral:hover::after,1115,1109,mantido
+style.css,62,62,CSS-0062,CSS-062,APP.SIDEBAR,SELETOR: .menu-lateral,1123,1117,mantido
+style.css,63,63,CSS-0063,CSS-063,APP.SIDEBAR,SELETOR: .icone-menu-lateral,1134,1128,mantido
+style.css,64,64,CSS-0064,CSS-064,APP.SIDEBAR,SELETOR: .botao-menu-lateral > svg,1148,1142,mantido
+style.css,65,65,CSS-0065,CSS-065,APP.SIDEBAR,SELETOR: .menu-lateral .botao-menu-lateral:last-child .icone-menu-lateral,1161,1155,mantido
+style.css,66,66,CSS-0066,CSS-066,APP.SIDEBAR,SELETOR: .painel-esquerdo,1177,1171,mantido
+style.css,67,67,CSS-0067,CSS-067,APP.SIDEBAR,SELETOR: .painel-esquerdo .menu-lateral,1197,1191,mantido
+style.css,68,68,CSS-0068,CSS-068,APP.SIDEBAR,SELETOR: .area-inferior-painel,1205,1199,mantido
+style.css,69,69,CSS-0069,CSS-069,APP.SIDEBAR,"SELETOR: .horario-painel, .data-painel",1210,1204,mantido
+style.css,70,70,CSS-0070,CSS-070,APP.SIDEBAR,SELETOR: .area-inferior-painel .horario-painel,1226,1220,mantido
+style.css,71,71,CSS-0071,CSS-071,APP.SIDEBAR,SELETOR: .notificacao-titulo,1232,1226,mantido
+style.css,72,72,CSS-0072,CSS-072,APP.FOOTER,SELETOR: .rodape,1251,1245,mantido
+style.css,73,73,CSS-0073,CSS-073,APP.FOOTER,SELETOR: .rodape-destaque,1261,1255,mantido
+style.css,74,74,CSS-0074,CSS-074,APP.FOOTER,SELETOR: .rodape::before,1267,1261,mantido
+style.css,75,75,CSS-0075,CSS-075,APP.LAYOUT,SELETOR: .grade-cards,1280,1274,mantido
+style.css,76,76,CSS-0076,CSS-076,APP.LAYOUT,SELETOR: .card-central,1291,1285,mantido
+style.css,77,77,CSS-0077,CSS-077,PANEL.FINANCIAL,SELETOR: .card-financeiro,1318,1312,mantido
+style.css,78,78,CSS-0078,CSS-078,PANEL.FINANCIAL,SELETOR: .financeiro-cabecalho,1331,1325,mantido
+style.css,79,79,CSS-0079,CSS-079,PANEL.FINANCIAL,EST-CARD,1340,1334,mantido
+style.css,80,80,CSS-0080,CSS-080,PANEL.FINANCIAL,SELETOR: .financeiro-mes-card .financeiro-mes,1369,1363,mantido
+style.css,81,81,CSS-0081,CSS-081,APP.BASE,SELETOR: .financeiro-identificacao,1374,1368,mantido
+style.css,82,82,CSS-0082,CSS-082,PANEL.FINANCIAL,SELETOR: .card-financeiro .titulo-card,1387,1381,mantido
+style.css,83,83,CSS-0083,CSS-083,PANEL.FINANCIAL,SELETOR: .financeiro-icone,1394,1388,mantido
+style.css,84,84,CSS-0084,CSS-084,PANEL.FINANCIAL.INCOME,SELETOR: .financeiro-renda-rotulo,1439,1433,mantido
+style.css,85,85,CSS-0085,CSS-085,PANEL.FINANCIAL,SELETOR: .financeiro-progresso,1451,1445,mantido
+style.css,86,86,CSS-0086,CSS-086,PANEL.FINANCIAL,SELETOR: .financeiro-progresso-trilho,1463,1457,mantido
+style.css,87,87,CSS-0087,CSS-087,PANEL.FINANCIAL,SELETOR: .financeiro-progresso-preenchimento,1473,1467,mantido
+style.css,88,88,CSS-0088,CSS-088,PANEL.FINANCIAL,SELETOR: .financeiro-progresso-percentual,1482,1476,mantido
+style.css,89,89,CSS-0089,CSS-089,PANEL.FINANCIAL,SELETOR: .financeiro-indicadores,1491,1485,mantido
+style.css,90,90,CSS-0090,CSS-090,PANEL.FINANCIAL.PRIORITY,"SELETOR: .financeiro-indicador-pago, .financeiro-indicador-prioritaria, .financeiro-indicador-atrasadas",1502,1496,mantido
+style.css,91,91,CSS-0091,CSS-091,PANEL.FINANCIAL.OVERDUE_AMOUNT,SELETOR: .financeiro-indicador-valor-atrasado,1509,1503,mantido
+style.css,92,92,CSS-0092,CSS-092,PANEL.FINANCIAL,SELETOR: .financeiro-indicador,1516,1510,mantido
+style.css,93,93,CSS-0093,CSS-093,PANEL.FINANCIAL,SELETOR: .financeiro-indicador-rotulo,1537,1531,mantido
+style.css,94,94,CSS-0094,CSS-094,PANEL.FINANCIAL.PAID,SELETOR: .financeiro-indicador-pago .financeiro-indicador-rotulo,1553,1547,mantido
+style.css,95,95,CSS-0095,CSS-095,PANEL.FINANCIAL,SELETOR: .financeiro-indicador-valor,1558,1552,mantido
+style.css,96,96,CSS-0096,CSS-096,PANEL.FINANCIAL,SELETOR: .financeiro-indicador-valor strong,1563,1557,mantido
+style.css,97,97,CSS-0097,CSS-097,PANEL.FINANCIAL,SELETOR: .financeiro-indicador-icone,1568,1562,mantido
+style.css,98,98,CSS-0098,CSS-098,PANEL.FINANCIAL.PRIORITY,SELETOR: .financeiro-alfinete-icone,1584,1578,mantido
+style.css,99,99,CSS-0099,CSS-099,PANEL.FINANCIAL,SELETOR: .financeiro-indicador-icone,1600,1594,mantido
+style.css,100,100,CSS-0100,CSS-100,PANEL.FINANCIAL,SELETOR: .financeiro-indicador-icone-verde,1613,1607,mantido
+style.css,101,101,CSS-0101,CSS-101,PANEL.FINANCIAL.BILLS_DUE,SELETOR: .financeiro-vencidas,1618,1612,mantido
+style.css,102,102,CSS-0102,CSS-102,PANEL.FINANCIAL.BILLS_DUE,SELETOR: .financeiro-vencidas-titulo,1636,1630,mantido
+style.css,103,103,CSS-0103,CSS-103,APP.BASE,SELETOR: .financeiro-lista-vencidas,1657,1651,mantido
+style.css,104,104,CSS-0104,CSS-104,PANEL.FINANCIAL.BILLS_DUE,SELETOR: .financeiro-conta,1671,1665,mantido
+style.css,105,105,CSS-0105,CSS-105,PANEL.FINANCIAL.BILLS_DUE,SELETOR: .financeiro-conta-nome,1693,1687,mantido
+style.css,106,106,CSS-0106,CSS-106,PANEL.FINANCIAL.BILLS_DUE,SELETOR: .financeiro-conta-icone,1702,1696,mantido
+style.css,107,107,CSS-0107,CSS-107,PANEL.FINANCIAL.BILLS_DUE,SELETOR: .financeiro-conta-vencimento,1726,1720,mantido
+style.css,108,108,CSS-0108,CSS-108,PANEL.FINANCIAL.BILLS_DUE,SELETOR: .financeiro-conta-vencimento-rotulo,1749,1743,mantido
+style.css,109,109,CSS-0109,CSS-109,PANEL.FINANCIAL.BILLS_DUE,SELETOR: .financeiro-conta-data,1755,1749,mantido
+style.css,110,110,CSS-0110,CSS-110,PANEL.FINANCIAL.BILLS_DUE,SELETOR: .financeiro-conta-valor,1763,1757,mantido
+style.css,111,111,CSS-0111,CSS-111,APP.BASE,SELETOR: .financeiro-valor-prefixo,1782,1776,mantido
+style.css,112,112,CSS-0112,CSS-112,APP.BASE,SELETOR: .financeiro-valor-inteiro,1787,1781,mantido
+style.css,113,113,CSS-0113,CSS-113,COMPONENT.PANEL.TITLE,SELETOR: .titulo-card,1792,1786,mantido
+style.css,114,114,CSS-0114,CSS-114,PANEL.FINANCIAL.RECEIPTS,SELETOR: .botao-comprovantes,1803,1797,mantido
+style.css,115,115,CSS-0115,CSS-115,PANEL.FINANCIAL.RECEIPTS,SELETOR: .icone-comprovantes,1808,1802,mantido
+style.css,116,116,CSS-0116,CSS-116,PANEL.FINANCIAL.RECEIPTS,SELETOR: .botao-comprovantes:hover,1815,1809,mantido
+style.css,117,117,CSS-0117,CSS-117,PANEL.FINANCIAL.PRIORITY,"SELETOR: .financeiro-indicador-pago, .financeiro-indicador-prioritaria, .financeiro-indicador-atrasadas, .financeiro-indicador-valor-atrasado, .botao-comprovantes",1823,1817,mantido
+style.css,118,118,CSS-0118,CSS-118,PANEL.FINANCIAL,SELETOR: .financeiro-indicador,1840,1834,mantido
+style.css,119,119,CSS-0119,CSS-119,PANEL.FINANCIAL.INCOME,"SELETOR: .financeiro-renda-rotulo, .financeiro-indicador-rotulo",1849,1843,mantido
+style.css,120,120,CSS-0120,CSS-120,PANEL.FINANCIAL,SELETOR: .financeiro-indicador-valor,1857,1851,mantido
+style.css,121,121,CSS-0121,CSS-121,PANEL.FINANCIAL,SELETOR: .financeiro-indicador-icone,1864,1858,mantido
+style.css,122,122,CSS-0122,CSS-122,PANEL.FINANCIAL.RECEIPTS,SELETOR: .botao-comprovantes,1871,1865,mantido
+style.css,123,123,CSS-0123,CSS-123,PANEL.FINANCIAL.RECEIPTS,SELETOR: .icone-comprovantes,1876,1870,mantido
+style.css,124,124,CSS-0124,CSS-124,PANEL.FINANCIAL,SELETOR: .financeiro-indicador,1885,1879,mantido
+style.css,125,125,CSS-0125,CSS-125,PANEL.FINANCIAL.INCOME,"SELETOR: .financeiro-renda-rotulo, .financeiro-indicador-rotulo",1896,1890,mantido
+style.css,126,126,CSS-0126,CSS-126,PANEL.FINANCIAL,SELETOR: .financeiro-indicador-valor,1917,1911,mantido
+style.css,127,127,CSS-0127,CSS-127,PANEL.FINANCIAL,SELETOR: .financeiro-indicador-valor strong,1927,1921,mantido
+style.css,128,128,CSS-0128,CSS-128,PANEL.FINANCIAL,SELETOR: .financeiro-indicador-icone,1941,1935,mantido
+style.css,129,129,CSS-0129,CSS-129,PANEL.FINANCIAL.RECEIPTS,SELETOR: .botao-comprovantes,1964,1958,mantido
+style.css,130,130,CSS-0130,CSS-130,PANEL.FINANCIAL.INCOME,SELETOR: .financeiro-renda-rotulo,1972,1966,mantido
+style.css,131,131,CSS-0131,CSS-131,PANEL.FINANCIAL.PRIORITY,"SELETOR: .financeiro-indicador-valor .financeiro-indicador-icone, .financeiro-indicador-valor .financeiro-alfinete-icone, .botao-comprovantes .icone-comprovantes",1979,1973,mantido
+style.css,132,132,CSS-0132,CSS-132,PANEL.FINANCIAL,SELETOR: .financeiro-indicador-valor .financeiro-indicador-icone,1990,1984,mantido
+style.css,133,133,CSS-0133,CSS-133,PANEL.FINANCIAL.PRIORITY,SELETOR: .financeiro-indicador-valor .financeiro-alfinete-icone,1998,1992,mantido
+style.css,134,134,CSS-0134,CSS-134,PANEL.FINANCIAL.RECEIPTS,SELETOR: .botao-comprovantes .icone-comprovantes,2005,1999,mantido
+style.css,135,135,CSS-0135,CSS-135,PANEL.FINANCIAL,SELETOR: .financeiro-mes,2017,2011,mantido
+style.css,136,136,CSS-0136,CSS-136,PANEL.FINANCIAL.BILLS_DUE,SELETOR: .financeiro-vencidas .financeiro-conta-excluir,2029,2023,mantido
+style.css,137,137,CSS-0137,CSS-137,PANEL.FINANCIAL.BILLS_DUE,SELETOR: .financeiro-vencidas .financeiro-conta-excluir:hover,2052,2046,mantido
+style.css,138,138,CSS-0138,CSS-138,PANEL.FINANCIAL.BILLS_DUE,SELETOR: .financeiro-vencidas .financeiro-conta-excluir svg,2058,2052,mantido
+style.css,139,139,CSS-0139,CSS-139,PANEL.STUDY.HEADER,SELETOR: .estudo-cabecalho,2067,2061,mantido
+style.css,140,140,CSS-0140,CSS-140,PANEL.STUDY.HEADER.IDENTITY,SELETOR: .estudo-identificacao,2083,2077,mantido
+style.css,141,141,CSS-0141,CSS-141,PANEL.STUDY.HEADER.ICON,SELETOR: .estudo-icone,2092,2086,mantido
+style.css,142,142,CSS-0142,CSS-142,PANEL.STUDY.HEADER.TITLE,SELETOR: .card-estudo .titulo-card,2107,2101,mantido
+style.css,143,143,CSS-0143,CSS-143,PANEL.STUDY.HEADER.PROGRESS,SELETOR: .estudo-progresso,2113,2107,mantido
+style.css,144,144,CSS-0144,CSS-144,PANEL.STUDY.HEADER.PROGRESS.TRACK,SELETOR: .estudo-progresso-trilho,2125,2119,mantido
+style.css,145,145,CSS-0145,CSS-145,PANEL.STUDY.HEADER.PROGRESS.FILL,SELETOR: .estudo-progresso-preenchimento,2135,2129,mantido
+style.css,146,146,CSS-0146,CSS-146,PANEL.STUDY.HEADER.PROGRESS.VALUE,SELETOR: .estudo-progresso-percentual,2144,2138,mantido
+style.css,147,147,CSS-0147,CSS-147,PANEL.STUDY,SELETOR: .estudo-conteudo,2154,2148,mantido
+style.css,148,148,CSS-0148,CSS-148,PANEL.STUDY,"SELETOR: .estudo-area-esquerda, .estudo-area-direita",2163,2157,mantido
+style.css,149,149,CSS-0149,CSS-149,COMPONENT.ACTION.DETAILS_BUTTON,SELETOR: .botao-detalhes,2171,2165,mantido
+style.css,150,150,CSS-0150,CSS-150,COMPONENT.ACTION.DETAILS_BUTTON.HOVER,SELETOR: .botao-detalhes:hover,2236,2230,mantido
+style.css,151,151,CSS-0151,CSS-151,COMPONENT.ACTION.DETAILS_BUTTON.ARROW,SELETOR: .botao-detalhes > span,2257,2251,mantido
+style.css,152,152,CSS-0152,CSS-152,PANEL.STUDY,SELETOR: .estudo-area-esquerda,2276,2270,mantido
+style.css,153,153,CSS-0153,CSS-153,PANEL.STUDY,SELETOR: .estudo-semana,2285,2279,mantido
+style.css,154,154,CSS-0154,CSS-154,PANEL.STUDY,SELETOR: .estudo-semana-dia,2314,2308,mantido
+style.css,155,155,CSS-0155,CSS-155,PANEL.STUDY,SELETOR: .estudo-dia-circulo,2332,2326,mantido
+style.css,156,156,CSS-0156,CSS-156,PANEL.STUDY,SELETOR: .estudo-dia-circulo.neutro,2359,2353,mantido
+style.css,157,157,CSS-0157,CSS-157,PANEL.STUDY,SELETOR: .estudo-dia-circulo.pendente,2377,2371,mantido
+style.css,158,158,CSS-0158,CSS-158,PANEL.STUDY,SELETOR: .estudo-dia-circulo.concluido,2395,2389,mantido
+style.css,159,159,CSS-0159,CSS-159,PANEL.STUDY,SELETOR: .estudo-campo,2413,2407,mantido
+style.css,160,160,CSS-0160,CSS-160,PANEL.STUDY,SELETOR: .estudo-campo-rotulo,2504,2498,mantido
+style.css,161,161,CSS-0161,CSS-161,PANEL.STUDY,SELETOR: .estudo-campo-icone,2522,2516,mantido
+style.css,162,162,CSS-0162,CSS-162,PANEL.STUDY,SELETOR: .estudo-campo-texto,2535,2529,mantido
+style.css,163,163,CSS-0163,CSS-163,PANEL.STUDY,SELETOR: .estudo-campo-texto strong,2544,2538,mantido
+style.css,164,164,CSS-0164,CSS-164,PANEL.STUDY,"SELETOR: .estudo-campo-pendencias .estudo-campo-rotulo, .estudo-campo-pendencias .estudo-campo-icone, .estudo-campo-pendencias .estudo-campo-texto",2549,2543,mantido
+style.css,165,165,CSS-0165,CSS-165,PANEL.STUDY,SELETOR: .estudo-campo-pendencias,2556,2550,mantido
+style.css,166,166,CSS-0166,CSS-166,PANEL.STUDY,SELETOR: .estudo-area-central,2564,2558,mantido
+style.css,167,167,CSS-0167,CSS-167,PANEL.STUDY,SELETOR: .estudo-prioridade,2575,2569,mantido
+style.css,168,168,CSS-0168,CSS-168,PANEL.STUDY,SELETOR: .estudo-prioridade-rotulo,2598,2592,mantido
+style.css,169,169,CSS-0169,CSS-169,PANEL.STUDY,ALFINETE DE PRIORIDADE,2615,2609,mantido
+style.css,170,170,CSS-0170,CSS-170,PANEL.STUDY.PRIORITY,SELETOR: .estudo-prioridade-texto,2636,2630,mantido
+style.css,171,171,CSS-0171,CSS-171,PANEL.STUDY.START_DATE,SELETOR: .estudo-data-inicio,2651,2645,mantido
+style.css,172,172,CSS-0172,CSS-172,PANEL.STUDY.START_TIME,SELETOR: .estudo-horario-inicio,2712,2706,mantido
+style.css,173,173,CSS-0173,CSS-173,PANEL.STUDY.DAILY_HOURS,SELETOR: .estudo-horas-diarias,2771,2765,mantido
+style.css,174,174,CSS-0174,CSS-174,PANEL.STUDY,SELETOR: .estudo-botao-metas,2830,2824,mantido
+style.css,175,175,CSS-0175,CSS-175,PANEL.STUDY,SELETOR: .estudo-botao-metas:hover,2858,2852,mantido
+style.css,176,176,CSS-0176,CSS-176,PANEL.STUDY,"SELETOR: .estudo-data-inicio .estudo-campo-texto, .estudo-horario-inicio .estudo-campo-texto, .estudo-horas-diarias .estudo-campo-texto",2864,2858,mantido
+style.css,177,177,CSS-0177,CSS-177,PANEL.STUDY,SELETOR: .estudo-area-direita,2872,2866,mantido
+style.css,178,178,CSS-0178,CSS-178,PANEL.STUDY,SELETOR: .estudo-lista-atividades,2889,2883,mantido
+style.css,179,179,CSS-0179,CSS-179,PANEL.STUDY,,2904,2898,mantido
+style.css,180,180,CSS-0180,CSS-180,PANEL.STUDY,SELETOR: .estudo-atividade-cabecalho,2924,2918,mantido
+style.css,181,181,CSS-0181,CSS-181,PANEL.STUDY,SELETOR: .estudo-atividade-icone,2935,2929,mantido
+style.css,182,182,CSS-0182,CSS-182,PANEL.STUDY.ACTIVITY,TÍTULOS DOS CARTÕES,2950,2944,mantido
+style.css,183,183,CSS-0183,CSS-183,PANEL.STUDY,DISTRIBUIÇÃO DAS TRÊS COLUNAS,2964,2958,mantido
+style.css,184,184,CSS-0184,CSS-184,PANEL.STUDY,SELETOR: .estudo-atividade-dados,2977,2971,mantido
+style.css,185,185,CSS-0185,CSS-185,PANEL.STUDY,SELETOR: .estudo-atividade-dado,2986,2980,mantido
+style.css,186,186,CSS-0186,CSS-186,PANEL.STUDY,SELETOR: .estudo-atividade-dado span,3003,2997,mantido
+style.css,187,187,CSS-0187,CSS-187,PANEL.STUDY,SELETOR: .estudo-atividade-dado strong,3019,3013,mantido
+style.css,188,188,CSS-0188,CSS-188,PANEL.STUDY.PENDING,ACABAMENTO VERMELHO,3035,3029,mantido
+style.css,189,189,CSS-0189,CSS-189,PANEL.FINANCIAL.RECEIPTS,SELETOR: .botao-comprovantes,3060,3054,mantido
+style.css,190,190,CSS-0190,CSS-190,PANEL.FINANCIAL.RECEIPTS,SELETOR: /* DIVISOR VERTICAL — REMOVIDO,3085,3079,mantido
+style.css,191,191,CSS-0191,CSS-191,PANEL.FINANCIAL.RECEIPTS,SELETOR: .botao-comprovantes > span:not(.comprovantes-reflexo),3093,3087,mantido
+style.css,192,192,CSS-0192,CSS-192,PANEL.FINANCIAL.RECEIPTS,SELETOR: ./* SETA À DIREITA — REMOVIDA,3102,3096,mantido
+style.css,193,193,CSS-0193,CSS-193,PANEL.FINANCIAL.RECEIPTS,SELETOR: .card-financeiro .botao-comprovantes,3110,3104,mantido
+style.css,194,194,CSS-0195,CSS-194,PANEL.STUDY,SELETOR: .card-central .estudo-botao-metas,3172,3166,renumerado
+style.css,195,195,CSS-0196,CSS-195,PANEL.FINANCIAL.INCOME,SELETOR: .card-financeiro .financeiro-renda,3227,3221,renumerado
+style.css,196,196,CSS-0197,CSS-196,PANEL.FINANCIAL.INCOME,SELETOR: .card-financeiro .financeiro-renda > .financeiro-renda-valor,3252,3246,renumerado
+style.css,197,197,CSS-0198,CSS-197,PANEL.FINANCIAL.INCOME,SELETOR: .card-financeiro .financeiro-renda-conteudo,3275,3269,renumerado
+style.css,198,198,CSS-0199,CSS-198,PANEL.FINANCIAL.INCOME,SELETOR: .card-financeiro .financeiro-renda-icone,3290,3284,renumerado
+style.css,199,199,CSS-0200,CSS-199,PANEL.FINANCIAL.INCOME,SELETOR: .card-financeiro .financeiro-renda-icone svg,3310,3304,renumerado
+style.css,200,200,CSS-0201,CSS-200,PANEL.FINANCIAL.INCOME,SELETOR: .card-financeiro .financeiro-renda-texto,3321,3315,renumerado
+style.css,201,201,CSS-0202,CSS-201,PANEL.FINANCIAL.INCOME,SELETOR: .card-financeiro .financeiro-renda::after,3346,3340,renumerado
+style.css,202,202,CSS-0203,CSS-202,PANEL.FINANCIAL.INCOME,SELETOR: .card-financeiro .financeiro-renda-conteudo,3389,3383,renumerado
+style.css,203,203,CSS-0204,CSS-203,PANEL.FINANCIAL.INCOME,SELETOR: .card-financeiro .financeiro-renda-rotulo,3395,3389,renumerado
+style.css,204,204,CSS-0205,CSS-204,PANEL.FINANCIAL.PRIORITY,SELETOR: .card-financeiro .financeiro-indicador-prioritaria,3406,3400,renumerado
+style.css,205,205,CSS-0206,CSS-205,PANEL.FINANCIAL.PRIORITY,SELETOR: .card-financeiro .financeiro-indicador-prioritaria::after,3431,3425,renumerado
+style.css,206,206,CSS-0207,CSS-206,PANEL.FINANCIAL.PRIORITY,SELETOR: .card-financeiro .financeiro-indicador-prioritaria .financeiro-indicador-rotulo,3473,3467,renumerado
+style.css,207,207,CSS-0208,CSS-207,PANEL.FINANCIAL.PRIORITY,SELETOR: .card-financeiro .financeiro-indicador-prioritaria .financeiro-alfinete-icone,3498,3492,renumerado
+style.css,208,208,CSS-0209,CSS-208,PANEL.FINANCIAL.PRIORITY,SELETOR: .card-financeiro .financeiro-indicador-prioritaria .financeiro-indicador-valor strong,3525,3519,renumerado
+style.css,209,209,CSS-0210,CSS-209,PANEL.FINANCIAL.PAID,SELETOR: .card-financeiro .financeiro-indicador-pago,3543,3537,renumerado
+style.css,210,210,CSS-0211,CSS-210,PANEL.FINANCIAL.PAID,SELETOR: .card-financeiro .financeiro-indicador-pago::after,3569,3563,renumerado
+style.css,211,211,CSS-0212,CSS-211,PANEL.FINANCIAL.PAID,SELETOR: .card-financeiro .financeiro-indicador-pago .financeiro-indicador-rotulo,3610,3604,renumerado
+style.css,212,212,CSS-0213,CSS-212,PANEL.FINANCIAL.PAID,SELETOR: .card-financeiro .financeiro-indicador-pago .financeiro-indicador-valor,3618,3612,renumerado
+style.css,213,213,CSS-0214,CSS-213,PANEL.FINANCIAL.PAID,"SELETOR: .card-financeiro .financeiro-indicador-pago .financeiro-indicador-valor, .card-financeiro .financeiro-indicador-pago .financeiro-indicador-icone",3639,3633,renumerado
+style.css,214,214,CSS-0215,CSS-214,PANEL.FINANCIAL.PAID,SELETOR: .card-financeiro .financeiro-indicador-pago .financeiro-indicador-valor strong,3650,3644,renumerado
+style.css,215,215,CSS-0216,CSS-215,PANEL.FINANCIAL.PAID,SELETOR: .card-financeiro .financeiro-pago-designer .financeiro-indicador-rotulo,3660,3654,renumerado
+style.css,216,216,CSS-0217,CSS-216,PANEL.FINANCIAL.PAID,SELETOR: .card-financeiro .financeiro-pago-designer .financeiro-indicador-valor,3668,3662,renumerado
+style.css,217,217,CSS-0218,CSS-217,PANEL.FINANCIAL.PAID,SELETOR: .card-financeiro .financeiro-pago-designer .financeiro-indicador-icone,3676,3670,renumerado
+style.css,218,218,CSS-0219,CSS-218,PANEL.FINANCIAL.PAID,SELETOR: .card-financeiro .financeiro-indicador-pago .pago-mes-icone,3684,3678,renumerado
+style.css,219,219,CSS-0220,CSS-219,PANEL.FINANCIAL.PAID,SELETOR: .card-financeiro .financeiro-indicador-pago .pago-mes-icone svg,3712,3706,renumerado
+style.css,220,220,CSS-0221,CSS-220,PANEL.FINANCIAL.OVERDUE,SELETOR: .card-financeiro .financeiro-atrasadas-designer,3727,3721,renumerado
+style.css,221,221,CSS-0222,CSS-221,PANEL.FINANCIAL.OVERDUE,SELETOR: .card-financeiro .financeiro-atrasadas-designer::after,3751,3745,renumerado
+style.css,222,222,CSS-0223,CSS-222,PANEL.FINANCIAL.OVERDUE_AMOUNT,SELETOR: .card-financeiro .financeiro-indicador-valor-atrasado::after,3793,3787,renumerado
+style.css,223,223,CSS-0224,CSS-223,PANEL.FINANCIAL.OVERDUE,SELETOR: .card-financeiro .financeiro-atrasadas-designer .financeiro-indicador-rotulo,3833,3827,renumerado
+style.css,224,224,CSS-0225,CSS-224,PANEL.FINANCIAL.OVERDUE,SELETOR: .card-financeiro .financeiro-atrasadas-designer .financeiro-indicador-valor,3843,3837,renumerado
+style.css,225,225,CSS-0226,CSS-225,PANEL.FINANCIAL.OVERDUE,SELETOR: .card-financeiro .financeiro-atrasadas-designer .financeiro-indicador-valor strong,3850,3844,renumerado
+style.css,226,226,CSS-0227,CSS-226,PANEL.FINANCIAL.OVERDUE,SELETOR: .card-financeiro .financeiro-atrasadas-designer .financeiro-atrasadas-numero,3858,3852,renumerado
+style.css,227,227,CSS-0228,CSS-227,PANEL.FINANCIAL.OVERDUE,SELETOR: .card-financeiro .financeiro-atrasadas-designer .financeiro-indicador-valor .financeiro-alerta-icone,3868,3862,renumerado
+style.css,228,228,CSS-0229,CSS-228,PANEL.FINANCIAL.OVERDUE,SELETOR: .financeiro-alerta-icone svg,3897,3891,renumerado
+style.css,229,229,CSS-0230,CSS-229,PANEL.FINANCIAL.OVERDUE_AMOUNT,SELETOR: .card-financeiro .financeiro-indicador-valor-atrasado .financeiro-valor-atrasado-icone,3911,3905,renumerado
+style.css,230,230,CSS-0231,CSS-230,PANEL.FINANCIAL.OVERDUE_AMOUNT,SELETOR: .card-financeiro .financeiro-indicador-valor-atrasado .financeiro-valor-atrasado-icone svg,3938,3932,renumerado
+style.css,231,231,CSS-0232,CSS-231,PANEL.FINANCIAL.OVERDUE_AMOUNT,SELETOR: .card-financeiro .financeiro-indicador-valor-atrasado .financeiro-valor-atrasado-icone svg g,3952,3946,renumerado
+style.css,232,232,CSS-0233,CSS-232,PANEL.FINANCIAL.OVERDUE_AMOUNT,SELETOR: .card-financeiro .financeiro-indicador-valor-atrasado,3962,3956,renumerado
+style.css,233,233,CSS-0234,CSS-233,PANEL.FINANCIAL.OVERDUE_AMOUNT,SELETOR: .card-financeiro .financeiro-indicador-valor-atrasado .financeiro-indicador-rotulo,3985,3979,renumerado
+style.css,234,234,CSS-0235,CSS-234,PANEL.FINANCIAL.OVERDUE_AMOUNT,SELETOR: .card-financeiro .financeiro-indicador-valor-atrasado .financeiro-indicador-valor,3994,3988,renumerado
+style.css,235,235,CSS-0236,CSS-235,PANEL.FINANCIAL.OVERDUE_AMOUNT,SELETOR: .card-financeiro .financeiro-indicador-valor-atrasado .financeiro-indicador-valor strong,4002,3996,renumerado
+style.css,236,236,CSS-0237,CSS-236,PANEL.FINANCIAL.RECEIPTS,"SELETOR: .card-financeiro .botao-comprovantes > .icone-comprovantes, .card-financeiro .botao-comprovantes > span:not(.comprovantes-reflexo)",4011,4005,renumerado
+style.css,237,237,CSS-0238,CSS-237,PANEL.FINANCIAL.RECEIPTS,"SELETOR: .card-financeiro .botao-comprovantes::before, .card-financeiro .botao-comprovantes::after",4018,4012,renumerado
+style.css,238,238,CSS-0239,CSS-238,PANEL.FINANCIAL.BILLS_DUE,SELETOR: .financeiro-conta .financeiro-conta-vencimento-rotulo,4025,4019,renumerado
+style.css,239,239,CSS-0240,CSS-239,PANEL.FINANCIAL.BILLS_DUE,SELETOR: .financeiro-conta .financeiro-conta-data,4030,4024,renumerado
+style.css,240,240,CSS-0241,CSS-240,PANEL.FINANCIAL.BILLS_DUE,SELETOR: .financeiro-conta .financeiro-conta-nome,4036,4030,renumerado
+style.css,241,241,CSS-0242,CSS-241,PANEL.FINANCIAL.BILLS_DUE,SELETOR: .financeiro-conta .financeiro-conta-nome,4046,4040,renumerado
+style.css,242,242,CSS-0243,CSS-242,PANEL.FINANCIAL.BILLS_DUE,SELETOR: .financeiro-conta .financeiro-conta-nome-texto,4066,4060,renumerado
+style.css,243,243,CSS-0244,CSS-243,PANEL.FINANCIAL.BILLS_DUE,SELETOR: .financeiro-conta .financeiro-conta-vencimento,4087,4081,renumerado
+style.css,244,244,CSS-0245,CSS-244,PANEL.FINANCIAL.BILLS_DUE,SELETOR: .financeiro-conta .financeiro-conta-vencimento-rotulo,4112,4106,renumerado
+style.css,245,245,CSS-0246,CSS-245,PANEL.FINANCIAL.BILLS_DUE,SELETOR: .financeiro-conta .financeiro-conta-data,4121,4115,renumerado
+style.css,246,246,CSS-0247,CSS-246,PANEL.FINANCIAL.BILLS_DUE,SELETOR: .financeiro-conta .financeiro-conta-valor,4136,4130,renumerado
+style.css,247,247,CSS-0248,CSS-247,APP.SIDEBAR,"SELETOR: .menu-lateral .botao-menu-lateral:nth-child(1) > .icone-menu-lateral, .menu-lateral .botao-menu-lateral:nth-child(2) > svg, .menu-lateral .botao-menu-lateral:nth-child(3) > .ico...",4169,4163,renumerado
+style.css,248,248,CSS-0249,CSS-248,APP.SIDEBAR,SELETOR: .menu-lateral .botao-menu-lateral:nth-child(2) > svg,4179,4173,renumerado
+style.css,249,249,CSS-0250,CSS-249,APP.SIDEBAR,"SELETOR: .menu-lateral .botao-menu-lateral:nth-child(1):hover > .icone-menu-lateral, .menu-lateral .botao-menu-lateral:nth-child(2):hover > svg, .menu-lateral .botao-menu-lateral:nth-chi...",4190,4184,renumerado
+style.css,250,250,CSS-0252,CSS-250,APP.SIDEBAR,SELETOR: .menu-lateral .botao-menu-lateral:nth-child(4) > .icone-menu-lateral,4261,4255,renumerado
+style.css,251,251,CSS-0253,CSS-251,APP.SIDEBAR,SELETOR: .menu-lateral .botao-menu-lateral:nth-child(4):hover > .icone-menu-lateral,4269,4263,renumerado
+style.css,252,252,CSS-0254,CSS-252,APP.SIDEBAR,SELETOR: .menu-lateral .botao-menu-lateral:nth-child(5) > .icone-menu-lateral,4275,4269,renumerado
+style.css,253,253,CSS-0255,CSS-253,APP.SIDEBAR,SELETOR: .menu-lateral .botao-menu-lateral:nth-child(5):hover > .icone-menu-lateral,4283,4277,renumerado
+style.css,254,254,CSS-0256,CSS-254,APP.SIDEBAR,ORGANIZAÇÃO HORÁRIO E DATA,4292,4286,renumerado
+style.css,255,255,CSS-0257,CSS-255,APP.SIDEBAR,"SELETOR: .horario-valor, .data-valor",4310,4304,renumerado
+style.css,256,256,CSS-0258,CSS-256,APP.SIDEBAR,SELETOR: .horario-valor,4321,4315,renumerado
+style.css,257,257,CSS-0259,CSS-257,APP.SIDEBAR,SELETOR: .data-valor,4328,4322,renumerado
+style.css,258,258,CSS-0260,CSS-258,APP.SIDEBAR,SELETOR: .data-valor .data-separador,4336,4330,renumerado
+style.css,259,259,CSS-0261,CSS-259,APP.SIDEBAR,SELETOR: .data-valor .data-separador::before,4347,4341,renumerado
+style.css,260,260,CSS-0262,CSS-260,APP.SIDEBAR,SELETOR: .botao-menu-lateral,4362,4356,renumerado
+style.css,261,261,CSS-0263,CSS-261,APP.SIDEBAR,"SELETOR: .botao-menu-lateral > .icone-menu-lateral, .botao-menu-lateral > svg",4372,4366,renumerado
+style.css,262,262,CSS-0264,CSS-262,APP.SIDEBAR,SELETOR: .botao-menu-lateral > span:not(.icone-menu-lateral),4381,4375,renumerado
+style.css,263,263,CSS-0265,CSS-263,APP.SIDEBAR,SELETOR: .botao-menu-lateral::after,4396,4390,renumerado
+style.css,264,264,CSS-0266,CSS-264,APP.SIDEBAR,SELETOR: .notificacao-titulo,4403,4397,renumerado
+style.css,265,265,CSS-0267,CSS-265,PANEL.FINANCIAL,SELETOR: .card-financeiro .financeiro-cabecalho,4424,4418,renumerado
+style.css,266,266,CSS-0268,CSS-266,PANEL.FINANCIAL,SELETOR: .card-financeiro .financeiro-identificacao,4434,4428,renumerado
+style.css,267,267,CSS-0269,CSS-267,PANEL.FINANCIAL,SELETOR: .card-financeiro .financeiro-identificacao .titulo-card,4447,4441,renumerado
+style.css,268,268,CSS-0270,CSS-268,PANEL.FINANCIAL,SELETOR: .card-financeiro .financeiro-progresso,4457,4451,renumerado
+style.css,269,269,CSS-0271,CSS-269,PANEL.FINANCIAL,EST-CARD,4466,4460,renumerado
+style.css,270,270,CSS-0272,CSS-270,APP.SIDEBAR,DISTRIBUIÇÃO PROPORCIONAL DE HORÁRIO E DATA,4477,4471,renumerado
+style.css,271,271,CSS-0273,CSS-271,PANEL.FINANCIAL,SELETOR: .card-financeiro,4511,4505,renumerado
+style.css,272,272,CSS-0274,CSS-272,PANEL.FINANCIAL,SELETOR: .financeiro-icone,4542,4536,renumerado
+style.css,273,273,CSS-0275,CSS-273,PANEL.FINANCIAL,SELETOR: .card-financeiro .titulo-card,4580,4574,renumerado
+style.css,274,274,CSS-0276,CSS-274,PANEL.FINANCIAL,SELETOR: .financeiro-progresso-trilho,4594,4588,renumerado
+style.css,275,275,CSS-0277,CSS-275,PANEL.FINANCIAL,SELETOR: .financeiro-progresso-preenchimento,4607,4601,renumerado
+style.css,276,276,CSS-0278,CSS-276,PANEL.FINANCIAL,SELETOR: .financeiro-progresso-percentual,4621,4615,renumerado
+style.css,277,277,CSS-0279,CSS-277,PANEL.FINANCIAL.INCOME,SELETOR: .card-financeiro .financeiro-renda,4630,4624,renumerado
+style.css,278,278,CSS-0280,CSS-278,PANEL.FINANCIAL.INCOME,SELETOR: .financeiro-renda-rotulo,4647,4641,renumerado
+style.css,279,279,CSS-0281,CSS-279,PANEL.FINANCIAL.PRIORITY,SELETOR: .card-financeiro .financeiro-indicador-prioritaria,4660,4654,renumerado
+style.css,280,280,CSS-0282,CSS-280,PANEL.FINANCIAL.PRIORITY,SELETOR: .card-financeiro .financeiro-indicador-prioritaria .financeiro-indicador-rotulo,4680,4674,renumerado
+style.css,281,281,CSS-0283,CSS-281,PANEL.FINANCIAL.PRIORITY,SELETOR: .financeiro-alfinete-icone,4689,4683,renumerado
+style.css,282,282,CSS-0284,CSS-282,PANEL.FINANCIAL.PAID,SELETOR: .card-financeiro .financeiro-indicador-pago,4707,4701,renumerado
+style.css,283,283,CSS-0285,CSS-283,PANEL.FINANCIAL.PAID,SELETOR: .card-financeiro .financeiro-indicador-pago .financeiro-indicador-rotulo,4727,4721,renumerado
+style.css,284,284,CSS-0286,CSS-284,PANEL.FINANCIAL.OVERDUE,SELETOR: .card-financeiro .financeiro-atrasadas-designer,4740,4734,renumerado
+style.css,285,285,CSS-0287,CSS-285,PANEL.FINANCIAL.OVERDUE,SELETOR: .card-financeiro .financeiro-atrasadas-designer .financeiro-indicador-rotulo,4760,4754,renumerado
+style.css,286,286,CSS-0288,CSS-286,PANEL.FINANCIAL.OVERDUE,SELETOR: .financeiro-alerta-icone,4769,4763,renumerado
+style.css,287,287,CSS-0289,CSS-287,PANEL.FINANCIAL.OVERDUE,SELETOR: .card-financeiro .financeiro-atrasadas-designer .financeiro-atrasadas-numero,4775,4769,renumerado
+style.css,288,288,CSS-0290,CSS-288,PANEL.FINANCIAL.OVERDUE_AMOUNT,SELETOR: .card-financeiro .financeiro-indicador-valor-atrasado,4784,4778,renumerado
+style.css,289,289,CSS-0291,CSS-289,PANEL.FINANCIAL.OVERDUE_AMOUNT,SELETOR: .card-financeiro .financeiro-indicador-valor-atrasado .financeiro-indicador-rotulo,4804,4798,renumerado
+style.css,290,290,CSS-0292,CSS-290,PANEL.FINANCIAL.OVERDUE_AMOUNT,SELETOR: .card-financeiro .financeiro-indicador-valor-atrasado .financeiro-indicador-valor strong,4813,4807,renumerado
+style.css,291,291,CSS-0293,CSS-291,PANEL.FINANCIAL.OVERDUE_AMOUNT,SELETOR: .financeiro-valor-atrasado-icone,4820,4814,renumerado
+style.css,292,292,CSS-0294,CSS-292,PANEL.FINANCIAL.PRIORITY,"SELETOR: .card-financeiro .financeiro-indicador-rotulo, .card-financeiro .financeiro-indicador-prioritaria .financeiro-indicador-rotulo, .card-financeiro .financeiro-indicador-pago .fina...",4829,4823,renumerado
+style.css,293,293,CSS-0295,CSS-293,PANEL.FINANCIAL.RECEIPTS,SELETOR: .card-financeiro .botao-comprovantes,4844,4838,renumerado
+style.css,294,294,CSS-0296,CSS-294,PANEL.FINANCIAL.RECEIPTS,SELETOR: .card-financeiro .botao-comprovantes:hover,4918,4904,renumerado
+style.css,295,295,CSS-0297,CSS-295,PANEL.FINANCIAL.RECEIPTS,SELETOR: .card-financeiro .botao-comprovantes:active,4931,4917,renumerado
+style.css,296,296,CSS-0298,CSS-296,PANEL.FINANCIAL.BILLS_DUE,SELETOR: .financeiro-vencidas,4945,4931,renumerado
+style.css,297,297,CSS-0299,CSS-297,PANEL.FINANCIAL.BILLS_DUE,SELETOR: .financeiro-vencidas-titulo,4962,4948,renumerado
+style.css,298,298,CSS-0300,CSS-298,PANEL.FINANCIAL.BILLS_DUE,SELETOR: .financeiro-conta,4984,4970,renumerado
+style.css,299,299,CSS-0301,CSS-299,PANEL.FINANCIAL.BILLS_DUE,SELETOR: .financeiro-conta:hover,5005,4991,renumerado
+style.css,300,300,CSS-0302,CSS-300,PANEL.FINANCIAL.BILLS_DUE,SELETOR: .financeiro-conta-icone,5022,5008,renumerado
+style.css,301,301,CSS-0303,CSS-301,PANEL.FINANCIAL.BILLS_DUE,SELETOR: .financeiro-conta .financeiro-conta-vencimento,5033,5019,renumerado
+style.css,302,302,CSS-0304,CSS-302,PANEL.FINANCIAL.BILLS_DUE,SELETOR: .financeiro-conta .financeiro-conta-valor,5050,5036,renumerado
+style.css,303,303,CSS-0305,CSS-303,PANEL.FINANCIAL.BILLS_DUE,SELETOR: .financeiro-vencidas .financeiro-conta-excluir,5060,5046,renumerado
+style.css,304,304,CSS-0306,CSS-304,PANEL.FINANCIAL.BILLS_DUE,SELETOR: .financeiro-vencidas .financeiro-conta-excluir:hover,5072,5058,renumerado
+style.css,305,305,CSS-0307,CSS-305,PANEL.FINANCIAL.BILLS_DUE,SELETOR: .financeiro-vencidas .financeiro-conta-excluir:active,5078,5064,renumerado
+style.css,306,306,CSS-0308,CSS-306,PANEL.FINANCIAL,SELETOR: .card-financeiro button:focus-visible,5089,5075,renumerado
+style.css,307,307,CSS-0309,CSS-307,PANEL.STUDY.PRIORITY,SELETOR: .estudo-prioridade::after,5096,5082,renumerado
+style.css,308,308,CSS-0310,CSS-308,PANEL.STUDY.STUDY_DAYS,TOBOGÃ INDIVIDUAL,5134,5120,renumerado
+style.css,309,309,CSS-0311,CSS-309,PANEL.STUDY.PENDING,ACABAMENTO VERMELHO,5192,5178,renumerado
+style.css,310,310,CSS-0312,CSS-310,PANEL.STUDY.STUDY_DAYS,ALINHAMENTO HORIZONTAL,5276,5262,renumerado
+style.css,311,311,CSS-0313,CSS-311,PANEL.STUDY.PENDING,ALINHAMENTO HORIZONTAL,5321,5307,renumerado
+style.css,312,312,CSS-0314,CSS-312,PANEL.STUDY.CLOCKS,ALINHAMENTO DOS RELÓGIOS,5372,5358,renumerado
+style.css,313,313,CSS-0315,CSS-313,PANEL.STUDY.FIELDS,AJUSTE VERTICAL DOS CONTEÚDOS,5414,5400,renumerado
+style.css,314,314,CSS-0316,CSS-314,PANEL.STUDY.DATE_TIME,AJUSTE VERTICAL DOS CONTEÚDOS,5437,5423,renumerado
+style.css,315,315,CSS-0317,CSS-315,PANEL.STUDY.CLOCKS,POSICIONAMENTO INDEPENDENTE,5451,5437,renumerado
+style.css,316,316,CSS-0318,CSS-316,PANEL.STUDY.TIME_FIELDS,APROXIMAR VALORES DOS ÍCONES,5465,5451,renumerado
+style.css,317,317,CSS-0319,CSS-317,PANEL.STUDY.GOALS,,5473,5459,renumerado
+style.css,318,318,CSS-0320,CSS-318,PANEL.STUDY.READABILITY_OVERRIDES,CENTRALIZAÇÃO E LEGIBILIDADE,5585,5571,renumerado
+style.css,319,319,CSS-0321,CSS-319,PANEL.STUDY.ACTIVITY,SELETOR: .card-estudo .estudo-atividade-alfinete,5645,5631,renumerado
+style.css,320,320,CSS-0322,CSS-320,PANEL.STUDY.ACTIVITY,ETIQUETAS DOS CAMPOS,5653,5639,renumerado
+style.css,321,321,CSS-0323,CSS-321,PANEL.STUDY,DESLOCAMENTO DA ÁREA CENTRAL,5682,5668,renumerado
+style.css,322,322,CSS-0324,CSS-322,PANEL.STUDY.ACTIVITY,DIAS DE ESTUDO — 3 CARTÕES,5689,5675,renumerado
+style.css,323,323,CSS-0325,CSS-323,PANEL.ROUTINE.LAYOUT,SELETOR: .card-painel-novo | ESTRUTURA PRINCIPAL,5710,5696,renumerado
+style.css,324,324,CSS-0326,CSS-324,PANEL.ROUTINE.LAYOUT,SELETOR: .card-painel-novo .rotina-conteudo | AJUSTE DAS QUATRO COLUNAS,5775,5761,renumerado
+style.css,325,325,CSS-0327,CSS-325,PANEL.ROUTINE.PENDING,SELETOR: #card-rotina-pendente .rotina-lista-pendencias | LISTA E ROLAGEM,5893,5879,renumerado
+style.css,326,326,CSS-0328,CSS-326,PANEL.ROUTINE.PERIODS.CARD.SIZE,SELETOR: .card-central.card-painel-novo .rotina-periodo-card,5989,5975,renumerado
+style.css,327,327,CSS-0329,CSS-327,PANEL.ROUTINE.TYPOGRAPHY,PADRONIZAÇÃO TIPOGRÁFICA,6185,6171,renumerado
+style.css,328,328,CSS-0330,CSS-328,PANEL.ROUTINE.AGENDA.ROW,"SELETORES: #card-agenda-ontem .rotina-item-horario, #card-agenda-hoje .rotina-item-horario | LINHAS DE HORÁRIOS",6192,6178,renumerado
+style.css,329,329,CSS-0331,CSS-329,PANEL.ROUTINE.AGENDA.TIME_LABEL,SELETOR: .rotina-horario,6213,6199,renumerado
+style.css,330,330,CSS-0332,CSS-330,PANEL.ROUTINE.AGENDA.ACTIVITY_LABEL,SELETOR: .rotina-atividade,6221,6207,renumerado
+style.css,331,331,CSS-0333,CSS-331,PANEL.ROUTINE.AGENDA.STATUS,ESTADOS VISUAIS,6232,6218,renumerado
+style.css,332,332,CSS-0334,CSS-332,PANEL.ROUTINE.AGENDA.ACTIVITY_LABEL,DESLOCAMENTO DOS NOMES,6273,6259,renumerado
+style.css,333,333,CSS-0335,CSS-333,PANEL.ROUTINE.HEADER.ICON,DIMENSÕES E POSICIONAMENTO,6278,6264,renumerado
+style.css,334,334,CSS-0336,CSS-334,PANEL.ROUTINE.HEADER,ALINHAMENTO COM ESTUDO,6296,6282,renumerado
+style.css,335,335,CSS-0337,CSS-335,PANEL.ROUTINE.HEADER.ICON.SVG_SIZE,SELETOR: .rotina-identificacao > .painel-icone-neumo svg,6321,6307,renumerado
+style.css,336,336,CSS-0338,CSS-336,PANEL.ROUTINE.HEADER.TITLE,PADRONIZAÇÃO COM ESTUDO,6335,6321,renumerado
+style.css,337,337,CSS-0339,CSS-337,PANEL.ROUTINE.HEADER.ICON,ACABAMENTO ESQUIOMÓRFICO IGUAL AO ESTUDO,6343,6329,renumerado
+style.css,338,338,CSS-0340,CSS-338,PANEL.ROUTINE.HEADER.PROGRESS,ALINHAMENTO COM ESTUDO,6376,6362,renumerado
+style.css,339,339,CSS-0341,CSS-339,PANEL.ROUTINE.HEADER.PROGRESS.TRACK,SELETOR: .rotina-progresso-trilho,6390,6376,renumerado
+style.css,340,340,CSS-0342,CSS-340,PANEL.ROUTINE.HEADER.PROGRESS.FILL,SELETOR: .rotina-progresso-preenchimento,6402,6388,renumerado
+style.css,341,341,CSS-0343,CSS-341,PANEL.ROUTINE.HEADER.PROGRESS.VALUE,SELETOR: .rotina-progresso > strong,6417,6403,renumerado
+style.css,342,342,CSS-0344,CSS-342,COMPONENT.PANEL.TITLE.SHARED,"FINANCEIRO, ESTUDO E ROTINA",6427,6413,renumerado
+style.css,343,343,CSS-0345,CSS-343,PANEL.ROUTINE.HEADER,ALINHAMENTO SUPERIOR DOS CONTROLES,6447,6433,renumerado
+style.css,344,344,CSS-0346,CSS-344,PANEL.ROUTINE.WEEKLY.TITLE,,6456,6442,renumerado
+style.css,345,345,CSS-0347,CSS-345,PANEL.ROUTINE.WEEKLY.STATUS,CÍRCULOS REDUZIDOS E COLORIDOS,6473,6459,renumerado
+style.css,346,346,CSS-0348,CSS-346,PANEL.ROUTINE.AGENDA.TODAY.POSITION,SELETOR: #card-agenda-hoje,6641,6627,renumerado
+style.css,347,347,CSS-0349,CSS-347,PANEL.ROUTINE.AGENDA.YESTERDAY.POSITION,SELETOR: #card-agenda-ontem,6647,6633,renumerado
+style.css,348,348,CSS-0350,CSS-348,PANEL.ROUTINE.LEFT_CARDS.WIDTH,"SELETORES: #card-rotina-semanal, #card-rotina-pendente",6653,6639,renumerado
+style.css,349,349,CSS-0351,CSS-349,PANEL.ROUTINE.AGENDA.WIDTH,"SELETORES: #card-agenda-ontem, #card-agenda-hoje",6661,6647,renumerado
+style.css,350,350,CSS-0352,CSS-350,PANEL.ROUTINE.CUSTOM.SCROLLBARS,"SELETORES: #card-rotina-pendente .rotina-lista-pendencias, #card-agenda-ontem #lista-agenda-ontem, #card-agenda-hoje #lista-agenda-hoje",6667,6653,renumerado
+style.css,351,351,CSS-0353,CSS-351,COMPONENT.SCROLLBAR.VERTICAL.ANCHOR,ÂNCORA SEM PARTICIPAR DO FLUXO,6695,6681,renumerado
+style.css,352,352,CSS-0354,CSS-352,PANEL.REMINDER.UPCOMING,ESTRUTURA VISUAL,6701,6687,renumerado
+tema-dark.css,1,1,DARK-0001,DARK-001,APP.BASE,SELETOR: :root,7,7,mantido
+tema-dark.css,2,2,DARK-0002,DARK-002,APP.BASE,SELETOR: html,35,35,mantido
+tema-dark.css,3,3,DARK-0003,DARK-003,APP.BASE,SELETOR: body,41,41,mantido
+tema-dark.css,4,4,DARK-0004,DARK-004,APP.HEADER,SELETOR: .cabecalho::before,52,52,mantido
+tema-dark.css,5,5,DARK-0005,DARK-005,APP.HEADER,SELETOR: .logo-nome,70,70,mantido
+tema-dark.css,6,6,DARK-0006,DARK-006,APP.HEADER,SELETOR: .icone-sino path,107,107,mantido
+tema-dark.css,7,7,DARK-0007,DARK-007,APP.HEADER,SELETOR: .perfil-usuario,113,113,mantido
+tema-dark.css,8,8,DARK-0008,DARK-008,APP.BASE,"SELETOR: .perfil-cabeca, .perfil-corpo",122,122,mantido
+tema-dark.css,9,9,DARK-0009,DARK-009,APP.NAVIGATION.PRIMARY,SELETOR: .botao-menu,140,140,mantido
+tema-dark.css,10,10,DARK-0010,DARK-010,APP.BASE,SELETOR: .botao-icone,153,153,mantido
+tema-dark.css,11,11,DARK-0011,DARK-011,APP.NAVIGATION.PRIMARY,SELETOR: .botao-menu:hover,158,158,mantido
+tema-dark.css,12,12,DARK-0012,DARK-012,APP.NAVIGATION.PRIMARY,SELETOR: .botao-menu:hover .botao-icone,166,166,mantido
+tema-dark.css,13,13,DARK-0013,DARK-013,PANEL.FINANCIAL,"SELETOR: .botao-menu:focus-visible, .botao-menu-lateral:focus-visible, .seta-calendario:focus-visible, .card-financeiro button:focus-visible",171,171,mantido
+tema-dark.css,14,14,DARK-0014,DARK-014,APP.SIDEBAR,SELETOR: .painel-esquerdo,181,181,mantido
+tema-dark.css,15,15,DARK-0015,DARK-015,APP.SIDEBAR,SELETOR: .painel-esquerdo,198,198,mantido
+tema-dark.css,16,16,DARK-0016,DARK-016,APP.SIDEBAR,SELETOR: .botao-menu-lateral,208,208,mantido
+tema-dark.css,17,17,DARK-0017,DARK-017,APP.SIDEBAR,"SELETOR: .botao-menu-lateral::after, .icone-menu-lateral, .botao-menu-lateral > svg",217,217,mantido
+tema-dark.css,18,18,DARK-0018,DARK-018,APP.SIDEBAR,SELETOR: .botao-menu-lateral:hover,224,224,mantido
+tema-dark.css,19,19,DARK-0019,DARK-019,APP.SIDEBAR,"SELETOR: .botao-menu-lateral:hover::after, .botao-menu-lateral:hover > .icone-menu-lateral, .botao-menu-lateral:hover > svg",232,232,mantido
+tema-dark.css,20,20,DARK-0020,DARK-020,APP.SIDEBAR,SELETOR: .botao-menu-lateral::before,239,239,mantido
+tema-dark.css,21,21,DARK-0021,DARK-021,APP.SIDEBAR,"SELETOR: .menu-lateral .botao-menu-lateral:nth-child(1) > .icone-menu-lateral, .menu-lateral .botao-menu-lateral:nth-child(2) > svg, .menu-lateral .botao-menu-lateral:nth-child(3) > .icone-menu-lateral, .menu-lateral .botao-menu-lateral:nth-child(4) > .icone-menu-lateral, .menu-lateral .botao-menu-lateral:nth-child(5) > .icone-menu-lateral",245,245,mantido
+tema-dark.css,22,22,DARK-0022,DARK-022,APP.SIDEBAR,"SELETOR: .menu-lateral .botao-menu-lateral:hover > .icone-menu-lateral, .menu-lateral .botao-menu-lateral:hover > svg",257,257,mantido
+tema-dark.css,23,23,DARK-0023,DARK-023,APP.SIDEBAR,CARD DE HORÁRIO E DATA,263,263,mantido
+tema-dark.css,24,24,DARK-0024,DARK-024,APP.SIDEBAR,"SELETOR: .area-inferior-painel .horario-painel, .area-inferior-painel .data-painel",272,272,mantido
+tema-dark.css,25,25,DARK-0025,DARK-025,APP.SIDEBAR,"SELETOR: .horario-valor, .data-valor",278,278,mantido
+tema-dark.css,26,26,DARK-0026,DARK-026,APP.SIDEBAR,SELETOR: .notificacao-titulo,284,284,mantido
+tema-dark.css,27,27,DARK-0027,DARK-027,PANEL.CALENDAR,SELETOR: .calendario,293,293,mantido
+tema-dark.css,28,28,DARK-0028,DARK-028,PANEL.CALENDAR,SELETOR: .calendario-titulo,312,312,mantido
+tema-dark.css,29,29,DARK-0029,DARK-029,PANEL.CALENDAR,SELETOR: .calendario-dias-semana,317,317,mantido
+tema-dark.css,30,30,DARK-0030,DARK-030,PANEL.CALENDAR,SELETOR: .calendario-dia,324,324,mantido
+tema-dark.css,31,31,DARK-0031,DARK-031,PANEL.CALENDAR,SELETOR: .calendario-dia:hover,332,332,mantido
+tema-dark.css,32,32,DARK-0032,DARK-032,PANEL.CALENDAR,SELETOR: .calendario-dia.hoje,338,338,mantido
+tema-dark.css,33,33,DARK-0033,DARK-033,PANEL.CALENDAR,SELETOR: .calendario-dia.dia-passado,347,347,mantido
+tema-dark.css,34,34,DARK-0034,DARK-034,PANEL.CALENDAR,SELETOR: .calendario-ano,355,355,mantido
+tema-dark.css,35,35,DARK-0035,DARK-035,PANEL.CALENDAR,SELETOR: .seta-calendario,362,362,mantido
+tema-dark.css,36,36,DARK-0036,DARK-036,PANEL.CALENDAR,SELETOR: .seta-calendario:hover,367,367,mantido
+tema-dark.css,37,37,DARK-0037,DARK-037,APP.LAYOUT,SELETOR: .card-central,374,374,mantido
+tema-dark.css,38,38,DARK-0246,DARK-038,COMPONENT.PANEL.SKEUOMORPHIC_SURFACE,"SELETORES: .card-financeiro, .card-estudo, #painel-rotina, #painel-compromisso, #painel-lembrete",384,384,renumerado
+tema-dark.css,39,39,DARK-0038,DARK-039,PANEL.FINANCIAL,SELETOR: .card-financeiro,416,416,renumerado
+tema-dark.css,40,40,DARK-0039,DARK-040,PANEL.STUDY,,424,424,renumerado
+tema-dark.css,41,41,DARK-0040,DARK-041,COMPONENT.PANEL.TITLE.DARK_THEME,"SELETOR: .titulo-card, .card-financeiro .titulo-card, .card-estudo .titulo-card",434,434,renumerado
+tema-dark.css,42,42,DARK-0041,DARK-042,COMPONENT.PANEL.HEADER_ICON.DARK_THEME,"SELETOR: .financeiro-icone, .estudo-icone",443,443,renumerado
+tema-dark.css,43,43,DARK-0042,DARK-043,PANEL.FINANCIAL,EST-CARD,453,453,renumerado
+tema-dark.css,44,44,DARK-0043,DARK-044,PANEL.FINANCIAL,"SELETOR: .financeiro-progresso-trilho, .estudo-progresso-trilho",594,594,renumerado
+tema-dark.css,45,45,DARK-0044,DARK-045,PANEL.FINANCIAL,"SELETOR: .financeiro-progresso-preenchimento, .estudo-progresso-preenchimento",601,601,renumerado
+tema-dark.css,46,46,DARK-0045,DARK-046,PANEL.FINANCIAL,"SELETOR: .financeiro-progresso-percentual, .estudo-progresso-percentual",608,608,renumerado
+tema-dark.css,47,47,DARK-0046,DARK-047,PANEL.FINANCIAL.INCOME,,616,616,renumerado
+tema-dark.css,48,48,DARK-0048,DARK-048,PANEL.FINANCIAL.INCOME,"SELETOR: .card-financeiro .financeiro-renda-valor, .card-financeiro .financeiro-renda-texto, .financeiro-indicador-valor, .financeiro-indicador-valor strong",674,674,mantido
+tema-dark.css,49,49,DARK-0049,DARK-049,PANEL.FINANCIAL.CARDS,,682,682,mantido
+tema-dark.css,50,50,DARK-0050,DARK-050,PANEL.FINANCIAL,"SELETOR: .financeiro-indicador-icone, .financeiro-indicador-icone-verde",708,708,mantido
+tema-dark.css,51,51,DARK-0051,DARK-051,PANEL.FINANCIAL.PRIORITY,SELETOR: .financeiro-alfinete-icone,714,714,mantido
+tema-dark.css,52,52,DARK-0053,DARK-052,PANEL.FINANCIAL.OVERDUE_AMOUNT,"SELETOR: .card-financeiro .financeiro-atrasadas-designer .financeiro-indicador-rotulo, .card-financeiro .financeiro-indicador-valor-atrasado .financeiro-indicador-rotulo",719,719,renumerado
+tema-dark.css,53,53,DARK-0054,DARK-053,PANEL.FINANCIAL.OVERDUE_AMOUNT,"SELETOR: .card-financeiro .financeiro-atrasadas-numero, .financeiro-valor-atrasado-icone, .financeiro-alerta-icone",727,727,renumerado
+tema-dark.css,54,54,DARK-0055,DARK-054,PANEL.FINANCIAL.BILLS_DUE,,734,734,renumerado
+tema-dark.css,55,55,DARK-0056,DARK-055,PANEL.FINANCIAL.BILLS_DUE,SELETOR: .financeiro-vencidas-titulo,753,753,renumerado
+tema-dark.css,56,56,DARK-0057,DARK-056,PANEL.FINANCIAL.BILLS_DUE,SELETOR: .financeiro-conta,761,761,renumerado
+tema-dark.css,57,57,DARK-0058,DARK-057,PANEL.FINANCIAL.BILLS_DUE,SELETOR: .financeiro-conta:hover,769,769,renumerado
+tema-dark.css,58,58,DARK-0059,DARK-058,PANEL.FINANCIAL.BILLS_DUE,SELETOR: .financeiro-conta-icone,779,779,renumerado
+tema-dark.css,59,59,DARK-0060,DARK-059,PANEL.FINANCIAL.BILLS_DUE,"SELETOR: .financeiro-conta .financeiro-conta-nome-texto, .financeiro-conta .financeiro-conta-vencimento, .financeiro-conta .financeiro-conta-valor",786,786,renumerado
+tema-dark.css,60,60,DARK-0061,DARK-060,PANEL.FINANCIAL.BILLS_DUE,SELETOR: .financeiro-conta .financeiro-conta-vencimento-rotulo,796,796,renumerado
+tema-dark.css,61,61,DARK-0062,DARK-061,PANEL.FINANCIAL.BILLS_DUE,SELETOR: .financeiro-conta .financeiro-conta-data,801,801,renumerado
+tema-dark.css,62,62,DARK-0063,DARK-062,PANEL.FINANCIAL.BILLS_DUE,,806,806,renumerado
+tema-dark.css,63,63,DARK-0064,DARK-063,PANEL.FINANCIAL.BILLS_DUE,,814,814,renumerado
+tema-dark.css,64,64,DARK-0065,DARK-064,PANEL.STUDY,SELETOR: .estudo-semana,822,822,renumerado
+tema-dark.css,65,65,DARK-0066,DARK-065,PANEL.STUDY,SELETOR: .estudo-semana-dia,838,838,renumerado
+tema-dark.css,66,66,DARK-0067,DARK-066,PANEL.STUDY,SELETOR: .estudo-dia-circulo.neutro,843,843,renumerado
+tema-dark.css,67,67,DARK-0068,DARK-067,PANEL.STUDY,SELETOR: .estudo-dia-circulo.pendente,849,849,renumerado
+tema-dark.css,68,68,DARK-0069,DARK-068,PANEL.STUDY,SELETOR: .estudo-dia-circulo.concluido,855,855,renumerado
+tema-dark.css,69,69,DARK-0070,DARK-069,PANEL.STUDY,SUPERFÍCIES DOS CAMPOS,862,862,renumerado
+tema-dark.css,70,70,DARK-0071,DARK-070,PANEL.STUDY,"SELETOR: .estudo-campo-rotulo, .estudo-prioridade-rotulo, .estudo-atividade-dado span",872,872,renumerado
+tema-dark.css,71,71,DARK-0072,DARK-071,PANEL.STUDY,SELETOR: .estudo-campo-icone,880,880,renumerado
+tema-dark.css,72,72,DARK-0073,DARK-072,PANEL.STUDY,"SELETOR: .estudo-campo-texto, .estudo-prioridade-texto, .estudo-atividade-dado strong",885,885,renumerado
+tema-dark.css,73,73,DARK-0074,DARK-073,PANEL.STUDY,"SELETOR: .estudo-campo-pendencias .estudo-campo-rotulo, .estudo-campo-pendencias .estudo-campo-icone, .estudo-campo-pendencias .estudo-campo-texto, .estudo-atividade-pendencias span, .es...",892,892,renumerado
+tema-dark.css,74,74,DARK-0075,DARK-074,PANEL.STUDY,SELETOR: .estudo-campo-pendencias,901,901,renumerado
+tema-dark.css,75,75,DARK-0076,DARK-075,PANEL.STUDY,SELETOR: .estudo-prioridade-concluida,908,908,renumerado
+tema-dark.css,76,76,DARK-0077,DARK-076,PANEL.STUDY,,914,914,renumerado
+tema-dark.css,77,77,DARK-0079,DARK-077,PANEL.STUDY,,937,937,renumerado
+tema-dark.css,78,78,DARK-0249,DARK-078,PANEL.STUDY.ACTIVITY.CONTAINER,,951,951,renumerado
+tema-dark.css,79,79,DARK-0080,DARK-079,PANEL.STUDY,SELETOR: .estudo-atividade-icone,965,965,renumerado
+tema-dark.css,80,80,DARK-0081,DARK-080,PANEL.STUDY,SELETOR: .estudo-atividade-cabecalho h3,971,971,renumerado
+tema-dark.css,81,81,DARK-0082,DARK-081,COMPONENT.ACTION.BUTTONS.DARK_THEME,SELETOR: .botao-comprovantes,983,983,renumerado
+tema-dark.css,82,82,DARK-0083,DARK-082,APP.FOOTER,SELETOR: .rodape,1010,1010,renumerado
+tema-dark.css,83,83,DARK-0084,DARK-083,APP.FOOTER,SELETOR: .rodape-destaque,1017,1017,renumerado
+tema-dark.css,84,84,DARK-0085,DARK-084,APP.FOOTER,SELETOR: .rodape::before,1022,1022,renumerado
+tema-dark.css,85,85,DARK-0086,DARK-085,APP.BASE,SELETOR: ::selection,1029,1029,renumerado
+tema-dark.css,86,86,DARK-0087,DARK-086,APP.BASE,SELETOR: :focus-visible,1035,1035,renumerado
+tema-dark.css,87,87,DARK-0088,DARK-087,APP.HEADER,SELETOR: .cabecalho::before | @media (max-width: 600px),1042,1042,renumerado
+tema-dark.css,88,88,DARK-0089,DARK-088,APP.BASE,"SELETOR: *, *::before, *::after | @media (prefers-reduced-motion: reduce)",1050,1050,renumerado
+tema-dark.css,89,89,DARK-0090,DARK-089,APP.LAYOUT,SELETOR: .conteudo-principal | @media (max-width: 652px),1062,1062,renumerado
+tema-dark.css,90,90,DARK-0091,DARK-090,APP.SIDEBAR,SELETOR: .painel-esquerdo | @media (max-width: 652px),1069,1069,renumerado
+tema-dark.css,91,91,DARK-0092,DARK-091,APP.LAYOUT,SELETOR: .area-conteudo | @media (max-width: 652px),1076,1076,renumerado
+tema-dark.css,92,92,DARK-0093,DARK-092,APP.LAYOUT,SELETOR: .grade-cards | @media (max-width: 652px),1084,1084,renumerado
+tema-dark.css,93,93,DARK-0094,DARK-093,PANEL.FINANCIAL,"SELETOR: .card-financeiro, .card-estudo | @media (max-width: 652px)",1090,1090,renumerado
+tema-dark.css,94,94,DARK-0095,DARK-094,PANEL.FINANCIAL,"SELETOR: .financeiro-cabecalho, .estudo-cabecalho | @media (max-width: 652px)",1097,1097,renumerado
+tema-dark.css,95,95,DARK-0096,DARK-095,PANEL.FINANCIAL,"SELETOR: .financeiro-progresso, .estudo-progresso | @media (max-width: 652px)",1104,1104,renumerado
+tema-dark.css,96,96,DARK-0097,DARK-096,PANEL.FINANCIAL,SELETOR: .financeiro-indicadores | @media (max-width: 652px),1112,1112,renumerado
+tema-dark.css,97,97,DARK-0098,DARK-097,PANEL.FINANCIAL.INCOME,SELETOR: .financeiro-renda | @media (max-width: 652px),1119,1119,renumerado
+tema-dark.css,98,98,DARK-0099,DARK-098,PANEL.FINANCIAL.PRIORITY,"SELETOR: .financeiro-indicador-pago, .financeiro-indicador-prioritaria, .financeiro-indicador-atrasadas, .financeiro-indicador-valor-atrasado, .botao-comprovantes | @media (max-width: 652px)",1124,1124,renumerado
+tema-dark.css,99,99,DARK-0100,DARK-099,PANEL.FINANCIAL,SELETOR: .financeiro-indicador-valor | @media (max-width: 652px),1134,1134,renumerado
+tema-dark.css,100,100,DARK-0101,DARK-100,PANEL.FINANCIAL.BILLS_DUE,SELETOR: .financeiro-vencidas | @media (max-width: 652px),1140,1140,renumerado
+tema-dark.css,101,101,DARK-0102,DARK-101,PANEL.FINANCIAL.BILLS_DUE,SELETOR: .financeiro-conta | @media (max-width: 652px),1145,1145,renumerado
+tema-dark.css,102,102,DARK-0103,DARK-102,PANEL.FINANCIAL.BILLS_DUE,SELETOR: .financeiro-conta-vencimento | @media (max-width: 652px),1152,1152,renumerado
+tema-dark.css,103,103,DARK-0104,DARK-103,PANEL.STUDY,SELETOR: .estudo-conteudo | @media (max-width: 652px),1160,1160,renumerado
+tema-dark.css,104,104,DARK-0105,DARK-104,PANEL.STUDY,SELETOR: .estudo-area-central | @media (max-width: 652px),1166,1166,renumerado
+tema-dark.css,105,105,DARK-0106,DARK-105,PANEL.STUDY,"SELETOR: .estudo-data-inicio, .estudo-horario-inicio, .estudo-horas-diarias, .estudo-botao-metas | @media (max-width: 652px)",1172,1172,renumerado
+tema-dark.css,106,106,DARK-0107,DARK-106,PANEL.STUDY,SELETOR: .estudo-prioridade | @media (max-width: 652px),1180,1180,renumerado
+tema-dark.css,107,107,DARK-0108,DARK-107,PANEL.STUDY,SELETOR: .estudo-area-direita | @media (max-width: 652px),1185,1185,renumerado
+tema-dark.css,108,108,DARK-0109,DARK-108,PANEL.CALENDAR,SELETOR: .painel-calendarios | @media (max-width: 652px),1191,1191,renumerado
+tema-dark.css,109,109,DARK-0110,DARK-109,PANEL.CALENDAR,SELETOR: .calendario | @media (max-width: 652px),1199,1199,renumerado
+tema-dark.css,110,110,DARK-0111,DARK-110,APP.HEADER,SELETOR: .logo | @media (max-width: 652px),1208,1208,renumerado
+tema-dark.css,111,111,DARK-0112,DARK-111,APP.HEADER,SELETOR: .logo-nome | @media (max-width: 652px),1214,1214,renumerado
+tema-dark.css,112,112,DARK-0113,DARK-112,APP.HEADER,SELETOR: .acoes-cabecalho | @media (max-width: 652px),1221,1221,renumerado
+tema-dark.css,113,113,DARK-0114,DARK-113,APP.HEADER,"SELETOR: .notificacoes, .icone-sino | @media (max-width: 652px)",1228,1228,renumerado
+tema-dark.css,114,114,DARK-0115,DARK-114,APP.HEADER,SELETOR: .perfil-usuario | @media (max-width: 652px),1235,1235,renumerado
+tema-dark.css,115,115,DARK-0116,DARK-115,APP.BASE,SELETOR: .perfil-cabeca | @media (max-width: 652px),1241,1241,renumerado
+tema-dark.css,116,116,DARK-0117,DARK-116,APP.BASE,SELETOR: .perfil-corpo | @media (max-width: 652px),1249,1249,renumerado
+tema-dark.css,117,117,DARK-0118,DARK-117,PANEL.FINANCIAL,SELETOR: .financeiro-indicadores | @media (max-width: 652px),1257,1257,renumerado
+tema-dark.css,118,118,DARK-0119,DARK-118,PANEL.FINANCIAL.INCOME,"SELETOR: .financeiro-renda, .financeiro-indicador, .botao-comprovantes | @media (max-width: 652px)",1265,1265,renumerado
+tema-dark.css,119,119,DARK-0120,DARK-119,PANEL.FINANCIAL,SELETOR: .financeiro-indicador | @media (max-width: 652px),1274,1274,renumerado
+tema-dark.css,120,120,DARK-0121,DARK-120,APP.BASE,SELETOR: .financeiro-lista-vencidas | @media (max-width: 652px),1280,1280,renumerado
+tema-dark.css,121,121,DARK-0122,DARK-121,PANEL.FINANCIAL.BILLS_DUE,SELETOR: .financeiro-conta | @media (max-width: 652px),1285,1285,renumerado
+tema-dark.css,122,122,DARK-0123,DARK-122,PANEL.FINANCIAL.BILLS_DUE,SELETOR: .financeiro-conta-nome | @media (max-width: 652px),1292,1292,renumerado
+tema-dark.css,123,123,DARK-0124,DARK-123,PANEL.FINANCIAL.BILLS_DUE,SELETOR: .financeiro-conta-icone | @media (max-width: 652px),1298,1298,renumerado
+tema-dark.css,124,124,DARK-0125,DARK-124,PANEL.FINANCIAL.BILLS_DUE,SELETOR: .financeiro-conta .financeiro-conta-vencimento | @media (max-width: 652px),1305,1305,renumerado
+tema-dark.css,125,125,DARK-0126,DARK-125,PANEL.FINANCIAL.BILLS_DUE,SELETOR: .financeiro-conta .financeiro-conta-valor | @media (max-width: 652px),1311,1311,renumerado
+tema-dark.css,126,126,DARK-0127,DARK-126,APP.HEADER,SELETOR: header.cabecalho,1322,1322,renumerado
+tema-dark.css,127,127,DARK-0128,DARK-127,APP.HEADER,SELETOR: header.cabecalho .logo,1333,1333,renumerado
+tema-dark.css,128,128,DARK-0129,DARK-128,APP.HEADER,SELETOR: header.cabecalho .logo-simbolo,1345,1345,renumerado
+tema-dark.css,129,129,DARK-0130,DARK-129,APP.HEADER,SELETOR: header.cabecalho .logo-simbolo | @media (max-width: 652px),1360,1360,renumerado
+tema-dark.css,130,130,DARK-0131,DARK-130,APP.SIDEBAR,SELETOR: .painel-esquerdo,1371,1371,renumerado
+tema-dark.css,131,131,DARK-0132,DARK-131,APP.SIDEBAR,SELETOR: .painel-esquerdo .menu-lateral .botao-menu-lateral,1390,1390,renumerado
+tema-dark.css,132,132,DARK-0133,DARK-132,APP.SIDEBAR,SELETOR: .painel-esquerdo .menu-lateral .botao-menu-lateral:hover,1409,1409,renumerado
+tema-dark.css,133,133,DARK-0134,DARK-133,APP.SIDEBAR,SELETOR: .painel-esquerdo .notificacao-titulo,1430,1430,renumerado
+tema-dark.css,134,134,DARK-0135,DARK-134,APP.SIDEBAR.NOTIFICATIONS,ÍCONE ATUAL DO BOTÃO NOTIFIQUE-ME,1445,1445,renumerado
+tema-dark.css,135,135,DARK-0136,DARK-135,APP.SIDEBAR,SELETOR: .painel-esquerdo svg.notificacao-icone,1448,1448,renumerado
+tema-dark.css,136,136,DARK-0137,DARK-136,APP.HEADER,SELETOR: .acoes-cabecalho .notificacoes .icone-sino,1476,1476,renumerado
+tema-dark.css,137,137,DARK-0138,DARK-137,APP.HEADER,SELETOR: .acoes-cabecalho .notificacoes .sino-corpo,1489,1489,renumerado
+tema-dark.css,138,138,DARK-0139,DARK-138,APP.HEADER,SELETOR: .acoes-cabecalho .notificacoes .sino-reflexo,1498,1498,renumerado
+tema-dark.css,139,139,DARK-0140,DARK-139,APP.HEADER,SELETOR: .acoes-cabecalho .notificacoes .sino-reflexo-lateral,1507,1507,renumerado
+tema-dark.css,140,140,DARK-0141,DARK-140,APP.HEADER,SELETOR: .acoes-cabecalho .notificacoes .sino-base,1516,1516,renumerado
+tema-dark.css,141,141,DARK-0142,DARK-141,APP.HEADER,SELETOR: .acoes-cabecalho .notificacoes:hover .icone-sino,1525,1525,renumerado
+tema-dark.css,142,142,DARK-0143,DARK-142,APP.HEADER,SELETOR: .acoes-cabecalho .contador-notificacao,1537,1537,renumerado
+tema-dark.css,143,143,DARK-0144,DARK-143,APP.HEADER,SELETOR: .acoes-cabecalho .perfil-usuario,1556,1556,renumerado
+tema-dark.css,144,144,DARK-0145,DARK-144,APP.HEADER,SELETOR: .acoes-cabecalho .notificacoes .icone-sino,1567,1567,renumerado
+tema-dark.css,145,145,DARK-0146,DARK-145,APP.NAVIGATION.PRIMARY,SELETOR: .menu-principal > .botao-menu,1581,1581,renumerado
+tema-dark.css,146,146,DARK-0147,DARK-146,APP.NAVIGATION.PRIMARY,SELETOR: .menu-principal > .botao-menu:hover,1609,1609,renumerado
+tema-dark.css,147,147,DARK-0148,DARK-147,APP.NAVIGATION.PRIMARY,SELETOR: .menu-principal > .botao-menu .botao-icone,1634,1634,renumerado
+tema-dark.css,148,148,DARK-0149,DARK-148,APP.NAVIGATION.PRIMARY,SELETOR: .menu-principal > .botao-menu:hover .botao-icone,1655,1655,renumerado
+tema-dark.css,149,149,DARK-0150,DARK-149,APP.NAVIGATION.PRIMARY,SELETOR: .menu-principal > .botao-menu,1663,1663,renumerado
+tema-dark.css,150,150,DARK-0151,DARK-150,APP.NAVIGATION.PRIMARY,SELETOR: .menu-principal > .botao-menu:hover,1674,1674,renumerado
+tema-dark.css,151,151,DARK-0152,DARK-151,APP.SIDEBAR,ÁREA AZUL | CAIXAS DOS ÍCONES,1686,1686,renumerado
+tema-dark.css,152,152,DARK-0153,DARK-152,APP.SIDEBAR,ÁREA AZUL | DESENHOS INTERNOS,1698,1698,renumerado
+tema-dark.css,153,153,DARK-0154,DARK-153,APP.SIDEBAR,ÁREA AZUL | CALENDÁRIO DIRETO,1708,1708,renumerado
+tema-dark.css,154,154,DARK-0155,DARK-154,APP.SIDEBAR,"SELETOR: .painel-esquerdo .menu-lateral .botao-menu-lateral:hover > .icone-menu-lateral, .painel-esquerdo .menu-lateral .botao-menu-lateral:hover > svg",1721,1721,renumerado
+tema-dark.css,155,155,DARK-0156,DARK-155,APP.SIDEBAR,SELETOR: .botao-notifique,1732,1732,renumerado
+tema-dark.css,156,156,DARK-0157,DARK-156,APP.SIDEBAR,SELETOR: .botao-notifique .notificacao-icone,1769,1769,renumerado
+tema-dark.css,157,157,DARK-0158,DARK-157,APP.SIDEBAR,SELETOR: .botao-notifique:hover,1778,1778,renumerado
+tema-dark.css,158,158,DARK-0159,DARK-158,APP.SIDEBAR,SELETOR: .botao-notifique:focus-visible,1792,1792,renumerado
+tema-dark.css,159,159,DARK-0160,DARK-159,APP.SIDEBAR,SELETOR: .painel-esquerdo .botao-notifique,1800,1800,renumerado
+tema-dark.css,160,160,DARK-0161,DARK-160,APP.SIDEBAR,SELETOR: .painel-esquerdo .botao-notifique .notificacao-icone,1807,1807,renumerado
+tema-dark.css,161,161,DARK-0162,DARK-161,APP.SIDEBAR,SELETOR: .painel-esquerdo | @media (min-width: 653px),1818,1818,renumerado
+tema-dark.css,162,162,DARK-0163,DARK-162,APP.SIDEBAR,"SELETOR: .painel-esquerdo .notificacao-titulo, .painel-esquerdo .botao-notifique",1826,1826,renumerado
+tema-dark.css,163,163,DARK-0164,DARK-163,APP.SIDEBAR,SELETOR: .painel-esquerdo > .area-inferior-painel | @media (min-width: 653px),1836,1836,renumerado
+tema-dark.css,164,164,DARK-0165,DARK-164,PANEL.FINANCIAL,PANEL.STUDY.HEADER.ICON,1845,1845,renumerado
+tema-dark.css,165,165,DARK-0166,DARK-165,PANEL.TITLES.STANDARDIZED,,1921,1921,renumerado
+tema-dark.css,166,166,DARK-0167,DARK-166,PANEL.FINANCIAL.HEADER_ICON.DARK,,1943,1943,renumerado
+tema-dark.css,167,167,DARK-0168,DARK-167,PANEL.STUDY.WEEK,ACABAMENTO IGUAL AOS CARDS FINANCEIROS,1981,1981,renumerado
+tema-dark.css,168,168,DARK-0248,DARK-168,PANEL.STUDY.WEEK.CONTENT,CONTEÚDO ACIMA DO REFLEXO,1998,1998,renumerado
+tema-dark.css,169,169,DARK-0169,DARK-169,PANEL.STUDY.ACTIVITY.FIELD_LABELS,BORDA DOS TÍTULOS,2005,2005,mantido
+tema-dark.css,170,170,DARK-0170,DARK-170,PANEL.STUDY.ACTIVITY.FIELD_LABELS,TÍTULOS BRANCOS SEM FUNDO,2017,2017,mantido
+tema-dark.css,171,171,DARK-0171,DARK-171,PANEL.ROUTINE.WEEKLY.STATUS,SELETOR: #card-rotina-semanal .rotina-dia-status | CORES POR DIA,2037,2037,mantido
+tema-dark.css,172,172,DARK-0173,DARK-172,PANEL.ROUTINE.WEEKLY,SELETOR: #card-rotina-semanal | NEUMORFISMO EXTERNO,2143,2143,renumerado
+tema-dark.css,173,173,DARK-0174,DARK-173,PANEL.ROUTINE.PENDING,SELETOR: #card-rotina-pendente | NEUMORFISMO EXTERNO,2163,2163,renumerado
+tema-dark.css,174,174,DARK-0175,DARK-174,PANEL.ROUTINE.AGENDA.ROW.BACKGROUND,"SELETORES: #card-agenda-ontem .rotina-item-horario, #card-agenda-hoje .rotina-item-horario",2182,2182,renumerado
+tema-dark.css,175,175,DARK-0176,DARK-175,PANEL.ROUTINE.AGENDA.HEADER,"SELETORES: #card-agenda-ontem .rotina-agenda-cabecalho, #card-agenda-hoje .rotina-agenda-cabecalho, #card-agenda-ontem .rotina-agenda-cabecalho h3, #card-agenda-hoje .rotina-agenda-cabecalho h3",2194,2194,renumerado
+tema-dark.css,176,176,DARK-0177,DARK-176,PANEL.ROUTINE.AGENDA.TODAY.HEADER.CENTER,SELETOR: #card-agenda-hoje .rotina-agenda-cabecalho,2207,2207,renumerado
+tema-dark.css,177,177,DARK-0178,DARK-177,PANEL.ROUTINE.AGENDA.CALENDAR.COLOR,"SELETORES: #card-agenda-ontem .rotina-agenda-icone, #card-agenda-hoje .rotina-agenda-icone",2213,2213,renumerado
+tema-dark.css,178,178,DARK-0179,DARK-178,PANEL.ROUTINE.AGENDA.ICON.SIZE,"SELETORES: #card-agenda-ontem .rotina-agenda-icone, #card-agenda-hoje .rotina-agenda-icone",2221,2221,renumerado
+tema-dark.css,179,179,DARK-0180,DARK-179,PANEL.ROUTINE.AGENDA.ICON.ALIGN,"SELETORES: #card-agenda-ontem .rotina-agenda-cabecalho .rotina-agenda-icone, #card-agenda-hoje .rotina-agenda-cabecalho .rotina-agenda-icone",2242,2242,renumerado
+tema-dark.css,180,180,DARK-0181,DARK-180,PANEL.ROUTINE.AGENDA.TODAY.ICON.ALIGN,SELETOR: #card-agenda-hoje > .rotina-agenda-cabecalho > .rotina-agenda-icone,2249,2249,renumerado
+tema-dark.css,181,181,DARK-0182,DARK-181,PANEL.ROUTINE.PENDING.LAYOUT,SELETOR: #card-rotina-pendente .rotina-pendencia-item,2257,2257,renumerado
+tema-dark.css,182,182,DARK-0183,DARK-182,PANEL.ROUTINE.AGENDA.SEPARATORS,"SELETORES: #card-agenda-ontem .rotina-atividade, #card-agenda-hoje .rotina-atividade",2291,2291,renumerado
+tema-dark.css,183,183,DARK-0184,DARK-183,PANEL.ROUTINE.CUSTOM.SCROLLBARS,"SELETORES: #card-rotina-pendente, #card-agenda-ontem, #card-agenda-hoje",2303,2303,renumerado
+tema-dark.css,184,184,DARK-0185,DARK-184,PANEL.ROUTINE.PENDING.CUSTOM.SCROLLBAR,"SELETOR: #card-rotina-pendente .rotina-barra-trilho, #card-rotina-pendente .rotina-barra-cursor",2358,2358,renumerado
+tema-dark.css,185,185,DARK-0186,DARK-185,PANEL.ROUTINE.BIAXIAL.SCROLL,"SELETORES: #card-rotina-pendente, #card-agenda-ontem, #card-agenda-hoje",2378,2378,renumerado
+tema-dark.css,186,186,DARK-0187,DARK-186,PANEL.ROUTINE.AGENDA.NEUMORPHISM,,2419,2419,renumerado
+tema-dark.css,187,187,DARK-0188,DARK-187,PANEL.ROUTINE.PENDING.CUSTOM.SCROLLBAR.TRACK.COLOR,SELETOR: #card-rotina-pendente .rotina-barra-trilho,2439,2439,renumerado
+tema-dark.css,188,188,DARK-0189,DARK-188,PANEL.ROUTINE.PENDING.CONTENT.INSET.LEFT,,2464,2464,renumerado
+tema-dark.css,189,189,DARK-0190,DARK-189,PANEL.ROUTINE.PENDING.LIST.AND.ROWS,,2471,2471,renumerado
+tema-dark.css,190,190,DARK-0191,DARK-190,PANEL.ROUTINE.PENDING.HORIZONTAL.SCROLLBAR.SIZE.POSITION,,2516,2516,renumerado
+tema-dark.css,191,191,DARK-0192,DARK-191,PANEL.ROUTINE.PENDING.HEADER.LIST.GAP,,2524,2524,renumerado
+tema-dark.css,192,192,DARK-0193,DARK-192,PANEL.ROUTINE.PENDING.LIST.CONTAINER.RADIUS,,2530,2530,renumerado
+tema-dark.css,193,193,DARK-0194,DARK-193,PANEL.ROUTINE.AGENDA.SCROLL.CLEANUP,LISTAS EIXOS,2538,2538,renumerado
+tema-dark.css,194,194,DARK-0195,DARK-194,PANEL.ROUTINE.AGENDA.ROW.ACTIVITY.WIDTH,,2547,2547,renumerado
+tema-dark.css,195,195,DARK-0196,DARK-195,PANEL.ROUTINE.AGENDA.ROWS.UNIFORM.WIDTH,,2556,2556,renumerado
+tema-dark.css,196,196,DARK-0197,DARK-196,PANEL.ROUTINE.AGENDA.SCROLLBAR.GAP,,2586,2586,renumerado
+tema-dark.css,197,197,DARK-0199,DARK-197,PANEL.COMMITMENT.EVENT.CARDS.LIGHTER,,3203,3199,renumerado
+tema-dark.css,198,198,DARK-0200,DARK-198,PANEL.COMMITMENT.FIELD.FLOATING.LABEL,,3299,3295,renumerado
+tema-dark.css,199,199,DARK-0202,DARK-199,PANEL.COMMITMENT.HEADER.ALIGNMENT,,3469,3465,renumerado
+tema-dark.css,200,200,DARK-0203,DARK-200,PANEL.COMMITMENT.CATEGORIES.ARROWS,,3501,3497,renumerado
+tema-dark.css,201,201,DARK-0204,DARK-201,PANEL.ROUTINE.PERIODS.ARROWS,,3512,3508,renumerado
+tema-dark.css,202,202,DARK-0205,DARK-202,PANEL.COMMITMENT.HEADER.CATEGORIES,,3523,3519,renumerado
+tema-dark.css,203,203,DARK-0206,DARK-203,PANEL.COMMITMENT.CATEGORY.CALENDAR_ICON,,3598,3587,renumerado
+tema-dark.css,204,204,DARK-0207,DARK-204,PANEL.COMMITMENT.CATEGORY.ICON.SIZE,,3610,3599,renumerado
+tema-dark.css,205,205,DARK-0208,DARK-205,PANEL.COMMITMENT.CATEGORY.URGENT.PIN,,3618,3607,renumerado
+tema-dark.css,206,206,DARK-0209,DARK-206,PANEL.COMMITMENT.CATEGORIES.3D.INTERACTION,,3643,3632,renumerado
+tema-dark.css,207,207,DARK-0210,DARK-207,PANEL.COMMITMENT.PENDING.LABEL + PANEL.REMINDER.SUMMARY.LABEL,,3665,3654,renumerado
+tema-dark.css,208,208,DARK-0211,DARK-208,COMPONENT.SCROLLBAR.VERTICAL.NATIVE.HIDE,LISTAS MARCADAS,3680,3669,renumerado
+tema-dark.css,209,209,DARK-0212,DARK-209,COMPONENT.SCROLLBAR.VERTICAL.BASE,TRILHO INDEPENDENTE,3692,3681,renumerado
+tema-dark.css,210,210,DARK-0213,DARK-210,COMPONENT.SCROLLBAR.VERTICAL.FINANCIAL.OVERDUE,,3742,3731,renumerado
+tema-dark.css,211,211,DARK-0214,DARK-211,COMPONENT.SCROLLBAR.VERTICAL.GREEN.PANELS,,3767,3756,renumerado
+tema-dark.css,212,212,DARK-0215,DARK-212,COMPONENT.SCROLLBAR.VERTICAL.ANCHORS,ÂNCORAS ABSOLUTAS,3782,3771,renumerado
+tema-dark.css,213,213,DARK-0216,DARK-213,COMPONENT.SCROLLBAR.VERTICAL.GUTTERS,RESERVA SEM DESLOCAR CARTÕES,3788,3777,renumerado
+tema-dark.css,214,214,DARK-0217,DARK-214,PANEL.COMMITMENT.PENDING.ICON.TRASH,,3806,3795,renumerado
+tema-dark.css,215,215,DARK-0218,DARK-215,PANEL.COMMITMENT.PENDING.ITEM.DESIGNER,,3847,3836,renumerado
+tema-dark.css,216,216,DARK-0219,DARK-216,PANEL.COMMITMENT.PENDING.HIDE_NATIVE_SCROLLBAR,,4048,4037,renumerado
+tema-dark.css,217,217,DARK-0220,DARK-217,PANEL.COMMITMENT.PENDING.ICON.MARK,,4065,4054,renumerado
+tema-dark.css,218,218,DARK-0221,DARK-218,PANEL.COMMITMENT.PENDING.SCROLLBAR.OFFSET,,4097,4086,renumerado
+tema-dark.css,219,219,DARK-0224,DARK-219,PANEL.COMMITMENT.LISTS.ICONS.COLORS,,4162,4151,renumerado
+tema-dark.css,220,220,DARK-0225,DARK-220,PANEL.COMMITMENT.TYPOGRAPHY,,4196,4185,renumerado
+tema-dark.css,221,221,DARK-0226,DARK-221,PANEL.COMMITMENT.EVENT.ICON.NEUMORPHIC,,4246,4235,renumerado
+tema-dark.css,222,222,DARK-0227,DARK-222,PANEL.COMMITMENT.ANNOTATIONS.REMOVE,,4294,4283,renumerado
+tema-dark.css,223,223,DARK-0228,DARK-223,PANEL.COMMITMENT.PENDING.ICON.RED,,4302,4291,renumerado
+tema-dark.css,224,224,DARK-0229,DARK-224,PANEL.COMMITMENT.AGENDA.HEADER,,4339,4328,renumerado
+tema-dark.css,225,225,DARK-0230,DARK-225,PANEL.COMMITMENT.EVENT.TITLE,,4359,4348,renumerado
+tema-dark.css,226,226,DARK-0231,DARK-226,PANEL.COMMITMENT.EVENT.PIN,,4376,4365,renumerado
+tema-dark.css,227,227,DARK-0232,DARK-227,PANEL.COMMITMENT.PIN.CLEAN,,4388,4377,renumerado
+tema-dark.css,228,228,DARK-0233,DARK-228,PANEL.COMMITMENT.PIN.ORIGINAL,,4402,4391,renumerado
+tema-dark.css,229,229,DARK-0234,DARK-229,PANEL.COMMITMENT.PIN.BACKGROUND.REMOVE,,4437,4426,renumerado
+tema-dark.css,230,230,DARK-0235,DARK-230,PANEL.COMMITMENT.FIELD.LABEL.CONTAINER,,4470,4459,renumerado
+tema-dark.css,231,231,DARK-0236,DARK-231,PANEL.COMMITMENT.EVENT.FIELDS.GRID,,4477,4466,renumerado
+tema-dark.css,232,232,DARK-0237,DARK-232,PANEL.COMMITMENT.YESTERDAY.FIRST.EVENT.ORPHAN,,4609,4598,renumerado
+tema-dark.css,233,233,DARK-0238,DARK-233,PANEL.REMINDER.HEADER.ICON,,4652,4641,renumerado
+tema-dark.css,234,234,DARK-0239,DARK-234,PANEL.REMINDER.HEADER.TITLE,,4728,4717,renumerado
+tema-dark.css,235,235,DARK-0240,DARK-235,PANEL.REMINDER.HEADER.ICON,,4746,4735,renumerado
+tema-dark.css,236,236,DARK-0241,DARK-236,PANEL.REMINDER.SUMMARY.CARDS,,4766,4755,renumerado
+tema-dark.css,237,237,DARK-0242,DARK-237,PANEL.REMINDER.TASK.CARDS,,4852,4841,renumerado
+tema-dark.css,238,238,DARK-0243,DARK-238,APP.SIDEBAR.SEARCH_AND_BUTTONS,,5166,5155,renumerado
+tema-dark.css,239,239,DARK-0244,DARK-239,PANEL.STUDY,,5273,5262,renumerado
+tema-dark.css,240,240,DARK-0245,DARK-240,PANEL.REMINDER.UPCOMING,,5320,5309,renumerado
+tema-dark.css,241,241,DARK-0245,DARK-241,PANEL.REMINDER.UPCOMING,,5436,5425,renumerado
+tema-dark.css,,242,,DARK-242,APP.RESPONSIVE.V20,REORGANIZAÇÃO RESPONSIVA DA APLICAÇÃO,,5771,novo marcador V20
+tema-dark.css,,243,,DARK-243,APP.SIDEBAR.SEARCH.EMPTY_STATE,MENSAGEM DE RESULTADOS,,6195,novo marcador V20
+tema-dark.css,,244,,DARK-244,APP.NAVIGATION.RESPONSIVE,MENU PRINCIPAL EM LARGURAS INTERMEDIÁRIAS,,6212,novo marcador V20
+script.js,1,1,JS-001,JS-001,PANEL.CALENDAR.INITIAL_STATE,ESTADO E DATAS INICIAIS,1,1,mantido
+script.js,2,2,JS-002,JS-002,PANEL.CALENDAR.DAY_RENDERING,GERAÇÃO DOS DIAS DO CALENDÁRIO,44,44,mantido
+script.js,3,3,JS-003,JS-003,PANEL.CALENDAR.MONTH_NAVIGATION,NAVEGAÇÃO MENSAL,129,129,mantido
+script.js,4,4,JS-004,JS-004,APP.CLOCK_AND_CALENDAR.DATE_SYNC,RELÓGIO E ATUALIZAÇÃO DIÁRIA,183,183,mantido
+script.js,5,5,JS-005,JS-005,APP.CLOCK.VISIBILITY_REFRESH,RETORNO DA ABA AO PRIMEIRO PLANO,235,235,mantido
+script.js,6,6,JS-006,JS-006,COMPONENT.SCROLLBAR.HORIZONTAL,SELETOR: .rotina-barra-horizontal[data-scroll-for],244,244,mantido
+script.js,7,7,JS-007,JS-007,COMPONENT.SCROLLBAR.VERTICAL,CONTROLADORES INDEPENDENTES,425,425,mantido
+script.js,,8,,JS-008,APP.NAVIGATION.PRIMARY,NAVEGAÇÃO ENTRE PAINÉIS,,560,novo marcador V20
+script.js,,9,,JS-009,APP.SIDEBAR.SEARCH,FILTRO DOS ITENS DO MENU LATERAL,,581,novo marcador V20

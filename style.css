@@ -1,0 +1,6857 @@
+/* =========================
+  CONFIGURAÇÕES GERAIS
+========================= */
+
+/* ID: CSS-001 | REF: APP.BASE | SELETOR: :root */
+:root {
+  --fonte-conteudo-card: 19px;
+  --peso-conteudo-card: 700;
+  --linha-conteudo-card: 1.1;
+  --fonte-renda-card: 15px;
+  --neo-green-dark: #034d29;
+  --neo-green: #087b3e;
+  --neo-green-mid: #20ad5a;
+  --neo-green-light: #72efa0;
+  --neo-surface: #edf5f0;
+  --neo-surface-light: #fafffc;
+  --neo-red-dark: #b91c1c;
+  --neo-red: #e34242;
+  --neo-red-light: #ffe5e5;
+}
+
+/* ID: CSS-002 | REF: APP.BASE | SELETOR: * */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* O atributo HTML hidden deve ocultar o elemento em qualquer viewport.
+   Exceções funcionais específicas podem redefinir display com maior especificidade. */
+[hidden] {
+  display: none !important;
+}
+
+  /* ID: CSS-003 | REF: APP.BASE | SELETOR: body */
+  body {
+  background-color: #e6e9e7;
+}
+
+/* =========================
+  CABEÇALHO
+========================= */
+
+
+/* Organiza o logo e os ícones do cabeçalho. */
+/* ID: CSS-004 | REF: APP.HEADER | SELETOR: .cabecalho */
+.cabecalho {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  position: relative;
+  isolation: isolate;
+
+  width: 100%;
+  padding: 0;
+  margin-bottom: 35px;
+
+  background: transparent;
+  box-shadow: none;
+}
+
+/* ==========================================
+   PAINEL NEUMÓRFICO ÚNICO DO CABEÇALHO
+========================================== */
+
+/* ID: CSS-005 | REF: APP.HEADER | SELETOR: .cabecalho::before */
+.cabecalho::before {
+  content: "";
+  position: absolute;
+  top: 12px;
+  right: 14px;
+  bottom: 0;
+  left: 14px;
+  inset: 12px 14px 0;
+
+  z-index: -1;
+  border-radius: 18px;
+  pointer-events: none;
+
+  background: #e6e9e7;
+
+  box-shadow:
+    inset 10px 10px 18px rgba(165, 173, 181, 0.95),
+    inset -10px -10px 18px rgba(255, 255, 255, 1);
+
+  transition: box-shadow 300ms ease;
+}
+
+/* ==========================================
+   LOGO — BASE NEUMÓRFICA
+========================================== */
+
+/* ID: CSS-006 | REF: APP.HEADER | SELETOR: .logo */
+.logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+
+  position: relative;
+  isolation: isolate;
+
+  padding-right: 18px;
+
+  text-decoration: none;
+  transform: none;
+  align-self: center;
+}
+
+
+/* ID: CSS-007 | REF: APP.HEADER | SELETOR: .logo-simbolo */
+.logo-simbolo {
+  display: block;
+
+  width: 50px;
+  height: 50px;
+
+  object-fit: contain;
+  flex-shrink: 0;
+
+  position: relative;
+  left: 8px;
+  top: 5px;
+}
+
+/* =========================
+  TEXTO CHECK-IN
+========================= */
+
+/* ID: CSS-008 | REF: APP.HEADER | SELETOR: .logo-nome */
+.logo-nome {
+  font-family: "Arvo", Georgia, serif;
+
+  font-size: 5.5vw;
+
+  font-size: clamp(42px, 5.5vw, 78px);
+  font-weight: 700;
+
+  line-height: 1;
+  letter-spacing: -2px;
+
+  color: #032602;
+}
+
+/* =========================
+  RESPONSIVIDADE
+========================= */
+
+/* GRUPO RESPONSIVO: @media (max-width: 480px) */
+@media (max-width: 480px) {
+  /* ID: CSS-009 | REF: APP.HEADER | SELETOR: .cabecalho | @media (max-width: 480px) */
+  .cabecalho {
+    padding: 8px;
+  }
+
+  /* ID: CSS-010 | REF: APP.HEADER | SELETOR: .logo | @media (max-width: 480px) */
+  .logo {
+    gap: 5px;
+  }
+
+  /* ID: CSS-011 | REF: APP.HEADER | SELETOR: .logo-simbolo | @media (max-width: 480px) */
+  .logo-simbolo {
+    width: 76px;
+    height: 76px;
+    object-fit: contain;
+}
+
+  /* ID: CSS-012 | REF: APP.HEADER | SELETOR: .logo-nome | @media (max-width: 480px) */
+  .logo-nome {
+    font-size: 9vw;
+    font-size: clamp(34px, 9vw, 44px);
+    letter-spacing: -1px;
+  }
+}
+
+/* ==========================================
+   PAINEL DIREITO — SINO E PERFIL
+========================================== */
+
+/* ID: CSS-013 | REF: APP.HEADER | SELETOR: .acoes-cabecalho */
+.acoes-cabecalho {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  isolation: isolate;
+
+  gap: 18px;
+  transform: translateX(-14px);
+  align-self: center;
+  padding: 18px;
+}
+
+/* ==================================================
+  ÁREA DE NOTIFICAÇÕES
+  Finalidade: reservar o espaço do sino e permitir
+  posicionar o contador sobre ele.
+================================================== */
+
+
+/* ==================================================
+  ÁREA DE NOTIFICAÇÕES
+  Reserva espaço para o sino e posiciona o contador.
+================================================== */
+
+/* ID: CSS-015 | REF: APP.BASE | SELETOR: .notificacoes */
+.notificacoes {
+  position: relative;
+  /* Serve de referência para o contador. */
+
+  display: flex;
+  /* Organiza os elementos internos. */
+
+  align-items: center;
+  /* Centraliza o sino verticalmente. */
+
+  justify-content: center;
+  /* Centraliza o sino horizontalmente. */
+
+  width: 50px;
+  /* Reserva 50px de largura para o sino. */
+
+  height: 50px;
+  /* Reserva 50px de altura para o sino. */
+
+  flex-shrink: 0;
+  /* Impede que a área das notificações encolha. */
+}
+
+
+/* ==================================================
+  SÍMBOLO DO SINO
+  Finalidade: definir o tamanho e a cor do símbolo
+  provisório usado para representar as notificações.
+================================================== */
+
+
+/* Define o tamanho e a aparência do ícone SVG do sino. */
+/* ID: CSS-016 | REF: APP.HEADER | SELETOR: .icone-sino */
+.icone-sino {
+  width: 50px;
+  /* Define a largura do ícone. */
+  height: 50px;
+  /* Define a altura do ícone. */
+  display: block;
+  /* Evita o comportamento de elemento em linha. */
+  flex-shrink: 0;
+  /* Impede que o ícone encolha dentro do cabeçalho. */
+  /* Define a cor atual do ícone, caso o SVG a utilize. */
+}
+
+/* ==================================================
+  CONTADOR DE NOTIFICAÇÕES
+  Finalidade: exibir a quantidade de notificações
+  em um pequeno círculo vermelho sobre o sino.
+================================================== */
+
+/* ID: CSS-017 | REF: APP.HEADER | SELETOR: .contador-notificacao */
+.contador-notificacao {
+  position: absolute;
+  /* Permite posicionar sobre o sino */
+  top: 2px;
+  /* Afasta o contador do topo da área */
+  right: 6px;
+  /* Posiciona o contador à direita */
+
+  display: flex;
+  /* Permite centralizar o número */
+  align-items: center;
+  /* Centraliza o número verticalmente */
+  justify-content: center;
+  /* Centraliza o número horizontalmente */
+
+  width: 16px;
+  /* Define a largura do círculo */
+  height: 16px;
+  /* Define a altura do círculo */
+
+  border-radius: 50%;
+  /* Transforma o elemento em um círculo */
+  background-color: #e50914;
+  /* Define o fundo vermelho */
+  color: #ffffff;
+  /* Define o número na cor branca */
+
+  font-family: Arial, sans-serif;
+  /* Define a fonte do número */
+  font-size: 10px;
+  /* Define o tamanho do número */
+  font-weight: bold;
+  /* Deixa o número em negrito */
+}
+
+/* ==================================================
+  PERFIL DO USUÁRIO
+  Finalidade: criar o círculo preto que representa
+  o acesso ao perfil no cabeçalho.
+================================================== */
+
+/* ID: CSS-018 | REF: APP.HEADER | SELETOR: .perfil-usuario */
+.perfil-usuario {
+  position: relative;
+  /* Serve de referência para cabeça e corpo */
+  width: 60px;
+  /* Define a largura do círculo */
+  height: 60px;
+  /* Define a altura do círculo */
+
+  flex-shrink: 0;
+  /* Evita que o círculo seja comprimido */
+  overflow: hidden;
+  /* Mantém a silhueta dentro do círculo */
+
+  border-radius: 50%;
+  /* Cria o formato circular */
+  background-color: #000000;
+  /* Define o fundo preto */
+}
+
+/* ==========================================
+  CABEÇA DO PERFIL
+  Finalidade: criar uma cabeça branca menor,
+  centralizada e com espaço ao redor.
+========================================== */
+
+/* ID: CSS-019 | REF: APP.BASE | SELETOR: .perfil-cabeca */
+.perfil-cabeca {
+  position: absolute;
+  /* Posiciona a cabeça dentro do círculo */
+  top: 10px;
+  /* Afasta a cabeça do topo */
+  left: 21px;
+  /* Centraliza a cabeça horizontalmente */
+
+  width: 18px;
+  /* Define a largura da cabeça */
+  height: 18px;
+  /* Define a altura da cabeça */
+
+  border-radius: 50%;
+  /* Deixa a cabeça circular */
+  background-color: #ffffff;
+  /* Preenche a cabeça de branco */
+}
+
+/* ==========================================
+  CORPO DO PERFIL
+  Finalidade: criar os ombros brancos menores,
+  mantendo uma margem preta nas laterais.
+========================================== */
+
+/* ID: CSS-020 | REF: APP.BASE | SELETOR: .perfil-corpo */
+.perfil-corpo {
+  position: absolute;
+  /* Posiciona o corpo dentro do círculo */
+  bottom: 7px;
+  /* Cria espaço preto na parte inferior */
+  left: 14px;
+  /* Afasta o corpo da borda esquerda */
+
+  width: 32px;
+  /* Reduz a largura do corpo */
+  height: 21px;
+  /* Ajusta a altura do corpo */
+
+  border-radius: 18px 18px 10px 10px;
+  /* Arredonda os ombros */
+  background-color: #ffffff;
+  /* Preenche o corpo de branco */
+}
+
+/* ==================================================
+  MENU PRINCIPAL DO CHECK-IN
+  Finalidade: posicionar os cinco botões em uma linha,
+  com espaçamento semelhante ao mockup.
+================================================== */
+
+/* ID: CSS-021 | REF: APP.NAVIGATION.PRIMARY | SELETOR: .menu-principal */
+.menu-principal {
+  display: flex;
+  /* Organiza os botões lado a lado */
+  align-items: center;
+  /* Alinha os botões verticalmente */
+  justify-content: center;
+  /* Centraliza o conjunto de botões */
+  gap: 24px;
+  /* Cria espaço entre os botões */
+  width: 100%;
+  /* Ocupa toda a largura disponível */
+  padding: 10px 20px;
+  /* Cria espaço interno ao redor do menu */
+  /* Inclui o padding na largura total */
+  flex-wrap: wrap;
+  /* Permite quebrar a linha em telas pequenas */
+}
+
+/* ==================================================
+  BOTÕES DO MENU
+  Finalidade: definir o formato, o tamanho, a borda
+  em degradê verde e a sombra dos cinco botões.
+================================================== */
+
+/* ID: CSS-022 | REF: APP.NAVIGATION.PRIMARY | SELETOR: .botao-menu */
+.botao-menu {
+  display: flex;
+  /* Coloca ícone e texto lado a lado */
+  align-items: center;
+  /* Centraliza ícone e texto verticalmente */
+  gap: 14px;
+  /* Separa o ícone do texto */
+
+  width: 234px;
+  /* Define a largura do botão */
+  min-height: 52px;
+  /* Define a altura mínima do botão */
+  padding: 8px 14px;
+  /* Cria espaço interno */
+
+  border: 3px solid transparent;
+  /* Reserva espaço para a borda */
+  border-radius: 19px;
+  /* Arredonda os cantos */
+
+  background:
+    linear-gradient(#ffffff, #ffffff) padding-box,
+    linear-gradient(110deg, #032602, #098c04, #4cbf17) border-box;
+  /* Fundo branco com borda em degradê verde */
+
+  box-shadow: 3px 4px 5px #00000040;
+  /* Adiciona sombra cinza */
+
+  color: #000000;
+  /* Define o texto preto */
+  font-family: Arial, sans-serif;
+  /* Define a fonte provisória */
+  font-size: 23px;
+  /* Define o tamanho do texto */
+  font-weight: 700;
+  /* Deixa o texto em negrito */
+
+  cursor: pointer;
+  /* Indica que o botão pode ser clicado */
+  transition:
+    background 180ms ease,
+    color 180ms ease;
+  /* Suaviza a mudança visual ao interagir */
+}
+
+/* ==================================================
+  ÍCONES DOS BOTÕES
+  Finalidade: manter todos os ícones em uma área fixa,
+  sem alterar a altura ou a largura dos botões.
+================================================== */
+
+/* ID: CSS-023 | REF: APP.BASE | SELETOR: .botao-icone */
+.botao-icone {
+  display: block;
+  flex: 0 0 34px;
+  width: 34px;
+  height: 34px;
+  overflow: visible;
+  font-size: 34px;
+  line-height: 1;
+  color: #218838;
+}
+
+/* ==================================================
+  TEXTO DOS BOTÕES
+  Finalidade: manter o texto em uma linha sempre
+  que houver espaço suficiente.
+================================================== */
+
+/* ID: CSS-024 | REF: APP.BASE | SELETOR: .botao-texto */
+.botao-texto {
+  white-space: nowrap;
+  /* Evita quebrar o texto em duas linhas */
+}
+
+/* ==================================================
+  EFEITO AO PASSAR O MOUSE
+  Finalidade: destacar o botão enquanto o ponteiro
+  estiver sobre ele.
+================================================== */
+
+
+/* ID: CSS-025 | REF: APP.NAVIGATION.PRIMARY | SELETOR: .botao-menu:hover */
+.botao-menu:hover {
+  background:
+    linear-gradient(
+      180deg,
+      #22a447 0%,
+      #0d852c 38%,
+      #08651e 100%
+    ) padding-box,
+    linear-gradient(
+      110deg,
+      #032602,
+      #098c04,
+      #4cbf17
+    ) border-box;
+
+  color: #ffffff;
+  box-shadow:
+    0 4px 8px #00000035,
+    inset 0 1px 2px #ffffff40;
+
+  transform: translateY(-1px);
+}
+
+/* Ícone branco durante o hover do menu superior */
+/* ID: CSS-026 | REF: APP.NAVIGATION.PRIMARY | SELETOR: .botao-menu:hover .botao-icone */
+.botao-menu:hover .botao-icone {
+  color: #ffffff;
+}
+
+
+/* ==================================================
+  ACESSIBILIDADE DO MENU
+  Finalidade: mostrar um contorno ao navegar pelos
+  botões usando o teclado.
+================================================== */
+
+/* ID: CSS-027 | REF: APP.NAVIGATION.PRIMARY | SELETOR: .botao-menu:focus-visible */
+.botao-menu:focus-visible {
+  outline: 3px solid #4cbf17;
+  /* Destaca o botão em foco */
+  outline-offset: 3px;
+  /* Afasta o contorno da borda */
+}
+
+/* ==================================================
+  AJUSTE PARA CELULARES
+  Finalidade: adaptar o menu a telas estreitas.
+================================================== */
+
+/* GRUPO RESPONSIVO: @media (max-width: 600px) */
+@media (max-width: 600px) {
+  /* ID: CSS-028 | REF: APP.NAVIGATION.PRIMARY | SELETOR: .menu-principal | @media (max-width: 600px) */
+  .menu-principal {
+    gap: 12px;
+    /* Reduz o espaço entre os botões */
+    padding: 10px 12px;
+    /* Reduz o espaço lateral */
+  }
+
+  /* ID: CSS-029 | REF: APP.NAVIGATION.PRIMARY | SELETOR: .botao-menu | @media (max-width: 600px) */
+  .botao-menu {
+    width: 100%;
+    /* Permite ocupar a largura disponível */
+    max-width: 320px;
+    /* Limita a largura do botão */
+    min-height: 48px;
+    /* Ajusta a altura para celular */
+    font-size: 20px;
+    /* Reduz o tamanho do texto */
+  }
+}
+
+/* =========================================
+  LAYOUT PRINCIPAL
+  Organiza o conteúdo e os calendários em uma linha.
+========================================= */
+/* ID: CSS-030 | REF: APP.LAYOUT | SELETOR: .conteudo-principal */
+.conteudo-principal {
+  display: grid;
+  grid-template-columns: 274px minmax(0, 1fr) 262px;
+  align-items: start;
+  column-gap: 15px;
+  row-gap: 16px;
+  width: 100%;
+  padding: 20px 23px;
+}
+
+/* =========================================
+  PAINEL DOS DOIS CALENDÁRIOS
+  Mantém os meses empilhados verticalmente.
+  O painel ocupa a terceira posição no layout.
+========================================= */
+/* ID: CSS-031 | REF: PANEL.CALENDAR | SELETOR: .painel-calendarios */
+.painel-calendarios {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+  min-width: 0;
+  grid-column: 3;
+  grid-row: 1;
+  align-items: stretch;
+}
+
+/* =========================================
+  CARTÃO DE CADA CALENDÁRIO
+  Define o fundo, a borda e o espaçamento de cada mês.
+========================================= */
+
+/* Cartão do calendário: reproduz a borda e a sombra do mockup */
+/* ID: CSS-032 | REF: PANEL.CALENDAR | SELETOR: .calendario */
+.calendario {
+  width: 100%;
+  max-width: 320px;
+  min-width: 0;
+  /* A largura acompanha a coluna responsiva do painel de calendários. */
+  padding: 16px;
+  /* Mantém espaço interno para os dias */
+  /* Inclui o preenchimento na largura total */
+  background-color: #ffffff;
+  /* Fundo branco */
+  border: 2px solid #111111;
+  /* Contorno preto do mockup */
+  border-radius: 12px;
+  /* Cantos arredondados */
+  box-shadow: 0 8px 18px #2434471A;
+  /* Sombra mais forte */
+}
+
+/* =========================================
+  TÍTULO DO CALENDÁRIO
+  Será preenchido com o nome do mês e o ano.
+========================================= */
+
+/* Título do mês: centralizado e destacado como no mockup */
+/* ID: CSS-033 | REF: PANEL.CALENDAR | SELETOR: .calendario-titulo */
+.calendario-titulo {
+  margin: 0;
+  /* Remove margens que poderiam deslocar o título. */
+  color: #032602;
+  /* Verde escuro da identidade visual */
+  font-family: Arial, sans-serif;
+  /* Fonte do título */
+  font-size: 16px;
+  /* Define o tamanho final do título no cabeçalho. */
+  font-weight: 700;
+  /* Texto em negrito */
+  text-align: center;
+  /* Centraliza o nome do mês. */
+  text-transform: uppercase;
+  /* Exibe o mês em letras maiúsculas */
+  min-width: 0;
+  /* Permite que o título caiba na coluna. */
+  white-space: nowrap;
+  /* Evita que o nome do mês quebre em duas linhas. */
+}
+
+/* =========================================
+  GRADE DOS DIAS DA SEMANA E DOS NÚMEROS
+  Organiza os elementos em sete colunas.
+========================================= */
+/* ID: CSS-034 | REF: PANEL.CALENDAR | SELETOR: .calendario-dias-semana, .calendario-dias */
+.calendario-dias-semana,
+.calendario-dias {
+  display: grid;
+  /* Ativa o layout em grade */
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+  /* Cria sete colunas iguais */
+  gap: 10px;
+  /* Espaço entre as células */
+  text-align: center;
+  /* Centraliza os textos */
+}
+
+/* Grade dos números: reserva seis linhas sem pintar espaços vazios */
+
+/* Grade dos números: mantém seis linhas bem distribuídas */
+/* ID: CSS-035 | REF: PANEL.CALENDAR | SELETOR: .calendario-dias */
+/* ID: CSS-036 | REF: PANEL.CALENDAR */
+/* ESPAÇAMENTO UNIFORME ENTRE OS DIAS */
+
+/* ID: CSS-037 | REF: PANEL.CALENDAR */
+/* GRADE FIXA — SEIS SEMANAS E ESPAÇAMENTO UNIFORME */
+
+.calendario-dias {
+  column-gap: 3px;
+  row-gap: 3px;
+
+   grid-template-rows: repeat(6, 29.7143px);
+
+  align-content: start;
+  min-height: 0;
+}
+
+/* =========================================
+  NOMES DOS DIAS DA SEMANA
+  Exibe abreviações como Dom, Seg e Ter.
+========================================= */
+
+/* Faixa verde com os nomes dos dias da semana */
+/* ID: CSS-038 | REF: PANEL.CALENDAR | SELETOR: .calendario-dias-semana */
+.calendario-dias-semana {
+  gap: 0;
+  /* Junta os nomes em uma única faixa */
+  margin-bottom: 12px;
+  /* Espaço entre a faixa e os números */
+  padding: 4px 0;
+  /* Espaçamento vertical dentro da faixa */
+  color: #176b20;
+  /* Texto verde escuro */
+  background-color: #80ed80;
+  /* Verde claro semelhante ao mockup */
+  border-radius: 8px;
+  /* Arredonda as pontas da faixa */
+  font-family: Arial, sans-serif;
+  /* Fonte dos dias */
+  font-size: 10px;
+  /* Tamanho compacto */
+  font-weight: 700;
+  /* Destaca os nomes */
+}
+
+/* =========================================
+  CÉLULAS DOS DIAS DO MÊS
+  Define o tamanho e a aparência dos números.
+========================================= */
+
+/* Cada dia do mês aparece dentro de uma cápsula arredondada */
+/* ID: CSS-039 | REF: PANEL.CALENDAR | SELETOR: .calendario-dia */
+.calendario-dia {
+  display: flex;
+  /* Permite centralizar o número */
+  align-items: center;
+  /* Centraliza verticalmente */
+  justify-content: center;
+  /* Centraliza horizontalmente */
+  min-height: 32px;
+  aspect-ratio: 1;
+  /* Mantém a célula quadrada */
+  color: #111111;
+  /* Texto preto, como no mockup */
+  background-color: #80ed80;
+  /* Fundo verde claro */
+  border-radius: 5px;
+  /* Arredonda os cantos da cápsula */
+  font-family: Arial, sans-serif;
+  /* Define a fonte dos números */
+  font-size: 14px;
+  /* Define o tamanho dos números */
+  font-weight: 750;
+  /* Deixa os números em negrito */
+}
+
+/* =========================================
+  DIA ATUAL
+  Destaca a data de hoje com fundo verde.
+========================================= */
+/* ID: CSS-040 | REF: PANEL.CALENDAR | SELETOR: .calendario-dia.hoje */
+.calendario-dia.hoje {
+  border: 2px solid #111111;
+  /* Contorno preto para destacar a data */
+  font-weight: 700;
+  /* Destaca o número */
+}
+
+/* =========================================
+  ADAPTAÇÃO PARA CELULARES
+  Evita que a página fique larga demais em telas pequenas.
+========================================= */
+/* GRUPO RESPONSIVO: @media (max-width: 652px) */
+@media (max-width: 652px) {
+  /* ID: CSS-042 | REF: PANEL.CALENDAR | SELETOR: .painel-calendarios | @media (max-width: 652px) */
+  .painel-calendarios {
+    width: 100%;
+    /* Permite que o painel use a largura disponível */
+    max-width: 320px;
+    /* Evita calendários excessivamente largos */
+  }
+}
+
+/* =========================================
+  CONTEÚDO PRINCIPAL DO CHECK-IN
+  Mantém o conteúdo central e adaptável.
+========================================= */
+
+/* Área central reservada para o conteúdo principal. */
+/* ID: CSS-043 | REF: APP.LAYOUT | SELETOR: .area-conteudo */
+.area-conteudo {
+  grid-column: 2;
+  grid-row: 1;
+  width: 100%;
+  min-width: 0;
+  padding: 4px;
+}
+
+/* =========================================
+  TÍTULO DO CONTEÚDO
+  Destaca o título principal da área selecionada.
+========================================= */
+/* =========================================
+  DESCRIÇÃO DO CONTEÚDO
+  Apresenta uma breve orientação ao usuário.
+========================================= */
+/* Cabeçalho: mantém setas, ano e mês em posições estáveis */
+/* ID: CSS-044 | REF: PANEL.CALENDAR | SELETOR: .calendario-cabecalho */
+.calendario-cabecalho {
+  display: grid;
+  /* Organiza os elementos em colunas fixas */
+  grid-template-columns: 28px 52px minmax(0, 1fr) 28px;
+  /* Reserva espaço para seta, ano, mês e seta */
+  align-items: center;
+  /* Alinha os elementos verticalmente */
+  column-gap: 6px;
+  /* Espaço fixo entre as colunas */
+  width: 100%;
+  /* Usa toda a largura interna do cartão */
+  margin-bottom: 14px;
+  /* Espaço abaixo do cabeçalho */
+}
+
+/* Mantém a cápsula do ano com largura fixa */
+/* ID: CSS-045 | REF: PANEL.CALENDAR | SELETOR: .calendario-cabecalho .calendario-ano */
+.calendario-cabecalho .calendario-ano {
+  display: block;
+  /* Mantém o ano dentro da coluna reservada */
+  /* Inclui o preenchimento na largura */
+  width: 52px;
+  /* Impede que o ano altere a posição do mês */
+  padding: 3px 2px;
+  /* Espaçamento interno da cápsula */
+  text-align: center;
+  /* Centraliza o ano */
+  white-space: nowrap;
+  /* Impede a quebra do ano */
+}
+
+/* Mantém cada seta centralizada em sua coluna fixa. */
+/* ID: CSS-046 | REF: PANEL.CALENDAR | SELETOR: .calendario-cabecalho .seta-calendario */
+.calendario-cabecalho .seta-calendario {
+  justify-self: center;
+  /* Centraliza a seta na coluna do cabeçalho. */
+}
+
+
+/* Cápsula verde que exibe o ano */
+/* ID: CSS-047 | REF: PANEL.CALENDAR | SELETOR: .calendario-ano */
+.calendario-ano {
+  display: inline-block;
+  /* Permite aplicar fundo e espaçamento */
+  padding: 3px 10px;
+  /* Espaço ao redor do ano */
+  color: #ffffff;
+  /* Texto branco */
+  background-color: #41733f;
+  /* Verde semelhante ao mockup */
+  border-radius: 8px;
+  /* Cantos suavemente arredondados */
+  font-family: Arial, sans-serif;
+  /* Fonte do ano */
+  font-size: 14px;
+  /* Tamanho do ano */
+  font-weight: 700;
+  /* Ano em negrito */
+}
+
+/* =========================================
+  BOTÕES DE NAVEGAÇÃO DOS CALENDÁRIOS
+  Cria setas discretas, verdes e fáceis de clicar.
+========================================= */
+/* ID: CSS-048 | REF: PANEL.CALENDAR | SELETOR: .seta-calendario */
+.seta-calendario {
+  display: flex;
+  /* Centraliza a seta dentro do botão */
+  align-items: center;
+  /* Centraliza verticalmente */
+  justify-content: center;
+  /* Centraliza horizontalmente */
+  width: 28px;
+  /* Largura da área clicável */
+  height: 28px;
+  /* Altura da área clicável */
+  padding: 0;
+  /* Remove o espaçamento padrão */
+  border: none;
+  /* Remove a borda padrão */
+  border-radius: 6px;
+  /* Arredonda levemente os cantos */
+  background-color: transparent;
+  /* Mantém o fundo transparente */
+  color: #032602;
+  /* Usa o verde escuro do Check-In */
+  font-family: Arial, sans-serif;
+  /* Define a fonte da seta */
+  font-size: 27px;
+  /* Aumenta o símbolo da seta */
+  line-height: 1;
+  /* Evita altura extra ao redor do símbolo */
+  cursor: pointer;
+  /* Indica que o botão pode ser clicado */
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease;
+  /* Suaviza a mudança ao passar o mouse */
+}
+
+/* Realça a seta quando o usuário passa o mouse */
+/* ID: CSS-049 | REF: PANEL.CALENDAR | SELETOR: .seta-calendario:hover */
+.seta-calendario:hover {
+  background-color: #80ed80;
+  /* Verde mais forte no fundo */
+  color: #032602;
+  /* Seta em verde escuro */
+}
+
+/* Mostra um contorno acessível ao navegar pelo teclado */
+/* ID: CSS-050 | REF: PANEL.CALENDAR | SELETOR: .seta-calendario:focus-visible */
+.seta-calendario:focus-visible {
+  outline: 2px solid #098c04;
+  /* Contorno verde */
+  outline-offset: 2px;
+  /* Afasta o contorno do botão */
+}
+
+/* Dias anteriores: mantém a caixa verde e deixa apenas o número cinza. */
+/* ID: CSS-051 | REF: PANEL.CALENDAR | SELETOR: .calendario-dia.dia-passado */
+.calendario-dia.dia-passado {
+  color: #777676;
+}
+
+/* =========================================
+  BOTÕES DO MENU LATERAL
+  Reaproveita o visual verde dos botões existentes.
+========================================= */
+/* =========================================
+  BOTÕES DO MENU LATERAL
+========================================= */
+/* ID: CSS-052 | REF: APP.SIDEBAR | SELETOR: .botao-menu-lateral */
+.botao-menu-lateral {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  gap: 10px;
+
+  width: 100%;
+  height: 42px;
+  min-height: 42px;
+  padding: 1px 10px;
+  box-sizing: border-box;
+
+  border: 2px solid transparent;
+  border-radius: 12px;
+
+  background:
+    linear-gradient(#ffffff, #ffffff) padding-box,
+    linear-gradient(
+      110deg,
+      #032602,
+      #098c04,
+      #4cbf17
+    ) border-box;
+
+  box-shadow: 3px 4px 5px #00000040;
+
+  color: #000000;
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+
+  cursor: pointer;
+  transition: background 180ms ease, color 180ms ease;
+}
+
+/* Nomes dos botões laterais — alinhamento uniforme */
+/* ID: CSS-053 | REF: APP.SIDEBAR | SELETOR: .botao-menu-lateral > span:not(.icone-menu-lateral) */
+.botao-menu-lateral > span:not(.icone-menu-lateral) {
+  white-space: nowrap;
+
+  /* Todos os títulos começam na mesma posição */
+}
+
+/* SETA VERDE À DIREITA */
+/* ID: CSS-054 | REF: APP.SIDEBAR | SELETOR: .botao-menu-lateral::after */
+.botao-menu-lateral::after {
+  content: "›";
+  display: block;
+  flex: 0 0 auto;
+
+  color: #08652b;
+  font-family: Arial, sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 1;
+
+  transform: translateY(-1px);
+}
+
+/* Ícones em branco durante o hover do menu lateral */
+/* ID: CSS-055 | REF: APP.SIDEBAR | SELETOR: .botao-menu-lateral:hover > .icone-menu-lateral */
+.botao-menu-lateral:hover > .icone-menu-lateral {
+  color: #ffffff !important;
+}
+
+/* Ícone SVG branco durante o hover do menu lateral */
+/* ID: CSS-056 | REF: APP.SIDEBAR | SELETOR: .botao-menu-lateral:hover > svg */
+.botao-menu-lateral:hover > svg {
+  color: #ffffff;
+}
+
+/* ACESSIBILIDADE */
+/* ID: CSS-057 | REF: APP.SIDEBAR | SELETOR: .botao-menu-lateral:focus-visible */
+.botao-menu-lateral:focus-visible {
+  outline: 3px solid #4cbf17;
+  outline-offset: 3px;
+}
+
+/* HOVER 3D — MESMO DESIGN DE COMPROVANTES */
+/* ID: CSS-058 | REF: APP.SIDEBAR | SELETOR: .botao-menu-lateral:hover */
+.botao-menu-lateral:hover {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+
+  background:
+    /* Reflexo diagonal */
+    linear-gradient(
+      225deg,
+      rgba(255, 255, 255, 0.14) 0%,
+      rgba(255, 255, 255, 0.07) 14%,
+      rgba(255, 255, 255, 0.015) 32%,
+      transparent 48%,
+      rgba(0, 25, 8, 0.10) 76%,
+      rgba(0, 20, 5, 0.28) 100%
+    ),
+
+    /* Brilho verde à esquerda */
+    radial-gradient(
+      ellipse 65% 110% at 5% 0%,
+      rgba(115, 255, 155, 0.60) 0%,
+      rgba(45, 215, 85, 0.28) 45%,
+      transparent 78%
+    ),
+
+    /* Brilho verde à direita */
+    radial-gradient(
+      ellipse 52% 120% at 100% 0%,
+      rgba(95, 255, 130, 0.50) 0%,
+      rgba(35, 190, 70, 0.22) 48%,
+      transparent 82%
+    ),
+
+    /* Reflexo superior */
+    linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.04) 0%,
+      rgba(255, 255, 255, 0.02) 28%,
+      transparent 55%
+    ),
+
+    /* Base verde profunda */
+    linear-gradient(
+      110deg,
+      #064719 0%,
+      #075b21 35%,
+      #0b7d2b 68%,
+      #1ba247 100%
+    );
+
+  /* Borda verde fina, como em Comprovantes */
+  border: 1px solid rgba(80, 220, 115, 0.65);
+
+  color: #ffffff;
+
+  /* Mesmo relevo 3D de Comprovantes */
+  box-shadow:
+    inset 0 1px 1px rgba(255, 255, 255, 0.32),
+    inset 0 4px 8px rgba(255, 255, 255, 0.08),
+    inset 0 -4px 5px rgba(0, 25, 5, 0.55),
+    inset 1px 0 3px rgba(255, 255, 255, 0.12),
+    inset -1px 0 3px rgba(0, 20, 5, 0.25),
+    0 5px 8px rgba(0, 0, 0, 0.32);
+}
+
+/* REMOVE COMPLETAMENTE O TOBOGÃ DURANTE O HOVER */
+/* ID: CSS-059 | REF: APP.SIDEBAR | SELETOR: .botao-menu-lateral:hover::before */
+.botao-menu-lateral:hover::before {
+  content: none;
+  display: none;
+}
+
+/* Mantém ícones e textos acima do reflexo */
+/* ID: CSS-060 | REF: APP.SIDEBAR | SELETOR: .botao-menu-lateral:hover > span */
+.botao-menu-lateral:hover > span {
+  position: relative;
+  z-index: 1;
+}
+
+/* Seta branca durante o hover */
+/* ID: CSS-061 | REF: APP.SIDEBAR | SELETOR: .botao-menu-lateral:hover::after */
+.botao-menu-lateral:hover::after {
+  position: relative;
+  z-index: 1;
+  color: #ffffff;
+}
+
+/* Organiza os botões do menu lateral e define o espaço entre eles. */
+/* ID: CSS-062 | REF: APP.SIDEBAR | SELETOR: .menu-lateral */
+.menu-lateral {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 20px;
+  flex-shrink: 0;
+}
+
+/* Ícones do menu lateral */
+
+/* ID: CSS-063 | REF: APP.SIDEBAR | SELETOR: .icone-menu-lateral */
+.icone-menu-lateral {
+  display: flex;
+  flex: 0 0 34px;
+  width: 34px;
+  height: 34px;
+  align-items: center;
+  justify-content: center;
+  font-size: 34px;
+  line-height: 1;
+  text-align: center;
+  color: #218838;
+}
+
+/* ID: CSS-064 | REF: APP.SIDEBAR | SELETOR: .botao-menu-lateral > svg */
+.botao-menu-lateral > svg {
+  display: block;
+  flex: 0 0 29px;
+  width: 29px;
+  height: 29px;
+  margin-right: 5px;
+  padding: 0;
+  background: transparent;
+  color: #218838;
+}
+
+/* Ajuda — o círculo é desenhado pelo próprio SVG */
+/* ID: CSS-065 | REF: APP.SIDEBAR | SELETOR: .menu-lateral .botao-menu-lateral:last-child .icone-menu-lateral */
+.menu-lateral .botao-menu-lateral:last-child .icone-menu-lateral {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: none;
+  border-radius: 9px;
+
+  font-size: 34px;
+  transform: none;
+}
+
+
+
+/* Painel esquerdo que agrupa o menu e os futuros elementos inferiores. */
+/* ID: CSS-066 | REF: APP.SIDEBAR | SELETOR: .painel-esquerdo */
+.painel-esquerdo {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 20px;
+  grid-column: 1;
+  grid-row: 1;
+  width: 100%;
+  min-width: 0;
+  margin: 0;
+  padding: 18px;
+  align-self: flex-start;
+  background-color: #ffffff;
+  border: 1px solid transparent;
+  border-radius: 20px;
+  box-shadow: 0 8px 22px #14a04159;
+}
+
+/* Mantém os botões organizados dentro do painel esquerdo. */
+/* ID: CSS-067 | REF: APP.SIDEBAR | SELETOR: .painel-esquerdo .menu-lateral */
+.painel-esquerdo .menu-lateral {
+  width: 100%;
+  margin: 0;
+}
+
+/* ANIMAÇÃO DAS BORDAS DE HORÁRIO E DATA */
+
+/* ID: CSS-068 | REF: APP.SIDEBAR | SELETOR: .area-inferior-painel */
+.area-inferior-painel {
+  position: relative;
+}
+
+/* ID: CSS-069 | REF: APP.SIDEBAR | SELETOR: .horario-painel, .data-painel */
+.horario-painel,
+.data-painel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 0;
+  padding: 8px 6px;
+  color: #333333;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  white-space: nowrap;
+  font-variant-numeric: tabular-nums;
+}
+
+/* ID: CSS-070 | REF: APP.SIDEBAR | SELETOR: .area-inferior-painel .horario-painel */
+.area-inferior-painel .horario-painel {
+  gap: 9px;
+}
+
+
+/* ID: CSS-071 | REF: APP.SIDEBAR | SELETOR: .notificacao-titulo */
+.notificacao-titulo {
+  align-items: center;
+  justify-content: center;
+  outline: 1px solid #a7dfb6;
+  background-color: #f7fff8;
+  box-shadow: 0 1px 3px #098c0420;
+}
+
+/* ID: CSS-072 | REF: APP.FOOTER | SELETOR: .rodape */
+.rodape {
+  padding: 16px 20px;
+  background-color: #ffffff;
+  color: #555555;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  text-align: center;
+}
+
+/* ID: CSS-073 | REF: APP.FOOTER | SELETOR: .rodape-destaque */
+.rodape-destaque {
+  color: #218838;
+  font-weight: 700;
+}
+
+/* ID: CSS-074 | REF: APP.FOOTER | SELETOR: .rodape::before */
+.rodape::before {
+  content: "";
+  display: inline-block;
+  width: 0.45em;
+  height: 0.45em;
+  margin-right: 0.5em;
+  border-radius: 50%;
+  background-color: #218838;
+  vertical-align: middle;
+}
+
+/* ÁREA CENTRAL — Organização vertical dos cards */
+/* ID: CSS-075 | REF: APP.LAYOUT | SELETOR: .grade-cards */
+.grade-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  width: 100%;
+  max-width: 760px;
+  margin-inline: auto;
+}
+
+/* CARD CENTRAL — Estrutura fixa e compartilhada dos painéis */
+/* ID: CSS-076 | REF: APP.LAYOUT | SELETOR: .card-central */
+.card-central {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  flex: 0 0 260px;
+  width: 100%;
+  height: 260px;
+  min-height: 260px;
+  max-height: 260px;
+
+  padding: 10px;
+  border: 2px solid transparent;
+  border-radius: 12px;
+
+  box-sizing: border-box;
+  overflow: hidden;
+
+  background:
+    linear-gradient(#ffffff, #ffffff) padding-box,
+    linear-gradient(110deg, #032602, #098c04, #4cbf17) border-box;
+
+  box-shadow: 0 8px 18px #2434471A;
+}
+
+/* FINANCEIRO — Estrutura externa e organização do card */
+/* ID: CSS-077 | REF: PANEL.FINANCIAL | SELETOR: .card-financeiro */
+.card-financeiro {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* ID: CSS-078 | REF: PANEL.FINANCIAL | SELETOR: .financeiro-cabecalho */
+.financeiro-cabecalho {
+  display: grid;
+  grid-template-columns: 188px 106px minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 8px;
+  transform: translateY(-4px);
+}
+
+/* ID: CSS-079 | REF: PANEL.FINANCIAL | EST-CARD */
+/* SELETORES: .financeiro-mes-card, .estudo-mes-card */
+
+.financeiro-mes-card,
+.estudo-mes-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 95px;
+  justify-self: center;
+  height: 20px;
+
+  box-sizing: border-box;
+  padding: 0 3px;
+
+  background:
+    linear-gradient(#ffffff, #ffffff) padding-box,
+    linear-gradient(90deg, #111111, #176b20) border-box;
+
+  border: 1px solid transparent;
+  border-radius: 7px;
+
+  font-family: "Segoe UI", Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+/* ID: CSS-080 | REF: PANEL.FINANCIAL | SELETOR: .financeiro-mes-card .financeiro-mes */
+.financeiro-mes-card .financeiro-mes {
+  text-transform: capitalize;
+}
+
+/* ID: CSS-081 | REF: APP.BASE | SELETOR: .financeiro-identificacao */
+.financeiro-identificacao {
+  gap: 6px;
+  min-width: 0;
+}
+
+.card-financeiro,
+.card-estudo,
+#painel-compromisso,
+#painel-lembrete {
+  font-family: "Segoe UI", Arial, sans-serif !important;
+}
+
+/* CSS-353 | REF: PANEL.COMMITMENT.EVENT.TITLE | ESTRUTURA DO TÍTULO INTEGRAL */
+#painel-compromisso .compromisso-evento-cabecalho > .compromisso-evento-titulo {
+  flex: 1;
+  min-width: 0;
+  margin: 0;
+  white-space: nowrap;
+}
+
+/* ID: CSS-082 | REF: PANEL.FINANCIAL | SELETOR: .card-financeiro .titulo-card */
+.card-financeiro .titulo-card {
+  font-family: "Segoe UI", Arial, sans-serif !important;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+/* ID: CSS-083 | REF: PANEL.FINANCIAL | SELETOR: .financeiro-icone */
+.financeiro-icone {
+  display: flex;
+  flex: 0 0 28px;
+  width: 30px;
+  height: 30px;
+  align-items: center;
+  justify-content: center;
+
+  position: relative;
+  border-radius: 50%;
+
+  /* Verde com reflexos suaves */
+  font-family: Arial, sans-serif;
+  font-size: 19px;
+  font-weight: 700;
+  line-height: 1;
+
+  /* Brilho interno mais discreto */
+}
+
+/* ID: CSS-084 | REF: PANEL.FINANCIAL.INCOME | SELETOR: .financeiro-renda-rotulo */
+.financeiro-renda-rotulo {
+  position: absolute;
+  top: -8px;
+  padding: 0 4px;
+  border: 1px solid #39c914;
+  font-size: 10px;
+  line-height: 12px;
+}
+
+/* ID: CSS-085 | REF: PANEL.FINANCIAL | SELETOR: .financeiro-progresso */
+.financeiro-progresso {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex: 1;
+  max-width: 320px;
+  width: 100%;
+  justify-self: start;
+  min-width: 0;
+}
+
+/* ID: CSS-086 | REF: PANEL.FINANCIAL | SELETOR: .financeiro-progresso-trilho */
+.financeiro-progresso-trilho {
+  display: block;
+  flex: 1;
+  min-width: 0;
+  height: 12px;
+  border-radius: 999px;
+  background-color: #b3b3b3;
+}
+
+/* ID: CSS-087 | REF: PANEL.FINANCIAL | SELETOR: .financeiro-progresso-preenchimento */
+.financeiro-progresso-preenchimento {
+  display: block;
+  width: 80%;
+  height: 100%;
+  border-radius: inherit;
+}
+
+/* ID: CSS-088 | REF: PANEL.FINANCIAL | SELETOR: .financeiro-progresso-percentual */
+.financeiro-progresso-percentual {
+  font-family: "Segoe UI", Arial, sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+/* ID: CSS-089 | REF: PANEL.FINANCIAL | SELETOR: .financeiro-indicadores */
+.financeiro-indicadores {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  column-gap: 60px;
+  row-gap: 12px;
+  margin-top: 1px;
+  margin-bottom: 5px;
+}
+
+
+/* ID: CSS-090 | REF: PANEL.FINANCIAL.PRIORITY | SELETOR: .financeiro-indicador-pago, .financeiro-indicador-prioritaria, .financeiro-indicador-atrasadas */
+.financeiro-indicador-pago,
+.financeiro-indicador-prioritaria,
+.financeiro-indicador-atrasadas {
+  grid-column: span 4;
+}
+
+/* ID: CSS-091 | REF: PANEL.FINANCIAL.OVERDUE_AMOUNT | SELETOR: .financeiro-indicador-valor-atrasado */
+.financeiro-indicador-valor-atrasado {
+  grid-column: span 3;
+  justify-self: stretch;
+}
+
+
+/* ID: CSS-092 | REF: PANEL.FINANCIAL | SELETOR: .financeiro-indicador */
+.financeiro-indicador {
+  flex-direction: column;
+  min-width: 0;
+  height: 44px;
+  min-height: 44px;
+  padding: 7px 4px 0;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  background:
+    linear-gradient(#ffffff, #ffffff) padding-box,
+    linear-gradient(110deg, #032602, #098c04, #4cbf17) border-box;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+
+
+/* ID: CSS-093 | REF: PANEL.FINANCIAL | SELETOR: .financeiro-indicador-rotulo */
+.financeiro-indicador-rotulo {
+  position: absolute;
+  top: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 0 4px;
+  background: #fff;
+  border: 1px solid #39c914;
+  border-radius: 3px;
+  font-size: 11px;
+  line-height: 12px;
+  white-space: nowrap;
+}
+
+
+/* ID: CSS-094 | REF: PANEL.FINANCIAL.PAID | SELETOR: .financeiro-indicador-pago .financeiro-indicador-rotulo */
+.financeiro-indicador-pago .financeiro-indicador-rotulo {
+  font-size: 11px;
+}
+
+/* ID: CSS-095 | REF: PANEL.FINANCIAL | SELETOR: .financeiro-indicador-valor */
+.financeiro-indicador-valor {
+  white-space: nowrap;
+}
+
+/* ID: CSS-096 | REF: PANEL.FINANCIAL | SELETOR: .financeiro-indicador-valor strong */
+.financeiro-indicador-valor strong {
+  flex: 0 0 auto;
+}
+
+/* ID: CSS-097 | REF: PANEL.FINANCIAL | SELETOR: .financeiro-indicador-icone */
+
+/* ID: CSS-098 | REF: PANEL.FINANCIAL.PRIORITY | SELETOR: .financeiro-alfinete-icone */
+.financeiro-alfinete-icone {
+  display: block;
+  flex: 0 0 20px;
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+  background: linear-gradient(145deg, #284935, #17201a);
+  border: none;
+  border-radius: 0;
+  position: absolute;
+  top: 50%;
+  left: 6px;
+  transform: translateY(-50%);
+}
+
+/* ID: CSS-099 | REF: PANEL.FINANCIAL | SELETOR: .financeiro-indicador-icone */
+
+/* ID: CSS-100 | REF: PANEL.FINANCIAL | SELETOR: .financeiro-indicador-icone-verde */
+.financeiro-indicador-icone-verde {
+  color: #41733f;
+}
+
+/* ID: CSS-101 | REF: PANEL.FINANCIAL.BILLS_DUE | SELETOR: .financeiro-vencidas */
+.financeiro-vencidas {
+  position: relative;
+  top: -6px;
+  padding: 10px 7px 3px 9px;
+  background-color: #f5ecec;
+  font-family: "Segoe UI", Arial, sans-serif;
+  box-sizing: border-box;
+  width: 90%;
+  align-self: center;
+  margin-top: 4px;
+}
+
+/* ID: CSS-102 | REF: PANEL.FINANCIAL.BILLS_DUE | SELETOR: .financeiro-vencidas-titulo */
+.financeiro-vencidas-titulo {
+  position: absolute;
+  top: -11px;
+  left: 12px;
+  z-index: 1;
+  margin: 0;
+
+  padding: 0 5px;
+  background-color: #f0a3a3;
+
+  font-family: "Segoe UI", Arial, sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 14px;
+  letter-spacing: 0.2px;
+  white-space: nowrap;
+}
+
+/* ID: CSS-103 | REF: APP.BASE | SELETOR: .financeiro-lista-vencidas */
+.financeiro-lista-vencidas {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  max-height: 72px;
+  overflow-y: auto;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  padding-right: 24px;
+  box-sizing: border-box;
+}
+
+/* ID: CSS-104 | REF: PANEL.FINANCIAL.BILLS_DUE | SELETOR: .financeiro-conta */
+.financeiro-conta {
+  background-color: #ffffff;
+  display: grid;
+  grid-template-columns: 32% minmax(0, 1fr) 86px 32px;
+  align-items: center;
+  gap: 8px;
+  min-height: 26px;
+  padding: 0 8px;
+  box-sizing: border-box;
+  color: #111111;
+  font-size: 10px;
+  font-weight: 700;
+  font-family: "Segoe UI", Arial, sans-serif;
+  letter-spacing: 0.61px;
+  line-height: 1.25;
+  white-space: nowrap;
+
+}
+
+/* ID: CSS-105 | REF: PANEL.FINANCIAL.BILLS_DUE | SELETOR: .financeiro-conta-nome */
+.financeiro-conta-nome {
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  gap: 10px;
+}
+
+/* ÍCONES DAS CONTAS VENCIDAS */
+/* ID: CSS-106 | REF: PANEL.FINANCIAL.BILLS_DUE | SELETOR: .financeiro-conta-icone */
+.financeiro-conta-icone {
+  display: inline-flex;
+  flex: 0 0 20px;
+
+  width: 20px;
+  height: 20px;
+
+  align-items: center;
+  justify-content: center;
+
+  border: none;
+  border-radius: 9px;
+  font-family: "Segoe UI", Arial, sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1;
+
+  box-sizing: border-box;
+}
+
+/* CIFRÃO SVG — DIMENSIONAMENTO PROPORCIONAL */
+
+.financeiro-conta-icone > .icone-cifrao-svg {
+  display: block;
+  flex: 0 0 auto;
+
+  width: 65%;
+  height: 100%;
+
+  overflow: visible;
+  color: inherit;
+}
+
+/* ID: CSS-107 | REF: PANEL.FINANCIAL.BILLS_DUE | SELETOR: .financeiro-conta-vencimento */
+.financeiro-conta-vencimento {
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 5px;
+
+  width: fit-content;
+  max-width: 100%;
+  min-width: 0;
+
+  padding: 2px 5px;
+  border-radius: 4px;
+
+  background: #d5e0d7;
+  color: #000000;
+
+  font-size: 11px;
+  line-height: 1.1;
+  white-space: nowrap;
+  box-sizing: border-box;
+}
+
+/* ID: CSS-108 | REF: PANEL.FINANCIAL.BILLS_DUE | SELETOR: .financeiro-conta-vencimento-rotulo */
+.financeiro-conta-vencimento-rotulo {
+  flex: 0 0 auto;
+  white-space: nowrap;
+}
+
+/* ID: CSS-109 | REF: PANEL.FINANCIAL.BILLS_DUE | SELETOR: .financeiro-conta-data */
+.financeiro-conta-data {
+  display: inline;
+  color: inherit;
+  font: inherit;
+  white-space: nowrap;
+}
+
+/* ID: CSS-110 | REF: PANEL.FINANCIAL.BILLS_DUE | SELETOR: .financeiro-conta-valor */
+.financeiro-conta-valor {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+
+  width: 100%;
+  min-width: 0;
+  margin: 0;
+  padding: 0;
+
+  box-sizing: border-box;
+  font-size: 11px;
+  font-weight: bolder;
+  font-variant-numeric: tabular-nums;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+/* ID: CSS-111 | REF: APP.BASE | SELETOR: .financeiro-valor-prefixo */
+.financeiro-valor-prefixo {
+  flex: 0 0 18px;
+}
+
+/* ID: CSS-112 | REF: APP.BASE | SELETOR: .financeiro-valor-inteiro */
+.financeiro-valor-inteiro {
+  text-align: left;
+}
+
+/* ID: CSS-113 | REF: COMPONENT.PANEL.TITLE | SELETOR: .titulo-card */
+.titulo-card {
+  margin: 0;
+  background: linear-gradient(110deg, #032602, #098c04, #4cbf17);
+  background-clip: text;
+  color: transparent;
+  font-family: "Segoe UI", Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+/* ID: CSS-114 | REF: PANEL.FINANCIAL.RECEIPTS | SELETOR: .botao-comprovantes */
+
+/* ID: CSS-115 | REF: PANEL.FINANCIAL.RECEIPTS | SELETOR: .icone-comprovantes */
+.icone-comprovantes {
+  display: block;
+  object-fit: contain;
+}
+
+/* ID: CSS-116 | REF: PANEL.FINANCIAL.RECEIPTS | SELETOR: .botao-comprovantes:hover */
+.botao-comprovantes:hover {
+  filter: brightness(1.08);
+}
+
+
+/* PADRONIZAÇÃO DOS 6 ESPAÇOS DO PAINEL FINANCEIRO */
+
+/* ID: CSS-117 | REF: PANEL.FINANCIAL.PRIORITY | SELETOR: .financeiro-indicador-pago, .financeiro-indicador-prioritaria, .financeiro-indicador-atrasadas, .financeiro-indicador-valor-atrasado, .botao-comprovantes */
+.financeiro-indicador-pago,
+.financeiro-indicador-prioritaria,
+.financeiro-indicador-atrasadas,
+.financeiro-indicador-valor-atrasado,
+.botao-comprovantes {
+  grid-column: span 4;
+  min-width: 0;
+  height: 34px;
+  min-height: 34px;
+  box-sizing: border-box;
+}
+
+
+/* PADRONIZAÇÃO DAS FONTES E DO ALINHAMENTO */
+
+/* Mantém o alinhamento compartilhado dos demais indicadores. */
+/* ID: CSS-118 | REF: PANEL.FINANCIAL | SELETOR: .financeiro-indicador */
+
+/* Títulos dos cartões */
+/* ID: CSS-119 | REF: PANEL.FINANCIAL.INCOME | SELETOR: .financeiro-renda-rotulo, .financeiro-indicador-rotulo */
+
+/* Valores e textos dentro dos cartões */
+/* ID: CSS-120 | REF: PANEL.FINANCIAL | SELETOR: .financeiro-indicador-valor */
+.financeiro-indicador-valor {
+  gap: 7px;
+  padding-left: 4px;
+}
+
+/* Ícones dos cartões */
+/* ID: CSS-121 | REF: PANEL.FINANCIAL | SELETOR: .financeiro-indicador-icone */
+.financeiro-indicador-icone {
+  flex-shrink: 0;
+}
+
+/* Texto do botão Comprovantes */
+/* ID: CSS-122 | REF: PANEL.FINANCIAL.RECEIPTS | SELETOR: .botao-comprovantes */
+
+/* ID: CSS-123 | REF: PANEL.FINANCIAL.RECEIPTS | SELETOR: .icone-comprovantes */
+.icone-comprovantes {
+  flex-shrink: 0;
+}
+
+
+/* ===== PADRÃO VISUAL DE TODOS OS CARTÕES FINANCEIROS ===== */
+
+/* Alinhamento interno dos demais indicadores. */
+/* ID: CSS-124 | REF: PANEL.FINANCIAL | SELETOR: .financeiro-indicador */
+.financeiro-indicador {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+/* Títulos: Renda Mensal, Valor Pago no Mês,
+Conta Prioritária, Contas Atrasadas e Valor Atrasado */
+/* ID: CSS-125 | REF: PANEL.FINANCIAL.INCOME | SELETOR: .financeiro-renda-rotulo, .financeiro-indicador-rotulo */
+.financeiro-renda-rotulo,
+.financeiro-indicador-rotulo {
+  position: absolute;
+  top: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 0 5px;
+  background: #fff;
+  border: 1px solid #39c914;
+  border-radius: 3px;
+  font-family: "Segoe UI", Arial, sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 14px;
+  text-align: center;
+  white-space: nowrap;
+  letter-spacing: 0.2px;
+}
+
+/* Valores dos outros cartões */
+/* ID: CSS-126 | REF: PANEL.FINANCIAL | SELETOR: .financeiro-indicador-valor */
+.financeiro-indicador-valor {
+  position: static;
+  display: block;
+  width: 100%;
+  min-width: 0;
+  min-height: 22px;
+  box-sizing: border-box;
+}
+
+/* ID: CSS-127 | REF: PANEL.FINANCIAL | SELETOR: .financeiro-indicador-valor strong */
+.financeiro-indicador-valor strong {
+  display: block;
+  width: 100%;
+  margin: 0;
+  color: #111111;
+  font-family: "Segoe UI", Arial, sans-serif;
+  font-size: 19px;
+  font-size: var(--fonte-conteudo-card);
+  font-weight: 500;
+  line-height: 1.1;
+  text-align: center;
+  white-space: nowrap;
+}
+
+/* ID: CSS-128 | REF: PANEL.FINANCIAL | SELETOR: .financeiro-indicador-icone */
+.financeiro-indicador-icone {
+  position: absolute;
+  top: 50%;
+  left: 6px;
+  transform: translateY(-50%);
+  display: inline-flex;
+  flex: 0 0 20px;
+  width: 20px;
+  height: 20px;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid currentColor;
+  border-radius: 50%;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1;
+  box-sizing: border-box;
+}
+
+
+
+/* Texto do botão Comprovantes */
+/* ID: CSS-129 | REF: PANEL.FINANCIAL.RECEIPTS | SELETOR: .botao-comprovantes */
+.botao-comprovantes {
+  justify-content: center;
+  gap: 0;
+  line-height: 1.1;
+}
+
+
+/* ID: CSS-130 | REF: PANEL.FINANCIAL.INCOME | SELETOR: .financeiro-renda-rotulo */
+.financeiro-renda-rotulo {
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+
+/* ID: CSS-131 | REF: PANEL.FINANCIAL.PRIORITY | SELETOR: .financeiro-indicador-valor .financeiro-indicador-icone, .financeiro-indicador-valor .financeiro-alfinete-icone, .botao-comprovantes .icone-comprovantes */
+.financeiro-indicador-valor .financeiro-indicador-icone,
+.financeiro-indicador-valor .financeiro-alfinete-icone,
+.botao-comprovantes .icone-comprovantes {
+  position: absolute;
+  top: 46%;
+  left: 9px;
+  transform: translateY(-50%);
+}
+
+/* Cifrões: tamanho uniforme */
+/* ID: CSS-132 | REF: PANEL.FINANCIAL | SELETOR: .financeiro-indicador-valor .financeiro-indicador-icone */
+.financeiro-indicador-valor .financeiro-indicador-icone {
+  width: 22px;
+  height: 22px;
+  font-size: 16px;
+}
+
+/* Alfinete */
+/* ID: CSS-133 | REF: PANEL.FINANCIAL.PRIORITY | SELETOR: .financeiro-indicador-valor .financeiro-alfinete-icone */
+.financeiro-indicador-valor .financeiro-alfinete-icone {
+  width: 22px;
+  height: 22px;
+}
+
+/* Documento de Comprovantes */
+/* ID: CSS-134 | REF: PANEL.FINANCIAL.RECEIPTS | SELETOR: .botao-comprovantes .icone-comprovantes */
+.botao-comprovantes .icone-comprovantes {
+  position: static;
+  transform: none;
+  grid-column: 1;
+  grid-row: 1;
+  display: block;
+  width: 26px;
+  height: 30px;
+  object-fit: contain;
+}
+
+/* ID: CSS-135 | REF: PANEL.FINANCIAL | SELETOR: .financeiro-mes */
+.financeiro-mes {
+  color: #dcebe1 !important;
+  text-transform: uppercase;
+}
+
+/* ==========================================
+  CONTAS VENCIDAS — BOTÕES DE EXCLUSÃO
+  Controle independente dos cinco botões
+========================================== */
+
+/* Fundo circular e área clicável */
+/* ID: CSS-136 | REF: PANEL.FINANCIAL.BILLS_DUE | SELETOR: .financeiro-vencidas .financeiro-conta-excluir */
+.financeiro-vencidas .financeiro-conta-excluir {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  justify-self: center;
+  align-self: center;
+
+  width: 20px;
+  height: 20px;
+  padding: 0;
+
+  border: none;
+  border-radius: 50%;
+
+  color: #ff858c;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+/* Efeito ao passar o mouse */
+/* ID: CSS-137 | REF: PANEL.FINANCIAL.BILLS_DUE | SELETOR: .financeiro-vencidas .financeiro-conta-excluir:hover */
+
+/* Controle independente do desenho da lixeira */
+/* ID: CSS-138 | REF: PANEL.FINANCIAL.BILLS_DUE | SELETOR: .financeiro-vencidas .financeiro-conta-excluir svg */
+.financeiro-vencidas .financeiro-conta-excluir svg {
+  display: block;
+  width: 15px;
+height: 15px;
+  flex-shrink: 0;
+}
+
+/* CABEÇALHO DO PAINEL ESTUDO */
+/* ID: CSS-139 | REF: PANEL.STUDY.HEADER | SELETOR: .estudo-cabecalho */
+.estudo-cabecalho {
+  display: grid;
+
+  grid-template-columns:
+    188px
+    106px
+    minmax(0, 1fr)
+    auto;
+
+  align-items: center;
+  gap: 8px;
+
+  transform: translateY(-4px);
+}
+
+/* ID: CSS-140 | REF: PANEL.STUDY.HEADER.IDENTITY | SELETOR: .estudo-identificacao */
+.estudo-identificacao {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  min-width: 0;
+  white-space: nowrap;
+}
+
+/* ID: CSS-141 | REF: PANEL.STUDY.HEADER.ICON | SELETOR: .estudo-icone */
+.estudo-icone {
+  display: flex;
+  flex: 0 0 28px;
+  width: 28px;
+  height: 28px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: #032602;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+/* ID: CSS-142 | REF: PANEL.STUDY.HEADER.TITLE | SELETOR: .card-estudo .titulo-card */
+.card-estudo .titulo-card {
+  font-size: 22px;
+}
+
+/* BARRA DE PROGRESSO */
+/* ID: CSS-143 | REF: PANEL.STUDY.HEADER.PROGRESS | SELETOR: .estudo-progresso */
+.estudo-progresso {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex: 1;
+  max-width: 320px;
+  width: 100%;
+  justify-self: start;
+  min-width: 0;
+}
+
+/* ID: CSS-144 | REF: PANEL.STUDY.HEADER.PROGRESS.TRACK | SELETOR: .estudo-progresso-trilho */
+.estudo-progresso-trilho {
+  display: block;
+  flex: 1;
+  min-width: 0;
+  height: 12px;
+  border-radius: 999px;
+  background-color: #b3b3b3;
+}
+
+/* ID: CSS-145 | REF: PANEL.STUDY.HEADER.PROGRESS.FILL | SELETOR: .estudo-progresso-preenchimento */
+.estudo-progresso-preenchimento {
+  display: block;
+  width: 65%;
+  height: 100%;
+  border-radius: inherit;
+  background: linear-gradient(110deg, #032602, #098c04, #4cbf17);
+}
+
+/* ID: CSS-146 | REF: PANEL.STUDY.HEADER.PROGRESS.VALUE | SELETOR: .estudo-progresso-percentual */
+.estudo-progresso-percentual {
+  color: #111111;
+  font-family: "Segoe UI", Arial, sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+/* ORGANIZAÇÃO DAS TRÊS ÁREAS DO ESTUDO */
+/* ID: CSS-147 | REF: PANEL.STUDY | SELETOR: .estudo-conteudo */
+
+/* ID: CSS-148 | REF: PANEL.STUDY | SELETOR: .estudo-area-esquerda, .estudo-area-direita */
+.estudo-area-esquerda,
+.estudo-area-direita {
+  min-width: 0;
+  min-height: 0;
+}
+
+/* BOTÃO PADRÃO DE TODOS OS PAINÉIS */
+/* ID: CSS-149 | REF: COMPONENT.ACTION.DETAILS_BUTTON | SELETOR: .botao-detalhes */
+.botao-detalhes {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  padding: 5px 22px 5px 9px;
+  border: 1px solid rgba(91, 231, 139, .34);
+  border-radius: 7px;
+  background:
+    linear-gradient(
+      225deg,
+      rgba(255, 255, 255, 0.012) 0%,
+      rgba(255, 255, 255, 0.005) 14%,
+      transparent 32%,
+      transparent 48%,
+      rgba(0, 25, 8, 0.01) 76%,
+      rgba(0, 20, 5, 0.025) 100%
+    ),
+    radial-gradient(
+      ellipse 65% 110% at 5% 0%,
+      rgba(115, 255, 155, 0.045) 0%,
+      rgba(45, 215, 85, 0.015) 45%,
+      transparent 78%
+    ),
+    radial-gradient(
+      ellipse 52% 120% at 100% 0%,
+      rgba(95, 255, 130, 0.04) 0%,
+      rgba(35, 190, 70, 0.012) 48%,
+      transparent 82%
+    ),
+    linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.006) 0%,
+      transparent 55%
+    ),
+    linear-gradient(
+      110deg,
+      rgba(6, 71, 25, 0.38) 0%,
+      rgba(7, 91, 33, 0.38) 35%,
+      rgba(11, 125, 43, 0.38) 68%,
+      rgba(27, 162, 71, 0.38) 100%
+    );
+  box-shadow:
+    -2px -2px 4px rgba(200, 200, 200, .05),
+     4px  4px 7px rgba(0, 0, 0, .88),
+     0 0 5px rgba(35, 180, 85, .16),
+    inset 1px 1px 2px rgba(255, 255, 255, .14),
+    inset -2px -2px 4px rgba(0, 35, 15, .35);
+  color: #ffffff;
+  font-family: "Segoe UI", Arial, sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  line-height: 1.1;
+  white-space: nowrap;
+  text-decoration: none;
+  cursor: pointer;
+  transform: translateY(0);
+  transition:
+    transform .2s ease,
+    box-shadow .2s ease,
+    filter .2s ease;
+}
+
+/* ID: CSS-150 | REF: COMPONENT.ACTION.DETAILS_BUTTON.HOVER | SELETOR: .botao-detalhes:hover */
+.botao-detalhes:hover {
+  transform: translateY(-2px);
+  filter: brightness(1.07);
+  box-shadow:
+    -3px -3px 6px rgba(200, 200, 200, .04),
+     7px  7px 15px rgba(0, 0, 0, .68),
+     0 0 9px rgba(35, 180, 85, .12),
+    inset 1px 1px 2px rgba(255, 255, 255, .10),
+    inset -2px -3px 5px rgba(0, 35, 15, .20);
+}
+
+.botao-detalhes:active {
+  transform: translateY(1px);
+  filter: brightness(.98);
+  box-shadow:
+    inset 3px 3px 6px rgba(0, 45, 20, .22),
+    inset -2px -2px 5px rgba(110, 255, 160, .05),
+    0 2px 4px rgba(0, 50, 20, .12);
+}
+
+/* ID: CSS-151 | REF: COMPONENT.ACTION.DETAILS_BUTTON.ARROW | SELETOR: .botao-detalhes > span */
+.botao-detalhes > span {
+  position: absolute;
+  top: calc(50% - 2px);
+  right: 9px;
+  transform: translateY(-50%);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 400;
+  height: 18px;
+  line-height: 1;
+}
+
+/* ÁREA ESQUERDA DO PAINEL ESTUDO */
+/* ID: CSS-152 | REF: PANEL.STUDY | SELETOR: .estudo-area-esquerda */
+.estudo-area-esquerda {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  min-width: 0;
+}
+
+/* QUADRO DOS DIAS DA SEMANA */
+/* ID: CSS-153 | REF: PANEL.STUDY | SELETOR: .estudo-semana */
+.card-estudo .estudo-semana {
+  display: grid;
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+  gap: 4px;
+  padding: 9px 6px;
+
+  border: 1px solid rgba(67, 206, 119, .42);
+  border-radius: 13px;
+
+  background: linear-gradient(
+    145deg,
+    #17271d 0%,
+    #0d1711 55%,
+    #111f16 100%
+  ) !important;
+
+  box-shadow:
+    inset 0 1px 0 rgba(255,255,255,.09),
+    inset 0 -2px 5px rgba(0,0,0,.38),
+    0 5px 13px rgba(0,0,0,.34),
+    0 0 10px rgba(35,190,95,.09) !important;
+
+  box-sizing: border-box;
+  width: calc(100% + 12px);
+align-self: flex-start;
+}
+
+/* IDENTIFICAÇÃO DOS DIAS */
+/* ID: CSS-154 | REF: PANEL.STUDY | SELETOR: .estudo-semana-dia */
+.card-estudo .estudo-semana-dia {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  min-width: 0;
+
+  color: #c8ebd3 !important;
+  font-family: "Segoe UI", Arial, sans-serif;
+  font-weight: 800;
+  letter-spacing: .25px;
+
+  text-shadow: 0 1px 2px rgba(0,0,0,.55);
+}
+
+/* ESTRUTURA DOS CÍRCULOS */
+/* ID: CSS-155 | REF: PANEL.STUDY | SELETOR: .estudo-dia-circulo */
+.card-estudo .estudo-dia-circulo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 25px;
+  height: 25px;
+  box-sizing: border-box;
+
+  border: 1px solid rgba(255,255,255,.28);
+  border-radius: 50%;
+
+  color: #ffffff !important;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 800;
+  line-height: 1;
+  text-shadow: 0 1px 2px rgba(0,0,0,.45);
+
+  box-shadow:
+    inset 0 1px 2px rgba(255,255,255,.20),
+    inset 0 -2px 3px rgba(0,0,0,.28),
+    0 2px 4px rgba(0,0,0,.30) !important;
+}
+
+/* DIA NEUTRO — GRAFITE METÁLICO */
+/* ID: CSS-156 | REF: PANEL.STUDY | SELETOR: .estudo-dia-circulo.neutro */
+.card-estudo .estudo-dia-circulo.neutro {
+  background: linear-gradient(
+    145deg,
+    #718176 0%,
+    #46564b 55%,
+    #304036 100%
+  ) !important;
+
+  border-color: rgba(205,232,214,.34) !important;
+
+  box-shadow:
+    inset 0 1px 2px rgba(255,255,255,.26),
+    inset 0 -2px 3px rgba(0,0,0,.34),
+    -1px -1px 1px rgba(245,255,248,.08),
+    1px 2px 3px rgba(0,0,0,.42) !important;
+}
+
+/* DIA PENDENTE — ESCARLATE PREMIUM */
+/* ID: CSS-157 | REF: PANEL.STUDY | SELETOR: .estudo-dia-circulo.pendente */
+.card-estudo .estudo-dia-circulo.pendente {
+  background: linear-gradient(
+    145deg,
+    #f16b74 0%,
+    #bf3543 52%,
+    #781d2a 100%
+  ) !important;
+
+  border-color: rgba(255,169,175,.58) !important;
+
+  box-shadow:
+    inset 0 1px 2px rgba(255,255,255,.28),
+    inset 0 -2px 3px rgba(55,0,5,.36),
+    -1px -1px 1px rgba(255,232,234,.08),
+    1px 2px 3px rgba(0,0,0,.42),
+    0 1px 2px rgba(190,35,52,.13) !important;
+}
+
+/* DIA CONCLUÍDO — ESMERALDA PREMIUM */
+/* ID: CSS-158 | REF: PANEL.STUDY | SELETOR: .estudo-dia-circulo.concluido */
+.card-estudo .estudo-dia-circulo.concluido {
+  background: linear-gradient(
+    145deg,
+    #62efa0 0%,
+    #1aa75c 52%,
+    #086039 100%
+  ) !important;
+
+  border-color: rgba(163,255,193,.66) !important;
+
+  box-shadow:
+    inset 0 1px 2px rgba(255,255,255,.32),
+    inset 0 -2px 3px rgba(0,45,20,.34),
+    -1px -1px 1px rgba(235,255,240,.08),
+    1px 2px 3px rgba(0,0,0,.42),
+    0 1px 2px rgba(24,190,94,.12) !important;
+}
+
+/* CAMPOS DIAS DE ESTUDO E PENDÊNCIAS */
+/* ID: CSS-159 | REF: PANEL.STUDY | SELETOR: .estudo-campo */
+.estudo-campo {
+  position: relative;
+  isolation: isolate;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  min-width: 0;
+  height: 40px;
+  padding: 4px 8px;
+  border-radius: 12px;
+  border: 1px solid transparent;
+  background: transparent;
+  box-shadow:
+    -2px -2px 5px rgba(220, 255, 232, 0.055),
+    -1px -1px 2px rgba(220, 255, 232, 0.025),
+     2px  2px 5px rgba(0, 0, 0, 0.38),
+     1px  1px 2px rgba(0, 0, 0, 0.22);
+  box-sizing: border-box;
+}
+
+/* Acabamento vermelho de Pendências */
+.estudo-campo-pendencias {
+  box-shadow:
+    inset 0 1px 1px rgba(255, 190, 195, 0.12),
+    0 3px 6px rgba(0, 0, 0, 0.25);
+}
+
+/* Reflexo diagonal — TOBOGÃ VERDE */
+.card-estudo .estudo-area-central .estudo-campo::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  inset: 0;
+  z-index: 0;
+  border-radius: inherit;
+  pointer-events: none;
+
+  clip-path: polygon(
+    97% 0%,
+    100% 0%,
+    100% 100%,
+    76% 100%,
+    77.5% 94%,
+    79% 88%,
+    81.5% 80%,
+    85% 72%,
+    88.8% 63%,
+    91.2% 54%,
+    93% 45%,
+    94.5% 36%,
+    95.7% 27%,
+    96.5% 18%,
+    97.2% 9%,
+    97.5% 0%
+  );
+
+  background: radial-gradient(
+    ellipse 100% 130% at 100% 50%,
+    rgba(45, 215, 100, 0.23) 0%,
+    rgba(45, 215, 100, 0.12) 45%,
+    transparent 100%
+  );
+}
+
+/* Mantém os elementos acima do reflexo */
+.estudo-campo .estudo-campo-rotulo {
+  z-index: 1;
+}
+
+.estudo-campo .estudo-campo-icone,
+.estudo-campo .estudo-campo-texto {
+  position: relative;
+  z-index: 1;
+}
+
+/* Pendências — reflexo vermelho */
+.estudo-campo-pendencias {
+  border-color: transparent;
+}
+
+.card-estudo .estudo-area-central .estudo-campo-pendencias::after {
+  background: radial-gradient(
+    ellipse 100% 130% at 100% 50%,
+    rgba(225, 50, 65, 0.28) 0%,
+    rgba(225, 50, 65, 0.13) 45%,
+    transparent 100%
+  );
+}
+
+/* ID: CSS-160 | REF: PANEL.STUDY | SELETOR: .estudo-campo-rotulo */
+.estudo-campo-rotulo {
+  position: absolute;
+  top: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 0 5px;
+  background: transparent;
+border: none;
+  border-radius: 3px;
+  font-family: "Segoe UI", Arial, sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 14px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+/* ID: CSS-161 | REF: PANEL.STUDY | SELETOR: .estudo-campo-icone */
+.estudo-campo-icone {
+  display: flex;
+  flex: 0 0 28px;
+  width: 28px;
+  height: 28px;
+
+  align-items: center;
+  justify-content: center;
+
+  color: #41733f;
+}
+
+/* ID: CSS-162 | REF: PANEL.STUDY | SELETOR: .estudo-campo-texto */
+.estudo-campo-texto {
+  min-width: 0;
+  color: #111111;
+  font-family: "Segoe UI", Arial, sans-serif;
+  font-size: 17px;
+  white-space: nowrap;
+}
+
+/* ID: CSS-163 | REF: PANEL.STUDY | SELETOR: .estudo-campo-texto strong */
+.estudo-campo-texto strong {
+  font-weight: 700;
+}
+
+/* ID: CSS-164 | REF: PANEL.STUDY | SELETOR: .estudo-campo-pendencias .estudo-campo-rotulo, .estudo-campo-pendencias .estudo-campo-icone, .estudo-campo-pendencias .estudo-campo-texto */
+.estudo-campo-pendencias .estudo-campo-rotulo,
+.estudo-campo-pendencias .estudo-campo-icone,
+.estudo-campo-pendencias .estudo-campo-texto {
+  color: #e50914;
+}
+
+/* ID: CSS-165 | REF: PANEL.STUDY | SELETOR: .estudo-campo-pendencias */
+.estudo-campo-pendencias {
+  background:
+    linear-gradient(#ffffff, #ffffff) padding-box,
+    linear-gradient(110deg, #032602 0%, #098c04 55%, #4cbf17 100%) border-box;
+}
+
+/* ORGANIZAÇÃO DA ÁREA CENTRAL DO ESTUDO */
+/* ID: CSS-166 | REF: PANEL.STUDY | SELETOR: .estudo-area-central */
+.estudo-area-central {
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(0, 0.9fr);
+  gap: 24px 8px;
+  align-content: start;
+  min-width: 0;
+  min-height: 0;
+}
+
+/* PRIORIDADE — BORDA FINA E BASE DO DESIGNER */
+/* ID: CSS-167 | REF: PANEL.STUDY | SELETOR: .estudo-prioridade */
+.estudo-prioridade {
+  position: relative;
+  isolation: isolate;
+  display: flex;
+  grid-column: 1 / -1;
+  align-items: center;
+  gap: 10px;
+
+  height: 37px;
+  min-width: 0;
+  padding: 0 8px;
+
+  border: 1px solid transparent;
+  border-radius: 12px;
+
+  background: transparent;
+
+    transform: translateY(10px);
+
+  box-sizing: border-box;
+}
+
+/* ID: CSS-168 | REF: PANEL.STUDY | SELETOR: .estudo-prioridade-rotulo */
+.estudo-prioridade-rotulo {
+  position: absolute;
+  top: -8px;
+  left: 50%;
+transform: translateX(-50%);
+  padding: 0 5px;
+  border: 1px solid rgba(126, 214, 103, 0.45);
+  border-radius: 3px;
+  background: #ffffff;
+  font-family: "Segoe UI", Arial, sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 14px;
+  letter-spacing: 0.50px;
+}
+
+/* ID: CSS-169 | REF: PANEL.STUDY | ALFINETE DE PRIORIDADE */
+.estudo-prioridade-icone {
+  display: block;
+
+  width: 19px !important;
+  height: 19px !important;
+  flex: 0 0 19px;
+
+  box-sizing: border-box;
+  object-fit: contain;
+  object-position: center;
+
+  align-self: center;
+  vertical-align: middle;
+
+  transform: translate(2px, 4px);
+
+  color: #39d879;
+}
+
+/* TEXTO DA MATÉRIA PRIORITÁRIA */
+/* ID: CSS-170 | REF: PANEL.STUDY.PRIORITY | SELETOR: .estudo-prioridade-texto */
+.estudo-prioridade-texto {
+  flex: 0 1 auto;
+  min-width: 0;
+  max-width: 100%;
+  overflow: hidden;
+  color: #111111;
+  font-family: "Segoe UI", Arial, sans-serif;
+  font-size: 14px;
+  text-align: left;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  transform: translateY(3px);
+}
+
+/* ID: CSS-171 | REF: PANEL.STUDY.START_DATE | SELETOR: .estudo-data-inicio */
+.estudo-area-central .estudo-data-inicio {
+  grid-column: 1;
+  transform: translateY(25px);
+  border: 1px solid rgba(80, 220, 115, 0.65);
+  border-radius: 12px;
+  background:
+    linear-gradient(#ffffff, #ffffff) padding-box,
+    linear-gradient(110deg, #032602, #098c04, #4cbf17) border-box;
+  box-shadow:
+    inset 0 1px 1px rgba(190, 255, 210, 0.12),
+    0 3px 6px rgba(0, 0, 0, 0.25);
+}
+
+/* TOBOGÃ INDIVIDUAL — DATA DE INÍCIO */
+.card-estudo .estudo-area-central .estudo-data-inicio::after {      content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  inset: 0;
+  z-index: 0;
+  border-radius: inherit;
+  pointer-events: none;
+
+  clip-path: polygon(
+  97% 0%,
+  100% 0%,
+  100% 100%,
+  56% 100%,
+  58% 94%,
+  60.5% 88%,
+  64% 80%,
+  68% 72%,
+  73% 63%,
+  79% 54%,
+  85% 45%,
+  90% 36%,
+  93.5% 27%,
+  95.5% 18%,
+  96.8% 9%,
+  97.5% 0%
+);
+
+  background: radial-gradient(
+    ellipse 100% 130% at 100% 50%,
+    rgba(45, 215, 100, 0.23) 0%,
+    rgba(45, 215, 100, 0.12) 45%,
+    transparent 100%
+  );
+}
+
+/* CONTEÚDO ACIMA DO REFLEXO */
+.estudo-data-inicio > .estudo-campo-rotulo {
+  position: absolute;
+  z-index: 1;
+}
+
+.estudo-data-inicio > .estudo-campo-icone,
+.estudo-data-inicio > .estudo-campo-texto {
+  position: relative;
+  z-index: 1;
+}
+
+/* ID: CSS-172 | REF: PANEL.STUDY.START_TIME | SELETOR: .estudo-horario-inicio */
+.estudo-area-central .estudo-horario-inicio {
+  grid-column: 2;
+  transform: translateY(25px);
+  border: 1px solid rgba(80, 220, 115, 0.72);
+  border-radius: 12px;
+  box-shadow:
+    inset 0 1px 1px rgba(190, 255, 210, 0.13),
+    0 3px 6px rgba(0, 0, 0, 0.25);
+}
+
+/* TOBOGÃ INDIVIDUAL — A PARTIR DAS */
+.card-estudo .estudo-area-central .estudo-horario-inicio::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  inset: 0;
+  z-index: 0;
+  border-radius: inherit;
+  pointer-events: none;
+
+  clip-path: polygon(
+  97% 0%,
+  100% 0%,
+  100% 100%,
+  56% 100%,
+  58% 94%,
+  60.5% 88%,
+  64% 80%,
+  68% 72%,
+  73% 63%,
+  79% 54%,
+  85% 45%,
+  90% 36%,
+  93.5% 27%,
+  95.5% 18%,
+  96.8% 9%,
+  97.5% 0%
+);
+
+  background: radial-gradient(
+    ellipse 100% 130% at 100% 50%,
+    rgba(45, 215, 100, 0.23) 0%,
+    rgba(45, 215, 100, 0.12) 45%,
+    transparent 100%
+  );
+}
+
+/* CONTEÚDO ACIMA DO REFLEXO */
+.estudo-horario-inicio > .estudo-campo-rotulo {
+  position: absolute;
+  z-index: 1;
+}
+
+.estudo-horario-inicio > .estudo-campo-icone,
+.estudo-horario-inicio > .estudo-campo-texto {
+  position: relative;
+  z-index: 1;
+}
+
+/* ID: CSS-173 | REF: PANEL.STUDY.DAILY_HOURS | SELETOR: .estudo-horas-diarias */
+.estudo-area-central .estudo-horas-diarias {
+  grid-column: 1;
+  transform: translateY(25px);
+  border: 1px solid rgba(80, 220, 115, 0.72);
+  border-radius: 12px;
+  box-shadow:
+    inset 0 1px 1px rgba(190, 255, 210, 0.13),
+    0 3px 6px rgba(0, 0, 0, 0.25);
+}
+
+/* TOBOGÃ INDIVIDUAL — HORAS DIÁRIAS */
+.card-estudo .estudo-area-central .estudo-horas-diarias::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  inset: 0;
+  z-index: 0;
+  border-radius: inherit;
+  pointer-events: none;
+
+  clip-path: polygon(
+  97% 0%,
+  100% 0%,
+  100% 100%,
+  56% 100%,
+  58% 94%,
+  60.5% 88%,
+  64% 80%,
+  68% 72%,
+  73% 63%,
+  79% 54%,
+  85% 45%,
+  90% 36%,
+  93.5% 27%,
+  95.5% 18%,
+  96.8% 9%,
+  97.5% 0%
+);
+
+  background: radial-gradient(
+    ellipse 100% 130% at 100% 50%,
+    rgba(45, 215, 100, 0.23) 0%,
+    rgba(45, 215, 100, 0.12) 45%,
+    transparent 100%
+  );
+}
+
+/* CONTEÚDO ACIMA DO REFLEXO */
+.estudo-horas-diarias > .estudo-campo-rotulo {
+  position: absolute;
+  z-index: 1;
+}
+
+.estudo-horas-diarias > .estudo-campo-icone,
+.estudo-horas-diarias > .estudo-campo-texto {
+  position: relative;
+  z-index: 1;
+}
+
+/* ID: CSS-174 | REF: PANEL.STUDY | SELETOR: .estudo-botao-metas */
+.estudo-botao-metas {
+  grid-column: 2;
+  align-self: center;
+  min-width: 0;
+  height: 40px;
+  min-height: 40px;
+  padding: 4px 8px;
+  border: 3px solid transparent;
+  border-radius: 10px;
+  background:
+    linear-gradient(180deg, #08651a 0%, #0b8f2a 100%) padding-box,
+    linear-gradient(110deg, #032602, #098c04, #4cbf17) border-box;
+  box-shadow: 2px 3px 5px #0003;
+  color: #ffffff;
+  font-family: "Segoe UI", Arial, sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1.1;
+  cursor: pointer;
+  transform: translateY(25px);
+
+  display: inline-flex;
+align-items: center;
+justify-content: center;
+gap: 7px;
+}
+
+/* ID: CSS-175 | REF: PANEL.STUDY | SELETOR: .estudo-botao-metas:hover */
+.estudo-botao-metas:hover {
+  filter: brightness(1.08);
+}
+
+/* AJUSTE DAS FONTES PARA CABER NA COLUNA CENTRAL */
+/* ID: CSS-176 | REF: PANEL.STUDY | SELETOR: .estudo-data-inicio .estudo-campo-texto, .estudo-horario-inicio .estudo-campo-texto, .estudo-horas-diarias .estudo-campo-texto */
+.estudo-data-inicio .estudo-campo-texto,
+.estudo-horario-inicio .estudo-campo-texto,
+.estudo-horas-diarias .estudo-campo-texto {
+  font-size: 14px;
+}
+
+/* MOLDURA DA ÁREA DE ATIVIDADES */
+/* ID: CSS-177 | REF: PANEL.STUDY | SELETOR: .estudo-area-direita */
+.estudo-area-direita {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  min-width: 0;
+  min-height: 0;
+  overflow: hidden;
+  padding: 6px 7px;
+  border-radius: 14px;
+  background: #ffffff;
+  box-sizing: border-box;
+  width: calc(100% + 6px);
+  justify-self: start;
+
+}
+
+/* ID: CSS-178 | REF: PANEL.STUDY | SELETOR: .estudo-lista-atividades */
+.estudo-lista-atividades {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 14px;
+  min-width: 0;
+  min-height: 0;
+  padding-top: 8px;
+  border-radius: 14px;
+  padding-bottom: 8px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding-right: 14px;
+  box-sizing: border-box;
+}
+
+/* CARTÕES: PROGRAMAÇÃO, FACULDADE E MATEMÁTICA */
+/* ID: CSS-179 | REF: PANEL.STUDY */
+.estudo-atividade-card {
+  display: flex;
+  flex: 0 0 100px;
+  flex-direction: column;
+  gap: 20px;
+  width: 99%;
+  align-self: center;
+  padding: 0 5px 3px;
+
+  border: 1px solid transparent;
+  border-radius: 12px;
+
+  background: transparent;
+  box-shadow: none;
+
+  box-sizing: border-box;
+}
+
+/* CABEÇALHO DE CADA CARTÃO */
+/* ID: CSS-180 | REF: PANEL.STUDY | SELETOR: .estudo-atividade-cabecalho */
+.estudo-atividade-cabecalho {
+  display: grid;
+  grid-template-columns: 16px minmax(0, 1fr) 15px;
+  align-items: center;
+  gap: 4px;
+  min-width: 0;
+  height: 18px;
+  margin-bottom: 0px;
+}
+
+/* ID: CSS-181 | REF: PANEL.STUDY | SELETOR: .estudo-atividade-icone */
+.estudo-atividade-icone {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: transparent;
+  color: #ffffff;
+  font-size: 9px;
+  line-height: 1;
+  transform: translateY(2px);
+}
+
+/* ID: CSS-182 | REF: PANEL.STUDY.ACTIVITY | TÍTULOS DOS CARTÕES */
+.estudo-atividade-cabecalho h3 {
+  overflow: hidden;
+  margin: 0;
+  color: #176b20;
+  font-family: "Segoe UI", Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.1;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  transform: translateY(2px);
+}
+
+/* ID: CSS-183 | REF: PANEL.STUDY | DISTRIBUIÇÃO DAS TRÊS COLUNAS */
+.estudo-conteudo {
+  display: grid;
+  grid-template-columns:
+    minmax(0, 0.80fr)
+    minmax(0, 1.00fr)
+    minmax(0, 1.10fr);
+  gap: 12px;
+  flex: 1;
+  min-height: 0;
+}
+
+/* GRADE DOS CINCO CAMPOS */
+/* ID: CSS-184 | REF: PANEL.STUDY | SELETOR: .estudo-atividade-dados */
+.estudo-atividade-dados {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  row-gap: 14px;
+  column-gap: 4px;
+  min-width: 0;
+}
+
+/* ID: CSS-185 | REF: PANEL.STUDY | SELETOR: .estudo-atividade-dado */
+.estudo-atividade-dado {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 0;
+  height: 22px;
+  padding: 3px 2px 0;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  background:
+    linear-gradient(#ffffff, #ffffff) padding-box,
+    linear-gradient(110deg, #032602, #098c04, #4cbf17) border-box;
+  box-sizing: border-box;
+}
+
+/* ID: CSS-186 | REF: PANEL.STUDY | SELETOR: .estudo-atividade-dado span */
+.estudo-atividade-dado span {
+  position: absolute;
+  top: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 0 2px;
+  background: #ffffff;
+  color: #111111;
+  font-family: "Segoe UI", Arial, sans-serif;
+  font-size: 7px;
+  font-weight: 600;
+  line-height: 7px;
+  white-space: nowrap;
+}
+
+/* ID: CSS-187 | REF: PANEL.STUDY | SELETOR: .estudo-atividade-dado strong */
+.estudo-atividade-dado strong {
+  display: block;
+  max-width: 100%;
+  overflow: hidden;
+  color: #111111;
+  font-family: "Segoe UI", Arial, sans-serif;
+  font-size: 8px;
+  font-weight: 500;
+  line-height: 1;
+  text-align: center;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  transform: translateY(2px);
+}
+
+/* ID: CSS-188 | REF: PANEL.STUDY.PENDING | ACABAMENTO VERMELHO */
+
+.card-estudo .estudo-lista-atividades
+.estudo-atividade-card .estudo-atividade-pendencias {
+  border: 1px solid #e50914 !important;
+  border-color: #e50914 !important;
+  border-radius: 5px;
+}
+
+/* TÍTULO PENDÊNCIAS */
+.card-estudo .estudo-lista-atividades
+.estudo-atividade-card .estudo-atividade-pendencias > span {
+  color: #ff858c !important;
+  border-color: #e50914 !important;
+  background: #101812 !important;
+}
+
+/* VALOR DAS PENDÊNCIAS */
+.card-estudo .estudo-lista-atividades
+.estudo-atividade-card .estudo-atividade-pendencias > strong {
+  color: #ff858c !important;
+}
+
+/* BARRAS NATIVAS SUBSTITUÍDAS PELOS TRILHOS VERTICAIS INDEPENDENTES. */
+
+/* ID: CSS-189 | REF: PANEL.FINANCIAL.RECEIPTS | SELETOR: .botao-comprovantes */
+.botao-comprovantes {
+  display: grid;
+  grid-template-columns: 26px 1px minmax(0, 1fr) 16px;
+  align-items: center;
+  column-gap: 7px;
+
+  width: 100%;
+  height: 44px;
+  min-height: 44px;
+  padding: 3px 10px;
+
+  border: none;
+  border-radius: 10px;
+
+  color: #ffffff;
+  font-family: "Segoe UI", Arial, sans-serif;
+  font-size: 20px !important;
+  font-weight: 700;
+  font-weight: var(--peso-conteudo-card);
+  cursor: pointer;
+
+  grid-column: span 4;
+  position: relative;
+}
+
+/* ID: CSS-190 | REF: PANEL.FINANCIAL.RECEIPTS | SELETOR: 
+/* DIVISOR VERTICAL — REMOVIDO */
+.botao-comprovantes::before {
+  content: none !important;
+  display: none !important;
+}
+
+/* TEXTO CENTRALIZADO — EXCLUI A DECORAÇÃO */
+/* ID: CSS-191 | REF: PANEL.FINANCIAL.RECEIPTS | SELETOR: .botao-comprovantes > span:not(.comprovantes-reflexo) */
+.botao-comprovantes > span:not(.comprovantes-reflexo) {
+  grid-column: 3;
+  grid-row: 1;
+  text-align: center;
+  white-space: nowrap;
+}
+
+/* SETA BRANCA À DIREITA */
+/* ID: CSS-192 | REF: PANEL.FINANCIAL.RECEIPTS | SELETOR: ./* SETA À DIREITA — REMOVIDA */
+.botao-comprovantes::after {
+  content: none !important;
+  display: none !important;
+}
+
+/* AJUSTE FINAL — REFLEXO 3D SUAVE */
+/* EFEITO 3D — BOTÃO COMPROVANTES */
+/* ID: CSS-193 | REF: PANEL.FINANCIAL.RECEIPTS | SELETOR: .card-financeiro .botao-comprovantes */
+.card-financeiro .botao-comprovantes {
+
+  /* Borda verde iluminada */
+
+  /* Sombras para criar o relevo 3D */
+  isolation: isolate;
+}
+
+/* EFEITO 3D — BOTÃO METAS */
+/* ID: CSS-194 | REF: PANEL.STUDY | SELETOR: .card-central .estudo-botao-metas */
+.card-central .estudo-botao-metas {
+  background:
+    linear-gradient(
+      225deg,
+      rgba(255, 255, 255, 0.14) 0%,
+      rgba(255, 255, 255, 0.07) 14%,
+      rgba(255, 255, 255, 0.015) 32%,
+      transparent 48%,
+      rgba(0, 25, 8, 0.10) 76%,
+      rgba(0, 20, 5, 0.28) 100%
+    ),
+    radial-gradient(
+      ellipse 65% 110% at 5% 0%,
+      rgba(115, 255, 155, 0.60) 0%,
+      rgba(45, 215, 85, 0.28) 45%,
+      transparent 78%
+    ),
+    radial-gradient(
+      ellipse 52% 120% at 100% 0%,
+      rgba(95, 255, 130, 0.50) 0%,
+      rgba(35, 190, 70, 0.22) 48%,
+      transparent 82%
+    ),
+    linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.04) 0%,
+      rgba(255, 255, 255, 0.02) 28%,
+      transparent 55%
+    ),
+    linear-gradient(
+      110deg,
+      #064719 0%,
+      #075b21 35%,
+      #0b7d2b 68%,
+      #1ba247 100%
+    );
+
+  border: 1px solid rgba(80, 220, 115, 0.65);
+
+  box-shadow:
+    inset 0 1px 1px rgba(255, 255, 255, 0.32),
+    inset 0 4px 8px rgba(255, 255, 255, 0.08),
+    inset 0 -4px 5px rgba(0, 25, 5, 0.55),
+    inset 1px 0 3px rgba(255, 255, 255, 0.12),
+    inset -1px 0 3px rgba(0, 20, 5, 0.25),
+    0 5px 8px rgba(0, 0, 0, 0.32);
+}
+
+/* ==================================================
+  CARD RENDA MENSAL — ALINHAMENTO INDEPENDENTE
+  Ícone fixo à esquerda; texto centralizado no espaço restante.
+  Regras restritas ao card Renda desse Mês.
+================================================== */
+
+/* ID: CSS-195 | REF: PANEL.FINANCIAL.INCOME | SELETOR: .card-financeiro .financeiro-renda */
+.card-financeiro .financeiro-renda {
+  grid-column: span 4;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-width: 0;
+  height: 38px;
+  min-height: 38px;
+  margin: 0;
+  padding: 0 6px;
+}
+
+/* Área de conteúdo ocupa o card; não centraliza ícone + texto como grupo. */
+/* ID: CSS-196 | REF: PANEL.FINANCIAL.INCOME | SELETOR: .card-financeiro .financeiro-renda > .financeiro-renda-valor */
+.card-financeiro .financeiro-renda > .financeiro-renda-valor {
+  position: static;
+  display: flex;
+  flex: 1 1 auto;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  min-width: 0;
+  margin: 0;
+  padding: 0;
+  color: #111111;
+  font-family: "Segoe UI", Arial, sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 1.1;
+  text-align: center;
+  white-space: nowrap;
+  transform: none;
+  box-sizing: border-box;
+}
+
+/* Camada de referência separada para posicionar ícone e texto. */
+/* ID: CSS-197 | REF: PANEL.FINANCIAL.INCOME | SELETOR: .card-financeiro .financeiro-renda-conteudo */
+.card-financeiro .financeiro-renda-conteudo {
+  position: relative;
+  display: block;
+  flex: 1 1 auto;
+  width: 100%;
+  height: 100%;
+  min-width: 0;
+  min-height: 26px;
+  margin: 0;
+  padding: 0;
+  white-space: nowrap;
+  transform: none;
+}
+
+/* ID: CSS-198 | REF: PANEL.FINANCIAL.INCOME | SELETOR: .card-financeiro .financeiro-renda-icone */
+.card-financeiro .financeiro-renda-icone {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  display: inline-flex;
+  flex: 0 0 26px;
+  align-items: center;
+  justify-content: center;
+  width: 26px;
+  height: 26px;
+  margin: 0;
+  padding: 0;
+  border: none;
+  border-radius: 8px;
+  background: transparent !important;
+  color: #39d879;
+  box-sizing: border-box;
+  transform: translateY(-50%);
+}
+/* ID: CSS-199 | REF: PANEL.FINANCIAL.INCOME | SELETOR: .card-financeiro .financeiro-renda-icone svg */
+.card-financeiro .financeiro-renda-icone svg {
+  display: block;
+  flex: none;
+  width: 25px;
+  height: 252px;
+  margin: 0;
+  transform: none;
+}
+
+/* Texto centralizado no cartão Renda Mensal */
+/* ID: CSS-200 | REF: PANEL.FINANCIAL.INCOME | SELETOR: .card-financeiro .financeiro-renda-texto */
+.card-financeiro .financeiro-renda-texto {
+  position: absolute;
+  top: calc(50% + 3px);
+  left: 0;
+  right: 0;
+  width: 100%;
+
+  display: block;
+  margin: 0;
+  padding: 0;
+
+  font-family: "Segoe UI", Arial, sans-serif;
+  font-size: 19px;
+  font-size: var(--fonte-conteudo-card);
+  font-weight: 500;
+  line-height: 1.1;
+
+  text-align: center;
+  white-space: nowrap;
+  
+  transform: translateY(-50%);
+  box-sizing: border-box;
+}
+
+/* DECORAÇÃO VERDE DIAGONAL — RENDA MENSAL */
+/* ID: CSS-201 | REF: PANEL.FINANCIAL.INCOME | SELETOR: .card-financeiro .financeiro-renda::after */
+.card-financeiro .financeiro-renda::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  inset: 0;
+  z-index: 0;
+
+  border-radius: 10px;
+  pointer-events: none;
+
+  /* Mantém o formato abaulado original */
+  clip-path: polygon(
+    97% 0%,
+    100% 0%,
+    100% 100%,
+    76% 100%,
+    77.5% 94%,
+    79% 88%,
+    81.5% 80%,
+    85% 72%,
+    88.8% 63%,
+    91.2% 54%,
+    93% 45%,
+    94.5% 36%,
+    95.7% 27%,
+    96.5% 18%,
+    97.2% 9%,
+    97.5% 0%
+    );
+
+  /* Reflexo verde suavizado */
+  /* Reflexo verde um pouco mais intenso */
+  background:
+    radial-gradient(
+      ellipse 100% 130% at 100% 50%,
+      rgba(35, 139, 57, 0.30) 0%,
+      rgba(67, 164, 83, 0.19) 45%,
+      rgba(116, 194, 129, 0.11) 72%,
+      transparent 100%
+    );
+}
+
+/* Mantém o conteúdo acima da decoração */
+/* ID: CSS-202 | REF: PANEL.FINANCIAL.INCOME | SELETOR: .card-financeiro .financeiro-renda-conteudo */
+.card-financeiro .financeiro-renda-conteudo {
+  z-index: 1;
+}
+
+/* Mantém o rótulo acima da decoração */
+/* ID: CSS-203 | REF: PANEL.FINANCIAL.INCOME | SELETOR: .card-financeiro .financeiro-renda-rotulo */
+.card-financeiro .financeiro-renda-rotulo {
+  z-index: 2;
+}
+
+/* ==========================================
+  CONTA PRIORITÁRIA — VISUAL PERSONALIZADO
+  Reutiliza a estrutura dos indicadores existentes
+========================================== */
+
+/* CONTA PRIORITÁRIA — DIMENSÕES E BORDA */
+/* ID: CSS-204 | REF: PANEL.FINANCIAL.PRIORITY | SELETOR: .card-financeiro .financeiro-indicador-prioritaria */
+.card-financeiro .financeiro-indicador-prioritaria {
+  position: relative;
+  isolation: isolate;
+
+  width: calc(100% + 80px);
+  justify-self: center;
+
+  height: 38px;
+  min-height: 38px;
+  box-sizing: border-box;
+
+  border: 1px solid transparent;
+  border-radius: 12px;
+}
+
+/* Designer diagonal: exclusivo deste cartão */
+/* ID: CSS-205 | REF: PANEL.FINANCIAL.PRIORITY | SELETOR: .card-financeiro .financeiro-indicador-prioritaria::after */
+.card-financeiro .financeiro-indicador-prioritaria::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  inset: 0;
+  z-index: 0;
+
+  border-radius: inherit;
+  pointer-events: none;
+
+  clip-path: polygon(
+    97% 0%,
+    100% 0%,
+    100% 100%,
+    76% 100%,
+    77.5% 94%,
+    79% 88%,
+    81.5% 80%,
+    85% 72%,
+    88.8% 63%,
+    91.2% 54%,
+    93% 45%,
+    94.5% 36%,
+    95.7% 27%,
+    96.5% 18%,
+    97.2% 9%,
+    97.5% 0%
+    );
+
+  /* Reflexo verde um pouco mais intenso */
+  background:
+    radial-gradient(
+      ellipse 100% 130% at 100% 50%,
+      rgba(35, 139, 57, 0.30) 0%,
+      rgba(67, 164, 83, 0.19) 45%,
+      rgba(116, 194, 129, 0.11) 72%,
+      transparent 100%
+    );
+}
+
+/* Mantém o rótulo acima da decoração */
+/* Título Conta Prioritária — mesmo contorno de Renda Mensal */
+/* ID: CSS-206 | REF: PANEL.FINANCIAL.PRIORITY | SELETOR: .card-financeiro .financeiro-indicador-prioritaria .financeiro-indicador-rotulo */
+.card-financeiro
+.financeiro-indicador-prioritaria
+.financeiro-indicador-rotulo {
+  position: absolute;
+  top: -8px;
+  left: 50%;
+  z-index: 2;
+
+  padding: 0 5px;
+  border: 1px solid #39c914;
+  border-radius: 3px;
+
+  font-family: "Segoe UI", Arial, sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 14px;
+  text-align: center;
+  white-space: nowrap;
+
+  transform: translateX(-50%);
+}
+
+/* Mantém o valor e o alfinete acima da decoração */
+/* ID: CSS-207 | REF: PANEL.FINANCIAL.PRIORITY | SELETOR: .card-financeiro .financeiro-indicador-prioritaria .financeiro-alfinete-icone */
+.card-financeiro
+.financeiro-indicador-prioritaria
+.financeiro-alfinete-icone {
+  position: absolute;
+  top: 50%;
+  left: 4px;
+  z-index: 1;
+
+  width: 26px;
+  height: 26px;
+  padding: 2px;
+
+display: flex;
+align-items: center;
+justify-content: center;
+  box-sizing: border-box;
+
+  border: none;
+  border-radius: 7px;
+
+ background: transparent !important;
+
+  transform: translateY(-50%);
+}
+
+/* Texto da conta prioritária ao lado do alfinete */
+/* ID: CSS-208 | REF: PANEL.FINANCIAL.PRIORITY | SELETOR: .card-financeiro .financeiro-indicador-prioritaria .financeiro-indicador-valor strong */
+.card-financeiro
+.financeiro-indicador-prioritaria
+.financeiro-indicador-valor strong {
+  position: relative;
+  z-index: 1;
+  display: block;
+  width: auto;
+  margin-left: 30px;
+  font-size: 16px;
+  text-align: left;
+  transform: translateY(3px);
+}
+
+/* ==========================================
+  VALOR PAGO NO MÊS — ESTILO DO CARTÃO
+========================================== */
+/* VALOR PAGO NO MÊS — ALTURA E BORDA PADRONIZADAS */
+/* ID: CSS-209 | REF: PANEL.FINANCIAL.PAID | SELETOR: .card-financeiro .financeiro-indicador-pago */
+.card-financeiro .financeiro-indicador-pago {
+  position: relative;
+  isolation: isolate;
+  padding: 0 4px;
+
+  height: 38px !important;
+  min-height: 38px !important;
+
+  border: 1px solid transparent;
+  border-radius: 12px;
+
+  box-sizing: border-box;
+}
+
+/* Designer diagonal abaulado à direita */
+/* DESIGNER ABAULADO — VALOR PAGO NO MÊS */
+/* ID: CSS-210 | REF: PANEL.FINANCIAL.PAID | SELETOR: .card-financeiro .financeiro-indicador-pago::after */
+.card-financeiro .financeiro-indicador-pago::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  inset: 0;
+  z-index: 0;
+
+  border-radius: inherit;
+  pointer-events: none;
+
+  clip-path: polygon(
+    97% 0%,
+    100% 0%,
+    100% 100%,
+    76% 100%,
+    77.5% 94%,
+    79% 88%,
+    81.5% 80%,
+    85% 72%,
+    88.8% 63%,
+    91.2% 54%,
+    93% 45%,
+    94.5% 36%,
+    95.7% 27%,
+    96.5% 18%,
+    97.2% 9%,
+    97.5% 0%
+    );
+
+  /* Reflexo verde um pouco mais intenso */
+  background:
+    radial-gradient(
+      ellipse 100% 130% at 100% 50%,
+      rgba(35, 139, 57, 0.30) 0%,
+      rgba(67, 164, 83, 0.19) 45%,
+      rgba(116, 194, 129, 0.11) 72%,
+      transparent 100%
+    );
+}
+
+/* Rótulo acima da decoração */
+/* ID: CSS-211 | REF: PANEL.FINANCIAL.PAID | SELETOR: .card-financeiro .financeiro-indicador-pago .financeiro-indicador-rotulo */
+.card-financeiro
+.financeiro-indicador-pago
+.financeiro-indicador-rotulo {
+  z-index: 2;
+}
+
+/* Conteúdo acima do designer */
+/* ID: CSS-212 | REF: PANEL.FINANCIAL.PAID | SELETOR: .card-financeiro .financeiro-indicador-pago .financeiro-indicador-valor */
+.card-financeiro
+.financeiro-indicador-pago
+.financeiro-indicador-valor {
+  position: relative;
+  z-index: 1;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  height: 100%;
+  min-height: 0;
+  margin: 0;
+  padding: 0;
+
+  box-sizing: border-box;
+}
+
+/* Mantém o valor e o ícone acima do designer */
+/* ID: CSS-213 | REF: PANEL.FINANCIAL.PAID | SELETOR: .card-financeiro .financeiro-indicador-pago .financeiro-indicador-valor, .card-financeiro .financeiro-indicador-pago .financeiro-indicador-icone */
+.card-financeiro
+.financeiro-indicador-pago
+.financeiro-indicador-valor,
+.card-financeiro
+.financeiro-indicador-pago
+.financeiro-indicador-icone {
+  position: relative;
+  z-index: 1;
+}
+
+/* ID: CSS-214 | REF: PANEL.FINANCIAL.PAID | SELETOR: .card-financeiro .financeiro-indicador-pago .financeiro-indicador-valor strong */
+.card-financeiro
+.financeiro-indicador-pago
+.financeiro-indicador-valor strong {
+  position: relative;
+  z-index: 1;
+  transform: translateY(3px);
+}
+
+/* Rótulo acima do designer */
+/* ID: CSS-215 | REF: PANEL.FINANCIAL.PAID | SELETOR: .card-financeiro .financeiro-pago-designer .financeiro-indicador-rotulo */
+.card-financeiro
+.financeiro-pago-designer
+.financeiro-indicador-rotulo {
+  z-index: 2;
+}
+
+/* Valor e ícone acima do designer */
+/* ID: CSS-216 | REF: PANEL.FINANCIAL.PAID | SELETOR: .card-financeiro .financeiro-pago-designer .financeiro-indicador-valor */
+.card-financeiro
+.financeiro-pago-designer
+.financeiro-indicador-valor {
+  position: relative;
+  z-index: 1;
+}
+
+/* ID: CSS-217 | REF: PANEL.FINANCIAL.PAID | SELETOR: .card-financeiro .financeiro-pago-designer .financeiro-indicador-icone */
+.card-financeiro
+.financeiro-pago-designer
+.financeiro-indicador-icone {
+  z-index: 1;
+}
+
+/* ÍCONE CALENDÁRIO — PAGO ESSE MÊS */
+/* ID: CSS-218 | REF: PANEL.FINANCIAL.PAID | SELETOR: .card-financeiro .financeiro-indicador-pago .pago-mes-icone */
+.card-financeiro
+.financeiro-indicador-pago
+.pago-mes-icone {
+  color: #e50914;
+  position: absolute;
+  top: 50%;
+  left: 4px;
+  z-index: 1;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 26px;
+  height: 26px;
+  padding: 2px;
+  flex: none;
+  box-sizing: border-box;
+
+  border: none;
+  border-radius: 7px;
+
+  background: transparent !important;
+
+  transform: translateY(-50%);
+}
+
+/* ID: CSS-219 | REF: PANEL.FINANCIAL.PAID | SELETOR: .card-financeiro .financeiro-indicador-pago .pago-mes-icone svg */
+.card-financeiro
+.financeiro-indicador-pago
+.pago-mes-icone svg {
+  color: #e50914;
+  display: block;
+  width: 30px;
+  height: 35px;
+  flex: none;
+}
+
+/* ==========================================
+  CONTAS ATRASADAS — DESIGN EXCLUSIVO
+========================================== */
+
+/* ID: CSS-220 | REF: PANEL.FINANCIAL.OVERDUE | SELETOR: .card-financeiro .financeiro-atrasadas-designer */
+.card-financeiro .financeiro-atrasadas-designer {
+  position: relative;
+  isolation: isolate;
+
+  height: 38px !important;
+  min-height: 38px !important;
+
+  border: 1px solid transparent;
+  border-radius: 12px;
+  box-sizing: border-box;
+}
+
+/* Reflexo vermelho abaulado à direita */
+/* ID: CSS-221 | REF: PANEL.FINANCIAL.OVERDUE | SELETOR: .card-financeiro .financeiro-atrasadas-designer::after */
+.card-financeiro .financeiro-atrasadas-designer::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  inset: 0;
+  z-index: 0;
+
+  border-radius: inherit;
+  pointer-events: none;
+
+  clip-path: polygon(
+    97% 0%,
+    100% 0%,
+    100% 100%,
+    76% 100%,
+    77.5% 94%,
+    79% 88%,
+    81.5% 80%,
+    85% 72%,
+    88.8% 63%,
+    91.2% 54%,
+    93% 45%,
+    94.5% 36%,
+    95.7% 27%,
+    96.5% 18%,
+    97.2% 9%,
+    97.5% 0%
+    );
+
+  /* Reflexo vermelho um pouco mais intenso */
+    /* Reflexo vermelho um pouco mais intenso */
+  background:
+    radial-gradient(
+      ellipse 100% 130% at 100% 50%,
+      rgba(185, 0, 0, 0.30) 0%,
+      rgba(210, 35, 35, 0.19) 45%,
+      rgba(235, 100, 100, 0.11) 72%,
+      transparent 100%
+    );
+}
+
+/* VALOR ATRASADO — TOBOGÃ VERMELHO SUAVIZADO */
+/* ID: CSS-222 | REF: PANEL.FINANCIAL.OVERDUE_AMOUNT | SELETOR: .card-financeiro .financeiro-indicador-valor-atrasado::after */
+.card-financeiro .financeiro-indicador-valor-atrasado::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  inset: 0;
+  z-index: 0;
+
+  border-radius: inherit;
+  pointer-events: none;
+
+  clip-path: polygon(
+    97% 0%,
+    100% 0%,
+    100% 100%,
+    76% 100%,
+    77.5% 94%,
+    79% 88%,
+    81.5% 80%,
+    85% 72%,
+    88.8% 63%,
+    91.2% 54%,
+    93% 45%,
+    94.5% 36%,
+    95.7% 27%,
+    96.5% 18%,
+    97.2% 9%,
+    97.5% 0%
+    );
+
+  background:
+    radial-gradient(
+      ellipse 100% 130% at 100% 50%,
+      rgba(185, 0, 0, 0.30) 0%,
+      rgba(210, 35, 35, 0.19) 45%,
+      rgba(235, 100, 100, 0.11) 72%,
+      transparent 100%
+    );
+}
+
+/* Rótulo branco com contorno vermelho */
+/* ID: CSS-223 | REF: PANEL.FINANCIAL.OVERDUE | SELETOR: .card-financeiro .financeiro-atrasadas-designer .financeiro-indicador-rotulo */
+.card-financeiro
+.financeiro-atrasadas-designer
+.financeiro-indicador-rotulo {
+  z-index: 2;
+}
+
+
+/* Valor acima do reflexo */
+/* ID: CSS-224 | REF: PANEL.FINANCIAL.OVERDUE | SELETOR: .card-financeiro .financeiro-atrasadas-designer .financeiro-indicador-valor */
+.card-financeiro
+.financeiro-atrasadas-designer
+.financeiro-indicador-valor {
+  position: static;
+}
+
+/* ID: CSS-225 | REF: PANEL.FINANCIAL.OVERDUE | SELETOR: .card-financeiro .financeiro-atrasadas-designer .financeiro-indicador-valor strong */
+.card-financeiro
+.financeiro-atrasadas-designer
+.financeiro-indicador-valor strong {
+  position: relative;
+  z-index: 1;
+}
+
+/* ID: CSS-226 | REF: PANEL.FINANCIAL.OVERDUE | SELETOR: .card-financeiro .financeiro-atrasadas-designer .financeiro-atrasadas-numero */
+
+
+
+/* ÍCONE — CONTAS ATRASADAS */
+/* ID: CSS-227 | REF: PANEL.FINANCIAL.OVERDUE | SELETOR: .card-financeiro .financeiro-atrasadas-designer .financeiro-indicador-valor .financeiro-alerta-icone */
+.card-financeiro
+.financeiro-atrasadas-designer
+.financeiro-indicador-valor
+.financeiro-alerta-icone {
+  position: absolute;
+  top: 50%;
+  left: 4px;
+  z-index: 1;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 26px;
+  height: 26px;
+  padding: 0;
+
+  border: none !important;
+  border-radius: 7px;
+  background: transparent !important;
+  filter: drop-shadow(0 0 1px rgba(255, 255, 255, 0.253));
+
+  font-size: 0;
+  transform: translateY(-50%);
+  box-sizing: border-box;
+}
+
+
+/* ID: CSS-228 | REF: PANEL.FINANCIAL.OVERDUE | SELETOR: .financeiro-alerta-icone > svg */
+.card-financeiro
+.financeiro-atrasadas-designer
+.financeiro-indicador-valor
+.financeiro-alerta-icone > svg {
+  display: block;
+  width: 26px;
+  height: 26px;
+  flex: none;
+  filter: drop-shadow(0 0 1px rgba(255, 255, 255, 0.253));
+  transform: translateX(4px);
+}
+
+/* ÍCONE — VALOR ATRASADO */
+/* ID: CSS-229 | REF: PANEL.FINANCIAL.OVERDUE_AMOUNT | SELETOR: .card-financeiro .financeiro-indicador-valor-atrasado .financeiro-valor-atrasado-icone */
+.card-financeiro
+.financeiro-indicador-valor-atrasado
+.financeiro-valor-atrasado-icone {
+  position: absolute;
+  top: 50%;
+  left: 4px;
+  z-index: 1;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 26px;
+  height: 26px;
+  padding: 2px;
+
+  border: none;
+  border-radius: 7px;
+  background: transparent !important;
+
+  color: #c9000b;
+  box-sizing: border-box;
+  transform: translateY(-50%);
+}
+
+/* Tamanho e cor do desenho */
+/* ID: CSS-230 | REF: PANEL.FINANCIAL.OVERDUE_AMOUNT | SELETOR: .card-financeiro .financeiro-indicador-valor-atrasado .financeiro-valor-atrasado-icone > svg */
+.card-financeiro
+.financeiro-indicador-valor-atrasado
+.financeiro-valor-atrasado-icone > svg {
+  display: block;
+  width: 26px;
+  height: 26px;
+  flex: none;
+
+  color: #c9000b;
+  filter: drop-shadow(0 0 1px rgba(255, 255, 255, 0.507));
+}
+
+/* Espessura dos traços — somente Valor Atrasado */
+/* ID: CSS-231 | REF: PANEL.FINANCIAL.OVERDUE_AMOUNT | SELETOR: .card-financeiro .financeiro-indicador-valor-atrasado .financeiro-valor-atrasado-icone svg g */
+.card-financeiro
+.financeiro-indicador-valor-atrasado
+.financeiro-valor-atrasado-icone
+svg g {
+  stroke-width: 1px !important;
+}
+
+/* BORDA DEGRADÊ — VALOR ATRASADO */
+/* VALOR ATRASADO — ALTURA E BORDA PADRONIZADAS */
+/* ID: CSS-232 | REF: PANEL.FINANCIAL.OVERDUE_AMOUNT | SELETOR: .card-financeiro .financeiro-indicador-valor-atrasado */
+.card-financeiro .financeiro-indicador-valor-atrasado {
+  height: 38px;
+  min-height: 38px;
+  box-sizing: border-box;
+  position: relative;
+  isolation: isolate;
+
+  border: 1px solid transparent;
+  border-radius: 12px;
+}
+
+/* Título Valor Atrasado — contorno vermelho */
+/* ID: CSS-233 | REF: PANEL.FINANCIAL.OVERDUE_AMOUNT | SELETOR: .card-financeiro .financeiro-indicador-valor-atrasado .financeiro-indicador-rotulo */
+.card-financeiro
+.financeiro-indicador-valor-atrasado
+.financeiro-indicador-rotulo {
+  z-index: 2;
+}
+
+/* Conteúdo do Valor Atrasado acima da decoração */
+/* ID: CSS-234 | REF: PANEL.FINANCIAL.OVERDUE_AMOUNT | SELETOR: .card-financeiro .financeiro-indicador-valor-atrasado .financeiro-indicador-valor */
+.card-financeiro
+.financeiro-indicador-valor-atrasado
+.financeiro-indicador-valor {
+  position: static;
+}
+
+/* Mantém o valor monetário acima do reflexo */
+/* ID: CSS-235 | REF: PANEL.FINANCIAL.OVERDUE_AMOUNT | SELETOR: .card-financeiro .financeiro-indicador-valor-atrasado .financeiro-indicador-valor strong */
+.card-financeiro
+.financeiro-indicador-valor-atrasado
+.financeiro-indicador-valor strong {
+  position: relative;
+  z-index: 1;
+}
+
+/* Mantém o ícone e o texto acima do reflexo */
+/* ID: CSS-236 | REF: PANEL.FINANCIAL.RECEIPTS | SELETOR: .card-financeiro .botao-comprovantes > .icone-comprovantes, .card-financeiro .botao-comprovantes > span:not(.comprovantes-reflexo) */
+.card-financeiro .botao-comprovantes > .icone-comprovantes,
+.card-financeiro .botao-comprovantes > span:not(.comprovantes-reflexo) {
+  z-index: 1;
+}
+
+/* Mantém o divisor e a seta visíveis */
+/* ID: CSS-237 | REF: PANEL.FINANCIAL.RECEIPTS | SELETOR: .card-financeiro .botao-comprovantes::before, .card-financeiro .botao-comprovantes::after */
+.card-financeiro .botao-comprovantes::before,
+.card-financeiro .botao-comprovantes::after {
+  z-index: 1;
+}
+
+/* PESO DO TEXTO DE VENCIMENTO */
+/* ID: CSS-238 | REF: PANEL.FINANCIAL.BILLS_DUE | SELETOR: .financeiro-conta .financeiro-conta-vencimento-rotulo */
+
+/* ID: CSS-239 | REF: PANEL.FINANCIAL.BILLS_DUE | SELETOR: .financeiro-conta .financeiro-conta-data */
+
+/* NOMES DAS CONTAS EM NEGRITO */
+/* ID: CSS-240 | REF: PANEL.FINANCIAL.BILLS_DUE | SELETOR: .financeiro-conta .financeiro-conta-nome */
+.financeiro-conta .financeiro-conta-nome {
+  font-weight: 800;
+}
+
+/* =========================================
+  CONTAS VENCIDAS — FUNDOS E ALINHAMENTO
+========================================= */
+
+/* ESTRUTURA DO NOME: ÍCONE SEM FUNDO ADICIONAL */
+/* ID: CSS-241 | REF: PANEL.FINANCIAL.BILLS_DUE | SELETOR: .financeiro-conta .financeiro-conta-nome */
+.financeiro-conta .financeiro-conta-nome {
+  display: flex;
+  align-items: center;
+  justify-self: start;
+  gap: 10px;
+
+  width: fit-content;
+  max-width: 100%;
+  min-width: 0;
+
+  padding: 0;
+  border: none;
+  border-radius: 0;
+  background: transparent;
+
+  box-sizing: border-box;
+}
+
+/* FUNDO SOMENTE ATRÁS DO NOME */
+/* ID: CSS-242 | REF: PANEL.FINANCIAL.BILLS_DUE | SELETOR: .financeiro-conta .financeiro-conta-nome-texto */
+.financeiro-conta .financeiro-conta-nome-texto {
+  display: inline-block;
+  width: fit-content;
+  max-width: 100%;
+
+  padding: 1px 5px;
+  border-radius: 4px;
+  background-color: #d5e0d7;
+
+  color: #000000;
+  font-family: "Segoe UI", Arial, sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 0.9;
+  white-space: nowrap;
+
+  box-sizing: border-box;
+}
+
+/* FUNDO DO VENCIMENTO E DA DATA */
+/* ID: CSS-243 | REF: PANEL.FINANCIAL.BILLS_DUE | SELETOR: .financeiro-conta .financeiro-conta-vencimento */
+.financeiro-conta .financeiro-conta-vencimento {
+  display: inline-flex;
+  align-items: center;
+  justify-self: start;
+  gap: 5px;
+
+  width: fit-content;
+  max-width: 100%;
+  min-width: 0;
+
+  padding: 1px 5px;
+  background-color: #d5e0d7;
+  font-family: "Segoe UI", Arial, sans-serif;
+  font-size: 12px;
+  line-height: 1.1;
+  white-space: nowrap;
+
+  box-sizing: border-box;
+}
+
+/* SOMENTE "VENCIMENTO:" EM NEGRITO */
+/* ID: CSS-244 | REF: PANEL.FINANCIAL.BILLS_DUE | SELETOR: .financeiro-conta .financeiro-conta-vencimento-rotulo */
+.financeiro-conta .financeiro-conta-vencimento-rotulo {
+  flex: 0 0 auto;
+  color: #000000;
+  font-weight: 800;
+  white-space: nowrap;
+}
+
+/* DATA EM PESO NORMAL */
+/* ID: CSS-245 | REF: PANEL.FINANCIAL.BILLS_DUE | SELETOR: .financeiro-conta .financeiro-conta-data */
+.financeiro-conta .financeiro-conta-data {
+  display: inline;
+  padding: 0;
+  background: transparent;
+
+  color: #000000;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: 400;
+  line-height: inherit;
+  white-space: nowrap;
+}
+
+/* FUNDO DO VALOR — R$ ALINHADO EM TODAS AS LINHAS */
+/* ID: CSS-246 | REF: PANEL.FINANCIAL.BILLS_DUE | SELETOR: .financeiro-conta .financeiro-conta-valor */
+.financeiro-conta .financeiro-conta-valor {
+  display: flex;
+  align-items: center;
+  justify-self: start;
+  justify-content: flex-start;
+  gap: 0;
+
+  width: fit-content;
+  max-width: 100%;
+  min-width: 0;
+
+  margin: 0;
+  padding: 1px 5px;
+  border-radius: 4px;
+  background-color: #d5e0d7;
+  font-family: "Segoe UI", Arial, sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 1.1;
+  white-space: nowrap;
+
+  box-sizing: border-box;
+}
+
+/* =========================================
+   FUNDOS DOS ÍCONES DO MENU LATERAL
+   Estrela, calendário e lápis
+========================================= */
+
+/* ID: CSS-247 | REF: APP.SIDEBAR | SELETOR: .menu-lateral .botao-menu-lateral:nth-child(1) > .icone-menu-lateral, .menu-lateral .botao-menu-lateral:nth-child(2) > svg, .menu-lateral .botao-menu-lateral:nth-child(3) > .ico... */
+.menu-lateral .botao-menu-lateral:nth-child(1) > .icone-menu-lateral,
+.menu-lateral .botao-menu-lateral:nth-child(2) > svg,
+.menu-lateral .botao-menu-lateral:nth-child(3) > .icone-menu-lateral {
+  background-color: #c8edcf;
+  border-radius: 9px;
+  transition: none;
+}
+
+/* Padroniza o calendário */
+/* ID: CSS-248 | REF: APP.SIDEBAR | SELETOR: .menu-lateral .botao-menu-lateral:nth-child(2) > svg */
+.menu-lateral .botao-menu-lateral:nth-child(2) > svg {
+  box-sizing: border-box;
+  flex: 0 0 34px;
+  width: 34px;
+  height: 34px;
+  margin-right: 0;
+  padding: 4px;
+}
+
+/* Remove o quadrado de fundo durante o hover */
+/* ID: CSS-249 | REF: APP.SIDEBAR | SELETOR: .menu-lateral .botao-menu-lateral:nth-child(1):hover > .icone-menu-lateral, .menu-lateral .botao-menu-lateral:nth-child(2):hover > svg, .menu-lateral .botao-menu-lateral:nth-chi... */
+.menu-lateral .botao-menu-lateral:nth-child(1):hover > .icone-menu-lateral,
+.menu-lateral .botao-menu-lateral:nth-child(2):hover > svg,
+.menu-lateral .botao-menu-lateral:nth-child(3):hover > .icone-menu-lateral {
+  background-color: transparent;
+}
+
+
+/* =========================================================
+   ID: CSS-0251 | REF: ARCHIVE.STYLE.NEUMORPHIC | BLOCO RESERVADO PARA USO FUTURO — EFEITO NEUMÓRFICO
+
+   Status: teste finalizado e parâmetros visuais aprovados.
+   Uso: referência para reproduzir o relevo neumórfico
+   em círculos, botões, indicadores e outros componentes.
+
+   Preservar os valores de sombras, luzes, desfoque,
+   direção e transparência definidos durante os testes.
+
+   O HTML correspondente está comentado temporariamente.
+   Não excluir este bloco: reutilizar quando necessário.
+========================================================= */
+
+/* Fundo cinza do teste neumórfico 
+      .teste-neumorfico {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 220px;
+  padding: 30px 16px;
+  box-sizing: border-box;
+  background: #e8ebe9;
+}
+
+/* Área de teste neumórfico 
+.teste-neumorfico {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 220px;
+  padding: 30px 16px;
+  box-sizing: border-box;
+  background: #e8ebe9;
+}
+
+/* Círculo neumórfico — relevo suave do Check-In 
+.esfera-neumorfica {
+  width: 126px;
+  height: 126px;
+  flex: 0 0 126px;
+  border-radius: 50%;
+  box-sizing: border-box;
+  border: none;
+
+  /* Superfície clara, sem contorno 
+  background: #f9fbf9;
+
+    box-shadow:
+    /* Luz branca externa — superior esquerda 
+    -10px -10px 22px rgba(255, 255, 255, 0.96),
+
+    /* Sombra verde externa — inferior direita, a 45° 
+    10px 10px 24px rgba(48, 125, 65, 0.25),
+
+    /* Sombra cinza interna — parte superior mais definida 
+    inset 4px 4px 12px rgba(130, 145, 133, 0.22),
+
+    /* Reflexo branco interno — transição oposta 
+    inset -4px -4px 14px rgba(255, 255, 255, 0.90);
+}  */
+
+/* Fundo do ícone de Configuração */
+/* ID: CSS-250 | REF: APP.SIDEBAR | SELETOR: .menu-lateral .botao-menu-lateral:nth-child(4) > .icone-menu-lateral */
+.menu-lateral .botao-menu-lateral:nth-child(4) > .icone-menu-lateral {
+  background-color: #c8edcf;
+  border-radius: 9px;
+  transition: none;
+}
+
+/* Fundo transparente durante o hover */
+/* ID: CSS-251 | REF: APP.SIDEBAR | SELETOR: .menu-lateral .botao-menu-lateral:nth-child(4):hover > .icone-menu-lateral */
+.menu-lateral .botao-menu-lateral:nth-child(4):hover > .icone-menu-lateral {
+  background-color: transparent;
+}
+
+/* Fundo do ícone Ajuda */
+/* ID: CSS-252 | REF: APP.SIDEBAR | SELETOR: .menu-lateral .botao-menu-lateral:nth-child(5) > .icone-menu-lateral */
+.menu-lateral .botao-menu-lateral:nth-child(5) > .icone-menu-lateral {
+  background-color: #c8edcf;
+  border-radius: 9px;
+  transition: none;
+}
+
+/* Fundo transparente durante o hover */
+/* ID: CSS-253 | REF: APP.SIDEBAR | SELETOR: .menu-lateral .botao-menu-lateral:nth-child(5):hover > .icone-menu-lateral */
+.menu-lateral .botao-menu-lateral:nth-child(5):hover > .icone-menu-lateral {
+  background-color: transparent;
+}
+
+/* =========================================
+   ÍCONES DE HORÁRIO E DATA DO PAINEL
+========================================= */
+
+/* ID: CSS-254 | REF: APP.SIDEBAR | ORGANIZAÇÃO HORÁRIO E DATA */
+.area-inferior-painel .horario-painel,
+.area-inferior-painel .data-painel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 6px;
+  padding: 0 4px;
+
+  width: 100%;
+  height: 100%;
+  min-width: 0;
+
+  box-sizing: border-box;
+}
+
+/* Valores de horário e data — fonte Poppins */
+/* ID: CSS-255 | REF: APP.SIDEBAR | SELETOR: .horario-valor, .data-valor */
+.horario-valor,
+.data-valor {
+  display: inline-block;
+  color: #111111;
+  font-family: "Poppins", sans-serif;
+  white-space: nowrap;
+  font-variant-numeric: tabular-nums;
+}
+
+/* Horário — Poppins SemiBold */
+/* ID: CSS-256 | REF: APP.SIDEBAR | SELETOR: .horario-valor */
+.horario-valor {
+  font-size: 13px;
+  font-weight: 600;
+}
+
+/* Data — Poppins Bold */
+/* ID: CSS-257 | REF: APP.SIDEBAR | SELETOR: .data-valor */
+.data-valor {
+  display: inline-flex;
+  align-items: center;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+/* ID: CSS-258 | REF: APP.SIDEBAR | SELETOR: .data-valor .data-separador */
+.data-valor .data-separador {
+  display: inline-flex;
+  flex: 0 0 6px;
+  width: 6px;
+  height: 1em;
+  align-items: center;
+  justify-content: center;
+  margin: 0 1px;
+}
+
+/* ID: CSS-259 | REF: APP.SIDEBAR | SELETOR: .data-valor .data-separador::before */
+.data-valor .data-separador::before {
+  width: 1.5px;
+  height: 0.82em;
+  border-radius: 1px;
+  background-color: currentColor;
+  content: "";
+  transform: rotate(22deg);
+}
+
+/* =========================================
+   ALINHAMENTO FIXO DOS TÍTULOS DO MENU
+========================================= */
+
+/* Cria três colunas: ícone, título e seta */
+/* ID: CSS-260 | REF: APP.SIDEBAR | SELETOR: .botao-menu-lateral */
+.botao-menu-lateral {
+  display: grid;
+  grid-template-columns: 34px minmax(0, 1fr) 18px;
+  column-gap: 18px;
+  align-items: center;
+  justify-content: initial;
+}
+
+/* Mantém todos os ícones na primeira coluna */
+/* ID: CSS-261 | REF: APP.SIDEBAR | SELETOR: .botao-menu-lateral > .icone-menu-lateral, .botao-menu-lateral > svg */
+.botao-menu-lateral > .icone-menu-lateral,
+.botao-menu-lateral > svg {
+  grid-column: 1;
+  justify-self: center;
+  margin-right: 0;
+}
+
+/* Fixa todos os títulos na segunda coluna */
+/* ID: CSS-262 | REF: APP.SIDEBAR | SELETOR: .botao-menu-lateral > span:not(.icone-menu-lateral) */
+.botao-menu-lateral > span:not(.icone-menu-lateral) {
+  grid-column: 2;
+  flex: none;
+  width: 100%;
+  min-width: 0;
+  margin-left: 0;
+  text-align: left;
+
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+}
+
+/* Mantém todas as setas na terceira coluna */
+/* ID: CSS-263 | REF: APP.SIDEBAR | SELETOR: .botao-menu-lateral::after */
+.botao-menu-lateral::after {
+  grid-column: 3;
+  justify-self: end;
+  margin-left: 0;
+}
+
+/* ID: CSS-264 | REF: APP.SIDEBAR | SELETOR: .notificacao-titulo */
+.notificacao-titulo {
+  display: block;
+  width: fit-content;
+  max-width: 100%;
+  box-sizing: border-box;
+  margin: 0 auto -10px;
+  padding: 2px 12px;
+
+  color: #111111;
+  border: 1px solid #80dc92;
+   border-radius: 7px;
+
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.2;
+  text-align: center;
+}
+
+/* Reorganização do cabeçalho Financeiro */
+/* ID: CSS-265 | REF: PANEL.FINANCIAL | SELETOR: .card-financeiro .financeiro-cabecalho */
+.card-financeiro .financeiro-cabecalho {
+  display: grid;
+  grid-template-columns: 188px 106px minmax(0, 1fr) auto;
+  align-items: center;
+  column-gap: 8px;
+  row-gap: 0;
+}
+
+/* Ícone e título Financeiro na mesma linha */
+/* ID: CSS-266 | REF: PANEL.FINANCIAL | SELETOR: .card-financeiro .financeiro-identificacao */
+.card-financeiro .financeiro-identificacao {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 6px;
+  min-width: 0;
+  white-space: nowrap;
+}
+
+/* Impede a quebra do título */
+/* ID: CSS-267 | REF: PANEL.FINANCIAL | SELETOR: .card-financeiro .financeiro-identificacao .titulo-card */
+.card-financeiro .financeiro-identificacao .titulo-card {
+  letter-spacing: 0.3px;
+  text-shadow: none !important;
+  flex: 0 0 auto;
+  white-space: nowrap;
+  margin: 0;
+}
+
+/* Barra ocupa o espaço disponível */
+/* ID: CSS-268 | REF: PANEL.FINANCIAL | SELETOR: .card-financeiro .financeiro-progresso */
+.card-financeiro .financeiro-progresso {
+  width: 100%;
+  max-width: 320px;
+  min-width: 0;
+  justify-self: start;
+}
+
+/* ESPAÇAMENTO ENTRE PROGRESSO E VER DETALHES */
+/* ID: CSS-269 | REF: PANEL.FINANCIAL | EST-CARD */
+
+.card-financeiro .financeiro-cabecalho > .botao-detalhes,
+.card-estudo .estudo-cabecalho > .botao-detalhes {
+  margin-left: 16px;
+}
+
+/* =========================================
+   RESTAURAÇÃO DO BLOCO DE HORÁRIO E DATA
+   ========================================= */
+
+/* ID: CSS-270 | REF: APP.SIDEBAR | DISTRIBUIÇÃO PROPORCIONAL DE HORÁRIO E DATA */
+.painel-esquerdo > .area-inferior-painel {
+  position: relative;
+
+  display: grid;
+  grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr);
+  grid-template-rows: 1fr;
+
+  align-items: center;
+
+  width: 100%;
+  height: 44px;
+  min-height: 44px;
+  max-height: 44px;
+
+  flex: 0 0 44px;
+  box-sizing: border-box;
+
+  padding: 0 4px;
+  column-gap: 6px;
+
+  margin-top: 22px;
+  margin-bottom: 32px;
+
+  background: #ffffff;
+  border: 1px solid transparent;
+  border-radius: 7px;
+  overflow: hidden;
+}
+
+/* =========================================================
+   PAINEL PRINCIPAL
+========================================================= */
+
+/* ID: CSS-271 | REF: PANEL.FINANCIAL | SELETOR: .card-financeiro */
+.card-financeiro {
+  background:
+    linear-gradient(
+      145deg,
+      #fafffc 0%,
+      #edf6f0 55%,
+      #e6f1e9 100%
+    ) padding-box,
+    linear-gradient(
+      125deg,
+      #034d29 0%,
+      #159c50 40%,
+      #65e995 75%,
+      #087b3e 100%
+    ) border-box;
+
+  border: 0px solid transparent;
+  border-radius: 16px;
+
+  box-shadow:
+    -5px -5px 13px rgba(255,255,255,.95),
+    7px 8px 18px rgba(28,83,48,.17),
+    inset 1px 1px 3px rgba(255,255,255,.95),
+    inset -1px -2px 4px rgba(42,113,64,.10);
+}
+
+/* =========================================================
+   CABEÇALHO FINANCEIRO
+========================================================= */
+
+/* ID: CSS-272 | REF: PANEL.FINANCIAL | SELETOR: .financeiro-icone */
+/* FINANCEIRO — ACABAMENTO ESQUIOMÓRFICO METÁLICO */
+
+.financeiro-icone {
+  background:
+    linear-gradient(
+      145deg,
+      #2b965c 0%,
+      #176b43 54%,
+      #0a3b26 100%
+    ) padding-box,
+    linear-gradient(
+      145deg,
+      rgba(225, 255, 232, .82) 0%,
+      rgba(133, 220, 157, .62) 24%,
+      rgba(25, 91, 52, .94) 62%,
+      rgba(151, 222, 169, .58) 100%
+    ) border-box;
+
+  border: 1px solid transparent;
+
+  box-shadow:
+    0 3px 6px rgba(0, 0, 0, .44),
+    0 1px 2px rgba(0, 0, 0, .28),
+    inset 0 1px 1px rgba(255, 255, 255, .52),
+    inset 1px 1px 3px rgba(225, 255, 232, .30),
+    inset 0 3px 5px rgba(133, 220, 157, .20),
+    inset 0 -2px 4px rgba(0, 18, 9, .48),
+    inset -1px 0 2px rgba(0, 18, 9, .20);
+
+  color: #ffffff;
+
+  text-shadow:
+    0 1px 1px rgba(0, 20, 10, .50),
+    0 0 2px rgba(190, 255, 207, .28);
+}
+
+
+/* ID: CSS-273 | REF: PANEL.FINANCIAL | SELETOR: .card-financeiro .titulo-card */
+.card-financeiro .titulo-card {
+  color: #034d29;
+  color: var(--neo-green-dark);
+  background: none;
+  -webkit-text-fill-color: currentColor;
+
+  text-shadow:
+    0 1px 1px rgba(255,255,255,.9);
+}
+
+/* =========================================================
+   BARRA DE PROGRESSO
+========================================================= */
+
+/* ID: CSS-274 | REF: PANEL.FINANCIAL | SELETOR: .financeiro-progresso-trilho */
+.financeiro-progresso-trilho {
+  background: linear-gradient(
+    180deg,
+    #c4d0c9,
+    #e7eee9
+  );
+
+  box-shadow:
+    inset 3px 3px 6px rgba(80,105,88,.25),
+    inset -2px -2px 4px rgba(255,255,255,.9);
+}
+
+/* ID: CSS-275 | REF: PANEL.FINANCIAL | SELETOR: .financeiro-progresso-preenchimento */
+.financeiro-progresso-preenchimento {
+  background: linear-gradient(
+    100deg,
+    #034d29,
+    #079b48 50%,
+    #35e66f 100%
+  );
+
+  box-shadow:
+    inset 0 1px 2px rgba(255,255,255,.35),
+    0 0 6px rgba(28,206,92,.28);
+}
+
+/* ID: CSS-276 | REF: PANEL.FINANCIAL | SELETOR: .financeiro-progresso-percentual */
+.financeiro-progresso-percentual {
+  color: #034d29;
+  color: var(--neo-green-dark);
+}
+
+/* =========================================================
+   RENDA MENSAL
+========================================================= */
+
+/* ID: CSS-277 | REF: PANEL.FINANCIAL.INCOME | SELETOR: .card-financeiro .financeiro-renda */
+.card-financeiro .financeiro-renda {
+  background: linear-gradient(
+    145deg,
+    #fbfffc,
+    #edf7f0
+  );
+
+  border: 1px solid #b9dfc3;
+  border-radius: 12px;
+
+  box-shadow:
+    inset 2px 2px 5px rgba(255,255,255,.95),
+    inset -2px -2px 5px rgba(105,163,119,.12),
+    3px 4px 8px rgba(26,94,47,.10);
+}
+
+/* ID: CSS-278 | REF: PANEL.FINANCIAL.INCOME | SELETOR: .financeiro-renda-rotulo */
+.financeiro-renda-rotulo {
+  color: #034d29;
+  color: var(--neo-green-dark);
+  background: #fafffc;
+
+  border-color: #8ed5a3;
+  border-radius: 5px;
+}
+
+/* =========================================================
+   CONTA PRIORITÁRIA
+========================================================= */
+
+/* ID: CSS-279 | REF: PANEL.FINANCIAL.PRIORITY | SELETOR: .card-financeiro .financeiro-indicador-prioritaria */
+.card-financeiro .financeiro-indicador-prioritaria {
+  background: linear-gradient(
+    145deg,
+    #fbfffc,
+    #e9f5ed
+  ) padding-box,
+  linear-gradient(
+    115deg,
+    #70bc86,
+    #19a44e,
+    #8be6a5
+  ) border-box;
+
+  box-shadow:
+    inset 3px 3px 7px rgba(255,255,255,.95),
+    inset -3px -3px 7px rgba(73,139,88,.12),
+    3px 4px 9px rgba(20,91,44,.13);
+}
+
+/* ID: CSS-280 | REF: PANEL.FINANCIAL.PRIORITY | SELETOR: .card-financeiro .financeiro-indicador-prioritaria .financeiro-indicador-rotulo */
+.card-financeiro
+.financeiro-indicador-prioritaria
+.financeiro-indicador-rotulo {
+  background: #f8fff9;
+  color: #034d29;
+  color: var(--neo-green-dark);
+  border-color: #82ce96;
+}
+
+/* ID: CSS-281 | REF: PANEL.FINANCIAL.PRIORITY | SELETOR: .financeiro-alfinete-icone */
+.financeiro-alfinete-icone {
+  filter:
+    brightness(0)
+    saturate(100%)
+    invert(68%)
+    sepia(66%)
+    saturate(490%)
+    hue-rotate(91deg)
+    brightness(98%)
+    contrast(91%)
+    drop-shadow(0 0 2px rgba(57, 216, 121, .30)) !important;
+}
+
+/* =========================================================
+   VALOR PAGO NO MÊS
+========================================================= */
+
+/* ID: CSS-282 | REF: PANEL.FINANCIAL.PAID | SELETOR: .card-financeiro .financeiro-indicador-pago */
+.card-financeiro .financeiro-indicador-pago {
+  background: linear-gradient(
+    145deg,
+    #fbfffc,
+    #eaf5ed
+  ) padding-box,
+  linear-gradient(
+    115deg,
+    #70bc86,
+    #19a44e,
+    #8be6a5
+  ) border-box;
+
+  box-shadow:
+    inset 3px 3px 7px rgba(255,255,255,.95),
+    inset -3px -3px 7px rgba(73,139,88,.12),
+    3px 4px 9px rgba(20,91,44,.12);
+}
+
+/* ID: CSS-283 | REF: PANEL.FINANCIAL.PAID | SELETOR: .card-financeiro .financeiro-indicador-pago .financeiro-indicador-rotulo */
+.card-financeiro
+.financeiro-indicador-pago
+.financeiro-indicador-rotulo {
+  color: #034d29;
+  color: var(--neo-green-dark);
+  border-color: #82ce96;
+  background: #fafffc;
+}
+
+/* =========================================================
+   CONTAS ATRASADAS
+========================================================= */
+
+/* ID: CSS-284 | REF: PANEL.FINANCIAL.OVERDUE | SELETOR: .card-financeiro .financeiro-atrasadas-designer */
+.card-financeiro .financeiro-atrasadas-designer {
+  background: linear-gradient(
+    145deg,
+    #fffafa,
+    #ffeded
+  ) padding-box,
+  linear-gradient(
+    115deg,
+    #f4aaaa,
+    #df4141,
+    #ffbaba
+  ) border-box;
+
+  box-shadow:
+    inset 3px 3px 7px rgba(255,255,255,.95),
+    inset -3px -3px 7px rgba(202,75,75,.12),
+    3px 4px 9px rgba(155,36,36,.12);
+}
+
+/* ID: CSS-285 | REF: PANEL.FINANCIAL.OVERDUE | SELETOR: .card-financeiro .financeiro-atrasadas-designer .financeiro-indicador-rotulo */
+.card-financeiro
+.financeiro-atrasadas-designer
+.financeiro-indicador-rotulo {
+  color: #b91c1c;
+  color: var(--neo-red-dark);
+  background: #fffafa;
+  border-color: #f0aaaa;
+}
+
+/* ID: CSS-286 | REF: PANEL.FINANCIAL.OVERDUE | SELETOR: .financeiro-alerta-icone */
+.financeiro-alerta-icone {
+  box-shadow: none !important;
+}
+
+
+/* ID: CSS-287 | REF: PANEL.FINANCIAL.OVERDUE | SELETOR: .card-financeiro .financeiro-atrasadas-designer .financeiro-atrasadas-numero */
+.card-financeiro .financeiro-atrasadas-designer .financeiro-atrasadas-numero {
+  color: #b91c1c;
+  color: var(--neo-red-dark);
+}
+
+/* =========================================================
+   VALOR ATRASADO
+========================================================= */
+
+/* ID: CSS-288 | REF: PANEL.FINANCIAL.OVERDUE_AMOUNT | SELETOR: .card-financeiro .financeiro-indicador-valor-atrasado */
+.card-financeiro .financeiro-indicador-valor-atrasado {
+  background: linear-gradient(
+    145deg,
+    #fffafa,
+    #ffeded
+  ) padding-box,
+  linear-gradient(
+    115deg,
+    #f2aaaa,
+    #df4141,
+    #ffbaba
+  ) border-box;
+
+  box-shadow:
+    inset 3px 3px 7px rgba(255,255,255,.95),
+    inset -3px -3px 7px rgba(202,75,75,.12),
+    3px 4px 9px rgba(155,36,36,.12);
+}
+
+/* ID: CSS-289 | REF: PANEL.FINANCIAL.OVERDUE_AMOUNT | SELETOR: .card-financeiro .financeiro-indicador-valor-atrasado .financeiro-indicador-rotulo */
+.card-financeiro
+.financeiro-indicador-valor-atrasado
+.financeiro-indicador-rotulo {
+  color: #b91c1c;
+  color: var(--neo-red-dark);
+  background: #fffafa;
+  border-color: #f0aaaa;
+}
+
+/* ID: CSS-290 | REF: PANEL.FINANCIAL.OVERDUE_AMOUNT | SELETOR: .card-financeiro .financeiro-indicador-valor-atrasado .financeiro-indicador-valor strong */
+.card-financeiro
+.financeiro-indicador-valor-atrasado
+.financeiro-indicador-valor strong {
+  color: #b91c1c;
+  color: var(--neo-red-dark);
+}
+
+/* ID: CSS-291 | REF: PANEL.FINANCIAL.OVERDUE_AMOUNT | SELETOR: .financeiro-valor-atrasado-icone */
+.financeiro-valor-atrasado-icone {
+  box-shadow: none !important;
+}
+
+/* =========================================================
+   RÓTULOS DOS INDICADORES
+========================================================= */
+
+/* ID: CSS-292 | REF: PANEL.FINANCIAL.PRIORITY | SELETOR: .card-financeiro .financeiro-indicador-rotulo, .card-financeiro .financeiro-indicador-prioritaria .financeiro-indicador-rotulo, .card-financeiro .financeiro-indicador-pago .fina... */
+.card-financeiro .financeiro-indicador-rotulo,
+.card-financeiro .financeiro-indicador-prioritaria .financeiro-indicador-rotulo,
+.card-financeiro .financeiro-indicador-pago .financeiro-indicador-rotulo,
+.card-financeiro .financeiro-atrasadas-designer .financeiro-indicador-rotulo,
+.card-financeiro .financeiro-indicador-valor-atrasado .financeiro-indicador-rotulo {
+  border-radius: 5px;
+  box-shadow:
+    0 1px 3px rgba(40,85,50,.08);
+}
+
+/* =========================================================
+   BOTÃO COMPROVANTES
+========================================================= */
+
+/* ID: CSS-293 | REF: PANEL.FINANCIAL.RECEIPTS | SELETOR: .card-financeiro .botao-comprovantes */
+.card-financeiro .botao-comprovantes {
+  
+  background:
+  /* Reflexo diagonal mínimo */
+  linear-gradient(
+    225deg,
+    rgba(255, 255, 255, 0.012) 0%,
+    rgba(255, 255, 255, 0.005) 14%,
+    transparent 32%,
+    transparent 48%,
+    rgba(0, 25, 8, 0.01) 76%,
+    rgba(0, 20, 5, 0.025) 100%
+  ),
+
+  /* Reflexo verde à esquerda */
+  radial-gradient(
+    ellipse 65% 110% at 5% 0%,
+    rgba(115, 255, 155, 0.045) 0%,
+    rgba(45, 215, 85, 0.015) 45%,
+    transparent 78%
+  ),
+
+  /* Reflexo verde à direita */
+  radial-gradient(
+    ellipse 52% 120% at 100% 0%,
+    rgba(95, 255, 130, 0.04) 0%,
+    rgba(35, 190, 70, 0.012) 48%,
+    transparent 82%
+  ),
+
+  /* Brilho superior mínimo */
+  linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.006) 0%,
+    transparent 55%
+  ),
+
+  /* Base verde com 70% de transparência */
+  linear-gradient(
+    110deg,
+    rgba(6, 71, 25, 0.38) 0%,
+    rgba(7, 91, 33, 0.38) 35%,
+    rgba(11, 125, 43, 0.38) 68%,
+    rgba(27, 162, 71, 0.38) 100%
+  );
+
+
+
+  border: 1px solid rgba(106,245,151,.75);
+  border-radius: 12px;
+
+  color: #ffffff;
+
+  box-shadow:
+    inset 2px 2px 4px rgba(255,255,255,.28),
+    inset -3px -4px 7px rgba(0,35,15,.35),
+    4px 6px 12px rgba(0,75,35,.25),
+    0 0 7px rgba(43,219,103,.16);
+
+  transition:
+    transform .2s ease,
+    box-shadow .2s ease,
+    filter .2s ease;
+}
+
+/* ID: CSS-294 | REF: PANEL.FINANCIAL.RECEIPTS | SELETOR: .card-financeiro .botao-comprovantes:hover */
+.card-financeiro .botao-comprovantes:hover {
+  transform: translateY(-2px);
+
+  filter: brightness(1.07);
+
+  box-shadow:
+    inset 2px 2px 4px rgba(255,255,255,.32),
+    inset -3px -4px 7px rgba(0,35,15,.30),
+    5px 8px 14px rgba(0,75,35,.30),
+    0 0 12px rgba(43,219,103,.28);
+}
+
+/* ID: CSS-295 | REF: PANEL.FINANCIAL.RECEIPTS | SELETOR: .card-financeiro .botao-comprovantes:active */
+.card-financeiro .botao-comprovantes:active {
+  transform: translateY(1px);
+
+  box-shadow:
+    inset 5px 5px 10px rgba(0,45,20,.35),
+    inset -3px -3px 7px rgba(110,255,160,.16),
+    0 2px 4px rgba(0,50,20,.18);
+}
+
+/* =========================================================
+   CONTAS VENCIDAS — ÁREA EXTERNA
+========================================================= */
+
+/* ID: CSS-296 | REF: PANEL.FINANCIAL.BILLS_DUE | SELETOR: .financeiro-vencidas */
+.financeiro-vencidas {
+  background: linear-gradient(
+    145deg,
+    #fffefe,
+    #f6eeee
+  );
+
+  border: 1px solid rgba(232,151,151,.25);
+  border-radius: 12px;
+
+  box-shadow:
+    -3px -3px 8px rgba(255,255,255,.95),
+    4px 5px 12px rgba(97,49,49,.13),
+    inset 2px 2px 5px rgba(255,255,255,.95);
+}
+
+/* ID: CSS-297 | REF: PANEL.FINANCIAL.BILLS_DUE | SELETOR: .financeiro-vencidas-titulo */
+.financeiro-vencidas-titulo {
+  background: linear-gradient(
+    145deg,
+    #ffeaea,
+    #ffdada
+  );
+
+  border: 1px solid #f1b4b4;
+  border-radius: 5px;
+
+  color: #a91d1d;
+
+  box-shadow: 0 1px 3px rgba(40,85,50,.08);
+}
+
+/* =========================================================
+   LISTA E BARRA DE ROLAGEM
+========================================================= */
+
+/* BARRA NATIVA SUBSTITUÍDA PELO TRILHO VERTICAL INDEPENDENTE. */
+
+/* ID: CSS-298 | REF: PANEL.FINANCIAL.BILLS_DUE | SELETOR: .financeiro-conta */
+.financeiro-conta {
+  background: linear-gradient(
+    145deg,
+    #ffffff,
+    #f5f9f6
+  );
+
+  border: 1px solid #d5e2d9;
+  border-radius: 10px;
+
+  box-shadow:
+    inset 2px 2px 4px rgba(255,255,255,.95),
+    inset -2px -2px 4px rgba(108,141,117,.08),
+    2px 3px 6px rgba(40,85,50,.08);
+
+  transition:
+    background .2s ease,
+    box-shadow .2s ease;
+}
+
+/* ID: CSS-299 | REF: PANEL.FINANCIAL.BILLS_DUE | SELETOR: .financeiro-conta:hover */
+.financeiro-conta:hover {
+  background: linear-gradient(
+    145deg,
+    #ffffff,
+    #edf8f0
+  );
+
+  box-shadow:
+    inset 1px 1px 3px rgba(255,255,255,.95),
+    3px 4px 8px rgba(40,110,60,.13);
+}
+
+/* =========================================================
+   ÍCONES DAS CONTAS VENCIDAS
+========================================================= */
+
+/* ID: CSS-300 | REF: PANEL.FINANCIAL.BILLS_DUE | SELETOR: .financeiro-conta-icone */
+.financeiro-conta-icone {
+  background: #ff858c;
+  color: #ffffff;
+  box-shadow: none;
+}
+
+/* =========================================================
+   DATA DE VENCIMENTO
+========================================================= */
+
+/* ID: CSS-301 | REF: PANEL.FINANCIAL.BILLS_DUE | SELETOR: .financeiro-conta .financeiro-conta-vencimento */
+.financeiro-conta .financeiro-conta-vencimento {
+  background: #edf4ef;
+  border: 1px solid #dce9df;
+  border-radius: 6px;
+
+  color: #405b49;
+
+  box-shadow:
+    inset 1px 1px 3px rgba(255,255,255,.9),
+    inset -1px -1px 3px rgba(90,125,100,.07);
+}
+
+/* =========================================================
+   VALORES MONETÁRIOS
+========================================================= */
+
+/* ID: CSS-302 | REF: PANEL.FINANCIAL.BILLS_DUE | SELETOR: .financeiro-conta .financeiro-conta-valor */
+.financeiro-conta .financeiro-conta-valor {
+  color: #172d20;
+  font-variant-numeric: tabular-nums;
+}
+
+/* =========================================================
+   BOTÃO DE EXCLUSÃO
+========================================================= */
+
+/* ID: CSS-303 | REF: PANEL.FINANCIAL.BILLS_DUE | SELETOR: .financeiro-vencidas .financeiro-conta-excluir */
+.financeiro-vencidas .financeiro-conta-excluir {
+ background: transparent;
+
+ box-shadow: none;
+
+  transition:
+    transform .2s ease,
+    box-shadow .2s ease,
+    background .2s ease;
+}
+
+/* ID: CSS-304 | REF: PANEL.FINANCIAL.BILLS_DUE | SELETOR: .financeiro-vencidas .financeiro-conta-excluir:hover */
+.financeiro-vencidas .financeiro-conta-excluir:hover {
+  background: transparent;
+  transform: translateY(-1px);
+}
+
+/* ID: CSS-305 | REF: PANEL.FINANCIAL.BILLS_DUE | SELETOR: .financeiro-vencidas .financeiro-conta-excluir:active */
+.financeiro-vencidas .financeiro-conta-excluir:active {
+  transform: translateY(1px);
+
+  box-shadow: none;
+}
+
+/* =========================================================
+   ACESSIBILIDADE
+========================================================= */
+
+/* ID: CSS-306 | REF: PANEL.FINANCIAL | SELETOR: .card-financeiro button:focus-visible */
+.card-financeiro button:focus-visible {
+  outline: 3px solid rgba(31,190,91,.55);
+  outline-offset: 3px;
+}
+
+/* REFLEXO VERDE ABAULADO — EFEITO TOBOGÃ */
+/* ID: CSS-307 | REF: PANEL.STUDY.PRIORITY | SELETOR: .estudo-prioridade::after */
+.estudo-prioridade::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  inset: 0;
+  z-index: -1;
+
+  border-radius: inherit;
+  pointer-events: none;
+
+  clip-path: polygon(
+    97% 0%,
+    100% 0%,
+    100% 100%,
+    76% 100%,
+    77.5% 94%,
+    79% 88%,
+    81.5% 80%,
+    85% 72%,
+    88.8% 63%,
+    91.2% 54%,
+    93% 45%,
+    94.5% 36%,
+    95.7% 27%,
+    96.5% 18%,
+    97.2% 9%,
+    97.5% 0%
+  );
+
+  background:
+    radial-gradient(
+      ellipse 100% 130% at 100% 50%,
+      rgba(45, 215, 100, 0.23) 0%,
+      rgba(45, 215, 100, 0.12) 45%,
+      transparent 100%
+    );
+}
+
+/* ID: CSS-308 | REF: PANEL.STUDY.STUDY_DAYS | TOBOGÃ INDIVIDUAL */
+.estudo-area-esquerda > .estudo-campo:not(.estudo-campo-pendencias) {
+  position: relative;
+  isolation: isolate;
+  border: 1px solid rgba(80, 220, 115, 0.72);
+  border-radius: 12px;
+  box-shadow:
+    inset 0 1px 1px rgba(190, 255, 210, 0.13),
+    0 3px 6px rgba(0, 0, 0, 0.25);
+}
+
+/* REFLEXO DIAGONAL VERDE */
+.estudo-area-esquerda > .estudo-campo:not(.estudo-campo-pendencias)::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  inset: 0;
+  z-index: 0;
+  border-radius: inherit;
+  pointer-events: none;
+
+  clip-path: polygon(
+    97% 0%,
+    100% 0%,
+    100% 100%,
+    76% 100%,
+    77.5% 94%,
+    79% 88%,
+    81.5% 80%,
+    85% 72%,
+    88.8% 63%,
+    91.2% 54%,
+    93% 45%,
+    94.5% 36%,
+    95.7% 27%,
+    96.5% 18%,
+    97.2% 9%,
+    97.5% 0%
+  );
+
+  background: radial-gradient(
+    ellipse 100% 130% at 100% 50%,
+    rgba(45, 215, 100, 0.23) 0%,
+    rgba(45, 215, 100, 0.12) 45%,
+    transparent 100%
+  );
+}
+
+/* PRESERVA A CAMADA DOS ELEMENTOS INTERNOS */
+.estudo-area-esquerda > .estudo-campo > .estudo-campo-rotulo {
+  z-index: 1;
+}
+
+.estudo-area-esquerda > .estudo-campo > .estudo-campo-icone,
+.estudo-area-esquerda > .estudo-campo > .estudo-campo-texto {
+  position: relative;
+  z-index: 1;
+}
+
+/* ID: CSS-309 | REF: PANEL.STUDY.PENDING | ACABAMENTO VERMELHO */
+.estudo-area-esquerda > .estudo-campo-pendencias {
+  position: relative;
+  isolation: isolate;
+  box-sizing: border-box;
+
+  border-radius: 12px;
+  
+  border: 1px solid rgba(198, 70, 80, .52) !important;
+  color: #ff9ba2 !important;
+  background: linear-gradient(
+    145deg,
+    #241417,
+    #160e10
+  ) !important;
+  
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, .035),
+    0 5px 13px rgba(0, 0, 0, .28) !important;
+}
+
+/* TOBOGÃ — MESMO EFEITO DE CSS-0229 */
+.estudo-area-esquerda > .estudo-campo-pendencias::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  inset: 0;
+  z-index: 0;
+
+  border-radius: inherit;
+  pointer-events: none;
+
+  clip-path: polygon(
+    97% 0%,
+    100% 0%,
+    100% 100%,
+    76% 100%,
+    77.5% 94%,
+    79% 88%,
+    81.5% 80%,
+    85% 72%,
+    88.8% 63%,
+    91.2% 54%,
+    93% 45%,
+    94.5% 36%,
+    95.7% 27%,
+    96.5% 18%,
+    97.2% 9%,
+    97.5% 0%
+  );
+
+  background: radial-gradient(
+    ellipse 100% 130% at 100% 50%,
+    rgba(185, 0, 0, 0.30) 0%,
+    rgba(210, 35, 35, 0.19) 45%,
+    rgba(235, 100, 100, 0.11) 72%,
+    transparent 100%
+  );
+}
+
+/* TÍTULO — MESMO PADRÃO DE CSS-0230 */
+.estudo-area-esquerda
+.estudo-campo-pendencias
+.estudo-campo-rotulo {
+  position: absolute;
+  z-index: 2;
+
+  background: #241316 !important;
+  border: 1px solid rgba(224, 87, 96, .58) !important;
+  color: #ff9ba2 !important;
+
+  box-shadow: 0 2px 8px rgba(0, 0, 0, .3);
+}
+
+/* CONTEÚDO ACIMA DO TOBOGÃ */
+.estudo-area-esquerda
+.estudo-campo-pendencias
+.estudo-campo-icone,
+.estudo-area-esquerda
+.estudo-campo-pendencias
+.estudo-campo-texto {
+  position: relative;
+  z-index: 1;
+}
+
+/* ID: CSS-310 | REF: PANEL.STUDY.STUDY_DAYS | ALINHAMENTO HORIZONTAL */
+.card-estudo .estudo-area-esquerda > .estudo-campo:not(.estudo-campo-pendencias) {
+  justify-content: center;
+  gap: 9px;
+  width: calc(100% + 8px);
+}
+
+/* DISTRIBUIÇÃO CENTRALIZADA DOS SETE DIAS */
+.card-estudo .estudo-area-esquerda .estudo-dias-lista {
+  display: flex !important;
+  flex: 0 1 auto;
+  align-items: center;
+  justify-content: center;
+  width: auto;
+  min-width: 0;
+  gap: 5px;
+
+  font-family: "Segoe UI", Arial, sans-serif;
+  font-size: 9px !important;
+  font-weight: 400 !important;
+  line-height: 1.1;
+  letter-spacing: 0;
+  text-align: center;
+  white-space: nowrap;
+}
+
+/* ABREVIAÇÕES */
+.card-estudo .estudo-area-esquerda .estudo-dias-lista > span {
+  display: block;
+  flex: 0 0 auto;
+  width: auto;
+  min-width: 0;
+  font-size: 9.5px;
+  font-weight: 400 !important;
+  text-align: center;
+  white-space: nowrap;
+}
+
+/* TER, QUA E QUI EM VERDE */
+.card-estudo .estudo-area-esquerda .estudo-dias-lista > span:nth-child(3),
+.card-estudo .estudo-area-esquerda .estudo-dias-lista > span:nth-child(4),
+.card-estudo .estudo-area-esquerda .estudo-dias-lista > span:nth-child(5) {
+  color: #39d879 !important;
+}
+
+/* ID: CSS-311 | REF: PANEL.STUDY.PENDING | ALINHAMENTO HORIZONTAL */
+.card-estudo .estudo-area-esquerda > .estudo-campo-pendencias {
+  justify-content: center;
+  gap: 9px;
+   width: calc(100% + 8px);
+}
+
+/* DISTRIBUIÇÃO CENTRALIZADA DOS SETE DIAS */
+.card-estudo .estudo-area-esquerda .estudo-pendencias-lista {
+  display: flex !important;
+  flex: 0 1 auto;
+  align-items: center;
+  justify-content: center;
+  width: auto;
+  min-width: 0;
+  gap: 5px;
+
+  font-family: "Segoe UI", Arial, sans-serif;
+  font-size: 9px !important;
+  font-weight: 400 !important;
+  line-height: 1.1;
+  letter-spacing: 0;
+  text-align: center;
+  white-space: nowrap;
+  color: #ffffff !important;
+  transform: translateY(3px);
+}
+
+/* ABREVIAÇÕES — BRANCO POR PADRÃO */
+.card-estudo .estudo-area-esquerda .estudo-pendencias-lista > span {
+  display: block;
+  flex: 0 0 auto;
+  width: auto;
+  min-width: 0;
+
+  font-family: "Segoe UI", Arial, sans-serif;
+  font-size: 9.5px;
+  font-weight: 400 !important;
+  color: #ffffff !important;
+  text-align: center;
+  white-space: nowrap;
+}
+
+/* TER, QUA E QUI — VERMELHO E NEGRITO */
+.card-estudo .estudo-area-esquerda .estudo-pendencias-lista > span:nth-child(3),
+.card-estudo .estudo-area-esquerda .estudo-pendencias-lista > span:nth-child(4),
+.card-estudo .estudo-area-esquerda .estudo-pendencias-lista > span:nth-child(5) {
+  color: #ff858c !important;
+  font-weight: 700 !important;
+}
+
+/* ID: CSS-312 | REF: PANEL.STUDY.CLOCKS | ALINHAMENTO DOS RELÓGIOS */
+
+.card-estudo .estudo-area-central .estudo-horario-inicio,
+.card-estudo .estudo-area-central .estudo-horas-diarias {
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+/* POSICIONAMENTO DOS ÍCONES */
+.card-estudo .estudo-area-central .estudo-horario-inicio > .estudo-campo-icone,
+.card-estudo .estudo-area-central .estudo-horas-diarias > .estudo-campo-icone {
+  display: flex;
+  flex: 0 0 28px;
+  width: 28px;
+  height: 28px;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  line-height: 0;
+  transform: translateX(-6px);
+  box-sizing: border-box;
+}
+
+/* DIMENSÕES DOS RELÓGIOS */
+.card-estudo .estudo-area-central .estudo-horario-inicio > .estudo-campo-icone svg,
+.card-estudo .estudo-area-central .estudo-horas-diarias > .estudo-campo-icone svg {
+  display: block;
+  flex: 0 0 22px;
+  width: 22px !important;
+  height: 22px !important;
+  margin: 0;
+  padding: 0;
+  transform: translateY(3px);
+}
+
+/* APROXIMA 09:00h DA BORDA INFERIOR */
+
+/* ID: CSS-313 | REF: PANEL.STUDY.FIELDS | AJUSTE VERTICAL DOS CONTEÚDOS */
+
+/* DIAS DE ESTUDO — ÍCONE E SETE DIAS */
+.card-estudo .estudo-area-esquerda
+> .estudo-campo:not(.estudo-campo-pendencias)
+> .estudo-campo-icone,
+.card-estudo .estudo-area-esquerda
+> .estudo-campo:not(.estudo-campo-pendencias)
+> .estudo-dias-lista {
+  transform: translateY(3px);
+}
+
+/* PENDÊNCIAS — ÍCONE E SETE DIAS */
+.card-estudo .estudo-area-esquerda
+> .estudo-campo-pendencias
+> .estudo-campo-icone,
+.card-estudo .estudo-area-esquerda
+> .estudo-campo-pendencias
+> .estudo-pendencias-lista {
+  transform: translateY(3px);
+}
+
+
+/* ID: CSS-314 | REF: PANEL.STUDY.DATE_TIME | AJUSTE VERTICAL DOS CONTEÚDOS */
+
+/* DATA DE INÍCIO */
+.card-estudo .estudo-data-inicio > .estudo-campo-icone,
+.card-estudo .estudo-data-inicio > .estudo-campo-texto {
+  transform: translateY(3px);
+}
+
+/* HORAS DIÁRIAS — TEXTO */
+.card-estudo .estudo-horas-diarias > .estudo-campo-texto {
+  transform: translateY(3px);
+}
+
+
+/* ID: CSS-315 | REF: PANEL.STUDY.CLOCKS | POSICIONAMENTO INDEPENDENTE */
+
+/* RELÓGIO — A PARTIR DAS */
+.card-estudo .estudo-area-central
+.estudo-horario-inicio > .estudo-campo-icone {
+  transform: translateX(-5px);
+}
+
+/* RELÓGIO — HORAS DIÁRIAS */
+.card-estudo .estudo-area-central
+.estudo-horas-diarias > .estudo-campo-icone {
+  transform: translate(-20px, -1px);
+}
+
+/* ID: CSS-316 | REF: PANEL.STUDY.TIME_FIELDS | APROXIMAR VALORES DOS ÍCONES */
+
+/* A PARTIR DAS — HORÁRIO DE INÍCIO */
+.card-estudo .estudo-area-central
+.estudo-horario-inicio > .estudo-campo-texto {
+  transform: translate(-8px, 3px);
+}
+
+/* ID: CSS-317 | REF: PANEL.STUDY.GOALS */
+/* ACABAMENTO IGUAL AO BOTÃO COMPROVANTES */
+
+/* ESTADO NORMAL */
+.card-central.card-estudo .estudo-botao-metas {
+  background:
+    /* Reflexo diagonal */
+    linear-gradient(
+      225deg,
+      rgba(255, 255, 255, 0.012) 0%,
+      rgba(255, 255, 255, 0.005) 14%,
+      transparent 32%,
+      transparent 48%,
+      rgba(0, 25, 8, 0.01) 76%,
+      rgba(0, 20, 5, 0.025) 100%
+    ),
+
+    /* Reflexo verde à esquerda */
+    radial-gradient(
+      ellipse 65% 110% at 5% 0%,
+      rgba(115, 255, 155, 0.045) 0%,
+      rgba(45, 215, 85, 0.015) 45%,
+      transparent 78%
+    ),
+
+    /* Reflexo verde à direita */
+    radial-gradient(
+      ellipse 52% 120% at 100% 0%,
+      rgba(95, 255, 130, 0.04) 0%,
+      rgba(35, 190, 70, 0.012) 48%,
+      transparent 82%
+    ),
+
+    /* Brilho superior */
+    linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.006) 0%,
+      transparent 55%
+    ),
+
+    /* Base verde */
+    linear-gradient(
+      110deg,
+      rgba(6, 71, 25, 0.38) 0%,
+      rgba(7, 91, 33, 0.38) 35%,
+      rgba(11, 125, 43, 0.38) 68%,
+      rgba(27, 162, 71, 0.38) 100%
+    );
+
+  border: 1px solid rgba(106, 245, 151, .75);
+  border-radius: 12px;
+  color: #ffffff;
+
+  box-shadow:
+    inset 2px 2px 4px rgba(255, 255, 255, .28),
+    inset -3px -4px 7px rgba(0, 35, 15, .35),
+    4px 6px 12px rgba(0, 75, 35, .25),
+    0 0 7px rgba(43, 219, 103, .16);
+
+  isolation: isolate;
+
+  transition:
+    transform .2s ease,
+    box-shadow .2s ease,
+    filter .2s ease;
+}
+
+/* HOVER */
+
+/* ACTIVE */
+
+/* EFEITO AO PASSAR O MOUSE */
+.card-central.card-estudo .estudo-botao-metas:hover {
+  transform: translateY(23px);
+  filter: brightness(1.07);
+
+  box-shadow:
+    inset 2px 2px 4px rgba(255,255,255,.32),
+    inset -3px -4px 7px rgba(0,35,15,.30),
+    5px 8px 14px rgba(0,75,35,.30),
+    0 0 12px rgba(43,219,103,.28);
+}
+
+/* EFEITO AO CLICAR */
+.card-central.card-estudo .estudo-botao-metas:active {
+  transform: translateY(26px);
+
+  box-shadow:
+    inset 5px 5px 10px rgba(0,45,20,.35),
+    inset -3px -3px 7px rgba(110,255,160,.16),
+    0 2px 4px rgba(0,50,20,.18);
+}
+
+
+/* ID: CSS-318 | REF: PANEL.STUDY.READABILITY_OVERRIDES | CENTRALIZAÇÃO E LEGIBILIDADE */
+
+/* DIAS DA SEMANA */
+.card-estudo .estudo-semana-dia {
+  font-size: 9px;
+}
+
+/* CENTRALIZAÇÃO DOS CAMPOS */
+.card-estudo .estudo-campo {
+  justify-content: center;
+  gap: 6px;
+  text-align: center;
+}
+
+/* ÍCONES DOS CAMPOS */
+.card-estudo .estudo-campo-icone {
+  flex: 0 0 24px;
+}
+
+/* TEXTOS DOS CAMPOS */
+.card-estudo .estudo-campo-texto {
+  text-align: center;
+}
+
+/* DATAS E HORÁRIOS */
+.card-estudo .estudo-data-inicio .estudo-campo-texto,
+.card-estudo .estudo-horario-inicio .estudo-campo-texto,
+.card-estudo .estudo-horas-diarias .estudo-campo-texto {
+  font-size: 13px;
+}
+
+/* DIAS DE ESTUDO E PENDÊNCIAS */
+.card-estudo .estudo-dias-lista,
+.card-estudo .estudo-pendencias-lista {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  gap: 3px;
+}
+
+/* ABREVIAÇÕES DOS DIAS */
+.card-estudo .estudo-dias-lista span,
+.card-estudo .estudo-pendencias-lista span {
+  font-size: 9px;
+  line-height: 1;
+}
+
+/* TÍTULOS DOS DADOS DAS ATIVIDADES */
+.card-estudo .estudo-atividade-dado span {
+  font-size: 8px;
+  font-weight: 700;
+}
+
+/* VALORES DAS ATIVIDADES */
+.card-estudo .estudo-atividade-dado strong {
+  font-size: 9px;
+  font-weight: 600;
+}
+
+/* ID: CSS-319 | REF: PANEL.STUDY.ACTIVITY | SELETOR: .card-estudo .estudo-atividade-alfinete */
+
+.card-estudo .estudo-atividade-alfinete {
+  width: 13px;
+  height: 13px;
+  object-fit: contain;
+}
+
+/* ID: CSS-320 | REF: PANEL.STUDY.ACTIVITY | ETIQUETAS DOS CAMPOS */
+
+.card-estudo .estudo-atividade-dados .estudo-atividade-dado > span {
+  display: block;
+  position: absolute;
+
+  top: -7px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  width: max-content;
+  padding: 0 3px;
+
+  background-color: #101812 !important;
+  background-image: none !important;
+
+  border: 1px solid #39c914;
+  border-radius: 3px;
+
+  color: #39d879 !important;
+  font-family: "Segoe UI", Arial, sans-serif;
+  font-size: 9px;
+  font-weight: 700;
+  line-height: 10px;
+
+  z-index: 10;
+  box-sizing: border-box;
+}
+
+/* ID: CSS-321 | REF: PANEL.STUDY | DESLOCAMENTO DA ÁREA CENTRAL */
+
+.card-estudo .estudo-area-central {
+  position: relative;
+  left: 6px;
+}
+
+/* ID: CSS-322 | REF: PANEL.STUDY.ACTIVITY | DIAS DE ESTUDO — 3 CARTÕES */
+
+/* DIAS DE ESTUDO — PROGRAMAÇÃO, FACULDADE E MATEMÁTICA */
+.card-estudo .estudo-lista-atividades
+> .estudo-atividade-card .estudo-atividade-dados
+> .estudo-atividade-dado:nth-child(4) {
+  grid-column: 1 / 3;
+  width: calc(75% - 6px);
+  justify-self: start;
+}
+
+/* PENDÊNCIAS — MESMA LARGURA DE DIAS DE ESTUDO */
+.card-estudo .estudo-lista-atividades
+> .estudo-atividade-card .estudo-atividade-dados
+> .estudo-atividade-dado:nth-child(5) {
+  grid-column: 3;
+  width: calc(150% + 3px);
+  justify-self: end;
+}
+
+
+/* ID: CSS-323 | REF: PANEL.ROUTINE.LAYOUT | SELETOR: .card-painel-novo | ESTRUTURA PRINCIPAL */
+
+/* PAINEL EXCLUSIVO */
+.card-painel-novo {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  min-width: 0;
+  min-height: 0;
+  padding: 12px;
+  box-sizing: border-box;
+}
+
+/* =====================================
+   CABEÇALHO
+===================================== */
+
+.card-painel-novo .rotina-cabecalho {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 12px;
+  min-width: 0;
+}
+
+.card-painel-novo .rotina-identificacao {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-width: 0;
+}
+
+.card-painel-novo .rotina-progresso {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 10px;
+  min-width: 0;
+}
+
+.card-painel-novo .rotina-progresso-trilho {
+  display: block;
+  height: 12px;
+  border-radius: 20px;
+  background: #26372d;
+  overflow: hidden;
+}
+
+.card-painel-novo .rotina-progresso-preenchimento {
+  display: block;
+  width: 75%;
+  height: 100%;
+  border-radius: inherit;
+  background: linear-gradient(90deg, #087b37, #16d36b);
+}
+
+.card-painel-novo .rotina-progresso strong {
+  color: #ffffff;
+  font-size: 13px;
+}
+
+/* =====================================
+   QUATRO COLUNAS INDEPENDENTES
+===================================== */
+
+/* ID: CSS-324 | REF: PANEL.ROUTINE.LAYOUT | SELETOR: .card-painel-novo .rotina-conteudo | AJUSTE DAS QUATRO COLUNAS */
+
+.card-painel-novo .rotina-conteudo {
+  display: grid;
+  grid-template-columns:
+  minmax(0, 1.08fr)
+  minmax(0, 0.74fr)
+  minmax(0, 1.55fr)
+  minmax(0, 1.55fr);
+
+  gap: 10px;
+  flex: 1;
+  min-width: 0;
+  min-height: 0;
+}
+
+/* =====================================
+   COLUNA 1 — SEMANAL E PENDÊNCIAS
+===================================== */
+
+/* COLUNA 1 — SEMANAL E PENDÊNCIAS */
+.card-painel-novo .rotina-coluna-semanal {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  min-width: 0;
+  min-height: 0;
+
+  transform: translateX(-7px);
+}
+
+.card-painel-novo .rotina-card-semanal {
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 60px;
+  gap: 8px;
+  padding: 4px 8px;
+  min-width: 0;
+  border: 1px solid rgba(57, 216, 121, .45);
+  border-radius: 12px;
+  background: linear-gradient(145deg, #14231a, #0b130e);
+  box-shadow: 0 4px 9px rgba(0,0,0,.30);
+  box-sizing: border-box;
+}
+
+.card-painel-novo .rotina-card-cabecalho {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+}
+
+.card-painel-novo .rotina-card-cabecalho h3 {
+  margin: 0;
+  color: #dff7e7;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.card-painel-novo .rotina-dias {
+  display: grid;
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+  gap: 3px;
+}
+
+.card-painel-novo .rotina-dia {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  min-width: 0;
+  color: #dff7e7;
+  font-size: 9px;
+  font-weight: 700;
+}
+
+/* CARTÃO DE PENDÊNCIAS */
+.card-painel-novo .rotina-card-pendencias {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 0;
+  margin-top: 4px;
+  margin-bottom: -6px;
+  min-width: 0;
+  min-height: 0;
+  padding: 8px;
+  border: 1px solid rgba(244, 94, 108, .55);
+  border-radius: 12px;
+  background: linear-gradient(145deg, #211316, #160e10);
+  box-shadow: 0 4px 9px rgba(0, 0, 0, .30);
+  position: relative;
+}
+
+.card-painel-novo .rotina-card-pendencias h3 {
+  color: #ff858c;
+}
+
+/* RÓTULO PENDENTE — MODELO SEMANAL EM VERMELHO */
+.card-central.card-painel-novo
+.rotina-card-pendencias
+.estudo-campo-rotulo {
+  z-index: 2;
+  background: #241316 !important;
+  border: 1px solid rgba(224, 87, 96, .58) !important;
+  color: #ff9ba2 !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, .3);
+}
+
+/* LISTA DE PENDÊNCIAS */
+.card-painel-novo .rotina-lista-pendencias {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+  gap: 5px;
+  min-height: 0;
+  max-height: none;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+/* ID: CSS-325 | REF: PANEL.ROUTINE.PENDING | SELETOR: #card-rotina-pendente .rotina-lista-pendencias | LISTA E ROLAGEM */
+
+/* LISTA — DISTRIBUIÇÃO PELA ALTURA DISPONÍVEL */
+#card-rotina-pendente .rotina-lista-pendencias {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  padding-right: 18px;
+
+  flex: 1 1 auto;
+  min-height: 0;
+  max-height: none;
+
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+/* Barra nativa da lista de pendências aposentada. */
+
+/* LINHA DE ATIVIDADE */
+#card-rotina-pendente .rotina-pendencia-item {
+  display: grid;
+  grid-template-columns: 18px 38px 35px minmax(0, 1fr);
+  align-items: center;
+  gap: 3px;
+  min-height: 20px;
+  padding: 0 4px;
+
+  border: 1px solid #ead6d6;
+  border-radius: 7px;
+
+  background: linear-gradient(145deg, #ffffff, #fff8f8);
+
+  box-shadow:
+    inset 2px 2px 4px rgba(255, 255, 255, 0.95),
+    inset -2px -2px 4px rgba(190, 65, 65, 0.08),
+    2px 3px 6px rgba(40, 40, 40, 0.08);
+
+  color: #172333;
+  font-family: "Segoe UI", Arial, sans-serif;
+  font-size: 8px !important;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+/* ÍCONE DE ALERTA — PENDÊNCIAS */
+#card-rotina-pendente .rotina-pendencia-status {
+  display: flex;
+  flex: 0 0 13px;
+  width: 13px;
+  min-width: 13px;
+  height: 22px;
+  align-items: center;
+  justify-content: center;
+
+  border: none;
+  border-radius: 0;
+  background: transparent;
+
+  color: #e52323;
+  box-shadow: none;
+  line-height: 1;
+}
+
+#card-rotina-pendente .rotina-pendencia-alerta {
+  display: block;
+  width: 8px;
+  height: 22px;
+  flex: 0 0 8px;
+  fill: currentColor;
+}
+
+/* HORÁRIO, DIA E ATIVIDADE */
+#card-rotina-pendente .rotina-pendencia-horario,
+#card-rotina-pendente .rotina-pendencia-dia,
+#card-rotina-pendente .rotina-pendencia-atividade {
+  min-width: 0;
+  white-space: nowrap;
+}
+
+#card-rotina-pendente .rotina-pendencia-atividade {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* =====================================
+   COLUNA 2 — PERÍODOS
+===================================== */
+
+.card-painel-novo .rotina-coluna-periodos {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 10px;
+  min-width: 0;
+  min-height: 0;
+}
+
+/* BOTÕES MANHÃ, TARDE E NOITE — EFEITO 3D METAS */
+/* ID: CSS-326 | REF: PANEL.ROUTINE.PERIODS.CARD.SIZE | SELETOR: .card-central.card-painel-novo .rotina-periodo-card */
+.card-central.card-painel-novo .rotina-periodo-card {
+  display: grid;
+  grid-template-columns: 30px minmax(0, 1fr) 14px;
+  align-items: center;
+  gap: 7px;
+  position: relative;
+left: 42px;  
+
+  flex: 0 0 42px;
+  width: calc(100% + 15px);
+  min-width: 0;
+  min-height: 42px;
+  align-self: center;
+
+  padding: 4px 8px;
+
+  background:
+    linear-gradient(225deg,
+      rgba(255,255,255,.14) 0%,
+      rgba(255,255,255,.07) 14%,
+      rgba(255,255,255,.015) 32%,
+      transparent 48%,
+      rgba(0,25,8,.10) 76%,
+      rgba(0,20,5,.28) 100%
+    ),
+    radial-gradient(ellipse 65% 110% at 5% 0%,
+      rgba(115,255,155,.60),
+      rgba(45,215,85,.28) 45%,
+      transparent 78%
+    ),
+    radial-gradient(ellipse 52% 120% at 100% 0%,
+      rgba(95,255,130,.50),
+      rgba(35,190,70,.22) 48%,
+      transparent 82%
+    ),
+    linear-gradient(180deg,
+      rgba(255,255,255,.04),
+      rgba(255,255,255,.02) 28%,
+      transparent 55%
+    ),
+    linear-gradient(110deg,
+      #064719 0%,
+      #075b21 35%,
+      #0b7d2b 68%,
+      #1ba247 100%
+    ) !important;
+
+  border: 1px solid rgba(80,220,115,.65) !important;
+  border-radius: 12px;
+  color: #ffffff;
+
+  box-shadow:
+    inset 0 1px 1px rgba(255,255,255,.32),
+    inset 0 4px 8px rgba(255,255,255,.08),
+    inset 0 -4px 5px rgba(0,25,5,.55),
+    inset 1px 0 3px rgba(255,255,255,.12),
+    inset -1px 0 3px rgba(0,20,5,.25),
+    0 5px 8px rgba(0,0,0,.32) !important;
+
+  box-sizing: border-box;
+  isolation: isolate;
+  transform: translateX(-4px);
+
+  transition:
+    transform .2s ease,
+    box-shadow .2s ease,
+    filter .2s ease;
+}
+
+/* HOVER */
+.card-central.card-painel-novo .rotina-periodo-card:hover {
+  transform: translate(-4px, -1px);
+  filter: brightness(1.07);
+
+  box-shadow:
+    inset 2px 2px 4px rgba(255,255,255,.32),
+    inset -3px -4px 7px rgba(0,35,15,.30),
+    5px 8px 14px rgba(0,75,35,.30),
+    0 0 12px rgba(43,219,103,.28) !important;
+}
+
+/* CLIQUE */
+.card-central.card-painel-novo .rotina-periodo-card:active {
+  transform: translate(-12px, 1px);
+
+  box-shadow:
+    inset 5px 5px 10px rgba(0,45,20,.35),
+    inset -3px -3px 7px rgba(110,255,160,.16),
+    0 2px 4px rgba(0,50,20,.18) !important;
+}
+
+.card-painel-novo .rotina-periodo-icone {
+  text-align: center;
+  color: #ffffff;
+  font-size: 24px;
+}
+
+.card-painel-novo .rotina-periodo-manha .rotina-periodo-icone::before {
+  content: "☀";
+}
+
+/* AUMENTO EXCLUSIVO DO ÍCONE NOITE */
+.card-painel-novo
+.rotina-periodo-manha
+.rotina-periodo-icone::before {
+  font-size: 30px !important;
+  line-height: 1 !important;
+}
+
+.card-painel-novo .rotina-periodo-tarde .rotina-periodo-icone::before {
+  content: "☼";
+}
+
+/* AUMENTO EXCLUSIVO DO ÍCONE NOITE */
+.card-painel-novo
+.rotina-periodo-tarde
+.rotina-periodo-icone::before {
+  font-size: 30px !important;
+  line-height: 1 !important;
+}
+
+.card-painel-novo .rotina-periodo-noite .rotina-periodo-icone::before {
+  content: "☾";
+}
+
+/* AUMENTO EXCLUSIVO DO ÍCONE NOITE */
+.card-painel-novo
+.rotina-periodo-noite
+.rotina-periodo-icone::before {
+  font-size: 30px !important;
+  line-height: 1 !important;
+}
+
+.card-painel-novo .rotina-periodo-card h3 {
+  margin: 0;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.card-painel-novo .rotina-periodo-seta {
+  color: #ffffff;
+  font-family: "Segoe UI", Arial, sans-serif;
+  font-size: 25px;
+  text-align: center;
+}
+
+/* =====================================
+   COLUNA 3 — ONTEM
+===================================== */
+
+.card-painel-novo .rotina-card-agenda {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  min-height: 0;
+  padding: 9px;
+  border: 1px solid rgba(57, 216, 121, .45);
+  border-radius: 13px;
+  background: linear-gradient(145deg, #14231a, #0b130e);
+  box-shadow: 0 5px 12px rgba(0,0,0,.35);
+  width: calc(100% - 8px);
+justify-self: center;
+box-sizing: border-box;
+}
+
+.card-painel-novo .rotina-agenda-ontem {
+  /* Ajustes exclusivos de Ontem */
+}
+
+.card-painel-novo .rotina-agenda-cabecalho {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  min-height: 28px;
+  margin-bottom: 7px;
+}
+
+/* Remove o ícone antigo */
+.card-painel-novo .rotina-agenda-icone::before {
+  content: none !important;
+}
+
+.card-painel-novo .rotina-agenda-cabecalho h3 {
+  margin: 0;
+  color: #eaf3ec;
+  font-size: 13px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.card-painel-novo .rotina-agenda-cabecalho h3 strong {
+  color: #39d879;
+}
+
+.card-painel-novo .rotina-lista-horarios {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 5px;
+  min-width: 0;
+  min-height: 0;
+  overflow-y: auto;
+}
+
+/* =====================================
+   COLUNA 4 — HOJE
+===================================== */
+
+.card-painel-novo .rotina-agenda-hoje {
+  /* Ajustes exclusivos de Hoje */
+}
+
+.card-painel-novo .rotina-agenda-hoje .rotina-agenda-cabecalho {
+  justify-content: space-between;
+}
+
+/* ID: CSS-327 | REF: PANEL.ROUTINE.TYPOGRAPHY | PADRONIZAÇÃO TIPOGRÁFICA */
+
+.card-painel-novo {
+  font-family: "Segoe UI", Arial, sans-serif !important;
+}
+
+
+/* ID: CSS-328 | REF: PANEL.ROUTINE.AGENDA.ROW | SELETORES: #card-agenda-ontem .rotina-item-horario, #card-agenda-hoje .rotina-item-horario | LINHAS DE HORÁRIOS */
+
+#card-agenda-ontem .rotina-item-horario,
+#card-agenda-hoje .rotina-item-horario {
+  display: grid;
+  grid-template-columns: 12px 42px minmax(0, 1fr);
+  align-items: center;
+  gap: 4px;
+
+  min-width: 0;
+  min-height: 30px;
+  padding: 4px 7px;
+
+  border: 1px solid rgba(57, 216, 121, 0.48);
+  border-radius: 8px;
+
+  background: linear-gradient(145deg, #14231a, #0d1711);
+
+  box-sizing: border-box;
+}
+
+/* ID: CSS-329 | REF: PANEL.ROUTINE.AGENDA.TIME_LABEL | SELETOR: .rotina-horario */
+.card-painel-novo .rotina-horario {
+  color: #eaf3ec;
+  font-size: 12px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+/* ID: CSS-330 | REF: PANEL.ROUTINE.AGENDA.ACTIVITY_LABEL | SELETOR: .rotina-atividade */
+.card-painel-novo .rotina-atividade {
+  min-width: 0;
+  overflow: hidden;
+  color: #eaf3ec;
+  font-size: 12px;
+  font-weight: 700;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* ID: CSS-331 | REF: PANEL.ROUTINE.AGENDA.STATUS | ESTADOS VISUAIS */
+
+/* BASE DOS INDICADORES */
+.card-painel-novo .rotina-status {
+  display: block;
+  flex: 0 0 12px;
+  width: 12px;
+  height: 12px;
+  margin: 0;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  box-sizing: border-box;
+}
+
+/* VERDE — CONCLUÍDO */
+.card-painel-novo .rotina-status-ok {
+  background: #39d879;
+  border-color: #23a85b;
+  box-shadow:
+    inset 1px 1px 2px rgba(255,255,255,.45),
+    inset -2px -2px 3px rgba(0,75,30,.45);
+}
+
+/* VERMELHO — ATRASADO */
+.card-painel-novo .rotina-status-alerta {
+  background: #e50914;
+  border-color: #c80d16;
+  box-shadow:
+    inset 1px 1px 2px rgba(255,255,255,.30),
+    inset -2px -2px 3px rgba(75,0,0,.45);
+}
+
+/* BRANCO — FUTURO */
+.card-painel-novo .rotina-status-neutro {
+  background: #eaf3ec;
+  border-color: #89978f;
+  box-shadow:
+    inset 1px 1px 2px rgba(255,255,255,.85),
+    inset -2px -2px 3px rgba(50,65,55,.35);
+}
+
+/* ID: CSS-332 | REF: PANEL.ROUTINE.AGENDA.ACTIVITY_LABEL | DESLOCAMENTO DOS NOMES */
+
+.card-painel-novo .rotina-atividade {
+  transform: translateX(25px);
+}
+/* ID: CSS-333 | REF: PANEL.ROUTINE.HEADER.ICON | DIMENSÕES E POSICIONAMENTO */
+
+.card-central.card-painel-novo .rotina-identificacao > .painel-icone-neumo {
+  display: inline-flex !important;
+  flex: 0 0 34px !important;
+  width: 34px !important;
+  height: 34px !important;
+
+  align-items: center !important;
+  justify-content: center !important;
+
+  border-radius: 50% !important;
+  transform: none !important;
+  box-sizing: border-box !important;
+}
+
+/* ID: CSS-334 | REF: PANEL.ROUTINE.HEADER | ALINHAMENTO COM ESTUDO */
+
+.card-central.card-painel-novo .rotina-cabecalho {
+  display: grid;
+
+  grid-template-columns:
+    188px
+    106px
+    minmax(0, 1fr)
+    auto;
+
+  align-items: center;
+  gap: 8px;
+  min-width: 0;
+
+  position: relative;
+  top: -3px;
+}
+
+.card-central.card-painel-novo .rotina-identificacao {
+  gap: 6px;
+  transform: translateX(-2px);
+}
+
+
+/* ID: CSS-335 | REF: PANEL.ROUTINE.HEADER.ICON.SVG_SIZE | SELETOR: .rotina-identificacao > .painel-icone-neumo svg */
+
+.card-central.card-painel-novo .rotina-identificacao > .painel-icone-neumo svg {
+    display: block;
+    width: 24px !important;
+    height: 24px !important;
+
+    filter:
+        brightness(1.12)
+        drop-shadow(0 1px 1px rgba(0, 20, 10, .42))
+        drop-shadow(0 0 2px rgba(190, 255, 207, .24));
+}
+
+
+/* ID: CSS-336 | REF: PANEL.ROUTINE.HEADER.TITLE | PADRONIZAÇÃO COM ESTUDO */
+
+.card-central.card-painel-novo .rotina-identificacao .titulo-card {
+  margin: 0;
+  font-size: 22px;
+  transform: none;
+}
+
+/* ID: CSS-337 | REF: PANEL.ROUTINE.HEADER.ICON | ACABAMENTO ESQUIOMÓRFICO IGUAL AO ESTUDO */
+
+.card-central.card-painel-novo .rotina-identificacao > .painel-icone-neumo {
+    background:
+        linear-gradient(
+            145deg,
+            #2b965c 0%,
+            #176b43 54%,
+            #0a3b26 100%
+        ) padding-box,
+        linear-gradient(
+            145deg,
+            rgba(225, 255, 232, .82) 0%,
+            rgba(133, 220, 157, .62) 24%,
+            rgba(25, 91, 52, .94) 62%,
+            rgba(151, 222, 169, .58) 100%
+        ) border-box !important;
+
+    border: 1px solid transparent !important;
+
+    box-shadow:
+        0 3px 6px rgba(0, 0, 0, .44),
+        0 1px 2px rgba(0, 0, 0, .28),
+        inset 0 1px 1px rgba(255, 255, 255, .52),
+        inset 1px 1px 3px rgba(225, 255, 232, .30),
+        inset 0 3px 5px rgba(133, 220, 157, .20),
+        inset 0 -2px 4px rgba(0, 18, 9, .48),
+        inset -1px 0 2px rgba(0, 18, 9, .20) !important;
+
+    color: #ffffff !important;
+}
+
+
+/* ID: CSS-338 | REF: PANEL.ROUTINE.HEADER.PROGRESS | ALINHAMENTO COM ESTUDO */
+
+.card-central.card-painel-novo .rotina-progresso {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  flex: 1;
+  min-width: 0;
+  width: 100%;
+  max-width: 273px;
+  justify-self: start;
+}
+
+/* ID: CSS-339 | REF: PANEL.ROUTINE.HEADER.PROGRESS.TRACK | SELETOR: .rotina-progresso-trilho */
+.card-central.card-painel-novo .rotina-progresso-trilho {
+  display: block;
+  flex: 1;
+  min-width: 0;
+  height: 12px;
+  overflow: hidden;
+  border-radius: 999px;
+  background: #26342b !important;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, .42);
+}
+
+/* ID: CSS-340 | REF: PANEL.ROUTINE.HEADER.PROGRESS.FILL | SELETOR: .rotina-progresso-preenchimento */
+.card-central.card-painel-novo .rotina-progresso-preenchimento {
+  display: block;
+  height: 100%;
+  width: 75%;
+  border-radius: inherit;
+  background: linear-gradient(
+    90deg,
+    #08783b,
+    #1ac967,
+    #71ef9b
+  ) !important;
+  box-shadow: 0 0 11px rgba(32, 206, 104, .28);
+}
+
+/* ID: CSS-341 | REF: PANEL.ROUTINE.HEADER.PROGRESS.VALUE | SELETOR: .rotina-progresso > strong */
+.card-central.card-painel-novo .rotina-progresso > strong {
+  flex: 0 0 auto;
+  color: #dce9e0 !important;
+  font-family: "Segoe UI", Arial, sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+/* ID: CSS-342 | REF: COMPONENT.PANEL.TITLE.SHARED | FINANCEIRO, ESTUDO E ROTINA */
+
+.card-financeiro .financeiro-identificacao .titulo-card,
+.card-estudo .estudo-identificacao .titulo-card,
+.card-central.card-painel-novo .rotina-identificacao .titulo-card {
+  display: block;
+  flex: 0 0 auto;
+
+  margin: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1;
+  white-space: nowrap;
+
+  color: #034d29;
+  color: var(--neo-green-dark);
+  background: none;
+  -webkit-text-fill-color: currentColor;
+}
+
+/* ID: CSS-343 | REF: PANEL.ROUTINE.HEADER | ALINHAMENTO SUPERIOR DOS CONTROLES */
+
+.card-central.card-painel-novo .rotina-cabecalho > .estudo-mes-card,
+.card-central.card-painel-novo .rotina-cabecalho > .rotina-progresso,
+.card-central.card-painel-novo .rotina-cabecalho > .botao-detalhes {
+  position: relative;
+  top: -3px;
+}
+
+/* ID: CSS-344 | REF: PANEL.ROUTINE.WEEKLY.TITLE */
+
+#card-rotina-semanal {
+  position: relative;
+}
+
+#card-rotina-semanal > .rotina-card-cabecalho {
+  min-height: 1px;
+}
+
+/* TÍTULO SEMANAL — BORDA VERDE SUTIL */
+#card-rotina-semanal .rotina-card-cabecalho h3.estudo-campo-rotulo {
+  font-weight: 600;
+  border: 1px solid rgba(126, 214, 103, .45) !important;
+  border-radius: 3px;
+}
+
+/* ID: CSS-345 | REF: PANEL.ROUTINE.WEEKLY.STATUS | CÍRCULOS REDUZIDOS E COLORIDOS */
+
+.card-central.card-painel-novo .rotina-dia-status {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+
+  width: 22px !important;
+  height: 22px !important;
+  min-width: 20px !important;
+  box-sizing: border-box;
+
+  border: 1px solid rgba(255,255,255,.28) !important;
+  border-radius: 50% !important;
+
+  color: #ffffff !important;
+  font-family: 'Sora', Arial, sans-serif;
+  font-size: 11px !important;
+  font-weight: 800 !important;
+  line-height: 1 !important;
+  text-shadow: 0 1px 2px rgba(0,0,0,.45);
+
+  box-shadow:
+    inset 0 1px 1px rgba(255,255,255,.20),
+    inset 0 -1px 2px rgba(0,0,0,.28),
+    0 1px 3px rgba(0,0,0,.30) !important;
+}
+
+/* NEUTRO — CINZA */
+
+/* PENDENTE — VERMELHO */
+
+/* CONCLUÍDO — VERDE */
+
+/* NEUTRO — GRAFITE METÁLICO */
+.card-central.card-painel-novo .rotina-dia-status.neutro {
+  background: linear-gradient(
+    145deg,
+    #718176 0%,
+    #46564b 55%,
+    #304036 100%
+  ) !important;
+
+  border-color: rgba(205,232,214,.34) !important;
+
+  box-shadow:
+    inset 0 1px 2px rgba(255,255,255,.26),
+    inset 0 -2px 3px rgba(0,0,0,.34),
+    -1px -1px 1px rgba(245,255,248,.08),
+    1px 2px 3px rgba(0,0,0,.42) !important;
+}
+
+/* PENDENTE — ESCARLATE PREMIUM */
+.card-central.card-painel-novo .rotina-dia-status.pendente {
+
+  box-shadow:
+    inset 0 1px 2px rgba(255,255,255,.28),
+    inset 0 -2px 3px rgba(55,0,5,.36),
+    -1px -1px 1px rgba(255,232,234,.08),
+    1px 2px 3px rgba(0,0,0,.42),
+    0 1px 2px rgba(190,35,52,.13) !important;
+}
+
+/* CONCLUÍDO — ESMERALDA PREMIUM */
+.card-central.card-painel-novo .rotina-dia-status.concluido {
+
+  box-shadow:
+    inset 0 1px 2px rgba(255,255,255,.32),
+    inset 0 -2px 3px rgba(0,45,20,.34),
+    -1px -1px 1px rgba(235,255,240,.08),
+    1px 2px 3px rgba(0,0,0,.42),
+    0 1px 2px rgba(24,190,94,.12) !important;
+}
+
+/* PENDENTE — ESCARLATE */
+.card-central.card-painel-novo .rotina-dia-status.pendente {
+  background: linear-gradient(
+    145deg,
+    #f16b74 0%,
+    #bf3543 52%,
+    #781d2a 100%
+  ) !important;
+
+  border-color: rgba(255,169,175,.58) !important;
+}
+
+/* CONCLUÍDO — ESMERALDA */
+.card-central.card-painel-novo .rotina-dia-status.concluido {
+  background: linear-gradient(
+    145deg,
+    #62efa0 0%,
+    #1aa75c 52%,
+    #086039 100%
+  ) !important;
+
+  border-color: rgba(163,255,193,.66) !important;
+}
+
+/* DESLOCAMENTO DA COLUNA DOS DIAS — PENDÊNCIAS */
+#card-rotina-pendente .rotina-pendencia-item > :nth-child(3) {
+  position: relative;
+  left: -4px;
+}
+
+/* DESLOCAMENTO DOS NOMES DAS ROTINAS */
+#card-rotina-pendente .rotina-pendencia-item > :nth-child(4) {
+  position: relative;
+  left: -4px;
+}
+
+/* ID: CSS-353 | REF: PANEL.ROUTINE.PENDING.TYPOGRAPHY */
+
+/* AUMENTO DA FONTE — INFORMAÇÕES DAS PENDÊNCIAS */
+#card-rotina-pendente .rotina-pendencia-item > :nth-child(2),
+#card-rotina-pendente .rotina-pendencia-item > :nth-child(3),
+#card-rotina-pendente .rotina-pendencia-item > :nth-child(4) {
+  font-size: 11px !important;
+}
+
+/* ID: CSS-346 | REF: PANEL.ROUTINE.AGENDA.TODAY.POSITION | SELETOR: #card-agenda-hoje */
+#card-agenda-hoje {
+  position: relative;
+  left: 12px;
+}
+
+/* ID: CSS-347 | REF: PANEL.ROUTINE.AGENDA.YESTERDAY.POSITION | SELETOR: #card-agenda-ontem */
+#card-agenda-ontem {
+  position: relative;
+  left: 32px;
+}
+
+/* ID: CSS-348 | REF: PANEL.ROUTINE.LEFT_CARDS.WIDTH | SELETORES: #card-rotina-semanal, #card-rotina-pendente */
+#card-rotina-semanal,
+#card-rotina-pendente {
+  width: calc(100% + 40px);
+  align-self: flex-start;
+  box-sizing: border-box;
+}
+
+/* ID: CSS-349 | REF: PANEL.ROUTINE.AGENDA.WIDTH | SELETORES: #card-agenda-ontem, #card-agenda-hoje */
+#card-agenda-ontem,
+#card-agenda-hoje {
+  scale: 0.95 1;
+}
+
+/* ID: CSS-350 | REF: PANEL.ROUTINE.CUSTOM.SCROLLBARS | SELETORES: #card-rotina-pendente .rotina-lista-pendencias, #card-agenda-ontem #lista-agenda-ontem, #card-agenda-hoje #lista-agenda-hoje */
+/* ÁREAS ROLÁVEIS — EIXOS VERTICAL E HORIZONTAL INDEPENDENTES */
+#card-rotina-pendente .rotina-lista-pendencias,
+#card-agenda-ontem #lista-agenda-ontem,
+#card-agenda-hoje #lista-agenda-hoje {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+  min-width: 0;
+  min-height: 0;
+  max-width: 100%;
+  overflow-x: auto;
+  overflow-y: auto;
+  align-items: flex-start;
+  box-sizing: border-box;
+}
+
+/* LINHAS DE PENDÊNCIAS — ALTURA FIXA, LARGURA DETERMINADA PELO CONTEÚDO */
+#card-rotina-pendente .rotina-pendencia-item {
+  flex: 0 0 26px;
+  width: max-content;
+  min-width: 100%;
+  max-width: none;
+  align-self: flex-start;
+  box-sizing: border-box;
+}
+
+
+/* ID: CSS-351 | REF: COMPONENT.SCROLLBAR.VERTICAL.ANCHOR | ÂNCORA SEM PARTICIPAR DO FLUXO */
+.estudo-area-direita {
+  position: relative;
+}
+
+
+/* ID: CSS-352 | REF: PANEL.REMINDER.UPCOMING | ESTRUTURA VISUAL */
+
+/* CARD EXTERNO — PRÓXIMOS LEMBRETES */
+#painel-lembrete .lembrete-proximos {
+    position: relative;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 0;
+    margin-top: 2px;
+    height: 76px;
+    min-height: 76px;
+    max-height: 76px;
+    padding: 8px 20px 6px 8px;
+
+    box-sizing: border-box;
+
+    border: 1px solid rgba(55, 160, 90, .55);
+    border-radius: 10px;
+
+    background: linear-gradient(
+        145deg,
+        #ffffff,
+        #f1f8f3
+    );
+
+    box-shadow:
+        -3px -3px 8px rgba(255,255,255,.95),
+        4px 5px 12px rgba(40,90,50,.13),
+        inset 2px 2px 5px rgba(255,255,255,.95);
+}
+
+/* TÍTULO — SEM ÍCONE */
+#painel-lembrete .lembrete-proximos-titulo {
+    position: absolute;
+    top: -9px;
+    left: 12px;
+    z-index: 1;
+
+    margin: 0;
+    padding: 0 7px;
+
+    border: 1px solid rgba(55, 160, 90, .45);
+    border-radius: 4px;
+
+    background: #f7fff8;
+    color: #176b20;
+
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 14px;
+    text-transform: none;
+}
+
+
+/* LISTA DOS LEMBRETES — ESPAÇAMENTO ENTRE TAREFAS */
+
+#painel-lembrete .lembrete-proximos-lista {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    width: 100%;
+    min-width: 0;
+
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+
+    height: 60px;
+    max-height: 60px;
+
+    overflow-y: auto;
+    overflow-x: hidden;
+
+    scrollbar-width: none;
+}
+
+#painel-lembrete .lembrete-proximos-lista::-webkit-scrollbar {
+    display: none;
+}
+
+
+#painel-lembrete .lembrete-proximos-lista::-webkit-scrollbar {
+    display: none;
+}
+
+/* LINHA INDIVIDUAL */
+#painel-lembrete .lembrete-proximos-item {
+    display: grid;
+    grid-template-columns:
+    minmax(0, .9fr)
+    minmax(150px, 1.45fr)
+    22px
+    22px
+    30px;
+
+    align-items: center;
+    gap: 8px;
+
+    min-width: 0;
+    min-height: 27px;
+    padding: 2px 8px;
+
+    box-sizing: border-box;
+
+    border: 1px solid rgba(75, 146, 99, .42);
+    border-radius: 8px;
+
+    background: linear-gradient(
+        145deg,
+        #ffffff,
+        #f2f8f4
+    );
+
+    box-shadow:
+        inset 1px 1px 3px rgba(255,255,255,.9),
+        2px 3px 6px rgba(40,85,50,.08);
+}
+
+/* IDENTIFICAÇÃO — SINO E NOME */
+#painel-lembrete .lembrete-proximo-identificacao {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    min-width: 0;
+
+    color: #172d20;
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+
+#painel-lembrete .lembrete-proximo-identificacao strong {
+    display: block;
+    width: fit-content;
+    max-width: 100%;
+    min-width: 0;
+    overflow: hidden;
+
+    padding: 1px 5px;
+    border-radius: 4px;
+    background-color: #d5e0d7;
+    color: #000000;
+
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 1.1;
+
+    box-sizing: border-box;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+
+
+/* ÍCONE DE MARCADOR — SEM FUNDO */
+#painel-lembrete .lembrete-proximo-icone {
+    display: inline-flex;
+    flex: 0 0 19px;
+
+    width: 19px;
+    height: 19px;
+
+    align-items: center;
+    justify-content: center;
+
+    box-sizing: border-box;
+
+    background: transparent;
+    color: #39d879;
+}
+
+#painel-lembrete .lembrete-proximo-icone svg {
+    display: block;
+    width: 15px;
+    height: 15px;
+
+    stroke: currentColor;
+    stroke-width: 1.8;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+/* DATA DO LEMBRETE */
+
+#painel-lembrete .lembrete-proximo-data {
+    display: block;
+    min-width: 0;
+
+    padding: 1px 5px;
+    border: 1px solid #dce9df;
+    border-radius: 4px;
+    background-color: #d5e0d7;
+
+    color: #000000;
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 1.1;
+
+    width: 180px !important;
+    max-width: none !important;
+
+    overflow: visible !important;
+    text-overflow: clip !important;
+    white-space: nowrap;
+}
+
+
+/* ÍCONES DECORATIVOS DE AÇÃO */
+#painel-lembrete .lembrete-proximo-acao {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 22px;
+    height: 22px;
+
+    justify-self: center;
+}
+
+#painel-lembrete .lembrete-proximo-acao svg {
+    display: block;
+    width: 15px;
+    height: 15px;
+
+    stroke: currentColor;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+/* AUMENTA SOMENTE O ÍCONE DA LIXEIRA */
+#painel-lembrete .lembrete-proximo-acao.excluir svg {
+    width: 20px;
+    height: 18px;
+}
+
+/* AUMENTA SOMENTE O ÍCONE DE EDITAR */
+#painel-lembrete .lembrete-proximo-acao.editar svg {
+    width: 20px;
+    height: 20px;
+}
+
+#painel-lembrete .lembrete-proximo-acao.editar {
+    color: #087b3e;
+}
+
+#painel-lembrete .lembrete-proximo-acao.excluir {
+    color: #e50914;
+}
+
+#painel-lembrete .lembrete-proximo-acao.expandir {
+    width: 30px;
+    color: #032602;
+}
+
+/* AUMENTA SOMENTE A SETA DE EXPANDIR */
+#painel-lembrete .lembrete-proximo-acao.expandir svg {
+    width: 22px;
+    height: 22px;
+}
+
+/* BARRA DE ROLAGEM DECORATIVA */
+#painel-lembrete .lembrete-proximos-scrollbar {
+    position: absolute;
+    top: 13px;
+    right: 7px;
+    bottom: 8px;
+
+    width: 6px;
+    border-radius: 999px;
+
+    background: rgba(100, 130, 110, .20);
+}
+
+#painel-lembrete .lembrete-proximos-scrollbar span {
+    display: block;
+    width: 100%;
+    height: 32px;
+
+    border-radius: inherit;
+
+    background: linear-gradient(
+        180deg,
+        #6bda91,
+        #087b3e
+    );
+}
+
+/* ADAPTAÇÃO PARA TELAS ESTREITAS */
+
+@media (max-width: 652px) {
+    #painel-lembrete .lembrete-proximos-item {
+        grid-template-columns:
+          minmax(0, .8fr)
+          minmax(150px, 1.5fr)
+          18px
+          18px
+          24px;
+
+        gap: 4px;
+        padding: 2px 5px;
+    }
+
+    #painel-lembrete .lembrete-proximo-identificacao {
+        gap: 5px;
+        font-size: 10px;
+    }
+
+    #painel-lembrete .lembrete-proximo-data {
+        font-size: 9px;
+    }
+
+    #painel-lembrete .lembrete-proximo-acao {
+        width: 18px;
+        height: 20px;
+    }
+
+    #painel-lembrete .lembrete-proximo-acao.expandir {
+        width: 24px;
+    }
+
+    #painel-lembrete .lembrete-proximo-acao svg {
+        width: 13px;
+        height: 13px;
+    }
+}
+
+/* ==========================================================
+   CONTÊINER PRINCIPAL — RESPONSIVIDADE ESTRUTURAL
+   As colunas e os espaçamentos do Grid pertencem à base,
+   não ao tema de cores. Breakpoints e valores preservados.
+========================================================== */
+
+/* Mantém o desktop intermediário: sidebar + conteúdo. */
+@media (max-width: 652px) {
+  .conteudo-principal {
+    align-items: stretch;
+    gap: 14px;
+    padding: 12px;
+  }
+}
+
+@media (max-width: 1350px) {
+  .conteudo-principal {
+    grid-template-columns: minmax(210px, 230px) minmax(0, 1fr);
+    padding: 18px 16px;
+    column-gap: 16px;
+    row-gap: 18px;
+  }
+}
+
+@media (max-width: 999px) {
+  .conteudo-principal {
+    grid-template-columns: minmax(0, 1fr);
+    padding: 14px 16px;
+    row-gap: 16px;
+  }
+}
+
+@media (max-width: 700px) {
+  .conteudo-principal {
+    padding: 12px 10px;
+    row-gap: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .conteudo-principal {
+    padding-inline: 8px;
+  }
+}
+
+/* ESPAÇAMENTO ENTRE OS CARDS — PENDENTES */
+
+#painel-compromisso #lista-compromissos-pendentes {
+    row-gap: 18px !important;
+}

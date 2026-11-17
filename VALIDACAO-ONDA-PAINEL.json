@@ -1,0 +1,47 @@
+{
+  "versao": "V21.1",
+  "arquivo": "tema-dark.css",
+  "seletor": ".painel-esquerdo::after",
+  "viewBox": "0 0 900 1600",
+  "preserveAspectRatio": "none",
+  "background_size": "100% 56%",
+  "curva": "M55 1598 C130 1598 220 1555 300 1505 C365 1465 445 1426 500 1407 C650 1345 760 1310 900 1348",
+  "edgeSweep": {
+    "angulo_visual": "diagonal/horizontal a partir da borda para a curva",
+    "stops": [
+      0,
+      0.012,
+      0.05,
+      0.115,
+      0.19
+    ]
+  },
+  "sombras": {
+    "externa_ampla": {
+      "blur": 64,
+      "offset_y": -55,
+      "stroke_width": 88,
+      "opacity": 0.3
+    },
+    "externa_suave": {
+      "blur": 24,
+      "stroke_width": 24,
+      "opacity": 0.6
+    },
+    "interna": {
+      "status": "removida na correção V21.1",
+      "motivo": "camada visual associada às ranhuras abaixo da curva; ausente na V20 histórica"
+    }
+  },
+  "validacoes": [
+    "SVG data URI extraído e XML validado após a correção V21.1",
+    "Traço #07190F e filtro innerShadow ausentes",
+    "Curva, edgeSweep, brilho inferior e sombras externas 0.30/0.60 preservados",
+    "Validação estrutural; conferir resultado visual final no navegador/dispositivo"
+  ],
+  "preview": {
+    "arquivo": "painel-esquerdo-onda-v21.1-preview.png",
+    "metodo": "renderização auxiliar do SVG atualizado",
+    "nao_equivale_a": "homologação visual no navegador ou no dispositivo físico"
+  }
+}

@@ -1,0 +1,332 @@
+{
+  "project": "Check.In V19",
+  "source_version": "Check.In V18",
+  "source_archive": "Check.In-v18(2).rar",
+  "audit_timestamp_utc": "2026-11-10T18:02:16+00:00",
+  "scope": [
+    "index.html",
+    "style.css",
+    "tema-dark.css",
+    "script.js",
+    "imagens/",
+    "historical maintenance documents and indices"
+  ],
+  "changes_applied": {
+    "source_logic_changed": false,
+    "functional_dom_ids_changed": false,
+    "html_dom_structure_changed": false,
+    "javascript_logic_changed": false,
+    "comment_markers_reindexed": true,
+    "exact_duplicate_css_rules_removed": 4,
+    "ineffective_css_override_removed": 1,
+    "malformed_marker_comment_repaired": true,
+    "maintenance_indices_and_reports_rebuilt": true
+  },
+  "html": {
+    "parser": "lxml.html.HTMLParser(recover=False)",
+    "parser_errors": [],
+    "element_count": 1210,
+    "real_dom_id_count": 49,
+    "unique_real_dom_ids": 49,
+    "duplicate_real_dom_ids": [],
+    "missing_aria_for_or_scroll_targets": [],
+    "local_resource_reference_count": 9,
+    "missing_local_resources": [],
+    "button_count": 22,
+    "buttons_missing_type": [],
+    "buttons_missing_accessible_name": 0,
+    "images_missing_alt": [],
+    "inline_event_handlers": [],
+    "calendar_structure_checks": [
+      {
+        "id": "calendario-atual",
+        "fields": {
+          "calendario-titulo": 1,
+          "calendario-ano": 1,
+          "calendario-dias-semana": 1,
+          "calendario-dias": 1,
+          "seta-anterior": 1,
+          "seta-proxima": 1
+        }
+      },
+      {
+        "id": "calendario-proximo",
+        "fields": {
+          "calendario-titulo": 1,
+          "calendario-ano": 1,
+          "calendario-dias-semana": 1,
+          "calendario-dias": 1,
+          "seta-anterior": 1,
+          "seta-proxima": 1
+        }
+      }
+    ],
+    "aria_and_scroll_reference_count": 33,
+    "reference_breakdown": {
+      "aria-controls": 15,
+      "aria-labelledby": 3,
+      "data-scrollbar-for": 12,
+      "data-scroll-for": 3
+    }
+  },
+  "css": {
+    "style.css": {
+      "qualified_rules": 453,
+      "parse_errors": [],
+      "repeated_selector_groups": 54,
+      "exact_duplicate_blocks_remaining": 0,
+      "important_declarations": 125,
+      "media_queries": [
+        "(max-width: 480px)",
+        "(max-width: 600px)",
+        "(max-width: 652px)"
+      ],
+      "id_selector_count": 6,
+      "missing_id_selectors": []
+    },
+    "tema-dark.css": {
+      "qualified_rules": 399,
+      "parse_errors": [],
+      "repeated_selector_groups": 33,
+      "exact_duplicate_blocks_remaining": 0,
+      "important_declarations": 734,
+      "media_queries": [
+        "(max-width: 600px)",
+        "(prefers-reduced-motion: reduce)",
+        "(max-width: 652px)",
+        "(max-width: 652px)",
+        "(max-width: 652px)",
+        "(min-width: 653px)",
+        "(min-width: 653px)",
+        "(max-width: 650px)",
+        "(max-width: 650px)",
+        "(max-width: 650px)",
+        "(max-width: 600px)"
+      ],
+      "id_selector_count": 23,
+      "missing_id_selectors": []
+    }
+  },
+  "css_total_qualified_rules": 852,
+  "css_total_parse_or_declaration_errors": 0,
+  "css_total_important_declarations": 859,
+  "css_id_selectors_missing_in_html": {
+    "style.css": [],
+    "tema-dark.css": []
+  },
+  "classes_without_static_html_occurrence": {
+    "style.css": [
+      "calendario-dia",
+      "dia-passado",
+      "hoje"
+    ],
+    "tema-dark.css": [
+      "calendario-dia",
+      "compromisso-documento",
+      "compromisso-pendencias-cabecalho",
+      "dia-passado",
+      "estudo-prioridade-concluida",
+      "hoje"
+    ]
+  },
+  "javascript": {
+    "node_check": "passed",
+    "node_stderr": "",
+    "line_count": 558,
+    "named_function_count": 13,
+    "event_listener_registrations": 19,
+    "resize_observers": 2,
+    "mutation_observers": 2,
+    "network_fetch_calls": 0,
+    "browser_storage_references": 0,
+    "query_selector_dependencies": 21
+  },
+  "scrollbars": {
+    "independent_vertical_bars": 12,
+    "vertical_bar_mappings": [
+      {
+        "bar_id": "barra-vertical-financeiro-vencidas",
+        "target_id": "lista-financeiro-vencidas",
+        "target_exists": true,
+        "same_parent": true,
+        "target_reused": false
+      },
+      {
+        "bar_id": "barra-vertical-estudo-atividades",
+        "target_id": "lista-estudo-atividades",
+        "target_exists": true,
+        "same_parent": true,
+        "target_reused": false
+      },
+      {
+        "bar_id": "barra-vertical-rotina-pendencias",
+        "target_id": "lista-pendencias-rotina",
+        "target_exists": true,
+        "same_parent": true,
+        "target_reused": false
+      },
+      {
+        "bar_id": "barra-vertical-rotina-ontem",
+        "target_id": "lista-agenda-ontem",
+        "target_exists": true,
+        "same_parent": true,
+        "target_reused": false
+      },
+      {
+        "bar_id": "barra-vertical-rotina-hoje",
+        "target_id": "lista-agenda-hoje",
+        "target_exists": true,
+        "same_parent": true,
+        "target_reused": false
+      },
+      {
+        "bar_id": "barra-vertical-compromisso-pendentes",
+        "target_id": "lista-compromissos-pendentes",
+        "target_exists": true,
+        "same_parent": true,
+        "target_reused": false
+      },
+      {
+        "bar_id": "barra-vertical-compromisso-ontem",
+        "target_id": "lista-compromissos-ontem",
+        "target_exists": true,
+        "same_parent": true,
+        "target_reused": false
+      },
+      {
+        "bar_id": "barra-vertical-compromisso-hoje",
+        "target_id": "lista-compromissos-hoje",
+        "target_exists": true,
+        "same_parent": true,
+        "target_reused": false
+      },
+      {
+        "bar_id": "barra-vertical-compromisso-conteudo",
+        "target_id": "conteudo-compromisso",
+        "target_exists": true,
+        "same_parent": true,
+        "target_reused": false
+      },
+      {
+        "bar_id": "barra-vertical-lembrete-pendencias-1",
+        "target_id": "lista-lembrete-pendencias-1",
+        "target_exists": true,
+        "same_parent": true,
+        "target_reused": false
+      },
+      {
+        "bar_id": "barra-vertical-lembrete-ontem-1",
+        "target_id": "lista-lembrete-ontem-1",
+        "target_exists": true,
+        "same_parent": true,
+        "target_reused": false
+      },
+      {
+        "bar_id": "barra-vertical-lembrete-hoje-1",
+        "target_id": "lista-lembrete-hoje-1",
+        "target_exists": true,
+        "same_parent": true,
+        "target_reused": false
+      }
+    ],
+    "missing_or_duplicate_vertical_targets": [],
+    "horizontal_custom_bars": 3,
+    "horizontal_targets": [
+      {
+        "bar_id": "barra-pendencias-rotina",
+        "target": "lista-pendencias-rotina",
+        "target_exists": true
+      },
+      {
+        "bar_id": "barra-agenda-ontem",
+        "target": "lista-agenda-ontem",
+        "target_exists": true
+      },
+      {
+        "bar_id": "barra-agenda-hoje",
+        "target": "lista-agenda-hoje",
+        "target_exists": true
+      }
+    ],
+    "reminder_lists": 3,
+    "reminder_task_cards": 6,
+    "JS_006_horizontal_controller_preserved": true,
+    "JS_007_vertical_controller_preserved": true
+  },
+  "comment_markers": {
+    "index.html": {
+      "prefix": "HTML",
+      "count": 130,
+      "unique": 130,
+      "duplicates": [],
+      "sequential_in_source_order": true,
+      "next_id": "HTML-131"
+    },
+    "style.css": {
+      "prefix": "CSS",
+      "count": 353,
+      "unique": 353,
+      "duplicates": [],
+      "sequential_in_source_order": true,
+      "next_id": "CSS-0354"
+    },
+    "tema-dark.css": {
+      "prefix": "DARK",
+      "count": 242,
+      "unique": 242,
+      "duplicates": [],
+      "sequential_in_source_order": true,
+      "next_id": "DARK-0243"
+    },
+    "script.js": {
+      "prefix": "JS",
+      "count": 7,
+      "unique": 7,
+      "duplicates": [],
+      "sequential_in_source_order": true,
+      "next_id": "JS-008"
+    }
+  },
+  "visible_action_controls": {
+    "buttons_total": 22,
+    "calendar_navigation_buttons_bound": 4,
+    "other_buttons_without_handlers_in_current_script": 18,
+    "families_without_handlers": {
+      ".botao-menu": 5,
+      ".botao-menu-lateral": 5,
+      ".botao-notifique": 1,
+      ".botao-comprovantes": 1,
+      ".financeiro-conta-excluir": 5,
+      ".estudo-botao-metas": 1
+    },
+    "search_input_has_js_filter": false
+  },
+  "preservation": {
+    "functional_dom_ids_preserved": true,
+    "html_dom_structure_preserved": true,
+    "javascript_logic_preserved": true,
+    "style_css_declarations_preserved": true,
+    "tema_dark_changes_limited_to_duplicate_and_dead_rule_cleanup_plus_comment_markers": true,
+    "assets_preserved": true,
+    "v18_history_documents_preserved": true,
+    "comment_reindex_width_preserved_by_prefix": true,
+    "html_dom_tree_unchanged_excluding_comments": true,
+    "script_logic_unchanged_excluding_comments": true,
+    "style_css_declarations_unchanged": true,
+    "theme_rule_sequence_preserved_except_5_documented_removals": true,
+    "comment_only_html_change": true,
+    "tema_dark_only_five_rule_blocks_removed_plus_comment_maintenance": true
+  },
+  "visual_validation": {
+    "status": "not_completed",
+    "reason": "Chromium headless did not complete page capture within the execution limit in this environment. Layout, interactions and responsive visual behavior remain unverified.",
+    "manual_user_confirmation_required": true
+  },
+  "sha256": {
+    "index.html": "0e48e67e2dbdf83b5a50dcf06e4683762a41fac5037bc5ff365fbfb878143eca",
+    "style.css": "7b33ecc6b0b58c09e2f5f162a54c0a4edc650a45bdbedfe4f33870544c6bb128",
+    "tema-dark.css": "e11b9f8d2588493fe5b9522c409a41549e676183c8adfa71962eada2f63a3c7d",
+    "script.js": "44103d643cbe19f3c6a277e66bf7407d399ee29177d8b3ce20f9651e6adf517e"
+  },
+  "source_archive_sha256": "b20fee48e129b55f1a990f8af92eec5e6e6f695a8af94948f727eef37c279940"
+}

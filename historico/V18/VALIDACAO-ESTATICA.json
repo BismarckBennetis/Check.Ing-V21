@@ -1,0 +1,149 @@
+{
+  "project": "Check.In V18 — auditoria geral e reindexação sobre Check.In-v17.rar",
+  "source_archive": "Check.In-v17.rar",
+  "source_archive_preserved": true,
+  "audit_timestamp_utc": "2026-11-08T07:45:27.913695+00:00",
+  "scope": [
+    "index.html",
+    "style.css",
+    "tema-dark.css",
+    "script.js",
+    "assets",
+    "existing indices and maintenance documents"
+  ],
+  "html": {
+    "parser": "lxml.html.HTMLParser(recover=False)",
+    "parser_errors": [],
+    "element_count": 1290,
+    "real_dom_id_count": 38,
+    "unique_real_dom_ids": 38,
+    "duplicate_real_dom_ids": [],
+    "aria_and_data_reference_count": 27,
+    "missing_aria_and_data_targets": [],
+    "internal_fragment_reference_count": 17,
+    "missing_internal_fragment_targets": [],
+    "local_resource_reference_count": 9,
+    "missing_local_resources": []
+  },
+  "comment_markers": {
+    "index.html": {
+      "prefix": "HTML",
+      "count": 122,
+      "unique": 122,
+      "duplicates": [],
+      "minimum": 1,
+      "maximum": 122,
+      "next_id": "HTML-123",
+      "sequential_in_source_order": true
+    },
+    "style.css": {
+      "prefix": "CSS",
+      "count": 353,
+      "unique": 353,
+      "duplicates": [],
+      "minimum": 1,
+      "maximum": 353,
+      "next_id": "CSS-0354",
+      "sequential_in_source_order": true
+    },
+    "tema-dark.css": {
+      "prefix": "DARK",
+      "count": 221,
+      "unique": 221,
+      "duplicates": [],
+      "minimum": 1,
+      "maximum": 221,
+      "next_id": "DARK-0222",
+      "sequential_in_source_order": true
+    },
+    "script.js": {
+      "prefix": "JS",
+      "count": 7,
+      "unique": 7,
+      "duplicates": [],
+      "minimum": 1,
+      "maximum": 7,
+      "next_id": "JS-008",
+      "sequential_in_source_order": true
+    }
+  },
+  "css": {
+    "style.css": {
+      "qualified_rules": 453,
+      "stylesheet_and_declaration_errors": [],
+      "repeated_selector_groups": 62,
+      "exact_duplicate_blocks_remaining": 0,
+      "unique_id_selectors": 6,
+      "missing_id_selectors": []
+    },
+    "tema-dark.css": {
+      "qualified_rules": 336,
+      "stylesheet_and_declaration_errors": [],
+      "repeated_selector_groups": 38,
+      "exact_duplicate_blocks_remaining": 0,
+      "unique_id_selectors": 18,
+      "missing_id_selectors": []
+    }
+  },
+  "css_total_qualified_rules": 789,
+  "css_total_parse_or_declaration_errors": 0,
+  "css_exact_duplicate_blocks_removed": {
+    "style.css": 1,
+    "tema-dark.css": 2,
+    "description": [
+      "Removido um bloco idêntico redundante de .icone-comprovantes.",
+      "Removido o segundo bloco idêntico que ocultava .compromisso-categoria-seta.",
+      "Removido o segundo bloco idêntico de cor dos ícones compromisso-documento/lixeira."
+    ]
+  },
+  "javascript": {
+    "node_check": "passed",
+    "node_stderr": "",
+    "marker_count": 7,
+    "query_selector_dependency_rows": 19
+  },
+  "scrollbars": {
+    "independent_vertical_bars": 9,
+    "independent_vertical_bar_ids": [
+      "barra-vertical-financeiro-vencidas",
+      "barra-vertical-estudo-atividades",
+      "barra-vertical-rotina-pendencias",
+      "barra-vertical-rotina-ontem",
+      "barra-vertical-rotina-hoje",
+      "barra-vertical-compromisso-pendentes",
+      "barra-vertical-compromisso-ontem",
+      "barra-vertical-compromisso-hoje",
+      "barra-vertical-compromisso-conteudo"
+    ],
+    "vertical_targets_missing": [],
+    "native_scroll_targets_marked": 8,
+    "native_scrollbar_hide_rule_present": true,
+    "routine_custom_vertical_hide_selectors": [
+      "barra-vertical-rotina-pendencias",
+      "barra-vertical-rotina-ontem",
+      "barra-vertical-rotina-hoje"
+    ],
+    "routine_horizontal_custom_bars": 3,
+    "JS_006_horizontal_controller_preserved": true,
+    "JS_007_vertical_controller_preserved": true
+  },
+  "preservation": {
+    "header_neumorphic_before_unchanged": true,
+    "header_after_svg_shadow_block_preserved": false,
+    "approved_routine_pending_card_rules_preserved": true,
+    "routine_vertical_hide_block_preserved": true,
+    "real_dom_ids_not_renumbered": true,
+    "html_structure_not_changed": true,
+    "javascript_source_not_changed": true,
+    "approved_header_visual_properties_not_changed": true
+  },
+  "manual_review_notes": [
+    "Os IDs reais do DOM e os IDs internos de símbolos SVG foram preservados; somente marcadores de comentário HTML/CSS/DARK/JS foram reindexados.",
+    "As regras CSS com seletores repetidos, mas declarações/contextos diferentes, foram mantidas para preservar a cascata.",
+    "Classes CSS sem correspondência estática foram registradas para revisão, não removidas automaticamente quando podem ser estados futuros ou conteúdo dinâmico.",
+    "A validação estática não substitui a aprovação visual do usuário em seu navegador."
+  ],
+  "visual_validation": "not completed: Chromium navigation was blocked by the execution environment (ERR_BLOCKED_BY_ADMINISTRATOR); local-browser confirmation remains required.",
+  "browser_test_attempted": true,
+  "browser_test_result": "ERR_BLOCKED_BY_ADMINISTRATOR"
+}

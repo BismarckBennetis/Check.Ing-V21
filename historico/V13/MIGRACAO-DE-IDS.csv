@@ -1,0 +1,28 @@
+﻿arquivo,marcador_ou_trecho_origem,marcador_ou_acao_na_copia,motivo
+index.html,HTML-039 (repetido),HTML-039,mantido para o contêiner do SVG sprite
+index.html,HTML-039 (definição do símbolo),HTML-084,âncora única para o símbolo do calendário
+index.html,HTML-039 (comentário redundante),REMOVIDO,comentário redundante junto à definição do símbolo
+index.html,HTML-040 (botão),HTML-040,mantido para o contêiner do botão
+index.html,HTML-040 (SVG interno),HTML-085,âncora única do ícone do botão Criar Plano
+index.html,HTML-060 (primeiro ícone de atividade),HTML-060,mantido
+index.html,HTML-060 (segundo ícone de atividade),HTML-086,âncora única; mesma REF do componente reutilizado
+index.html,HTML-060 (terceiro ícone de atividade),HTML-087,âncora única; mesma REF do componente reutilizado
+style.css,CSS-0184 (primeiro bloco),CSS-0184,mantido na grade de dados da atividade
+style.css,CSS-0184 (segundo bloco),CSS-0346,separado para centralização e legibilidade
+style.css,CSS-0344 (comentário sem prefixo ID),CSS-0344,comentário normalizado com REF e seletor
+style.css,blocos sem ID dentro de CSS-0345,CSS-0347 a CSS-0354,cada acabamento do cabeçalho da Rotina recebeu marcador próprio
+style.css,regras de texto dentro de CSS-0339,CSS-0355 e CSS-0356,horário e nome da atividade receberam marcadores próprios
+style.css,CSS quebrado em .rotina-atividade,corrigido,fechada a regra; removido o seletor de alerta inválido que estava dentro dela
+style.css,regras repetidas de .rotina-status-alerta/.rotina-status-neutro,consolidadas,CSS-0340 permanece como fonte dos estados dos indicadores
+tema-dark.css,DARK-0169 (cinco cópias idênticas),DARK-0169,mantida uma única regra para a trilha de rolagem
+tema-dark.css,CSS-0332 (efeito 3D metas),DARK-0172,marcador corrigido para o namespace do tema escuro
+tema-dark.css,CSS-0333 (semana Estudo),DARK-0173,marcador corrigido para o namespace do tema escuro
+tema-dark.css,CSS-0334 (borda dos títulos),DARK-0174,marcador corrigido para o namespace do tema escuro
+tema-dark.css,CSS-0332 (títulos sem fundo),DARK-0175,marcador corrigido; ID duplicado eliminado
+index.html,SVG-RELOGIO-001,HTML-088,padronizado no sequencial HTML; símbolo do relógio da barra lateral
+index.html,HTML-ARCHIVE-001,HTML-089,bloco arquivado passou a seguir o sequencial HTML
+style.css,CSS-GROUP-01 a CSS-GROUP-03,comentários de grupo sem ID,os agrupadores de @media não são componentes; cada regra interna mantém seu ID próprio
+style.css,STYLE-ARCHIVE-001,CSS-0357,bloco de referência arquivado passou a seguir o sequencial CSS
+tema-dark.css,DARK-GROUP-01 a DARK-GROUP-07,comentários de grupo sem ID,agrupadores de media query sem identificador concorrente
+tema-dark.css,DARK-NOTIFY-001,DARK-0176,padronizado no sequencial DARK
+index.html,</span> sem abertura após SVG do relógio,removido,corrigido erro de parsing HTML na linha 811 da origem

@@ -1,0 +1,6 @@
+Check.In V21.1
+Base: Check.In V21 (derivada do pacote V20 fornecido em 17/11/2026)
+Data da correção: 2026-11-17
+Tipo: correção visual localizada no SVG da onda do painel esquerdo; remoção do traço interno #07190F e filtro innerShadow.
+Preservado: curva, edgeSweep, brilho inferior e sombras externas 0.30/0.60, além de todas as demais alterações da V21.
+Escopo: sem mudanças de funcionalidades, estrutura, layout mobile ou demais componentes.

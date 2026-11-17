@@ -1,0 +1,65 @@
+{
+  "html": {
+    "id_count": 56,
+    "unique_ids": 56,
+    "duplicates": [],
+    "relative_refs": [
+      {
+        "url": "imagens/fvc/checkin-favicon-pacote/favicon-16x16.png?v=6",
+        "exists": true
+      },
+      {
+        "url": "imagens/fvc/checkin-favicon-pacote/favicon-32x32.png?v=6",
+        "exists": true
+      },
+      {
+        "url": "imagens/fvc/checkin-favicon-pacote/favicon-48x48.png?v=6",
+        "exists": true
+      },
+      {
+        "url": "imagens/fvc/checkin-favicon-pacote/favicon.ico?v=6",
+        "exists": true
+      },
+      {
+        "url": "imagens/fvc/checkin-favicon-pacote/apple-touch-icon.png?v=6",
+        "exists": true
+      },
+      {
+        "url": "style.css",
+        "exists": true
+      },
+      {
+        "url": "tema-dark.css",
+        "exists": true
+      },
+      {
+        "url": "imagens/logo-checkin-premium.webp",
+        "exists": true
+      },
+      {
+        "url": "script.js",
+        "exists": true
+      }
+    ],
+    "all_relative_exist": true
+  },
+  "css": {
+    "postcss_parse": true,
+    "postcss_output": "ok",
+    "has_count": 0,
+    "wave_svg_xml": true,
+    "css_asset_urls": [],
+    "all_css_local_urls_exist": true
+  },
+  "js": {
+    "node_check": true,
+    "node_output": "",
+    "node_error": ""
+  },
+  "marker_index": {
+    "source_active_markers": 742,
+    "index_rows": 742,
+    "matching_line_markers": 742,
+    "unmatched": []
+  }
+}

@@ -1,0 +1,4 @@
+Check.In V20
+Base: Check.In V19
+Data da atualização: 2026-11-13
+Tipo: atualização responsiva, navegação principal, pesquisa lateral, consolidação CSS, reindexação e documentação

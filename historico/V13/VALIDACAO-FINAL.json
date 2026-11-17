@@ -1,0 +1,51 @@
+{
+  "validation_scope": "structured working copy of Check.In v13",
+  "html_parser_errors": 0,
+  "real_dom_ids": 10,
+  "duplicate_real_dom_ids": 0,
+  "aria_labelledby_missing_targets": 0,
+  "internal_fragment_links_missing_targets": 0,
+  "comment_markers": {
+    "index.html": {
+      "count": 86,
+      "duplicates": 0,
+      "next": "HTML-090"
+    },
+    "style.css": {
+      "count": 355,
+      "duplicates": 0,
+      "next": "CSS-0358"
+    },
+    "tema-dark.css": {
+      "count": 176,
+      "duplicates": 0,
+      "next": "DARK-0177"
+    },
+    "script.js": {
+      "count": 5,
+      "duplicates": 0,
+      "next": "JS-006"
+    }
+  },
+  "css_selector_index": {
+    "rules_indexed": 621,
+    "exact_repeated_selector_groups": 78,
+    "repeated_groups_by_file": {
+      "style.css": 61,
+      "tema-dark.css": 17
+    }
+  },
+  "js_dom_dependencies": {
+    "literal_selectors": 12,
+    "selectors_without_matches": 0
+  },
+  "css_syntax_errors": {
+    "style.css": 0,
+    "tema-dark.css": 0
+  },
+  "js_node_check": "passed",
+  "missing_local_resources": 0,
+  "visual_browser_validation": "not completed; Chromium was blocked in this environment (ERR_BLOCKED_BY_ADMINISTRATOR)",
+  "original_archive_preserved": true,
+  "pdf_sha256_preserved": "e890250446b46c60f2d5fa86ed653fe8bb3ec0351b63ab3cdf80b7e126a7cb3a"
+}

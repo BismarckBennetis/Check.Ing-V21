@@ -1,0 +1,502 @@
+{
+  "project": "Check.In V20",
+  "source_version": "Check.In V19",
+  "browser": "Chromium headless; HTML loaded in memory with CSS and JS injected",
+  "validation_timestamp_utc": "2026-11-13T20:25:01Z",
+  "tests": {
+    "javascript_syntax": {
+      "command": "node --check script.js",
+      "status": "passed"
+    },
+    "html_css_static": {
+      "status": "passed",
+      "html_parse_errors": 0,
+      "css_parse_errors": {
+        "style.css": 0,
+        "tema-dark.css": 0
+      }
+    },
+    "browser_page_errors": [],
+    "browser_console_errors": [],
+    "responsive_matrix": {
+      "viewports_px": [
+        1600,
+        1440,
+        1280,
+        1200,
+        1024,
+        900,
+        800,
+        768,
+        653,
+        652,
+        480,
+        390,
+        360,
+        320
+      ],
+      "all_document_widths_equal_viewport": true,
+      "results": [
+        {
+          "width_px": 1600,
+          "document_scroll_width_px": 1600,
+          "body_scroll_width_px": 1600,
+          "horizontal_overflow": false,
+          "main_areas": [
+            {
+              "className": "painel-esquerdo",
+              "x": 23,
+              "right": 297,
+              "width": 274
+            },
+            {
+              "className": "area-conteudo",
+              "x": 312,
+              "right": 1300,
+              "width": 988
+            },
+            {
+              "className": "painel-calendarios",
+              "x": 1315,
+              "right": 1577,
+              "width": 262
+            }
+          ]
+        },
+        {
+          "width_px": 1440,
+          "document_scroll_width_px": 1440,
+          "body_scroll_width_px": 1440,
+          "horizontal_overflow": false,
+          "main_areas": [
+            {
+              "className": "painel-esquerdo",
+              "x": 23,
+              "right": 297,
+              "width": 274
+            },
+            {
+              "className": "area-conteudo",
+              "x": 312,
+              "right": 1140,
+              "width": 828
+            },
+            {
+              "className": "painel-calendarios",
+              "x": 1155,
+              "right": 1417,
+              "width": 262
+            }
+          ]
+        },
+        {
+          "width_px": 1280,
+          "document_scroll_width_px": 1280,
+          "body_scroll_width_px": 1280,
+          "horizontal_overflow": false,
+          "main_areas": [
+            {
+              "className": "painel-esquerdo",
+              "x": 16,
+              "right": 246,
+              "width": 230
+            },
+            {
+              "className": "area-conteudo",
+              "x": 262,
+              "right": 1264,
+              "width": 1002
+            },
+            {
+              "className": "painel-calendarios",
+              "x": 16,
+              "right": 1264,
+              "width": 1248
+            }
+          ]
+        },
+        {
+          "width_px": 1200,
+          "document_scroll_width_px": 1200,
+          "body_scroll_width_px": 1200,
+          "horizontal_overflow": false,
+          "main_areas": [
+            {
+              "className": "painel-esquerdo",
+              "x": 16,
+              "right": 246,
+              "width": 230
+            },
+            {
+              "className": "area-conteudo",
+              "x": 262,
+              "right": 1184,
+              "width": 922
+            },
+            {
+              "className": "painel-calendarios",
+              "x": 16,
+              "right": 1184,
+              "width": 1168
+            }
+          ]
+        },
+        {
+          "width_px": 1024,
+          "document_scroll_width_px": 1024,
+          "body_scroll_width_px": 1024,
+          "horizontal_overflow": false,
+          "main_areas": [
+            {
+              "className": "painel-esquerdo",
+              "x": 16,
+              "right": 246,
+              "width": 230
+            },
+            {
+              "className": "area-conteudo",
+              "x": 262,
+              "right": 1008,
+              "width": 746
+            },
+            {
+              "className": "painel-calendarios",
+              "x": 16,
+              "right": 1008,
+              "width": 992
+            }
+          ]
+        },
+        {
+          "width_px": 900,
+          "document_scroll_width_px": 900,
+          "body_scroll_width_px": 900,
+          "horizontal_overflow": false,
+          "main_areas": [
+            {
+              "className": "painel-esquerdo",
+              "x": 70,
+              "right": 830,
+              "width": 760
+            },
+            {
+              "className": "area-conteudo",
+              "x": 70,
+              "right": 830,
+              "width": 760
+            },
+            {
+              "className": "painel-calendarios",
+              "x": 70,
+              "right": 830,
+              "width": 760
+            }
+          ]
+        },
+        {
+          "width_px": 800,
+          "document_scroll_width_px": 800,
+          "body_scroll_width_px": 800,
+          "horizontal_overflow": false,
+          "main_areas": [
+            {
+              "className": "painel-esquerdo",
+              "x": 20,
+              "right": 780,
+              "width": 760
+            },
+            {
+              "className": "area-conteudo",
+              "x": 20,
+              "right": 780,
+              "width": 760
+            },
+            {
+              "className": "painel-calendarios",
+              "x": 20,
+              "right": 780,
+              "width": 760
+            }
+          ]
+        },
+        {
+          "width_px": 768,
+          "document_scroll_width_px": 768,
+          "body_scroll_width_px": 768,
+          "horizontal_overflow": false,
+          "main_areas": [
+            {
+              "className": "painel-esquerdo",
+              "x": 16,
+              "right": 752,
+              "width": 736
+            },
+            {
+              "className": "area-conteudo",
+              "x": 16,
+              "right": 752,
+              "width": 736
+            },
+            {
+              "className": "painel-calendarios",
+              "x": 16,
+              "right": 752,
+              "width": 736
+            }
+          ]
+        },
+        {
+          "width_px": 653,
+          "document_scroll_width_px": 653,
+          "body_scroll_width_px": 653,
+          "horizontal_overflow": false,
+          "main_areas": [
+            {
+              "className": "painel-esquerdo",
+              "x": 10,
+              "right": 643,
+              "width": 633
+            },
+            {
+              "className": "area-conteudo",
+              "x": 10,
+              "right": 643,
+              "width": 633
+            },
+            {
+              "className": "painel-calendarios",
+              "x": 10,
+              "right": 643,
+              "width": 633
+            }
+          ]
+        },
+        {
+          "width_px": 652,
+          "document_scroll_width_px": 652,
+          "body_scroll_width_px": 652,
+          "horizontal_overflow": false,
+          "main_areas": [
+            {
+              "className": "painel-esquerdo",
+              "x": 10,
+              "right": 642,
+              "width": 632
+            },
+            {
+              "className": "area-conteudo",
+              "x": 10,
+              "right": 642,
+              "width": 632
+            },
+            {
+              "className": "painel-calendarios",
+              "x": 10,
+              "right": 642,
+              "width": 632
+            }
+          ]
+        },
+        {
+          "width_px": 480,
+          "document_scroll_width_px": 480,
+          "body_scroll_width_px": 480,
+          "horizontal_overflow": false,
+          "main_areas": [
+            {
+              "className": "painel-esquerdo",
+              "x": 8,
+              "right": 472,
+              "width": 464
+            },
+            {
+              "className": "area-conteudo",
+              "x": 8,
+              "right": 472,
+              "width": 464
+            },
+            {
+              "className": "painel-calendarios",
+              "x": 8,
+              "right": 472,
+              "width": 464
+            }
+          ]
+        },
+        {
+          "width_px": 390,
+          "document_scroll_width_px": 390,
+          "body_scroll_width_px": 390,
+          "horizontal_overflow": false,
+          "main_areas": [
+            {
+              "className": "painel-esquerdo",
+              "x": 8,
+              "right": 382,
+              "width": 374
+            },
+            {
+              "className": "area-conteudo",
+              "x": 8,
+              "right": 382,
+              "width": 374
+            },
+            {
+              "className": "painel-calendarios",
+              "x": 8,
+              "right": 382,
+              "width": 374
+            }
+          ]
+        },
+        {
+          "width_px": 360,
+          "document_scroll_width_px": 360,
+          "body_scroll_width_px": 360,
+          "horizontal_overflow": false,
+          "main_areas": [
+            {
+              "className": "painel-esquerdo",
+              "x": 8,
+              "right": 352,
+              "width": 344
+            },
+            {
+              "className": "area-conteudo",
+              "x": 8,
+              "right": 352,
+              "width": 344
+            },
+            {
+              "className": "painel-calendarios",
+              "x": 8,
+              "right": 352,
+              "width": 344
+            }
+          ]
+        },
+        {
+          "width_px": 320,
+          "document_scroll_width_px": 320,
+          "body_scroll_width_px": 320,
+          "horizontal_overflow": false,
+          "main_areas": [
+            {
+              "className": "painel-esquerdo",
+              "x": 8,
+              "right": 312,
+              "width": 304
+            },
+            {
+              "className": "area-conteudo",
+              "x": 8,
+              "right": 312,
+              "width": 304
+            },
+            {
+              "className": "painel-calendarios",
+              "x": 8,
+              "right": 312,
+              "width": 304
+            }
+          ]
+        }
+      ]
+    },
+    "calendar_navigation": {
+      "initial": "NOVEMBRO",
+      "after_next": "DEZEMBRO",
+      "after_previous": "NOVEMBRO",
+      "passed": true
+    },
+    "primary_navigation": {
+      "scroll_to_routine": {
+        "targetTop": 179,
+        "pageScroll": 647,
+        "controls": [
+          {
+            "id": "painel-financeiro",
+            "exists": true
+          },
+          {
+            "id": "painel-estudo",
+            "exists": true
+          },
+          {
+            "id": "painel-rotina",
+            "exists": true
+          },
+          {
+            "id": "painel-compromisso",
+            "exists": true
+          },
+          {
+            "id": "painel-lembrete",
+            "exists": true
+          }
+        ]
+      },
+      "all_targets_exist": true
+    },
+    "sidebar_search": {
+      "accent_insensitive_visible": [
+        "Configuração"
+      ],
+      "empty_state_visible": true,
+      "passed": true
+    },
+    "scrollbar_keyboard": {
+      "vertical_keyboard": {
+        "bar": "barra-vertical-financeiro-vencidas",
+        "target": "lista-financeiro-vencidas",
+        "before": 0,
+        "after": 24,
+        "passed": true
+      },
+      "horizontal_keyboard": {
+        "bar": "barra-pendencias-rotina",
+        "target": "lista-pendencias-rotina",
+        "before": 0,
+        "after": 40,
+        "passed": true
+      }
+    },
+    "dom_integrity": {
+      "ids": 54,
+      "unique_ids": 54,
+      "duplicate_ids": 0,
+      "existing_v19_ids_preserved": true,
+      "new_panel_ids": [
+        "painel-financeiro",
+        "painel-estudo"
+      ],
+      "vertical_scrollbars": 13,
+      "vertical_targets_unique_and_existing": true,
+      "horizontal_scrollbars": 3,
+      "horizontal_targets_unique_and_existing": true
+    },
+    "maintenance_markers": {
+      "HTML": 131,
+      "CSS": 352,
+      "DARK": 244,
+      "JS": 9,
+      "all_sequential_unique": true,
+      "JS_006_preserved": true,
+      "JS_007_preserved": true
+    },
+    "css_duplicate_signatures_remaining": 0,
+    "local_resource_paths": {
+      "html_references_missing": 0,
+      "css_url_references_missing": 0,
+      "verification": "static path existence"
+    }
+  },
+  "not_fully_verified": [
+    "The in-memory browser harness did not load all file-relative image assets. Their paths exist in the package, but final asset rendering should be confirmed by opening index.html through Live Server.",
+    "Google Fonts requires network access; offline font fallback was not benchmarked.",
+    "Representative scrollbar keyboard interactions were tested; all individual scrollbar drag/pointer states were not exhaustively tested.",
+    "Thirteen native buttons remain without a defined JavaScript action, and upcoming reminder edit/delete/expand icons remain presentation-only.",
+    "No data persistence or backend exists, so create/edit/delete workflows and data migration are outside the implemented scope."
+  ],
+  "release_assessment": "Responsive layout and documented V20 changes passed the tests executed. The project is suitable as a V20 development baseline, not yet functionally complete for every visible control."
+}

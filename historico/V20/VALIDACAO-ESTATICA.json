@@ -1,0 +1,115 @@
+{
+  "project": "Check.In V20",
+  "source_version": "Check.In V19",
+  "source_archive": "Check.In-V19(1).rar",
+  "audit_date": "2026-11-13",
+  "mode": "read/write in isolated V20 copy; original RAR preserved",
+  "validation": {
+    "html_parser": "lxml.html.HTMLParser(recover=False)",
+    "html_parse_errors": 0,
+    "html_element_count": 1678,
+    "functional_dom_ids": 54,
+    "unique_functional_dom_ids": 54,
+    "duplicate_functional_dom_ids": {},
+    "existing_v19_dom_ids_preserved": true,
+    "new_dom_ids": [
+      "painel-financeiro",
+      "painel-estudo"
+    ],
+    "missing_local_html_resources": [],
+    "missing_css_url_resources": [],
+    "missing_aria_or_scroll_targets": [],
+    "vertical_scrollbars": 13,
+    "unique_vertical_scroll_targets": 13,
+    "missing_vertical_scroll_targets": [],
+    "horizontal_scrollbars": 3,
+    "unique_horizontal_scroll_targets": 3,
+    "missing_horizontal_scroll_targets": [],
+    "css_parser_errors": {
+      "style.css": [],
+      "tema-dark.css": []
+    },
+    "marker_sequences": {
+      "index.html": {
+        "count": 131,
+        "unique": 131,
+        "sequential": true,
+        "last_marker": "HTML-131"
+      },
+      "style.css": {
+        "count": 352,
+        "unique": 352,
+        "sequential": true,
+        "last_marker": "CSS-352"
+      },
+      "tema-dark.css": {
+        "count": 244,
+        "unique": 244,
+        "sequential": true,
+        "last_marker": "DARK-244"
+      },
+      "script.js": {
+        "count": 9,
+        "unique": 9,
+        "sequential": true,
+        "last_marker": "JS-009"
+      }
+    },
+    "qualified_css_rules": {
+      "style.css": 467,
+      "tema-dark.css": 398
+    },
+    "important_declarations": {
+      "style.css": 137,
+      "tema-dark.css": 892
+    },
+    "exact_duplicate_css_rule_signatures_remaining": 0
+  },
+  "functional_scope": {
+    "top_navigation_buttons": 5,
+    "top_navigation_scrolls_to_panel": true,
+    "sidebar_search_normalizes_accents": true,
+    "sidebar_search_empty_state": true,
+    "calendar_navigation_present": true,
+    "vertical_scrollbars": 13,
+    "horizontal_scrollbars": 3,
+    "native_buttons_total": 22,
+    "buttons_without_defined_actions": 13,
+    "persistence_found": false,
+    "api_or_database_found": false
+  },
+  "changes_applied": {
+    "responsive_layout_reworked": true,
+    "primary_navigation_functionality_added": true,
+    "sidebar_search_functionality_added": true,
+    "invalid_orphan_css_declaration_removed": true,
+    "exact_duplicate_theme_rules_removed": 11,
+    "comment_markers_reindexed": true,
+    "functional_dom_ids_renumbered": false,
+    "old_dom_ids_preserved": true,
+    "new_functional_dom_ids_added": 2,
+    "js_006_horizontal_contract_preserved": true,
+    "js_007_vertical_contract_preserved": true,
+    "data_persistence_added": false
+  },
+  "limitations": [
+    "Static HTML/CSS path checks confirm local assets exist; screenshots generated from in-memory HTML did not load all file-relative images in the isolated browser harness.",
+    "Google Fonts loading depends on network access and was not certified offline.",
+    "No persistent storage, backend, or migration layer exists in the current project.",
+    "Thirteen native buttons and several decorative reminder actions remain without defined behavior; their purpose must be specified before implementing actions."
+  ],
+  "package_inventory": {
+    "files_total": 66,
+    "folders_total": 11,
+    "application_files": [
+      "index.html",
+      "style.css",
+      "tema-dark.css",
+      "script.js"
+    ],
+    "preserved_history": [
+      "historico/V18/",
+      "historico/V19/"
+    ]
+  }
+}

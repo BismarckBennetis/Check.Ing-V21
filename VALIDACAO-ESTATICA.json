@@ -1,0 +1,83 @@
+{
+  "versao": "V21.1",
+  "data": "2026-11-17",
+  "origem": "Check.In-V20(5).rar",
+  "arquivos_ativos": [
+    "index.html",
+    "style.css",
+    "tema-dark.css",
+    "script.js"
+  ],
+  "css": {
+    "style.css": {
+      "regras": 476,
+      "declaracoes": 2654,
+      "important": 136,
+      "parsing": "aprovado"
+    },
+    "tema-dark.css": {
+      "regras": 630,
+      "declaracoes": 2822,
+      "important": 1240,
+      "parsing": "aprovado"
+    },
+    "total_regras": 1106,
+    "total_declaracoes": 5476,
+    "total_important": 1376,
+    "has_ocorrencias": 0
+  },
+  "javascript": {
+    "linhas": 508,
+    "node_check": "aprovado",
+    "typescript_es5_parse": "aprovado",
+    "sintaxe_modernas_restantes": [],
+    "fallbacks": [
+      "Array.from",
+      "NodeList.prototype.forEach",
+      "String.prototype.padStart",
+      "Number.parseFloat",
+      "String.prototype.normalize (fallback PT-BR na pesquisa)"
+    ],
+    "simulacao_fallbacks_legados": "aprovado em Chromium, removendo as APIs antes da inicialização"
+  },
+  "html": {
+    "ids": 56,
+    "ids_unicos": 56,
+    "duplicados": [],
+    "novos_ids": [
+      "agenda-compromissos-ontem",
+      "agenda-compromissos-hoje"
+    ],
+    "caminhos_relativos_validos": true
+  },
+  "css_selectors": {
+    "has": 0,
+    "regras_analizadas": 1106,
+    "alteracao_agendas": "estilos calculados V20/V21 iguais"
+  },
+  "manifesto_origem": {
+    "arquivo": "tema-dark.css",
+    "sha256_esperado": "40081362c7ab79c97522ff2dccfb207c302445dfce109850d0ce1f5bb17f0ffd",
+    "sha256_calculado": "d1363761fef1a2a69b019c2c0379674d89f3819ca2a1253b45dbce06e5768580",
+    "status": "divergente no pacote V20"
+  },
+  "observacoes": [
+    "Índices recriados a partir dos arquivos ativos.",
+    "V20 contém inconsistência documental sobre JS-008 e navegação superior; o código-fonte não implementa o comportamento descrito.",
+    "IE11 é compatibilidade parcial, não certificada."
+  ],
+  "recursos_locais": {
+    "referencias_html": 9,
+    "todas_existentes": true,
+    "svg_data_uri_xml": "aprovado",
+    "css_local_urls": 0
+  },
+  "indices": {
+    "marcadores_ativos": 742,
+    "linhas_correspondentes": 742,
+    "regras_css_indexadas": 1106,
+    "seletores_repetidos_listados": 151,
+    "dependencias_js_html": "reconstruídas a partir da origem"
+  },
+  "nota_correcao_v21_1": "Correção CSS/SVG localizada após a bateria principal V21; resultados funcionais registrados são herdados da execução V21 e não foram repetidos por completo nesta correção. SVG da onda revalidado estruturalmente."
+}
