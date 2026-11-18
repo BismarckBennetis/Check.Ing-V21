@@ -351,6 +351,9 @@ body .menu-principal > .botao-menu:not([data-menu-lateral-toggle]) {
     max-width: 100%;
     margin-inline: auto;
     box-sizing: border-box;
+
+    /* MOB-028 — Redução pela borda inferior */
+    padding-bottom: 0;
 }
 
 /* MOB-020 — Redução da largura e posição da barra de pesquisa */
@@ -370,6 +373,47 @@ body .menu-principal > .botao-menu:nth-child(n+4) {
 /* MOB-024 — Redução da distância entre os botões do painel */
 .painel-esquerdo .menu-lateral-botoes {
     row-gap: 9px;
+}
+
+/* MOB-025 — Deslocamento vertical do bloco de botões laterais */
+.painel-esquerdo .menu-lateral-botoes {
+    translate: 0 -7px;
+}
+
+/* MOB-026 — Deslocamento vertical do campo de horário e data */
+.painel-esquerdo > .area-inferior-painel {
+    translate: 0 -15px;
+}
+
+/* MOB-027 — Deslocamento vertical de Notifique-me */
+.painel-esquerdo .notificacao-titulo,
+.painel-esquerdo .botao-notifique {
+    translate: 0 -60px;
+}
+
+/* MOB-029 — Redução adicional pela borda inferior */
+.painel-esquerdo > .botao-notifique {
+    margin-bottom: -20px;
+}
+
+/* MOB-030 — Redução do título Notifique-me */
+.painel-esquerdo .notificacao-titulo {
+    font-size: 9px !important;
+    padding: 1px 9px;
+}
+
+/* MOB-031 — Redução do botão circular */
+.painel-esquerdo .botao-notifique {
+    width: 40px !important;
+    height: 40px !important;
+    flex: 0 0 40px !important;
+}
+
+/* MOB-032 — Redução proporcional do ícone interno */
+.painel-esquerdo .botao-notifique .notificacao-icone {
+    width: 54px !important;
+    height: 54px !important;
+    flex: 0 0 54px !important;
 }
 
 } /*CHAVE QUE O @MEDIA ID:777*/
