@@ -367,7 +367,12 @@ body .menu-principal > .botao-menu:nth-child(n+4) {
     translate: 0 -3px;
 }
 
+/* MOB-024 — Redução da distância entre os botões do painel */
+.painel-esquerdo .menu-lateral-botoes {
+    row-gap: 9px;
 }
+
+} /*CHAVE QUE O @MEDIA ID:777*/
 
 /* MOB-015 — Botão Menu lateral exclusivo para desktop */
 @media (min-width: 653px) {
