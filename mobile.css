@@ -449,3 +449,38 @@ body .menu-principal > .botao-menu:nth-child(n+4) {
         display: none;
     }
 }
+
+/* ==========================================================
+   ID: MOB-036
+   REF: APP.SIDEBAR.WATERFALL
+   FUNÇÃO: ABERTURA DESCENDENTE DO PAINEL
+========================================================== */
+
+@media (max-width: 652px) {
+
+    .painel-esquerdo.painel-abrindo {
+        transform-origin: top center;
+
+        animation: mob036-cascata 750ms
+    cubic-bezier(0.4, 0, 0.2, 1) both;
+    }
+
+    @keyframes mob036-cascata {
+        from {
+            transform: translateY(-8px) scaleY(0.06);
+            opacity: 0.8;
+        }
+
+        to {
+            transform: translateY(0) scaleY(1);
+            opacity: 1;
+        }
+    }
+}
+
+@media (max-width: 652px) and (prefers-reduced-motion: reduce) {
+
+    .painel-esquerdo.painel-abrindo {
+        animation: none;
+    }
+}
