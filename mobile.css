@@ -351,9 +351,10 @@ body .menu-principal > .botao-menu:not([data-menu-lateral-toggle]) {
     max-width: 100%;
     margin-inline: auto;
     box-sizing: border-box;
-
-    /* MOB-028 — Redução pela borda inferior */
     padding-bottom: 0;
+
+    /* MOB-033 — Deslocamento horizontal do painel inteiro */
+    translate: -55px -15px;
 }
 
 /* MOB-020 — Redução da largura e posição da barra de pesquisa */
