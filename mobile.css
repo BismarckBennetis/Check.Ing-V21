@@ -319,6 +319,7 @@ body .menu-principal > .botao-menu[data-menu-lateral-toggle] .seta-menu-direcao 
     }
 }
 
+@media screen and (max-width: 652px) {
 /* MOB-016 — Redução da altura do botão Menu */
 body .menu-principal > .botao-menu[data-menu-lateral-toggle] {
     width: 90% !important;
@@ -334,6 +335,7 @@ body .menu-principal > .botao-menu[data-menu-lateral-toggle] {
     #187037 0%,
     #04461b 100%
 ) !important;
+}
 }
 
 /* MOB-017 — Deslocamento dos elementos do botão Lembrete */
@@ -363,4 +365,24 @@ body .menu-principal > .botao-menu:not([data-menu-lateral-toggle]) {
 .painel-esquerdo .menu-lateral-pesquisa {
     width: calc(100% + 10px);
     margin-left: -5px;
+}
+
+/* MOB-015 — Botão Menu lateral exclusivo para mobile */
+@media (min-width: 653px) {
+    body .menu-principal > .botao-menu[data-menu-lateral-toggle] {
+        display: none;
+    }
+}
+
+/* A PARTIR DAQUI, REGRAS EXCLUSIVAS MOBILE */
+@media screen and (max-width: 652px) {
+
+    /* MOB-016 */
+    /* MOB-017 */
+    /* MOB-018 */
+    /* MOB-019 */
+    /* MOB-020 */
+
+    /* Todas as regras mobile seguintes ficam aqui. */
+
 }
