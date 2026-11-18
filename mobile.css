@@ -36,8 +36,8 @@
     ====================================================== */
 
     header.cabecalho {
-        height: 94px;
-        min-height: 94px;
+        height: 70px;
+        min-height: 70px;
         margin-bottom: 12px;
         padding: 0 10px;
         box-sizing: border-box;
