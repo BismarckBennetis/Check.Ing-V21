@@ -350,3 +350,17 @@ body .menu-principal > .botao-menu:not([data-menu-lateral-toggle]) {
     padding-bottom: 3px;
     border-radius: 14px;
 }
+
+/* MOB-019 — Redução da largura do painel esquerdo */
+.painel-esquerdo {
+    width: 70%;
+    max-width: 100%;
+    margin-inline: auto;
+    box-sizing: border-box;
+}
+
+/* MOB-020 — Redução da largura da barra de pesquisa */
+.painel-esquerdo .menu-lateral-pesquisa {
+    width: calc(100% + 10px);
+    margin-left: -5px;
+}
