@@ -2,23 +2,48 @@
 
 /* ==========================================================
    CHECK.IN — MOBILE
-   COMPONENTE 01: CABEÇALHO
+   ARQUIVO: mobile.css
+   BASE: CHECK.IN V21.1
+
+   IDENTIFICAÇÃO:
+   MOB-001 até MOB-013
+
+   OBJETIVO:
+   Adaptação visual e estrutural exclusiva para dispositivos
+   móveis, preservando HTML, JavaScript e Desktop.
+========================================================== */
+
+
+/* ==========================================================
+   GRUPO RESPONSIVO — DISPOSITIVOS MÓVEIS
+   BREAKPOINT: 652px
 ========================================================== */
 
 @media (max-width: 652px) {
 
-    /* 01 — ESTRUTURA EXTERNA */
+
+    /* ======================================================
+       ID: MOB-001
+       REF: APP.HEADER
+       SELETOR: header.cabecalho
+       FUNÇÃO: ESTRUTURA EXTERNA DO CABEÇALHO
+    ====================================================== */
 
     header.cabecalho {
-        height: 80px;
-        min-height: 80px;
+        height: 94px;
+        min-height: 94px;
         margin-bottom: 12px;
         padding: 0 10px;
         box-sizing: border-box;
     }
 
 
-    /* 02 — GRUPO DA MARCA */
+    /* ======================================================
+       ID: MOB-002
+       REF: APP.HEADER.LOGO
+       SELETOR: header.cabecalho .logo
+       FUNÇÃO: POSICIONAMENTO DO GRUPO DA MARCA
+    ====================================================== */
 
     header.cabecalho .logo {
         gap: 1px;
@@ -26,13 +51,31 @@
         min-width: 0;
     }
 
+
+    /* ======================================================
+       ID: MOB-003
+       REF: APP.HEADER.LOGO
+       SELETOR: header.cabecalho .logo-simbolo
+       FUNÇÃO: DIMENSIONAMENTO DO SÍMBOLO
+       REFERÊNCIA ORIGINAL: DARK-129
+    ====================================================== */
+
     header.cabecalho .logo-simbolo {
-        width: 50px !important;
-        height: 50px !important;
-        max-width: 50px;
-        max-height: 50px;
-        flex: 0 0 50px;
+        width: 58px !important;
+        height: 58px !important;
+        max-width: 58px;
+        max-height: 58px;
+        flex: 0 0 58px;
     }
+
+
+    /* ======================================================
+       ID: MOB-004
+       REF: APP.HEADER.LOGO
+       SELETOR: header.cabecalho .logo-nome
+       FUNÇÃO: DIMENSIONAMENTO DO NOME CHECK.ING
+       REFERÊNCIA ORIGINAL: DARK-111
+    ====================================================== */
 
     header.cabecalho .logo-nome {
         font-size: clamp(19px, 5.5vw, 21px) !important;
@@ -42,20 +85,31 @@
     }
 
 
-    /* 03 — GRUPO DE AÇÕES */
+    /* ======================================================
+       ID: MOB-005
+       REF: APP.HEADER.ACTIONS
+       SELETOR: header.cabecalho .acoes-cabecalho
+       FUNÇÃO: POSICIONAMENTO DO SINO E PERFIL
+    ====================================================== */
 
     header.cabecalho .acoes-cabecalho {
-    gap: 12px;
-    padding: 4px;
-    transform: translateX(-8px);
-}
+        gap: 12px;
+        padding: 4px;
+        transform: translateX(-8px);
+    }
 
 
-    /* 04 — NOTIFICAÇÕES */
+    /* ======================================================
+       ID: MOB-006
+       REF: APP.HEADER.NOTIFICATIONS
+       SELETOR: .notificacoes e .icone-sino
+       FUNÇÃO: DIMENSIONAMENTO DA ÁREA E DO SINO
+    ====================================================== */
 
     header.cabecalho .notificacoes {
-        width: 8px;
-        height: 8px;
+        width: 28px;
+        height: 28px;
+        flex-shrink: 0;
     }
 
     header.cabecalho .notificacoes .icone-sino {
@@ -64,25 +118,43 @@
     }
 
 
-    /* 05 — CONTADOR */
+    /* ======================================================
+       ID: MOB-007
+       REF: APP.HEADER.NOTIFICATIONS
+       SELETOR: .contador-notificacao
+       FUNÇÃO: POSICIONAMENTO DO CONTADOR VERMELHO
+    ====================================================== */
 
     header.cabecalho .contador-notificacao {
-    top: -6px;
-    left: auto;
-    right: -7px;
-    width: 11px;
-    height: 11px;
-    font-size: 8px;
-    line-height: 1;
-}
+        top: -6px;
+        left: auto;
+        right: -7px;
+        width: 12px;
+        height: 12px;
+        font-size: 8px;
+        line-height: 1;
+    }
 
 
-    /* 06 — PERFIL */
+    /* ======================================================
+       ID: MOB-008
+       REF: APP.HEADER.PROFILE
+       SELETOR: .perfil-usuario
+       FUNÇÃO: DIMENSIONAMENTO DO BOTÃO DE PERFIL
+    ====================================================== */
 
     header.cabecalho .perfil-usuario {
         width: 32px;
         height: 32px;
     }
+
+
+    /* ======================================================
+       ID: MOB-009
+       REF: APP.HEADER.PROFILE
+       SELETOR: .perfil-cabeca e .perfil-corpo
+       FUNÇÃO: REDIMENSIONAMENTO DA FIGURA INTERNA
+    ====================================================== */
 
     header.cabecalho .perfil-cabeca {
         top: 5px;
@@ -96,7 +168,115 @@
         left: 7px;
         width: 18px;
         height: 13px;
-        border-radius: 12px 12px 7px 7px;
+    }
+
+
+    /* ======================================================
+       ID: MOB-010
+       REF: APP.NAVIGATION.PRIMARY
+       SELETOR: .menu-principal
+       FUNÇÃO: ESTRUTURA GRID DO MENU MOBILE
+
+       DISTRIBUIÇÃO:
+       PRIMEIRA LINHA: 3 BOTÕES
+       SEGUNDA LINHA: 2 BOTÕES
+    ====================================================== */
+
+    .menu-principal {
+        display: grid;
+        grid-template-columns: repeat(6, minmax(0, 1fr));
+        gap: 8px;
+
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+
+        padding: 10px;
+        box-sizing: border-box;
+
+        overflow: visible;
+    }
+
+
+    /* ======================================================
+       ID: MOB-011
+       REF: APP.NAVIGATION.PRIMARY
+       SELETOR: .menu-principal > .botao-menu
+       FUNÇÃO: DIMENSIONAMENTO DOS CINCO BOTÕES
+
+       PRIMEIRA LINHA:
+       FINANCEIRO | ESTUDO | ROTINA
+
+       SEGUNDA LINHA:
+       COMPROMISSO | LEMBRETE
+    ====================================================== */
+
+    .menu-principal > .botao-menu {
+        min-width: 0;
+        width: 100%;
+        max-width: 100%;
+
+        min-height: 44px;
+
+        padding: 5px 3px;
+        gap: 4px;
+
+        box-sizing: border-box;
+
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    /* PRIMEIRA LINHA — TRÊS BOTÕES IGUAIS */
+
+    .menu-principal > .botao-menu:nth-child(-n+3) {
+        grid-column: span 2;
+    }
+
+
+    /* SEGUNDA LINHA — DOIS BOTÕES IGUAIS */
+
+    .menu-principal > .botao-menu:nth-child(n+4) {
+        grid-column: span 3;
+    }
+
+
+    /* ======================================================
+       ID: MOB-012
+       REF: APP.NAVIGATION.PRIMARY
+       SELETOR: .botao-icone
+       FUNÇÃO: DIMENSIONAMENTO DOS ÍCONES DO MENU
+    ====================================================== */
+
+    .menu-principal > .botao-menu .botao-icone {
+        box-sizing: border-box;
+
+        width: 22px;
+        height: 22px;
+        flex: 0 0 22px;
+
+        padding: 0;
+    }
+
+
+    /* ======================================================
+       ID: MOB-013
+       REF: APP.NAVIGATION.PRIMARY
+       SELETOR: .botao-texto
+       FUNÇÃO: AJUSTE DOS TEXTOS DO MENU
+    ====================================================== */
+
+    .menu-principal > .botao-menu .botao-texto {
+        min-width: 0;
+
+        font-size: clamp(11px, 3.3vw, 13px);
+
+        white-space: nowrap;
+        overflow-wrap: normal;
+
+        text-align: center;
+        line-height: 1.1;
     }
 
 }
