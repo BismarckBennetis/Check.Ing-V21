@@ -297,7 +297,32 @@
 
 }
 
+/* MOB-014 — Deslocamento horizontal da seta do Menu */
+body .menu-principal > .botao-menu[data-menu-lateral-toggle] .seta-menu-direcao {
+    position: relative;
+    right: auto;
+    top: auto;
+    transform: translateX(30px);
 
-/* ==========================================================
-   FIM — CHECK.IN MOBILE
-========================================================== */
+    display: block;
+    width: 30px;
+    height: 30px;
+    flex: 0 0 30px;
+
+    color: #8af0ae;
+}
+
+/* MOB-016 — Redução da altura do botão Menu */
+body .menu-principal > .botao-menu[data-menu-lateral-toggle] {
+    height: 33px;
+    min-height: 33px;
+    align-self: center;
+    border-radius: 5px;
+}
+
+/* MOB-015 — Botão Menu lateral exclusivo para mobile */
+@media (min-width: 653px) {
+    body .menu-principal > .botao-menu[data-menu-lateral-toggle] {
+        display: none;
+    }
+}

@@ -541,14 +541,11 @@ M 124 31 L 131 31 L 136 33 L 142 39 L 144 44 L 144 99 L 142 104 L 136 110 L 131 
         <span class="botao-texto">Rotina</span>
       </button>
 
-      <!-- Botão Compromisso: acesso aos compromissos -->
-
-          <!-- ======================================================
-     ID: HTML-135
-     REF: APP.SIDEBAR.TOGGLE
-     FUNÇÃO: BOTÃO MOBILE PARA ABRIR E FECHAR O MENU LATERAL
+<!-- ======================================================
+     BOTÕES MENU E COMPROMISSO
 ====================================================== -->
 
+<!-- ID: HTML-135 | REF: APP.SIDEBAR.TOGGLE -->
 <button
     class="botao-menu"
     type="button"
@@ -557,6 +554,7 @@ M 124 31 L 131 31 L 136 33 L 142 39 L 144 44 L 144 99 L 142 104 L 136 110 L 131 
     aria-controls="painel-esquerdo"
     aria-expanded="false"
 >
+    <!-- Ícone de três linhas -->
     <svg
         class="botao-icone"
         viewBox="0 0 36 36"
@@ -570,14 +568,12 @@ M 124 31 L 131 31 L 136 33 L 142 39 L 144 44 L 144 99 L 142 104 L 136 110 L 131 
             stroke-width="2"
             stroke-linecap="round"
         />
-
         <path
             d="M6 18 H30"
             stroke="currentColor"
             stroke-width="2"
             stroke-linecap="round"
         />
-
         <path
             d="M6 26 H30"
             stroke="currentColor"
@@ -587,53 +583,80 @@ M 124 31 L 131 31 L 136 33 L 142 39 L 144 44 L 144 99 L 142 104 L 136 110 L 131 
     </svg>
 
     <span class="botao-texto">Menu</span>
+
+    <!-- ID: HTML-136 | REF: APP.MENU.ARROW.DOWN -->
+    <svg
+        class="seta-menu-direcao"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+        aria-hidden="true"
+        fill="none"
+    >
+        <path
+            d="M6 9 L12 15 L18 9"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+        />
+    </svg>
 </button>
 
-      <button class="botao-menu" type="button" >
-        <!-- Ícone do botão Compromisso: ponto de exclamação dentro de um círculo -->
+<!-- Botão Compromisso -->
+<button class="botao-menu" type="button">
+
+    <svg
+        class="botao-icone"
+        viewBox="0 0 36 36"
+        xmlns="http://www.w3.org/2000/svg"
+        aria-hidden="true"
+        fill="none"
+    >
+        <circle
+            cx="18"
+            cy="18"
+            r="14"
+            stroke="currentColor"
+            stroke-width="1.5"
+        />
+
+        <path
+            d="M13.5 6.8
+               C15 6 16.5 5.6 18 5.6
+               C19.5 5.6 21 6 22.5 6.8"
+            stroke="currentColor"
+            stroke-width="1"
+            stroke-linecap="round"
+            opacity=".65"
+        />
+
         <svg
-  class="botao-icone"
-  viewBox="0 0 36 36"
-  xmlns="http://www.w3.org/2000/svg"
-  aria-hidden="true"
-  fill="none"
->
-  <!-- Contorno principal -->
-  <circle
-    cx="18"
-    cy="18"
-    r="14"
-    stroke="currentColor"
-    stroke-width="1.5"
-  />
+            class="rotina-status-svg rotina-status-svg--alerta"
+            x="15.2727"
+            y="11"
+            width="5.4545"
+            height="15"
+            viewBox="0 0 8 22"
+            aria-hidden="true"
+            focusable="false"
+        >
+            <rect
+                x="2.53"
+                y="1"
+                width="2.94"
+                height="13.5"
+                rx="1.47"
+            />
+            <circle
+                cx="4"
+                cy="19.28"
+                r="1.78"
+            />
+        </svg>
+    </svg>
 
-  <!-- Pequeno detalhe interno superior -->
-  <path
-    d="M13.5 6.8
-       C15 6 16.5 5.6 18 5.6
-       C19.5 5.6 21 6 22.5 6.8"
-    stroke="currentColor"
-    stroke-width="1"
-    stroke-linecap="round"
-    opacity=".65"
-  />
-
-  <svg
-    class="rotina-status-svg rotina-status-svg--alerta"
-    x="15.2727"
-    y="11"
-    width="5.4545"
-    height="15"
-    viewBox="0 0 8 22"
-    aria-hidden="true"
-    focusable="false"
-  >
-    <rect x="2.53" y="1" width="2.94" height="13.5" rx="1.47" />
-    <circle cx="4" cy="19.28" r="1.78" />
-  </svg>
-</svg>
-        <span class="botao-texto">Compromisso</span>
-      </button>
+    <span class="botao-texto">Compromisso</span>
+</button>
 
       <!-- Botão Lembrete: acesso aos lembretes -->
       <button class="botao-menu" type="button" >
