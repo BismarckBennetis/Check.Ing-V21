@@ -302,7 +302,7 @@ body .menu-principal > .botao-menu[data-menu-lateral-toggle] .seta-menu-direcao 
     position: relative;
     right: auto;
     top: auto;
-    transform: translateX(30px);
+    transform: translateX(38px);
 
     display: block;
     width: 30px;
@@ -314,15 +314,18 @@ body .menu-principal > .botao-menu[data-menu-lateral-toggle] .seta-menu-direcao 
 
 /* MOB-016 — Redução da altura do botão Menu */
 body .menu-principal > .botao-menu[data-menu-lateral-toggle] {
+    width: 90% !important;
     height: 33px;
     min-height: 33px;
+    max-width: 90% !important;
     align-self: center;
-    border-radius: 5px;
+    border-radius: 8px;
+    justify-self: start;
 
     background: linear-gradient(
     to right,
-    #294b35 0%,
-    #193322 100%
+    #187037 0%,
+    #04461b 100%
 ) !important;
 }
 
