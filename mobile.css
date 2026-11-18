@@ -145,8 +145,8 @@
     header.cabecalho .notificacoes .contador-notificacao {
         position: absolute;
 
-        top: -3px;
-        right: -2px;
+        top: -1px;
+        right: 1px;
         left: auto;
 
         width: 12px;
