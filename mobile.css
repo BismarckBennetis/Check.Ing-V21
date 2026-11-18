@@ -318,6 +318,12 @@ body .menu-principal > .botao-menu[data-menu-lateral-toggle] {
     min-height: 33px;
     align-self: center;
     border-radius: 5px;
+
+    background: linear-gradient(
+    145deg,
+    #18271d,
+    #101a13
+) !important;
 }
 
 /* MOB-015 — Botão Menu lateral exclusivo para mobile */
