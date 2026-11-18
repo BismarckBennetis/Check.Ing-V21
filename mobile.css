@@ -335,3 +335,10 @@ body .menu-principal > .botao-menu[data-menu-lateral-toggle] {
         display: none;
     }
 }
+
+/* MOB-017 — Deslocamento dos elementos do botão Lembrete */
+body .menu-principal > .botao-menu:nth-child(6) > .botao-icone,
+body .menu-principal > .botao-menu:nth-child(6) > .botao-texto {
+    position: relative;
+    left: 6px;
+}
