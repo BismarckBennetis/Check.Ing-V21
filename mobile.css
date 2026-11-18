@@ -312,6 +312,13 @@ body .menu-principal > .botao-menu[data-menu-lateral-toggle] .seta-menu-direcao 
     color: #8af0ae;
 }
 
+/* MOB-015 — Botão Menu lateral exclusivo para mobile */
+@media (min-width: 653px) {
+    body .menu-principal > .botao-menu[data-menu-lateral-toggle] {
+        display: none;
+    }
+}
+
 /* MOB-016 — Redução da altura do botão Menu */
 body .menu-principal > .botao-menu[data-menu-lateral-toggle] {
     width: 90% !important;
@@ -329,16 +336,17 @@ body .menu-principal > .botao-menu[data-menu-lateral-toggle] {
 ) !important;
 }
 
-/* MOB-015 — Botão Menu lateral exclusivo para mobile */
-@media (min-width: 653px) {
-    body .menu-principal > .botao-menu[data-menu-lateral-toggle] {
-        display: none;
-    }
-}
-
 /* MOB-017 — Deslocamento dos elementos do botão Lembrete */
 body .menu-principal > .botao-menu:nth-child(6) > .botao-icone,
 body .menu-principal > .botao-menu:nth-child(6) > .botao-texto {
     position: relative;
     left: 6px;
+}
+
+/* MOB-018 — Redução da altura dos demais botões */
+body .menu-principal > .botao-menu:not([data-menu-lateral-toggle]) {
+    min-height: 36px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    border-radius: 14px;
 }
