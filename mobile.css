@@ -5,12 +5,18 @@
    ARQUIVO: mobile.css
    BASE: CHECK.IN V21.1
 
-   IDENTIFICAÇÃO:
-   MOB-001 até MOB-013
+   PADRÃO DE IDENTIFICAÇÃO: MOB-###
 
-   OBJETIVO:
-   Adaptação visual e estrutural exclusiva para dispositivos
-   móveis, preservando HTML, JavaScript e Desktop.
+   RESPONSABILIDADES:
+   - Adaptação estrutural Mobile
+   - Ajustes visuais Mobile
+   - Dimensionamento dos componentes
+   - Organização dos elementos
+
+   PRESERVAÇÃO:
+   - HTML original
+   - JavaScript original
+   - CSS Desktop original
 ========================================================== */
 
 
@@ -100,54 +106,57 @@
 
 
     /* ======================================================
-   ID: MOB-006
-   REF: APP.HEADER.NOTIFICATIONS
-   FUNÇÃO: CENTRALIZAÇÃO DO SINO
-====================================================== */
+       ID: MOB-006
+       REF: APP.HEADER.NOTIFICATIONS
+       SELETOR: .notificacoes e .icone-sino
+       FUNÇÃO: CENTRALIZAÇÃO E DIMENSIONAMENTO DO SINO
+    ====================================================== */
 
-header.cabecalho .notificacoes {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    header.cabecalho .notificacoes {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
 
-    width: 28px;
-    height: 28px;
-    flex: 0 0 28px;
-}
+        width: 28px;
+        height: 28px;
+        flex: 0 0 28px;
+    }
 
-header.cabecalho .notificacoes .icone-sino {
-    display: block;
+    header.cabecalho .notificacoes .icone-sino {
+        display: block;
 
-    width: 25px;
-    height: 28px;
-    flex: 0 0 25px;
+        width: 25px;
+        height: 28px;
+        flex: 0 0 25px;
 
-    margin: 0;
-}
+        margin: 0;
+    }
 
 
     /* ======================================================
-   ID: MOB-007
-   REF: APP.HEADER.NOTIFICATIONS
-   FUNÇÃO: CONTADOR ANCORADO AO SINO
+       ID: MOB-007
+       REF: APP.HEADER.NOTIFICATIONS
+       SELETOR: .contador-notificacao
+       FUNÇÃO: CONTADOR ANCORADO NO CANTO SUPERIOR DIREITO
+       REFERÊNCIA ORIGINAL: DARK-142
     ====================================================== */
 
-header.cabecalho .notificacoes .contador-notificacao {
-    position: absolute;
+    header.cabecalho .notificacoes .contador-notificacao {
+        position: absolute;
 
-    top: -3px;
-    right: -2px;
-    left: auto;
+        top: -3px;
+        right: -2px;
+        left: auto;
 
-    width: 12px;
-    height: 12px;
+        width: 12px;
+        height: 12px;
 
-    font-size: 8px;
-    line-height: 1;
+        font-size: 8px;
+        line-height: 1;
 
-    z-index: 2;
-}
+        z-index: 2;
+    }
 
 
     /* ======================================================
@@ -167,7 +176,7 @@ header.cabecalho .notificacoes .contador-notificacao {
        ID: MOB-009
        REF: APP.HEADER.PROFILE
        SELETOR: .perfil-cabeca e .perfil-corpo
-       FUNÇÃO: REDIMENSIONAMENTO DA FIGURA INTERNA
+       FUNÇÃO: DIMENSIONAMENTO DA FIGURA INTERNA
     ====================================================== */
 
     header.cabecalho .perfil-cabeca {
@@ -185,29 +194,38 @@ header.cabecalho .notificacoes .contador-notificacao {
     }
 
 
-    /* ==========================================================
-   ID: MOB-010
-   REF: APP.NAVIGATION.PRIMARY
-   FUNÇÃO: GRADE PRINCIPAL DO MENU MOBILE
-========================================================== */
+    /* ======================================================
+       ID: MOB-010
+       REF: APP.NAVIGATION.PRIMARY
+       SELETOR: body .menu-principal
+       FUNÇÃO: ESTRUTURA GRID DO MENU MOBILE
 
-@media (max-width: 652px) {
+       DISTRIBUIÇÃO:
+       LINHA 1: FINANCEIRO | ESTUDO | ROTINA
+       LINHA 2: COMPROMISSO | LEMBRETE
+    ====================================================== */
 
     body .menu-principal {
         display: grid;
         grid-template-columns: repeat(6, minmax(0, 1fr));
         grid-auto-flow: row;
+
         gap: 8px;
-        padding: 10px;
+
         width: 100%;
         max-width: 100%;
         min-width: 0;
+
+        padding: 10px;
+
         box-sizing: border-box;
     }
 
 
     /* ======================================================
        ID: MOB-011
+       REF: APP.NAVIGATION.PRIMARY
+       SELETOR: body .menu-principal > .botao-menu
        FUNÇÃO: DISTRIBUIÇÃO DOS CINCO BOTÕES
     ====================================================== */
 
@@ -216,53 +234,70 @@ header.cabecalho .notificacoes .contador-notificacao {
         width: 100%;
         max-width: none;
         min-height: 44px;
-        padding: 5px 3px;
+
+        padding: 5px 39px 5px 3px;
         gap: 4px;
+
         box-sizing: border-box;
+
         align-items: center;
         justify-content: center;
         justify-self: stretch;
     }
 
-    /* PRIMEIRA LINHA: FINANCEIRO, ESTUDO E ROTINA */
+    /* PRIMEIRA LINHA — TRÊS BOTÕES */
 
     body .menu-principal > .botao-menu:nth-child(-n+3) {
         grid-column: span 2;
     }
 
-    /* SEGUNDA LINHA: COMPROMISSO E LEMBRETE */
+    /* SEGUNDA LINHA — DOIS BOTÕES */
 
     body .menu-principal > .botao-menu:nth-child(n+4) {
-        grid-column: span 3;
+    grid-column: span 2;
     }
-
 
     /* ======================================================
        ID: MOB-012
-       FUNÇÃO: DIMENSIONAMENTO DOS ÍCONES
+       REF: APP.NAVIGATION.PRIMARY
+       SELETOR: .menu-principal > .botao-menu .botao-icone
+       FUNÇÃO: DIMENSIONAMENTO DOS ÍCONES DO MENU
     ====================================================== */
 
     body .menu-principal > .botao-menu .botao-icone {
         box-sizing: border-box;
+
         padding: 0;
+
         width: 22px;
         height: 22px;
+
         flex: 0 0 22px;
     }
 
+
     /* ======================================================
        ID: MOB-013
-       FUNÇÃO: DIMENSIONAMENTO DOS TEXTOS
+       REF: APP.NAVIGATION.PRIMARY
+       SELETOR: .menu-principal > .botao-menu .botao-texto
+       FUNÇÃO: DIMENSIONAMENTO DOS TEXTOS DO MENU
     ====================================================== */
 
     body .menu-principal > .botao-menu .botao-texto {
         min-width: 0;
+
         font-size: clamp(11px, 3.3vw, 13px);
+
         white-space: nowrap;
         overflow-wrap: normal;
+
         text-align: center;
         line-height: 1.1;
     }
 
 }
-}
+
+
+/* ==========================================================
+   FIM — CHECK.IN MOBILE
+========================================================== */
