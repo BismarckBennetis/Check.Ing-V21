@@ -320,9 +320,9 @@ body .menu-principal > .botao-menu[data-menu-lateral-toggle] {
     border-radius: 5px;
 
     background: linear-gradient(
-    145deg,
-    #18271d,
-    #101a13
+    to right,
+    #294b35 0%,
+    #193322 100%
 ) !important;
 }
 
