@@ -120,5 +120,70 @@
 
     }, false);
 
+    /* ==========================================================
+   MOBJS-003 | REF: PANEL.FINANCIAL.DUE_DATE.MOBILE
+   FUNÇÃO: FORMATO CURTO DE VENCIMENTO NO MOBILE
+========================================================== */
+
+function atualizarFormatoDatasVencimento() {
+
+    var datas = document.querySelectorAll(
+        ".financeiro-conta-data[datetime]"
+    );
+
+    datas.forEach(function (elemento) {
+
+        /* Preserva o texto original para o desktop. */
+        if (!elemento.hasAttribute("data-texto-desktop")) {
+            elemento.setAttribute(
+                "data-texto-desktop",
+                elemento.textContent
+            );
+        }
+
+        var dataISO = elemento.getAttribute("datetime");
+
+        var partes = /^(\d{4})-(\d{2})-(\d{2})$/.exec(dataISO);
+
+        if (!partes) return;
+
+        if (estaNoMobile()) {
+
+            var dia = partes[3];
+            var mes = partes[2];
+            var ano = partes[1].slice(-2);
+
+            var dataCurta = dia + "/" + mes + "/" + ano;
+
+            if (elemento.textContent.trim() !== dataCurta) {
+                elemento.textContent = dataCurta;
+            }
+
+        } else {
+
+            var textoOriginal = elemento.getAttribute(
+                "data-texto-desktop"
+            );
+
+            if (elemento.textContent !== textoOriginal) {
+                elemento.textContent = textoOriginal;
+            }
+
+        }
+
+    });
+
+}
+
+/* Aplicação inicial. */
+atualizarFormatoDatasVencimento();
+
+/* Atualiza ao mudar o tamanho da tela. */
+window.addEventListener(
+    "resize",
+    atualizarFormatoDatasVencimento,
+    false
+);
+
 })();
 
