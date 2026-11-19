@@ -298,31 +298,16 @@
     }
 
 
-/* MOB-014 — Deslocamento horizontal da seta do Menu */
+/* MOB-014 — Posicionamento e dimensionamento da seta do Menu */
 body .menu-principal > .botao-menu[data-menu-lateral-toggle] .seta-menu-direcao {
     position: relative;
     right: auto;
     top: auto;
-    transform: translateX(38px);
 
-    /* MOB-014 — Deslocamento horizontal da seta do Menu */
-body .menu-principal > .botao-menu[data-menu-lateral-toggle] .seta-menu-direcao {
-    position: relative;
-    right: auto;
-    top: auto;
     transform: translateX(38px);
-
     transform-origin: center;
     transform-box: fill-box;
     transition: transform 180ms ease;
-
-    display: block;
-    width: 30px;
-    height: 30px;
-    flex: 0 0 30px;
-
-    color: #8af0ae;
-}
 
     display: block;
     width: 30px;
