@@ -6961,3 +6961,87 @@ box-sizing: border-box;
     }
 
 }
+
+/* ==========================================================
+   ID: CSS-357 | REF: PANEL.FINANCIAL.TODAY_AGENDA
+   CÓPIA DO CONTAINER HOJE — ESTRUTURA E RESPONSIVIDADE
+   Mantém a agenda original do Compromisso independente.
+========================================================== */
+.card-financeiro {
+  position: relative;
+}
+
+.card-financeiro > .financeiro-agenda-hoje-wrap {
+  position: absolute;
+  top: 34px;
+  right: 9px;
+  z-index: 6;
+  display: flex;
+  width: clamp(205px, 34%, 238px);
+  height: 218px;
+  min-width: 0;
+  min-height: 0;
+  box-sizing: border-box;
+}
+
+.card-financeiro > .financeiro-agenda-hoje-wrap > #agenda-financeiro-hoje {
+  position: relative !important;
+  inset: auto !important;
+  display: flex !important;
+  flex: 1 1 auto;
+  flex-direction: column;
+  width: 100% !important;
+  height: 100% !important;
+  min-width: 0 !important;
+  min-height: 0 !important;
+  max-width: 100% !important;
+  max-height: 100% !important;
+  margin: 0 !important;
+  padding: 7px 8px 8px !important;
+  box-sizing: border-box !important;
+  overflow: hidden !important;
+  gap: 6px !important;
+}
+
+.card-financeiro > .financeiro-agenda-hoje-wrap #lista-financeiro-hoje {
+  display: flex !important;
+  flex: 1 1 auto !important;
+  flex-direction: column !important;
+  min-width: 0 !important;
+  min-height: 0 !important;
+  max-height: none !important;
+  margin: 0 !important;
+  padding: 5px 8px 8px 2px !important;
+  overflow-x: hidden !important;
+  overflow-y: auto !important;
+  box-sizing: border-box !important;
+}
+
+@media (max-width: 700px) {
+  .card-financeiro > .financeiro-agenda-hoje-wrap {
+    position: relative !important;
+    inset: auto !important;
+    top: auto !important;
+    right: auto !important;
+    z-index: 1;
+    width: 100% !important;
+    max-width: 100% !important;
+    height: 238px !important;
+    min-height: 238px !important;
+    margin: 14px 0 3px !important;
+    align-self: stretch !important;
+  }
+
+  .card-financeiro > .financeiro-agenda-hoje-wrap > #agenda-financeiro-hoje {
+    width: 100% !important;
+    height: 100% !important;
+    min-height: 0 !important;
+  }
+}
+
+@media (max-width: 380px) {
+  .card-financeiro > .financeiro-agenda-hoje-wrap {
+    height: 224px !important;
+    min-height: 224px !important;
+  }
+}

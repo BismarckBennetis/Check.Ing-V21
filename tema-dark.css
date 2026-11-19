@@ -7777,3 +7777,315 @@ letter-spacing: -0.3px !important;
     background-position: left bottom !important;
     background-size: 100% 56% !important;
 }
+
+/* ==========================================================
+   ID: DARK-252 | REF: PANEL.FINANCIAL.TODAY_AGENDA
+   HOJE — QUINTA | CÓPIA VISUAL NO PAINEL FINANCEIRO
+   Todos os seletores ficam restritos ao novo container.
+========================================================== */
+.card-financeiro > .financeiro-agenda-hoje-wrap {
+  border: 1px solid rgba(67, 150, 91, .43);
+  border-radius: 13px;
+  background: linear-gradient(145deg, rgba(10, 20, 14, .98), rgba(4, 9, 6, .99));
+  box-shadow:
+    -3px -3px 7px rgba(220, 255, 232, .055),
+    3px 4px 9px rgba(0, 0, 0, .42),
+    inset 0 1px 2px rgba(211, 255, 225, .07),
+    inset 0 -4px 9px rgba(0, 0, 0, .55);
+  overflow: hidden;
+}
+
+.card-financeiro > .financeiro-agenda-hoje-wrap > #agenda-financeiro-hoje {
+  border: 0 !important;
+  border-radius: 12px !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  color: #edf5ef !important;
+}
+
+.card-financeiro > .financeiro-agenda-hoje-wrap #agenda-financeiro-hoje > .compromisso-agenda-cabecalho {
+  position: relative !important;
+  inset: auto !important;
+  display: flex !important;
+  flex: 0 0 28px;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 100% !important;
+  height: 28px !important;
+  min-height: 28px !important;
+  margin: 0 !important;
+  padding: 0 21px !important;
+  gap: 6px !important;
+  box-sizing: border-box !important;
+  border: 1px solid rgba(58, 170, 99, .13) !important;
+  border-radius: 7px !important;
+  background: linear-gradient(145deg, rgba(15, 29, 20, .68), rgba(6, 12, 8, .72)) !important;
+  box-shadow:
+    -2px -2px 5px rgba(220, 255, 232, .045),
+    2px 2px 5px rgba(0, 0, 0, .38) !important;
+  overflow: visible !important;
+}
+
+.card-financeiro > .financeiro-agenda-hoje-wrap .compromisso-agenda-cabecalho h3 {
+  display: block !important;
+  margin: 0 !important;
+  color: #edf5ef !important;
+  font-family: "Sora", "Segoe UI", sans-serif !important;
+  font-size: 13px !important;
+  font-weight: 800 !important;
+  line-height: 1 !important;
+  white-space: nowrap !important;
+  text-align: center !important;
+}
+
+.card-financeiro > .financeiro-agenda-hoje-wrap .compromisso-agenda-cabecalho h3 strong {
+  color: #23dc78 !important;
+  font-weight: 800 !important;
+}
+
+.card-financeiro > .financeiro-agenda-hoje-wrap .compromisso-calendario-icone {
+  display: inline-flex !important;
+  flex: 0 0 24px !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 24px !important;
+  height: 24px !important;
+  color: #39d879 !important;
+}
+
+.card-financeiro > .financeiro-agenda-hoje-wrap .compromisso-calendario-icone svg {
+  display: block !important;
+  width: 22px !important;
+  height: 22px !important;
+  color: #39d879 !important;
+}
+
+.card-financeiro > .financeiro-agenda-hoje-wrap .compromisso-agenda-seta {
+  position: absolute !important;
+  top: 50% !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 18px !important;
+  height: 23px !important;
+  transform: translateY(-50%) !important;
+  color: #26d875 !important;
+  font-family: Arial, sans-serif !important;
+  font-size: 25px !important;
+  font-weight: 400 !important;
+  line-height: 1 !important;
+}
+
+.card-financeiro > .financeiro-agenda-hoje-wrap .compromisso-agenda-seta:first-child {
+  left: 0 !important;
+}
+
+.card-financeiro > .financeiro-agenda-hoje-wrap .compromisso-agenda-seta:last-child {
+  right: 0 !important;
+}
+
+.card-financeiro > .financeiro-agenda-hoje-wrap #lista-financeiro-hoje {
+  border: 0 !important;
+  border-radius: 10px !important;
+  background: transparent !important;
+  scrollbar-width: thin;
+  scrollbar-color: #20c969 #101a14;
+}
+
+.card-financeiro > .financeiro-agenda-hoje-wrap #lista-financeiro-hoje::-webkit-scrollbar {
+  width: 7px;
+}
+
+.card-financeiro > .financeiro-agenda-hoje-wrap #lista-financeiro-hoje::-webkit-scrollbar-track {
+  border: 1px solid rgba(65, 155, 91, .42);
+  border-radius: 999px;
+  background: #101a14;
+  box-shadow: inset 2px 2px 4px rgba(0, 0, 0, .65);
+}
+
+.card-financeiro > .financeiro-agenda-hoje-wrap #lista-financeiro-hoje::-webkit-scrollbar-thumb {
+  border: 1px solid rgba(205, 255, 220, .30);
+  border-radius: 999px;
+  background: linear-gradient(180deg, #70f3a1, #20c969, #087b3e);
+  box-shadow: 0 0 6px rgba(20, 170, 80, .25);
+}
+
+.card-financeiro > .financeiro-agenda-hoje-wrap #lista-financeiro-hoje > .compromisso-evento {
+  display: flex !important;
+  flex: 0 0 auto;
+  flex-direction: column !important;
+  min-width: 0 !important;
+  margin: 2px 2px 7px 2px !important;
+  padding: 6px 8px !important;
+  gap: 5px !important;
+  border: 1px solid transparent !important;
+  border-radius: 9px !important;
+  background: transparent !important;
+  box-shadow:
+    -2px -2px 5px rgba(57, 216, 121, .095),
+    -1px -1px 2px rgba(57, 216, 121, .05),
+    2px 2px 5px rgba(0, 0, 0, .70),
+    1px 1px 2px rgba(0, 0, 0, .70) !important;
+  transition: background 220ms ease, box-shadow 220ms ease;
+}
+
+.card-financeiro > .financeiro-agenda-hoje-wrap #lista-financeiro-hoje > .compromisso-evento:hover {
+  background: linear-gradient(145deg, #18291e, #101a14) !important;
+  box-shadow:
+    inset 1px 1px 3px rgba(190, 255, 205, .045),
+    0 2px 5px rgba(0, 0, 0, .24) !important;
+}
+
+.card-financeiro > .financeiro-agenda-hoje-wrap .compromisso-evento-cabecalho {
+  display: flex !important;
+  align-items: center !important;
+  min-width: 0 !important;
+  gap: 7px !important;
+}
+
+.card-financeiro > .financeiro-agenda-hoje-wrap .compromisso-evento-cabecalho > svg {
+  display: block !important;
+  flex: 0 0 26px !important;
+  width: 26px !important;
+  height: 26px !important;
+  color: #39e27c !important;
+}
+
+.card-financeiro > .financeiro-agenda-hoje-wrap .compromisso-evento-titulo {
+  flex: 1 1 auto !important;
+  min-width: 0 !important;
+  margin: 0 !important;
+  color: #f0f7f2 !important;
+  font-family: "Sora", "Segoe UI", sans-serif !important;
+  font-size: 13px !important;
+  font-weight: 800 !important;
+  line-height: 1.1 !important;
+  white-space: nowrap !important;
+}
+
+.card-financeiro > .financeiro-agenda-hoje-wrap .compromisso-fixar {
+  display: inline-flex !important;
+  flex: 0 0 19px !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 19px !important;
+  height: 21px !important;
+  margin-left: auto !important;
+  color: #cbd8cf !important;
+}
+
+.card-financeiro > .financeiro-agenda-hoje-wrap .compromisso-fixar svg {
+  display: block !important;
+  width: 19px !important;
+  height: 19px !important;
+}
+
+.card-financeiro > .financeiro-agenda-hoje-wrap .compromisso-evento-dados {
+  display: grid !important;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.2fr) minmax(0, .85fr) !important;
+  min-width: 0 !important;
+  gap: 4px !important;
+}
+
+.card-financeiro > .financeiro-agenda-hoje-wrap .compromisso-evento-dado {
+  position: relative !important;
+  display: flex !important;
+  flex-direction: column !important;
+  min-width: 0 !important;
+  padding: 8px 3px 4px !important;
+  border: 1px solid transparent !important;
+  border-radius: 6px !important;
+  background: linear-gradient(145deg, #102319, #09140e) !important;
+  box-sizing: border-box !important;
+  isolation: isolate;
+}
+
+.card-financeiro > .financeiro-agenda-hoje-wrap .compromisso-evento-dado::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  border-radius: inherit;
+  pointer-events: none;
+  background: linear-gradient(135deg, transparent 55%, rgba(26, 125, 65, .42) 100%);
+  clip-path: polygon(97% 0, 100% 0, 100% 100%, 65% 100%, 77% 92%, 86% 74%, 93% 48%, 97% 0);
+}
+
+.card-financeiro > .financeiro-agenda-hoje-wrap .compromisso-evento-dado > span {
+  position: absolute !important;
+  top: -6px !important;
+  left: 6px !important;
+  z-index: 2 !important;
+  display: inline-block !important;
+  width: max-content !important;
+  max-width: calc(100% - 12px) !important;
+  padding: 0 4px !important;
+  border: 1px solid #39ed80 !important;
+  border-radius: 3px !important;
+  background: #101812 !important;
+  color: #39ed80 !important;
+  font-family: "Segoe UI", Arial, sans-serif !important;
+  font-size: 8px !important;
+  font-weight: 700 !important;
+  line-height: 10px !important;
+  white-space: nowrap !important;
+}
+
+.card-financeiro > .financeiro-agenda-hoje-wrap .compromisso-evento-dado > strong {
+  display: block !important;
+  min-width: 0 !important;
+  padding: 0 1px !important;
+  border: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  color: #e7f1e9 !important;
+  font-family: "Segoe UI", Arial, sans-serif !important;
+  font-size: 9px !important;
+  font-weight: 700 !important;
+  line-height: 1.15 !important;
+  text-align: center !important;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+  white-space: nowrap !important;
+}
+
+/* O campo compacto segue o exemplo enviado: Local, Data e Horário. */
+.card-financeiro > .financeiro-agenda-hoje-wrap .compromisso-evento-anotacoes {
+  display: none !important;
+}
+
+@media (max-width: 700px) {
+  .card-financeiro > .financeiro-agenda-hoje-wrap {
+    border-radius: 13px !important;
+    overflow: hidden !important;
+  }
+
+  .card-financeiro > .financeiro-agenda-hoje-wrap > #agenda-financeiro-hoje {
+    position: relative !important;
+    top: auto !important;
+    min-height: 0 !important;
+  }
+}
+
+/* ID: DARK-214 | REF: PANEL.FINANCIAL.TODAY_AGENDA | ÂNCORA DA BARRA */
+
+#agenda-financeiro-hoje.compromisso-agenda-financeiro {
+    position: relative !important;
+}
+
+/* ID: DARK-215 | REF: PANEL.FINANCIAL.TODAY_AGENDA | FUNDO TRANSPARENTE */
+
+#container-agenda-financeiro-hoje,
+#container-agenda-financeiro-hoje > #agenda-financeiro-hoje {
+    background: transparent !important;
+    background-color: transparent !important;
+
+    border: none !important;
+    box-shadow: none !important;
+}
+
+/* ID: DARK-216 | REF: PANEL.FINANCIAL.TODAY_AGENDA | DESLOCAMENTO */
+
+#container-agenda-financeiro-hoje {
+    transform: translateX(10px) !important;
+}
