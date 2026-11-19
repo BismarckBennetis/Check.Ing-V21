@@ -484,3 +484,103 @@ body .menu-principal > .botao-menu:nth-child(n+4) {
         animation: none;
     }
 }
+
+/* ==========================================================
+   ID: MOB-036
+   REF: APP.SIDEBAR.ENTRANCE
+   FUNÇÃO: ANIMAÇÃO DE ABERTURA DO PAINEL LATERAL
+========================================================== */
+
+@media (max-width: 652px) {
+
+    .painel-esquerdo.painel-abrindo {
+        animation: mob036-painel-entrada 260ms
+            cubic-bezier(0.22, 0.8, 0.24, 1) both;
+
+        transform-origin: top center;
+    }
+
+    @keyframes mob036-painel-entrada {
+        from {
+            opacity: 0;
+            transform: translateY(-14px) scale(0.985);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(0) scale(1);
+        }
+    }
+}
+
+/* Respeita a preferência do usuário por menos animações */
+@media (max-width: 652px) and (prefers-reduced-motion: reduce) {
+
+    .painel-esquerdo.painel-abrindo {
+        animation: none;
+    }
+}
+
+/* ==========================================================
+   ID: MOB-037
+   REF: APP.LAYOUT.MOBILE.ORDER
+   FUNÇÃO: POSICIONAR OS CALENDÁRIOS ABAIXO DA NAVEGAÇÃO
+   ESCOPO: SOMENTE MOBILE
+========================================================== */
+
+@media (max-width: 652px) {
+
+    /* 1º — Calendários */
+    .conteudo-principal > .painel-calendarios {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    /* 2º — Painel lateral */
+    .conteudo-principal > .painel-esquerdo {
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    /* 3º — Conteúdo principal */
+    .conteudo-principal > .area-conteudo {
+        grid-column: 1;
+        grid-row: 3;
+    }
+
+}
+
+/* ==========================================================
+   ID: MOB-038
+   REF: PANEL.CALENDAR.SPACING
+   FUNÇÃO: ESPAÇAMENTO UNIFORME ENTRE OS DIAS
+   ESCOPO: SOMENTE MOBILE
+========================================================== */
+
+@media (max-width: 652px) {
+
+    .painel-calendarios .calendario-dias {
+        column-gap: 6px;
+        row-gap: 6px;
+        grid-template-rows: repeat(6, auto);
+    }
+
+    .painel-calendarios .calendario-dias .calendario-dia {
+        min-height: 0;
+    }
+
+}
+
+/* ==========================================================
+   ID: MOB-039
+   REF: PANEL.CALENDAR.MOBILE
+   FUNÇÃO: EXIBIR SOMENTE O CALENDÁRIO ATUAL NO MOBILE
+========================================================== */
+
+@media (max-width: 652px) {
+
+    #calendario-proximo {
+        display: none;
+    }
+
+}

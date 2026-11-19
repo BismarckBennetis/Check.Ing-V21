@@ -573,21 +573,27 @@
   padding: 20px 23px;
 }
 
-/* =========================================
-  PAINEL DOS DOIS CALENDÁRIOS
-  Mantém os meses empilhados verticalmente.
-  O painel ocupa a terceira posição no layout.
-========================================= */
-/* ID: CSS-031 | REF: PANEL.CALENDAR | SELETOR: .painel-calendarios */
+/* ==================================================
+   ID: CSS-031
+   REF: PANEL.CALENDAR
+   FUNÇÃO: ORGANIZAÇÃO DOS DOIS CALENDÁRIOS
+   POSIÇÃO: ABAIXO DA NAVEGAÇÃO PRINCIPAL
+================================================== */
+
 .painel-calendarios {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-  width: 100%;
-  min-width: 0;
-  grid-column: 3;
-  grid-row: 1;
-  align-items: stretch;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 320px));
+
+    justify-content: center;
+    align-items: start;
+
+    gap: 16px;
+
+    width: 100%;
+    max-width: none;
+    min-width: 0;
+
+    margin: 0 auto;
 }
 
 /* =========================================
