@@ -528,7 +528,6 @@ body .menu-principal > .botao-menu:nth-child(n+4) {
     .painel-calendarios .calendario-dias .calendario-dia {
         min-height: 0;
     }
-
 }
 
 /* ==========================================================
@@ -541,6 +540,63 @@ body .menu-principal > .botao-menu:nth-child(n+4) {
 
     #calendario-proximo {
         display: none;
+    }
+}
+
+/* ==========================================================
+   ID: MOB-042
+   REF: PANEL.CALENDAR.WEEKDAY.FONT
+   FUNÇÃO: AUMENTAR A FONTE DOS DIAS DA SEMANA
+========================================================== */
+
+@media (max-width: 652px) {
+    .painel-calendarios .calendario-dias-semana,
+    .painel-calendarios .calendario-dias-semana > * {
+        font-size: 13px;
+    }
+}
+
+/* ==========================================================
+   ID: MOB-043
+   REF: PANEL.FINANCIAL.HEADER.MOBILE
+   FUNÇÃO: ALINHAR TÍTULO E BOTÕES NA MESMA LINHA
+   ESCOPO: SOMENTE MOBILE
+========================================================== */
+
+@media (max-width: 652px) {
+
+    .card-financeiro .financeiro-cabecalho {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) auto auto;
+        grid-template-areas:
+            "identificacao mes detalhes"
+            "progresso progresso progresso";
+
+        align-items: center;
+        column-gap: 6px;
+        row-gap: 8px;
+    }
+
+    .card-financeiro .financeiro-identificacao {
+        grid-area: identificacao;
+        min-width: 0;
+    }
+
+    .card-financeiro .financeiro-mes-card {
+        grid-area: mes;
+        justify-self: center;
+        width: 95px;
+    }
+
+    .card-financeiro .financeiro-cabecalho > .botao-detalhes {
+        grid-area: detalhes;
+        justify-self: end;
+        margin-left: 0;
+    }
+
+    .card-financeiro .financeiro-progresso {
+        grid-area: progresso;
+        width: 100%;
     }
 
 }
