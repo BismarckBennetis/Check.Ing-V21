@@ -573,27 +573,24 @@
   padding: 20px 23px;
 }
 
-/* ==================================================
-   ID: CSS-031
-   REF: PANEL.CALENDAR
-   FUNÇÃO: ORGANIZAÇÃO DOS DOIS CALENDÁRIOS
-   POSIÇÃO: ABAIXO DA NAVEGAÇÃO PRINCIPAL
-================================================== */
+/* =========================================
+   PAINEL DOS DOIS CALENDÁRIOS
+   Mantém os meses empilhados verticalmente.
+========================================= */
 
+/* ID: CSS-031 | REF: PANEL.CALENDAR | SELETOR: .painel-calendarios */
 .painel-calendarios {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 320px));
-
-    justify-content: center;
-    align-items: start;
-
+    display: flex;
+    flex-direction: column;
     gap: 16px;
 
     width: 100%;
-    max-width: none;
     min-width: 0;
 
-    margin: 0 auto;
+    grid-column: 3;
+    grid-row: 1;
+
+    align-items: stretch;
 }
 
 /* =========================================
@@ -680,7 +677,7 @@
   column-gap: 3px;
   row-gap: 3px;
 
-   grid-template-rows: repeat(6, 29.7143px);
+  grid-template-rows: repeat(6, auto);
 
   align-content: start;
   min-height: 0;

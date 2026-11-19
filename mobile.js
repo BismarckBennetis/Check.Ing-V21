@@ -1,4 +1,3 @@
-
 /* ==========================================================
    CHECK.IN — MOBILE.JS
    ID: MOBJS-001 | REF: APP.SIDEBAR.TOGGLE
@@ -34,28 +33,32 @@
         if (!estaNoMobile()) {
             painelLateral.classList.remove("painel-abrindo");
             painelLateral.hidden = false;
-            painelLateral.classList.remove("painel-abrindo");
 
             botaoMenu.setAttribute("aria-expanded", "true");
             botaoMenu.setAttribute("aria-label", "Menu lateral");
+
             return;
         }
 
         var estavaFechado = painelLateral.hidden;
 
-painelLateral.hidden = !aberto;
+        painelLateral.hidden = !aberto;
 
-/* MOBJS-002 — Animação de entrada do painel */
-if (aberto && animarEntrada && estavaFechado) {
-    painelLateral.classList.remove("painel-abrindo");
+        /* MOBJS-002 — Animação de entrada do painel */
+        if (aberto && animarEntrada && estavaFechado) {
 
-    // Reinicia a animação para cada abertura
-    void painelLateral.offsetWidth;
+            painelLateral.classList.remove("painel-abrindo");
 
-    painelLateral.classList.add("painel-abrindo");
-} else if (!aberto) {
-    painelLateral.classList.remove("painel-abrindo");
-}
+            /* Reinicia a animação a cada abertura. */
+            void painelLateral.offsetWidth;
+
+            painelLateral.classList.add("painel-abrindo");
+
+        } else if (!aberto) {
+
+            painelLateral.classList.remove("painel-abrindo");
+
+        }
 
         botaoMenu.setAttribute(
             "aria-expanded",
@@ -68,15 +71,16 @@ if (aberto && animarEntrada && estavaFechado) {
         );
     }
 
-    /* Estado inicial: preserva o comportamento atual. */
+    /* Estado inicial. */
     atualizarEstado(!painelLateral.hidden, false);
 
-    /* Botão Menu */
+    /* Botão Menu. */
     botaoMenu.addEventListener("click", function () {
 
         if (!estaNoMobile()) return;
 
         atualizarEstado(painelLateral.hidden, true);
+
     });
 
     /* Clique fora recolhe o painel. */
@@ -101,7 +105,9 @@ if (aberto && animarEntrada && estavaFechado) {
         if (!estaNoMobile() || painelLateral.hidden) return;
 
         if (evento.key === "Escape" || evento.key === "Esc") {
+
             atualizarEstado(false, false);
+
             botaoMenu.focus();
         }
 
@@ -115,3 +121,4 @@ if (aberto && animarEntrada && estavaFechado) {
     }, false);
 
 })();
+
