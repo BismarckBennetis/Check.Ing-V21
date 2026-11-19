@@ -1532,9 +1532,10 @@
   background-color: #f5ecec;
   font-family: "Segoe UI", Arial, sans-serif;
   box-sizing: border-box;
-  width: 90%;
+  width: calc(90% - 150px);
   align-self: center;
   margin-top: 4px;
+  left: -110px;
 }
 
 /* ID: CSS-102 | REF: PANEL.FINANCIAL.BILLS_DUE | SELETOR: .financeiro-vencidas-titulo */
@@ -1719,12 +1720,6 @@
   object-fit: contain;
 }
 
-/* ID: CSS-116 | REF: PANEL.FINANCIAL.RECEIPTS | SELETOR: .botao-comprovantes:hover */
-.botao-comprovantes:hover {
-  filter: brightness(1.08);
-}
-
-
 /* PADRONIZAÇÃO DOS 6 ESPAÇOS DO PAINEL FINANCEIRO */
 
 /* ID: CSS-117 | REF: PANEL.FINANCIAL.PRIORITY | SELETOR: .financeiro-indicador-pago, .financeiro-indicador-prioritaria, .financeiro-indicador-atrasadas, .financeiro-indicador-valor-atrasado, .botao-comprovantes */
@@ -1902,8 +1897,8 @@ Conta Prioritária, Contas Atrasadas e Valor Atrasado */
   grid-column: 1;
   grid-row: 1;
   display: block;
-  width: 26px;
-  height: 30px;
+  width: 22px;
+  height: 25px;
   object-fit: contain;
 }
 
@@ -2967,7 +2962,7 @@ gap: 7px;
   align-items: center;
   column-gap: 7px;
 
-  width: 100%;
+  width: calc(100% - 30px);
   height: 44px;
   min-height: 44px;
   padding: 3px 10px;
@@ -2978,10 +2973,10 @@ gap: 7px;
   color: #ffffff;
   font-family: "Segoe UI", Arial, sans-serif;
   font-size: 20px !important;
-  font-weight: 700;
-  font-weight: var(--peso-conteudo-card);
+  font-weight: 600;
   cursor: pointer;
 
+  transform: translateX(-190px);
   grid-column: span 4;
   position: relative;
 }
@@ -2998,8 +2993,10 @@ gap: 7px;
 .botao-comprovantes > span:not(.comprovantes-reflexo) {
   grid-column: 3;
   grid-row: 1;
+  font-size: 18px;
   text-align: center;
   white-space: nowrap;
+  transform: translateX(-14px);
 }
 
 /* SETA BRANCA À DIREITA */
@@ -3083,7 +3080,7 @@ gap: 7px;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100%;
+  width: calc(100% - 42px);
   min-width: 0;
   height: 38px;
   min-height: 38px;
@@ -3154,8 +3151,8 @@ gap: 7px;
 .card-financeiro .financeiro-renda-icone svg {
   display: block;
   flex: none;
-  width: 25px;
-  height: 252px;
+  width: 21px;
+  height: 21px;
   margin: 0;
   transform: none;
 }
@@ -3174,15 +3171,14 @@ gap: 7px;
   padding: 0;
 
   font-family: "Segoe UI", Arial, sans-serif;
-  font-size: 19px;
-  font-size: var(--fonte-conteudo-card);
+  font-size: 18px;
   font-weight: 500;
   line-height: 1.1;
 
   text-align: center;
   white-space: nowrap;
   
-  transform: translateY(-50%);
+  transform: translate(16px, calc(-50% + 3px));
   box-sizing: border-box;
 }
 
@@ -3256,13 +3252,14 @@ gap: 7px;
   position: relative;
   isolation: isolate;
 
-  width: calc(100% + 80px);
+  width: calc(100% - 30px);
   justify-self: center;
 
   height: 38px;
   min-height: 38px;
   box-sizing: border-box;
 
+  transform: translateX(-205px);
   border: 1px solid transparent;
   border-radius: 12px;
 }
@@ -3389,6 +3386,8 @@ justify-content: center;
   isolation: isolate;
   padding: 0 4px;
 
+  width: calc(100% - 45px);
+  justify-self: center;
   height: 38px !important;
   min-height: 38px !important;
 
@@ -3396,6 +3395,7 @@ justify-content: center;
   border-radius: 12px;
 
   box-sizing: border-box;
+  transform: translateX(-115px);
 }
 
 /* Designer diagonal abaulado à direita */
@@ -3491,7 +3491,8 @@ justify-content: center;
 .financeiro-indicador-valor strong {
   position: relative;
   z-index: 1;
-  transform: translateY(3px);
+  transform: translate(12px, 6px);
+  font-size: 18px;
 }
 
 /* Rótulo acima do designer */
@@ -3553,8 +3554,8 @@ justify-content: center;
 .pago-mes-icone svg {
   color: #e50914;
   display: block;
-  width: 30px;
-  height: 35px;
+  width: 24px;
+  height: 28px;
   flex: none;
 }
 
@@ -3566,6 +3567,8 @@ justify-content: center;
 .card-financeiro .financeiro-atrasadas-designer {
   position: relative;
   isolation: isolate;
+
+  width: calc(100% - 42px);
 
   height: 38px !important;
   min-height: 38px !important;
@@ -3797,8 +3800,12 @@ svg g {
   position: relative;
   isolation: isolate;
 
+  width: calc(100% - 45px);
+  justify-self: center; 
+
   border: 1px solid transparent;
   border-radius: 12px;
+  transform: translateX(-115px);
 }
 
 /* Título Valor Atrasado — contorno vermelho */
@@ -3824,6 +3831,7 @@ svg g {
 .financeiro-indicador-valor strong {
   position: relative;
   z-index: 1;
+  transform: translateX(9px);
 }
 
 /* Mantém o ícone e o texto acima do reflexo */
@@ -4723,29 +4731,6 @@ svg g {
     filter .2s ease;
 }
 
-/* ID: CSS-294 | REF: PANEL.FINANCIAL.RECEIPTS | SELETOR: .card-financeiro .botao-comprovantes:hover */
-.card-financeiro .botao-comprovantes:hover {
-  transform: translateY(-2px);
-
-  filter: brightness(1.07);
-
-  box-shadow:
-    inset 2px 2px 4px rgba(255,255,255,.32),
-    inset -3px -4px 7px rgba(0,35,15,.30),
-    5px 8px 14px rgba(0,75,35,.30),
-    0 0 12px rgba(43,219,103,.28);
-}
-
-/* ID: CSS-295 | REF: PANEL.FINANCIAL.RECEIPTS | SELETOR: .card-financeiro .botao-comprovantes:active */
-.card-financeiro .botao-comprovantes:active {
-  transform: translateY(1px);
-
-  box-shadow:
-    inset 5px 5px 10px rgba(0,45,20,.35),
-    inset -3px -3px 7px rgba(110,255,160,.16),
-    0 2px 4px rgba(0,50,20,.18);
-}
-
 /* =========================================================
    CONTAS VENCIDAS — ÁREA EXTERNA
 ========================================================= */
@@ -4880,12 +4865,12 @@ svg g {
 /* ID: CSS-304 | REF: PANEL.FINANCIAL.BILLS_DUE | SELETOR: .financeiro-vencidas .financeiro-conta-excluir:hover */
 .financeiro-vencidas .financeiro-conta-excluir:hover {
   background: transparent;
-  transform: translateY(-1px);
+  transform: translate(-8px, -2px);
 }
 
 /* ID: CSS-305 | REF: PANEL.FINANCIAL.BILLS_DUE | SELETOR: .financeiro-vencidas .financeiro-conta-excluir:active */
 .financeiro-vencidas .financeiro-conta-excluir:active {
-  transform: translateY(1px);
+  transform: translate(8px, 2px);
 
   box-shadow: none;
 }
@@ -6878,8 +6863,8 @@ box-sizing: border-box;
     }
 
     .card-financeiro .financeiro-lista-vencidas > .financeiro-conta {
-        width: 720px;
-        min-width: 720px;
+        width: 600px;
+        min-width: 600px;
         max-width: none;
     }
 
