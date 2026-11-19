@@ -494,6 +494,11 @@ body .menu-principal > .botao-menu:nth-child(n+4) {
 
 @media (max-width: 652px) {
 
+    /* MOB-037-A — Referência de posicionamento do painel */
+    .conteudo-principal {
+        position: relative;
+    }
+
     /* 1º — Calendários */
     .conteudo-principal > .painel-calendarios {
         grid-column: 1;
