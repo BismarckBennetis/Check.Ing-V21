@@ -598,5 +598,41 @@ body .menu-principal > .botao-menu:nth-child(n+4) {
         grid-area: progresso;
         width: 100%;
     }
+}
+
+/* ==========================================================
+   ID: MOB-044
+   REF: PANEL.FINANCIAL.PRIORITY.ORDER
+   FUNÇÃO: CONTA PRIORITÁRIA ANTES DE RENDA MENSAL
+   ESCOPO: SOMENTE MOBILE
+========================================================== */
+
+@media (max-width: 652px) {
+
+    .card-financeiro .financeiro-indicador-prioritaria {
+        order: -1;
+    }
+}
+
+/* ==========================================================
+   ID: MOB-045
+   REF: PANEL.FINANCIAL.HEADER.HIERARCHY
+   FUNÇÃO: REDUZIR DESTAQUE DOS CONTROLES DO CABEÇALHO
+   ESCOPO: SOMENTE MOBILE
+========================================================== */
+
+@media (max-width: 652px) {
+
+    /* Seletor do mês */
+    .card-financeiro .financeiro-cabecalho > .financeiro-mes-card {
+        font-size: 12px;
+        height: 18px;
+    }
+
+    /* Botão Ver Detalhes */
+    .card-financeiro .financeiro-cabecalho > .botao-detalhes {
+        font-size: 10px;
+        padding: 4px 19px 4px 8px;
+    }
 
 }
