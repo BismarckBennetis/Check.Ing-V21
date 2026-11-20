@@ -8089,3 +8089,104 @@ letter-spacing: -0.3px !important;
 #container-agenda-financeiro-hoje {
     transform: translateX(10px) !important;
 }
+
+/* ID: DARK-217 | CABEÇALHO FINANCEIRO — LARGURA VISUAL */
+
+.card-financeiro > .financeiro-agenda-hoje-wrap
+#agenda-financeiro-hoje > .compromisso-agenda-cabecalho {
+    position: relative !important;
+    width: 100% !important;
+    left: auto !important;
+    right: auto !important;
+    transform: none !important;
+
+    background: transparent !important;
+    border-color: transparent !important;
+    box-shadow: none !important;
+
+    isolation: isolate;
+}
+
+.card-financeiro > .financeiro-agenda-hoje-wrap
+#agenda-financeiro-hoje > .compromisso-agenda-cabecalho::before {
+    content: "";
+    position: absolute;
+
+    top: 0;
+    bottom: 0;
+    left: 50%;
+
+    width: 80%;
+    transform: translateX(-50%);
+
+    border: 1px solid rgba(58, 170, 99, .25);
+    border-radius: 7px;
+
+    background: linear-gradient(
+        145deg,
+        rgba(15, 29, 20, .68),
+        rgba(6, 12, 8, .72)
+    );
+
+    box-shadow:
+        -2px -2px 5px rgba(220, 255, 232, .045),
+        2px 2px 5px rgba(0, 0, 0, .38);
+
+    z-index: -1;
+    pointer-events: none;
+}
+
+/* ID: DARK-218 | SETAS DENTRO DO CAMPO CONTAS */
+
+#container-agenda-financeiro-hoje
+.compromisso-agenda-seta:first-child {
+    left: calc(11% + 3px) !important;
+}
+
+#container-agenda-financeiro-hoje
+.compromisso-agenda-seta:last-child {
+    right: calc(11% + 3px) !important;
+}
+
+/* ID: DARK-219 | SETAS — AJUSTE VERTICAL */
+
+#container-agenda-financeiro-hoje .compromisso-agenda-seta {
+    top: calc(50% - 3px) !important;
+}
+
+/* ID: DARK-220 | ÍCONE FINANCEIRO — AJUSTE HORIZONTAL */
+
+#container-agenda-financeiro-hoje .compromisso-calendario-icone {
+    transform: translateX(-15px) !important;
+}
+
+/* ID: DARK-221 | TÍTULO CONTAS — AJUSTE HORIZONTAL */
+
+#container-agenda-financeiro-hoje .compromisso-agenda-cabecalho h3 {
+    transform: translateX(-4px) !important;
+}
+
+/* ID: DARK-222 | TÍTULO CONTAS — PESO DA FONTE */
+
+#container-agenda-financeiro-hoje
+.compromisso-agenda-cabecalho h3,
+#container-agenda-financeiro-hoje
+.compromisso-agenda-cabecalho h3 strong {
+    font-weight: 600 !important;
+}
+
+/* ID: DARK-223 | ÍCONES FINANCEIROS — REDUÇÃO DE TAMANHO */
+
+#lista-financeiro-hoje
+.compromisso-evento-cabecalho > svg {
+    width: 23px !important;
+    height: 23px !important;
+    flex: 0 0 23px !important;
+    transform: translate(-5px, -3px) !important;
+}
+
+/* ID: DARK-224 | ALTURA DOS 3 CARDS FINANCEIROS */
+#lista-financeiro-hoje .compromisso-evento {
+    min-height: 72px !important;
+    box-sizing: border-box !important;
+}
