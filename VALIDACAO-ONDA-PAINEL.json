@@ -1,5 +1,5 @@
 {
-  "versao": "V21.1",
+  "versao": "V21.2",
   "arquivo": "tema-dark.css",
   "seletor": ".painel-esquerdo::after",
   "viewBox": "0 0 900 1600",
@@ -43,5 +43,6 @@
     "arquivo": "painel-esquerdo-onda-v21.1-preview.png",
     "metodo": "renderização auxiliar do SVG atualizado",
     "nao_equivale_a": "homologação visual no navegador ou no dispositivo físico"
-  }
+  },
+  "status": "preservada sem alteração na refatoração de cascata V21.2"
 }

@@ -1,5 +1,9 @@
 @charset "UTF-8";
 
+/* Ordem explícita da cascata: estrutura < tema < responsividade. */
+@layer base, theme, responsive;
+@layer base{
+
 /* =========================
   CONFIGURAÇÕES GERAIS
 ========================= */
@@ -30,9 +34,6 @@
 
 /* O atributo HTML hidden deve ocultar o elemento em qualquer viewport.
    Exceções funcionais específicas podem redefinir display com maior especificidade. */
-[hidden] {
-  display: none !important;
-}
 
   /* ID: CSS-003 | REF: APP.BASE | SELETOR: body */
   body {
@@ -988,7 +989,7 @@
 /* Ícones em branco durante o hover do menu lateral */
 /* ID: CSS-055 | REF: APP.SIDEBAR | SELETOR: .botao-menu-lateral:hover > .icone-menu-lateral */
 .botao-menu-lateral:hover > .icone-menu-lateral {
-  color: #ffffff !important;
+  color: #ffffff;
 }
 
 /* Ícone SVG branco durante o hover do menu lateral */
@@ -1339,7 +1340,7 @@
 .card-estudo,
 #painel-compromisso,
 #painel-lembrete {
-  font-family: "Segoe UI", Arial, sans-serif !important;
+  font-family: "Segoe UI", Arial, sans-serif;
 }
 
 /* CSS-353 | REF: PANEL.COMMITMENT.EVENT.TITLE | ESTRUTURA DO TÍTULO INTEGRAL */
@@ -1352,7 +1353,7 @@
 
 /* ID: CSS-082 | REF: PANEL.FINANCIAL | SELETOR: .card-financeiro .titulo-card */
 .card-financeiro .titulo-card {
-  font-family: "Segoe UI", Arial, sans-serif !important;
+  font-family: "Segoe UI", Arial, sans-serif;
   font-size: 22px;
   font-weight: 700;
 }
@@ -1904,7 +1905,7 @@ Conta Prioritária, Contas Atrasadas e Valor Atrasado */
 
 /* ID: CSS-135 | REF: PANEL.FINANCIAL | SELETOR: .financeiro-mes */
 .financeiro-mes {
-  color: #dcebe1 !important;
+  color: #dcebe1;
   text-transform: uppercase;
 }
 
@@ -2173,13 +2174,13 @@ height: 15px;
     #17271d 0%,
     #0d1711 55%,
     #111f16 100%
-  ) !important;
+  );
 
   box-shadow:
     inset 0 1px 0 rgba(255,255,255,.09),
     inset 0 -2px 5px rgba(0,0,0,.38),
     0 5px 13px rgba(0,0,0,.34),
-    0 0 10px rgba(35,190,95,.09) !important;
+    0 0 10px rgba(35,190,95,.09);
 
   box-sizing: border-box;
   width: calc(100% + 12px);
@@ -2195,7 +2196,7 @@ align-self: flex-start;
   gap: 5px;
   min-width: 0;
 
-  color: #c8ebd3 !important;
+  color: #c8ebd3;
   font-family: "Segoe UI", Arial, sans-serif;
   font-weight: 800;
   letter-spacing: .25px;
@@ -2217,7 +2218,7 @@ align-self: flex-start;
   border: 1px solid rgba(255,255,255,.28);
   border-radius: 50%;
 
-  color: #ffffff !important;
+  color: #ffffff;
   font-family: Arial, sans-serif;
   font-size: 14px;
   font-weight: 800;
@@ -2227,7 +2228,7 @@ align-self: flex-start;
   box-shadow:
     inset 0 1px 2px rgba(255,255,255,.20),
     inset 0 -2px 3px rgba(0,0,0,.28),
-    0 2px 4px rgba(0,0,0,.30) !important;
+    0 2px 4px rgba(0,0,0,.30);
 }
 
 /* DIA NEUTRO — GRAFITE METÁLICO */
@@ -2238,15 +2239,15 @@ align-self: flex-start;
     #718176 0%,
     #46564b 55%,
     #304036 100%
-  ) !important;
+  );
 
-  border-color: rgba(205,232,214,.34) !important;
+  border-color: rgba(205,232,214,.34);
 
   box-shadow:
     inset 0 1px 2px rgba(255,255,255,.26),
     inset 0 -2px 3px rgba(0,0,0,.34),
     -1px -1px 1px rgba(245,255,248,.08),
-    1px 2px 3px rgba(0,0,0,.42) !important;
+    1px 2px 3px rgba(0,0,0,.42);
 }
 
 /* DIA PENDENTE — ESCARLATE PREMIUM */
@@ -2257,16 +2258,16 @@ align-self: flex-start;
     #f16b74 0%,
     #bf3543 52%,
     #781d2a 100%
-  ) !important;
+  );
 
-  border-color: rgba(255,169,175,.58) !important;
+  border-color: rgba(255,169,175,.58);
 
   box-shadow:
     inset 0 1px 2px rgba(255,255,255,.28),
     inset 0 -2px 3px rgba(55,0,5,.36),
     -1px -1px 1px rgba(255,232,234,.08),
     1px 2px 3px rgba(0,0,0,.42),
-    0 1px 2px rgba(190,35,52,.13) !important;
+    0 1px 2px rgba(190,35,52,.13);
 }
 
 /* DIA CONCLUÍDO — ESMERALDA PREMIUM */
@@ -2277,16 +2278,16 @@ align-self: flex-start;
     #62efa0 0%,
     #1aa75c 52%,
     #086039 100%
-  ) !important;
+  );
 
-  border-color: rgba(163,255,193,.66) !important;
+  border-color: rgba(163,255,193,.66);
 
   box-shadow:
     inset 0 1px 2px rgba(255,255,255,.32),
     inset 0 -2px 3px rgba(0,45,20,.34),
     -1px -1px 1px rgba(235,255,240,.08),
     1px 2px 3px rgba(0,0,0,.42),
-    0 1px 2px rgba(24,190,94,.12) !important;
+    0 1px 2px rgba(24,190,94,.12);
 }
 
 /* CAMPOS DIAS DE ESTUDO E PENDÊNCIAS */
@@ -2499,8 +2500,8 @@ transform: translateX(-50%);
 .estudo-prioridade-icone {
   display: block;
 
-  width: 19px !important;
-  height: 19px !important;
+  width: 19px;
+  height: 19px;
   flex: 0 0 19px;
 
   box-sizing: border-box;
@@ -2934,23 +2935,23 @@ gap: 7px;
 
 .card-estudo .estudo-lista-atividades
 .estudo-atividade-card .estudo-atividade-pendencias {
-  border: 1px solid #e50914 !important;
-  border-color: #e50914 !important;
+  border: 1px solid #e50914;
+  border-color: #e50914;
   border-radius: 5px;
 }
 
 /* TÍTULO PENDÊNCIAS */
 .card-estudo .estudo-lista-atividades
 .estudo-atividade-card .estudo-atividade-pendencias > span {
-  color: #ff858c !important;
-  border-color: #e50914 !important;
-  background: #101812 !important;
+  color: #ff858c;
+  border-color: #e50914;
+  background: #101812;
 }
 
 /* VALOR DAS PENDÊNCIAS */
 .card-estudo .estudo-lista-atividades
 .estudo-atividade-card .estudo-atividade-pendencias > strong {
-  color: #ff858c !important;
+  color: #ff858c;
 }
 
 /* BARRAS NATIVAS SUBSTITUÍDAS PELOS TRILHOS VERTICAIS INDEPENDENTES. */
@@ -2972,7 +2973,7 @@ gap: 7px;
 
   color: #ffffff;
   font-family: "Segoe UI", Arial, sans-serif;
-  font-size: 20px !important;
+  font-size: 20px;
   font-weight: 600;
   cursor: pointer;
 
@@ -2984,8 +2985,8 @@ gap: 7px;
 /* ID: CSS-190 | REF: PANEL.FINANCIAL.RECEIPTS | SELETOR: 
 /* DIVISOR VERTICAL — REMOVIDO */
 .botao-comprovantes::before {
-  content: none !important;
-  display: none !important;
+  content: none;
+  display: none;
 }
 
 /* TEXTO CENTRALIZADO — EXCLUI A DECORAÇÃO */
@@ -3002,8 +3003,8 @@ gap: 7px;
 /* SETA BRANCA À DIREITA */
 /* ID: CSS-192 | REF: PANEL.FINANCIAL.RECEIPTS | SELETOR: ./* SETA À DIREITA — REMOVIDA */
 .botao-comprovantes::after {
-  content: none !important;
-  display: none !important;
+  content: none;
+  display: none;
 }
 
 /* AJUSTE FINAL — REFLEXO 3D SUAVE */
@@ -3142,7 +3143,7 @@ gap: 7px;
   padding: 0;
   border: none;
   border-radius: 8px;
-  background: transparent !important;
+  background: transparent;
   color: #39d879;
   box-sizing: border-box;
   transform: translateY(-50%);
@@ -3356,7 +3357,7 @@ justify-content: center;
   border: none;
   border-radius: 7px;
 
- background: transparent !important;
+ background: transparent;
 
   transform: translateY(-50%);
 }
@@ -3388,8 +3389,8 @@ justify-content: center;
 
   width: calc(100% - 45px);
   justify-self: center;
-  height: 38px !important;
-  min-height: 38px !important;
+  height: 38px;
+  min-height: 38px;
 
   border: 1px solid transparent;
   border-radius: 12px;
@@ -3543,7 +3544,7 @@ justify-content: center;
   border: none;
   border-radius: 7px;
 
-  background: transparent !important;
+  background: transparent;
 
   transform: translateY(-50%);
 }
@@ -3570,8 +3571,8 @@ justify-content: center;
 
   width: calc(100% - 42px);
 
-  height: 38px !important;
-  min-height: 38px !important;
+  height: 38px;
+  min-height: 38px;
 
   border: 1px solid transparent;
   border-radius: 12px;
@@ -3716,9 +3717,9 @@ justify-content: center;
   height: 26px;
   padding: 0;
 
-  border: none !important;
+  border: none;
   border-radius: 7px;
-  background: transparent !important;
+  background: transparent;
   filter: drop-shadow(0 0 1px rgba(255, 255, 255, 0.253));
 
   font-size: 0;
@@ -3760,7 +3761,7 @@ justify-content: center;
 
   border: none;
   border-radius: 7px;
-  background: transparent !important;
+  background: transparent;
 
   color: #c9000b;
   box-sizing: border-box;
@@ -3787,7 +3788,7 @@ justify-content: center;
 .financeiro-indicador-valor-atrasado
 .financeiro-valor-atrasado-icone
 svg g {
-  stroke-width: 1px !important;
+  stroke-width: 1px;
 }
 
 /* BORDA DEGRADÊ — VALOR ATRASADO */
@@ -4262,7 +4263,7 @@ svg g {
 /* ID: CSS-267 | REF: PANEL.FINANCIAL | SELETOR: .card-financeiro .financeiro-identificacao .titulo-card */
 .card-financeiro .financeiro-identificacao .titulo-card {
   letter-spacing: 0.3px;
-  text-shadow: none !important;
+  text-shadow: none;
   flex: 0 0 auto;
   white-space: nowrap;
   margin: 0;
@@ -4516,7 +4517,7 @@ svg g {
     hue-rotate(91deg)
     brightness(98%)
     contrast(91%)
-    drop-shadow(0 0 2px rgba(57, 216, 121, .30)) !important;
+    drop-shadow(0 0 2px rgba(57, 216, 121, .30));
 }
 
 /* =========================================================
@@ -4589,7 +4590,7 @@ svg g {
 
 /* ID: CSS-286 | REF: PANEL.FINANCIAL.OVERDUE | SELETOR: .financeiro-alerta-icone */
 .financeiro-alerta-icone {
-  box-shadow: none !important;
+  box-shadow: none;
 }
 
 
@@ -4643,7 +4644,7 @@ svg g {
 
 /* ID: CSS-291 | REF: PANEL.FINANCIAL.OVERDUE_AMOUNT | SELETOR: .financeiro-valor-atrasado-icone */
 .financeiro-valor-atrasado-icone {
-  box-shadow: none !important;
+  box-shadow: none;
 }
 
 /* =========================================================
@@ -4998,17 +4999,17 @@ svg g {
 
   border-radius: 12px;
   
-  border: 1px solid rgba(198, 70, 80, .52) !important;
-  color: #ff9ba2 !important;
+  border: 1px solid rgba(198, 70, 80, .52);
+  color: #ff9ba2;
   background: linear-gradient(
     145deg,
     #241417,
     #160e10
-  ) !important;
+  );
   
   box-shadow:
     inset 0 1px 0 rgba(255, 255, 255, .035),
-    0 5px 13px rgba(0, 0, 0, .28) !important;
+    0 5px 13px rgba(0, 0, 0, .28);
 }
 
 /* TOBOGÃ — MESMO EFEITO DE CSS-0229 */
@@ -5060,9 +5061,9 @@ svg g {
   position: absolute;
   z-index: 2;
 
-  background: #241316 !important;
-  border: 1px solid rgba(224, 87, 96, .58) !important;
-  color: #ff9ba2 !important;
+  background: #241316;
+  border: 1px solid rgba(224, 87, 96, .58);
+  color: #ff9ba2;
 
   box-shadow: 0 2px 8px rgba(0, 0, 0, .3);
 }
@@ -5087,7 +5088,7 @@ svg g {
 
 /* DISTRIBUIÇÃO CENTRALIZADA DOS SETE DIAS */
 .card-estudo .estudo-area-esquerda .estudo-dias-lista {
-  display: flex !important;
+  display: flex;
   flex: 0 1 auto;
   align-items: center;
   justify-content: center;
@@ -5096,8 +5097,8 @@ svg g {
   gap: 5px;
 
   font-family: "Segoe UI", Arial, sans-serif;
-  font-size: 9px !important;
-  font-weight: 400 !important;
+  font-size: 9px;
+  font-weight: 400;
   line-height: 1.1;
   letter-spacing: 0;
   text-align: center;
@@ -5111,7 +5112,7 @@ svg g {
   width: auto;
   min-width: 0;
   font-size: 9.5px;
-  font-weight: 400 !important;
+  font-weight: 400;
   text-align: center;
   white-space: nowrap;
 }
@@ -5120,7 +5121,7 @@ svg g {
 .card-estudo .estudo-area-esquerda .estudo-dias-lista > span:nth-child(3),
 .card-estudo .estudo-area-esquerda .estudo-dias-lista > span:nth-child(4),
 .card-estudo .estudo-area-esquerda .estudo-dias-lista > span:nth-child(5) {
-  color: #39d879 !important;
+  color: #39d879;
 }
 
 /* ID: CSS-311 | REF: PANEL.STUDY.PENDING | ALINHAMENTO HORIZONTAL */
@@ -5132,7 +5133,7 @@ svg g {
 
 /* DISTRIBUIÇÃO CENTRALIZADA DOS SETE DIAS */
 .card-estudo .estudo-area-esquerda .estudo-pendencias-lista {
-  display: flex !important;
+  display: flex;
   flex: 0 1 auto;
   align-items: center;
   justify-content: center;
@@ -5141,13 +5142,13 @@ svg g {
   gap: 5px;
 
   font-family: "Segoe UI", Arial, sans-serif;
-  font-size: 9px !important;
-  font-weight: 400 !important;
+  font-size: 9px;
+  font-weight: 400;
   line-height: 1.1;
   letter-spacing: 0;
   text-align: center;
   white-space: nowrap;
-  color: #ffffff !important;
+  color: #ffffff;
   transform: translateY(3px);
 }
 
@@ -5160,8 +5161,8 @@ svg g {
 
   font-family: "Segoe UI", Arial, sans-serif;
   font-size: 9.5px;
-  font-weight: 400 !important;
-  color: #ffffff !important;
+  font-weight: 400;
+  color: #ffffff;
   text-align: center;
   white-space: nowrap;
 }
@@ -5170,8 +5171,8 @@ svg g {
 .card-estudo .estudo-area-esquerda .estudo-pendencias-lista > span:nth-child(3),
 .card-estudo .estudo-area-esquerda .estudo-pendencias-lista > span:nth-child(4),
 .card-estudo .estudo-area-esquerda .estudo-pendencias-lista > span:nth-child(5) {
-  color: #ff858c !important;
-  font-weight: 700 !important;
+  color: #ff858c;
+  font-weight: 700;
 }
 
 /* ID: CSS-312 | REF: PANEL.STUDY.CLOCKS | ALINHAMENTO DOS RELÓGIOS */
@@ -5204,8 +5205,8 @@ svg g {
 .card-estudo .estudo-area-central .estudo-horas-diarias > .estudo-campo-icone svg {
   display: block;
   flex: 0 0 22px;
-  width: 22px !important;
-  height: 22px !important;
+  width: 22px;
+  height: 22px;
   margin: 0;
   padding: 0;
   transform: translateY(3px);
@@ -5447,13 +5448,13 @@ svg g {
   width: max-content;
   padding: 0 3px;
 
-  background-color: #101812 !important;
-  background-image: none !important;
+  background-color: #101812;
+  background-image: none;
 
   border: 1px solid #39c914;
   border-radius: 3px;
 
-  color: #39d879 !important;
+  color: #39d879;
   font-family: "Segoe UI", Arial, sans-serif;
   font-size: 9px;
   font-weight: 700;
@@ -5658,9 +5659,9 @@ svg g {
 .rotina-card-pendencias
 .estudo-campo-rotulo {
   z-index: 2;
-  background: #241316 !important;
-  border: 1px solid rgba(224, 87, 96, .58) !important;
-  color: #ff9ba2 !important;
+  background: #241316;
+  border: 1px solid rgba(224, 87, 96, .58);
+  color: #ff9ba2;
   box-shadow: 0 2px 8px rgba(0, 0, 0, .3);
 }
 
@@ -5716,7 +5717,7 @@ svg g {
 
   color: #172333;
   font-family: "Segoe UI", Arial, sans-serif;
-  font-size: 8px !important;
+  font-size: 8px;
   font-weight: 700;
   white-space: nowrap;
 }
@@ -5821,9 +5822,9 @@ left: 42px;
       #075b21 35%,
       #0b7d2b 68%,
       #1ba247 100%
-    ) !important;
+    );
 
-  border: 1px solid rgba(80,220,115,.65) !important;
+  border: 1px solid rgba(80,220,115,.65);
   border-radius: 12px;
   color: #ffffff;
 
@@ -5833,7 +5834,7 @@ left: 42px;
     inset 0 -4px 5px rgba(0,25,5,.55),
     inset 1px 0 3px rgba(255,255,255,.12),
     inset -1px 0 3px rgba(0,20,5,.25),
-    0 5px 8px rgba(0,0,0,.32) !important;
+    0 5px 8px rgba(0,0,0,.32);
 
   box-sizing: border-box;
   isolation: isolate;
@@ -5854,7 +5855,7 @@ left: 42px;
     inset 2px 2px 4px rgba(255,255,255,.32),
     inset -3px -4px 7px rgba(0,35,15,.30),
     5px 8px 14px rgba(0,75,35,.30),
-    0 0 12px rgba(43,219,103,.28) !important;
+    0 0 12px rgba(43,219,103,.28);
 }
 
 /* CLIQUE */
@@ -5864,7 +5865,7 @@ left: 42px;
   box-shadow:
     inset 5px 5px 10px rgba(0,45,20,.35),
     inset -3px -3px 7px rgba(110,255,160,.16),
-    0 2px 4px rgba(0,50,20,.18) !important;
+    0 2px 4px rgba(0,50,20,.18);
 }
 
 .card-painel-novo .rotina-periodo-icone {
@@ -5881,8 +5882,8 @@ left: 42px;
 .card-painel-novo
 .rotina-periodo-manha
 .rotina-periodo-icone::before {
-  font-size: 30px !important;
-  line-height: 1 !important;
+  font-size: 30px;
+  line-height: 1;
 }
 
 .card-painel-novo .rotina-periodo-tarde .rotina-periodo-icone::before {
@@ -5893,8 +5894,8 @@ left: 42px;
 .card-painel-novo
 .rotina-periodo-tarde
 .rotina-periodo-icone::before {
-  font-size: 30px !important;
-  line-height: 1 !important;
+  font-size: 30px;
+  line-height: 1;
 }
 
 .card-painel-novo .rotina-periodo-noite .rotina-periodo-icone::before {
@@ -5905,8 +5906,8 @@ left: 42px;
 .card-painel-novo
 .rotina-periodo-noite
 .rotina-periodo-icone::before {
-  font-size: 30px !important;
-  line-height: 1 !important;
+  font-size: 30px;
+  line-height: 1;
 }
 
 .card-painel-novo .rotina-periodo-card h3 {
@@ -5958,7 +5959,7 @@ box-sizing: border-box;
 
 /* Remove o ícone antigo */
 .card-painel-novo .rotina-agenda-icone::before {
-  content: none !important;
+  content: none;
 }
 
 .card-painel-novo .rotina-agenda-cabecalho h3 {
@@ -5998,7 +5999,7 @@ box-sizing: border-box;
 /* ID: CSS-327 | REF: PANEL.ROUTINE.TYPOGRAPHY | PADRONIZAÇÃO TIPOGRÁFICA */
 
 .card-painel-novo {
-  font-family: "Segoe UI", Arial, sans-serif !important;
+  font-family: "Segoe UI", Arial, sans-serif;
 }
 
 
@@ -6091,17 +6092,17 @@ box-sizing: border-box;
 /* ID: CSS-333 | REF: PANEL.ROUTINE.HEADER.ICON | DIMENSÕES E POSICIONAMENTO */
 
 .card-central.card-painel-novo .rotina-identificacao > .painel-icone-neumo {
-  display: inline-flex !important;
-  flex: 0 0 34px !important;
-  width: 34px !important;
-  height: 34px !important;
+  display: inline-flex;
+  flex: 0 0 34px;
+  width: 34px;
+  height: 34px;
 
-  align-items: center !important;
-  justify-content: center !important;
+  align-items: center;
+  justify-content: center;
 
-  border-radius: 50% !important;
-  transform: none !important;
-  box-sizing: border-box !important;
+  border-radius: 50%;
+  transform: none;
+  box-sizing: border-box;
 }
 
 /* ID: CSS-334 | REF: PANEL.ROUTINE.HEADER | ALINHAMENTO COM ESTUDO */
@@ -6133,8 +6134,8 @@ box-sizing: border-box;
 
 .card-central.card-painel-novo .rotina-identificacao > .painel-icone-neumo svg {
     display: block;
-    width: 24px !important;
-    height: 24px !important;
+    width: 24px;
+    height: 24px;
 
     filter:
         brightness(1.12)
@@ -6167,9 +6168,9 @@ box-sizing: border-box;
             rgba(133, 220, 157, .62) 24%,
             rgba(25, 91, 52, .94) 62%,
             rgba(151, 222, 169, .58) 100%
-        ) border-box !important;
+        ) border-box;
 
-    border: 1px solid transparent !important;
+    border: 1px solid transparent;
 
     box-shadow:
         0 3px 6px rgba(0, 0, 0, .44),
@@ -6178,9 +6179,9 @@ box-sizing: border-box;
         inset 1px 1px 3px rgba(225, 255, 232, .30),
         inset 0 3px 5px rgba(133, 220, 157, .20),
         inset 0 -2px 4px rgba(0, 18, 9, .48),
-        inset -1px 0 2px rgba(0, 18, 9, .20) !important;
+        inset -1px 0 2px rgba(0, 18, 9, .20);
 
-    color: #ffffff !important;
+    color: #ffffff;
 }
 
 
@@ -6206,7 +6207,7 @@ box-sizing: border-box;
   height: 12px;
   overflow: hidden;
   border-radius: 999px;
-  background: #26342b !important;
+  background: #26342b;
   box-shadow: inset 0 2px 4px rgba(0, 0, 0, .42);
 }
 
@@ -6221,14 +6222,14 @@ box-sizing: border-box;
     #08783b,
     #1ac967,
     #71ef9b
-  ) !important;
+  );
   box-shadow: 0 0 11px rgba(32, 206, 104, .28);
 }
 
 /* ID: CSS-341 | REF: PANEL.ROUTINE.HEADER.PROGRESS.VALUE | SELETOR: .rotina-progresso > strong */
 .card-central.card-painel-novo .rotina-progresso > strong {
   flex: 0 0 auto;
-  color: #dce9e0 !important;
+  color: #dce9e0;
   font-family: "Segoe UI", Arial, sans-serif;
   font-size: 13px;
   font-weight: 700;
@@ -6278,36 +6279,36 @@ box-sizing: border-box;
 /* TÍTULO SEMANAL — BORDA VERDE SUTIL */
 #card-rotina-semanal .rotina-card-cabecalho h3.estudo-campo-rotulo {
   font-weight: 600;
-  border: 1px solid rgba(126, 214, 103, .45) !important;
+  border: 1px solid rgba(126, 214, 103, .45);
   border-radius: 3px;
 }
 
 /* ID: CSS-345 | REF: PANEL.ROUTINE.WEEKLY.STATUS | CÍRCULOS REDUZIDOS E COLORIDOS */
 
 .card-central.card-painel-novo .rotina-dia-status {
-  display: flex !important;
-  align-items: center !important;
-  justify-content: center !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-  width: 22px !important;
-  height: 22px !important;
-  min-width: 20px !important;
+  width: 22px;
+  height: 22px;
+  min-width: 20px;
   box-sizing: border-box;
 
-  border: 1px solid rgba(255,255,255,.28) !important;
-  border-radius: 50% !important;
+  border: 1px solid rgba(255,255,255,.28);
+  border-radius: 50%;
 
-  color: #ffffff !important;
+  color: #ffffff;
   font-family: 'Sora', Arial, sans-serif;
-  font-size: 11px !important;
-  font-weight: 800 !important;
-  line-height: 1 !important;
+  font-size: 11px;
+  font-weight: 800;
+  line-height: 1;
   text-shadow: 0 1px 2px rgba(0,0,0,.45);
 
   box-shadow:
     inset 0 1px 1px rgba(255,255,255,.20),
     inset 0 -1px 2px rgba(0,0,0,.28),
-    0 1px 3px rgba(0,0,0,.30) !important;
+    0 1px 3px rgba(0,0,0,.30);
 }
 
 /* NEUTRO — CINZA */
@@ -6323,15 +6324,15 @@ box-sizing: border-box;
     #718176 0%,
     #46564b 55%,
     #304036 100%
-  ) !important;
+  );
 
-  border-color: rgba(205,232,214,.34) !important;
+  border-color: rgba(205,232,214,.34);
 
   box-shadow:
     inset 0 1px 2px rgba(255,255,255,.26),
     inset 0 -2px 3px rgba(0,0,0,.34),
     -1px -1px 1px rgba(245,255,248,.08),
-    1px 2px 3px rgba(0,0,0,.42) !important;
+    1px 2px 3px rgba(0,0,0,.42);
 }
 
 /* PENDENTE — ESCARLATE PREMIUM */
@@ -6342,7 +6343,7 @@ box-sizing: border-box;
     inset 0 -2px 3px rgba(55,0,5,.36),
     -1px -1px 1px rgba(255,232,234,.08),
     1px 2px 3px rgba(0,0,0,.42),
-    0 1px 2px rgba(190,35,52,.13) !important;
+    0 1px 2px rgba(190,35,52,.13);
 }
 
 /* CONCLUÍDO — ESMERALDA PREMIUM */
@@ -6353,7 +6354,7 @@ box-sizing: border-box;
     inset 0 -2px 3px rgba(0,45,20,.34),
     -1px -1px 1px rgba(235,255,240,.08),
     1px 2px 3px rgba(0,0,0,.42),
-    0 1px 2px rgba(24,190,94,.12) !important;
+    0 1px 2px rgba(24,190,94,.12);
 }
 
 /* PENDENTE — ESCARLATE */
@@ -6363,9 +6364,9 @@ box-sizing: border-box;
     #f16b74 0%,
     #bf3543 52%,
     #781d2a 100%
-  ) !important;
+  );
 
-  border-color: rgba(255,169,175,.58) !important;
+  border-color: rgba(255,169,175,.58);
 }
 
 /* CONCLUÍDO — ESMERALDA */
@@ -6375,9 +6376,9 @@ box-sizing: border-box;
     #62efa0 0%,
     #1aa75c 52%,
     #086039 100%
-  ) !important;
+  );
 
-  border-color: rgba(163,255,193,.66) !important;
+  border-color: rgba(163,255,193,.66);
 }
 
 /* DESLOCAMENTO DA COLUNA DOS DIAS — PENDÊNCIAS */
@@ -6398,7 +6399,7 @@ box-sizing: border-box;
 #card-rotina-pendente .rotina-pendencia-item > :nth-child(2),
 #card-rotina-pendente .rotina-pendencia-item > :nth-child(3),
 #card-rotina-pendente .rotina-pendencia-item > :nth-child(4) {
-  font-size: 11px !important;
+  font-size: 11px;
 }
 
 /* ID: CSS-346 | REF: PANEL.ROUTINE.AGENDA.TODAY.POSITION | SELETOR: #card-agenda-hoje */
@@ -6667,11 +6668,11 @@ box-sizing: border-box;
     font-weight: 400;
     line-height: 1.1;
 
-    width: 180px !important;
-    max-width: none !important;
+    width: 180px;
+    max-width: none;
 
-    overflow: visible !important;
-    text-overflow: clip !important;
+    overflow: visible;
+    text-overflow: clip;
     white-space: nowrap;
 }
 
@@ -6844,7 +6845,7 @@ box-sizing: border-box;
 /* ESPAÇAMENTO ENTRE OS CARDS — PENDENTES */
 
 #painel-compromisso #lista-compromissos-pendentes {
-    row-gap: 18px !important;
+    row-gap: 18px;
 }
 
 /* ==========================================================
@@ -6985,63 +6986,65 @@ box-sizing: border-box;
 }
 
 .card-financeiro > .financeiro-agenda-hoje-wrap > #agenda-financeiro-hoje {
-  position: relative !important;
-  inset: auto !important;
-  display: flex !important;
+  position: relative;
+  inset: auto;
+  display: flex;
   flex: 1 1 auto;
   flex-direction: column;
-  width: 100% !important;
-  height: 100% !important;
-  min-width: 0 !important;
-  min-height: 0 !important;
-  max-width: 100% !important;
-  max-height: 100% !important;
-  margin: 0 !important;
-  padding: 7px 8px 8px !important;
-  box-sizing: border-box !important;
-  overflow: hidden !important;
-  gap: 6px !important;
+  width: 100%;
+  height: 100%;
+  min-width: 0;
+  min-height: 0;
+  max-width: 100%;
+  max-height: 100%;
+  margin: 0;
+  padding: 7px 8px 8px;
+  box-sizing: border-box;
+  overflow: hidden;
+  gap: 6px;
 }
 
 .card-financeiro > .financeiro-agenda-hoje-wrap #lista-financeiro-hoje {
-  display: flex !important;
-  flex: 1 1 auto !important;
-  flex-direction: column !important;
-  min-width: 0 !important;
-  min-height: 0 !important;
-  max-height: none !important;
-  margin: 0 !important;
-  padding: 5px 8px 8px 2px !important;
-  overflow-x: hidden !important;
-  overflow-y: auto !important;
-  box-sizing: border-box !important;
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+  min-width: 0;
+  min-height: 0;
+  max-height: none;
+  margin: 0;
+  padding: 5px 8px 8px 2px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  box-sizing: border-box;
 }
 
 @media (max-width: 700px) {
   .card-financeiro > .financeiro-agenda-hoje-wrap {
-    position: relative !important;
-    inset: auto !important;
-    top: auto !important;
-    right: auto !important;
+    position: relative;
+    inset: auto;
+    top: auto;
+    right: auto;
     z-index: 1;
-    width: 100% !important;
-    max-width: 100% !important;
-    height: 238px !important;
-    min-height: 238px !important;
-    margin: 14px 0 3px !important;
-    align-self: stretch !important;
+    width: 100%;
+    max-width: 100%;
+    height: 238px;
+    min-height: 238px;
+    margin: 14px 0 3px;
+    align-self: stretch;
   }
 
   .card-financeiro > .financeiro-agenda-hoje-wrap > #agenda-financeiro-hoje {
-    width: 100% !important;
-    height: 100% !important;
-    min-height: 0 !important;
+    width: 100%;
+    height: 100%;
+    min-height: 0;
   }
 }
 
 @media (max-width: 380px) {
   .card-financeiro > .financeiro-agenda-hoje-wrap {
-    height: 224px !important;
-    min-height: 224px !important;
+    height: 224px;
+    min-height: 224px;
   }
 }
+}
+

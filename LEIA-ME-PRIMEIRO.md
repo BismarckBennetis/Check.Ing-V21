@@ -1,51 +1,46 @@
-# Check.In V21.1 — correção visual complementar
+# Check.In V21.2 — refatoração da cascata e correção do painel lateral
 
-A V21 é uma evolução conservadora da V20. O foco é compatibilidade progressiva entre navegadores, fallbacks localizados, remoção de `:has()` de dois seletores e preservação dos refinamentos visuais previamente aprovados. O objetivo foi preservar a interface e os comportamentos já existentes, sem antecipar o redesenho mobile ou inventar funcionalidades.
+A V21.2 parte da V21.1 e corrige a origem estrutural do recorte do botão **Notifique-me**. Também reorganiza as três folhas CSS em camadas explícitas, elimina declarações `!important` e remove uma referência JavaScript obsoleta a um elemento de dia da semana que não existe no HTML.
 
 ## Arquivos ativos
 
-- `index.html` — estrutura dos painéis, IDs, SVGs, ARIA e alvos de rolagem.
-- `style.css` — estilos-base e regras de estrutura.
-- `tema-dark.css` — tema escuro, componentes, efeitos e regras responsivas.
-- `script.js` — calendários, relógio/data, barras de rolagem e pesquisa lateral, agora emitido em ES5 com fallbacks localizados.
-- `imagens/` — logo, favicons e recursos gráficos.
+- `index.html` — estrutura, IDs, SVGs, atributos ARIA e alvos de rolagem.
+- `style.css` — estrutura e aparência-base, dentro de `@layer base`.
+- `tema-dark.css` — tema escuro e componentes, dentro de `@layer theme`.
+- `mobile.css` — ajustes responsivos, dentro de `@layer responsive`.
+- `script.js` — calendário, feriados nacionais, relógio/data, barras de rolagem e pesquisa lateral.
+- `mobile.js` — abertura/recolhimento do painel lateral e formato compacto das datas de vencimento.
+- `imagens/` — logo e favicons utilizados pelo HTML.
 
-**Ordem de carregamento:** `style.css` antes de `tema-dark.css`; `script.js` ao final do `body`. Preserve essa ordem.
+**Ordem de carregamento:** `style.css`, `tema-dark.css`, `mobile.css`; depois `script.js` e `mobile.js`, ao final do `body`. Preserve essa ordem. A sequência de camadas declarada em `style.css` é `base`, `theme`, `responsive`.
+
+## O que mudou nesta refatoração
+
+1. **Cascata CSS:** as três folhas foram organizadas em camadas nativas. A base define estrutura; o tema define aparência; o mobile ajusta o que precisa responder ao viewport. As 1.493 declarações `!important` existentes nas folhas ativas foram removidas. O estado HTML `[hidden]` foi movido para a última regra da camada responsiva e continua ocultando elementos sem prioridade forçada.
+2. **Estrutura do painel esquerdo:** `.area-inferior-painel` agora contém apenas relógio e data. O título e o botão Notifique-me são irmãos desse bloco, diretamente dentro de `#painel-esquerdo`. Antes, um fechamento inválido de `span` e a ausência do fechamento do contêiner mantinham título e botão dentro da área de 44px com `overflow:hidden`.
+3. **JavaScript:** eliminada a referência inválida a `diaSemanaData`/`nomesDiasPainel`. O feriado destaca somente `.data-dia`; não exibe nome do dia da semana. A célula do calendário preserva o fundo verde do dia atual e recebe ciano apenas no número e na borda quando for feriado nacional.
+4. **Mobile:** removidas as translações artificiais que moviam o painel inteiro e empurravam Notifique-me para fora do fluxo. O botão mantém 40×40px no mobile, com o SVG interno no tamanho definido pelo tema responsivo.
 
 ## Como abrir
 
-Extraia o ZIP mantendo a pasta `Check.In-V21` inteira e abra `index.html` com Live Server no VS Code. Mantenha `imagens/` no mesmo nível do HTML.
+Extraia o ZIP mantendo a pasta `Check.Ing-V21.2` inteira e abra `index.html` com Live Server no VS Code. Mantenha `imagens/` no mesmo nível do HTML.
 
-## Compatibilidade pretendida
+## Compatibilidade e limites
 
-- Alvo principal: versões modernas de Chrome/Chromium, Edge, Firefox, Safari e Samsung Internet.
-- Internet Explorer 11: apenas degradação parcial; não há promessa de equivalência visual ou de layout.
-- Consulte `MATRIZ-COMPATIBILIDADE-V21.md` para separar testes executados, compatibilidade esperada e limitações.
+- A cascata usa CSS Cascade Layers (`@layer`). Utilize navegadores modernos com suporte a esse recurso. Internet Explorer 11 não aplica essas camadas e não é um alvo compatível desta arquitetura.
+- Validação funcional executada em Chromium 144 headless, com estilos e scripts reais do pacote executados em fixture in-memory. Foram avaliados 1440, 1024, 700, 653, 652, 480, 375 e 320 CSS px.
+- Firefox, Safari, Chrome estável, Edge e dispositivos físicos não foram executados individualmente nesta sessão.
+- O overflow horizontal mobile abaixo de 480px permanece preexistente: `scrollWidth` continua em 622px a 480px, 536px a 412px, 514px a 390px, 499px a 375px, 484px a 360px e 460px a 320px. Não foi misturado a esta refatoração estrutural.
+- As Google Fonts externas foram bloqueadas no ambiente in-memory; o fallback de fonte foi utilizado durante os testes. O pacote mantém os links originais.
+- O projeto não ganhou backend, persistência ou novas ações para botões sem contrato funcional.
 
-## Limites conhecidos importantes
+## Documentação e índices
 
-- O teste comparativo encontrou overflow horizontal entre 320 e 480 px, mas ele já existia na V20 e permaneceu idêntico na V21 nos 15 breakpoints comparados. O ajuste do layout mobile continua como etapa separada.
-- Os cinco botões visuais do menu superior não têm listeners ou destinos funcionais no `script.js` desta versão. Não foram ativados por inferência.
-- A aplicação não possui LocalStorage, SessionStorage, IndexedDB, backend, banco de dados ou API de dados. Os dados exibidos continuam demonstrativos.
-- Não foram implementadas novas ações nos botões pendentes nem nos ícones decorativos de Próximos Lembretes.
-
-## Documentação
-
-- `CHANGELOG-V21.md` — alterações V21 e correção V21.1; escopo preservado.
-- `RELATORIO-AUDITORIA.md` — diagnóstico, alterações, resultados e limitações.
-- `MAPA-DO-PROJETO.md` — estrutura e contratos reais atuais.
-- `PROTOCOLO-DE-MANUTENCAO.md` — padrão obrigatório para próximas alterações.
-- `MATRIZ-COMPATIBILIDADE-V21.md` — compatibilidade por navegador e nível de validação.
-- `INDICE-DE-REFERENCIAS.csv` — marcadores atualizados a partir do código ativo.
-- `INDICE-SELETORES-CSS.csv` e `SELETORES-REPETIDOS.csv` — índices reconstruídos por análise do CSS.
-- `DEPENDENCIAS-JS-HTML.csv` — seletores e destinos efetivamente usados pelo JavaScript.
-- `MIGRACAO-DE-IDS-V21.csv` — dois IDs de contêiner adicionados para os seletores das agendas.
-- `VALIDACAO-ESTATICA.json`, `VALIDACAO-FINAL.json`, `VALIDACAO-RUN-V21.json`, `VALIDACAO-LEGACY-FALLBACKS.json`, `VALIDACAO-RECURSOS-V21.json` e `VALIDACAO-ONDA-PAINEL.json` — resultados técnicos.
-- `CHECKSUMS-SHA256.txt` — hashes dos arquivos do pacote, exceto o próprio manifesto.
-- `historico/V20/` — snapshot dos arquivos ativos e documentação original da V20.
-
-
-## Prévia do efeito corrigido
-
-- `painel-esquerdo-onda-v21.1-preview.png` — renderização auxiliar do SVG atualizado, sem o traço interno `#07190F`.
-- `painel-esquerdo-v21-preview-inicial.png` — captura da V21 inicial, preservada apenas como referência histórica; não representa a correção V21.1.
+- `CHANGELOG-V21.md` — histórico de V21, V21.1 e V21.2.
+- `RELATORIO-AUDITORIA.md` — auditoria e evidências desta refatoração.
+- `MAPA-DO-PROJETO.md` — árvore e responsabilidades atuais.
+- `MATRIZ-COMPATIBILIDADE-V21.md` — requisitos de browser e testes executados.
+- `INDICE-SELETORES-CSS.csv`, `SELETORES-REPETIDOS.csv`, `INDICE-DE-REFERENCIAS.csv` e `DEPENDENCIAS-JS-HTML.csv` — índices reconstruídos com os arquivos ativos da V21.2.
+- `VALIDACAO-REFATORACAO-V21.2.json` — registro consolidado dos testes e limites.
+- `CHECKSUMS-SHA256.txt` — integridade dos arquivos do pacote, exceto o próprio manifesto.
+- `historico/V20/` — snapshot histórico preservado.

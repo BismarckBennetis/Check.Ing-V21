@@ -1,6 +1,6 @@
-Check.In V21.1
-Base: Check.In V21 (derivada do pacote V20 fornecido em 17/11/2026)
-Data da correção: 2026-11-17
-Tipo: correção visual localizada no SVG da onda do painel esquerdo; remoção do traço interno #07190F e filtro innerShadow.
-Preservado: curva, edgeSweep, brilho inferior e sombras externas 0.30/0.60, além de todas as demais alterações da V21.
-Escopo: sem mudanças de funcionalidades, estrutura, layout mobile ou demais componentes.
+Check.In V21.2 — refatoração lógica da cascata e correção estrutural do painel lateral
+Base: Check.In V21.1, derivada do pacote Check.In V20 fornecido em 17/11/2026
+Data da refatoração: 2026-11-20
+Escopo: separação CSS em camadas base/theme/responsive; remoção integral de declarações !important; reparo da hierarquia HTML do relógio/data e Notifique-me; correção de referência JS obsoleta; remoção de deslocamentos mobile que recortavam o botão.
+Preservado: identidade visual, componentes, SVGs, interações funcionais existentes, feriados nacionais (somente número do dia em ciano; fundo verde do dia atual preservado), 4 barras horizontais e 14 verticais.
+Limites: overflow horizontal mobile preexistente abaixo de 480px permanece; somente Chromium 144 headless foi executado nesta sessão; fontes Google não foram carregadas no ambiente in-memory.

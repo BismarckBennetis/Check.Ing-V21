@@ -1,0 +1,9 @@
+Check.In V21.2 — registro técnico da refatoração
+
+1. index.html: corrige a hierarquia de .area-inferior-painel; relógio/data, título e botão Notifique-me agora ocupam níveis semânticos corretos no painel esquerdo.
+2. script.js: remove a referência residual ao dia da semana, mantendo o realce de feriado apenas no número do dia e nas células do calendário.
+3. mobile.css: remove translações e margens compensatórias do painel/Notifique-me; mantém os ajustes mobile em uma camada responsiva explícita.
+4. CSS ativo: style.css, tema-dark.css e mobile.css usam as camadas base, theme e responsive. A precedência foi migrada para a arquitetura da cascata, sem declarações !important nos três arquivos.
+5. Validação: ver VALIDACAO-REFATORACAO-V21.2.json, VALIDACAO-ESTATICA.json, VALIDACAO-FINAL.json e CHECKSUMS-SHA256.txt.
+
+Este registro descreve o resultado, não depende de um script de patch distribuído no pacote.

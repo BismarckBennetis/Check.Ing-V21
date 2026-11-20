@@ -1,9 +1,12 @@
 @charset "UTF-8";
 
+@layer responsive{
+
 /* ==========================================================
    CHECK.IN — MOBILE
    ARQUIVO: mobile.css
-   BASE: CHECK.IN V21.1
+   ORIGEM: CHECK.IN V21.1
+   REFATORAÇÃO: V21.2 — CAMADA RESPONSIVE
 
    PADRÃO DE IDENTIFICAÇÃO: MOB-###
 
@@ -13,10 +16,10 @@
    - Dimensionamento dos componentes
    - Organização dos elementos
 
-   PRESERVAÇÃO:
-   - HTML original
-   - JavaScript original
-   - CSS Desktop original
+   INTEGRAÇÃO:
+   - index.html e script.js definem a estrutura/estado compartilhados
+   - style.css e tema-dark.css fornecem base e tema
+   - este arquivo contém somente os ajustes responsivos
 ========================================================== */
 
 
@@ -67,8 +70,8 @@
     ====================================================== */
 
     header.cabecalho .logo-simbolo {
-        width: 58px !important;
-        height: 58px !important;
+        width: 58px;
+        height: 58px;
         max-width: 58px;
         max-height: 58px;
         flex: 0 0 58px;
@@ -84,7 +87,7 @@
     ====================================================== */
 
     header.cabecalho .logo-nome {
-        font-size: clamp(19px, 5.5vw, 21px) !important;
+        font-size: clamp(19px, 5.5vw, 21px);
         line-height: 1;
         letter-spacing: -.4px;
         white-space: nowrap;
@@ -324,10 +327,10 @@ body .menu-principal > .botao-menu[data-menu-lateral-toggle][aria-expanded="fals
 
 /* MOB-016 — Redução da altura do botão Menu */
 body .menu-principal > .botao-menu[data-menu-lateral-toggle] {
-    width: 90% !important;
+    width: 90%;
     height: 33px;
     min-height: 33px;
-    max-width: 90% !important;
+    max-width: 90%;
     align-self: center;
     border-radius: 8px;
     justify-self: start;
@@ -336,7 +339,7 @@ body .menu-principal > .botao-menu[data-menu-lateral-toggle] {
     to right,
     #187037 0%,
     #04461b 100%
-) !important;
+);
 }
 
 /* MOB-017 — Deslocamento dos elementos do botão Lembrete */
@@ -358,21 +361,17 @@ body .menu-principal > .botao-menu:not([data-menu-lateral-toggle]) {
 .painel-esquerdo {
     width: 70%;
     max-width: 100%;
-    margin-inline: auto;
+    margin-left: 0;
+    margin-right: auto;
     box-sizing: border-box;
-    padding-bottom: 0;
-
-    /* MOB-033 — Deslocamento horizontal do painel inteiro */
-    translate: -55px -15px;
+    padding-bottom: 12px;
 }
 
 /* MOB-020 — Redução da largura e posição da barra de pesquisa */
 .painel-esquerdo .menu-lateral-pesquisa {
     width: calc(100% + 10px);
     margin-left: -5px;
-
-    /* MOB-023 — Deslocamento vertical */
-    translate: 0 -5px;
+    margin-top: -5px;
 }
 
 /* MOB-022 — Deslocamento vertical da segunda linha */
@@ -385,45 +384,34 @@ body .menu-principal > .botao-menu:nth-child(n+4) {
     row-gap: 9px;
 }
 
-/* MOB-025 — Deslocamento vertical do bloco de botões laterais */
+/* MOB-025 — Ajuste do fluxo vertical do bloco de botões laterais */
 .painel-esquerdo .menu-lateral-botoes {
-    translate: 0 -7px;
+    margin-top: -7px;
 }
 
-/* MOB-026 — Deslocamento vertical do campo de horário e data */
+/* MOB-026 — Espaçamento natural do relógio e da data */
 .painel-esquerdo > .area-inferior-painel {
-    translate: 0 -15px;
-}
-
-/* MOB-027 — Deslocamento vertical de Notifique-me */
-.painel-esquerdo .notificacao-titulo,
-.painel-esquerdo .botao-notifique {
-    translate: 0 -60px;
-}
-
-/* MOB-029 — Redução adicional pela borda inferior */
-.painel-esquerdo > .botao-notifique {
-    margin-bottom: -20px;
+    margin-top: 7px;
 }
 
 /* MOB-030 — Redução do título Notifique-me */
 .painel-esquerdo .notificacao-titulo {
-    font-size: 9px !important;
+    font-size: 9px;
     padding: 1px 9px;
 }
 
 /* MOB-031 — Redução do botão circular */
 .painel-esquerdo .botao-notifique {
-    width: 40px !important;
-    height: 40px !important;
-    flex: 0 0 40px !important;
+    width: 40px;
+    height: 40px;
+    flex: 0 0 40px;
 }
 
 /* MOB-032 — Redução proporcional do ícone interno */
 .painel-esquerdo .botao-notifique .notificacao-icone {
-    width: 54px !important;
-    height: 54px !important;
-    flex: 0 0 54px !important;
+    width: 54px;
+    height: 54px;
+    flex: 0 0 54px;
 }
 
 } /*CHAVE QUE O @MEDIA ID:777*/
@@ -496,9 +484,9 @@ body .menu-principal > .botao-menu:nth-child(n+4) {
         grid-column: 1;
         grid-row: 1;
 
-        top: 0;
+        top: -15px;
         left: 0;
-        right: 0;
+        right: auto;
 
         z-index: 100;
     }
@@ -636,3 +624,14 @@ body .menu-principal > .botao-menu:nth-child(n+4) {
     }
 
 }
+
+/* O estado HTML hidden prevalece sobre regras visuais por estar no fim da camada responsiva. */
+
+[hidden]{
+display: none;
+
+}
+
+}
+
+

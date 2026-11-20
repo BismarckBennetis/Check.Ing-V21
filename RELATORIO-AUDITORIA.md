@@ -82,3 +82,52 @@ A V21 está tecnicamente atualizada e validada para as alterações de compatibi
 ### 2.5 Correção visual V21.1 — remoção da sombra interna
 
 A imagem enviada em 17/11/2026 mostra ranhuras escuras abaixo da curva. A inspeção do SVG ativo apontou uma camada adicional: um caminho alinhado à curva com `stroke="#07190F"`, espessura 20, opacidade 1, recortado por `belowWave` e processado pelo filtro `innerShadow` (blur 28, deslocamento Y 16). A V20 histórica não contém esse caminho nem esse filtro. Foram removidos somente esse caminho e a definição do filtro. A hipótese técnica é que a camada desfocada/offset recortada produziu as marcas; a correção foi validada estruturalmente no SVG. A confirmação final da aparência deve ser feita no navegador/dispositivo. As sombras externas e o gradiente aprovados foram mantidos.
+
+
+# Auditoria V21.2 — cascata e painel lateral (20/11/2026)
+
+## 1. Causa-raiz do botão Notifique-me recortado
+
+A inspeção da árvore DOM revelou um fechamento extra de `span` e a ausência do fechamento de `div.area-inferior-painel`. A estrutura do HTML colocava o título e o botão dentro do contêiner de relógio/data, que tem altura fixa de 44px e `overflow:hidden` no CSS-base. Deslocamentos posteriores em CSS tentavam compensar uma árvore inválida; por isso não resolviam a causa. A V21.2 fecha o `span.data-valor`, o `div.data-painel` e o `div.area-inferior-painel` na ordem correta.
+
+## 2. Erro de estado no JavaScript
+
+`verificarDataEAgendarAtualizacao()` continha uma referência residual a `diaSemanaData`/`nomesDiasPainel`, apesar de o HTML já não possuir `.data-semana`. A referência provocava erro de execução durante a atualização da data. A V21.2 remove essa saída não utilizada e aplica `classList.toggle()` somente em `.data-dia`. A apresentação resultante é `20/11/2026`, sem nome de dia da semana; no feriado nacional, apenas o número recebe o ciano.
+
+## 3. Cascata CSS refatorada
+
+| Folha | Regras | Declarações | `!important` final |
+|---|---:|---:|---:|
+| `style.css` | 487 | 2.751 | 0 |
+| `tema-dark.css` | 664 | 3.023 | 0 |
+| `mobile.css` | 53 | 180 | 0 |
+| **Total** | **1.204** | **5.954** | **0** |
+
+A ordem explícita `@layer base, theme, responsive` substitui a dependência de centenas de prioridades individuais. As regras do estado `[hidden]` foram movidas para a última posição da camada responsiva; o teste confirmou `display:none` enquanto o atributo está presente e retorno ao display esperado quando é removido.
+
+Não foram apagados seletores apenas por aparecerem mais de uma vez. `SELETORES-REPETIDOS.csv` foi reconstruído para revisão; repetição em media queries/estados pode ser intencional.
+
+## 4. Mobile
+
+O CSS mobile continha `translate:-55px -15px` no painel, `translate:-60px` no título/botão e margem inferior negativa no botão. Esses valores retiravam componentes do fluxo e podiam esconder o controle. A V21.2 remove essas compensações e utiliza margens de fluxo nos elementos de espaçamento. Em 375px, o painel medido foi `[x=8, y=179, w=256.89, h=491.8]`; a linha de relógio/data foi `[x=23, y=505, w=226.89, h=44]`; o título ficou em `y=597`; o botão em `y=617.8`, com `40×40px` e dentro dos limites do painel.
+
+## 5. Verificações executadas
+
+- `node --check script.js` e `node --check mobile.js`: aprovados.
+- Parsing PostCSS das três folhas: aprovado; uma declaração de camada por arquivo de componente, sem camadas aninhadas duplicadas.
+- HTML: 62 IDs, todos únicos; 0 referências locais quebradas em `src`/`href`.
+- Alvos de rolagem: 4 horizontais e 14 verticais; todos os destinos existem.
+- Chromium 144: sem erros de página; navegação NOVEMBRO→DEZEMBRO→NOVEMBRO; pesquisa `configuracao` encontra “Configuração”; mensagem vazia e reset; classe de feriado apenas no número; fundo verde de hoje confirmado por `background-image` linear-gradient.
+- Mobile 375px: abertura/fechamento por botão, Escape e clique externo; `[hidden]` mapeia para `display:none`; sem erros JS.
+- Viewports: 1440, 1024, 700, 653, 652, 480, 375 e 320px; o botão cabe integralmente no painel em todos os casos.
+
+## 6. Limitações
+
+- O overflow horizontal em 480px ou menos permanece: 622px em 480, 536px em 412, 514px em 390, 499px em 375, 484px em 360 e 460px em 320. Esta entrega corrige o fluxo/recorte do painel lateral, não redesenha toda a navegação mobile.
+- Apenas Chromium 144 headless foi executado. Chrome estável, Edge, Firefox, Safari, Samsung Internet e aparelhos físicos ainda requerem smoke test.
+- Google Fonts foram bloqueadas no fixture in-memory; foi usado o fallback. Não equivale a validar deploy ou rede real.
+- CSS Cascade Layers exigem navegador moderno; IE11 não aplica essa arquitetura.
+
+## 7. Parecer
+
+A correção do botão não depende mais de deslocamentos artificiais ou prioridades forçadas. O HTML define os limites reais dos componentes; a base, o tema e a responsividade têm camadas explícitas; os estados de data e feriado são expressos por classe no elemento correto. A validação cobre os fluxos listados, mas não certifica outros motores de navegador.

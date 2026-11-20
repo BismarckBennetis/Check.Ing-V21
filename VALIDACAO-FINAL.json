@@ -1,116 +1,79 @@
 {
-  "versao": "V21.1",
-  "ambiente": "Chromium 144 headless via conteúdo HTML/CSS/JS in-memory",
-  "resultado": "aprovado com limitações registradas",
+  "versao": "V21.2",
+  "ambiente": {
+    "browser": "Chromium 144.0.7559.96 headless",
+    "fixture": "HTML/CSS/JS do pacote V21.2 inlined em contexto Playwright; fontes Google externas bloqueadas",
+    "node": "v22.16.0"
+  },
+  "resultado": "aprovado nos testes listados; limitações registradas",
   "viewports_css_px": [
-    1600,
     1440,
-    1280,
-    1200,
     1024,
-    900,
-    800,
-    768,
+    700,
     653,
     652,
     480,
-    412,
-    390,
-    360,
+    375,
     320
   ],
-  "comparacao_v20_v21_scrollWidth": {
-    "1600": 1600,
-    "1440": 1440,
-    "1280": 1280,
-    "1200": 1200,
-    "1024": 1024,
-    "900": 900,
-    "800": 800,
-    "768": 768,
-    "653": 653,
-    "652": 652,
+  "overflow_mobile": {
     "480": 622,
     "412": 536,
     "390": 514,
+    "375": 499,
     "360": 484,
-    "320": 460
+    "320": 460,
+    "status": "pendência preexistente mantida; não faz parte do escopo desta correção"
   },
-  "overflow_mobile_herdado": {
-    "status": "presente em V20 e V21",
-    "causa_observada": "nav.lembrete-categorias ultrapassa viewport",
-    "sem_regressao": true
+  "runtime": {
+    "page_errors_desktop": [],
+    "page_errors_mobile": [],
+    "calendar_navigation": [
+      "NOVEMBRO",
+      "DEZEMBRO",
+      "NOVEMBRO"
+    ],
+    "accent_insensitive_search": true,
+    "search_empty_state": true,
+    "search_reset": true,
+    "horizontal_scrollbar_count": 4,
+    "vertical_scrollbar_count": 14,
+    "all_scrollbar_targets_exist": true,
+    "mobile_toggle_close_open": true,
+    "mobile_escape_close": true,
+    "mobile_click_outside_close": true
   },
-  "funcionais": {
-    "calendario": {
-      "inicial": "NOVEMBRO",
-      "proximo": "DEZEMBRO",
-      "voltar": "NOVEMBRO",
-      "aprovado": true
-    },
-    "pesquisa_sem_acentos": {
-      "consulta": "configuracao",
-      "resultado": "Configuração",
-      "aprovado": true
-    },
-    "pesquisa_sem_resultado": true,
-    "scrollbar_vertical_teclado": {
-      "antes": 0,
-      "depois": 24,
-      "aprovado": true
-    },
-    "scrollbar_horizontal_teclado": {
-      "antes": 0,
-      "depois": 40,
-      "aprovado": true
-    },
-    "fallbacks_legados_simulados": {
-      "array_from": "1,2,3",
-      "nodelist_for_each": "ok",
-      "pad_start": "07",
-      "number_parse_float": 2.5,
-      "pesquisa_sem_normalize": [
-        "Configuração"
-      ],
-      "page_errors": 0,
-      "aprovado": true
-    }
+  "mobile_notifique_geometry_375": {
+    "panel": [
+      8,
+      179,
+      256.89,
+      491.8
+    ],
+    "clock_date": [
+      23,
+      505,
+      226.89,
+      44
+    ],
+    "title": [
+      98.94,
+      597,
+      75,
+      14.8
+    ],
+    "button": [
+      116.44,
+      617.8,
+      40,
+      40
+    ],
+    "button_inside_panel": true
   },
-  "agenda_headers": {
-    "comparacao_computed_style_v20_v21": "igual",
-    "aprovado": true
-  },
-  "ids": {
-    "total": 56,
-    "unicos": true
-  },
-  "page_errors": 0,
-  "nao_testado": [
-    "Chrome real",
-    "Edge real",
-    "Firefox",
-    "Safari",
-    "Samsung Internet em Galaxy M55",
-    "Internet Explorer 11",
-    "publicação GitHub Pages em produção"
-  ],
-  "recursos_bloqueados_no_harness": [
-    "algumas imagens com caminho relativo",
-    "Google Fonts"
-  ],
-  "limites": [
-    "O teste in-memory não certifica aparência completa em navegador/dispositivo real.",
-    "IE11 é suporte parcial.",
-    "Overflow mobile preexistente permanece pendente.",
-    "Cinco botões de navegação superior sem listeners/destinos no código de origem.",
-    "Os fallbacks ES5 foram simulados em Chromium removendo as APIs antes da inicialização; isso não é um teste do Internet Explorer 11."
-  ],
-  "recursos_e_indices": {
-    "html_referencias_locais_validas": true,
-    "svg_xml": "aprovado",
-    "css_postcss": "aprovado",
-    "marcadores_indexados": 742,
-    "css_rules_indexed": 1106
-  },
-  "nota_correcao_v21_1": "Correção CSS/SVG localizada após a bateria principal V21; resultados funcionais registrados são herdados da execução V21 e não foram repetidos por completo nesta correção. SVG da onda revalidado estruturalmente."
+  "limitações": [
+    "Somente Chromium headless; outros navegadores e dispositivos físicos não foram executados.",
+    "Google Fonts bloqueadas no fixture in-memory.",
+    "IE11 não suporta CSS Cascade Layers e não é compatível com esta arquitetura.",
+    "Overflow horizontal mobile abaixo de 480px permanece."
+  ]
 }

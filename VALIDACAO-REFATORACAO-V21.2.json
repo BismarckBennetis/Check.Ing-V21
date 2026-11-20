@@ -1,0 +1,133 @@
+{
+  "versao": "V21.2",
+  "data": "2026-11-20",
+  "origem": "Check.In V21.1 extraída do Check.In-V21.rar enviado nesta conversa",
+  "ambiente": {
+    "browser": "Chromium 144.0.7559.96 headless",
+    "fixture": "HTML/CSS/JS do pacote V21.2 inlined em contexto Playwright; fontes Google externas bloqueadas",
+    "node": "v22.16.0"
+  },
+  "html": {
+    "ids": 62,
+    "unique_ids": 62,
+    "duplicates": [],
+    "missing_local_src_href": [],
+    "sidebar_hierarchy": {
+      "area_inferior_painel_children": [
+        "horario-painel",
+        "data-painel"
+      ],
+      "area_inferior_parent": "painel-esquerdo",
+      "notificacao_title_parent": "painel-esquerdo",
+      "notifique_button_parent": "painel-esquerdo"
+    }
+  },
+  "css": {
+    "layers": [
+      "base",
+      "theme",
+      "responsive"
+    ],
+    "metrics": {
+      "style.css": {
+        "rules": 487,
+        "decl": 2751,
+        "important": 0
+      },
+      "tema-dark.css": {
+        "rules": 664,
+        "decl": 3023,
+        "important": 0
+      },
+      "mobile.css": {
+        "rules": 53,
+        "decl": 180,
+        "important": 0
+      },
+      "total": {
+        "rules": 1204,
+        "declarations": 5954,
+        "important": 0
+      }
+    },
+    "removed_important_declarations": 1493,
+    "important_declarations_after": 0,
+    "hidden_state_rule": "[hidden] { display:none } no final de @layer responsive; validado em Chromium."
+  },
+  "javascript": {
+    "node_check_script_js": "aprovado",
+    "node_check_mobile_js": "aprovado",
+    "stale_weekday_reference_removed": true,
+    "national_holiday_highlight": "somente .data-dia; nome do dia da semana não é criado"
+  },
+  "runtime": {
+    "page_errors_desktop": [],
+    "page_errors_mobile": [],
+    "calendar_navigation": [
+      "NOVEMBRO",
+      "DEZEMBRO",
+      "NOVEMBRO"
+    ],
+    "accent_insensitive_search": true,
+    "search_empty_state": true,
+    "search_reset": true,
+    "horizontal_scrollbar_count": 4,
+    "vertical_scrollbar_count": 14,
+    "all_scrollbar_targets_exist": true,
+    "mobile_toggle_close_open": true,
+    "mobile_escape_close": true,
+    "mobile_click_outside_close": true
+  },
+  "viewports_tested_css_px": [
+    1440,
+    1024,
+    700,
+    653,
+    652,
+    480,
+    375,
+    320
+  ],
+  "mobile_notifique_geometry_375": {
+    "panel": [
+      8,
+      179,
+      256.89,
+      491.8
+    ],
+    "clock_date": [
+      23,
+      505,
+      226.89,
+      44
+    ],
+    "title": [
+      98.94,
+      597,
+      75,
+      14.8
+    ],
+    "button": [
+      116.44,
+      617.8,
+      40,
+      40
+    ],
+    "button_inside_panel": true
+  },
+  "mobile_horizontal_overflow": {
+    "480": 622,
+    "412": 536,
+    "390": 514,
+    "375": 499,
+    "360": 484,
+    "320": 460,
+    "status": "pendência preexistente mantida; não faz parte do escopo desta correção"
+  },
+  "limitations": [
+    "Somente Chromium headless; outros navegadores e dispositivos físicos não foram executados.",
+    "Google Fonts bloqueadas no fixture in-memory.",
+    "IE11 não suporta CSS Cascade Layers e não é compatível com esta arquitetura.",
+    "Overflow horizontal mobile abaixo de 480px permanece."
+  ]
+}

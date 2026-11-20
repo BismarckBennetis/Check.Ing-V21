@@ -1,29 +1,29 @@
-# Matriz de compatibilidade — Check.In V21
+# Matriz de compatibilidade — Check.In V21.2
 
 ## Alvos e estado de validação
 
-| Navegador / motor | Alvo do projeto | Teste executado nesta entrega | Estado declarado |
-|---|---|---|---|
-| Chromium 144 (headless) | Referência técnica local | Sim: DOM, CSS, JS, calendário, pesquisa, scrollbars e 15 larguras | Testado nos limites descritos no relatório |
-| Google Chrome (desktop/Android) | Prioritário | Não executado como aplicativo/navegador separado | Compatibilidade esperada nas versões modernas; requer smoke test real |
-| Microsoft Edge (Chromium) | Prioritário | Não executado separadamente | Compatibilidade esperada nas versões modernas; requer smoke test real |
-| Samsung Internet | Prioritário para Android | Não executado em aparelho físico | Compatibilidade esperada nas versões modernas; requer teste no M55 |
-| Mozilla Firefox | Prioritário | Não executado | Compatibilidade esperada nas versões modernas; requer smoke test real |
-| Safari macOS/iOS | Prioritário | Não executado | Compatibilidade esperada nas versões modernas; requer smoke test real |
-| Internet Explorer 11 | Legado, não prioritário | Não executado | Parcial/degradado; sem garantia de layout ou fidelidade visual |
+| Navegador / motor | Estado nesta entrega |
+|---|---|
+| Chromium 144 headless | **Executado**: DOM, camadas CSS, calendário, feriados, pesquisa, scrollbars, painel mobile e viewports 1440, 1024, 700, 653, 652, 480, 375 e 320 CSS px. |
+| Google Chrome estável | Não executado separadamente. Esperado em versões modernas com CSS Cascade Layers; requer smoke test. |
+| Microsoft Edge (Chromium) | Não executado separadamente. Esperado em versões modernas com CSS Cascade Layers; requer smoke test. |
+| Firefox | Não executado. Requer smoke test em versão moderna. |
+| Safari macOS/iOS | Não executado. Requer smoke test em versão moderna. |
+| Samsung Internet | Não executado em aparelho físico. Requer teste real Android. |
+| Internet Explorer 11 | **Não suportado por esta arquitetura**: não aplica CSS Cascade Layers. Não há equivalência visual garantida. |
 
-## Medidas de compatibilidade incluídas
+## Arquitetura da cascata
 
-- Remoção de `:has()` dos dois seletores de agenda afetados.
-- Fallbacks de propriedades posicionais `inset` para `top/right/bottom/left`.
-- Valores de fallback antes de `clamp()`, `min()`, `aspect-ratio` e usos selecionados de propriedades CSS customizadas.
-- JavaScript emitido em ES5 e fallbacks para APIs específicas usadas no código ativo.
-- Pesquisa sem acentos permanece operante mesmo quando `String.prototype.normalize` não existe.
+- `style.css` estabelece `@layer base, theme, responsive` e abriga a estrutura.
+- `tema-dark.css` abriga a aparência na camada `theme`.
+- `mobile.css` abriga os ajustes responsivos na camada `responsive`.
+- As três folhas ativas não contêm declarações `!important`.
+- `[hidden] { display: none; }` está no fim da camada responsiva, garantindo que o estado funcional do atributo prevaleça sobre estilos visuais anteriores.
 
-## Limite estrutural do IE11
+## Limite móvel conhecido
 
-O IE11 não interpreta variáveis CSS modernas nem CSS Grid moderno; o projeto também usa amplamente `gap` e outros recursos modernos. O fallback local melhora certos componentes, mas não substitui uma implementação de layout legado. Por isso, o estado é **parcial/degradado**, não “compatível integralmente”.
+O teste Chromium encontrou overflow horizontal abaixo de 480px: `scrollWidth` = 622px (480), 536px (412), 514px (390), 499px (375), 484px (360) e 460px (320). A V21.2 corrige o recorte do painel esquerdo/Notifique-me e o fluxo desses elementos, mas não executa uma reformulação completa do layout mobile.
 
-## Limite dos testes desta entrega
+## Limites da validação
 
-A página foi montada em contexto in-memory para executar o Chromium sem depender de servidor local. Alguns recursos externos/relativos (como Google Fonts e imagens referenciadas por caminho) não foram carregados nesse contexto; os caminhos foram inspecionados estaticamente. Este teste não certifica renderização em navegador real, deploy GitHub Pages ou aparelho físico.
+O runtime foi Chromium 144 headless usando o HTML, CSS e JavaScript do pacote em fixture in-memory. Os links de Google Fonts foram bloqueados nesse contexto; fontes fallback foram usadas. Não houve teste em navegador comercial separado, aparelho físico, domínio de produção ou deploy.

@@ -7,16 +7,21 @@ script.js,querySelector,.data-valor,1,1,encontrado,Elementos usados para atualiz
 script.js,querySelector,.data-dia,1,1,encontrado,Elementos usados para atualizar relógio e data em tempo real.
 script.js,querySelector,.data-mes,1,1,encontrado,Elementos usados para atualizar relógio e data em tempo real.
 script.js,querySelector,.data-ano,1,1,encontrado,Elementos usados para atualizar relógio e data em tempo real.
-script.js,querySelectorAll,.rotina-barra-horizontal[data-scroll-for],3,3,encontrado,Controlador horizontal JS-006; cada barra possui trilho e cursor.
-script.js,querySelector por barra,.rotina-barra-trilho,3 barras; 1 elemento por barra,1 por barra,encontrado,Controlador horizontal JS-006; cada barra possui trilho e cursor.
-script.js,querySelector por barra,.rotina-barra-cursor,3 barras; 1 elemento por barra,1 por barra,encontrado,Controlador horizontal JS-006; cada barra possui trilho e cursor.
-script.js,querySelectorAll,.ci-scrollbar-vertical[data-scrollbar-for],13,13,encontrado,Controlador vertical JS-007; cada barra aponta para um alvo exclusivo via data-scrollbar-for.
-script.js,querySelector por barra,.ci-scrollbar-trilho,13 barras; 1 elemento por barra,1 por barra,encontrado,Controlador vertical JS-007; cada barra aponta para um alvo exclusivo via data-scrollbar-for.
-script.js,querySelector por barra,.ci-scrollbar-cursor,13 barras; 1 elemento por barra,1 por barra,encontrado,Controlador vertical JS-007; cada barra aponta para um alvo exclusivo via data-scrollbar-for.
+script.js,querySelectorAll,.rotina-barra-horizontal[data-scroll-for],4,4,encontrado,Controlador horizontal JS-006; cada barra possui trilho e cursor.
+script.js,querySelector por barra,.rotina-barra-trilho,4,4,encontrado,Controlador horizontal JS-006; cada barra possui trilho e cursor.
+script.js,querySelector por barra,.rotina-barra-cursor,4,4,encontrado,Controlador horizontal JS-006; cada barra possui trilho e cursor.
+script.js,querySelectorAll,.ci-scrollbar-vertical[data-scrollbar-for],14,14,encontrado,Controlador vertical JS-007; 14 barras apontam para alvos exclusivos via data-scrollbar-for.
+script.js,querySelector por barra,.ci-scrollbar-trilho,14 barras; 1 elemento por barra,1 por barra,encontrado,Controlador vertical JS-007; 14 barras possuem trilho e cursor correspondentes.
+script.js,querySelector por barra,.ci-scrollbar-cursor,14 barras; 1 elemento por barra,1 por barra,encontrado,Controlador vertical JS-007; 14 barras possuem trilho e cursor correspondentes.
 script.js,querySelector,.menu-lateral-pesquisa input[type='search'],1,1,encontrado,"Pesquisa lateral JS-009; normaliza acentos e caixa, e alterna a mensagem sem resultados."
 script.js,querySelectorAll,.menu-lateral-botoes .botao-menu-lateral,5,5,encontrado,"Pesquisa lateral JS-009; normaliza acentos e caixa, e alterna a mensagem sem resultados."
 script.js,querySelector,.menu-lateral-sem-resultados,1,1,encontrado,"Pesquisa lateral JS-009; normaliza acentos e caixa, e alterna a mensagem sem resultados."
-script.js,getElementById (destino dinâmico),data-scroll-for,3,3 destinos,encontrado,JS-006: 3 destinos únicos; ausentes: [].
-script.js,getElementById (destino dinâmico),data-scrollbar-for,13,13 destinos,encontrado,JS-007: 13 destinos únicos; ausentes: [].
+script.js,getElementById (destino dinâmico),data-scroll-for,4,4 destinos,encontrado,JS-006: 4 destinos únicos; todos encontrados no HTML.
+script.js,getElementById (destino dinâmico),data-scrollbar-for,14,14 destinos,encontrado,JS-007: 14 destinos únicos; todos encontrados no HTML.
 script.js,auditoria estática: ausência de listener / destino,.menu-principal .botao-menu,5,5 botões presentes; comportamento depende de especificação,sem_integracao_JS,"Os cinco botões existem no HTML, mas não há listener, aria-controls nem destino associado no script.js desta origem. Não foi adicionada ação por suposição."
 script.js,auditoria estática: seletor não encontrado,.menu-principal .botao-menu[aria-controls],0,nenhum no código fornecido,ausente_na_origem,"A documentação/índice V20 mencionava JS-008 e aria-controls, mas a inspeção do código ativo não confirma esse contrato."
+script.js,classList.toggle (classe dinâmica),.data-dia.feriado-nacional,1 elemento-alvo,1 elemento-alvo,encontrado,O marcador feriado-nacional é aplicado somente ao número do dia; não há elemento de nome de dia da semana.
+script.js,classList.add (classe dinâmica),.calendario-dia.feriado-nacional,células geradas dinamicamente,dias nacionais identificados,encontrado,O calendário gera a classe em tempo de execução conforme ehFeriadoNacional(data).
+mobile.js,querySelector,[data-menu-lateral-toggle],1,1,encontrado,Botão responsável por abrir/recolher o painel lateral no mobile.
+mobile.js,getElementById,painel-esquerdo,1,1,encontrado,Painel lateral controlado por hidden e pela classe painel-abrindo.
+mobile.js,querySelectorAll,.financeiro-conta-data[datetime],5,5,encontrado,Formata as datas de vencimento para o formato compacto em telas mobile.

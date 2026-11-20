@@ -22,9 +22,12 @@ Este padrão é obrigatório para correções, novos componentes e otimizações
 ## CSS e cascata
 
 - Não apagar regras apenas porque um seletor se repete.
-- Comparar contexto, ordem, especificidade, `!important`, estados e breakpoints.
-- Remover bloco duplicado apenas quando seletor, contexto e todas as declarações forem idênticos e a posição posterior não neutralizar uma regra intermediária.
-- Não remover `!important` em massa.
+- Comparar contexto, ordem, especificidade, camadas, estados e breakpoints.
+- A ordem ativa é `@layer base, theme, responsive`, declarada em `style.css`.
+- `style.css` contém estrutura/base; `tema-dark.css` contém tema; `mobile.css` contém ajustes responsivos. A ordem de `<link>` em `index.html` também é um contrato: `style.css` → `tema-dark.css` → `mobile.css`.
+- Não introduzir `!important` como mecanismo normal de precedência. Antes, corrigir a camada, o escopo e a especificidade do seletor.
+- Uma exceção com `!important` exige justificativa técnica registrada (por exemplo, integração externa ou estilo inline imutável), escopo mínimo e teste de regressão; não reintroduzir prioridades em bloco.
+- Remover regras repetidas somente quando contexto, estados, media queries e declarações forem equivalentes. Se a repetição for intencional, documentar o refinamento em vez de fundir cegamente.
 - Preservar a estética Soft UI/neumórfica aprovada e a identidade verde/grafite. Não recuperar propostas visuais experimentais rejeitadas.
 
 ## Funcionalidades
@@ -50,7 +53,7 @@ Registrar separadamente `VALIDADO-ESTATICO`, `EM-TESTE` e `VALIDADO-VISUAL`. A a
 ## Compatibilidade entre navegadores — V21 em diante
 
 - O alvo primário são versões modernas de Chrome/Chromium, Edge, Firefox, Safari e Samsung Internet.
-- Para mudanças em CSS, verificar suporte e fallback sem alterar a declaração moderna aprovada; preservar a ordem `style.css` → `tema-dark.css`.
+- Para mudanças em CSS, verificar suporte e fallback sem alterar a declaração moderna aprovada; preservar as camadas `base` → `theme` → `responsive` e a ordem dos três `<link>` ativos.
 - Para JavaScript, manter sintaxe ES5 no arquivo ativo enquanto o objetivo de compatibilidade legado permanecer; qualquer API moderna adicionada deve ter teste de disponibilidade e fallback comprovado.
 - Não usar `:has()` em seletores essenciais sem alternativa estrutural equivalente; preferir IDs/classes explícitos quando a estrutura já permitir isso.
 - Internet Explorer 11 é apenas degradação parcial enquanto CSS Grid, `gap`, variáveis CSS e recursos não suportados continuarem no projeto. Não declarar suporte integral sem matriz de testes real.

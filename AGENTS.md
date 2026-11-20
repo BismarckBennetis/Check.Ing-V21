@@ -39,6 +39,8 @@ Sempre que uma alteração envolver CSS, examine obrigatoriamente:
 
 - style.css
 - tema-dark.css
+- mobile.css
+Considere também a ordem dos três `<link>` em `index.html` e a arquitetura de camadas ativas: `base`, `theme`, `responsive`.
 Investigue:
 
 - Todas as ocorrências do seletor principal.
@@ -48,13 +50,15 @@ Investigue:
 - Herança.
 - Ordem de carregamento.
 - Sobrescritas posteriores.
-- Uso de !important.
+- Uso de `!important` e se a precedência pode ser resolvida pela camada/especificidade correta.
 - Media queries.
 - Estados de interação.
 - Regras que alterem dimensões, posicionamento, sombras, cores ou visibilidade.
 Não declare que existe conflito sem demonstrar a relação entre as regras.
 
 Não crie uma nova regra no final do CSS apenas para esconder um problema causado por uma regra anterior, quando for possível corrigir a origem.
+
+Na V21.2, a cascata ativa é organizada em `@layer base, theme, responsive`. Não introduza `!important` como rotina. Uma exceção exige justificativa técnica específica, seletor mínimo e validação de regressão. Não remova prioridades de forma cega: primeiro migre a precedência para as camadas corretas, depois teste estados e breakpoints.
 
 ## 5. Auditoria de HTML e JavaScript
 Para alterações em HTML:

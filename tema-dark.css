@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@layer theme{
 
 /* ==========================================================
    CHECK-IN — TEMA ESCURO PREMIUM
@@ -44,11 +45,11 @@ html {
 /* ID: DARK-003 | REF: APP.BASE | SELETOR: body */
 body {
   min-height: 100vh;
-  background: #050806 !important;
+  background: #050806;
   background:
     radial-gradient(ellipse at 48% -18%, rgba(24, 100, 55, .17), transparent 48%),
     radial-gradient(ellipse at 100% 60%, rgba(14, 75, 40, .08), transparent 42%),
-    var(--ci-bg) !important;
+    var(--ci-bg);
   color: #edf5ef;
   color: var(--ci-text);
 }
@@ -60,7 +61,7 @@ body {
         145deg,
         rgba(12, 22, 16, .98),
         rgba(5, 9, 7, .99)
-    ) !important;
+    );
 
     border: 1px solid rgba(67, 132, 91, .30);
 
@@ -69,7 +70,7 @@ body {
          7px  7px 18px rgba(0, 0, 0, .28),
         inset 8px 8px 16px rgba(0, 0, 0, .78),
         inset -6px -6px 14px rgba(35, 125, 69, .12),
-        inset 0 1px 0 rgba(211, 255, 225, .06) !important;
+        inset 0 1px 0 rgba(211, 255, 225, .06);
 }
 
 /* ID: DARK-005 | REF: APP.HEADER | SELETOR: .logo-nome */
@@ -97,7 +98,7 @@ background: linear-gradient(
 background-clip: text;
 -webkit-background-clip: text;
 -webkit-text-fill-color: transparent;
-color: transparent !important;
+color: transparent;
 
 -webkit-text-stroke: .35px rgba(220, 255, 232, .25);
 
@@ -131,15 +132,15 @@ text-shadow:
         #42e987 0%,
         #20c969 45%,
         #087b3d 100%
-    ) !important;
+    );
 
-    border: 1px solid rgba(190, 255, 210, .38) !important;
+    border: 1px solid rgba(190, 255, 210, .38);
 
     box-shadow:
         -5px -5px 10px rgba(210, 255, 225, .07),
          6px  7px 14px rgba(0, 0, 0, .58),
         inset 1px 1px 2px rgba(255, 255, 255, .18),
-        inset -3px -4px 7px rgba(0, 45, 20, .32) !important;
+        inset -3px -4px 7px rgba(0, 45, 20, .32);
 
     transition:
         background .25s ease,
@@ -154,13 +155,13 @@ text-shadow:
         #55f397 0%,
         #27d875 48%,
         #0a8845 100%
-    ) !important;
+    );
 
     box-shadow:
         -6px -6px 12px rgba(210, 255, 225, .09),
          7px  8px 16px rgba(0, 0, 0, .62),
         inset 1px 1px 2px rgba(255, 255, 255, .22),
-        inset -3px -4px 7px rgba(0, 45, 20, .30) !important;
+        inset -3px -4px 7px rgba(0, 45, 20, .30);
 }
 
 /* PERFIL — ACABAMENTO PRATA METÁLICO */
@@ -175,7 +176,7 @@ text-shadow:
         #bdcec3 48%,
         #ffffff 68%,
         #c9d9ce 100%
-    ) !important;
+    );
 
     box-shadow:
         inset 0 1px 2px rgba(255, 255, 255, .95),
@@ -185,34 +186,34 @@ text-shadow:
 /* Navegação superior */
 /* ID: DARK-009 | REF: APP.NAVIGATION.PRIMARY | SELETOR: .botao-menu */
 .botao-menu {
-  border: 1px solid rgba(75, 146, 99, .38) !important;
+  border: 1px solid rgba(75, 146, 99, .38);
   border-radius: 15px;
-  background: linear-gradient(145deg, #111b15, #0a100c) !important;
+  background: linear-gradient(145deg, #111b15, #0a100c);
   box-shadow:
     inset 0 1px 0 rgba(255, 255, 255, .035),
     0 7px 17px rgba(0, 0, 0, .34),
-    0 0 16px rgba(22, 177, 83, .045) !important;
-  color: #e8f3eb !important;
+    0 0 16px rgba(22, 177, 83, .045);
+  color: #e8f3eb;
   transition: background .2s ease, border-color .2s ease, transform .2s ease, box-shadow .2s ease;
 }
 
 /* ID: DARK-010 | REF: APP.BASE | SELETOR: .botao-icone */
 .botao-icone {
-  color: #41ed86 !important;
-  color: var(--ci-green-bright) !important;
+  color: #41ed86;
+  color: var(--ci-green-bright);
 }
 
 /* ID: DARK-011 | REF: APP.NAVIGATION.PRIMARY | SELETOR: .botao-menu:hover */
 .botao-menu:hover {
-  border-color: rgba(60, 224, 119, .75) !important;
-  background: linear-gradient(145deg, #116b3a, #0b3e25) !important;
-  color: #ffffff !important;
-  box-shadow: 0 8px 22px rgba(0, 0, 0, .45), 0 0 19px rgba(31, 207, 101, .16) !important;
+  border-color: rgba(60, 224, 119, .75);
+  background: linear-gradient(145deg, #116b3a, #0b3e25);
+  color: #ffffff;
+  box-shadow: 0 8px 22px rgba(0, 0, 0, .45), 0 0 19px rgba(31, 207, 101, .16);
 }
 
 /* ID: DARK-012 | REF: APP.NAVIGATION.PRIMARY | SELETOR: .botao-menu:hover .botao-icone */
 .botao-menu:hover .botao-icone {
-  color: #ffffff !important;
+  color: #ffffff;
 }
 
 /* ID: DARK-013 | REF: PANEL.FINANCIAL | SELETOR: .botao-menu:focus-visible, .botao-menu-lateral:focus-visible, .seta-calendario:focus-visible, .card-financeiro button:focus-visible */
@@ -220,53 +221,45 @@ text-shadow:
 .botao-menu-lateral:focus-visible,
 .seta-calendario:focus-visible,
 .card-financeiro button:focus-visible {
-  outline: 2px solid #41ed86 !important;
-  outline: 2px solid var(--ci-green-bright) !important;
+  outline: 2px solid #41ed86;
+  outline: 2px solid var(--ci-green-bright);
   outline-offset: 3px;
 }
 
-/* Estrutura do conteúdo */
-/* ID: DARK-014 | REF: APP.SIDEBAR | SELETOR: .painel-esquerdo */
-.painel-esquerdo {
-    border-radius: 20px;
-}
-
-/* ID: DARK-015 | REF: APP.SIDEBAR | SELETOR: .painel-esquerdo */
-
 /* ID: DARK-016 | REF: APP.SIDEBAR | SELETOR: .botao-menu-lateral */
 .botao-menu-lateral {
-  border: 1px solid rgba(76, 139, 97, .26) !important;
+  border: 1px solid rgba(76, 139, 97, .26);
   border-radius: 11px;
-  background: linear-gradient(145deg, #111b15, #0b120e) !important;
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, .025), 0 4px 10px rgba(0, 0, 0, .24) !important;
-  color: #dce9e0 !important;
+  background: linear-gradient(145deg, #111b15, #0b120e);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, .025), 0 4px 10px rgba(0, 0, 0, .24);
+  color: #dce9e0;
 }
 
 /* ID: DARK-017 | REF: APP.SIDEBAR | SELETOR: .botao-menu-lateral::after, .icone-menu-lateral, .botao-menu-lateral > svg */
 .botao-menu-lateral::after,
 .icone-menu-lateral,
 .botao-menu-lateral > svg {
-  color: #49d77e !important;
+  color: #49d77e;
 }
 
 /* ID: DARK-018 | REF: APP.SIDEBAR | SELETOR: .botao-menu-lateral:hover */
 .botao-menu-lateral:hover {
-  border-color: rgba(69, 224, 126, .65) !important;
-  background: linear-gradient(145deg, #116c3b, #0a4328) !important;
-  color: #ffffff !important;
-  box-shadow: 0 7px 16px rgba(0, 0, 0, .35), 0 0 17px rgba(32, 206, 104, .12) !important;
+  border-color: rgba(69, 224, 126, .65);
+  background: linear-gradient(145deg, #116c3b, #0a4328);
+  color: #ffffff;
+  box-shadow: 0 7px 16px rgba(0, 0, 0, .35), 0 0 17px rgba(32, 206, 104, .12);
 }
 
 /* ID: DARK-019 | REF: APP.SIDEBAR | SELETOR: .botao-menu-lateral:hover::after, .botao-menu-lateral:hover > .icone-menu-lateral, .botao-menu-lateral:hover > svg */
 .botao-menu-lateral:hover::after,
 .botao-menu-lateral:hover > .icone-menu-lateral,
 .botao-menu-lateral:hover > svg {
-  color: #ffffff !important;
+  color: #ffffff;
 }
 
 /* ID: DARK-020 | REF: APP.SIDEBAR | SELETOR: .botao-menu-lateral::before */
 .botao-menu-lateral::before {
-  background: radial-gradient(ellipse at 22% 50%, rgba(84, 255, 142, .11), transparent 66%) !important;
+  background: radial-gradient(ellipse at 22% 50%, rgba(84, 255, 142, .11), transparent 66%);
 }
 
 /* FUNDOS TRANSPARENTES DOS CINCO ÍCONES */
@@ -277,48 +270,15 @@ text-shadow:
 .menu-lateral .botao-menu-lateral:nth-child(3) > .icone-menu-lateral,
 .menu-lateral .botao-menu-lateral:nth-child(4) > .icone-menu-lateral,
 .menu-lateral .botao-menu-lateral:nth-child(5) > .icone-menu-lateral {
-    background: transparent !important;
-    border: none !important;
+    background: transparent;
+    border: none;
 }
 
 /* REMOVE O FUNDO SOMENTE DO ÍCONE DO BOTÃO EM HOVER */
 /* ID: DARK-022 | REF: APP.SIDEBAR | SELETOR: .menu-lateral .botao-menu-lateral:hover > .icone-menu-lateral, .menu-lateral .botao-menu-lateral:hover > svg */
 .menu-lateral .botao-menu-lateral:hover > .icone-menu-lateral,
 .menu-lateral .botao-menu-lateral:hover > svg {
-    background-color: transparent !important;
-}
-
-/* ID: DARK-023 | REF: APP.SIDEBAR | CARD DE HORÁRIO E DATA */
-.painel-esquerdo > .area-inferior-painel {
-
-  background: transparent !important;
-  border: 1px solid rgba(71, 133, 91, .28) !important;
-
-  box-shadow:
-    -2px -2px 5px rgba(220, 255, 232, 0.055),
-    -1px -1px 2px rgba(220, 255, 232, 0.025),
-     2px  2px 5px rgba(0, 0, 0, 0.38),
-     1px  1px 2px rgba(0, 0, 0, 0.22) !important;
-}
-
-/* ID: DARK-024 | REF: APP.SIDEBAR | SELETOR: .area-inferior-painel .horario-painel, .area-inferior-painel .data-painel */
-.area-inferior-painel .horario-painel,
-.area-inferior-painel .data-painel {
-  color: #e3eee6 !important;
-}
-
-/* ID: DARK-025 | REF: APP.SIDEBAR | SELETOR: .horario-valor, .data-valor */
-.horario-valor,
-.data-valor {
-  color: #e9f4ec !important;
-}
-
-/* ID: DARK-026 | REF: APP.SIDEBAR | SELETOR: .notificacao-titulo */
-.notificacao-titulo {
-  background: linear-gradient(145deg, #111b15, #0b120e) !important;
-  border: 1px solid rgba(63, 183, 105, .3) !important;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, .25) !important;
-  color: #dcebe1 !important;
+    background-color: transparent;
 }
 
 /* Calendários */
@@ -328,9 +288,9 @@ text-shadow:
       145deg,
       #0b170f 0%,
       #040906 100%
-  ) !important;
+  );
 
-  border: 1px solid rgba(75, 160, 105, .45) !important;
+  border: 1px solid rgba(75, 160, 105, .45);
 
   box-shadow:
       -6px -6px 14px rgba(210, 255, 225, .075),
@@ -338,68 +298,68 @@ text-shadow:
       inset 0 15px 27px rgba(0, 0, 0, .98),
       inset 0 -4px 10px rgba(37, 150, 78, .12),
       inset 0 1px 3px rgba(211, 255, 225, .14),
-      inset -8px -8px 16px rgba(210, 255, 225, .12) !important;
+      inset -8px -8px 16px rgba(210, 255, 225, .12);
 }
 
 /* ID: DARK-028 | REF: PANEL.CALENDAR | SELETOR: .calendario-titulo */
 .calendario-titulo {
-  color: #edf7f0 !important;
+  color: #edf7f0;
 }
 
 /* ID: DARK-029 | REF: PANEL.CALENDAR | SELETOR: .calendario-dias-semana */
 .calendario-dias-semana {
-  background: linear-gradient(90deg, #123d25, #145a32) !important;
-  color: #b9f4ca !important;
+  background: linear-gradient(90deg, #123d25, #145a32);
+  color: #b9f4ca;
   border: 1px solid rgba(65, 188, 108, .2);
 }
 
 /* ID: DARK-030 | REF: PANEL.CALENDAR | SELETOR: .calendario-dia */
 .calendario-dia {
-  background: #17231b !important;
+  background: #17231b;
   border: 1px solid rgba(88, 140, 101, .16);
-  color: #dce9df !important;
+  color: #dce9df;
   transition: background .16s ease, border-color .16s ease, color .16s ease;
 }
 
 /* ID: DARK-031 | REF: PANEL.CALENDAR | SELETOR: .calendario-dia:hover */
 .calendario-dia:hover {
-  background: #1d3827 !important;
+  background: #1d3827;
   border-color: rgba(69, 216, 119, .42);
 }
 
 /* ID: DARK-032 | REF: PANEL.CALENDAR | SELETOR: .calendario-dia.hoje */
 .calendario-dia.hoje {
-  background: linear-gradient(145deg, #1bb65d, #08783a) !important;
-  border: 1px solid #5af08d !important;
+  background: linear-gradient(145deg, #1bb65d, #08783a);
+  border: 1px solid #5af08d;
   box-shadow: 0 0 12px rgba(34, 211, 104, .2);
-  color: #ffffff !important;
+  color: #ffffff;
 }
 
 /* DIAS PASSADOS — APARÊNCIA DISCRETA */
 /* ID: DARK-033 | REF: PANEL.CALENDAR | SELETOR: .calendario-dia.dia-passado */
 .calendario-dia.dia-passado {
-  background: #0b100d !important;
-  color: #59665d !important;
-  border-color: rgba(88, 110, 95, .08) !important;
-  box-shadow: inset 1px 1px 2px rgba(0, 0, 0, .30) !important;
+  background: #0b100d;
+  color: #59665d;
+  border-color: rgba(88, 110, 95, .08);
+  box-shadow: inset 1px 1px 2px rgba(0, 0, 0, .30);
 }
 
 /* ID: DARK-034 | REF: PANEL.CALENDAR | SELETOR: .calendario-ano */
 .calendario-ano {
-  background: linear-gradient(145deg, #176b3b, #0d4829) !important;
+  background: linear-gradient(145deg, #176b3b, #0d4829);
   border: 1px solid rgba(73, 211, 125, .3);
-  color: #e7f8ec !important;
+  color: #e7f8ec;
 }
 
 /* ID: DARK-035 | REF: PANEL.CALENDAR | SELETOR: .seta-calendario */
 .seta-calendario {
-  color: #a8e8bc !important;
+  color: #a8e8bc;
 }
 
 /* ID: DARK-036 | REF: PANEL.CALENDAR | SELETOR: .seta-calendario:hover */
 .seta-calendario:hover {
-  background: #163d27 !important;
-  color: #ffffff !important;
+  background: #163d27;
+  color: #ffffff;
 }
 
 /* Cartões principais */
@@ -407,9 +367,9 @@ text-shadow:
 .card-central {
   background:
     linear-gradient(150deg, #101a14 0%, #0a100c 100%) padding-box,
-    linear-gradient(120deg, rgba(27, 99, 55, .8), rgba(39, 186, 99, .65), rgba(25, 75, 44, .8)) border-box !important;
-  border: 2px solid transparent !important;
-  box-shadow: 0 12px 28px rgba(0, 0, 0, .42), inset 0 1px 0 rgba(255, 255, 255, .025) !important;
+    linear-gradient(120deg, rgba(27, 99, 55, .8), rgba(39, 186, 99, .65), rgba(25, 75, 44, .8)) border-box;
+  border: 2px solid transparent;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, .42), inset 0 1px 0 rgba(255, 255, 255, .025);
   color: #edf5ef;
   color: var(--ci-text);
 }
@@ -428,14 +388,14 @@ text-shadow:
     inset 0 3px 7px rgba(150, 210, 165, .10),
     inset 1px 0 3px rgba(210, 255, 225, .11),
     inset 0 -3px 7px rgba(0, 0, 0, .70),
-    inset -1px 0 3px rgba(0, 0, 0, .43) !important;
+    inset -1px 0 3px rgba(0, 0, 0, .43);
 }
 
 /* ID: DARK-039 | REF: PANEL.FINANCIAL | SELETOR: .card-financeiro */
 .card-financeiro {
-  border: 1px solid transparent !important;
-  border-radius: 16px !important;
-  color: #e9f4ec !important;
+  border: 1px solid transparent;
+  border-radius: 16px;
+  color: #e9f4ec;
 }
 
 
@@ -443,9 +403,9 @@ text-shadow:
    GEOMETRIA EXTERNA PRESERVADA — SUPERFÍCIE EM DARK-0246 */
 
 .card-estudo {
-  border: 1px solid transparent !important;
-  border-radius: 16px !important;
-  color: #e9f4ec !important;
+  border: 1px solid transparent;
+  border-radius: 16px;
+  color: #e9f4ec;
 }
 
 
@@ -453,18 +413,18 @@ text-shadow:
 .titulo-card,
 .card-financeiro .titulo-card,
 .card-estudo .titulo-card {
-  background: none !important;
-  color: #eff8f1 !important;
+  background: none;
+  color: #eff8f1;
   text-shadow: 0 0 15px rgba(54, 206, 111, .12);
 }
 
 /* ID: DARK-042 | REF: COMPONENT.PANEL.HEADER_ICON.DARK_THEME | SELETOR: .financeiro-icone, .estudo-icone */
 .financeiro-icone,
 .estudo-icone {
-  background: linear-gradient(145deg, #1e9e55, #0a542f) !important;
+  background: linear-gradient(145deg, #1e9e55, #0a542f);
   border: 1px solid rgba(117, 244, 157, .32);
-  box-shadow: inset 0 1px 3px rgba(255,255,255,.18), 0 4px 12px rgba(0,0,0,.35) !important;
-  color: #ffffff !important;
+  box-shadow: inset 0 1px 3px rgba(255,255,255,.18), 0 4px 12px rgba(0,0,0,.35);
+  color: #ffffff;
 }
 
 /* CARD DO MÊS — FINANCEIRO E ESTUDO */
@@ -488,17 +448,17 @@ text-shadow:
         145deg,
         #1b3024 0%,
         #12251a 100%
-    ) !important;
+    );
 
-    border: 1px solid rgba(65, 170, 105, .42) !important;
+    border: 1px solid rgba(65, 170, 105, .42);
     border-radius: 6px;
 
     box-shadow:
         inset 0 1px 1px rgba(255, 255, 255, .08),
         inset 0 -1px 2px rgba(0, 0, 0, .32),
-        0 2px 5px rgba(0, 0, 0, .25) !important;
+        0 2px 5px rgba(0, 0, 0, .25);
 
-    color: #f4f6f7 !important;
+    color: #f4f6f7;
     font-family: "Segoe UI", Arial, sans-serif;
     font-size: 14px;
     font-weight: 700;
@@ -511,7 +471,7 @@ text-shadow:
     flex: 1 1 auto;
     min-width: 0;
 
-    color: #f4f6f7 !important;
+    color: #f4f6f7;
     font-size: 13px;
     font-weight: 700;
     text-align: left;
@@ -555,17 +515,17 @@ text-shadow:
         145deg,
         #1b3024 0%,
         #12251a 100%
-    ) !important;
+    );
 
-    border: 1px solid rgba(65, 170, 105, .42) !important;
+    border: 1px solid rgba(65, 170, 105, .42);
     border-radius: 6px;
 
     box-shadow:
         inset 0 1px 1px rgba(255, 255, 255, .08),
         inset 0 -1px 2px rgba(0, 0, 0, .32),
-        0 2px 5px rgba(0, 0, 0, .25) !important;
+        0 2px 5px rgba(0, 0, 0, .25);
 
-    color: #f4f6f7 !important;
+    color: #f4f6f7;
     font-family: "Segoe UI", Arial, sans-serif;
     font-size: 14px;
     font-weight: 700;
@@ -579,7 +539,7 @@ text-shadow:
     flex: 1 1 auto;
     min-width: 0;
 
-    color: #f4f6f7 !important;
+    color: #f4f6f7;
     font-size: 13px;
     font-weight: 700;
     text-align: left;
@@ -612,21 +572,21 @@ text-shadow:
 /* ID: DARK-044 | REF: PANEL.FINANCIAL | SELETOR: .financeiro-progresso-trilho, .estudo-progresso-trilho */
 .financeiro-progresso-trilho,
 .estudo-progresso-trilho {
-  background: #26342b !important;
+  background: #26342b;
   box-shadow: inset 0 2px 4px rgba(0, 0, 0, .42);
 }
 
 /* ID: DARK-045 | REF: PANEL.FINANCIAL | SELETOR: .financeiro-progresso-preenchimento, .estudo-progresso-preenchimento */
 .financeiro-progresso-preenchimento,
 .estudo-progresso-preenchimento {
-  background: linear-gradient(90deg, #08783b, #1ac967, #71ef9b) !important;
+  background: linear-gradient(90deg, #08783b, #1ac967, #71ef9b);
   box-shadow: 0 0 11px rgba(32, 206, 104, .28);
 }
 
 /* ID: DARK-046 | REF: PANEL.FINANCIAL | SELETOR: .financeiro-progresso-percentual, .estudo-progresso-percentual */
 .financeiro-progresso-percentual,
 .estudo-progresso-percentual {
-  color: #dce9e0 !important;
+  color: #dce9e0;
 }
 
 
@@ -634,17 +594,17 @@ text-shadow:
 /* ID: DARK-047 | REF: PANEL.FINANCIAL.INCOME
    FUNDO TRANSPARENTE — NEUMORFISMO EXTERNO */
 .card-financeiro .financeiro-renda {
-  background: transparent !important;
+  background: transparent;
 
-  border: 1px solid transparent !important;
+  border: 1px solid transparent;
 
   box-shadow:
     -2px -2px 5px rgba(220, 255, 232, 0.055),
     -1px -1px 2px rgba(220, 255, 232, 0.025),
      2px  2px 5px rgba(0, 0, 0, 0.38),
-     1px  1px 2px rgba(0, 0, 0, 0.22) !important;
+     1px  1px 2px rgba(0, 0, 0, 0.22);
 
-  color: #eaf7ee !important;
+  color: #eaf7ee;
 }
 
 
@@ -655,25 +615,25 @@ text-shadow:
 .card-financeiro
 .financeiro-indicador-prioritaria
 .financeiro-indicador-rotulo {
-  background: #101812 !important;
-  border: 1px solid rgba(126, 214, 103, .45) !important;
-  color: #b2ebc2 !important;
-  box-shadow: none !important;
+  background: #101812;
+  border: 1px solid rgba(126, 214, 103, .45);
+  color: #b2ebc2;
+  box-shadow: none;
   letter-spacing: 0.5px;
 }
 
 /* RENDA MENSAL — RÓTULO NO PADRÃO DO CARD PRIORIDADE */
 .card-financeiro .financeiro-renda-rotulo {
-  left: 50% !important;
-transform: translateX(-50%) !important;
-text-align: center !important;
+  left: 50%;
+transform: translateX(-50%);
+text-align: center;
   letter-spacing: 0.3px;
 
-  background: #101812 !important;
-  border: 1px solid rgba(126, 214, 103, .45) !important;
-  color: #b2ebc2 !important;
+  background: #101812;
+  border: 1px solid rgba(126, 214, 103, .45);
+  color: #b2ebc2;
 
-  box-shadow: none !important;
+  box-shadow: none;
 }
 
 
@@ -682,39 +642,39 @@ text-align: center !important;
 .card-financeiro .financeiro-renda-texto,
 .financeiro-indicador-valor,
 .financeiro-indicador-valor strong {
-  color: #eef7f0 !important;
+  color: #eef7f0;
 }
 
 /* ID: DARK-049 | REF: PANEL.FINANCIAL.CARDS
    FUNDO TRANSPARENTE — NEUMORFISMO EXTERNO */
 
 .card-financeiro .financeiro-indicador {
-  background: transparent !important;
+  background: transparent;
 
-  border: 1px solid transparent !important;
+  border: 1px solid transparent;
 
   box-shadow:
     -2px -2px 5px rgba(220, 255, 232, 0.055),
     -1px -1px 2px rgba(220, 255, 232, 0.025),
      2px  2px 5px rgba(0, 0, 0, 0.38),
-     1px  1px 2px rgba(0, 0, 0, 0.22) !important;
+     1px  1px 2px rgba(0, 0, 0, 0.22);
 }
 
 /* PAGO ESSE MÊS — RÓTULO NO PADRÃO DOS OUTROS CARDS */
 .card-financeiro
 .financeiro-indicador-pago
 .financeiro-indicador-rotulo {
-  background: #101812 !important;
-  border: 1px solid rgba(126, 214, 103, .45) !important;
-  color: #b2ebc2 !important;
-  box-shadow: none !important;
+  background: #101812;
+  border: 1px solid rgba(126, 214, 103, .45);
+  color: #b2ebc2;
+  box-shadow: none;
   letter-spacing: 0.3px;
 }
 
 /* ID: DARK-050 | REF: PANEL.FINANCIAL | SELETOR: .financeiro-indicador-icone, .financeiro-indicador-icone-verde */
 .financeiro-indicador-icone,
 .financeiro-indicador-icone-verde {
-  color: #65e993 !important;
+  color: #65e993;
 }
 
 /* ID: DARK-051 | REF: PANEL.FINANCIAL.PRIORITY | SELETOR: .financeiro-alfinete-icone */
@@ -725,16 +685,16 @@ text-align: center !important;
 /* ID: DARK-052 | REF: PANEL.FINANCIAL.OVERDUE_AMOUNT | SELETOR: .card-financeiro .financeiro-atrasadas-designer .financeiro-indicador-rotulo, .card-financeiro .financeiro-indicador-valor-atrasado .financeiro-indicador-rotulo */
 .card-financeiro .financeiro-atrasadas-designer .financeiro-indicador-rotulo,
 .card-financeiro .financeiro-indicador-valor-atrasado .financeiro-indicador-rotulo {
-  background: #241316 !important;
-  border-color: rgba(224, 87, 96, .58) !important;
-  color: #ff9ba2 !important;
+  background: #241316;
+  border-color: rgba(224, 87, 96, .58);
+  color: #ff9ba2;
 }
 
 /* ID: DARK-053 | REF: PANEL.FINANCIAL.OVERDUE_AMOUNT | SELETOR: .card-financeiro .financeiro-atrasadas-numero, .financeiro-valor-atrasado-icone, .financeiro-alerta-icone */
 .card-financeiro .financeiro-atrasadas-numero,
 .financeiro-valor-atrasado-icone,
 .financeiro-alerta-icone {
-  color: #ff7b83 !important;
+  color: #ff7b83;
 }
 
 /* ID: DARK-054 | REF: PANEL.FINANCIAL.BILLS_DUE
@@ -745,36 +705,36 @@ text-align: center !important;
   145deg,
   rgba(180, 35, 45, 0.085),
   rgba(140, 25, 35, 0.089)
-) !important;
+);
 
-  border: 1px solid rgba(224, 87, 96, 0.32) !important;
+  border: 1px solid rgba(224, 87, 96, 0.32);
 
   box-shadow:
     -2px -2px 5px rgba(220, 255, 232, 0.055),
     -1px -1px 2px rgba(220, 255, 232, 0.025),
      2px  2px 5px rgba(0, 0, 0, 0.38),
-     1px  1px 2px rgba(0, 0, 0, 0.22) !important;
+     1px  1px 2px rgba(0, 0, 0, 0.22);
 }
 
 /* ID: DARK-055 | REF: PANEL.FINANCIAL.BILLS_DUE | SELETOR: .financeiro-vencidas-titulo */
 .financeiro-vencidas-titulo {
-  background: linear-gradient(145deg, #63232b, #40171d) !important;
-  border: 1px solid rgba(244, 120, 128, .44) !important;
-  color: #ffe7e8 !important;
-  box-shadow: 0 1px 3px rgba(40,85,50,.08) !important;
+  background: linear-gradient(145deg, #63232b, #40171d);
+  border: 1px solid rgba(244, 120, 128, .44);
+  color: #ffe7e8;
+  box-shadow: 0 1px 3px rgba(40,85,50,.08);
 }
 
 /* CONTAS VENCIDAS — TRANSIÇÃO SUAVE AO PASSAR O MOUSE */
 
 .financeiro-conta {
-  background: #21171a !important;
-  border: 1px solid rgba(124, 60, 66, .46) !important;
-  box-shadow: none !important;
-  color: #f0e5e6 !important;
+  background: #21171a;
+  border: 1px solid rgba(124, 60, 66, .46);
+  box-shadow: none;
+  color: #f0e5e6;
 
   transition:
     background 220ms ease,
-    box-shadow 220ms ease !important;
+    box-shadow 220ms ease;
 }
 
 /* HOVER — FUNDO MAIS SUAVE */
@@ -784,23 +744,23 @@ text-align: center !important;
     145deg,
     #2b2023,
     #251a1d
-  ) !important;
+  );
 
   box-shadow:
     inset 1px 1px 3px rgba(255, 190, 195, .045),
-    0 2px 5px rgba(0, 0, 0, .18) !important;
+    0 2px 5px rgba(0, 0, 0, .18);
 }
 
 
 /* ID: DARK-058 | REF: PANEL.FINANCIAL.BILLS_DUE | SELETOR: .financeiro-conta-icone */
 .financeiro-conta-icone {
-  background: transparent !important;
-  border: none !important;
-  border-radius: 0 !important;
+  background: transparent;
+  border: none;
+  border-radius: 0;
 
-  color: #f0e4e6 !important;
+  color: #f0e4e6;
 
-  box-shadow: none !important;
+  box-shadow: none;
 }
 
 /* CIFRÃO SVG — TAMANHO REDUZIDO E COR VERMELHA */
@@ -813,40 +773,40 @@ text-align: center !important;
   height: 100%;
 
   overflow: visible;
-  color: #e29296 !important;
+  color: #e29296;
 }
 
 /* ID: DARK-059 | REF: PANEL.FINANCIAL.BILLS_DUE | SELETOR: .financeiro-conta .financeiro-conta-nome-texto, .financeiro-conta .financeiro-conta-vencimento, .financeiro-conta .financeiro-conta-valor */
 .financeiro-conta .financeiro-conta-nome-texto,
 .financeiro-conta .financeiro-conta-vencimento,
 .financeiro-conta .financeiro-conta-valor {
-  background: #26191c !important;
-  color: #f0e4e6 !important;
-  border-color: rgba(125, 71, 77, .34) !important;
-  box-shadow: none !important;
+  background: #26191c;
+  color: #f0e4e6;
+  border-color: rgba(125, 71, 77, .34);
+  box-shadow: none;
 }
 
 /* ID: DARK-060 | REF: PANEL.FINANCIAL.BILLS_DUE | SELETOR: .financeiro-conta .financeiro-conta-vencimento-rotulo */
 .financeiro-conta .financeiro-conta-vencimento-rotulo {
-  color: #cdaeb2 !important;
+  color: #cdaeb2;
 }
 
 /* ID: DARK-061 | REF: PANEL.FINANCIAL.BILLS_DUE | SELETOR: .financeiro-conta .financeiro-conta-data */
 .financeiro-conta .financeiro-conta-data {
-  color: #f0e4e6 !important;
+  color: #f0e4e6;
 }
 
 /* ID: DARK-062 | REF: PANEL.FINANCIAL.BILLS_DUE */
 .financeiro-vencidas .financeiro-conta-excluir {
-  background: transparent !important;
-  border: none !important;
-  color: #ff858c !important;
-  box-shadow: none !important;
+  background: transparent;
+  border: none;
+  color: #ff858c;
+  box-shadow: none;
 }
 
 /* ID: DARK-063 | REF: PANEL.FINANCIAL.BILLS_DUE */
 .financeiro-vencidas .financeiro-conta-excluir:hover {
-  background: transparent !important;
+  background: transparent;
 }
 
 /* Regras nativas aposentadas: trilho independente no HTML e JS-007. */
@@ -858,37 +818,37 @@ text-align: center !important;
     145deg,
     #142119,
     #0d1510
-  ) !important;
+  );
 
   border: 1px solid rgba(73, 145, 96, .28);
 
   box-shadow:
     -5px -5px 10px rgba(55, 91, 66, .20),
      6px  6px 12px rgba(0, 0, 0, .75),
-     0 0 8px rgba(39, 190, 95, .10) !important;
+     0 0 8px rgba(39, 190, 95, .10);
 }
 
 /* ID: DARK-065 | REF: PANEL.STUDY | SELETOR: .estudo-semana-dia */
 .estudo-semana-dia {
-  color: #c6e8d0 !important;
+  color: #c6e8d0;
 }
 
 /* ID: DARK-066 | REF: PANEL.STUDY | SELETOR: .estudo-dia-circulo.neutro */
 .estudo-dia-circulo.neutro {
-  background: #415047 !important;
-  color: #e2ebe5 !important;
+  background: #415047;
+  color: #e2ebe5;
 }
 
 /* ID: DARK-067 | REF: PANEL.STUDY | SELETOR: .estudo-dia-circulo.pendente */
 .estudo-dia-circulo.pendente {
-  background: #a93440 !important;
-  color: #ffffff !important;
+  background: #a93440;
+  color: #ffffff;
 }
 
 /* ID: DARK-068 | REF: PANEL.STUDY | SELETOR: .estudo-dia-circulo.concluido */
 .estudo-dia-circulo.concluido {
-  background: linear-gradient(145deg, #20bc62, #08783b) !important;
-  color: #ffffff !important;
+  background: linear-gradient(145deg, #20bc62, #08783b);
+  color: #ffffff;
   box-shadow: 0 0 9px rgba(30, 201, 99, .18);
 }
 
@@ -945,7 +905,7 @@ text-align: center !important;
 .estudo-atividade-dado {
   background:
     linear-gradient(145deg, #121d16, #0c130f) padding-box,
-    linear-gradient(110deg, #1b6036, #239d55, #1b6036) border-box !important;
+    linear-gradient(110deg, #1b6036, #239d55, #1b6036) border-box;
   color: #e7f1e9;
 }
 
@@ -953,20 +913,20 @@ text-align: center !important;
 .estudo-campo-rotulo,
 .estudo-prioridade-rotulo,
 .estudo-atividade-dado span {
-  background: #101812 !important;
-  color: #b2ebc2 !important;
+  background: #101812;
+  color: #b2ebc2;
 }
 
 /* ID: DARK-071 | REF: PANEL.STUDY | SELETOR: .estudo-campo-icone */
 .estudo-campo-icone {
-  color: #63dc8d !important;
+  color: #63dc8d;
 }
 
 /* ID: DARK-072 | REF: PANEL.STUDY | SELETOR: .estudo-campo-texto, .estudo-prioridade-texto, .estudo-atividade-dado strong */
 .estudo-campo-texto,
 .estudo-prioridade-texto,
 .estudo-atividade-dado strong {
-  color: #eaf3ec !important;
+  color: #eaf3ec;
 }
 
 /* ID: DARK-073 | REF: PANEL.STUDY | SELETOR: .estudo-campo-pendencias .estudo-campo-rotulo, .estudo-campo-pendencias .estudo-campo-icone, .estudo-campo-pendencias .estudo-campo-texto, .estudo-atividade-pendencias span, .es... */
@@ -975,19 +935,19 @@ text-align: center !important;
 .estudo-campo-pendencias .estudo-campo-texto,
 .estudo-atividade-pendencias span,
 .estudo-atividade-pendencias strong {
-  color: #ff858c !important;
+  color: #ff858c;
 }
 
 /* ID: DARK-074 | REF: PANEL.STUDY | SELETOR: .estudo-campo-pendencias */
 .estudo-campo-pendencias {
   background:
     linear-gradient(145deg, #211316, #160e10) padding-box,
-    linear-gradient(110deg, #74303a, #b84a54, #74303a) border-box !important;
+    linear-gradient(110deg, #74303a, #b84a54, #74303a) border-box;
 }
 
 /* ID: DARK-075 | REF: PANEL.STUDY | SELETOR: .estudo-prioridade-concluida */
 .estudo-prioridade-concluida {
-  background: linear-gradient(145deg, #20bc62, #08783b) !important;
+  background: linear-gradient(145deg, #20bc62, #08783b);
   box-shadow: 0 0 10px rgba(30, 201, 99, .2);
 }
 
@@ -995,8 +955,8 @@ text-align: center !important;
 /* NEUMORFISMO EXTERNO E INTERNO — METAS */
 
 .card-central.card-estudo .estudo-botao-metas {
-  color: #ffffff !important;
-  border-color: rgba(91, 231, 139, .34) !important;
+  color: #ffffff;
+  border-color: rgba(91, 231, 139, .34);
 
   box-shadow:
     /* Iluminação externa superior e esquerda */
@@ -1010,32 +970,31 @@ text-align: center !important;
 
     /* Relevo interno 3D */
     inset 2px 2px 4px rgba(255, 255, 255, .28),
-    inset -3px -4px 7px rgba(0, 35, 15, .35)
-    !important;
+    inset -3px -4px 7px rgba(0, 35, 15, .35);
 }
 
 /* ID: DARK-077 | REF: PANEL.STUDY */
 /* NEUMORFISMO IGUAL AO CARD PRIORIDADE */
 
 .estudo-atividade-card {
-  background: transparent !important;
-  border: 1px solid transparent !important;
+  background: transparent;
+  border: 1px solid transparent;
 
   box-shadow:
     -2px -2px 5px rgba(220, 255, 232, 0.055),
     -1px -1px 2px rgba(220, 255, 232, 0.025),
      2px  2px 5px rgba(0, 0, 0, 0.38),
-     1px  1px 2px rgba(0, 0, 0, 0.22) !important;
+     1px  1px 2px rgba(0, 0, 0, 0.22);
 }
 
 /* ID: DARK-078 | REF: PANEL.STUDY.ACTIVITY.CONTAINER
    FUNDO GRAFITE-VERDE — ÁREA DE ATIVIDADES */
 
 .estudo-area-direita {
-  background: transparent !important;
+  background: transparent;
 
-  border: none !important;
-  box-shadow: none !important;
+  border: none;
+  box-shadow: none;
 }
 
 /* ID: DARK-079 | REF: PANEL.STUDY | ÍCONE SEM FUNDO */
@@ -1045,8 +1004,8 @@ text-align: center !important;
 /* ID: DARK-080 | REF: PANEL.STUDY | SELETOR: .estudo-atividade-cabecalho h3 */
 
 .estudo-atividade-cabecalho h3 {
-  background: none !important;
-  color: #eff8f1 !important;
+  background: none;
+  color: #eff8f1;
   -webkit-text-fill-color: currentColor;
 
   text-shadow:
@@ -1056,8 +1015,8 @@ text-align: center !important;
 /* Botão Comprovantes: refinamento do verde sem alterar dimensões */
 /* ID: DARK-081 | REF: COMPONENT.ACTION.BUTTONS.DARK_THEME | SELETOR: .botao-comprovantes */
 .botao-comprovantes {
-  border-color: rgba(91, 231, 139, .34) !important;
-  box-shadow: 0 5px 14px rgba(0,0,0,.34), 0 0 14px rgba(29, 198, 94, .12) !important;
+  border-color: rgba(91, 231, 139, .34);
+  box-shadow: 0 5px 14px rgba(0,0,0,.34), 0 0 14px rgba(29, 198, 94, .12);
 }
 
 
@@ -1076,26 +1035,25 @@ text-align: center !important;
 
     /* Relevo interno 3D preservado */
     inset 2px 2px 4px rgba(255,255,255,.28),
-    inset -3px -4px 7px rgba(0,35,15,.35)
-    !important;
+    inset -3px -4px 7px rgba(0,35,15,.35);
 }
 
 /* Rodapé */
 /* ID: DARK-082 | REF: APP.FOOTER | SELETOR: .rodape */
 .rodape {
-  background: #070c09 !important;
+  background: #070c09;
   border-top: 1px solid rgba(72, 139, 92, .2);
-  color: #8fa196 !important;
+  color: #8fa196;
 }
 
 /* ID: DARK-083 | REF: APP.FOOTER | SELETOR: .rodape-destaque */
 .rodape-destaque {
-  color: #58d985 !important;
+  color: #58d985;
 }
 
 /* ID: DARK-084 | REF: APP.FOOTER | SELETOR: .rodape::before */
 .rodape::before {
-  background: #28bd67 !important;
+  background: #28bd67;
   box-shadow: 0 0 9px rgba(40, 189, 103, .28);
 }
 
@@ -1127,10 +1085,10 @@ text-align: center !important;
 @media (prefers-reduced-motion: reduce) {
   /* ID: DARK-088 | REF: APP.BASE | SELETOR: *, *::before, *::after | @media (prefers-reduced-motion: reduce) */
   *, *::before, *::after {
-    scroll-behavior: auto !important;
-    animation-duration: .01ms !important;
-    animation-iteration-count: 1 !important;
-    transition-duration: .01ms !important;
+    scroll-behavior: auto;
+    animation-duration: .01ms;
+    animation-iteration-count: 1;
+    transition-duration: .01ms;
   }
 }
 
@@ -1282,8 +1240,8 @@ text-align: center !important;
   }
   /* ID: DARK-111 | REF: APP.HEADER | SELETOR: .logo-nome | @media (max-width: 652px) */
   .logo-nome {
-    font-size: 6vw !important;
-    font-size: clamp(22px, 6vw, 27px) !important;
+    font-size: 6vw;
+    font-size: clamp(22px, 6vw, 27px);
     letter-spacing: -.5px;
     white-space: nowrap;
   }
@@ -1416,8 +1374,8 @@ header.cabecalho .logo {
 header.cabecalho .logo-simbolo {
     display: block;
     position: static;
-    width: 126px !important;
-    height: 126px !important;
+    width: 126px;
+    height: 126px;
     max-width: 126px;
     max-height: 126px;
     object-fit: contain;
@@ -1429,32 +1387,13 @@ header.cabecalho .logo-simbolo {
 @media (max-width: 652px) {
     /* ID: DARK-129 | REF: APP.HEADER | SELETOR: header.cabecalho .logo-simbolo | @media (max-width: 652px) */
     header.cabecalho .logo-simbolo {
-    width: 78px !important;
-    height: 78px !important;
+    width: 78px;
+    height: 78px;
     max-width: 78px;
     max-height: 78px;
     flex-basis: 78px;
 }
 }
-
-/* NEUMORFISMO INTERNO — PAINEL ESQUERDO */
-/* ID: DARK-130 | REF: APP.SIDEBAR | SELETOR: .painel-esquerdo */
-.painel-esquerdo {
-    background: linear-gradient(
-        145deg,
-        #0b170f 0%,
-        #040906 100%
-    ) !important;
-
-    border: 1px solid rgba(75, 160, 105, 0.45) !important;
-
-    box-shadow:
-        -7px -7px 16px rgba(210, 255, 225, .10),
-         7px  7px 16px rgba(0, 0, 0, .30),
-        inset 0 15px 27px rgba(0, 0, 0, .98),
-        inset 0 -4px 10px rgba(37, 150, 78, .12),
-        inset 0 1px 3px rgba(211, 255, 225, .14),
-        inset -8px -8px 16px rgba(210, 255, 225, .12) !important;}
 
 /* NEUMORFISMO EXTERNO — BOTÕES DO PAINEL ESQUERDO */
 /* ID: DARK-131 | REF: APP.SIDEBAR | SELETOR: .painel-esquerdo .menu-lateral .botao-menu-lateral */
@@ -1465,12 +1404,12 @@ header.cabecalho .logo-simbolo {
         inset -1px -1px 2px rgba(0, 0, 0, .45),
         -8px -8px 16px rgba(200, 200, 200, 0.05),
          9px  9px 19px rgba(0, 0, 0, .78),
-         0 0 10px rgba(35, 180, 85, .10) !important;
+         0 0 10px rgba(35, 180, 85, .10);
 
-    border: 1px solid transparent !important;
+    border: 1px solid transparent;
 
     background:
-    linear-gradient(145deg, #111b15, #0a100c) padding-box !important;
+    linear-gradient(145deg, #111b15, #0a100c) padding-box;
 
     transition:
         box-shadow .25s ease,
@@ -1483,7 +1422,7 @@ header.cabecalho .logo-simbolo {
         inset -3px -3px 5px rgba(0, 0, 0, .48),
         -5px -5px 11px rgba(210, 255, 225, .09),
          7px 7px 15px rgba(0, 0, 0, .68),
-         0 0 17px rgba(32, 206, 104, .22) !important;
+         0 0 17px rgba(32, 206, 104, .22);
 
     background:
         linear-gradient(145deg, #116b3a, #0b3e25) padding-box,
@@ -1493,70 +1432,8 @@ header.cabecalho .logo-simbolo {
             rgba(75, 146, 99, .40) 38%,
             rgba(20, 65, 37, .92) 72%,
             rgba(8, 30, 18, .99) 100%
-        ) border-box !important;
+        ) border-box;
 }
-
-/* TÍTULO NOTIFICAÇÕES — FUNDO MAIS CLARO */
-/* ID: DARK-133 | NOTIFIQUE-ME — DESIGN DO CAMPO NOVEMBRO */
-
-.painel-esquerdo .notificacao-titulo {
-    display: block;
-    width: fit-content;
-    max-width: 100%;
-
-    box-sizing: border-box;
-    margin: 0 auto -10px;
-    padding: 2px 12px;
-
-    background: linear-gradient(
-        145deg,
-        #1b3024,
-        #12251a
-    ) !important;
-
-    border: 1px solid rgba(65, 170, 105, .42) !important;
-    border-radius: 6px !important;
-
-    outline: none !important;
-
-    box-shadow:
-        inset 0 1px 1px rgba(255, 255, 255, .08),
-        inset 0 -1px 2px rgba(0, 0, 0, .32),
-        0 2px 5px rgba(0, 0, 0, .25) !important;
-
-    color: #f4f6f7 !important;
-    font-family: "Segoe UI", Arial, sans-serif !important;
-    font-size: 13px !important;
-    font-weight: 700 !important;
-    line-height: 1.2;
-    text-align: center;
-}
-
-/* ID: DARK-134 | REF: APP.SIDEBAR.NOTIFICATIONS | ÍCONE ATUAL DO BOTÃO NOTIFIQUE-ME */
-/* A estrutura SVG atual mantém os desenhos dentro de um <g>; os antigos seletores
-   para círculos/path como filhos diretos foram removidos por não corresponderem ao HTML. */
-/* ID: DARK-135 | REF: APP.SIDEBAR | SELETOR: .painel-esquerdo svg.notificacao-icone */
-.painel-esquerdo svg.notificacao-icone {
-    display: block !important;
-    width: 78px !important;
-    height: 78px !important;
-    flex: 0 0 78px;
-    margin: 0 auto !important;
-
-    background: transparent !important;
-    border: none !important;
-    border-radius: 50% !important;
-    box-shadow: none !important;
-
-    filter:
-        drop-shadow(-5px -5px 8px rgba(210, 255, 225, .13))
-        drop-shadow(7px 8px 11px rgba(0, 0, 0, .85))
-        !important;
-
-    overflow: visible !important;
-    transition: filter .3s ease;
-}
-
 
 /* ==========================================
    SINO — NEUMORFISMO ESMERALDA PREMIUM
@@ -1573,8 +1450,8 @@ header.cabecalho .logo-simbolo {
 /* Corpo esmeralda */
 /* ID: DARK-137 | REF: APP.HEADER | SELETOR: .acoes-cabecalho .notificacoes .sino-corpo */
 .acoes-cabecalho .notificacoes .sino-corpo {
-    fill: url(#sino-gradiente-corpo) !important;
-    stroke: url(#sino-contorno) !important;
+    fill: url(#sino-gradiente-corpo);
+    stroke: url(#sino-contorno);
     stroke-width: 1px;
     stroke-linejoin: round;
 }
@@ -1582,8 +1459,8 @@ header.cabecalho .logo-simbolo {
 /* Reflexo superior */
 /* ID: DARK-138 | REF: APP.HEADER | SELETOR: .acoes-cabecalho .notificacoes .sino-reflexo */
 .acoes-cabecalho .notificacoes .sino-reflexo {
-    fill: none !important;
-    stroke: url(#sino-reflexo) !important;
+    fill: none;
+    stroke: url(#sino-reflexo);
     stroke-width: 1.25px;
     stroke-linecap: round;
 }
@@ -1591,8 +1468,8 @@ header.cabecalho .logo-simbolo {
 /* Reflexo lateral */
 /* ID: DARK-139 | REF: APP.HEADER | SELETOR: .acoes-cabecalho .notificacoes .sino-reflexo-lateral */
 .acoes-cabecalho .notificacoes .sino-reflexo-lateral {
-    fill: none !important;
-    stroke: rgba(186, 255, 208, .48) !important;
+    fill: none;
+    stroke: rgba(186, 255, 208, .48);
     stroke-width: .85px;
     stroke-linecap: round;
 }
@@ -1600,8 +1477,8 @@ header.cabecalho .logo-simbolo {
 /* Base luminosa */
 /* ID: DARK-140 | REF: APP.HEADER | SELETOR: .acoes-cabecalho .notificacoes .sino-base */
 .acoes-cabecalho .notificacoes .sino-base {
-    fill: none !important;
-    stroke: #8bffb3 !important;
+    fill: none;
+    stroke: #8bffb3;
     stroke-width: 1.7px;
     stroke-linecap: round;
 }
@@ -1613,7 +1490,7 @@ header.cabecalho .logo-simbolo {
         drop-shadow(-2px -2px 3px rgba(190, 255, 215, .22))
         drop-shadow(4px 5px 6px rgba(0, 0, 0, .68))
         drop-shadow(0 0 9px rgba(32, 206, 104, .32))
-        !important;
+       ;
 
     transform: translateY(-1px);
 }
@@ -1626,14 +1503,14 @@ header.cabecalho .logo-simbolo {
         #ff6872 0%,
         #ed2433 55%,
         #a90012 100%
-    ) !important;
+    );
 
     border: 1px solid rgba(255, 210, 215, .55);
 
     box-shadow:
         inset 0 1px 2px rgba(255, 255, 255, .35),
         0 2px 4px rgba(0, 0, 0, .55),
-        0 0 6px rgba(255, 45, 60, .20) !important;
+        0 0 6px rgba(255, 45, 60, .20);
 }
 
 /* NEUMORFISMO — ÍCONE DE PERFIL/LOGIN */
@@ -1644,7 +1521,7 @@ header.cabecalho .logo-simbolo {
         -6px -6px 13px rgba(210, 255, 225, .09),
          7px  7px 15px rgba(0, 0, 0, .75),
          0 0 8px rgba(38, 170, 85, .08)
-        !important;
+       ;
 }
 
 /* SINO — NEUMORFISMO DO ÍCONE DE PERFIL */
@@ -1655,7 +1532,7 @@ header.cabecalho .logo-simbolo {
         drop-shadow(-6px -6px 13px rgba(210, 255, 225, .09))
         drop-shadow(7px 7px 15px rgba(0, 0, 0, .75))
         drop-shadow(0 0 8px rgba(38, 170, 85, .08))
-        !important;
+       ;
 }
 
 /* ==========================================
@@ -1671,7 +1548,7 @@ header.cabecalho .logo-simbolo {
     inset -1px -1px 2px rgba(0, 0, 0, .45),
     -8px -8px 16px rgba(200, 200, 200, 0.05),
      9px  9px 19px #000000,
-     0 0 10px rgba(35, 180, 85, .10) !important;
+     0 0 10px rgba(35, 180, 85, .10);
 
     transition:
         box-shadow .25s ease,
@@ -1686,7 +1563,7 @@ header.cabecalho .logo-simbolo {
     inset -3px -3px 5px rgba(0, 0, 0, .48),
     -5px -5px 11px rgba(210, 255, 225, .09),
      7px  7px 15px rgba(0, 0, 0, .68),
-     0 0 17px rgba(32, 206, 104, .22) !important;
+     0 0 17px rgba(32, 206, 104, .22);
 }
 
 /* ==========================================
@@ -1703,10 +1580,10 @@ header.cabecalho .logo-simbolo {
     height: 34px;
     flex: 0 0 34px;
 
-    color: #8af0ae !important;
+    color: #8af0ae;
 
-    background: transparent !important;
-    border: none !important;
+    background: transparent;
+    border: none;
     border-radius: 0;
 
     transition:
@@ -1717,31 +1594,31 @@ header.cabecalho .logo-simbolo {
 /* Realce dos ícones ao passar o mouse */
 /* ID: DARK-148 | REF: APP.NAVIGATION.PRIMARY | SELETOR: .menu-principal > .botao-menu:hover .botao-icone */
 .menu-principal > .botao-menu:hover .botao-icone {
-    color: #ffffff !important;
-    background: transparent !important;
-    border-color: transparent !important;
+    color: #ffffff;
+    background: transparent;
+    border-color: transparent;
 }
 
 /* Remove a borda dos cinco botões superiores */
 /* ID: DARK-149 | REF: APP.NAVIGATION.PRIMARY | SELETOR: .menu-principal > .botao-menu */
 .menu-principal > .botao-menu {
-    border: 0 !important;
+    border: 0;
     background: linear-gradient(
         145deg,
         #111b15,
         #0a100c
-    ) !important;
+    );
 }
 
 /* Mantém o efeito verde durante o hover, sem borda */
 /* ID: DARK-150 | REF: APP.NAVIGATION.PRIMARY | SELETOR: .menu-principal > .botao-menu:hover */
 .menu-principal > .botao-menu:hover {
-    border: 0 !important;
+    border: 0;
     background: linear-gradient(
         145deg,
         #116b3a,
         #0b3e25
-    ) !important;
+    );
 }
 
 /* REDUÇÃO DOS ÍCONES DO PAINEL ESQUERDO */
@@ -1749,9 +1626,9 @@ header.cabecalho .logo-simbolo {
 /* ID: DARK-151 | REF: APP.SIDEBAR | ÁREA AZUL | CAIXAS DOS ÍCONES */
 .painel-esquerdo .menu-lateral .botao-menu-lateral > .icone-menu-lateral {
     display: flex;
-    flex: 0 0 30px !important;
-    width: 30px !important;
-    height: 30px !important;
+    flex: 0 0 30px;
+    width: 30px;
+    height: 30px;
     box-sizing: border-box;
     align-items: center;
     justify-content: center;
@@ -1761,8 +1638,8 @@ header.cabecalho .logo-simbolo {
 /* ID: DARK-152 | REF: APP.SIDEBAR | ÁREA AZUL | DESENHOS INTERNOS */
 .painel-esquerdo .menu-lateral .botao-menu-lateral > .icone-menu-lateral > svg {
     display: block;
-    width: 26px !important;
-    height: 26px !important;
+    width: 26px;
+    height: 26px;
     flex: none;
     padding: 0;
     margin: 0;
@@ -1771,11 +1648,11 @@ header.cabecalho .logo-simbolo {
 /* ID: DARK-153 | REF: APP.SIDEBAR | ÁREA AZUL | CALENDÁRIO DIRETO */
 .painel-esquerdo .menu-lateral .botao-menu-lateral:nth-child(2) > svg {
     display: block;
-    box-sizing: border-box !important;
-    flex: 0 0 30px !important;
-    width: 30px !important;
-    height: 30px !important;
-    padding: 2px !important;
+    box-sizing: border-box;
+    flex: 0 0 30px;
+    width: 30px;
+    height: 30px;
+    padding: 2px;
     margin: 0;
 }
 
@@ -1784,150 +1661,8 @@ header.cabecalho .logo-simbolo {
 /* ID: DARK-154 | REF: APP.SIDEBAR | SELETOR: .painel-esquerdo .menu-lateral .botao-menu-lateral:hover > .icone-menu-lateral, .painel-esquerdo .menu-lateral .botao-menu-lateral:hover > svg */
 .painel-esquerdo .menu-lateral .botao-menu-lateral:hover > .icone-menu-lateral,
 .painel-esquerdo .menu-lateral .botao-menu-lateral:hover > svg {
-    background: transparent !important;
-    border-color: transparent !important;
-}
-
-/* ==========================================
-   BOTÃO NOTIFIQUE-ME — NEUMORFISMO PREMIUM
-========================================== */
-
-/* ID: DARK-155 | REF: APP.SIDEBAR | SELETOR: .botao-notifique */
-.botao-notifique {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    width: 78px;
-    height: 78px;
-    flex: 0 0 78px;
-
-    padding: 0;
-    margin: 0 auto;
-
-    box-sizing: border-box;
-    border: 1px solid rgba(145, 245, 177, .82) !important;
-    border-radius: 50% !important;
-
-    background:
-    radial-gradient(
-        circle at 32% 22%,
-        rgba(255, 255, 255, .34) 0%,
-        rgba(255, 255, 255, 0.192) 18%,
-        transparent 43%
-    ),
-    linear-gradient(
-        145deg,
-        #37dc7b 0%,
-        #159b50 43%,
-        #0c6838 76%,
-        #064527 100%
-    ) !important;
-
-    box-shadow:
-    /* NEUMORFISMO EXTERNO */
-    -5px -5px 10px rgba(210, 255, 225, .08),
-     6px  6px 12px rgba(0, 0, 0, .42),
-
-    /* ESQUEUMORFISMO INTERNO */
-    inset 0 2px 3px rgba(255, 255, 255, .38),
-    inset 1px 0 2px rgba(255, 255, 255, .12),
-    inset 0 -4px 6px rgba(0, 35, 16, .72),
-
-    /* PROFUNDIDADE FÍSICA */
-    0 2px 0 rgba(0, 50, 25, .95),
-    0 6px 12px rgba(0, 0, 0, .52) !important;
-
-    cursor: pointer;
-    appearance: none;
-
-    transition:
-        box-shadow .25s ease,
-        background .25s ease,
-        transform .25s ease;
-}
-
-/* ÍCONE INTERNO */
-/* ID: DARK-156 | REF: APP.SIDEBAR | SELETOR: .botao-notifique .notificacao-icone */
-.botao-notifique .notificacao-icone {
-    width: 78px !important;
-    height: 78px !important;
-    filter: none !important;
-    pointer-events: none;
-}
-
-/* HOVER — EFEITO DE PRESSÃO NEUMÓRFICA */
-/* ID: DARK-157 | REF: APP.SIDEBAR | SELETOR: .botao-notifique:hover */
-.botao-notifique:hover {
-    background:
-    radial-gradient(
-        circle at 32% 20%,
-        rgba(255, 255, 255, .45),
-        transparent 43%
-    ),
-    linear-gradient(
-        145deg,
-        #45e687,
-        #19a956 48%,
-        #075b30 100%
-    ) !important;
-
-    box-shadow:
-    inset 0 2px 3px rgba(255, 255, 255, .45),
-    inset 0 -4px 7px rgba(0, 35, 16, .65),
-    0 2px 0 rgba(0, 50, 25, .95),
-    0 8px 14px rgba(0, 0, 0, .55) !important;
-}
-
-/* ACESSIBILIDADE */
-/* ID: DARK-158 | REF: APP.SIDEBAR | SELETOR: .botao-notifique:focus-visible */
-.botao-notifique:focus-visible {
-    outline: 2px solid #41ed86;
-    outline-offset: 4px;
-}
-
-/* AJUSTE DE DIMENSÃO DO BOTÃO NOTIFIQUE-ME */
-
-/* ID: DARK-159 | REF: APP.SIDEBAR | SELETOR: .painel-esquerdo .botao-notifique */
-.painel-esquerdo .botao-notifique {
-    width: 60px !important;
-    height: 60px !important;
-    flex: 0 0 60px !important;
-}
-
-/* ID: DARK-160 | REF: APP.SIDEBAR | SELETOR: .painel-esquerdo .botao-notifique .notificacao-icone */
-.painel-esquerdo .botao-notifique .notificacao-icone {
-    width: 70px !important;
-    height: 70px !important;
-    flex: 0 0 70px !important;
-}
-
-/* AJUSTE DE ALTURA DO PAINEL ESQUERDO */
-
-/* GRUPO TEMA ESCURO: @media (min-width: 653px) */
-@media (min-width: 653px) {
-    /* ID: DARK-161 | REF: APP.SIDEBAR | SELETOR: .painel-esquerdo | @media (min-width: 653px) */
-    .painel-esquerdo {
-        padding-bottom: 60px !important;
-    }
-}
-
-/* DESLOCAMENTO VISUAL — NOTIFIQUE-ME */
-
-/* ID: DARK-162 | REF: APP.SIDEBAR | SELETOR: .painel-esquerdo .notificacao-titulo, .painel-esquerdo .botao-notifique */
-.painel-esquerdo .notificacao-titulo,
-.painel-esquerdo .botao-notifique {
-    transform: translateY(35px) !important;
-}
-
-/* AJUSTE DO ESPAÇAMENTO ENTRE MENU E HORÁRIO */
-
-/* GRUPO TEMA ESCURO: @media (min-width: 653px) */
-@media (min-width: 653px) {
-    /* ID: DARK-163 | REF: APP.SIDEBAR | SELETOR: .painel-esquerdo > .area-inferior-painel | @media (min-width: 653px) */
-    .painel-esquerdo > .area-inferior-painel {
-        transform: translateY(15px) !important;
-    }
+    background: transparent;
+    border-color: transparent;
 }
 
 /* FINANCEIRO — ÍCONE NEUMÓRFICO PREMIUM */
@@ -1941,13 +1676,13 @@ header.cabecalho .logo-simbolo {
     align-items: center;
     justify-content: center;
 
-    width: 34px !important;
-    height: 34px !important;
-    flex: 0 0 34px !important;
+    width: 34px;
+    height: 34px;
+    flex: 0 0 34px;
 
     box-sizing: border-box;
-    border-radius: 50% !important;
-    color: #ffffff !important;
+    border-radius: 50%;
+    color: #ffffff;
 }
 
 /* FINANCEIRO — MANTÉM O NEUMORFISMO ATUAL */
@@ -1967,9 +1702,9 @@ header.cabecalho .logo-simbolo {
             rgba(133, 220, 157, .62) 24%,
             rgba(25, 91, 52, .94) 62%,
             rgba(151, 222, 169, .58) 100%
-        ) border-box !important;
+        ) border-box;
 
-    border: 1px solid transparent !important;
+    border: 1px solid transparent;
 
     box-shadow:
         0 3px 6px rgba(0, 0, 0, .44),
@@ -1978,9 +1713,9 @@ header.cabecalho .logo-simbolo {
         inset 1px 1px 3px rgba(225, 255, 232, .30),
         inset 0 3px 5px rgba(133, 220, 157, .20),
         inset 0 -2px 4px rgba(0, 18, 9, .48),
-        inset -1px 0 2px rgba(0, 18, 9, .20) !important;
+        inset -1px 0 2px rgba(0, 18, 9, .20);
 
-    color: #ffffff !important;
+    color: #ffffff;
 }
 
 /* LIVRO — TRAÇO MAIS LUMINOSO, SEM EFEITO NEON */
@@ -2000,14 +1735,14 @@ header.cabecalho .logo-simbolo {
 .card-central.card-painel-novo .rotina-identificacao .titulo-card,
 #painel-compromisso .compromisso-identificacao #titulo-compromisso,
 #painel-lembrete .lembrete-identificacao #titulo-lembrete {
-    background: none !important;
-    background-clip: border-box !important;
-    -webkit-background-clip: border-box !important;
-    color: #eff8f1 !important;
-    -webkit-text-fill-color: currentColor !important;
-    -webkit-text-stroke: 0 transparent !important;
-    text-shadow: none !important;
-    letter-spacing: 0.3px !important;
+    background: none;
+    background-clip: border-box;
+    -webkit-background-clip: border-box;
+    color: #eff8f1;
+    -webkit-text-fill-color: currentColor;
+    -webkit-text-stroke: 0 transparent;
+    text-shadow: none;
+    letter-spacing: 0.3px;
 }
 
 
@@ -2032,9 +1767,9 @@ header.cabecalho .logo-simbolo {
             rgba(133, 220, 157, .62) 24%,
             rgba(25, 91, 52, .94) 62%,
             rgba(151, 222, 169, .58) 100%
-        ) border-box !important;
+        ) border-box;
 
-    border: 1px solid transparent !important;
+    border: 1px solid transparent;
 
     box-shadow:
         0 3px 6px rgba(0, 0, 0, .44),
@@ -2043,13 +1778,13 @@ header.cabecalho .logo-simbolo {
         inset 1px 1px 3px rgba(225, 255, 232, .30),
         inset 0 3px 5px rgba(133, 220, 157, .20),
         inset 0 -2px 4px rgba(0, 18, 9, .48),
-        inset -1px 0 2px rgba(0, 18, 9, .20) !important;
+        inset -1px 0 2px rgba(0, 18, 9, .20);
 
-    color: #ffffff !important;
+    color: #ffffff;
 
     text-shadow:
         0 1px 1px rgba(0, 20, 10, .50),
-        0 0 2px rgba(190, 255, 207, .28) !important;
+        0 0 2px rgba(190, 255, 207, .28);
 }
 
 
@@ -2059,15 +1794,15 @@ header.cabecalho .logo-simbolo {
   position: relative;
   isolation: isolate;
 
-  background: transparent !important;
-  border: 1px solid transparent !important;
+  background: transparent;
+  border: 1px solid transparent;
   border-radius: 12px;
 
   box-shadow:
     -2px -2px 5px rgba(220, 255, 232, 0.055),
     -1px -1px 2px rgba(220, 255, 232, 0.025),
      2px  2px 5px rgba(0, 0, 0, 0.38),
-     1px  1px 2px rgba(0, 0, 0, 0.22) !important;
+     1px  1px 2px rgba(0, 0, 0, 0.22);
 }
 
 /* ID: DARK-168 | REF: PANEL.STUDY.WEEK.CONTENT | CONTEÚDO ACIMA DO REFLEXO */
@@ -2090,9 +1825,9 @@ header.cabecalho .logo-simbolo {
 /* ID: DARK-170 | REF: PANEL.STUDY.ACTIVITY.FIELD_LABELS | TÍTULOS BRANCOS SEM FUNDO */
 
 .card-estudo .estudo-atividade-dado > span {
-  background: transparent !important;
-  color: #ffffff !important;
-  text-shadow: none !important;
+  background: transparent;
+  color: #ffffff;
+  text-shadow: none;
 }
 
 /* CARDS DE ATIVIDADES — REMOVER CONTORNO DOS CINCO CAMPOS */
@@ -2102,9 +1837,9 @@ header.cabecalho .logo-simbolo {
 > .estudo-atividade-dado {
 
   background:
-    linear-gradient(145deg, #121d16, #0c130f) padding-box !important;
+    linear-gradient(145deg, #121d16, #0c130f) padding-box;
 
-  border: 1px solid transparent !important;
+  border: 1px solid transparent;
 }
 
 /* ID: DARK-171 | REF: PANEL.ROUTINE.WEEKLY.STATUS | SELETOR: #card-rotina-semanal .rotina-dia-status | CORES POR DIA */
@@ -2125,9 +1860,9 @@ header.cabecalho .logo-simbolo {
     #718176 0%,
     #46564b 55%,
     #304036 100%
-  ) !important;
+  );
 
-  color: #ffffff !important;
+  color: #ffffff;
 }
 
 /* TERÇA E QUARTA — VERMELHO */
@@ -2139,17 +1874,17 @@ header.cabecalho .logo-simbolo {
     #f16b74 0%,
     #bf3543 52%,
     #781d2a 100%
-  ) !important;
+  );
 
-  border-color: rgba(255,169,175,.58) !important;
-  color: #ffffff !important;
+  border-color: rgba(255,169,175,.58);
+  color: #ffffff;
 
   box-shadow:
     inset 0 1px 2px rgba(255,255,255,.28),
     inset 0 -2px 3px rgba(55,0,5,.36),
     -1px -1px 1px rgba(255,232,234,.08),
     1px 2px 3px rgba(0,0,0,.42),
-    0 1px 2px rgba(190,35,52,.13) !important;
+    0 1px 2px rgba(190,35,52,.13);
 }
 
 /* QUINTA — VERDE */
@@ -2159,17 +1894,17 @@ header.cabecalho .logo-simbolo {
     #62efa0 0%,
     #1aa75c 52%,
     #086039 100%
-  ) !important;
+  );
 
-  border-color: rgba(163,255,193,.66) !important;
-  color: #ffffff !important;
+  border-color: rgba(163,255,193,.66);
+  color: #ffffff;
 
   box-shadow:
     inset 0 1px 2px rgba(255,255,255,.32),
     inset 0 -2px 3px rgba(0,45,20,.34),
     -1px -1px 1px rgba(235,255,240,.08),
     1px 2px 3px rgba(0,0,0,.42),
-    0 1px 2px rgba(24,190,94,.12) !important;
+    0 1px 2px rgba(24,190,94,.12);
 }
 
 /* =====================================================
@@ -2183,7 +1918,7 @@ header.cabecalho .logo-simbolo {
     145deg,
     #1b1012,
     #130c0e
-  ) !important;
+  );
 }
 
 /* LINHAS DAS PENDÊNCIAS — HOVER SUAVE */
@@ -2193,19 +1928,19 @@ header.cabecalho .logo-simbolo {
     145deg,
     #2b2023,
     #21171a
-  ) !important;
+  );
 
-  border: 1px solid rgba(124, 60, 66, .46) !important;
+  border: 1px solid rgba(124, 60, 66, .46);
 
   box-shadow:
     inset 0 1px 0 rgba(255,255,255,.025),
-    0 3px 7px rgba(0,0,0,.28) !important;
+    0 3px 7px rgba(0,0,0,.28);
 
-  color: #f0e5e6 !important;
+  color: #f0e5e6;
 
   transition:
     background 220ms ease,
-    box-shadow 220ms ease !important;
+    box-shadow 220ms ease;
 }
 
 /* HOVER — CLAREAMENTO SUAVE */
@@ -2215,31 +1950,31 @@ header.cabecalho .logo-simbolo {
     145deg,
     #352529,
     #281b1f
-  ) !important;
+  );
 
   box-shadow:
     inset 1px 1px 3px rgba(255,190,195,.045),
-    0 2px 5px rgba(0,0,0,.18) !important;
+    0 2px 5px rgba(0,0,0,.18);
 }
 
 /* ÍCONE DE ALERTA — PENDÊNCIAS */
 
 #card-rotina-pendente .rotina-pendencia-status {
-  display: flex !important;
-  flex: 0 0 13px !important;
-  width: 13px !important;
-  min-width: 13px !important;
-  height: 22px !important;
+  display: flex;
+  flex: 0 0 13px;
+  width: 13px;
+  min-width: 13px;
+  height: 22px;
 
-  align-items: center !important;
-  justify-content: center !important;
+  align-items: center;
+  justify-content: center;
 
-  background: transparent !important;
-  border: none !important;
-  border-radius: 0 !important;
+  background: transparent;
+  border: none;
+  border-radius: 0;
 
-  color: #ff7b83 !important;
-  box-shadow: none !important;
+  color: #ff7b83;
+  box-shadow: none;
 }
 
 #card-rotina-pendente .rotina-pendencia-alerta {
@@ -2253,20 +1988,20 @@ header.cabecalho .logo-simbolo {
 /* ID: DARK-172 | REF: PANEL.ROUTINE.WEEKLY | SELETOR: #card-rotina-semanal | NEUMORFISMO EXTERNO */
 
 #card-rotina-semanal {
-  border: none !important;
+  border: none;
 
   box-shadow:
     -2px -2px 5px rgba(220, 255, 232, 0.055),
     -1px -1px 2px rgba(220, 255, 232, 0.025),
      2px  2px 5px rgba(0, 0, 0, 0.38),
-     1px  1px 2px rgba(0, 0, 0, 0.22) !important;
+     1px  1px 2px rgba(0, 0, 0, 0.22);
 }
 
 /* ID: DARK-173 | REF: PANEL.ROUTINE.PENDING
    NEUMORFISMO EXTERNO E INTERNO */
 
 #card-rotina-pendente {
-  border: 1px solid rgba(194, 65, 75, .38) !important;
+  border: 1px solid rgba(194, 65, 75, .38);
 
   box-shadow:
     /* SOMBRAS EXTERNAS */
@@ -2277,7 +2012,7 @@ header.cabecalho .logo-simbolo {
     inset -3px -3px 6px rgba(255, 165, 175, .055),
 
     /* PROFUNDIDADE INTERNA INFERIOR E DIREITA */
-    inset 3px 3px 7px rgba(0, 0, 0, .38) !important;
+    inset 3px 3px 7px rgba(0, 0, 0, .38);
 }
 
 /* ID: DARK-174 | REF: PANEL.ROUTINE.AGENDA.ROW.BACKGROUND
@@ -2290,11 +2025,11 @@ header.cabecalho .logo-simbolo {
     145deg,
     #202b23,
     #17211a
-  ) !important;
+  );
 
   transition:
     background 220ms ease,
-    box-shadow 220ms ease !important;
+    box-shadow 220ms ease;
 }
 
 /* HOVER — MESMO EFEITO DAS CONTAS VENCIDAS */
@@ -2306,11 +2041,11 @@ header.cabecalho .logo-simbolo {
     145deg,
     #26372c,
     #1d2c22
-  ) !important;
+  );
 
   box-shadow:
     inset 1px 1px 3px rgba(190, 255, 205, .045),
-    0 2px 5px rgba(0, 0, 0, .18) !important;
+    0 2px 5px rgba(0, 0, 0, .18);
 }-174
 
 /* Regras nativas aposentadas: trilho independente no HTML e JS-007. */
@@ -2318,13 +2053,13 @@ header.cabecalho .logo-simbolo {
 /* ID: DARK-175 | REF: PANEL.ROUTINE.AGENDA.HEADER | SELETORES: #card-agenda-ontem .rotina-agenda-cabecalho, #card-agenda-hoje .rotina-agenda-cabecalho, #card-agenda-ontem .rotina-agenda-cabecalho h3, #card-agenda-hoje .rotina-agenda-cabecalho h3 */
 #card-agenda-ontem .rotina-agenda-cabecalho,
 #card-agenda-hoje .rotina-agenda-cabecalho {
-  align-items: center !important;
+  align-items: center;
 }
 
 #card-agenda-ontem .rotina-agenda-cabecalho h3,
 #card-agenda-hoje .rotina-agenda-cabecalho h3 {
-  font-size: 15px !important;
-  line-height: 28px !important;
+  font-size: 15px;
+  line-height: 28px;
   align-self: center;
 }
 
@@ -2335,28 +2070,28 @@ header.cabecalho .logo-simbolo {
 #card-agenda-hoje .rotina-agenda-icone,
 #card-agenda-ontem .rotina-agenda-icone svg,
 #card-agenda-hoje .rotina-agenda-icone svg {
-  color: #39d879 !important;
+  color: #39d879;
 }
 
 /* ID: DARK-178 | REF: PANEL.ROUTINE.AGENDA.ICON.SIZE | SELETORES: #card-agenda-ontem .rotina-agenda-icone, #card-agenda-hoje .rotina-agenda-icone */
 
 #card-agenda-ontem .rotina-agenda-icone,
 #card-agenda-hoje .rotina-agenda-icone {
-  display: inline-flex !important;
-  align-items: center !important;
-  justify-content: center !important;
-  flex: 0 0 26px !important;
-  width: 26px !important;
-  height: 26px !important;
-  color: #39d879 !important;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 26px;
+  width: 26px;
+  height: 26px;
+  color: #39d879;
 }
 
 #card-agenda-ontem .rotina-agenda-icone svg,
 #card-agenda-hoje .rotina-agenda-icone svg {
   display: block;
-  width: 25px !important;
-  height: 25px !important;
-  color: #39d879 !important;
+  width: 25px;
+  height: 25px;
+  color: #39d879;
 }
 
 /* ID: DARK-179 | REF: PANEL.ROUTINE.AGENDA.ICON.ALIGN | SELETORES: #card-agenda-ontem .rotina-agenda-cabecalho .rotina-agenda-icone, #card-agenda-hoje .rotina-agenda-cabecalho .rotina-agenda-icone */
@@ -2469,10 +2204,10 @@ header.cabecalho .logo-simbolo {
     #ff9ba2,
     #ed3545,
     #a90d1b
-  ) !important;
+  );
 
-  border: none !important;
-  background-clip: border-box !important;
+  border: none;
+  background-clip: border-box;
   border-radius: 999px;
 
   box-shadow:
@@ -2485,9 +2220,9 @@ header.cabecalho .logo-simbolo {
 #card-rotina-pendente #lista-pendencias-rotina,
 #card-agenda-ontem #lista-agenda-ontem,
 #card-agenda-hoje #lista-agenda-hoje {
-  overflow-x: auto !important;
-  overflow-y: auto !important;
-  align-items: flex-start !important;
+  overflow-x: auto;
+  overflow-y: auto;
+  align-items: flex-start;
   overscroll-behavior: contain;
 }
 
@@ -2497,12 +2232,12 @@ header.cabecalho .logo-simbolo {
 
 #card-agenda-ontem .rotina-item-horario .rotina-atividade,
 #card-agenda-hoje .rotina-item-horario .rotina-atividade {
-  width: max-content !important;
-  min-width: max-content !important;
-  max-width: none !important;
-  overflow: visible !important;
-  text-overflow: clip !important;
-  white-space: nowrap !important;
+  width: max-content;
+  min-width: max-content;
+  max-width: none;
+  overflow: visible;
+  text-overflow: clip;
+  white-space: nowrap;
 }
 
 /* BARRAS PERSONALIZADAS: A POSIÇÃO DO CURSOR REPRESENTA scrollLeft, NUNCA scrollTop */
@@ -2530,7 +2265,7 @@ header.cabecalho .logo-simbolo {
     inset -3px -3px 7px rgba(195, 255, 215, .055),
 
     /* SOMBRA INTERNA INFERIOR E DIREITA */
-    inset 3px 3px 7px rgba(0, 0, 0, .38) !important;
+    inset 3px 3px 7px rgba(0, 0, 0, .38);
 }
 
 /* ID: DARK-187 | REF: PANEL.ROUTINE.PENDING.CUSTOM.SCROLLBAR.TRACK.COLOR | SELETOR: #card-rotina-pendente .rotina-barra-trilho */
@@ -2541,13 +2276,13 @@ header.cabecalho .logo-simbolo {
     #75434c 0%,
     #60363e 50%,
     #75434c 100%
-  ) !important;
+  );
 
-  border-color: rgba(255, 140, 150, .28) !important;
+  border-color: rgba(255, 140, 150, .28);
 
   box-shadow:
     inset 0 1px 2px rgba(255, 255, 255, .10),
-    inset 0 0 4px rgba(0, 0, 0, .40) !important;
+    inset 0 0 4px rgba(0, 0, 0, .40);
 }
 
 /* ============================================================
@@ -2562,31 +2297,31 @@ header.cabecalho .logo-simbolo {
 /* LIMITE INTERNO FIXO À ESQUERDA; BASE PARA O FUTURO BOTÃO */
 #card-rotina-pendente {
   --pending-content-inset-left: 8px;
-  padding-left: 8px !important;
-  padding-left: var(--pending-content-inset-left) !important;
+  padding-left: 8px;
+  padding-left: var(--pending-content-inset-left);
 }
 
 /* ID: DARK-189 | REF: PANEL.ROUTINE.PENDING.LIST.AND.ROWS */
 /* LISTA COM ROLAGEM NOS DOIS EIXOS E LINHAS DE LARGURA UNIFORME */
 #card-rotina-pendente #lista-pendencias-rotina {
-  display: grid !important;
+  display: grid;
   grid-template-columns: max-content;
   grid-auto-rows: 26px;
   align-content: start;
   justify-items: stretch;
   align-items: stretch;
-  row-gap: 6px !important;
+  row-gap: 6px;
 
  /* EXPANSÃO HORIZONTAL ATÉ AS LATERAIS DO CONTAINER PAI */
-  width: calc(100% + 10px) !important;
+  width: calc(100% + 10px);
   min-width: 0;
-  max-width: calc(100% + 10px) !important;
-  margin-left: -5px !important;
-  margin-right: -5px !important;
-  padding-left: 0 !important;
+  max-width: calc(100% + 10px);
+  margin-left: -5px;
+  margin-right: -5px;
+  padding-left: 0;
 
-  overflow-x: auto !important;
-  overflow-y: auto !important;
+  overflow-x: auto;
+  overflow-y: auto;
   box-sizing: border-box;
 }
 
@@ -2594,17 +2329,17 @@ header.cabecalho .logo-simbolo {
 /* AMPLIAÇÃO DOS TRÊS CAMPOS, PRESERVANDO OS SEPARADORES */
 
 #card-rotina-pendente #lista-pendencias-rotina > .rotina-pendencia-item {
-  display: grid !important;
+  display: grid;
 
   grid-template-columns:
     13px
     48px
     54px
-    minmax(100px, max-content) !important;
+    minmax(100px, max-content);
 
-  width: auto !important;
-  min-width: max-content !important;
-  max-width: none !important;
+  width: auto;
+  min-width: max-content;
+  max-width: none;
 
   justify-self: stretch;
   align-self: stretch;
@@ -2613,31 +2348,31 @@ header.cabecalho .logo-simbolo {
 
 /* MANTÉM O TÍTULO COMPLETO, SEM CORTE OU QUEBRA */
 #card-rotina-pendente .rotina-pendencia-item > :nth-child(4) {
-  width: max-content !important;
-  min-width: max-content !important;
-  max-width: none !important;
-  overflow: visible !important;
-  text-overflow: clip !important;
-  white-space: nowrap !important;
+  width: max-content;
+  min-width: max-content;
+  max-width: none;
+  overflow: visible;
+  text-overflow: clip;
+  white-space: nowrap;
 }
 
 /* ID: DARK-190 | REF: PANEL.ROUTINE.PENDING.HORIZONTAL.SCROLLBAR.SIZE.POSITION */
 /* BARRA INFERIOR VERMELHA: 6PX, PRÓXIMA À BORDA INFERIOR */
 #card-rotina-pendente #barra-pendencias-rotina {
-  flex: 0 0 6px !important;
-  height: 6px !important;
-  transform: translateY(3px) !important;
+  flex: 0 0 6px;
+  height: 6px;
+  transform: translateY(3px);
 }
 
 /* ID: DARK-191 | REF: PANEL.ROUTINE.PENDING.HEADER.LIST.GAP */
 /* PEQUENO ESPAÇO ENTRE O RÓTULO PENDENTE E A LISTA */
 #card-rotina-pendente #lista-pendencias-rotina {
-  margin-top: 5px !important;
+  margin-top: 5px;
 }
 
 /* ID: DARK-192 | REF: PANEL.ROUTINE.PENDING.LIST.CONTAINER.RADIUS */
 #card-rotina-pendente #lista-pendencias-rotina {
-  border-radius: 6px !important;
+  border-radius: 6px;
 
 }
 
@@ -2646,8 +2381,8 @@ header.cabecalho .logo-simbolo {
 /* ID: DARK-193 | REF: PANEL.ROUTINE.AGENDA.SCROLL.CLEANUP | LISTAS EIXOS */
 #card-agenda-ontem #lista-agenda-ontem,
 #card-agenda-hoje #lista-agenda-hoje {
-  margin-right: 0 !important;
-  box-sizing: border-box !important;
+  margin-right: 0;
+  box-sizing: border-box;
 }
 
 /* ID: DARK-194 | REF: PANEL.ROUTINE.AGENDA.ROW.ACTIVITY.WIDTH */
@@ -2655,8 +2390,8 @@ header.cabecalho .logo-simbolo {
 
 #card-agenda-ontem .rotina-item-horario .rotina-atividade,
 #card-agenda-hoje .rotina-item-horario .rotina-atividade {
-  transform: none !important;
-  margin-left: 25px !important;
+  transform: none;
+  margin-left: 25px;
 }
 
 /* ID: DARK-195 | REF: PANEL.ROUTINE.AGENDA.ROWS.UNIFORM.WIDTH */
@@ -2665,28 +2400,28 @@ header.cabecalho .logo-simbolo {
 /* LISTAS: UMA COLUNA DIMENSIONADA PELO MAIOR CONTEÚDO */
 #card-agenda-ontem #lista-agenda-ontem,
 #card-agenda-hoje #lista-agenda-hoje {
-  display: grid !important;
-  grid-template-columns: max-content !important;
-  grid-auto-rows: minmax(30px, auto) !important;
+  display: grid;
+  grid-template-columns: max-content;
+  grid-auto-rows: minmax(30px, auto);
 
-  align-content: start !important;
-  justify-items: stretch !important;
-  align-items: stretch !important;
+  align-content: start;
+  justify-items: stretch;
+  align-items: stretch;
 
-  gap: 5px !important;
+  gap: 5px;
 }
 
 /* TAREFAS: TODAS OCUPAM A LARGURA DA MAIOR */
 #card-agenda-ontem .rotina-item-horario,
 #card-agenda-hoje .rotina-item-horario {
-  width: auto !important;
-  min-width: 100% !important;
-  max-width: none !important;
+  width: auto;
+  min-width: 100%;
+  max-width: none;
 
-  justify-self: stretch !important;
-  align-self: stretch !important;
+  justify-self: stretch;
+  align-self: stretch;
 
-  box-sizing: border-box !important;
+  box-sizing: border-box;
 }
 
 /* ID: DARK-196 | REF: PANEL.ROUTINE.AGENDA.SCROLLBAR.GAP */
@@ -2694,8 +2429,8 @@ header.cabecalho .logo-simbolo {
 
 #card-agenda-ontem #barra-agenda-ontem,
 #card-agenda-hoje #barra-agenda-hoje {
-  margin-top: 8px !important;
-  margin-bottom: 0 !important;
+  margin-top: 8px;
+  margin-bottom: 0;
 }
 
 /* ============================================================
@@ -2705,23 +2440,23 @@ header.cabecalho .logo-simbolo {
 
 /* PAINEL EXTERNO */
 #painel-compromisso {
-  display: flex !important;
-  flex-direction: column !important;
+  display: flex;
+  flex-direction: column;
 
-  flex: 0 0 307px !important;
-  width: 100% !important;
-  height: 307px !important;
-  min-height: 307px !important;
-  max-height: 307px !important;
+  flex: 0 0 307px;
+  width: 100%;
+  height: 307px;
+  min-height: 307px;
+  max-height: 307px;
 
-  padding: 13px 13px 60px !important;
-  gap: 12px !important;
+  padding: 13px 13px 60px;
+  gap: 12px;
 
-  box-sizing: border-box !important;
-  overflow: hidden !important;
+  box-sizing: border-box;
+  overflow: hidden;
 
-  border: 1px solid transparent !important;
-  border-radius: 16px !important;
+  border: 1px solid transparent;
+  border-radius: 16px;
 }
 
 
@@ -2739,7 +2474,7 @@ header.cabecalho .logo-simbolo {
 
 #painel-compromisso .compromisso-cabecalho h2 {
   margin: 0;
-  font-family: "Segoe UI", Arial, sans-serif !important;
+  font-family: "Segoe UI", Arial, sans-serif;
   font-size: 22px;
   font-weight: 700;
   line-height: 1;
@@ -2780,10 +2515,10 @@ header.cabecalho .logo-simbolo {
   gap: 10px;
   position: relative;
 
-  flex: 0 0 60px !important;
-  height: 60px !important;
-  min-height: 60px !important;
-  box-sizing: border-box !important;
+  flex: 0 0 60px;
+  height: 60px;
+  min-height: 60px;
+  box-sizing: border-box;
   min-width: 0;
   padding: 17px 9px 9px;
 
@@ -2831,10 +2566,10 @@ header.cabecalho .logo-simbolo {
 
 /* TIPOGRAFIA DOS DIAS */
 #painel-compromisso .compromisso-dia > span:first-child {
-  color: #c8ebd3 !important;
-  font-family: "Segoe UI", Arial, sans-serif !important;
-  font-size: 9px !important;
-  font-weight: 800 !important;
+  color: #c8ebd3;
+  font-family: "Segoe UI", Arial, sans-serif;
+  font-size: 9px;
+  font-weight: 800;
   letter-spacing: .25px;
   line-height: 1;
   text-shadow: 0 1px 2px rgba(0,0,0,.55);
@@ -2844,32 +2579,32 @@ header.cabecalho .logo-simbolo {
 
 /* FORMATO E ACABAMENTO BASE */
 #painel-compromisso .compromisso-dia-status {
-  display: flex !important;
-  align-items: center !important;
-  justify-content: center !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-  width: 22px !important;
-  height: 22px !important;
-  min-width: 22px !important;
-  flex: 0 0 22px !important;
+  width: 22px;
+  height: 22px;
+  min-width: 22px;
+  flex: 0 0 22px;
 
-  box-sizing: border-box !important;
-  padding: 0 !important;
+  box-sizing: border-box;
+  padding: 0;
 
-  border: 1px solid rgba(255,255,255,.28) !important;
-  border-radius: 50% !important;
+  border: 1px solid rgba(255,255,255,.28);
+  border-radius: 50%;
 
-  color: #ffffff !important;
+  color: #ffffff;
   font-family: "Times New Roman", serif;
-  font-size: 11px !important;
-  font-weight: 800 !important;
-  line-height: 1 !important;
+  font-size: 11px;
+  font-weight: 800;
+  line-height: 1;
   text-shadow: 0 1px 2px rgba(0,0,0,.45);
 
   box-shadow:
     inset 0 1px 1px rgba(255,255,255,.20),
     inset 0 -1px 2px rgba(0,0,0,.28),
-    0 1px 3px rgba(0,0,0,.30) !important;
+    0 1px 3px rgba(0,0,0,.30);
 }
 
 /* CONCLUÍDO — VERDE */
@@ -2879,16 +2614,16 @@ header.cabecalho .logo-simbolo {
     #62efa0 0%,
     #1aa75c 52%,
     #086039 100%
-  ) !important;
+  );
 
-  border-color: rgba(163,255,193,.66) !important;
+  border-color: rgba(163,255,193,.66);
 
   box-shadow:
     inset 0 1px 2px rgba(255,255,255,.32),
     inset 0 -2px 3px rgba(0,45,20,.34),
     -1px -1px 1px rgba(235,255,240,.08),
     1px 2px 3px rgba(0,0,0,.42),
-    0 1px 2px rgba(24,190,94,.12) !important;
+    0 1px 2px rgba(24,190,94,.12);
 }
 
 /* PENDENTE — VERMELHO */
@@ -2898,16 +2633,16 @@ header.cabecalho .logo-simbolo {
     #f16b74 0%,
     #bf3543 52%,
     #781d2a 100%
-  ) !important;
+  );
 
-  border-color: rgba(255,169,175,.58) !important;
+  border-color: rgba(255,169,175,.58);
 
   box-shadow:
     inset 0 1px 2px rgba(255,255,255,.28),
     inset 0 -2px 3px rgba(55,0,5,.36),
     -1px -1px 1px rgba(255,232,234,.08),
     1px 2px 3px rgba(0,0,0,.42),
-    0 1px 2px rgba(190,35,52,.13) !important;
+    0 1px 2px rgba(190,35,52,.13);
 }
 
 /* FUTURO — CINZA METÁLICO */
@@ -2917,15 +2652,15 @@ header.cabecalho .logo-simbolo {
     #718176 0%,
     #46564b 55%,
     #304036 100%
-  ) !important;
+  );
 
-  border-color: rgba(205,232,214,.34) !important;
+  border-color: rgba(205,232,214,.34);
 
   box-shadow:
     inset 0 1px 2px rgba(255,255,255,.26),
     inset 0 -2px 3px rgba(0,0,0,.34),
     -1px -1px 1px rgba(245,255,248,.08),
-    1px 2px 3px rgba(0,0,0,.42) !important;
+    1px 2px 3px rgba(0,0,0,.42);
 }
 
 /* CARTÃO DE PENDÊNCIAS */
@@ -2946,7 +2681,7 @@ header.cabecalho .logo-simbolo {
   border: 1px solid transparent;
   border-radius: 14px;
 
-  background: none !important;
+  background: none;
 
 
 }
@@ -3008,7 +2743,7 @@ header.cabecalho .logo-simbolo {
 
   min-width: 0;
 
-  border: 1px solid rgba(80,220,115,.65) !important;
+  border: 1px solid rgba(80,220,115,.65);
   border-radius: 6px;
 
    background:
@@ -3040,7 +2775,7 @@ header.cabecalho .logo-simbolo {
       #075b21 35%,
       #0b7d2b 68%,
       #1ba247 100%
-    ) !important;
+    );
 
 
   color: #f0fff4;
@@ -3051,7 +2786,7 @@ header.cabecalho .logo-simbolo {
     inset 0 -4px 5px rgba(0,25,5,.55),
     inset 1px 0 3px rgba(255,255,255,.06),
     inset -1px 0 3px rgba(0,20,5,.25),
-    0 5px 8px rgba(0,0,0,.32) !important;   
+    0 5px 8px rgba(0,0,0,.32);   
 }
 
 #painel-compromisso .compromisso-categoria > span:first-child {
@@ -3061,10 +2796,10 @@ header.cabecalho .logo-simbolo {
 }
 
 #painel-compromisso .compromisso-categoria strong {
-  font-family: "Segoe UI", Arial, sans-serif !important;
-  font-size: 14px !important;
-  font-weight: 600 !important;
-  line-height: 1 !important;
+  font-family: "Segoe UI", Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1;
   letter-spacing: -0.15px;
   white-space: nowrap;
   min-width: 0;
@@ -3156,22 +2891,22 @@ header.cabecalho .logo-simbolo {
 /* ÍCONE DE CALENDÁRIO — CABEÇALHOS INFERIORES */
 
 #painel-compromisso .compromisso-calendario-icone {
-  display: inline-flex !important;
-  align-items: center !important;
-  justify-content: center !important;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 
-  flex: 0 0 26px !important;
-  width: 26px !important;
-  height: 26px !important;
+  flex: 0 0 26px;
+  width: 26px;
+  height: 26px;
 
-  color: #39d879 !important;
+  color: #39d879;
 }
 
 #painel-compromisso .compromisso-calendario-icone svg {
   display: block;
-  width: 25px !important;
-  height: 25px !important;
-  color: #39d879 !important;
+  width: 25px;
+  height: 25px;
+  color: #39d879;
 }
 
 #painel-compromisso .compromisso-agenda-cabecalho h3 {
@@ -3243,7 +2978,7 @@ header.cabecalho .logo-simbolo {
   overflow-x: hidden;
   overflow-y: auto;
 
-  margin-left: -5px !important;
+  margin-left: -5px;
 }
 
 /* Barras nativas do Compromisso aposentadas; trilhos independentes. */
@@ -3280,16 +3015,16 @@ header.cabecalho .logo-simbolo {
     gap: 5px;
     padding: 6px 9px;
 
-    border: none  !important; 
+    border: none; 
     border-radius: 8px;
 
-   background: transparent !important;
+   background: transparent;
 
     box-shadow:
     -2px -2px 5px rgba(57, 216, 121, 0.095),
     -1px -1px 2px rgba(57, 216, 121, 0.050),
      2px  2px 5px rgba(0, 0, 0, 0.70),
-     1px  1px 2px rgba(0, 0, 0, 0.70) !important;
+     1px  1px 2px rgba(0, 0, 0, 0.70);
 
     transition:
         background 220ms ease,
@@ -3421,8 +3156,8 @@ header.cabecalho .logo-simbolo {
     border: 1px solid #39ed80;
     border-radius: 3px;
 
-    background: #101812 !important;
-    color: #39ed80 !important;
+    background: #101812;
+    color: #39ed80;
     line-height: 10px;
 
     white-space: nowrap;
@@ -3435,11 +3170,11 @@ header.cabecalho .logo-simbolo {
 
     padding: 0 2px;
 
-    border: none !important;
+    border: none;
     border-radius: 0;
 
-    background: transparent !important;
-    box-shadow: none !important;
+    background: transparent;
+    box-shadow: none;
 
     color: #e7f1e9;
 
@@ -3495,10 +3230,10 @@ header.cabecalho .logo-simbolo {
 @media (max-width: 650px) {
 
   #painel-compromisso {
-    height: auto !important;
-    min-height: 900px !important;
-    max-height: none !important;
-    flex-basis: auto !important;
+    height: auto;
+    min-height: 900px;
+    max-height: none;
+    flex-basis: auto;
   }
 
   #painel-compromisso .compromisso-conteudo {
@@ -3518,17 +3253,17 @@ header.cabecalho .logo-simbolo {
 
 /* CÍRCULO — ACABAMENTO ESQUIOMÓRFICO VERDE */
 #painel-compromisso .compromisso-icone {
-    display: inline-flex !important;
+    display: inline-flex;
 
-    flex: 0 0 34px !important;
-    width: 34px !important;
-    height: 34px !important;
+    flex: 0 0 34px;
+    width: 34px;
+    height: 34px;
 
-    align-items: center !important;
-    justify-content: center !important;
+    align-items: center;
+    justify-content: center;
 
-    box-sizing: border-box !important;
-    border-radius: 50% !important;
+    box-sizing: border-box;
+    border-radius: 50%;
 
     background:
         linear-gradient(
@@ -3543,9 +3278,9 @@ header.cabecalho .logo-simbolo {
             rgba(133, 220, 157, .62) 24%,
             rgba(25, 91, 52, .94) 62%,
             rgba(151, 222, 169, .58) 100%
-        ) border-box !important;
+        ) border-box;
 
-    border: 1px solid transparent !important;
+    border: 1px solid transparent;
 
     box-shadow:
         0 3px 6px rgba(0, 0, 0, .44),
@@ -3554,23 +3289,23 @@ header.cabecalho .logo-simbolo {
         inset 1px 1px 3px rgba(225, 255, 232, .30),
         inset 0 3px 5px rgba(133, 220, 157, .20),
         inset 0 -2px 4px rgba(0, 18, 9, .48),
-        inset -1px 0 2px rgba(0, 18, 9, .20) !important;
+        inset -1px 0 2px rgba(0, 18, 9, .20);
 
-    color: #ffffff !important;
+    color: #ffffff;
 }
 
 /* ID: DARK-199 | REF: PANEL.COMMITMENT.HEADER.ALIGNMENT */
 /* ALINHAMENTO DO ÍCONE COM O CABEÇALHO DA ROTINA */
 
 #painel-compromisso .compromisso-cabecalho {
-  position: relative !important;
-  top: -3px !important;
+  position: relative;
+  top: -3px;
 
-  flex: 0 0 34px !important;
-  height: 34px !important;
-  min-height: 34px !important;
+  flex: 0 0 34px;
+  height: 34px;
+  min-height: 34px;
 
-  padding: 0 !important;
+  padding: 0;
 }
 
 
@@ -3587,26 +3322,26 @@ header.cabecalho .logo-simbolo {
 
 /* POSIÇÃO HORIZONTAL */
 #painel-compromisso .compromisso-identificacao {
-  gap: 6px !important;
-  transform: translateX(-3px) !important;
+  gap: 6px;
+  transform: translateX(-3px);
 }
 
 /* ID: DARK-200 | REF: PANEL.COMMITMENT.CATEGORIES.ARROWS */
 /* REMOVE AS SETAS DOS BOTÕES DE CATEGORIA */
 
 #painel-compromisso .compromisso-categoria-seta {
-  display: none !important;
+  display: none;
 }
 
 /* ID: DARK-201 | REF: PANEL.ROUTINE.PERIODS.ARROWS */
 /* REMOVE AS SETAS DOS BOTÕES DE PERÍODO */
 
 #painel-rotina .rotina-periodo-card {
-  grid-template-columns: 30px minmax(0, 1fr) !important;
+  grid-template-columns: 30px minmax(0, 1fr);
 }
 
 #painel-rotina .rotina-periodo-seta {
-  display: none !important;
+  display: none;
 }
 
 /* ID: DARK-202 | REF: PANEL.COMMITMENT.HEADER.CATEGORIES */
@@ -3614,36 +3349,36 @@ header.cabecalho .logo-simbolo {
 
 /* CABEÇALHO COM TRÊS ÁREAS */
 #painel-compromisso .compromisso-cabecalho {
-  display: grid !important;
-  grid-template-columns: max-content minmax(0, 1fr) auto !important;
-  align-items: center !important;
-  gap: 12px !important;
+  display: grid;
+  grid-template-columns: max-content minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 12px;
   min-width: 0;
 }
 
 /* QUATRO BOTÕES NA MESMA LINHA */
 #painel-compromisso .compromisso-categorias {
-  display: grid !important;
-  grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
-  grid-template-rows: 30px !important;
-  align-items: center !important;
-  gap: 8px !important;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-rows: 30px;
+  align-items: center;
+  gap: 8px;
   min-width: 0;
   width: 100%;
 }
 
 /* DIMENSÕES DOS BOTÕES */
 #painel-compromisso .compromisso-categoria {
-  display: grid !important;
-  grid-template-columns: 25px minmax(0, 1fr) !important;
+  display: grid;
+  grid-template-columns: 25px minmax(0, 1fr);
 
-  width: 100% !important;
-  height: 30px !important;
-  min-height: 30px !important;
+  width: 100%;
+  height: 30px;
+  min-height: 30px;
 
-  padding: 4px 6px !important;
-  gap: 4px !important;
-  box-sizing: border-box !important;
+  padding: 4px 6px;
+  gap: 4px;
+  box-sizing: border-box;
 }
 
 /* GARANTE A REMOÇÃO DAS SETAS */
@@ -3652,14 +3387,14 @@ header.cabecalho .logo-simbolo {
 /* ADAPTAÇÃO PARA TELAS ESTREITAS */
 @media (max-width: 650px) {
   #painel-compromisso .compromisso-cabecalho {
-    grid-template-columns: minmax(0, 1fr) auto !important;
+    grid-template-columns: minmax(0, 1fr) auto;
     grid-template-areas:
       "ident detalhes"
       "categorias categorias";
-    row-gap: 10px !important;
+    row-gap: 10px;
 
-    height: auto !important;
-    flex-basis: auto !important;
+    height: auto;
+    flex-basis: auto;
   }
 
   #painel-compromisso .compromisso-identificacao {
@@ -3672,8 +3407,8 @@ header.cabecalho .logo-simbolo {
 
   #painel-compromisso .compromisso-categorias {
     grid-area: categorias;
-    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
-    grid-template-rows: repeat(2, 30px) !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-rows: repeat(2, 30px);
   }
 }
 
@@ -3693,30 +3428,30 @@ header.cabecalho .logo-simbolo {
 /* REDUÇÃO DOS ÍCONES DE CALENDÁRIO */
 
 #painel-compromisso .compromisso-categoria-icone svg {
-  width: 19px !important;
-  height: 19px !important;
+  width: 19px;
+  height: 19px;
 }
 
 /* ID: DARK-205 | REF: PANEL.COMMITMENT.CATEGORY.URGENT.PIN */
 /* ÍCONE E TEXTO URGENTE */
 
 #painel-compromisso .compromisso-urgente-icone {
-  display: block !important;
-  width: 19px !important;
-  height: 19px !important;
-  flex: 0 0 19px !important;
-  color: #ff505a !important;
-  transform: translateY(-1px) !important;
+  display: block;
+  width: 19px;
+  height: 19px;
+  flex: 0 0 19px;
+  color: #ff505a;
+  transform: translateY(-1px);
 }
 
 #painel-compromisso .compromisso-urgente-icone * {
-  stroke: #ff505a !important;
+  stroke: #ff505a;
 }
 
 /* TEXTO URGENTE — VERMELHO */
 
 #painel-compromisso .compromisso-categoria-urgente > strong {
-  color: #ff505a !important;
+  color: #ff505a;
 }
 
 /* ID: DARK-206 | REF: PANEL.COMMITMENT.CATEGORIES.3D.INTERACTION */
@@ -3746,9 +3481,9 @@ header.cabecalho .logo-simbolo {
 
 #painel-compromisso .compromisso-pendencias-rotulo,
 #painel-lembrete #card-lembrete-pendencias .compromisso-pendencias-rotulo {
-  background: #1b1012 !important;
-  border-color: rgba(255, 120, 130, .75) !important;
-  color: #ff858c !important;
+  background: #1b1012;
+  border-color: rgba(255, 120, 130, .75);
+  color: #ff858c;
   z-index: 2;
 }
 
@@ -3759,13 +3494,13 @@ header.cabecalho .logo-simbolo {
 /* ID: DARK-208 | REF: COMPONENT.SCROLLBAR.VERTICAL.NATIVE.HIDE | LISTAS MARCADAS */
 /* Oculta somente a barra nativa; o overflow e os métodos de rolagem permanecem ativos. */
 [data-scrollbar-vertical] {
-  scrollbar-width: none !important;
-  -ms-overflow-style: none !important;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
 }
 [data-scrollbar-vertical]::-webkit-scrollbar {
-  display: none !important;
-  width: 0 !important;
-  height: 0 !important;
+  display: none;
+  width: 0;
+  height: 0;
 }
 
 /* ID: DARK-209 | REF: COMPONENT.SCROLLBAR.VERTICAL.BASE | TRILHO INDEPENDENTE */
@@ -3783,9 +3518,9 @@ header.cabecalho .logo-simbolo {
 }
 /* BARRA OCULTA SEM PERDER A REFERÊNCIA DE ALTURA */
 .ci-scrollbar-vertical[hidden] {
-  display: block !important;
-  visibility: hidden !important;
-  pointer-events: none !important;
+  display: block;
+  visibility: hidden;
+  pointer-events: none;
 }
 .ci-scrollbar-trilho {
   position: relative;
@@ -3832,7 +3567,7 @@ header.cabecalho .logo-simbolo {
     145deg,
     #241519,
     #160d11
-  ) !important;
+  );
 }
 
 .ci-scrollbar-financeiro .ci-scrollbar-cursor,
@@ -3866,26 +3601,26 @@ header.cabecalho .logo-simbolo {
 /* OCULTA SOMENTE A BARRA GERAL DO PAINEL COMPROMISSO */
 
 #barra-vertical-compromisso-conteudo {
-  visibility: hidden !important;
-  pointer-events: none !important;
+  visibility: hidden;
+  pointer-events: none;
 }
 
 /* ID: DARK-213 | REF: COMPONENT.SCROLLBAR.VERTICAL.GUTTERS | RESERVA SEM DESLOCAR CARTÕES */
-.financeiro-lista-vencidas { padding-right: 24px !important; }
+.financeiro-lista-vencidas { padding-right: 24px; }
 
-.estudo-lista-atividades { padding-right: 14px !important; }
+.estudo-lista-atividades { padding-right: 14px; }
 
-#card-rotina-pendente #lista-pendencias-rotina { padding-right: 18px !important; }
+#card-rotina-pendente #lista-pendencias-rotina { padding-right: 18px; }
 
 #card-agenda-ontem #lista-agenda-ontem,
-#card-agenda-hoje #lista-agenda-hoje { padding-right: 18px !important; }
+#card-agenda-hoje #lista-agenda-hoje { padding-right: 18px; }
 
-#painel-compromisso .compromisso-lista-pendentes { padding-right: 15px !important; }
+#painel-compromisso .compromisso-lista-pendentes { padding-right: 15px; }
 
-#painel-compromisso .compromisso-lista-eventos { padding-right: 11px !important; }
+#painel-compromisso .compromisso-lista-eventos { padding-right: 11px; }
 
 @media (max-width: 650px) {
-  #painel-compromisso .compromisso-conteudo { padding-right: 15px !important; }
+  #painel-compromisso .compromisso-conteudo { padding-right: 15px; }
 }
 
 /* ID: DARK-214 | REF: PANEL.COMMITMENT.PENDING.ICON.TRASH */
@@ -3933,7 +3668,7 @@ header.cabecalho .logo-simbolo {
   display: flex;
   width: auto;
   margin-left: -4px;
-  margin-right: -4px !important;
+  margin-right: -4px;
   box-sizing: border-box;
   flex-direction: column;
   gap: 15px;
@@ -3972,36 +3707,36 @@ header.cabecalho .logo-simbolo {
 #painel-compromisso #lista-compromissos-pendentes
 .compromisso-evento-cabecalho > h4 {
 
-    position: absolute !important;
+    position: absolute;
 
-    left: 50% !important;
-    top: -14px !important;
-    transform: translateX(-50%) !important;
+    left: 50%;
+    top: -14px;
+    transform: translateX(-50%);
 
-    display: table !important;
+    display: table;
 
-    width: auto !important;
-    min-width: 0 !important;
-    max-width: calc(100% - 70px) !important;
+    width: auto;
+    min-width: 0;
+    max-width: calc(100% - 70px);
 
-    box-sizing: border-box !important;
+    box-sizing: border-box;
 
-    margin: 0 !important;
-    padding: 0 5px !important;
+    margin: 0;
+    padding: 0 5px;
 
-    border: 1px solid rgba(224, 87, 96, .75) !important;
-    border-radius: 3px !important;
+    border: 1px solid rgba(224, 87, 96, .75);
+    border-radius: 3px;
 
-    background: #241316 !important;
-    color: #ff9ba2 !important;
+    background: #241316;
+    color: #ff9ba2;
 
-    font-family: "Segoe UI", Arial, sans-serif !important;
-    font-size: 12px !important;
-    line-height: 13px !important;
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-size: 12px;
+    line-height: 13px;
 
-    white-space: nowrap !important;
+    white-space: nowrap;
 
-    z-index: 2 !important;
+    z-index: 2;
 }
 
 
@@ -4145,20 +3880,20 @@ header.cabecalho .logo-simbolo {
 /* ROLAGEM VERTICAL E ESPAÇO PARA A SOMBRA ESQUERDA */
 #painel-compromisso #lista-compromissos-pendentes {
 
-  overflow-y: auto !important;
-  overflow-x: hidden !important;
+  overflow-y: auto;
+  overflow-x: hidden;
 
   /* RESERVA ESPAÇO PARA A SOMBRA DOS CARDS */
-  padding-left: 12px !important;
+  padding-left: 12px;
 
-  scrollbar-width: none !important;
-  -ms-overflow-style: none !important;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
 }
 
 #painel-compromisso #lista-compromissos-pendentes::-webkit-scrollbar {
-  display: none !important;
-  width: 0 !important;
-  height: 0 !important;
+  display: none;
+  width: 0;
+  height: 0;
 }
 
 /* ID: DARK-217 | REF: PANEL.COMMITMENT.PENDING.ICON.MARK */
@@ -4238,23 +3973,23 @@ header.cabecalho::after {
 #barra-vertical-rotina-pendencias,
 #barra-vertical-rotina-ontem,
 #barra-vertical-rotina-hoje {
-    display: none !important;
-    visibility: hidden !important;
-    pointer-events: none !important;
+    display: none;
+    visibility: hidden;
+    pointer-events: none;
 }
 
 /* OCULTA TAMBÉM AS BARRAS NATIVAS VERTICAIS */
 #lista-pendencias-rotina,
 #lista-agenda-ontem,
 #lista-agenda-hoje {
-    scrollbar-width: none !important;
+    scrollbar-width: none;
 }
 
 #lista-pendencias-rotina::-webkit-scrollbar:vertical,
 #lista-agenda-ontem::-webkit-scrollbar:vertical,
 #lista-agenda-hoje::-webkit-scrollbar:vertical {
-    display: none !important;
-    width: 0 !important;
+    display: none;
+    width: 0;
 }
 
 /* ID: DARK-219 | REF: PANEL.COMMITMENT.LISTS.ICONS.COLORS
@@ -4266,8 +4001,8 @@ header.cabecalho::after {
 
 #painel-compromisso #lista-compromissos-hoje
 .compromisso-evento-cabecalho > svg {
-    color: #39d879 !important;
-    filter: none !important;
+    color: #39d879;
+    filter: none;
 }
 
 /* ALFINETE ORIGINAL — BRANCO */
@@ -4276,9 +4011,9 @@ header.cabecalho::after {
 
 #painel-compromisso #lista-compromissos-hoje
 .compromisso-evento-cabecalho svg[viewBox="-4 -18 279 281"] {
-    color: #ffffff !important;
-    stroke: currentColor !important;
-    filter: none !important;
+    color: #ffffff;
+    stroke: currentColor;
+    filter: none;
 }
 
 /* PENDENTES — VERMELHO */
@@ -4291,12 +4026,12 @@ header.cabecalho::after {
 .compromisso-evento-cabecalho .compromisso-evento-titulo,
 #painel-compromisso #lista-compromissos-hoje
 .compromisso-evento-cabecalho .compromisso-evento-titulo {
-    font-family: "Segoe UI", Arial, sans-serif !important;
-    font-size: 14px !important;
-    font-weight: 800 !important;
-    line-height: 1.1 !important;
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 800;
+    line-height: 1.1;
 
-    color: #eff8f1 !important;
+    color: #eff8f1;
     text-shadow: 0 0 15px rgba(54, 206, 111, .12);
 
     overflow: hidden;
@@ -4309,8 +4044,8 @@ header.cabecalho::after {
 .compromisso-evento-cabecalho .compromisso-evento-titulo strong,
 #painel-compromisso #lista-compromissos-hoje
 .compromisso-evento-cabecalho .compromisso-evento-titulo strong {
-    color: #39d879 !important;
-    font-family: inherit !important;
+    color: #39d879;
+    font-family: inherit;
 }
 
 /* RÓTULOS: LOCAL, DATA E HORÁRIO */
@@ -4318,9 +4053,9 @@ header.cabecalho::after {
 .compromisso-evento-dado > span,
 #painel-compromisso #lista-compromissos-hoje
 .compromisso-evento-dado > span {
-    font-family: "Segoe UI", Arial, sans-serif !important;
-    font-size: 8px !important;
-    font-weight: 700 !important;
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-size: 8px;
+    font-weight: 700;
 }
 
 /* VALORES DOS CAMPOS — 4 CARDS */
@@ -4328,10 +4063,10 @@ header.cabecalho::after {
 .compromisso-evento-dado > strong,
 #painel-compromisso #lista-compromissos-hoje
 .compromisso-evento-dado > strong {
-    font-family: "Segoe UI", Arial, sans-serif !important;
-    font-size: 12px !important;
-    font-weight: 600 !important;
-    line-height: 13.75px !important;
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 13.75px;
 }
 
 /* ID: DARK-221 | ÍCONES VERDES — 6 CARTÕES
@@ -4343,26 +4078,26 @@ header.cabecalho::after {
 #painel-compromisso #lista-compromissos-hoje
 .compromisso-evento-cabecalho > svg:not(.estudo-atividade-alfinete):not([viewBox="-4 -18 279 281"]) {
 
-  display: block !important;
+  display: block;
 
-  flex: 0 0 32px !important;
-  width: 32px !important;
-  height: 32px !important;
+  flex: 0 0 32px;
+  width: 32px;
+  height: 32px;
 
-  padding: 0 !important;
-  box-sizing: border-box !important;
+  padding: 0;
+  box-sizing: border-box;
 
-  color: #39d879 !important;
+  color: #39d879;
 
-  background: transparent !important;
-  border: none !important;
-  border-radius: 0 !important;
-  box-shadow: none !important;
-  filter: none !important;
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  filter: none;
 
-  position: relative !important;
-  left: -5px !important;
-  top: -5px !important;
+  position: relative;
+  left: -5px;
+  top: -5px;
 }
 
 /* ALFINETE ORIGINAL — SEM FUNDO */
@@ -4371,21 +4106,21 @@ header.cabecalho::after {
 
 #painel-compromisso #lista-compromissos-hoje
 .compromisso-evento-cabecalho > svg.estudo-atividade-alfinete {
-    background: none !important;
-    border: none !important;
-    border-radius: 0 !important;
-    box-shadow: none !important;
-    padding: 0 !important;
-    filter: none !important;
-    color: #b9c8bd !important;
+    background: none;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    padding: 0;
+    filter: none;
+    color: #b9c8bd;
 }
 
 /* ID: DARK-222 | REF: PANEL.COMMITMENT.ANNOTATIONS.REMOVE
    REMOVE COMPLETAMENTE O CAMPO ANOTAÇÕES DOS CARDS */
 
 #painel-compromisso .compromisso-evento-anotacoes {
-    display: none !important;
-    transform: translate(-5px, -5px) !important;
+    display: none;
+    transform: translate(-5px, -5px);
 }
 
 /* ID: DARK-223 | ÍCONES VERMELHOS — 3 CARTÕES
@@ -4394,24 +4129,24 @@ header.cabecalho::after {
 #painel-compromisso #lista-compromissos-pendentes
 .compromisso-evento-cabecalho > svg {
 
-  display: block !important;
+  display: block;
 
-  flex: 0 0 32px !important;
-  width: 32px !important;
-  height: 32px !important;
+  flex: 0 0 32px;
+  width: 32px;
+  height: 32px;
 
-  padding: 0 !important;
-  box-sizing: border-box !important;
+  padding: 0;
+  box-sizing: border-box;
 
-  color: #ff858c !important;
+  color: #ff858c;
 
-  background: transparent !important;
-  border: none !important;
-  border-radius: 0 !important;
-  box-shadow: none !important;
-  filter: none !important;
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  filter: none;
 
-  transform: translate(-5px, -8px) !important;
+  transform: translate(-5px, -8px);
 }
 
 /* ÍCONES DAS TRÊS LISTAS
@@ -4427,19 +4162,19 @@ header.cabecalho::after {
 #painel-compromisso #lista-compromissos-hoje
 .compromisso-evento-cabecalho > svg {
 
-  background: transparent !important;
-  background-color: transparent !important;
-  background-image: none !important;
+  background: transparent;
+  background-color: transparent;
+  background-image: none;
 
-  border: none !important;
-  box-shadow: none !important;
+  border: none;
+  box-shadow: none;
 }
 
 /* ID: DARK-224 | REF: PANEL.COMMITMENT.AGENDA.HEADER
    TIPOGRAFIA BASEADA NO CABEÇALHO FACULDADE */
 
 #painel-compromisso .compromisso-agenda-cabecalho h3 {
-    color: #eff8f1 !important;
+    color: #eff8f1;
 
     text-shadow:
         0 0 15px rgba(54, 206, 111, .12);
@@ -4447,84 +4182,73 @@ header.cabecalho::after {
 
 /* DIA DA SEMANA — DESTAQUE VERDE */
 #painel-compromisso .compromisso-agenda-cabecalho h3 strong {
-    color: #39d879 !important;
+    color: #39d879;
 }
 
-/* ID: DARK-225 | REF: PANEL.COMMITMENT.EVENT.TITLE
-   TIPOGRAFIA IGUAL AO TÍTULO PROGRAMAÇÃO */
+/* ID: DARK-225 | REF: APP.SIDEBAR.NATIONAL_HOLIDAYS */
 
-#painel-compromisso .compromisso-evento-cabecalho > .compromisso-evento-titulo {
-    font-family: "Segoe UI", Arial, sans-serif !important;
-    font-size: 12px !important;
-    font-weight: 800 !important;
-    line-height: 1.1 !important;
-    color: #eff8f1 !important;
-
-    align-self: flex-start;
-    margin-top: 0;
-
-    -webkit-text-fill-color: currentColor;
-    text-shadow: 0 0 15px rgba(54, 206, 111, .12);
+.data-valor .data-dia.feriado-nacional {
+    color: #009eb8;
 }
 
 /* ID: DARK-226 | REF: PANEL.COMMITMENT.EVENT.PIN
    ALFINETE SVG ORIGINAL DO PAINEL FACULDADE */
 
 #painel-compromisso .compromisso-fixar {
-    display: block !important;
-    flex: 0 0 22px !important;
-    width: 22px !important;
-    height: 22px !important;
-    overflow: visible !important;
+    display: block;
+    flex: 0 0 22px;
+    width: 22px;
+    height: 22px;
+    overflow: visible;
 }
 
 /* ID: DARK-227 | REF: PANEL.COMMITMENT.PIN.CLEAN
    ALFINETE SEM FUNDO */
 
 #painel-compromisso .compromisso-fixar {
-    background: transparent !important;
-    border: none !important;
-    box-shadow: none !important;
-    border-radius: 0 !important;
-    padding: 0 !important;
-    filter: none !important;
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    border-radius: 0;
+    padding: 0;
+    filter: none;
 
-    color: #b9c8bd !important;
+    color: #b9c8bd;
 }
 
 /* ID: DARK-228 | REF: PANEL.COMMITMENT.PIN.ORIGINAL */
 
 #painel-compromisso #lista-compromissos-ontem .compromisso-fixar,
 #painel-compromisso #lista-compromissos-hoje .compromisso-fixar {
-    display: flex !important;
+    display: flex;
     align-items: center;
     justify-content: center;
 
-    width: 22px !important;
-    height: 22px !important;
-    flex: 0 0 22px !important;
+    width: 22px;
+    height: 22px;
+    flex: 0 0 22px;
 
     /* APROXIMAÇÃO DAS BORDAS */
-    position: relative !important;
-    right: -7px !important;
-    top: -7px !important;
+    position: relative;
+    right: -7px;
+    top: -7px;
 
-    padding: 0 !important;
-    background: transparent !important;
-    border: none !important;
-    border-radius: 0 !important;
-    box-shadow: none !important;
-    filter: none !important;
+    padding: 0;
+    background: transparent;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    filter: none;
 
-    color: #ffffff !important;
+    color: #ffffff;
 }
 
 #painel-compromisso #lista-compromissos-ontem .compromisso-fixar svg,
 #painel-compromisso #lista-compromissos-hoje .compromisso-fixar svg {
-    display: block !important;
-    width: 18px !important;
-    height: 18px !important;
-    background: none !important;
+    display: block;
+    width: 18px;
+    height: 18px;
+    background: none;
 }
 
 /* ID: DARK-229 | REF: PANEL.COMMITMENT.PIN.BACKGROUND.REMOVE
@@ -4535,28 +4259,28 @@ header.cabecalho::after {
 #painel-compromisso .compromisso-evento-cabecalho .compromisso-fixar::before,
 #painel-compromisso .compromisso-evento-cabecalho .compromisso-fixar::after {
 
-    background: none !important;
-    background-color: transparent !important;
-    background-image: none !important;
+    background: none;
+    background-color: transparent;
+    background-image: none;
 
-    border: none !important;
-    border-radius: 0 !important;
-    box-shadow: none !important;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
 }
 
 /* DESENHO ORIGINAL — IDENTIFICADO PELO VIEWBOX */
 #painel-compromisso .compromisso-evento-cabecalho
 svg[viewBox="-4 -18 279 281"] {
 
-    background: none !important;
-    background-color: transparent !important;
-    background-image: none !important;
+    background: none;
+    background-color: transparent;
+    background-image: none;
 
-    border: none !important;
-    border-radius: 0 !important;
-    box-shadow: none !important;
-    filter: none !important;
-    padding: 0 !important;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    filter: none;
+    padding: 0;
 }
 
 
@@ -4577,9 +4301,9 @@ svg[viewBox="-4 -18 279 281"] {
 #painel-compromisso #lista-compromissos-hoje
 .compromisso-evento .compromisso-evento-dados {
 
-    display: grid !important;
+    display: grid;
 
-    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
 
     grid-template-areas:
         "local local"
@@ -4705,7 +4429,7 @@ svg[viewBox="-4 -18 279 281"] {
 > .compromisso-evento:first-child
 > .compromisso-evento-cabecalho
 > .compromisso-evento-local-cabecalho {
-    display: none !important;
+    display: none;
 }
 
 /* ESBOÇO DO NOVO PAINEL — DIMENSÕES */
@@ -4730,10 +4454,10 @@ svg[viewBox="-4 -18 279 281"] {
 
 /* DIMENSÃO E LUMINOSIDADE DO SÍMBOLO INTERNO */
 #painel-lembrete .lembrete-simbolo {
-    display: block !important;
-    width: 24px !important;
-    height: 24px !important;
-    color: #ffffff !important;
+    display: block;
+    width: 24px;
+    height: 24px;
+    color: #ffffff;
 
     filter:
         brightness(1.12)
@@ -4759,18 +4483,18 @@ svg[viewBox="-4 -18 279 281"] {
 
 /* CÍRCULO — ACABAMENTO ESQUIOMÓRFICO VERDE */
 #painel-lembrete .lembrete-icone {
-    display: inline-flex !important;
+    display: inline-flex;
 
-    flex: 0 0 34px !important;
-    width: 34px !important;
-    height: 34px !important;
+    flex: 0 0 34px;
+    width: 34px;
+    height: 34px;
 
-    align-items: center !important;
-    justify-content: center !important;
+    align-items: center;
+    justify-content: center;
 
-    box-sizing: border-box !important;
+    box-sizing: border-box;
 
-    border-radius: 50% !important;
+    border-radius: 50%;
 
     background:
         linear-gradient(
@@ -4785,9 +4509,9 @@ svg[viewBox="-4 -18 279 281"] {
             rgba(133, 220, 157, .62) 24%,
             rgba(25, 91, 52, .94) 62%,
             rgba(151, 222, 169, .58) 100%
-        ) border-box !important;
+        ) border-box;
 
-    border: 1px solid transparent !important;
+    border: 1px solid transparent;
 
     box-shadow:
         0 3px 6px rgba(0, 0, 0, .44),
@@ -4796,9 +4520,9 @@ svg[viewBox="-4 -18 279 281"] {
         inset 1px 1px 3px rgba(225, 255, 232, .30),
         inset 0 3px 5px rgba(133, 220, 157, .20),
         inset 0 -2px 4px rgba(0, 18, 9, .48),
-        inset -1px 0 2px rgba(0, 18, 9, .20) !important;
+        inset -1px 0 2px rgba(0, 18, 9, .20);
 
-    color: #ffffff !important;
+    color: #ffffff;
 }
 
 
@@ -4811,11 +4535,11 @@ svg[viewBox="-4 -18 279 281"] {
 
     margin: 0;
 
-    font-family: "Segoe UI", Arial, sans-serif !important;
-    font-size: 22px !important;
-    font-weight: 700 !important;
-    line-height: 1 !important;
-    letter-spacing: 0.3px !important;
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: 0.3px;
 
     white-space: nowrap;
 }
@@ -4825,10 +4549,10 @@ svg[viewBox="-4 -18 279 281"] {
 
 /* POSICIONAMENTO DO CABEÇALHO */
 #painel-lembrete .lembrete-cabecalho {
-    display: grid !important;
+    display: grid;
 
-    grid-template-columns: 50px minmax(0, 1fr) !important;
-    grid-template-rows: 34px !important;
+    grid-template-columns: 50px minmax(0, 1fr);
+    grid-template-rows: 34px;
 
     align-items: center;
     column-gap: 0;
@@ -4841,8 +4565,8 @@ svg[viewBox="-4 -18 279 281"] {
     height: 34px;
     min-height: 34px;
 
-    margin: 0 !important;
-    padding: 0 !important;
+    margin: 0;
+    padding: 0;
 }
 
 /* ID: DARK-236 | REF: PANEL.REMINDER.SUMMARY.CARDS */
@@ -4875,9 +4599,9 @@ left: -15px;
     gap: 4px;
 
     width: 100%;
-        height: 126px !important;
-    min-height: 126px !important;
-    max-height: 126px !important;
+        height: 126px;
+    min-height: 126px;
+    max-height: 126px;
 
     min-width: 0;
     padding: 12px 13px 8px;
@@ -5009,12 +4733,12 @@ left: -15px;
     min-width: 0;
     margin: 0;
 
-    font-family: "Segoe UI", Arial, sans-serif !important;
-    font-size: 13px !important;
-    font-weight: 800 !important;
-    line-height: 1.1 !important;
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-size: 13px;
+    font-weight: 800;
+    line-height: 1.1;
 
-    color: #eff8f1 !important;
+    color: #eff8f1;
     text-shadow: 0 0 15px rgba(54, 206, 111, .12);
 
     align-self: flex-start;
@@ -5032,41 +4756,41 @@ left: -15px;
 /* ALFINETE VETORIAL — ESPECIFICAÇÕES DO COMPROMISSO */
 
 #painel-lembrete .lembrete-tarefa-fixar {
-    display: flex !important;
+    display: flex;
     align-items: center;
     justify-content: center;
 
-    width: 22px !important;
-    height: 22px !important;
-    flex: 0 0 22px !important;
+    width: 22px;
+    height: 22px;
+    flex: 0 0 22px;
 
     /* MESMO ENQUADRAMENTO DAS BORDAS */
-    position: relative !important;
-    right: -7px !important;
-    top: -7px !important;
+    position: relative;
+    right: -7px;
+    top: -7px;
 
-    padding: 0 !important;
+    padding: 0;
 
-    background: transparent !important;
-    border: none !important;
-    border-radius: 0 !important;
-    box-shadow: none !important;
-    filter: none !important;
+    background: transparent;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    filter: none;
 
-    color: #b9c8bd !important;
+    color: #b9c8bd;
 }
 
 /* DESENHO SVG — 18 × 18 PX */
 
 #painel-lembrete .lembrete-tarefa-fixar svg {
-    display: block !important;
+    display: block;
 
-    width: 16px !important;
-    height: 16px !important;
+    width: 16px;
+    height: 16px;
 
-    background: none !important;
-    border: none !important;
-    box-shadow: none !important;
+    background: none;
+    border: none;
+    box-shadow: none;
 
     fill: none;
     stroke: currentColor;
@@ -5075,7 +4799,7 @@ left: -15px;
 /* CAMPOS — LOCAL, DATA E HORÁRIO */
 
 #painel-lembrete .lembrete-tarefa-dados {
-    display: grid !important;
+    display: grid;
 
     grid-template-columns: repeat(2, minmax(0, 1fr));
 
@@ -5207,12 +4931,12 @@ left: -15px;
     border: 1px solid #39ed80;
     border-radius: 3px;
 
-    background: #101812 !important;
-    color: #39ed80 !important;
+    background: #101812;
+    color: #39ed80;
 
-    font-family: "Segoe UI", Arial, sans-serif !important;
-    font-size: 11px !important;
-    font-weight: 700 !important;
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-size: 11px;
+    font-weight: 700;
     line-height: 10px;
 
     white-space: nowrap;
@@ -5231,16 +4955,16 @@ left: -15px;
     padding: 0 2px;
     margin-top: 3px;
 
-    border: none !important;
+    border: none;
     border-radius: 0;
 
-    background: transparent !important;
-    box-shadow: none !important;
+    background: transparent;
+    box-shadow: none;
 
     color: #e7f1e9;
-    font-family: "Segoe UI", Arial, sans-serif !important;
-    font-size: 11px !important;
-    font-weight: 600 !important;
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-size: 11px;
+    font-weight: 600;
     line-height: 1.25;
 
     text-align: center;
@@ -5280,8 +5004,8 @@ left: -15px;
 #painel-lembrete .lembrete-resumo-pendencias .lembrete-tarefa-dado > span {
     border-color: rgba(224, 87, 96, .58);
 
-    background: #241316 !important;
-    color: #ff9ba2 !important;
+    background: #241316;
+    color: #ff9ba2;
 }
 
 
@@ -5409,14 +5133,14 @@ left: -15px;
 .card-estudo .estudo-area-central
 > .estudo-horas-diarias {
 
-  background: transparent !important;
-  border: 1px solid transparent !important;
+  background: transparent;
+  border: 1px solid transparent;
 
   box-shadow:
     -2px -2px 5px rgba(220, 255, 232, 0.055),
     -1px -1px 2px rgba(220, 255, 232, 0.025),
      2px  2px 5px rgba(0, 0, 0, 0.38),
-     1px  1px 2px rgba(0, 0, 0, 0.22) !important;
+     1px  1px 2px rgba(0, 0, 0, 0.22);
 }
 
 /* CAMPO 7: PENDÊNCIAS
@@ -5425,15 +5149,15 @@ left: -15px;
 
 .card-estudo .estudo-area-esquerda
 > .estudo-campo-pendencias {
-  background: transparent !important;
+  background: transparent;
 
-  border: 1px solid transparent !important;
+  border: 1px solid transparent;
 
   box-shadow:
     -2px -2px 5px rgba(220, 255, 232, 0.055),
     -1px -1px 2px rgba(220, 255, 232, 0.025),
      2px  2px 5px rgba(0, 0, 0, 0.38),
-     1px  1px 2px rgba(0, 0, 0, 0.22) !important;
+     1px  1px 2px rgba(0, 0, 0, 0.22);
 }
 
 
@@ -5447,11 +5171,11 @@ left: -15px;
 
     flex: 0 0 auto;
 
-    height: auto !important;
+    height: auto;
     min-height: 260px;
-    max-height: none !important;
+    max-height: none;
 
-    overflow: visible !important;
+    overflow: visible;
 }
 
 
@@ -5477,31 +5201,31 @@ left: -15px;
 
     box-sizing: border-box;
 
-    border: none !important;
+    border: none;
     border-radius: 10px;
 
-    background: transparent !important;
+    background: transparent;
 
     box-shadow:
         -2px -2px 5px rgba(220, 255, 232, 0.055),
         -1px -1px 2px rgba(220, 255, 232, 0.025),
          2px  2px 5px rgba(0, 0, 0, 0.38),
-         1px  1px 2px rgba(0, 0, 0, 0.22) !important;
+         1px  1px 2px rgba(0, 0, 0, 0.22);
 }
 
 
 /* TÍTULO */
 #painel-lembrete .lembrete-proximos-titulo {
-    background: #101812 !important;
+    background: #101812;
     border-color: rgba(65, 188, 108, .42);
-    color: #b2ebc2 !important;
+    color: #b2ebc2;
 }
 
 /* LINHAS */
 
 /* NOMES */
 #painel-lembrete .lembrete-proximo-identificacao {
-    color: #eaf3ec !important;
+    color: #eaf3ec;
 }
 
 /* DATAS */
@@ -5510,22 +5234,22 @@ left: -15px;
 
 /* ÍCONE DE MARCADOR — SEM FUNDO */
 #painel-lembrete .lembrete-proximo-icone {
-    background: transparent !important;
-    color: #39d879 !important;
-    box-shadow: none !important;
+    background: transparent;
+    color: #39d879;
+    box-shadow: none;
 }
 
 /* AÇÕES DECORATIVAS */
 #painel-lembrete .lembrete-proximo-acao.editar {
-    color: #49d77e !important;
+    color: #49d77e;
 }
 
 #painel-lembrete .lembrete-proximo-acao.excluir {
-    color: #ff6973 !important;
+    color: #ff6973;
 }
 
 #painel-lembrete .lembrete-proximo-acao.expandir {
-    color: #b2ebc2 !important;
+    color: #b2ebc2;
 }
 
 /* TRILHO E CURSOR DECORATIVOS */
@@ -5550,9 +5274,9 @@ left: -15px;
         145deg,
         #142119,
         #0d1510
-    ) !important;
+    );
 
-    border-color: rgba(73, 145, 96, .42) !important;
+    border-color: rgba(73, 145, 96, .42);
 
     box-shadow:
         inset 0 1px 0 rgba(255, 255, 255, .025),
@@ -5570,9 +5294,9 @@ left: -15px;
         145deg,
         #1b3022,
         #12251a
-    ) !important;
+    );
 
-    border-color: rgba(85, 205, 125, .68) !important;
+    border-color: rgba(85, 205, 125, .68);
 
     box-shadow:
         inset 0 1px 0 rgba(255, 255, 255, .07),
@@ -5587,10 +5311,10 @@ left: -15px;
 
 /* FUNDO DOS NOMES */
 #painel-lembrete .lembrete-proximo-identificacao strong {
-    display: block !important;
+    display: block;
 
     flex: 0 0 120px;
-    width: 120px !important;
+    width: 120px;
     min-width: 0;
     max-width: 100%;
 
@@ -5602,10 +5326,10 @@ left: -15px;
         145deg,
         #101811,
         #0c140e
-    ) !important;
+    );
 
-    color: #f0e4e6 !important;
-    box-shadow: none !important;
+    color: #f0e4e6;
+    box-shadow: none;
 
     overflow: hidden;
     text-overflow: ellipsis;
@@ -5614,11 +5338,11 @@ left: -15px;
 
 /* FUNDO DAS DATAS */
 #painel-lembrete .lembrete-proximo-data {
-    display: inline-block !important;
+    display: inline-block;
 
-    width: max-content !important;
-    min-width: 0 !important;
-    max-width: none !important;
+    width: max-content;
+    min-width: 0;
+    max-width: none;
 
     box-sizing: border-box;
     padding: 1px 7px;
@@ -5628,18 +5352,18 @@ left: -15px;
         145deg,
         #101811,
         #0c140e
-    ) !important;
+    );
 
-    color: #f0e4e6 !important;
+    color: #f0e4e6;
 
-    border: none !important;
-    box-shadow: none !important;
+    border: none;
+    box-shadow: none;
 
     justify-self: center;
     align-self: center;
 
-    overflow: visible !important;
-    text-overflow: clip !important;
+    overflow: visible;
+    text-overflow: clip;
     white-space: nowrap;
 }
 
@@ -5649,12 +5373,12 @@ left: -15px;
 
 /* POSICIONAMENTO DOS TRÊS BOTÕES */
 #painel-lembrete .lembrete-categorias {
-    display: grid !important;
-    grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
-    grid-template-rows: 30px !important;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-rows: 30px;
 
-    align-items: center !important;
-    gap: 8px !important;
+    align-items: center;
+    gap: 8px;
 
     min-width: 340px;
     width: 340px;
@@ -5666,21 +5390,21 @@ left: -15px;
 
 /* APARÊNCIA DOS BOTÕES */
 #painel-lembrete .lembrete-categoria {
-    display: grid !important;
-    grid-template-columns: 25px minmax(0, 1fr) !important;
+    display: grid;
+    grid-template-columns: 25px minmax(0, 1fr);
 
-    align-items: center !important;
+    align-items: center;
 
-    width: 100% !important;
-    height: 30px !important;
-    min-height: 30px !important;
+    width: 100%;
+    height: 30px;
+    min-height: 30px;
 
-    padding: 4px 6px !important;
-    gap: 4px !important;
+    padding: 4px 6px;
+    gap: 4px;
 
-    box-sizing: border-box !important;
+    box-sizing: border-box;
 
-    border: 1px solid rgba(80, 220, 115, .65) !important;
+    border: 1px solid rgba(80, 220, 115, .65);
     border-radius: 6px;
 
     background:
@@ -5712,7 +5436,7 @@ left: -15px;
             #075b21 35%,
             #0b7d2b 68%,
             #1ba247 100%
-        ) !important;
+        );
 
     color: #f0fff4;
 
@@ -5722,7 +5446,7 @@ left: -15px;
         inset 0 -4px 5px rgba(0,25,5,.55),
         inset 1px 0 3px rgba(255,255,255,.06),
         inset -1px 0 3px rgba(0,20,5,.25),
-        0 5px 8px rgba(0,0,0,.32) !important;
+        0 5px 8px rgba(0,0,0,.32);
 }
 
 /* ÍCONES */
@@ -5738,16 +5462,16 @@ left: -15px;
 }
 
 #painel-lembrete .lembrete-categoria-icone svg {
-    width: 17px !important;
-    height: 17px !important;
+    width: 17px;
+    height: 17px;
 }
 
 /* TEXTOS */
 #painel-lembrete .lembrete-categoria strong {
-    font-family: "Segoe UI", Arial, sans-serif !important;
-    font-size: 14px !important;
-    font-weight: 700 !important;
-    line-height: 1 !important;
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1;
     letter-spacing: -0.15px;
 
     white-space: nowrap;
@@ -5777,7 +5501,7 @@ left: -15px;
 
 .card-estudo .estudo-lista-atividades
 .estudo-atividade-card .estudo-atividade-pendencias > strong {
-  color: #ffffff !important;
+  color: #ffffff;
 }
 
 /* ESTUDO — RESTAURAR BORDAS DOS TÍTULOS DOS CAMPOS */
@@ -5792,7 +5516,7 @@ left: -15px;
 > .estudo-campo
 > .estudo-campo-rotulo {
 
-  border: 1px solid rgba(126, 214, 103, 0.45) !important;
+  border: 1px solid rgba(126, 214, 103, 0.45);
   border-radius: 3px;
 }
 
@@ -5835,7 +5559,7 @@ left: -15px;
       rgba(255, 255, 255, .006) 0%,
       transparent 55%
     ),
-    linear-gradient(110deg, rgba(6, 71, 25, .38) 0%, rgba(7, 91, 33, .38) 35%, rgba(11, 125, 43, .38) 68%, rgba(27, 162, 71, .38) 100%) !important;
+    linear-gradient(110deg, rgba(6, 71, 25, .38) 0%, rgba(7, 91, 33, .38) 35%, rgba(11, 125, 43, .38) 68%, rgba(27, 162, 71, .38) 100%);
 
   background:
     linear-gradient(
@@ -5864,16 +5588,16 @@ left: -15px;
       rgba(255, 255, 255, .006) 0%,
       transparent 55%
     ),
-    var(--acabamento-comprovantes-base) !important;
+    var(--acabamento-comprovantes-base);
 
-  border-color: rgba(91, 231, 139, .34) !important;
+  border-color: rgba(91, 231, 139, .34);
 
   box-shadow:
     -8px -8px 16px rgba(200, 200, 200, .05),
     9px 9px 19px rgba(0, 0, 0, .78),
     0 0 10px rgba(35, 180, 85, .10),
     inset 2px 2px 4px rgba(255, 255, 255, .28),
-    inset -3px -4px 7px rgba(0, 35, 15, .35) !important;
+    inset -3px -4px 7px rgba(0, 35, 15, .35);
 
   transition:
     transform .2s ease,
@@ -5995,11 +5719,11 @@ left: -15px;
 
   /* Rotina passa a duas colunas no tablet; o painel ganha altura natural. */
   #painel-rotina {
-    flex: 0 0 auto !important;
-    height: auto !important;
-    min-height: 0 !important;
-    max-height: none !important;
-    overflow: visible !important;
+    flex: 0 0 auto;
+    height: auto;
+    min-height: 0;
+    max-height: none;
+    overflow: visible;
   }
 
   .card-painel-novo .rotina-conteudo {
@@ -6083,12 +5807,12 @@ left: -15px;
   .card-estudo,
   #painel-rotina,
   #painel-compromisso {
-    flex: 0 0 auto !important;
-    width: 100% !important;
-    height: auto !important;
-    min-height: 0 !important;
-    max-height: none !important;
-    overflow: visible !important;
+    flex: 0 0 auto;
+    width: 100%;
+    height: auto;
+    min-height: 0;
+    max-height: none;
+    overflow: visible;
   }
 
   .card-central {
@@ -6098,26 +5822,26 @@ left: -15px;
   /* Remove larguras antigas que extrapolavam os painéis em telas estreitas. */
   #card-rotina-semanal,
   #card-rotina-pendente {
-    width: 100% !important;
-    max-width: 100% !important;
-    align-self: stretch !important;
+    width: 100%;
+    max-width: 100%;
+    align-self: stretch;
   }
 
   #card-agenda-ontem,
   #card-agenda-hoje {
-    left: 0 !important;
-    width: 100% !important;
-    max-width: 100% !important;
-    scale: 1 !important;
-    transform: none !important;
+    left: 0;
+    width: 100%;
+    max-width: 100%;
+    scale: 1;
+    transform: none;
   }
 
   .card-painel-novo .rotina-coluna-semanal {
-    transform: none !important;
+    transform: none;
   }
 
   .card-painel-novo .rotina-card-pendencias {
-    flex: 0 0 auto !important;
+    flex: 0 0 auto;
     min-height: 150px;
   }
 
@@ -6143,19 +5867,19 @@ left: -15px;
 
   /* Estudo: áreas passam para uma coluna; campos centrais mantêm duas colunas. */
   .estudo-conteudo {
-    grid-template-columns: minmax(0, 1fr) !important;
+    grid-template-columns: minmax(0, 1fr);
     gap: 14px;
   }
 
   .estudo-area-central {
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 18px 8px;
-    transform: none !important;
+    transform: none;
   }
 
   .estudo-prioridade {
     grid-column: 1 / -1;
-    transform: none !important;
+    transform: none;
   }
 
   .estudo-area-direita {
@@ -6236,7 +5960,7 @@ left: -15px;
 
   /* Compromisso: usa a regra de uma coluna prevista no breakpoint e libera altura. */
   #painel-compromisso .compromisso-conteudo {
-    grid-template-columns: minmax(0, 1fr) !important;
+    grid-template-columns: minmax(0, 1fr);
     width: 100%;
     height: auto;
     min-height: 0;
@@ -6244,7 +5968,7 @@ left: -15px;
   }
 
   #painel-compromisso .compromisso-cabecalho {
-    grid-template-columns: minmax(0, 1fr) auto !important;
+    grid-template-columns: minmax(0, 1fr) auto;
     grid-template-areas:
       "ident detalhes"
       "categorias categorias";
@@ -6255,8 +5979,8 @@ left: -15px;
 
   #painel-compromisso .compromisso-categorias {
     grid-area: categorias;
-    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
-    grid-template-rows: repeat(2, 30px) !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-rows: repeat(2, 30px);
   }
 
   /* Lembrete: os três cartões de resumo não ficam espremidos em três colunas. */
@@ -6268,9 +5992,9 @@ left: -15px;
   }
 
   #painel-lembrete .lembrete-resumo-card {
-    height: 126px !important;
-    min-height: 126px !important;
-    max-height: 126px !important;
+    height: 126px;
+    min-height: 126px;
+    max-height: 126px;
   }
 
   .painel-calendarios {
@@ -6292,7 +6016,7 @@ left: -15px;
   }
 
   .estudo-area-central {
-    grid-template-columns: minmax(0, 1fr) !important;
+    grid-template-columns: minmax(0, 1fr);
   }
 
   .estudo-prioridade {
@@ -6300,7 +6024,7 @@ left: -15px;
   }
 
   #painel-compromisso .compromisso-categorias {
-    gap: 6px !important;
+    gap: 6px;
   }
 }
 
@@ -6345,9 +6069,9 @@ left: -15px;
   }
 
   .menu-principal .botao-menu {
-    min-width: 0 !important;
-    width: 100% !important;
-    max-width: 100% !important;
+    min-width: 0;
+    width: 100%;
+    max-width: 100%;
     min-height: 44px;
     gap: 6px;
     padding: 5px 6px;
@@ -6391,9 +6115,9 @@ left: -15px;
 /* Limites intrínsecos verificados em 320–700 px. */
 @media (max-width: 700px) {
   .card-financeiro .financeiro-indicador-prioritaria {
-    width: 100% !important;
-    max-width: 100% !important;
-    justify-self: stretch !important;
+    width: 100%;
+    max-width: 100%;
+    justify-self: stretch;
   }
 
   #painel-rotina .rotina-lista-horarios,
@@ -6428,39 +6152,39 @@ left: -15px;
       rgba(27, 99, 55, .8),
       rgba(39, 186, 99, .65),
       rgba(25, 75, 44, .8)
-    ) border-box !important;
+    ) border-box;
 }
 
 /* CORREÇÃO DEFINITIVA — ÍCONE DO LIVRO */
 .estudo-atividade-cabecalho {
-  grid-template-columns: 20px minmax(0, 1fr) 15px !important;
+  grid-template-columns: 20px minmax(0, 1fr) 15px;
 }
 
 .estudo-atividade-icone {
-  display: flex !important;
-  flex: 0 0 20px !important;
-  width: 20px !important;
-  min-width: 20px !important;
-  height: 20px !important;
+  display: flex;
+  flex: 0 0 20px;
+  width: 20px;
+  min-width: 20px;
+  height: 20px;
 
-  background: transparent !important;
-  color: #39d879 !important;
+  background: transparent;
+  color: #39d879;
 
-  border: none !important;
-  box-shadow: none !important;
+  border: none;
+  box-shadow: none;
 }
 
 .estudo-atividade-icone svg {
-  display: block !important;
-  flex: 0 0 20px !important;
+  display: block;
+  flex: 0 0 20px;
 
-  width: 20px !important;
-  min-width: 20px !important;
-  height: 20px !important;
-  max-width: none !important;
-  max-height: none !important;
+  width: 20px;
+  min-width: 20px;
+  height: 20px;
+  max-width: none;
+  max-height: none;
 
-  overflow: visible !important;
+  overflow: visible;
 }
 
 /* ESTUDO — SUAVIDADE UNIFORME NOS RÓTULOS DA LISTA */
@@ -6468,47 +6192,47 @@ left: -15px;
 .estudo-atividade-card .estudo-atividade-dados
 .estudo-atividade-dado > span {
 
-  color: rgba(178, 235, 194, .82) !important;
+  color: rgba(178, 235, 194, .82);
 
-  border: 1px solid rgba(57, 201, 20, .45) !important;
+  border: 1px solid rgba(57, 201, 20, .45);
 
-  background: transparent !important;
-  text-shadow: none !important;
+  background: transparent;
+  text-shadow: none;
 }
 
 /* PENDÊNCIAS — MESMA SUAVIDADE, PRESERVANDO O VERMELHO */
 .card-estudo .estudo-lista-atividades
 .estudo-atividade-card .estudo-atividade-pendencias > span {
 
-  color: rgba(255, 155, 162, .82) !important;
+  color: rgba(255, 155, 162, .82);
 
-  border-color: rgba(229, 9, 20, .45) !important;
+  border-color: rgba(229, 9, 20, .45);
 }
 
 /* ESTUDO — LIBERAR A SOMBRA EXTERNA ESQUERDA DOS CARTÕES */
 
 .card-estudo .estudo-lista-atividades {
-  padding-left: 10px !important;
+  padding-left: 10px;
 }
 
 /* COMPENSAR A LARGURA PARA PRESERVAR O TAMANHO DOS CARTÕES */
 .card-estudo .estudo-lista-atividades > .estudo-atividade-card {
-  width: calc(99% + 10px) !important;
+  width: calc(99% + 10px);
 }
 
 /* ROTINA — ALINHAMENTO DOS ELEMENTOS NO EIXO CENTRAL DAS LINHAS */
 
 #card-rotina-pendente .rotina-pendencia-item {
-  align-items: center !important;
-  padding: 0 5px !important;
-  box-sizing: border-box !important;
+  align-items: center;
+  padding: 0 5px;
+  box-sizing: border-box;
 }
 
 /* ALINHAMENTO DOS QUATRO ELEMENTOS E DOS SEPARADORES */
 #card-rotina-pendente .rotina-pendencia-item > * {
-  align-self: center !important;
-  margin-top: 0 !important;
-  margin-bottom: 0 !important;
+  align-self: center;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 /* ID: DARK-245 | REF: PANEL.ROUTINE.AGENDA.FLOATING.HEADERS */
@@ -6516,42 +6240,42 @@ left: -15px;
 
 #card-agenda-ontem,
 #card-agenda-hoje {
-  overflow: visible !important;
+  overflow: visible;
 }
 
 /* POSICIONAMENTO DOS CABEÇALHOS */
 #card-agenda-ontem .rotina-agenda-cabecalho,
 #card-agenda-hoje .rotina-agenda-cabecalho {
-  position: absolute !important;
-  left: 50% !important;
+  position: absolute;
+  left: 50%;
 
-  transform: translateX(-50%) !important;
+  transform: translateX(-50%);
 
-  display: flex !important;
-  align-items: center !important;
-  justify-content: center !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-  width: max-content !important;
-  min-height: 28px !important;
+  width: max-content;
+  min-height: 28px;
 
-  margin: 0 !important;
-  padding: 0 8px !important;
+  margin: 0;
+  padding: 0 8px;
 
-  gap: 7px !important;
+  gap: 7px;
 
-  z-index: 10 !important;
+  z-index: 10;
 
-  background: #0b130e !important;
-  border: 1px solid rgba(57, 216, 121, .45) !important;
-  border-radius: 7px !important;
+  background: #0b130e;
+  border: 1px solid rgba(57, 216, 121, .45);
+  border-radius: 7px;
 }
 
 /* NORMALIZAÇÃO DOS ÍCONES */
 #card-agenda-ontem .rotina-agenda-icone,
 #card-agenda-hoje .rotina-agenda-icone {
-  position: static !important;
-  left: auto !important;
-  transform: none !important;
+  position: static;
+  left: auto;
+  transform: none;
 }
 
 /* REDUÇÃO DA ALTURA DOS CONTAINERS DE AGENDA */
@@ -6559,9 +6283,9 @@ left: -15px;
 #card-agenda-ontem,
 #card-agenda-hoje {
 
-  align-self: start !important;
+  align-self: start;
 
-  box-sizing: border-box !important;
+  box-sizing: border-box;
 }
 
 /* DESLOCAMENTO VERTICAL DAS AGENDAS */
@@ -6569,36 +6293,36 @@ left: -15px;
 /* HOJE — ÍCONE DE CALENDÁRIO DENTRO DO CABEÇALHO */
 
 #card-agenda-hoje .rotina-agenda-cabecalho {
-  display: flex !important;
-  align-items: center !important;
-  justify-content: center !important;
-  gap: 7px !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
 }
 
 /* ESPAÇAMENTO ENTRE TÍTULO E CONTAINER DA AGENDA */
 
 .card-painel-novo .rotina-coluna-agenda {
-  gap: 12px !important;
+  gap: 12px;
 }
 
 /* AJUSTE DA ALTURA — ONTEM E HOJE */
 
 #card-agenda-ontem,
 #card-agenda-hoje {
-  position: relative !important;
+  position: relative;
 
-  height: 145px !important;
-  min-height: 145px !important;
-  max-height: 145px !important;
+  height: 145px;
+  min-height: 145px;
+  max-height: 145px;
 
-  top: 47px !important;
+  top: 47px;
 }
 
 /* MANTÉM OS TÍTULOS NA POSIÇÃO ATUAL */
 
 #card-agenda-ontem .rotina-agenda-cabecalho,
 #card-agenda-hoje .rotina-agenda-cabecalho {
-  top: -40px !important;
+  top: -40px;
 }
 
 /* NEUMORFISMO EXTERNO SUAVE — CABEÇALHOS ONTEM E HOJE */
@@ -6606,36 +6330,36 @@ left: -15px;
 #card-agenda-ontem > .rotina-agenda-cabecalho,
 #card-agenda-hoje > .rotina-agenda-cabecalho {
 
-  background: transparent !important;
-  border: 1px solid transparent !important;
+  background: transparent;
+  border: 1px solid transparent;
 
   box-shadow:
     -2px -2px 5px rgba(220, 255, 232, 0.055),
     -1px -1px 2px rgba(220, 255, 232, 0.025),
      2px  2px 5px rgba(0, 0, 0, 0.38),
-     1px  1px 2px rgba(0, 0, 0, 0.22) !important;
+     1px  1px 2px rgba(0, 0, 0, 0.22);
 }
 
 /* CENTRALIZAÇÃO DOS HORÁRIOS — ONTEM E HOJE */
 
 #card-agenda-ontem .rotina-item-horario,
 #card-agenda-hoje .rotina-item-horario {
-  grid-template-columns: 12px 25px max-content !important;
+  grid-template-columns: 12px 25px max-content;
 }
 
 /* HORÁRIOS CENTRALIZADOS NA COLUNA */
 #card-agenda-ontem .rotina-horario,
 #card-agenda-hoje .rotina-horario {
-  display: block !important;
-  width: 100% !important;
-  text-align: center !important;
-  justify-self: stretch !important;
+  display: block;
+  width: 100%;
+  text-align: center;
+  justify-self: stretch;
 }
 
 /* PRESERVA A POSIÇÃO DA LINHA VERTICAL */
 #card-agenda-ontem .rotina-atividade,
 #card-agenda-hoje .rotina-atividade {
-  margin-left: 0 !important;
+  margin-left: 0;
 }
 
 /* AUMENTO DA FONTE — LISTAS ONTEM E HOJE */
@@ -6644,131 +6368,131 @@ left: -15px;
 #card-agenda-hoje .rotina-horario,
 #card-agenda-ontem .rotina-atividade,
 #card-agenda-hoje .rotina-atividade {
-  font-size: 12px !important;
+  font-size: 12px;
 }
 
 /* ÍCONES MANHÃ, TARDE E NOITE — VERDE ESMERALDA */
 
 .card-painel-novo .rotina-periodo-icone,
 .card-painel-novo .rotina-periodo-icone::before {
-  color: #39d879 !important;
+  color: #39d879;
 }
 
 /* ARREDONDAMENTO DOS CANTOS — RECORTE DAS LISTAS */
 
 #card-agenda-ontem #lista-agenda-ontem,
 #card-agenda-hoje #lista-agenda-hoje {
-  border-radius: 10px !important;
+  border-radius: 10px;
 
-  overflow-x: auto !important;
-  overflow-y: auto !important;
+  overflow-x: auto;
+  overflow-y: auto;
 
-  background-clip: padding-box !important;
+  background-clip: padding-box;
 }
 
 #card-agenda-hoje > .rotina-agenda-cabecalho {
-  position: absolute !important;
+  position: absolute;
 
-  top: -40px !important;
-  left: 0 !important;
-  right: 0 !important;
+  top: -40px;
+  left: 0;
+  right: 0;
 
-  width: auto !important;
-  height: 30px !important;
-min-height: 30px !important;
+  width: auto;
+  height: 30px;
+min-height: 30px;
 
-  transform: none !important;
+  transform: none;
 
-  display: flex !important;
-  align-items: center !important;
-  justify-content: center !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-  gap: 5px !important;
-  padding: 0 !important;
-  margin: 0 !important;
+  gap: 5px;
+  padding: 0;
+  margin: 0;
 
-  box-sizing: border-box !important;
-  overflow: visible !important;
+  box-sizing: border-box;
+  overflow: visible;
 
-  z-index: 20 !important;
+  z-index: 20;
 }
 
 /* CALENDÁRIO — POSIÇÃO FIXA NO GRUPO CENTRAL */
 #card-agenda-hoje > .rotina-agenda-cabecalho
 > .rotina-agenda-icone {
-  position: static !important;
+  position: static;
 
-  left: auto !important;
-  right: auto !important;
-  transform: none !important;
+  left: auto;
+  right: auto;
+  transform: none;
 
-  flex: 0 0 26px !important;
-  width: 26px !important;
-  height: 26px !important;
+  flex: 0 0 26px;
+  width: 26px;
+  height: 26px;
 
-  margin: 0 !important;
+  margin: 0;
 }
 
 /* TEXTO — CENTRALIZAÇÃO */
 #card-agenda-hoje > .rotina-agenda-cabecalho > h3 {
-  position: static !important;
+  position: static;
 
-  flex: 0 0 auto !important;
+  flex: 0 0 auto;
 
-  margin: 0 !important;
-  white-space: nowrap !important;
-  text-align: center !important;
+  margin: 0;
+  white-space: nowrap;
+  text-align: center;
 }
 
 /* SETAS — BASE */
 #card-agenda-hoje .rotina-agenda-seta {
 
-  flex-shrink: 0 !important;
-  pointer-events: none !important;
+  flex-shrink: 0;
+  pointer-events: none;
 }
 
 /* SETAS — NEUMORFISMO EXTERNO SOMENTE NO SÍMBOLO */
 
 #card-agenda-hoje .rotina-agenda-seta {
-  position: absolute !important;
-  top: 50% !important;
-  transform: translateY(-50%) !important;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
 
-  appearance: none !important;
-  -webkit-appearance: none !important;
+  appearance: none;
+  -webkit-appearance: none;
 
-  display: flex !important;
-  align-items: center !important;
-  justify-content: center !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-  width: 17px !important;
-  height: 22px !important;
-  min-width: 17px !important;
-  min-height: 22px !important;
+  width: 17px;
+  height: 22px;
+  min-width: 17px;
+  min-height: 22px;
 
-  padding: 0 !important;
-  margin: 0 !important;
-  box-sizing: border-box !important;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 
-  color: #39d879 !important;
-  font-family: Arial, sans-serif !important;
-  font-size: 30px !important;
-  font-weight: 400 !important;
-  line-height: 1 !important;
+  color: #39d879;
+  font-family: Arial, sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 1;
 
   /* Botão sem superfície ou contorno */
-  background: transparent !important;
-  border: none !important;
-  outline: none !important;
-  border-radius: 0 !important;
-  box-shadow: none !important;
+  background: transparent;
+  border: none;
+  outline: none;
+  border-radius: 0;
+  box-shadow: none;
 
   /* Neumorfismo externo aplicado apenas à seta */
   text-shadow:
     -1px -1px 1px rgba(220, 255, 232, 0.28),
-     1px  1px 1px rgba(0, 0, 0, 0.85) !important;
+     1px  1px 1px rgba(0, 0, 0, 0.85);
 
-  cursor: default !important;
+  cursor: default;
 }
 
 /* SETA ESQUERDA */
@@ -6777,13 +6501,13 @@ min-height: 30px !important;
 /* POSICIONAMENTO DAS SETAS — HOJE */
 
 #card-agenda-hoje .rotina-agenda-seta-anterior {
-    left: 3px !important;
-    right: auto !important;
+    left: 3px;
+    right: auto;
 }
 
 #card-agenda-hoje .rotina-agenda-seta-proxima {
-    right: 3px !important;
-    left: auto !important;
+    right: 3px;
+    left: auto;
 }
 
 /* ID: DARK-246 | REF: PANEL.COMMITMENT.INDIVIDUAL.CARDS.NEUMORPHISM */
@@ -6792,15 +6516,15 @@ min-height: 30px !important;
 #painel-compromisso #lista-compromissos-pendentes
 > .compromisso-pendencia-item {
 
-  background: transparent !important;
+  background: transparent;
 
-  border: 1px solid transparent !important;
+  border: 1px solid transparent;
 
   box-shadow:
     -2px -2px 5px rgba(224, 87, 96, 0.080),
     -1px -1px 2px rgba(224, 87, 96, 0.35),
      2px  2px 5px rgba(0, 0, 0, 0.70),
-     1px  1px 2px rgba(0, 0, 0, 0.70) !important;
+     1px  1px 2px rgba(0, 0, 0, 0.70);
 }
 
 /* ID: DARK-247 | TÍTULO PENDENTES — POSIÇÃO E BORDA */
@@ -6808,35 +6532,35 @@ min-height: 30px !important;
 #painel-compromisso .compromisso-pendencias
 > .compromisso-pendencias-rotulo {
 
-  position: absolute !important;
-  left: 8px !important;
-  right: auto !important;
+  position: absolute;
+  left: 8px;
+  right: auto;
 
-  transform: none !important;
+  transform: none;
 
-  display: flex !important;
-  align-items: center !important;
-  justify-content: center !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-  width: 62px !important;
-  height: 15px !important;
-  box-sizing: border-box !important;
+  width: 62px;
+  height: 15px;
+  box-sizing: border-box;
 
-  margin: 0 !important;
-  padding: 0 4px !important;
+  margin: 0;
+  padding: 0 4px;
 
-  background: #1b1012 !important;
-  border: 1px solid rgba(255, 120, 130, .85) !important;
-  border-radius: 3px !important;
+  background: #1b1012;
+  border: 1px solid rgba(255, 120, 130, .85);
+  border-radius: 3px;
 
-  color: #ff858c !important;
-  font-family: "Segoe UI", Arial, sans-serif !important;
-  font-size: 10px !important;
-  font-weight: 700 !important;
-  line-height: 13px !important;
+  color: #ff858c;
+  font-family: "Segoe UI", Arial, sans-serif;
+  font-size: 10px;
+  font-weight: 700;
+  line-height: 13px;
 
-  white-space: nowrap !important;
-  z-index: 5 !important;
+  white-space: nowrap;
+  z-index: 5;
 }
 
 /* ID: DARK-248 | AJUSTE VERTICAL DOS TÍTULOS DAS TRÊS LISTAS */
@@ -6849,33 +6573,33 @@ min-height: 30px !important;
 
 #painel-compromisso #lista-compromissos-hoje
 .compromisso-evento-cabecalho .compromisso-evento-titulo {
-  position: relative !important;
-  top: 3px !important;
+  position: relative;
+  top: 3px;
 }
 
 /* ID: DARK-249 | TIPOGRAFIA DOS CABEÇALHOS — PADRÃO ROTINA */
 
 #painel-compromisso .compromisso-agenda-cabecalho h3 {
-  font-family: "Segoe UI", Arial, sans-serif !important;
-  font-size: 15px !important;
-  font-weight: 700 !important;
-  line-height: 28px !important;
+  font-family: "Segoe UI", Arial, sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 28px;
 }
 
 /* DESTAQUE DO DIA DA SEMANA */
 #painel-compromisso .compromisso-agenda-cabecalho h3 strong {
-  font-weight: 700 !important;
+  font-weight: 700;
 }
 
 /* ID: DARK-250 | LISTAS INFERIORES — CONTAINERS SEM ACABAMENTO */
 
 #painel-compromisso .compromisso-agenda {
 
-  background: transparent !important;
+  background: transparent;
 
-  border: 1px solid transparent !important;
+  border: 1px solid transparent;
 
-  box-shadow: none !important;
+  box-shadow: none;
 }
 
 /* ID: DARK-251 | REF: PANEL.COMMITMENT.SCROLL.CONTAINERS
@@ -6885,18 +6609,18 @@ min-height: 30px !important;
 
 #painel-compromisso #lista-compromissos-ontem,
 #painel-compromisso #lista-compromissos-hoje {
-  flex: 1 1 auto !important;
-  min-height: 0 !important;
-  box-sizing: border-box !important;
+  flex: 1 1 auto;
+  min-height: 0;
+  box-sizing: border-box;
 }
 
 #painel-compromisso #agenda-compromissos-ontem.compromisso-agenda,
 #painel-compromisso #agenda-compromissos-hoje.compromisso-agenda {
-  position: relative !important;
-  top: 47px !important;
-  height: auto !important;
-  min-height: 0 !important;
-  box-sizing: border-box !important;
+  position: relative;
+  top: 47px;
+  height: auto;
+  min-height: 0;
+  box-sizing: border-box;
   
 }
 
@@ -6904,25 +6628,25 @@ min-height: 30px !important;
 
 #painel-compromisso #lista-compromissos-ontem,
 #painel-compromisso #lista-compromissos-hoje {
-    border-radius: 12px !important;
+    border-radius: 12px;
 
-    overflow-x: hidden !important;
-    overflow-y: auto !important;
+    overflow-x: hidden;
+    overflow-y: auto;
 }
 
 /* RESERVA PARA A SOMBRA ESQUERDA — ONTEM E HOJE */
 
 #painel-compromisso #lista-compromissos-ontem,
 #painel-compromisso #lista-compromissos-hoje {
-    padding-left: 12px !important;
-    margin-left: -17px !important;
+    padding-left: 12px;
+    margin-left: -17px;
 }
 
 /* FOLGA PARA A SOMBRA INFERIOR — ONTEM E HOJE */
 
 #painel-compromisso #lista-compromissos-ontem,
 #painel-compromisso #lista-compromissos-hoje {
-    margin-bottom: -12px !important;
+    margin-bottom: -12px;
 }
 
 /* TOBOGÃ — CAMPOS DO PAINEL COMPROMISSO */
@@ -6997,15 +6721,15 @@ min-height: 30px !important;
 
 #painel-compromisso #lista-compromissos-ontem,
 #painel-compromisso #lista-compromissos-hoje {
-    padding-top: 6px !important;
-    margin-top: -13px !important;
+    padding-top: 6px;
+    margin-top: -13px;
 }
 
 /* AJUSTE FINO — GAP INFERIOR DAS LISTAS */
 
 #painel-compromisso #lista-compromissos-ontem,
 #painel-compromisso #lista-compromissos-hoje {
-    padding-bottom: 12px !important;
+    padding-bottom: 12px;
 }
 
 /* AUMENTO DA FONTE — RÓTULOS DOS CAMPOS */
@@ -7018,15 +6742,15 @@ min-height: 30px !important;
 
 #painel-compromisso #lista-compromissos-hoje
 .compromisso-evento-dado > span {
-    font-size: 9px !important;
-    line-height: 12px !important;
+    font-size: 9px;
+    line-height: 12px;
 }
 
 /* BORDA DO TÍTULO — COMPROMISSOS SEMANAIS */
 
 #painel-compromisso .compromisso-semana
 > h3.estudo-campo-rotulo {
-    border: 1px solid rgba(126, 214, 103, .45) !important;
+    border: 1px solid rgba(126, 214, 103, .45);
     border-radius: 3px;
 }
 
@@ -7034,7 +6758,7 @@ min-height: 30px !important;
 
 #painel-compromisso #lista-compromissos-pendentes
 .compromisso-evento-cabecalho > h4 {
-    font-weight: 600 !important;
+    font-weight: 600;
 }
 
 /* AUMENTO DA LARGURA — CAMPO LOCAL */
@@ -7050,8 +6774,8 @@ min-height: 30px !important;
 #painel-compromisso #lista-compromissos-hoje
 > .compromisso-evento:first-child
 .compromisso-evento-dados > .compromisso-evento-dado:first-child {
-    width: 160px !important;
-    max-width: 100% !important;
+    width: 160px;
+    max-width: 100%;
 }
 
 /* AJUSTE DE SOBREPOSIÇÃO — PENDENTES */
@@ -7059,13 +6783,13 @@ min-height: 30px !important;
 /* TÍTULO DO COMPROMISSO: DESCE 3px */
 #painel-compromisso #lista-compromissos-pendentes
 .compromisso-evento-cabecalho .compromisso-evento-titulo {
-    top: -14px !important;
+    top: -14px;
 }
 
 /* ETIQUETA PENDENTES: SOBE 3px */
 #painel-compromisso .compromisso-pendencias
 > .compromisso-pendencias-rotulo {
-    top: 1px !important;
+    top: 1px;
 }
 
 /* LARGURA REAL DO CAMPO LOCAL — PENDENTES */
@@ -7074,10 +6798,10 @@ min-height: 30px !important;
 > .compromisso-pendencia-item
 > .compromisso-evento-cabecalho
 > .compromisso-evento-local-cabecalho {
-    flex: 1 1 0 !important;
-    min-width: 0 !important;
-    margin-left: 0 !important;
-    margin-right: 4px !important;
+    flex: 1 1 0;
+    min-width: 0;
+    margin-left: 0;
+    margin-right: 4px;
 }
 
 /* CORREÇÃO DE POSIÇÃO — LOCAL DOS PENDENTES */
@@ -7086,7 +6810,7 @@ min-height: 30px !important;
 > .compromisso-pendencia-item
 > .compromisso-evento-cabecalho
 > .compromisso-evento-local-cabecalho {
-    left: auto !important;
+    left: auto;
 }
 
 /* CORREÇÃO — TEXTO INTERNO DO CAMPO LOCAL | PENDENTES */
@@ -7095,33 +6819,33 @@ min-height: 30px !important;
 .compromisso-evento-local-cabecalho
 > .compromisso-evento-titulo {
 
-    position: static !important;
-    top: auto !important;
-    right: auto !important;
-    bottom: auto !important;
-    left: auto !important;
-    inset: auto !important;
-    transform: none !important;
+    position: static;
+    top: auto;
+    right: auto;
+    bottom: auto;
+    left: auto;
+    inset: auto;
+    transform: none;
 
-    display: block !important;
+    display: block;
 
-    width: 100% !important;
-    max-width: 100% !important;
-    min-width: 0 !important;
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
 
-    box-sizing: border-box !important;
+    box-sizing: border-box;
 
-    margin: 0 !important;
-    padding: 0 2px !important;
+    margin: 0;
+    padding: 0 2px;
 
-    overflow: hidden !important;
-    text-overflow: ellipsis !important;
-    white-space: nowrap !important;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 
-    border: none !important;
-    background: transparent !important;
+    border: none;
+    background: transparent;
 
-    text-align: center !important;
+    text-align: center;
 }
 
 /* DARK — PENDENTES | DISTRIBUIÇÃO DO CABEÇALHO */
@@ -7129,18 +6853,18 @@ min-height: 30px !important;
 /* TÍTULO PRINCIPAL: CENTRALIZADO E FORA DO FLUXO */
 #painel-compromisso #lista-compromissos-pendentes
 .compromisso-evento-cabecalho > h4 {
-    position: absolute !important;
-    left: 50% !important;
-    top: -14px !important;
-    transform: translateX(-50%) !important;
+    position: absolute;
+    left: 50%;
+    top: -14px;
+    transform: translateX(-50%);
 
-    width: max-content !important;
-    max-width: calc(100% - 70px) !important;
+    width: max-content;
+    max-width: calc(100% - 70px);
 
-    margin: 0 !important;
-    z-index: 2 !important;
+    margin: 0;
+    z-index: 2;
 
-    white-space: nowrap !important;
+    white-space: nowrap;
 }
 
 /* CAMPO LOCAL — CENTRALIZADO NO CABEÇALHO */
@@ -7150,51 +6874,51 @@ min-height: 30px !important;
 > .compromisso-evento-cabecalho
 > .compromisso-evento-local-cabecalho {
 
-    position: absolute !important;
+    position: absolute;
 
-    left: calc(50% - 55px) !important;
-    right: auto !important;
-    top: 0 !important;
+    left: calc(50% - 55px);
+    right: auto;
+    top: 0;
 
-    width: 135px !important;
-    min-width: 135px !important;
-    max-width: 135px !important;
+    width: 135px;
+    min-width: 135px;
+    max-width: 135px;
 
-    margin: 0 !important;
+    margin: 0;
 
-    transform: translate(0, 12px) !important;
+    transform: translate(0, 12px);
 
-    box-sizing: border-box !important;
+    box-sizing: border-box;
 }
 
 /* VALOR LOCAL */
 #painel-compromisso #lista-compromissos-pendentes
 .compromisso-evento-local-cabecalho
 > .compromisso-evento-titulo {
-    position: static !important;
-    transform: none !important;
+    position: static;
+    transform: none;
 
-    display: block !important;
-    width: 100% !important;
-    max-width: 100% !important;
+    display: block;
+    width: 100%;
+    max-width: 100%;
 
-    overflow: hidden !important;
-    text-overflow: ellipsis !important;
-    white-space: nowrap !important;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 
-    text-align: center !important;
+    text-align: center;
 
-    font-family: "Segoe UI", Arial, sans-serif !important;
-font-size: 11px !important;
-font-weight: 700 !important;
-letter-spacing: -0.3px !important;
+    font-family: "Segoe UI", Arial, sans-serif;
+font-size: 11px;
+font-weight: 700;
+letter-spacing: -0.3px;
 }
 
 /* ESPAÇAMENTO ENTRE CARDS — LISTAS ONTEM E HOJE */
 
 #painel-compromisso #lista-compromissos-ontem,
 #painel-compromisso #lista-compromissos-hoje {
-    gap: 14px !important;
+    gap: 14px;
 }
 
 /* REMOVER BORDA — CONTAINER COMPROMISSOS SEMANAIS */
@@ -7202,14 +6926,14 @@ letter-spacing: -0.3px !important;
 /* NEUMORFISMO EXTERNO SUAVE — COMPROMISSOS SEMANAIS */
 
 #painel-compromisso .compromisso-semana {
-    background: transparent !important;
-    border: 1px solid transparent !important;
+    background: transparent;
+    border: 1px solid transparent;
 
     box-shadow:
         -2px -2px 5px rgba(220, 255, 232, 0.055),
         -1px -1px 2px rgba(220, 255, 232, 0.025),
          2px  2px 5px rgba(0, 0, 0, 0.38),
-         1px  1px 2px rgba(0, 0, 0, 0.22) !important;
+         1px  1px 2px rgba(0, 0, 0, 0.22);
 }
 
 /* PADRONIZAÇÃO DA ESPESSURA DAS BORDAS — QUATRO PAINÉIS */
@@ -7218,7 +6942,7 @@ letter-spacing: -0.3px !important;
 .card-estudo,
 #painel-rotina,
 #painel-lembrete {
-    border-width: 1px !important;
+    border-width: 1px;
 }
 
 /* LEMBRETE — CARDS COM NEUMORFISMO EXTERNO SUAVE */
@@ -7251,12 +6975,12 @@ letter-spacing: -0.3px !important;
 /* POSICIONAMENTO INDIVIDUAL DOS CARDS DE RESUMO */
 
 #painel-lembrete .lembrete-resumo-ontem {
-    transform: translateX(-24px) !important;
+    transform: translateX(-24px);
 }
 
 #painel-lembrete #card-lembrete-hoje {
-    position: relative !important;
-    left: -52px !important;
+    position: relative;
+    left: -52px;
 }
 
 /* DESLOCAMENTO DO CONTAINER PRÓXIMOS LEMBRETES */
@@ -7272,56 +6996,56 @@ letter-spacing: -0.3px !important;
 
 /* PENDÊNCIAS — BORDA VERMELHA E DESLOCAMENTO */
 #painel-lembrete #card-lembrete-pendencias > h3 {
-    border: 1px solid rgba(255, 120, 130, .75) !important;
-    border-radius: 4px !important;
+    border: 1px solid rgba(255, 120, 130, .75);
+    border-radius: 4px;
     transform: translate(-90px, 4px);
 }
 
 /* ONTEM E HOJE — BORDAS VERDES */
 #painel-lembrete #card-lembrete-ontem > h3,
 #painel-lembrete #card-lembrete-hoje > h3 {
-    border: 1px solid rgba(126, 214, 103, .55) !important;
-    border-radius: 4px !important;
+    border: 1px solid rgba(126, 214, 103, .55);
+    border-radius: 4px;
 }
 
 /* PENDÊNCIAS — BORDA VERMELHA E DESLOCAMENTO */
 #painel-lembrete #card-lembrete-pendencias > h3 {
-    border: 1px solid rgba(255, 120, 130, .75) !important;
-    border-radius: 4px !important;
+    border: 1px solid rgba(255, 120, 130, .75);
+    border-radius: 4px;
     transform: translate(-90px, 4px);
 }
 
 /* ONTEM — BORDA VERDE E DESLOCAMENTO */
 #painel-lembrete #card-lembrete-ontem > h3 {
-    border: 1px solid rgba(126, 214, 103, .55) !important;
-    border-radius: 4px !important;
+    border: 1px solid rgba(126, 214, 103, .55);
+    border-radius: 4px;
     transform: translate(-90px, 4px);
 }
 
 /* HOJE — BORDA VERDE */
 #painel-lembrete #card-lembrete-hoje > h3 {
-    border: 1px solid rgba(126, 214, 103, .55) !important;
-    border-radius: 4px !important;
+    border: 1px solid rgba(126, 214, 103, .55);
+    border-radius: 4px;
 }
 
 /* PENDÊNCIAS — BORDA VERMELHA E DESLOCAMENTO */
 #painel-lembrete #card-lembrete-pendencias > h3 {
-    border: 1px solid rgba(255, 120, 130, .75) !important;
-    border-radius: 4px !important;
+    border: 1px solid rgba(255, 120, 130, .75);
+    border-radius: 4px;
     transform: translate(-90px, 3px);
 }
 
 /* ONTEM — BORDA VERDE E DESLOCAMENTO */
 #painel-lembrete #card-lembrete-ontem > h3 {
-    border: 1px solid rgba(126, 214, 103, .55) !important;
-    border-radius: 4px !important;
+    border: 1px solid rgba(126, 214, 103, .55);
+    border-radius: 4px;
     transform: translate(-90px, 3px);
 }
 
 /* HOJE — BORDA VERDE E DESLOCAMENTO */
 #painel-lembrete #card-lembrete-hoje > h3 {
-    border: 1px solid rgba(126, 214, 103, .55) !important;
-    border-radius: 4px !important;
+    border: 1px solid rgba(126, 214, 103, .55);
+    border-radius: 4px;
     transform: translate(-90px, 3px);
 }
 
@@ -7405,34 +7129,34 @@ letter-spacing: -0.3px !important;
 
 /* QUADRO VERTICAL */
 #painel-lembrete #lembrete-semana-vertical {
-    position: absolute !important;
-    top: 60px !important;
-    right: 12px !important;
-    z-index: 999 !important;
+    position: absolute;
+    top: 60px;
+    right: 12px;
+    z-index: 999;
 
-    display: flex !important;
-    visibility: visible !important;
-    opacity: 1 !important;
+    display: flex;
+    visibility: visible;
+    opacity: 1;
 
     flex-direction: column;
     align-items: stretch;
     justify-content: space-between;
     gap: 4px;
 
-    width: 62px !important;
-    height: 205px !important;
+    width: 62px;
+    height: 205px;
     padding: 8px 6px;
 
     box-sizing: border-box;
 
-    background: transparent !important;
-    border: none !important;
+    background: transparent;
+    border: none;
 
       box-shadow:
     -2px -2px 5px rgba(220, 255, 232, 0.055),
     -1px -1px 2px rgba(220, 255, 232, 0.025),
      2px  2px 5px rgba(0, 0, 0, 0.38),
-     1px  1px 2px rgba(0, 0, 0, 0.22) !important;
+     1px  1px 2px rgba(0, 0, 0, 0.22);
 }
 
 /* LINHA DE CADA DIA */
@@ -7446,7 +7170,7 @@ letter-spacing: -0.3px !important;
     width: 100%;
     min-height: 22px;
 
-    color: #d7eee0 !important;
+    color: #d7eee0;
 
     font-family: "Segoe UI", Arial, sans-serif;
     font-size: 10px;
@@ -7458,22 +7182,22 @@ letter-spacing: -0.3px !important;
 
 /* CÍRCULOS DE STATUS */
 #painel-lembrete #lembrete-semana-vertical .estudo-dia-circulo {
-    display: flex !important;
+    display: flex;
     flex: 0 0 20px;
 
     align-items: center;
     justify-content: center;
 
-    width: 20px !important;
-    height: 20px !important;
+    width: 20px;
+    height: 20px;
     min-width: 20px;
 
     box-sizing: border-box;
 
-    border: 1px solid rgba(255, 255, 255, .22) !important;
-    border-radius: 50% !important;
+    border: 1px solid rgba(255, 255, 255, .22);
+    border-radius: 50%;
 
-    color: #ffffff !important;
+    color: #ffffff;
 
     box-shadow:
         0 1px 3px rgba(0, 0, 0, .32),
@@ -7488,7 +7212,7 @@ letter-spacing: -0.3px !important;
         #697b70,
         #34443a 55%,
         #26352c
-    ) !important;
+    );
 }
 
 /* PENDENTE — VERMELHO */
@@ -7498,7 +7222,7 @@ letter-spacing: -0.3px !important;
         #e05a63,
         #a52e3b 58%,
         #701d2a
-    ) !important;
+    );
 }
 
 /* CONCLUÍDO — VERDE */
@@ -7508,7 +7232,7 @@ letter-spacing: -0.3px !important;
         #48e58a,
         #13a653 55%,
         #087039
-    ) !important;
+    );
 
     box-shadow:
         0 0 5px rgba(30, 201, 99, .16),
@@ -7519,21 +7243,21 @@ letter-spacing: -0.3px !important;
 
 /* ÍCONES INTERNOS */
 #painel-lembrete #lembrete-semana-vertical .rotina-status-svg {
-    display: block !important;
+    display: block;
     flex-shrink: 0;
-    fill: currentColor !important;
+    fill: currentColor;
 }
 
 /* ÍCONE DE CONCLUSÃO */
 #painel-lembrete #lembrete-semana-vertical .rotina-status-svg--check {
-    width: 12px !important;
-    height: 11px !important;
+    width: 12px;
+    height: 11px;
 }
 
 /* ÍCONE DE PENDÊNCIA */
 #painel-lembrete #lembrete-semana-vertical .rotina-status-svg--alerta {
-    width: 7px !important;
-    height: 14px !important;
+    width: 7px;
+    height: 14px;
 }
 
 
@@ -7550,13 +7274,13 @@ letter-spacing: -0.3px !important;
 }
 
 #painel-lembrete .lembrete-cabecalho > .botao-detalhes {
-    position: absolute !important;
+    position: absolute;
 
-    top: 5px !important;
-    right: 0 !important;
-    left: auto !important;
+    top: 5px;
+    right: 0;
+    left: auto;
 
-    margin: 0 !important;
+    margin: 0;
     z-index: 5;
 }
 
@@ -7599,7 +7323,7 @@ letter-spacing: -0.3px !important;
         145deg,
         #1b3024,
         #12251a
-    ) !important;
+    );
 
     border: 1px solid rgba(65, 170, 105, .42);
     border-radius: 6px;
@@ -7657,15 +7381,15 @@ letter-spacing: -0.3px !important;
 
 @media (max-width: 430px) {
     #painel-lembrete .lembrete-categorias {
-        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
-        grid-template-rows: repeat(2, 30px) !important;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        grid-template-rows: repeat(2, 30px);
     }
 }
 
 @media (max-width: 310px) {
     #painel-lembrete .lembrete-categorias {
-        grid-template-columns: minmax(0, 1fr) !important;
-        grid-template-rows: repeat(3, 30px) !important;
+        grid-template-columns: minmax(0, 1fr);
+        grid-template-rows: repeat(3, 30px);
     }
 
     #painel-lembrete .lembrete-cabecalho {
@@ -7679,10 +7403,10 @@ letter-spacing: -0.3px !important;
     }
 
     #painel-lembrete .lembrete-cabecalho > .botao-detalhes {
-        position: static !important;
-        top: auto !important;
-        right: auto !important;
-        left: auto !important;
+        position: static;
+        top: auto;
+        right: auto;
+        left: auto;
 
         grid-column: 1;
         grid-row: 2;
@@ -7707,10 +7431,10 @@ letter-spacing: -0.3px !important;
     position: relative;
     isolation: isolate;
 
-    background: transparent !important;
+    background: transparent;
 
-    border: 1px solid rgba(73, 205, 118, .58) !important;
-    border-radius: 20px !important;
+    border: 1px solid rgba(73, 205, 118, .58);
+    border-radius: 20px;
 
     box-shadow:
         /* Luz externa superior e esquerda */
@@ -7727,7 +7451,7 @@ letter-spacing: -0.3px !important;
 
         /* Profundidade inferior */
         0 12px 30px rgba(0, 0, 0, .78),
-        0 16px 28px rgba(0, 190, 65, .07) !important;
+        0 16px 28px rgba(0, 190, 65, .07);
 }
 
 /* SUPERFÍCIE INTERNA — PROFUNDIDADE E SOMBRAS */
@@ -7773,9 +7497,133 @@ letter-spacing: -0.3px !important;
 
     background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20900%201600%22%20preserveAspectRatio%3D%22none%22%3E%0A%3Cdefs%3E%0A%20%20%3ClinearGradient%20id%3D%22bottom%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%220%22%20y2%3D%221%22%3E%0A%20%20%20%20%3Cstop%20offset%3D%220%22%20stop-color%3D%22%2300ee59%22%20stop-opacity%3D%22.005%22%2F%3E%0A%20%20%20%20%3Cstop%20offset%3D%22.42%22%20stop-color%3D%22%2300f25a%22%20stop-opacity%3D%22.02%22%2F%3E%0A%20%20%20%20%3Cstop%20offset%3D%221%22%20stop-color%3D%22%2300ff55%22%20stop-opacity%3D%22.045%22%2F%3E%0A%20%20%3C%2FlinearGradient%3E%0A%20%20%3Cfilter%20id%3D%22blur%22%20x%3D%22-40%25%22%20y%3D%22-40%25%22%20width%3D%22180%25%22%20height%3D%22180%25%22%3E%0A%20%20%20%20%3CfeGaussianBlur%20stdDeviation%3D%2223%22%2F%3E%0A%20%20%3C%2Ffilter%3E%0A%20%20%3Cfilter%20id%3D%22soft%22%20x%3D%22-40%25%22%20y%3D%22-40%25%22%20width%3D%22180%25%22%20height%3D%22180%25%22%3E%0A%20%20%20%20%3CfeGaussianBlur%20stdDeviation%3D%228%22%2F%3E%0A%20%20%3C%2Ffilter%3E%0A%20%20%3Cfilter%20id%3D%22blurForward%22%20x%3D%22-90%25%22%20y%3D%22-90%25%22%20width%3D%22280%25%22%20height%3D%22280%25%22%3E%0A%20%20%20%20%3CfeGaussianBlur%20stdDeviation%3D%2264%22%20result%3D%22blurredShadow%22%2F%3E%0A%20%20%20%20%3CfeOffset%20in%3D%22blurredShadow%22%20dx%3D%220%22%20dy%3D%22-55%22%2F%3E%0A%20%20%3C%2Ffilter%3E%0A%20%20%3Cfilter%20id%3D%22softForward%22%20x%3D%22-90%25%22%20y%3D%22-90%25%22%20width%3D%22280%25%22%20height%3D%22280%25%22%3E%0A%20%20%20%20%3CfeGaussianBlur%20stdDeviation%3D%2224%22%2F%3E%0A%20%20%3C%2Ffilter%3E%0A%20%20%3CradialGradient%20id%3D%22beforeGlowLeft%22%20gradientUnits%3D%22userSpaceOnUse%22%20cx%3D%220%22%20cy%3D%220%22%20r%3D%221%22%0A%20%20%20%20gradientTransform%3D%22translate(45%201371.429)%20scale(380.9%201209.1)%22%3E%0A%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%23008237%22%20stop-opacity%3D%22.08%22%2F%3E%0A%20%20%20%20%3Cstop%20offset%3D%2232%25%22%20stop-color%3D%22%23008237%22%20stop-opacity%3D%220%22%2F%3E%0A%20%20%3C%2FradialGradient%3E%0A%20%20%3ClinearGradient%20id%3D%22edgeSweep%22%20gradientUnits%3D%22userSpaceOnUse%22%0A%20%20%20%20x1%3D%22250%22%20y1%3D%22950%22%20x2%3D%22900%22%20y2%3D%221600%22%3E%0A%20%20%20%20%3Cstop%20offset%3D%220%22%20stop-color%3D%22%2300ff58%22%20stop-opacity%3D%220%22%2F%3E%0A%20%20%20%20%3Cstop%20offset%3D%22.30%22%20stop-color%3D%22%2300ff58%22%20stop-opacity%3D%22.012%22%2F%3E%0A%20%20%20%20%3Cstop%20offset%3D%22.60%22%20stop-color%3D%22%2300ff58%22%20stop-opacity%3D%22.05%22%2F%3E%0A%20%20%20%20%3Cstop%20offset%3D%22.82%22%20stop-color%3D%22%2300ff58%22%20stop-opacity%3D%22.115%22%2F%3E%0A%20%20%20%20%3Cstop%20offset%3D%221%22%20stop-color%3D%22%2300ff58%22%20stop-opacity%3D%22.19%22%2F%3E%0A%20%20%3C%2FlinearGradient%3E%0A%20%20%3CclipPath%20id%3D%22belowWave%22%3E%3Cpath%20d%3D%22M55%201598%20C130%201598%20220%201555%20300%201505%20C365%201465%20445%201426%20500%201407%20C650%201345%20760%201310%20900%201348%20L900%201600%20L0%201600%20Z%22%2F%3E%3C%2FclipPath%3E%0A%20%20%3CclipPath%20id%3D%22aboveWave%22%3E%3Cpath%20d%3D%22M0%200%20H900%20V1348%20C760%201310%20650%201345%20500%201407%20C445%201426%20365%201465%20300%201505%20C220%201555%20130%201598%2055%201598%20H0%20Z%22%2F%3E%3C%2FclipPath%3E%0A%3C%2Fdefs%3E%0A%3Crect%20width%3D%22900%22%20height%3D%221600%22%20fill%3D%22url(%23beforeGlowLeft)%22%20clip-path%3D%22url(%23belowWave)%22%2F%3E%0A%3Cpath%20d%3D%22M55%201598%20C130%201598%20220%201555%20300%201505%20C365%201465%20445%201426%20500%201407%20C650%201345%20760%201310%20900%201348%20L900%201600%20L0%201600%20Z%22%20fill%3D%22url(%23bottom)%22%2F%3E%0A%3Crect%20width%3D%22900%22%20height%3D%221600%22%20fill%3D%22url(%23edgeSweep)%22%20clip-path%3D%22url(%23belowWave)%22%2F%3E%0A%3Cpath%20d%3D%22M55%201598%20C130%201598%20220%201555%20300%201505%20C365%201465%20445%201426%20500%201407%20C650%201345%20760%201310%20900%201348%22%20fill%3D%22none%22%20stroke%3D%22%2300ff58%22%20stroke-width%3D%2288%22%20opacity%3D%22.30%22%20filter%3D%22url(%23blurForward)%22%20clip-path%3D%22url(%23aboveWave)%22%2F%3E%0A%3Cpath%20d%3D%22M55%201598%20C130%201598%20220%201555%20300%201505%20C365%201465%20445%201426%20500%201407%20C650%201345%20760%201310%20900%201348%22%20fill%3D%22none%22%20stroke%3D%22%2300ff58%22%20stroke-width%3D%2224%22%20opacity%3D%22.60%22%20filter%3D%22url(%23softForward)%22%20clip-path%3D%22url(%23aboveWave)%22%2F%3E%0A%3C%2Fsvg%3E");
 
-    background-repeat: no-repeat !important;
-    background-position: left bottom !important;
-    background-size: 100% 56% !important;
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    background-size: 100% 56%;
+}
+
+/* ==========================================================
+   ID: DARK-253 | REF: APP.SIDEBAR
+   CAMADA ÚNICA — RELÓGIO, DATA E NOTIFIQUE-ME
+   Cascata normal, sem prioridades forçadas.
+========================================================== */
+.painel-esquerdo > .area-inferior-painel {
+    background: transparent;
+    border: 1px solid rgba(71, 133, 91, .28);
+    box-shadow:
+        -2px -2px 5px rgba(220, 255, 232, .055),
+        -1px -1px 2px rgba(220, 255, 232, .025),
+         2px  2px 5px rgba(0, 0, 0, .38),
+         1px  1px 2px rgba(0, 0, 0, .22);
+    z-index: 0;
+}
+
+.area-inferior-painel .horario-painel,
+.area-inferior-painel .data-painel {
+    color: #e3eee6;
+    transform: translateY(7px);
+}
+
+.horario-valor,
+.data-valor {
+    color: #e9f4ec;
+}
+
+.painel-esquerdo > .notificacao-titulo {
+    position: relative;
+    z-index: 1;
+    display: block;
+    width: fit-content;
+    max-width: 100%;
+    box-sizing: border-box;
+    margin: 0 auto -10px;
+    padding: 2px 12px;
+    background: linear-gradient(145deg, #1b3024, #12251a);
+    border: 1px solid rgba(65, 170, 105, .42);
+    border-radius: 6px;
+    outline: none;
+    box-shadow:
+        inset 0 1px 1px rgba(255, 255, 255, .08),
+        inset 0 -1px 2px rgba(0, 0, 0, .32),
+        0 2px 5px rgba(0, 0, 0, .25);
+    color: #f4f6f7;
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 1.2;
+    text-align: center;
+}
+
+.painel-esquerdo > .botao-notifique {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    flex: 0 0 60px;
+    padding: 0;
+    margin: 0 auto;
+    box-sizing: border-box;
+    border: 1px solid rgba(145, 245, 177, .82);
+    border-radius: 50%;
+    background:
+        radial-gradient(
+            circle at 32% 22%,
+            rgba(255, 255, 255, .34) 0%,
+            rgba(255, 255, 255, .192) 18%,
+            transparent 43%
+        ),
+        linear-gradient(
+            145deg,
+            #37dc7b 0%,
+            #159b50 43%,
+            #0c6838 76%,
+            #064527 100%
+        );
+    box-shadow:
+        -5px -5px 10px rgba(210, 255, 225, .08),
+         6px  6px 12px rgba(0, 0, 0, .42),
+        inset 0 2px 3px rgba(255, 255, 255, .38),
+        inset 1px 0 2px rgba(255, 255, 255, .12),
+        inset 0 -4px 6px rgba(0, 35, 16, .72),
+         0 2px 0 rgba(0, 50, 25, .95),
+         0 6px 12px rgba(0, 0, 0, .52);
+    cursor: pointer;
+    appearance: none;
+    transition: box-shadow .25s ease, background .25s ease, transform .25s ease;
+}
+
+.painel-esquerdo > .botao-notifique > .notificacao-icone {
+    display: block;
+    width: 70px;
+    height: 70px;
+    flex: 0 0 70px;
+    margin: 0;
+    background: transparent;
+    border: 0;
+    border-radius: 50%;
+    box-shadow: none;
+    filter: none;
+    overflow: visible;
+    pointer-events: none;
+}
+
+.painel-esquerdo > .botao-notifique:hover {
+    background:
+        radial-gradient(circle at 32% 20%, rgba(255, 255, 255, .45), transparent 43%),
+        linear-gradient(145deg, #45e687, #19a956 48%, #075b30 100%);
+    box-shadow:
+        inset 0 2px 3px rgba(255, 255, 255, .45),
+        inset 0 -4px 7px rgba(0, 35, 16, .65),
+        0 2px 0 rgba(0, 50, 25, .95),
+        0 8px 14px rgba(0, 0, 0, .55);
+}
+
+.painel-esquerdo > .botao-notifique:focus-visible {
+    outline: 2px solid #41ed86;
+    outline-offset: 4px;
 }
 
 /* ==========================================================
@@ -7796,98 +7644,98 @@ letter-spacing: -0.3px !important;
 }
 
 .card-financeiro > .financeiro-agenda-hoje-wrap > #agenda-financeiro-hoje {
-  border: 0 !important;
-  border-radius: 12px !important;
-  background: transparent !important;
-  box-shadow: none !important;
-  color: #edf5ef !important;
+  border: 0;
+  border-radius: 12px;
+  background: transparent;
+  box-shadow: none;
+  color: #edf5ef;
 }
 
 .card-financeiro > .financeiro-agenda-hoje-wrap #agenda-financeiro-hoje > .compromisso-agenda-cabecalho {
-  position: relative !important;
-  inset: auto !important;
-  display: flex !important;
+  position: relative;
+  inset: auto;
+  display: flex;
   flex: 0 0 28px;
-  align-items: center !important;
-  justify-content: center !important;
-  width: 100% !important;
-  height: 28px !important;
-  min-height: 28px !important;
-  margin: 0 !important;
-  padding: 0 21px !important;
-  gap: 6px !important;
-  box-sizing: border-box !important;
-  border: 1px solid rgba(58, 170, 99, .13) !important;
-  border-radius: 7px !important;
-  background: linear-gradient(145deg, rgba(15, 29, 20, .68), rgba(6, 12, 8, .72)) !important;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 28px;
+  min-height: 28px;
+  margin: 0;
+  padding: 0 21px;
+  gap: 6px;
+  box-sizing: border-box;
+  border: 1px solid rgba(58, 170, 99, .13);
+  border-radius: 7px;
+  background: linear-gradient(145deg, rgba(15, 29, 20, .68), rgba(6, 12, 8, .72));
   box-shadow:
     -2px -2px 5px rgba(220, 255, 232, .045),
-    2px 2px 5px rgba(0, 0, 0, .38) !important;
-  overflow: visible !important;
+    2px 2px 5px rgba(0, 0, 0, .38);
+  overflow: visible;
 }
 
 .card-financeiro > .financeiro-agenda-hoje-wrap .compromisso-agenda-cabecalho h3 {
-  display: block !important;
-  margin: 0 !important;
-  color: #edf5ef !important;
-  font-family: "Sora", "Segoe UI", sans-serif !important;
-  font-size: 13px !important;
-  font-weight: 800 !important;
-  line-height: 1 !important;
-  white-space: nowrap !important;
-  text-align: center !important;
+  display: block;
+  margin: 0;
+  color: #edf5ef;
+  font-family: "Sora", "Segoe UI", sans-serif;
+  font-size: 13px;
+  font-weight: 800;
+  line-height: 1;
+  white-space: nowrap;
+  text-align: center;
 }
 
 .card-financeiro > .financeiro-agenda-hoje-wrap .compromisso-agenda-cabecalho h3 strong {
-  color: #23dc78 !important;
-  font-weight: 800 !important;
+  color: #23dc78;
+  font-weight: 800;
 }
 
 .card-financeiro > .financeiro-agenda-hoje-wrap .compromisso-calendario-icone {
-  display: inline-flex !important;
-  flex: 0 0 24px !important;
-  align-items: center !important;
-  justify-content: center !important;
-  width: 24px !important;
-  height: 24px !important;
-  color: #39d879 !important;
+  display: inline-flex;
+  flex: 0 0 24px;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  color: #39d879;
 }
 
 .card-financeiro > .financeiro-agenda-hoje-wrap .compromisso-calendario-icone svg {
-  display: block !important;
-  width: 22px !important;
-  height: 22px !important;
-  color: #39d879 !important;
+  display: block;
+  width: 22px;
+  height: 22px;
+  color: #39d879;
 }
 
 .card-financeiro > .financeiro-agenda-hoje-wrap .compromisso-agenda-seta {
-  position: absolute !important;
-  top: 50% !important;
-  display: inline-flex !important;
-  align-items: center !important;
-  justify-content: center !important;
-  width: 18px !important;
-  height: 23px !important;
-  transform: translateY(-50%) !important;
-  color: #26d875 !important;
-  font-family: Arial, sans-serif !important;
-  font-size: 25px !important;
-  font-weight: 400 !important;
-  line-height: 1 !important;
+  position: absolute;
+  top: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 18px;
+  height: 23px;
+  transform: translateY(-50%);
+  color: #26d875;
+  font-family: Arial, sans-serif;
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 1;
 }
 
 .card-financeiro > .financeiro-agenda-hoje-wrap .compromisso-agenda-seta:first-child {
-  left: 0 !important;
+  left: 0;
 }
 
 .card-financeiro > .financeiro-agenda-hoje-wrap .compromisso-agenda-seta:last-child {
-  right: 0 !important;
+  right: 0;
 }
 
 .card-financeiro > .financeiro-agenda-hoje-wrap #lista-financeiro-hoje {
-  border: 0 !important;
-  border-radius: 10px !important;
-  background: transparent !important;
+  border: 0;
+  border-radius: 10px;
+  background: transparent;
   scrollbar-width: thin;
   scrollbar-color: #20c969 #101a14;
 }
@@ -7911,92 +7759,92 @@ letter-spacing: -0.3px !important;
 }
 
 .card-financeiro > .financeiro-agenda-hoje-wrap #lista-financeiro-hoje > .compromisso-evento {
-  display: flex !important;
+  display: flex;
   flex: 0 0 auto;
-  flex-direction: column !important;
-  min-width: 0 !important;
-  margin: 2px 2px 7px 2px !important;
-  padding: 6px 8px !important;
-  gap: 5px !important;
-  border: 1px solid transparent !important;
-  border-radius: 9px !important;
-  background: transparent !important;
+  flex-direction: column;
+  min-width: 0;
+  margin: 2px 2px 7px 2px;
+  padding: 6px 8px;
+  gap: 5px;
+  border: 1px solid transparent;
+  border-radius: 9px;
+  background: transparent;
   box-shadow:
     -2px -2px 5px rgba(57, 216, 121, .095),
     -1px -1px 2px rgba(57, 216, 121, .05),
     2px 2px 5px rgba(0, 0, 0, .70),
-    1px 1px 2px rgba(0, 0, 0, .70) !important;
+    1px 1px 2px rgba(0, 0, 0, .70);
   transition: background 220ms ease, box-shadow 220ms ease;
 }
 
 .card-financeiro > .financeiro-agenda-hoje-wrap #lista-financeiro-hoje > .compromisso-evento:hover {
-  background: linear-gradient(145deg, #18291e, #101a14) !important;
+  background: linear-gradient(145deg, #18291e, #101a14);
   box-shadow:
     inset 1px 1px 3px rgba(190, 255, 205, .045),
-    0 2px 5px rgba(0, 0, 0, .24) !important;
+    0 2px 5px rgba(0, 0, 0, .24);
 }
 
 .card-financeiro > .financeiro-agenda-hoje-wrap .compromisso-evento-cabecalho {
-  display: flex !important;
-  align-items: center !important;
-  min-width: 0 !important;
-  gap: 7px !important;
+  display: flex;
+  align-items: center;
+  min-width: 0;
+  gap: 7px;
 }
 
 .card-financeiro > .financeiro-agenda-hoje-wrap .compromisso-evento-cabecalho > svg {
-  display: block !important;
-  flex: 0 0 26px !important;
-  width: 26px !important;
-  height: 26px !important;
-  color: #39e27c !important;
+  display: block;
+  flex: 0 0 26px;
+  width: 26px;
+  height: 26px;
+  color: #39e27c;
 }
 
 .card-financeiro > .financeiro-agenda-hoje-wrap .compromisso-evento-titulo {
-  flex: 1 1 auto !important;
-  min-width: 0 !important;
-  margin: 0 !important;
-  color: #f0f7f2 !important;
-  font-family: "Sora", "Segoe UI", sans-serif !important;
-  font-size: 13px !important;
-  font-weight: 800 !important;
-  line-height: 1.1 !important;
-  white-space: nowrap !important;
+  flex: 1 1 auto;
+  min-width: 0;
+  margin: 0;
+  color: #f0f7f2;
+  font-family: "Sora", "Segoe UI", sans-serif;
+  font-size: 13px;
+  font-weight: 800;
+  line-height: 1.1;
+  white-space: nowrap;
 }
 
 .card-financeiro > .financeiro-agenda-hoje-wrap .compromisso-fixar {
-  display: inline-flex !important;
-  flex: 0 0 19px !important;
-  align-items: center !important;
-  justify-content: center !important;
-  width: 19px !important;
-  height: 21px !important;
-  margin-left: auto !important;
-  color: #cbd8cf !important;
+  display: inline-flex;
+  flex: 0 0 19px;
+  align-items: center;
+  justify-content: center;
+  width: 19px;
+  height: 21px;
+  margin-left: auto;
+  color: #cbd8cf;
 }
 
 .card-financeiro > .financeiro-agenda-hoje-wrap .compromisso-fixar svg {
-  display: block !important;
-  width: 19px !important;
-  height: 19px !important;
+  display: block;
+  width: 19px;
+  height: 19px;
 }
 
 .card-financeiro > .financeiro-agenda-hoje-wrap .compromisso-evento-dados {
-  display: grid !important;
-  grid-template-columns: minmax(0, 1fr) minmax(0, 1.2fr) minmax(0, .85fr) !important;
-  min-width: 0 !important;
-  gap: 4px !important;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.2fr) minmax(0, .85fr);
+  min-width: 0;
+  gap: 4px;
 }
 
 .card-financeiro > .financeiro-agenda-hoje-wrap .compromisso-evento-dado {
-  position: relative !important;
-  display: flex !important;
-  flex-direction: column !important;
-  min-width: 0 !important;
-  padding: 8px 3px 4px !important;
-  border: 1px solid transparent !important;
-  border-radius: 6px !important;
-  background: linear-gradient(145deg, #102319, #09140e) !important;
-  box-sizing: border-box !important;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  padding: 8px 3px 4px;
+  border: 1px solid transparent;
+  border-radius: 6px;
+  background: linear-gradient(145deg, #102319, #09140e);
+  box-sizing: border-box;
   isolation: isolate;
 }
 
@@ -8012,97 +7860,97 @@ letter-spacing: -0.3px !important;
 }
 
 .card-financeiro > .financeiro-agenda-hoje-wrap .compromisso-evento-dado > span {
-  position: absolute !important;
-  top: -6px !important;
-  left: 6px !important;
-  z-index: 2 !important;
-  display: inline-block !important;
-  width: max-content !important;
-  max-width: calc(100% - 12px) !important;
-  padding: 0 4px !important;
-  border: 1px solid #39ed80 !important;
-  border-radius: 3px !important;
-  background: #101812 !important;
-  color: #39ed80 !important;
-  font-family: "Segoe UI", Arial, sans-serif !important;
-  font-size: 8px !important;
-  font-weight: 700 !important;
-  line-height: 10px !important;
-  white-space: nowrap !important;
+  position: absolute;
+  top: -6px;
+  left: 6px;
+  z-index: 2;
+  display: inline-block;
+  width: max-content;
+  max-width: calc(100% - 12px);
+  padding: 0 4px;
+  border: 1px solid #39ed80;
+  border-radius: 3px;
+  background: #101812;
+  color: #39ed80;
+  font-family: "Segoe UI", Arial, sans-serif;
+  font-size: 8px;
+  font-weight: 700;
+  line-height: 10px;
+  white-space: nowrap;
 }
 
 .card-financeiro > .financeiro-agenda-hoje-wrap .compromisso-evento-dado > strong {
-  display: block !important;
-  min-width: 0 !important;
-  padding: 0 1px !important;
-  border: 0 !important;
-  background: transparent !important;
-  box-shadow: none !important;
-  color: #e7f1e9 !important;
-  font-family: "Segoe UI", Arial, sans-serif !important;
-  font-size: 9px !important;
-  font-weight: 700 !important;
-  line-height: 1.15 !important;
-  text-align: center !important;
-  overflow: hidden !important;
-  text-overflow: ellipsis !important;
-  white-space: nowrap !important;
+  display: block;
+  min-width: 0;
+  padding: 0 1px;
+  border: 0;
+  background: transparent;
+  box-shadow: none;
+  color: #e7f1e9;
+  font-family: "Segoe UI", Arial, sans-serif;
+  font-size: 9px;
+  font-weight: 700;
+  line-height: 1.15;
+  text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 /* O campo compacto segue o exemplo enviado: Local, Data e Horário. */
 .card-financeiro > .financeiro-agenda-hoje-wrap .compromisso-evento-anotacoes {
-  display: none !important;
+  display: none;
 }
 
 @media (max-width: 700px) {
   .card-financeiro > .financeiro-agenda-hoje-wrap {
-    border-radius: 13px !important;
-    overflow: hidden !important;
+    border-radius: 13px;
+    overflow: hidden;
   }
 
   .card-financeiro > .financeiro-agenda-hoje-wrap > #agenda-financeiro-hoje {
-    position: relative !important;
-    top: auto !important;
-    min-height: 0 !important;
+    position: relative;
+    top: auto;
+    min-height: 0;
   }
 }
 
 /* ID: DARK-214 | REF: PANEL.FINANCIAL.TODAY_AGENDA | ÂNCORA DA BARRA */
 
 #agenda-financeiro-hoje.compromisso-agenda-financeiro {
-    position: relative !important;
+    position: relative;
 }
 
 /* ID: DARK-215 | REF: PANEL.FINANCIAL.TODAY_AGENDA | FUNDO TRANSPARENTE */
 
 #container-agenda-financeiro-hoje,
 #container-agenda-financeiro-hoje > #agenda-financeiro-hoje {
-    background: transparent !important;
-    background-color: transparent !important;
+    background: transparent;
+    background-color: transparent;
 
-    border: none !important;
-    box-shadow: none !important;
+    border: none;
+    box-shadow: none;
 }
 
 /* ID: DARK-216 | REF: PANEL.FINANCIAL.TODAY_AGENDA | DESLOCAMENTO */
 
 #container-agenda-financeiro-hoje {
-    transform: translateX(10px) !important;
+    transform: translateX(10px);
 }
 
 /* ID: DARK-217 | CABEÇALHO FINANCEIRO — LARGURA VISUAL */
 
 .card-financeiro > .financeiro-agenda-hoje-wrap
 #agenda-financeiro-hoje > .compromisso-agenda-cabecalho {
-    position: relative !important;
-    width: 100% !important;
-    left: auto !important;
-    right: auto !important;
-    transform: none !important;
+    position: relative;
+    width: 100%;
+    left: auto;
+    right: auto;
+    transform: none;
 
-    background: transparent !important;
-    border-color: transparent !important;
-    box-shadow: none !important;
+    background: transparent;
+    border-color: transparent;
+    box-shadow: none;
 
     isolation: isolate;
 }
@@ -8140,30 +7988,30 @@ letter-spacing: -0.3px !important;
 
 #container-agenda-financeiro-hoje
 .compromisso-agenda-seta:first-child {
-    left: calc(11% + 3px) !important;
+    left: calc(11% + 3px);
 }
 
 #container-agenda-financeiro-hoje
 .compromisso-agenda-seta:last-child {
-    right: calc(11% + 3px) !important;
+    right: calc(11% + 3px);
 }
 
 /* ID: DARK-219 | SETAS — AJUSTE VERTICAL */
 
 #container-agenda-financeiro-hoje .compromisso-agenda-seta {
-    top: calc(50% - 3px) !important;
+    top: calc(50% - 3px);
 }
 
 /* ID: DARK-220 | ÍCONE FINANCEIRO — AJUSTE HORIZONTAL */
 
 #container-agenda-financeiro-hoje .compromisso-calendario-icone {
-    transform: translateX(-15px) !important;
+    transform: translateX(-15px);
 }
 
 /* ID: DARK-221 | TÍTULO CONTAS — AJUSTE HORIZONTAL */
 
 #container-agenda-financeiro-hoje .compromisso-agenda-cabecalho h3 {
-    transform: translateX(-4px) !important;
+    transform: translateX(-4px);
 }
 
 /* ID: DARK-222 | TÍTULO CONTAS — PESO DA FONTE */
@@ -8172,21 +8020,31 @@ letter-spacing: -0.3px !important;
 .compromisso-agenda-cabecalho h3,
 #container-agenda-financeiro-hoje
 .compromisso-agenda-cabecalho h3 strong {
-    font-weight: 600 !important;
+    font-weight: 600;
 }
 
 /* ID: DARK-223 | ÍCONES FINANCEIROS — REDUÇÃO DE TAMANHO */
 
 #lista-financeiro-hoje
 .compromisso-evento-cabecalho > svg {
-    width: 23px !important;
-    height: 23px !important;
-    flex: 0 0 23px !important;
-    transform: translate(-5px, -3px) !important;
+    width: 23px;
+    height: 23px;
+    flex: 0 0 23px;
+    transform: translate(-5px, -3px);
 }
 
 /* ID: DARK-224 | ALTURA DOS 3 CARDS FINANCEIROS */
 #lista-financeiro-hoje .compromisso-evento {
-    min-height: 72px !important;
-    box-sizing: border-box !important;
+    min-height: 72px;
+    box-sizing: border-box;
 }
+
+/* ID: DARK-254 | REF: PANEL.CALENDAR.NATIONAL_HOLIDAYS
+   Feriados: apenas borda e número em ciano escuro.
+   O fundo continua sendo controlado pelos estados normal, hoje e passado. */
+.calendario-dia.feriado-nacional {
+    border-color: #007f91;
+    color: #007f91;
+}
+}
+

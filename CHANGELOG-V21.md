@@ -40,3 +40,15 @@ Preparar a aplicação para navegadores modernos distintos e melhorar a degrada�
 - A curva, o recorte `belowWave`, o gradiente `edgeSweep`, o brilho inferior e as duas sombras externas (`0.30` e `0.60`) foram preservados.
 - A V20 histórica já não continha esse traço nem esse filtro; a sincronização indevida ocorreu durante a preparação inicial da V21 e foi corrigida aqui.
 - Validação executada nesta correção: SVG extraído da data URI e validado como XML; ausência de `#07190F`/`innerShadow` na onda; presença das duas camadas externas e do `edgeSweep` confirmada.
+
+
+## Refatoração V21.2 — 20/11/2026
+
+- Organizadas as folhas ativas em três camadas CSS explícitas: `base`, `theme` e `responsive`.
+- Removidas todas as 1.493 declarações `!important` das folhas ativas (`style.css`, `tema-dark.css`, `mobile.css`). O estado `[hidden]` foi colocado no fim da camada responsiva, sem prioridade forçada.
+- Corrigida a hierarquia HTML: o bloco `.area-inferior-painel` fecha depois do relógio e data; título e botão `Notifique-me` são irmãos do bloco e não são recortados pela altura/overflow do relógio.
+- Removida a referência JS inválida a `diaSemanaData`/`nomesDiasPainel`. O feriado destaca somente o número do dia; o nome do dia da semana não é criado.
+- Removidos deslocamentos móveis que moviam o painel inteiro e retiravam o título/botão do fluxo normal. Mantidos os tamanhos responsivos existentes.
+- Reconstruídos os índices CSS, os seletores repetidos, o índice de marcadores e as dependências JS/HTML.
+- Validação Chromium 144: sem erros JS; navegação mensal, pesquisa sem acento, estado vazio/retorno, 4 barras horizontais e 14 verticais com alvos existentes, painel mobile por botão/Escape/clique externo. Botão `Notifique-me` inteiramente dentro do painel nos 8 viewports amostrados.
+- Limites: overflow horizontal abaixo de 480px continua pendente; Google Fonts, outros navegadores comerciais e dispositivos físicos não foram testados nesta sessão.

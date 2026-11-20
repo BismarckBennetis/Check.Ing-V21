@@ -96,6 +96,10 @@ function preencherCalendario(identificador, mes, ano) {
         celulaDia.textContent = numeroDia;
         /* Compara a data completa com a data atual. */
         var dataCelula = new Date(ano, mes, numeroDia);
+        /* Destaca os feriados nacionais no calendário. */
+        if (ehFeriadoNacional(dataCelula)) {
+            celulaDia.classList.add("feriado-nacional");
+        }
         /* Marca os dias anteriores. */
         if (dataCelula < dataAtual) {
             celulaDia.classList.add("dia-passado");
@@ -112,6 +116,7 @@ function preencherCalendario(identificador, mes, ano) {
 preencherCalendario("#calendario-atual", mesAtual, anoAtual);
 /* Preenche o calendário do próximo mês. */
 preencherCalendario("#calendario-proximo", proximoMes.getMonth(), proximoMes.getFullYear());
+
 /* ID: JS-003 | REF: PANEL.CALENDAR.MONTH_NAVIGATION | NAVEGAÇÃO MENSAL */
 /* ==================================================
   NAVEGAÇÃO DOS CALENDÁRIOS
@@ -154,6 +159,54 @@ calendarios.forEach(function (calendario) {
         preencherCalendario("#" + calendario.id, mes, ano);
     });
 });
+
+/* ID: JS-008 | REF: APP.SIDEBAR.NATIONAL_HOLIDAYS */
+
+function calcularPascoa(ano) {
+    var a = ano % 19;
+    var b = Math.floor(ano / 100);
+    var c = ano % 100;
+    var d = Math.floor(b / 4);
+    var e = b % 4;
+    var f = Math.floor((b + 8) / 25);
+    var g = Math.floor((b - f + 1) / 3);
+    var h = (19 * a + b - d - g + 15) % 30;
+    var i = Math.floor(c / 4);
+    var k = c % 4;
+    var l = (32 + 2 * e + 2 * i - h - k) % 7;
+    var m = Math.floor((a + 11 * h + 22 * l) / 451);
+    var mes = Math.floor((h + l - 7 * m + 114) / 31);
+    var dia = ((h + l - 7 * m + 114) % 31) + 1;
+
+    return new Date(ano, mes - 1, dia);
+}
+
+function ehFeriadoNacional(data) {
+    var chave = String(data.getMonth() + 1).padStart(2, "0") +
+        "-" + String(data.getDate()).padStart(2, "0");
+
+    var feriadosFixos = [
+        "01-01", "04-21", "05-01",
+        "09-07", "10-12", "11-02",
+        "11-15", "11-20", "12-25"
+    ];
+
+    if (feriadosFixos.indexOf(chave) !== -1) {
+        return true;
+    }
+
+    var pascoa = calcularPascoa(data.getFullYear());
+    var paixaoDeCristo = new Date(
+        pascoa.getFullYear(),
+        pascoa.getMonth(),
+        pascoa.getDate() - 2
+    );
+
+    return data.getFullYear() === paixaoDeCristo.getFullYear() &&
+        data.getMonth() === paixaoDeCristo.getMonth() &&
+        data.getDate() === paixaoDeCristo.getDate();
+}
+
 /* ID: JS-004 | REF: APP.CLOCK_AND_CALENDAR.DATE_SYNC | RELÓGIO E ATUALIZAÇÃO DIÁRIA */
 function verificarDataEAgendarAtualizacao() {
     var agora = new Date();
@@ -169,6 +222,8 @@ function verificarDataEAgendarAtualizacao() {
     diaData.textContent = String(agora.getDate()).padStart(2, "0");
     mesData.textContent = String(agora.getMonth() + 1).padStart(2, "0");
     anoData.textContent = agora.getFullYear();
+    /* O feriado destaca somente o número do dia no campo de data. */
+    diaData.classList.toggle("feriado-nacional", ehFeriadoNacional(agora));
     var mudouDia = agora.getFullYear() !== hoje.getFullYear() ||
         agora.getMonth() !== hoje.getMonth() ||
         agora.getDate() !== hoje.getDate();
