@@ -52,3 +52,11 @@ Preparar a aplicação para navegadores modernos distintos e melhorar a degrada�
 - Reconstruídos os índices CSS, os seletores repetidos, o índice de marcadores e as dependências JS/HTML.
 - Validação Chromium 144: sem erros JS; navegação mensal, pesquisa sem acento, estado vazio/retorno, 4 barras horizontais e 14 verticais com alvos existentes, painel mobile por botão/Escape/clique externo. Botão `Notifique-me` inteiramente dentro do painel nos 8 viewports amostrados.
 - Limites: overflow horizontal abaixo de 480px continua pendente; Google Fonts, outros navegadores comerciais e dispositivos físicos não foram testados nesta sessão.
+
+
+## Correção V21.2.1 — 20/11/2026 | Barra duplicada em CONTAS
+
+- Identificada a barra visual independente `#barra-vertical-financeiro-hoje`, vinculada por `data-scrollbar-for="lista-financeiro-hoje"` e controlada por `configurarBarrasVerticais()` em `script.js`.
+- A regra do tema aplicada à lista `#lista-financeiro-hoje` definia `scrollbar-width: thin`, reativando a barra nativa apesar do contrato `[data-scrollbar-vertical]` de ocultá-la.
+- Removidas as declarações nativas conflitantes; a rolagem da lista e a barra personalizada foram preservadas. Nenhum `!important`, novo seletor de override ou alteração HTML/JS foi necessário.
+- Testado em Chromium headless com CSS e JavaScript reais do pacote, nas larguras 1440px e 375px: a barra nativa permanece oculta, a barra personalizada continua visível quando há overflow e a lista continua rolável.

@@ -1,0 +1,38 @@
+{
+  "versao": "V21.2.1",
+  "data": "2026-11-20",
+  "base": "Check.In V21.2",
+  "causa": {
+    "elemento": "#lista-financeiro-hoje",
+    "atributo": "data-scrollbar-vertical=\"green\"",
+    "barra_personalizada": "#barra-vertical-financeiro-hoje",
+    "vinculo": "data-scrollbar-for=\"lista-financeiro-hoje\"",
+    "regra_conflitante": "scrollbar-width: thin no tema escuro reativava a barra nativa, contrariando [data-scrollbar-vertical]."
+  },
+  "correcao": {
+    "arquivo": "tema-dark.css",
+    "acao": "Removidas as declarações nativas scrollbar-width: thin e scrollbar-color da regra específica da lista.",
+    "html_alterado": false,
+    "javascript_alterado": false,
+    "important_adicionado": 0
+  },
+  "testes": {
+    "browser": "Chromium headless disponível no ambiente",
+    "fixture": "HTML, CSS e JS reais do pacote V21.2 inlined em Playwright; Google Fonts externas removidas do fixture.",
+    "viewports_css_px": [
+      1440,
+      375
+    ],
+    "lista_com_overflow": true,
+    "scrollbar_width_computada": "none",
+    "barra_nativa_webkit_display": "none",
+    "barra_personalizada_existe": true,
+    "barra_personalizada_visivel_com_overflow": true,
+    "rolagem_programatica_e_evento_scroll": "aprovados",
+    "erros_de_execucao_js": []
+  },
+  "limites": [
+    "Validação realizada em Chromium headless; Firefox, Safari, outros navegadores e dispositivos físicos não foram executados.",
+    "Fontes Google externas foram removidas do fixture de teste."
+  ]
+}

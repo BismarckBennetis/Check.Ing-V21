@@ -624,14 +624,3 @@ body .menu-principal > .botao-menu:nth-child(n+4) {
     }
 
 }
-
-/* O estado HTML hidden prevalece sobre regras visuais por estar no fim da camada responsiva. */
-
-[hidden]{
-display: none;
-
-}
-
-}
-
-

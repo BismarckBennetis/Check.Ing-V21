@@ -329,7 +329,7 @@ text-shadow:
 
 /* ID: DARK-032 | REF: PANEL.CALENDAR | SELETOR: .calendario-dia.hoje */
 .calendario-dia.hoje {
-  background: linear-gradient(145deg, #1bb65d, #08783a);
+  background: linear-gradient(145deg, #35e879, #16a653);
   border: 1px solid #5af08d;
   box-shadow: 0 0 12px rgba(34, 211, 104, .2);
   color: #ffffff;
@@ -3073,7 +3073,7 @@ header.cabecalho .logo-simbolo {
 #painel-compromisso #lista-compromissos-pendentes
 .compromisso-evento-cabecalho > .compromisso-fixar {
   position: absolute;
-  top: -9px;
+  top: -11px;
   right: -9px;
 }
 
@@ -4231,7 +4231,7 @@ header.cabecalho::after {
     /* APROXIMAÇÃO DAS BORDAS */
     position: relative;
     right: -7px;
-    top: -7px;
+    top: -11px;
 
     padding: 0;
     background: transparent;
@@ -4243,11 +4243,14 @@ header.cabecalho::after {
     color: #ffffff;
 }
 
+/* REDUÇÃO DOS ALFINETES — TRÊS LISTAS */
+
+#painel-compromisso #lista-compromissos-pendentes .compromisso-fixar svg,
 #painel-compromisso #lista-compromissos-ontem .compromisso-fixar svg,
 #painel-compromisso #lista-compromissos-hoje .compromisso-fixar svg {
     display: block;
-    width: 18px;
-    height: 18px;
+    width: 12px;
+    height: 12px;
     background: none;
 }
 
@@ -7521,7 +7524,7 @@ letter-spacing: -0.3px;
 .area-inferior-painel .horario-painel,
 .area-inferior-painel .data-painel {
     color: #e3eee6;
-    transform: translateY(7px);
+    transform: translateY(1.5px);
 }
 
 .horario-valor,
@@ -7736,8 +7739,8 @@ letter-spacing: -0.3px;
   border: 0;
   border-radius: 10px;
   background: transparent;
-  scrollbar-width: thin;
-  scrollbar-color: #20c969 #101a14;
+  /* A barra nativa permanece oculta por [data-scrollbar-vertical].
+     A rolagem visual é fornecida pelo elemento irmão #barra-vertical-financeiro-hoje. */
 }
 
 .card-financeiro > .financeiro-agenda-hoje-wrap #lista-financeiro-hoje::-webkit-scrollbar {
@@ -7809,6 +7812,7 @@ letter-spacing: -0.3px;
   font-weight: 800;
   line-height: 1.1;
   white-space: nowrap;
+  transform: translateY(-4px);
 }
 
 .card-financeiro > .financeiro-agenda-hoje-wrap .compromisso-fixar {
@@ -7820,6 +7824,7 @@ letter-spacing: -0.3px;
   height: 21px;
   margin-left: auto;
   color: #cbd8cf;
+  transform: translate(6px, -6px);
 }
 
 .card-financeiro > .financeiro-agenda-hoje-wrap .compromisso-fixar svg {
@@ -7830,7 +7835,7 @@ letter-spacing: -0.3px;
 
 .card-financeiro > .financeiro-agenda-hoje-wrap .compromisso-evento-dados {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(0, 1.2fr) minmax(0, .85fr);
+  grid-template-columns: 6fr 4fr;
   min-width: 0;
   gap: 4px;
 }
@@ -8043,8 +8048,8 @@ letter-spacing: -0.3px;
    Feriados: apenas borda e número em ciano escuro.
    O fundo continua sendo controlado pelos estados normal, hoje e passado. */
 .calendario-dia.feriado-nacional {
-    border-color: #007f91;
-    color: #007f91;
+    border-color: #005f6b;
+    color: #005f6b;
 }
 }
 

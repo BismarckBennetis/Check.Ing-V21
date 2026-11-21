@@ -1,8 +1,8 @@
-# Mapa do projeto — Check.In V21.2
+# Mapa do projeto — Check.In V21.2.1
 
 ## 1. Fonte e escopo
 
-Base: pacote Check.In V21.1, derivado do arquivo V20 fornecido pelo usuário. A V21.2 corrige contratos de estrutura/estado e reorganiza a cascata CSS sem redesenhar os painéis ou introduzir novas funcionalidades.
+Base: pacote Check.In V21.1, derivado do arquivo V20 fornecido pelo usuário. A V21.2 reorganiza a cascata CSS. A V21.2.1 corrige a reativação indevida da barra nativa na lista CONTAS, mantendo a barra personalizada existente.
 
 ## 2. Ordem de execução
 

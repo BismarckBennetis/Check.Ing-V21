@@ -1,5 +1,5 @@
 {
-  "versao": "V21.2",
+  "versao": "V21.2.1",
   "ambiente": {
     "browser": "Chromium 144.0.7559.96 headless",
     "fixture": "HTML/CSS/JS do pacote V21.2 inlined em contexto Playwright; fontes Google externas bloqueadas",
@@ -75,5 +75,11 @@
     "Google Fonts bloqueadas no fixture in-memory.",
     "IE11 não suporta CSS Cascade Layers e não é compatível com esta arquitetura.",
     "Overflow horizontal mobile abaixo de 480px permanece."
-  ]
+  ],
+  "correcao_rolagem_contas": {
+    "arquivo": "tema-dark.css",
+    "causa": "scrollbar-width: thin reativava a barra nativa da lista já equipada com barra personalizada.",
+    "resultado": "barra nativa oculta; barra personalizada e rolagem mantidas.",
+    "validacao": "VALIDACAO-CORRECAO-ROLAGEM-V21.2.1.json"
+  }
 }

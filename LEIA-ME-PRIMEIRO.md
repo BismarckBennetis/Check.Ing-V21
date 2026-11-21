@@ -1,6 +1,6 @@
-# Check.In V21.2 — refatoração da cascata e correção do painel lateral
+# Check.In V21.2.1 — correção da barra duplicada em CONTAS
 
-A V21.2 parte da V21.1 e corrige a origem estrutural do recorte do botão **Notifique-me**. Também reorganiza as três folhas CSS em camadas explícitas, elimina declarações `!important` e remove uma referência JavaScript obsoleta a um elemento de dia da semana que não existe no HTML.
+A V21.2.1 é uma correção pontual sobre a V21.2: elimina a barra nativa duplicada na lista **CONTAS** do painel Financeiro, preservando a barra personalizada, a rolagem e todas as demais funcionalidades da versão-base.
 
 ## Arquivos ativos
 
@@ -23,7 +23,7 @@ A V21.2 parte da V21.1 e corrige a origem estrutural do recorte do botão **Noti
 
 ## Como abrir
 
-Extraia o ZIP mantendo a pasta `Check.Ing-V21.2` inteira e abra `index.html` com Live Server no VS Code. Mantenha `imagens/` no mesmo nível do HTML.
+Extraia o ZIP mantendo a pasta `Check.Ing-V21.2.1` inteira e abra `index.html` com Live Server no VS Code. Mantenha `imagens/` no mesmo nível do HTML.
 
 ## Compatibilidade e limites
 
@@ -41,6 +41,11 @@ Extraia o ZIP mantendo a pasta `Check.Ing-V21.2` inteira e abra `index.html` com
 - `MAPA-DO-PROJETO.md` — árvore e responsabilidades atuais.
 - `MATRIZ-COMPATIBILIDADE-V21.md` — requisitos de browser e testes executados.
 - `INDICE-SELETORES-CSS.csv`, `SELETORES-REPETIDOS.csv`, `INDICE-DE-REFERENCIAS.csv` e `DEPENDENCIAS-JS-HTML.csv` — índices reconstruídos com os arquivos ativos da V21.2.
-- `VALIDACAO-REFATORACAO-V21.2.json` — registro consolidado dos testes e limites.
+- `VALIDACAO-REFATORACAO-V21.2.json` — registro da refatoração-base; `VALIDACAO-CORRECAO-ROLAGEM-V21.2.1.json` — validação desta correção.
 - `CHECKSUMS-SHA256.txt` — integridade dos arquivos do pacote, exceto o próprio manifesto.
 - `historico/V20/` — snapshot histórico preservado.
+
+
+## Hotfix V21.2.1
+
+A lista `#lista-financeiro-hoje` utiliza a barra personalizada `#barra-vertical-financeiro-hoje`. O tema não reativa mais a barra nativa; o contrato global `[data-scrollbar-vertical]` continua ocultando-a.
