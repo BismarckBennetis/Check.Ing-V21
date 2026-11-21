@@ -679,6 +679,7 @@ text-align: center;
 
 /* ID: DARK-051 | REF: PANEL.FINANCIAL.PRIORITY | SELETOR: .financeiro-alfinete-icone */
 .financeiro-alfinete-icone {
+  color: #39d879;
   filter: drop-shadow(0 0 4px rgba(57, 222, 117, .22));
 }
 
@@ -979,12 +980,22 @@ text-align: center;
 .estudo-atividade-card {
   background: transparent;
   border: 1px solid transparent;
+  transition: background 220ms ease, box-shadow 220ms ease;
 
   box-shadow:
     -2px -2px 5px rgba(220, 255, 232, 0.055),
     -1px -1px 2px rgba(220, 255, 232, 0.025),
      2px  2px 5px rgba(0, 0, 0, 0.38),
      1px  1px 2px rgba(0, 0, 0, 0.22);
+}
+
+/* HOVER — MESMO EFEITO VISUAL DO CONTAINER CONTAS */
+
+.card-estudo .estudo-lista-atividades > .estudo-atividade-card:hover {
+    background: linear-gradient(145deg, #18291e, #101a14);
+    box-shadow:
+        inset 1px 1px 3px rgba(190, 255, 205, .045),
+        0 2px 5px rgba(0, 0, 0, .24);
 }
 
 /* ID: DARK-078 | REF: PANEL.STUDY.ACTIVITY.CONTAINER
@@ -3073,7 +3084,7 @@ header.cabecalho .logo-simbolo {
 #painel-compromisso #lista-compromissos-pendentes
 .compromisso-evento-cabecalho > .compromisso-fixar {
   position: absolute;
-  top: -11px;
+  top: -6px;
   right: -9px;
 }
 
@@ -3657,6 +3668,12 @@ header.cabecalho .logo-simbolo {
 }
 
 #painel-compromisso #lista-compromissos-pendentes
+.compromisso-lixeira-icone svg {
+    width: 18px;
+    height: 18px;
+}
+
+#painel-compromisso #lista-compromissos-pendentes
 .compromisso-documento,
 #painel-compromisso #lista-compromissos-pendentes
 .compromisso-lixeira-icone {
@@ -4146,7 +4163,9 @@ header.cabecalho::after {
   box-shadow: none;
   filter: none;
 
-  transform: translate(-5px, -8px);
+  transform-box: border-box;
+  transform-origin: left bottom;
+  transform: translate(-5px, -8px) scale(.85);
 }
 
 /* ÍCONES DAS TRÊS LISTAS
@@ -4245,13 +4264,26 @@ header.cabecalho::after {
 
 /* REDUÇÃO DOS ALFINETES — TRÊS LISTAS */
 
-#painel-compromisso #lista-compromissos-pendentes .compromisso-fixar svg,
+#painel-compromisso #lista-compromissos-pendentes
+.compromisso-fixar:not(.compromisso-lixeira-icone) svg,
 #painel-compromisso #lista-compromissos-ontem .compromisso-fixar svg,
 #painel-compromisso #lista-compromissos-hoje .compromisso-fixar svg {
     display: block;
-    width: 12px;
-    height: 12px;
+    width: 15px;
+    height: 15px;
     background: none;
+}
+
+/* AUMENTO DOS ALFINETES — ONTEM E HOJE */
+
+#painel-compromisso #lista-compromissos-ontem
+.compromisso-fixar svg,
+
+#painel-compromisso #lista-compromissos-hoje
+.compromisso-fixar svg {
+    transform-box: border-box;
+    transform-origin: left top;
+    transform: scale(1.15);
 }
 
 /* ID: DARK-229 | REF: PANEL.COMMITMENT.PIN.BACKGROUND.REMOVE
@@ -6520,7 +6552,7 @@ min-height: 30px;
 > .compromisso-pendencia-item {
 
   background: transparent;
-
+  transition: background 220ms ease, box-shadow 220ms ease;
   border: 1px solid transparent;
 
   box-shadow:
@@ -6528,6 +6560,17 @@ min-height: 30px;
     -1px -1px 2px rgba(224, 87, 96, 0.35),
      2px  2px 5px rgba(0, 0, 0, 0.70),
      1px  1px 2px rgba(0, 0, 0, 0.70);
+}
+
+/* HOVER — CARDS PENDENTES */
+
+#painel-compromisso #lista-compromissos-pendentes
+> .compromisso-pendencia-item:hover {
+    background: linear-gradient(145deg, #352529, #281b1f);
+
+    box-shadow:
+        inset 1px 1px 3px rgba(255, 190, 195, .045),
+        0 2px 5px rgba(0, 0, 0, .24);
 }
 
 /* ID: DARK-247 | TÍTULO PENDENTES — POSIÇÃO E BORDA */
@@ -6577,7 +6620,7 @@ min-height: 30px;
 #painel-compromisso #lista-compromissos-hoje
 .compromisso-evento-cabecalho .compromisso-evento-titulo {
   position: relative;
-  top: 3px;
+  top: -7px;
 }
 
 /* ID: DARK-249 | TIPOGRAFIA DOS CABEÇALHOS — PADRÃO ROTINA */
@@ -6792,7 +6835,7 @@ min-height: 30px;
 /* ETIQUETA PENDENTES: SOBE 3px */
 #painel-compromisso .compromisso-pendencias
 > .compromisso-pendencias-rotulo {
-    top: 1px;
+    top: -4px;
 }
 
 /* LARGURA REAL DO CAMPO LOCAL — PENDENTES */
@@ -6964,6 +7007,22 @@ letter-spacing: -0.3px;
          1px  1px 2px rgba(0, 0, 0, 0.22);
 }
 
+/* HOVER — CARDS ONTEM E HOJE */
+
+#painel-lembrete .lembrete-resumo-ontem .lembrete-tarefa,
+#painel-lembrete .lembrete-resumo-hoje .lembrete-tarefa {
+    transition: background 220ms ease, box-shadow 220ms ease;
+}
+
+#painel-lembrete .lembrete-resumo-ontem .lembrete-tarefa:hover,
+#painel-lembrete .lembrete-resumo-hoje .lembrete-tarefa:hover {
+    background: linear-gradient(145deg, #18291e, #101a14);
+
+    box-shadow:
+        inset 1px 1px 3px rgba(190, 255, 205, .045),
+        0 2px 5px rgba(0, 0, 0, .24);
+}
+
 /* LEMBRETE — DESLOCAMENTO INTERNO DE PENDÊNCIAS */
 
 #painel-lembrete .lembrete-resumo-pendencias .lembrete-tarefa {
@@ -6973,6 +7032,20 @@ letter-spacing: -0.3px;
 #painel-lembrete .lembrete-resumo-pendencias .lembrete-tarefa,
 #painel-lembrete .lembrete-resumo-ontem .lembrete-tarefa {
     transform: translateX(-7px);
+}
+
+/* HOVER — CARDS PENDÊNCIAS DO LEMBRETE */
+
+#painel-lembrete .lembrete-resumo-pendencias .lembrete-tarefa {
+    transition: background 220ms ease, box-shadow 220ms ease;
+}
+
+#painel-lembrete .lembrete-resumo-pendencias .lembrete-tarefa:hover {
+    background: linear-gradient(145deg, #352529, #281b1f);
+
+    box-shadow:
+        inset 1px 1px 3px rgba(255, 190, 195, .045),
+        0 2px 5px rgba(0, 0, 0, .24);
 }
 
 /* POSICIONAMENTO INDIVIDUAL DOS CARDS DE RESUMO */
@@ -7001,7 +7074,7 @@ letter-spacing: -0.3px;
 #painel-lembrete #card-lembrete-pendencias > h3 {
     border: 1px solid rgba(255, 120, 130, .75);
     border-radius: 4px;
-    transform: translate(-90px, 4px);
+    transform: translate(-90px, 1px);
 }
 
 /* ONTEM E HOJE — BORDAS VERDES */
@@ -7015,14 +7088,14 @@ letter-spacing: -0.3px;
 #painel-lembrete #card-lembrete-pendencias > h3 {
     border: 1px solid rgba(255, 120, 130, .75);
     border-radius: 4px;
-    transform: translate(-90px, 4px);
+    transform: translate(-90px, 1px);
 }
 
 /* ONTEM — BORDA VERDE E DESLOCAMENTO */
 #painel-lembrete #card-lembrete-ontem > h3 {
     border: 1px solid rgba(126, 214, 103, .55);
     border-radius: 4px;
-    transform: translate(-90px, 4px);
+    transform: translate(-90px, 0px);
 }
 
 /* HOJE — BORDA VERDE */
@@ -7035,21 +7108,21 @@ letter-spacing: -0.3px;
 #painel-lembrete #card-lembrete-pendencias > h3 {
     border: 1px solid rgba(255, 120, 130, .75);
     border-radius: 4px;
-    transform: translate(-90px, 3px);
+    transform: translate(-90px, 0px);
 }
 
 /* ONTEM — BORDA VERDE E DESLOCAMENTO */
 #painel-lembrete #card-lembrete-ontem > h3 {
     border: 1px solid rgba(126, 214, 103, .55);
     border-radius: 4px;
-    transform: translate(-90px, 3px);
+    transform: translate(-90px, 0px);
 }
 
 /* HOJE — BORDA VERDE E DESLOCAMENTO */
 #painel-lembrete #card-lembrete-hoje > h3 {
     border: 1px solid rgba(126, 214, 103, .55);
     border-radius: 4px;
-    transform: translate(-90px, 3px);
+    transform: translate(-90px, 0px);
 }
 
 /* NOVO COMPONENTE — DIAS DA SEMANA VERTICAL */
@@ -7766,7 +7839,7 @@ letter-spacing: -0.3px;
   flex: 0 0 auto;
   flex-direction: column;
   min-width: 0;
-  margin: 2px 2px 7px 2px;
+  margin: 2px 6px 7px 6px;
   padding: 6px 8px;
   gap: 5px;
   border: 1px solid transparent;
@@ -7851,6 +7924,7 @@ letter-spacing: -0.3px;
   background: linear-gradient(145deg, #102319, #09140e);
   box-sizing: border-box;
   isolation: isolate;
+  top: 5px;
 }
 
 .card-financeiro > .financeiro-agenda-hoje-wrap .compromisso-evento-dado::after {
@@ -7878,7 +7952,7 @@ letter-spacing: -0.3px;
   background: #101812;
   color: #39ed80;
   font-family: "Segoe UI", Arial, sans-serif;
-  font-size: 8px;
+  font-size: 10.5px;
   font-weight: 700;
   line-height: 10px;
   white-space: nowrap;
@@ -8035,7 +8109,9 @@ letter-spacing: -0.3px;
     width: 23px;
     height: 23px;
     flex: 0 0 23px;
-    transform: translate(-5px, -3px);
+    transform-box: border-box;
+    transform-origin: left bottom;
+    transform: translate(-5px, -8px) scale(.85);
 }
 
 /* ID: DARK-224 | ALTURA DOS 3 CARDS FINANCEIROS */
@@ -8052,4 +8128,6 @@ letter-spacing: -0.3px;
     color: #005f6b;
 }
 }
+
+
 
