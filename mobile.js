@@ -71,8 +71,8 @@
         );
     }
 
-    /* Estado inicial. */
-    atualizarEstado(!painelLateral.hidden, false);
+    /* Estado inicial: painel fechado no mobile. */
+    atualizarEstado(false, false);
 
     /* Botão Menu. */
     botaoMenu.addEventListener("click", function () {

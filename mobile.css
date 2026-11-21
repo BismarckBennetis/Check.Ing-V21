@@ -624,3 +624,17 @@ body .menu-principal > .botao-menu:nth-child(n+4) {
     }
 
 }
+
+/* MOB-046 — RESPEITAR O ATRIBUTO HIDDEN */
+[hidden]:not(.ci-scrollbar-vertical) {
+    display: none;
+}
+
+} /* Fecha @layer responsive */
+
+/* MOB-047 — MANTER O PAINEL VISÍVEL NO DESKTOP */
+@media (min-width: 653px) {
+    #painel-esquerdo[hidden] {
+        display: flex;
+    }
+}

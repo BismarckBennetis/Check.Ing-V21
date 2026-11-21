@@ -939,13 +939,6 @@ text-align: center;
   color: #ff858c;
 }
 
-/* ID: DARK-074 | REF: PANEL.STUDY | SELETOR: .estudo-campo-pendencias */
-.estudo-campo-pendencias {
-  background:
-    linear-gradient(145deg, #211316, #160e10) padding-box,
-    linear-gradient(110deg, #74303a, #b84a54, #74303a) border-box;
-}
-
 /* ID: DARK-075 | REF: PANEL.STUDY | SELETOR: .estudo-prioridade-concluida */
 .estudo-prioridade-concluida {
   background: linear-gradient(145deg, #20bc62, #08783b);
@@ -1047,6 +1040,17 @@ text-align: center;
     /* Relevo interno 3D preservado */
     inset 2px 2px 4px rgba(255,255,255,.28),
     inset -3px -4px 7px rgba(0,35,15,.35);
+}
+
+/* HOVER — MESMO BRILHO E RELEVO DO BOTÃO METAS */
+.card-financeiro .botao-comprovantes:hover {
+  filter: brightness(1.07);
+
+  box-shadow:
+    inset 2px 2px 4px rgba(255,255,255,.32),
+    inset -3px -4px 7px rgba(0,35,15,.30),
+    5px 8px 14px rgba(0,75,35,.30),
+    0 0 12px rgba(43,219,103,.28);
 }
 
 /* Rodapé */
@@ -6235,13 +6239,14 @@ left: -15px;
   text-shadow: none;
 }
 
-/* PENDÊNCIAS — MESMA SUAVIDADE, PRESERVANDO O VERMELHO */
+/* PENDÊNCIAS — RÓTULOS VERMELHOS DOS CARDS DE ESTUDO */
+
 .card-estudo .estudo-lista-atividades
-.estudo-atividade-card .estudo-atividade-pendencias > span {
-
-  color: rgba(255, 155, 162, .82);
-
-  border-color: rgba(229, 9, 20, .45);
+.estudo-atividade-card .estudo-atividade-dados
+.estudo-atividade-dado.estudo-atividade-pendencias > span {
+    color: #ff858c;
+    border-color: #e50914;
+    background: #241316;
 }
 
 /* ESTUDO — LIBERAR A SOMBRA EXTERNA ESQUERDA DOS CARTÕES */
